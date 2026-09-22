@@ -75,7 +75,8 @@ expand() {
 subst() {
   local line k
   while IFS= read -r line || [ -n "$line" ]; do
-    for k in "${!V[@]}"; do line="${line//\{\{$k\}\}/${V[$k]}}"; done
+    # dua lintasan: sebuah nilai (mis. CONFIDENTIAL_BLOCK) bisa memuat token lain di dalamnya
+    for pass in 1 2; do for k in "${!V[@]}"; do line="${line//\{\{$k\}\}/${V[$k]}}"; done; done
     printf '%s\n' "$line"
   done
 }
@@ -176,7 +177,11 @@ bash -n "$ROOT/.brain-env" 2>/dev/null || die ".brain-env is not sourceable — 
 # folded to "-":  /home/aldo -> -home-aldo ,  C:\ -> C--
 PTPL="$ROOT/harness/pointer-memory/canonical-memory-store.md"
 if [ -f "$PTPL" ]; then
-  SLUG="$(printf '%s' "$(expand "${V[SPAWN]:-$HOME}")" | sed -e 's/[^A-Za-z0-9-]/-/g')"
+  _sp="$(expand "${V[SPAWN]:-$HOME}")"
+  # Windows: Claude Code membuat slug dari path NATIF (C:\Users\me -> C--Users-me),
+  # bukan dari path MSYS (/c/Users/me). Tanpa ini pointer mendarat di folder yang tak pernah dibaca.
+  command -v cygpath >/dev/null 2>&1 && _sp="$(cygpath -w "$_sp" 2>/dev/null || printf %s "$_sp")"
+  SLUG="$(printf %s "$_sp" | sed -e 's/[^A-Za-z0-9-]/-/g')"
   PDIR="$HOME/.claude/projects/$SLUG/memory"
   mkdir -p "$PDIR"
   subst < "$PTPL" > "$PDIR/canonical-memory-store.md"

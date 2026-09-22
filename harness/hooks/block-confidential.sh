@@ -19,7 +19,7 @@ set -uo pipefail
 input="$(cat)"
 
 ROOT=""
-for cand in "$HOME/claude" "$HOME/.claude/brain" "/c/claude" "C:/claude"; do
+for cand in "$HOME/brain" "$HOME/claude" "$HOME/.claude/brain" "/c/claude" "C:/claude"; do
   [ -f "$cand/.brain-env" ] && ROOT="$cand" && break
 done
 [ -n "$ROOT" ] || exit 0

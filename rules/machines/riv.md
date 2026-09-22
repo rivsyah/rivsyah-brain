@@ -75,6 +75,20 @@ trust what it says. Push once, at the end, when you have written to it.
 directory per scope, mirroring the vault's taxonomy. **Never scaffold code anywhere under
 `{{VAULT}}`** — the vault is memory only.
 
+## WHERE THE REAL WORK ALREADY LIVES
+
+`{{PROJECTS}}` is the kit's scaffold and is still empty. The work that exists predates it and does
+NOT move. Put new, unattached code in `{{PROJECTS}}`; everything below stays where it is.
+
+| Domain | Location | Why it cannot move |
+|---|---|---|
+| Laravel dashboards (Kemlu: SIPAMA, SIGAP-BUP, UKPBJ, PDP, DPLD, ...) | `C:\Users\rivsy\Herd\` | Laravel Herd parked path: every folder is served as a `.test` site. Renaming one kills its site. |
+| Briefs and equity research (Ignited Research) | `C:\Users\rivsy\Downloads\Research Reports\` | Each brief is a self-contained pipeline: `content.py` -> `build.py` -> `verify.py`. |
+| AIgnited GPU worker + Wan2GP | `C:\Users\rivsy\Herd\AIgnited\` | RTX 5070, 8GB VRAM. The worker and Wan2GP cannot run at the same time. |
+| Bara workspace (tools and context, never output) | `C:\Users\rivsy\Bara\` | Has its own `CLAUDE.md`. Read it before working there. |
+
+`verify.py` is the build gate for any brief: never ship a PDF or DOCX that has not passed it.
+
 **Note:** {{OWNER_SHORT}} launches Claude Code from `{{SPAWN}}`, so this file auto-loads as the
 project rulebook. A per-project `CLAUDE.md` under `{{PROJECTS}}` does **not** auto-load — read a
 repo's own `CLAUDE.md` yourself before working in it.

@@ -13,10 +13,12 @@ type: user
 
 ## Fill these in — the agent is guessing until you do
 
-- **What he is building right now:** <one or two lines. Update when it changes.>
+- **What he is building right now:** dashboard Laravel untuk Kemlu (SIPAMA, SIGAP-BUP, UKPBJ, BUP, DPLD)
+  dan brief/equity note Ignited Research. Perinciannya ada di kartu proyek masing-masing.
 - **What he decides himself, always:** <e.g. pricing, client comms, visual direction>
 - **What he never wants to be asked about:** <e.g. formatting choices, library picks>
-- **Tools and accounts in daily use:** <hosting, git host, database, design tool>
+- **Tools and accounts in daily use:** Laravel Herd (parked path, situs `.test`), GitHub `rivsyah`,
+  Python + reportlab untuk pipeline brief, Wan2GP + GPU worker (RTX 5070), impor Claude Design.
 - **Working hours and timezone:** <so scheduled work lands at a sane hour>
 
 ## How to work with him

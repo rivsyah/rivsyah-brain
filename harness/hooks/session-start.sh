@@ -13,7 +13,7 @@
 # reported INSIDE the injected context instead, so the session knows what it is missing.
 set -uo pipefail
 
-for cand in "$HOME/claude" "$HOME/.claude/brain" "/c/claude" "C:/claude"; do
+for cand in "$HOME/brain" "$HOME/claude" "$HOME/.claude/brain" "/c/claude" "C:/claude"; do
   [ -f "$cand/.brain-env" ] && ROOT="$cand" && break
 done
 
