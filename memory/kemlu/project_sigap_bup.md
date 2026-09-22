@@ -20,3 +20,53 @@ SIGAP-BUP — Government Resource Planning Biro Umum dan Pengadaan Kemlu, dibang
 - 9 Agu 2026: adopsi pola MyIntress (DJPb Kemenkeu, dipelajari dari rekaman layar via ffmpeg contact-sheet): To-Do List per modul di dashboard, gauge Capaian IKPA (3 pilar 30/40/30) di Eksekutif, layar Karwas UP/TUP (umur TUP >30 hari + GUP revolving), Cetak BAR rekonsiliasi (window.print), pencarian menu topbar. 87 tes tetap lulus.
 - 2 Agu 2026 (ultracode): semua 22 layar fungsional — tambah Dashboard Eksekutif, Revisi DIPA (empat-mata by user_id), RUP/pemaketan (validasi kumulatif, seed 8 paket), Laporan Realisasi + Ekspor CSV (sanitasi formula), Users (matriks RBAC), Referensi, notifikasi topbar + pencarian global. Menu Timeline dihapus; "Pemaketan RUP" → "Rencana Umum Pengadaan".
 - Doc 02 §5 menyarankan React+NestJS+PostgreSQL; dipakai alternatif resmi Laravel karena mesin tanpa Docker/PostgreSQL dan pola [[project-sipama-kemlu]]/[[project-dpld-kemlu]] (semua proyek Kemlu = Laravel di Herd).
+
+## 22 Sep 2026 — keputusan: SQLite → Neon Postgres, lalu live di Cloudflare
+
+**Keputusan Aldo.** Ini membatalkan sebagian baris "Doc 02 §5" di atas: PostgreSQL dulu ditolak
+karena mesin ini tanpa Docker/PostgreSQL. Postgres terkelola menghapus alasan itu — tidak ada yang
+perlu dipasang di Windows. Stack aplikasi tetap Laravel 13 + Inertia; yang berubah hanya basis data
+dan tempat hosting. Akun Neon dan jebakannya: [[reference-neon-account]].
+
+**Alasan terkuat, ditemukan saat survei dan diverifikasi di `vendor/`:** aplikasi ini memanggil
+`lockForUpdate()` **10 kali**, dan di SQLite semuanya **tidak melakukan apa-apa**.
+`SQLiteGrammar::compileLock()` mengembalikan string kosong; `PostgresGrammar::compileLock()`
+mengembalikan `for update`. Artinya gerbang pagu `BudgetControlService` (BR-KOM-1/2/3) dan
+pengunci SoD **belum pernah benar-benar terlindungi dari dua permintaan bersamaan** — dua
+permintaan bisa sama-sama lolos cek sisa pagu lalu sama-sama commit. Pindah ke Postgres
+menyalakan kunci itu untuk pertama kalinya. Ini perbaikan kebenaran, bukan sekadar pindah host.
+
+**Konsekuensi: D1 (SQLite-nya Cloudflare) HARAM untuk aplikasi ini.** D1 tidak punya transaksi
+sama sekali, jadi ia mengulang cacat yang sedang diperbaiki, lebih parah. Basis datanya harus
+Postgres.
+
+**Jebakan migrasi SQLite→Postgres yang sudah dipetakan di kode ini:**
+- **13 `selectRaw`/`whereRaw`/`orderByRaw` + 9 `groupBy`.** Postgres mewajibkan setiap kolom
+  non-agregat ikut `GROUP BY`; SQLite tidak. Ini sumber kegagalan paling mungkin. Titik panas:
+  `AdminController` (5), `DashboardController` (3), `HandleInertiaRequests` (2, termasuk
+  `orderByRaw` aritmetika sisa pagu), `PembagianController`, `LaporanController`.
+- `LaporanController::agregat()` menyisipkan `{$kolom}` ke SQL mentah, **tetapi** nilainya berasal
+  dari peta whitelist tertutup (`bagian|jenis|akun|ppk`). Aman dari injeksi — sudah diperiksa,
+  jangan dilaporkan ulang sebagai temuan.
+- `PenyediaController:51` sudah memakai `whereRaw('lower(nama ...')`. Pola itu wajib ditiru:
+  `LIKE` di Postgres **case-sensitive**, di SQLite tidak. Pencarian yang tidak di-lower akan diam-diam
+  mengembalikan lebih sedikit baris, bukan error.
+- 10 migrasi, 27 tabel. Hanya 2 kolom `boolean` — risiko 0/1-vs-true kecil.
+- Setelah impor data mentah, **`setval()` setiap sequence**. Kalau tidak, insert pertama langsung
+  kena duplicate key. Ini jebakan Postgres paling klasik dan paling sering terlewat.
+- **`phpunit.xml` memaku `DB_CONNECTION=sqlite` + `:memory:`.** Jadi 140 tes yang lulus itu
+  **tidak membuktikan apa pun tentang Postgres**, dan khususnya tidak pernah menguji 10
+  `lockForUpdate` dalam kondisi terkunci sungguhan. Suite harus bisa dijalankan terhadap Postgres
+  sebelum migrasi disebut selesai.
+
+**Sisi Cloudflare — terverifikasi 22 Sep 2026, ini fakta yang berubah dari tahun lalu:**
+Cloudflare **Containers GA sejak 13 Apr 2026**, dan paket `workers-php` menjalankan Laravel
+**apa adanya di dalam container**, dengan Worker sebagai pintu depan. Basis data eksternal
+disambung lewat **Hyperdrive** (`WorkersPhp\Hyperdrive\HttpPgsqlPDO`), jadi Neon bisa dipakai.
+Dua syarat yang harus disebut lebih dulu: **Workers plan berbayar** (Containers tidak ada di free),
+dan `workers-php` **dikelola komunitas, bukan resmi Cloudflare maupun Laravel** — risiko nyata untuk
+sistem pemerintah. Caveat README-nya: migrasi jalan saat container boot lewat HTTP (jaga tetap
+kecil), dan satu instance container = satu pohon proses PHP.
+
+**Belum diputuskan:** region Neon, org pemilik, dan apakah data anggaran Kemlu boleh berada di
+region luar negeri. Lihat [[reference-neon-account]] jebakan 3.
