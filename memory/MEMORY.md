@@ -61,6 +61,7 @@
 ## Reference
 
 - [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga, WAJIB pin org_id), NEON_DATABASE_URL menunjuk branch `production` project SIGAP di us-east-2, ada project kembar kosong
+- [Neon CLI](shared/reference/reference_neon_cli.md) — Neon 5.0.1 + link proyek di repo brain; `neon mcp` cetak API key akun-penuh ke 6 config, `neon config init` bisa pasang zod rusak
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
 - [Ignited Research masthead](shared/reference/reference_ignited_masthead.md) — "Ignited Research · Independent Analysis" untuk semua brief; "Independent Research" sudah pensiun

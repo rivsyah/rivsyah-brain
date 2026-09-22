@@ -19,3 +19,11 @@ env.db
 # editor noise
 .DS_Store
 .obsidian/
+.neon
+.env.local
+node_modules/
+
+# Neon CLI scaffold — regenerate with `neon skills -y` / `neon mcp -y`.
+# .claude/settings.local.json carries per-machine permission grants; never track it.
+.claude/
+skills-lock.json

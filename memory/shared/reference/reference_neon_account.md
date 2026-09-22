@@ -36,27 +36,41 @@ bukan 401. Jangan salah baca 400 itu sebagai kunci mati — kuncinya hidup, para
 ## Ke mana NEON_DATABASE_URL menunjuk
 
 Project `SIGAP` di org **Rivaldo**, branch **`production`** (branch default), region `aws-us-east-2`,
-basis data `neondb`, koneksi pooled, `sslmode=require&channel_binding=require`. Isi branch itu
-±31,7 MB, jadi **ada data nyata di dalamnya**.
+**Postgres 18**, basis data `neondb`.
 
-**Tiga hal yang harus diperlakukan sebagai jebakan:**
+**Database itu KOSONG — nol tabel di skema `public`.** Diverifikasi 22 Sep 2026 lewat
+`information_schema.tables`, hasilnya `rowCount: 0`. Angka `synthetic_storage_size` 31,7 MB itu
+**katalog sistem Postgres saja**, bukan data. `active_time_seconds` dan `cpu_used_sec` keduanya 0:
+compute-nya belum pernah melayani satu query pun. Jangan pernah membaca ukuran storage Neon sebagai
+bukti ada isinya — untuk project kosong angkanya memang ±30 MB.
 
-1. **String koneksi itu mengarah ke `production`, bukan branch pengembangan.** Setiap migrasi, seed
-   atau `DROP` yang dijalankan dengan `NEON_DATABASE_URL` apa adanya langsung mengenai data hidup.
-   Buat branch dev lebih dulu (Neon membuatnya dalam hitungan detik, copy-on-write, nyaris tanpa
-   biaya), lalu simpan URL branch itu untuk pekerjaan sehari-hari.
-2. **Region `aws-us-east-2` (Ohio) salah untuk pengguna Indonesia.** Neon punya
-   `aws-ap-southeast-1` (Singapura) — project `bei` milik Dedi sudah di sana. **Region tidak bisa
-   diubah setelah project dibuat**; satu-satunya jalan adalah membuat project baru lalu memindahkan
-   data. Project ini baru berumur sehari, jadi sekarang saat termurah untuk pindah.
-3. **Ada dua project bernama `SIGAP`.** Yang kedua kosong (0 byte) dan dibuat di hari yang sama —
-   hampir pasti kembar tak disengaja. Jangan hapus tanpa perintah Aldo; penghapusan project Neon
-   tidak bisa dibatalkan.
+**Empat hal yang harus diperlakukan sebagai jebakan:**
 
-## Yang belum jelas
+1. **HARD — `pdo_pgsql` di mesin ini TIDAK BISA menyambung ke endpoint ini lewat TCP 5432.**
+   Lima varian DSN diuji, semuanya `SQLSTATE[08006] ... SSL SYSCALL error: Connection reset by peer`:
+   pooler+require, pooler+`options=endpoint`, host langsung+require, host langsung+`options=endpoint`,
+   dan verify-full. TCP 5432 sendiri terbuka (diuji `/dev/tcp`), jadi bukan firewall.
+   Dua penyebab yang terbukti:
+   - **Pooler dimatikan** di endpoint (`pooler_enabled: false`) padahal `NEON_DATABASE_URL` memakai
+     host `-pooler`. Tiga varian gugur hanya karena ini.
+   - **libpq klien 16.14 vs server Postgres 18.** Herd PHP 8.4.23 membawa libpq 16; varian host
+     langsung pun tetap direset.
 
-Kartu [[project-sigap-bup]] menulis stack SIGAP-BUP adalah **Laravel + SQLite** di Herd, dan
-menyebut PostgreSQL ditolak karena mesin ini tanpa Docker/PostgreSQL. Project Neon bernama `SIGAP`
-berisi 30 MB bertentangan dengan itu. Salah satu dari dua hal benar: arah berubah ke Postgres
-(mungkin untuk deploy Vercel), atau project Neon ini percobaan yang ditinggalkan. **Jangan ubah
-kartu SIGAP-BUP sampai Aldo memastikan yang mana.**
+   **Yang BERHASIL: SQL over HTTP.** `POST https://<endpoint-tanpa-pooler>/sql` dengan header
+   `Neon-Connection-String: <url>` menjawab normal, termasuk mengembalikan error parser Postgres
+   untuk query yang salah — bukti kredensialnya benar dan basis datanya hidup. Pakai jalur ini
+   untuk inspeksi. Tapi `php artisan migrate` **butuh** PDO/TCP, jadi jalur HTTP tidak
+   menyelamatkan migrasi.
+2. **String koneksi mengarah ke `production`, bukan branch pengembangan.** Selama masih kosong ini
+   tidak berbahaya. Begitu ada data, setiap migrasi atau seed dengan URL apa adanya langsung
+   mengenai data hidup. Buat branch dev (copy-on-write, hitungan detik) dan simpan URL branch itu.
+3. **Region `aws-us-east-2` (Ohio) salah untuk pengguna Indonesia.** Neon punya
+   `aws-ap-southeast-1` (Singapura). **Region tidak bisa diubah setelah project dibuat** — satu-satunya
+   jalan adalah project baru. Selama database masih kosong, pindah itu gratis.
+4. **Ada dua project bernama `SIGAP`.** Keduanya kosong, dibuat di hari yang sama — kembar tak
+   disengaja. Jangan hapus tanpa perintah Aldo; penghapusan project Neon tidak bisa dibatalkan.
+
+## Untuk apa project ini
+
+Aldo memutuskan 22 Sep 2026: **SIGAP-BUP pindah ke Neon Postgres, lalu live di Cloudflare.**
+Rinciannya, termasuk kenapa D1 tidak boleh dipakai untuk aplikasi ini, ada di [[project-sigap-bup]].
