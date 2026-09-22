@@ -68,7 +68,19 @@ else
   say "committed $N file(s)"
 fi
 
-G fetch --quiet "$URL" "$BRANCH" 2>&1 | scrub || die "fetch failed"
+# Repo yang baru dibuat masih KOSONG: tidak ada branch untuk di-fetch, dan itu bukan error —
+# itu justru push pertama yang disuruh SETUP.md. Tanpa cabang ini skrip mati sebelum push.
+if ! G fetch --quiet "$URL" "$BRANCH" 2>&1 | scrub; then
+  if [ -z "$(G ls-remote --heads "$URL" 2>/dev/null)" ]; then
+    say "remote masih kosong — ini push pertama"
+    G push "$URL" "HEAD:$BRANCH" 2>&1 | scrub || die "push failed"
+    G fetch --quiet "$URL" "$BRANCH" 2>&1 | scrub || true
+    [ "$(G rev-list --count FETCH_HEAD..HEAD)" = 0 ] || die "push reported success but the remote does not have it"
+    say "pushed and verified"
+    exit 0
+  fi
+  die "fetch failed"
+fi
 AHEAD="$(G rev-list --count FETCH_HEAD..HEAD)"
 BEHIND="$(G rev-list --count HEAD..FETCH_HEAD)"
 

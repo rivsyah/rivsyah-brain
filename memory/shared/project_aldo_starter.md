@@ -9,7 +9,7 @@ type: project
 Kit personal Claude Code dari **Dedi (`galohot/aldo-starter`, commit `a6ff292`)**, dipasang
 22 Sep 2026. Repo brain: `rivsyah/rivsyah-brain`. Lihat juga [[project_bara_agent]].
 
-## Enam penyimpangan dari default kit — jangan "dikembalikan"
+## Tujuh penyimpangan dari default kit — jangan "dikembalikan"
 
 1. **`BRAIN="$HOME/brain"`, bukan `$HOME/claude`.** Di Windows `$HOME/claude` menunjuk ke
    `C:\Users\rivsy\Claude` yang sudah ada (berisi `Artifacts\`), karena filesystem Windows
@@ -26,20 +26,25 @@ Kit personal Claude Code dari **Dedi (`galohot/aldo-starter`, commit `a6ff292`)*
    padahal `{{CONFIDENTIAL_BLOCK}}` memuat `{{OWNER_SHORT}}` di dalamnya, jadi token bersarang itu
    baru muncul setelah gilirannya lewat dan tercetak mentah di rulebook. Urutan iterasi array
    asosiatif bash acak, jadi bug ini muncul-hilang antar mesin.
-6. **`permissions.defaultMode` sengaja TIDAK dipasang** di `settings.json`. Template kit menulis
+6. **`brain-push.sh` dipatch** — `fetch` ke repo yang masih kosong gagal dengan
+   `couldn't find remote ref main`, dan skrip mati SEBELUM push. Artinya push pertama ke repo
+   kosong — alur yang justru disuruh SETUP.md — tidak pernah bisa jalan. Patch: kalau fetch gagal
+   DAN `ls-remote --heads` kosong, itu push pertama, bukan error.
+7. **`permissions.defaultMode` sengaja TIDAK dipasang** di `settings.json`. Template kit menulis
    `"default"` untuk `AUTONOMY=normal`, yang akan memaksa tiap sesi mulai di mode tanya-dulu dan
    menimpa pilihan mode Aldo sendiri. `deny` juga kosong karena `CONFIDENTIAL_DIRS` kosong.
    Salinan settings yang dipakai: `~/brain/harness/settings.riv.json`.
 
-**Patch 2–5 hilang kalau `bootstrap.sh --update` dijalankan** — skrip itu `rm -rf` lalu menyalin
+**Patch 2–6 hilang kalau `bootstrap.sh --update` dijalankan** — skrip itu `rm -rf` lalu menyalin
 ulang `bin/`, `rules/`, `harness/`, `framework/`. Pasang ulang patch-nya setelah tiap `--update`.
 
-## Empat bug hulu — laporkan ke Dedi
+## Lima bug hulu — laporkan ke Dedi
 
-Patch 2–5 semuanya bug di kit, bukan salah konfigurasi. Patch 2–4 kena ke siapa pun yang memasang
+Patch 2–6 semuanya bug di kit, bukan salah konfigurasi. Patch 2–4 kena ke siapa pun yang memasang
 di Windows atau memakai `BRAIN` selain `$HOME/claude`: hook-hook itu menghardcode lokasi brain
 padahal `BRAIN` sudah ada di `agent.conf` dan di `.brain-env`. Patch 5 kena ke semua platform,
-tapi munculnya tidak pasti karena bergantung urutan iterasi array asosiatif.
+tapi munculnya tidak pasti karena bergantung urutan iterasi array asosiatif. Patch 6 kena ke
+SETIAP pemasangan baru, di platform mana pun: tidak ada yang bisa menyelesaikan push pertamanya.
 
 ## Memory
 
