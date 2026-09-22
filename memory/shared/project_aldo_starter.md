@@ -62,11 +62,16 @@ Dua entri indeks lama menunjuk ke kartu yang sudah hilang dari disk — `project
 
 | Terpasang | Belum |
 |---|---|
-| `GITHUB_PAT`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `VERCEL_TOKEN` | `NEON_API_KEY`, `NEON_DATABASE_URL`, `ANTHROPIC_API_KEY` |
+| `GITHUB_PAT`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `VERCEL_TOKEN`, `NEON_API_KEY`, `NEON_DATABASE_URL` | `ANTHROPIC_API_KEY` |
 
-`VERCEL_TOKEN` diuji hidup 22 Sep 2026 dengan
-`~/brain/bin/envdb.sh run VERCEL_TOKEN -- vercel whoami` → akun `rivsyah`. Vercel CLI 54.18.7
-terpasang global lewat npm di `C:\Program Files\nodejs`.
+Dua diuji hidup 22 Sep 2026, keduanya tanpa pernah mencetak nilainya:
+
+- `VERCEL_TOKEN` → `envdb.sh run VERCEL_TOKEN -- vercel whoami` → akun `rivsyah`. Vercel CLI
+  54.18.7 terpasang global lewat npm di `C:\Program Files\nodejs`.
+- `NEON_API_KEY` → `GET /api/v2/users/me` HTTP 200, akun `rivsyah@gmail.com`. Neon CLI (`neonctl`)
+  dan `psql` **tidak** terpasang di mesin ini; API REST-nya dipakai langsung lewat `curl`.
+  Topologi akun, dan tiga jebakannya, ada di [[reference-neon-account]] — baca sebelum menyentuh
+  Neon, karena kunci itu juga melihat org milik pihak ketiga.
 
 Tambah lewat `~/brain/bin/envdb-setup.sh` **di terminal biasa**, jangan di dalam sesi Claude Code —
 skripnya sendiri menolak jalan tanpa `/dev/tty`, dan apa pun yang diketik di sesi masuk transkrip.
