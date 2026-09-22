@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "deny": [
+@@DENY@@
+    ],
+    "defaultMode": "@@MODE@@"
+  },
+  "model": "opus",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$HOME/.claude/hooks/block-confidential.sh\"",
+            "shell": "bash",
+            "statusMessage": "Checking the confidential-path guard"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$HOME/.claude/hooks/session-start.sh\"",
+            "shell": "bash",
+            "statusMessage": "Refreshing the brain and loading the memory index",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  },
+  "autoUpdatesChannel": "latest",
+  "theme": "dark"
+}

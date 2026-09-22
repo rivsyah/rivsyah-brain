@@ -1,0 +1,70 @@
+# --- secrets / credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials/
+secrets/
+
+# --- node / bun / pnpm ---
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.bun/
+
+# --- builds / caches ---
+dist/
+build/
+out/
+.next/
+.astro/
+.svelte-kit/
+.remix/
+.turbo/
+.vercel/
+.wrangler/
+.cache/
+*.tsbuildinfo
+
+# --- python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- rust ---
+target/
+Cargo.lock.bak
+
+# --- editor / OS ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- ai_context tracking choice (FRAMEWORK.md par. 4.10) — pick ONE and record it at scaffold ---
+# Framework default: TRACK .claude/ai_context so plans travel with the code. For that, replace the
+# `.claude/` line below with just:   .claude/settings.local.json
+# Opt-out (orgs treating intent+design as IP): keep ALL of .claude/ local-only and back it up
+# out-of-band — an untracked tree has NO remote copy. That opt-out is the safe default shipped here:
+.claude/
+
+# --- logs / data ---
+*.log
+logs/
+*.sqlite
+*.sqlite-journal
+*.db-journal
+
+# --- local artifacts ---
+tmp/
+.tmp/
+scratch/

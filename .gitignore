@@ -1,0 +1,21 @@
+# credentials — never tracked, never pushed
+env.db
+*.env
+.env
+.credentials.json
+*.pem
+*.key
+
+# per-machine state, written by bootstrap and brain-build
+.machine
+.brain-env
+.build-backups/
+
+# your own binding appendix stays private to your machines; it is fine to track it in THIS
+# private repo, so this line is commented out on purpose. Uncomment it if you ever make the
+# repo public — which you should not.
+# framework/BINDING.md
+
+# editor noise
+.DS_Store
+.obsidian/

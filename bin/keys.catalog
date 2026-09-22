@@ -1,0 +1,21 @@
+# The credential catalogue. envdb-setup.sh and KEYS.md both read this file.
+#
+# One service per line, fields separated by |
+#   KEY | required|optional | service name | what it unlocks | where to get it | steps, separated by ::
+#
+# Add your own lines as you pick up services. Keep the KEY name exactly as the tool expects it,
+# because envdb.sh run passes it into the environment under that name.
+
+GITHUB_PAT|required|GitHub|Syncing your brain repo. Nothing else here works without it.|https://github.com/settings/personal-access-tokens|Log in to GitHub :: Settings (your avatar, top right) -> Developer settings -> Personal access tokens :: Choose "Tokens (classic)" -> Generate new token (classic) :: Tick the "repo" scope, nothing else :: Set the expiry you want, then Generate :: Copy it now — GitHub shows it once
+
+CLOUDFLARE_API_TOKEN|optional|Cloudflare|Deploying Workers and Pages, and using R2 storage, D1 and KV from a script.|https://dash.cloudflare.com/profile/api-tokens|Log in to the Cloudflare dashboard :: Open My Profile -> API Tokens :: Create Token :: Start from the "Edit Cloudflare Workers" template, or build a custom one :: Create, then copy the token — it is shown once
+
+CLOUDFLARE_ACCOUNT_ID|optional|Cloudflare|The account the token acts on. Wrangler asks for it constantly.|https://dash.cloudflare.com|Log in to the Cloudflare dashboard :: Pick any domain, or open Workers & Pages :: The Account ID is in the right-hand sidebar, or in the URL after /accounts/ :: Copy it. It is an ID, not a secret, but it belongs in the same file so nothing is hard-coded
+
+NEON_API_KEY|optional|Neon|Creating and managing Postgres databases and branches from a script.|https://console.neon.tech/app/settings/api-keys|Log in to the Neon console :: Open Account settings -> API keys :: Create new API key, name it after this machine :: Copy it — it is shown once
+
+NEON_DATABASE_URL|optional|Neon|The connection string your app actually uses.|https://console.neon.tech|Open your project in the Neon console :: Click Connect, or open the Connection Details panel :: Copy the full postgresql://... string, with the password in it :: Use a separate branch for development, so a mistake never touches production data
+
+VERCEL_TOKEN|optional|Vercel|Deploying from the command line and from CI.|https://vercel.com/account/tokens|Log in to Vercel :: Open Account Settings -> Tokens :: Create Token, give it a name and a scope :: Copy it — it is shown once :: Note: Cloudflare and Vercel do the same job for most sites. Pick one per project and say which in the project's DECISIONS.md
+
+ANTHROPIC_API_KEY|optional|Anthropic|Calling Claude from inside an app you build. Claude Code itself does NOT need this — it uses your subscription login.|https://console.anthropic.com/settings/keys|Log in to the Anthropic console :: Open Settings -> API keys :: Create Key :: Copy it — it is shown once :: This is billed per use, separately from a Claude subscription
