@@ -54,7 +54,7 @@
 
 ### AIgnited, personal, agent
 
-- [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 5 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan
+- [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
 - [Bara (agent)](shared/project_bara_agent.md) — agent all-in-one bernama Bara, workspace di ~/Bara; ~/Herd sengaja tidak di-rename (parked path Herd)
 

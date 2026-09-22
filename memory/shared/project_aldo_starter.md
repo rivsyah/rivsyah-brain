@@ -57,8 +57,20 @@ Dua entri indeks lama menunjuk ke kartu yang sudah hilang dari disk — `project
 
 ## Kredensial
 
-`~/brain/env.db` (chmod 600, tidak pernah di-commit, tidak ikut remote) — baru berisi `GITHUB_PAT`.
-Tambah lewat `~/brain/bin/envdb-setup.sh` **di terminal biasa**, jangan di dalam sesi Claude Code.
+`~/brain/env.db` (chmod 600, tidak pernah di-commit, tidak ikut remote). Isinya per 22 Sep 2026 —
+**nama kunci saja, nilainya tidak pernah ditulis di mana pun:**
+
+| Terpasang | Belum |
+|---|---|
+| `GITHUB_PAT`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `VERCEL_TOKEN` | `NEON_API_KEY`, `NEON_DATABASE_URL`, `ANTHROPIC_API_KEY` |
+
+`VERCEL_TOKEN` diuji hidup 22 Sep 2026 dengan
+`~/brain/bin/envdb.sh run VERCEL_TOKEN -- vercel whoami` → akun `rivsyah`. Vercel CLI 54.18.7
+terpasang global lewat npm di `C:\Program Files\nodejs`.
+
+Tambah lewat `~/brain/bin/envdb-setup.sh` **di terminal biasa**, jangan di dalam sesi Claude Code —
+skripnya sendiri menolak jalan tanpa `/dev/tty`, dan apa pun yang diketik di sesi masuk transkrip.
+Cek isi tanpa mengetik apa pun: `~/brain/bin/envdb-setup.sh --check` (hanya mencetak nama kunci).
 `brain-push.sh` merakit URL berisi token saat jalan, jadi token tidak pernah mendarat di
 `.git/config` — kebalikan dari PAT yang sempat ditemukan tertanam di remote
 `Herd\updated smst 1 pbjp kemlu`.
