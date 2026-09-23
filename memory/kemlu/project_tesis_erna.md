@@ -45,4 +45,19 @@ Hasilnya ada di `Presentasi_Thesis_Perwakilan_RI_v2.pptx`. File asli tidak diuba
 - Slide 21: keterangan EBO sekarang "dikonsepkan sebagai rasio output terhadap input anggaran
   (Mardiasmo, 2018); diukur dengan 7 item kuesioner skala Likert 1–5". Kotak navy ditinggikan sedikit.
 
+**Penelitian terdahulu (23 Sep 2026):** Aldo mengganti nama v2 menjadi
+`Presentasi_Thesis_Perwakilan_RI_Revisi.pptx` dan menghapus file asli. Ada 2 slide baru setelah Sintesis Teori,
+jadi total sekarang 31 slide:
+- Slide 21 "Penelitian Terdahulu yang Relevan": tabel empat studi.
+- Slide 22 "Perbandingan dengan Penelitian Terdahulu": matriks 7 aspek × 5 kolom, kolom "Penelitian ini" berlatar navy.
+Agenda slide 2 dan subjudul slide 18 ikut ditambah "penelitian terdahulu". Notes untuk kedua slide baru sudah diisi.
+Empat studinya:
+- Allayannis & Ofek (2001), JIMF. File di Downloads adalah working paper 1997 hasil scan tanpa text layer.
+- Wang, Hao & Sun (2024), Pacific-Basin Finance Journal 88. File di Downloads adalah preprint SSRN 4429126.
+- Christanto & Wijayanti (2023), Owner 7(4): PNBP layanan konsuler di 5 Perwakilan RI, kualitatif.
+- Putri & Harahap (2024), Owner 8(3): pengendalian internal pelaporan keuangan di SAKTI Kemenlu, kualitatif.
+Tiga studi terakhir BELUM ada di Daftar Pustaka proposal. Proposal juga belum punya subbab Penelitian Terdahulu.
+Jebakan teknis: notes master deck ini tidak punya placeholder isi, jadi python-pptx tidak bisa membuat notes baru.
+Notes harus dibuat dengan menyalin notesSlide lewat XML.
+
 Status: deck selesai. Semua cacat di PDF belum diperbaiki. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
