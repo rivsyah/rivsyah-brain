@@ -31,7 +31,7 @@
 - [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, seed Wasdit BUM 2026, gerbang pagu + audit
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
-- [Tesis Erna](kemlu/project_tesis_erna.md) — deck ujian proposal S2 Akuntansi soal hedging/kurs Perwakilan RI; Agency Theory ADA di Bab 2 tapi tak dipakai di hipotesis; daftar cacat PDF
+- [Tesis Erna](kemlu/project_tesis_erna.md) — deck ujian proposal S2 Akuntansi soal hedging/kurs Perwakilan RI; Agency Theory dihapus dari deck (v2) atas keputusan Aldo; daftar cacat PDF belum diperbaiki
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 

@@ -34,4 +34,13 @@ Cacat di PDF yang ditemukan (bukan di deck):
 Deck: slide 21 menulis EBO "diukur dari rasio output/input". Ini keliru, karena EBO diukur dengan 7 item
 persepsi Likert.
 
-Status: baru review. Belum ada file yang diubah.
+**Keputusan Aldo (23 Sep 2026):** Agency Theory di proposal hanya menjelaskan tanggung jawab pengelola
+APBN kepada rakyat, bukan dasar hipotesis. Karena itu teori ini TIDAK ditampilkan di deck.
+Hasilnya ada di `Presentasi_Thesis_Perwakilan_RI_v2.pptx`. File asli tidak diubah.
+- Slide 19: empat kartu jadi tiga kolom "Tiga Landasan Teori", memakai grid yang sama dengan slide 28.
+- Slide 20: baris Agency dihapus, sisa baris digeser ke atas.
+- Slide 2 dan 18: "Empat" jadi "Tiga".
+- Notes slide 19: berisi jawaban siap pakai kalau penguji menanyakan Agency Theory. Notes slide 20: "Ketiga teori".
+
+Status: yang belum dikerjakan adalah slide 21 (salah menyebut EBO "diukur dari rasio") dan semua cacat
+di PDF. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
