@@ -12,3 +12,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-09-23T06:24Z  Tesis Erna: Agency Theory dihapus dari deck -> Downloads\Presentasi_Thesis_Perwakilan_RI_v2.pptx (slide 2/18/19/20 + notes 19/20); asli tidak disentuh. Render via PowerPoint COM.
 - 2026-09-23T06:27Z  Tesis Erna: slide 21 v2 diperbaiki (EBO dikonsepkan sebagai rasio, diukur 7 item Likert); deck v2 selesai.
 - 2026-09-23T07:18Z  Tesis Erna: +2 slide penelitian terdahulu (tabel 4 studi + matriks posisi) di Downloads\Presentasi_Thesis_Perwakilan_RI_Revisi.pptx, kini 31 slide; validator lolos, render PowerPoint dicek.
+- 2026-09-23T07:53Z  Tesis Erna: naskah presentasi docx dibuat -> Downloads\Naskah_Presentasi_Ujian_Proposal_Erna.docx (12 hlm, ~16 menit, lampiran Q&A + perbaikan proposal); validator lolos, render Word dicek.
