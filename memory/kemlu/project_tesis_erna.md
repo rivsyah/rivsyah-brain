@@ -62,7 +62,10 @@ Notes harus dibuat dengan menyalin notesSlide lewat XML.
 
 **Naskah (23 Sep 2026):** `Downloads\Naskah_Presentasi_Ujian_Proposal_Erna.docx`, 12 halaman, 1.731 kata,
 sekitar 16 menit dengan kecepatan 120 kata per menit. Satu bagian per slide (31 slide), dengan waktu kumulatif.
-Lampiran A berisi 8 antisipasi pertanyaan penguji. Lampiran B berisi 8 perbaikan proposal.
+Lampiran A berisi 8 antisipasi pertanyaan penguji. Lampiran B berisi 8 pertanyaan tersulit, masing-masing dengan alasan mengapa sulit, jawaban, dan hal yang perlu dilengkapi. Lampiran C berisi 9 perbaikan proposal. Total 16 halaman.
+**Temuan paling berat (Lampiran B no. 1):** item kuesioner FNT5, FNT7, FAA6, dan KIH7 menyebut efisiensi atau pemborosan. Artinya, item variabel bebas memuat variabel terikat. Keempat item ini wajib dirumuskan ulang sebelum kuesioner disebar.
+Titik lemah lain: model hanya pengaruh langsung, padahal konsep fit dalam Contingency Theory menyiratkan moderasi (hlm. 37 juga memakai bahasa moderasi). Belum ada pembahasan common method bias. Angka 265 tidak cocok dengan 2 × 132 = 264. Kriteria uji t belum memeriksa arah koefisien.
+Jebakan: `validate.py` gagal pada docProps/core.xml karena tidak bisa mengambil dc.xsd dari internet. Itu masalah jaringan, bukan cacat dokumen.
 Dibangun dengan docx-js (npm lokal di scratchpad) dan dirender lewat Word COM (`ExportAsFixedFormat`) lalu PyMuPDF.
 
-Status: deck dan naskah selesai. Semua cacat di PDF belum diperbaiki, dan daftarnya ada di Lampiran B naskah. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
+Status: deck dan naskah selesai. Semua cacat di PDF belum diperbaiki, dan daftarnya ada di Lampiran C naskah. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.

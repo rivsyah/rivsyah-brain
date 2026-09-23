@@ -13,3 +13,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-09-23T06:27Z  Tesis Erna: slide 21 v2 diperbaiki (EBO dikonsepkan sebagai rasio, diukur 7 item Likert); deck v2 selesai.
 - 2026-09-23T07:18Z  Tesis Erna: +2 slide penelitian terdahulu (tabel 4 studi + matriks posisi) di Downloads\Presentasi_Thesis_Perwakilan_RI_Revisi.pptx, kini 31 slide; validator lolos, render PowerPoint dicek.
 - 2026-09-23T07:53Z  Tesis Erna: naskah presentasi docx dibuat -> Downloads\Naskah_Presentasi_Ujian_Proposal_Erna.docx (12 hlm, ~16 menit, lampiran Q&A + perbaikan proposal); validator lolos, render Word dicek.
+- 2026-09-23T08:13Z  Tesis Erna: naskah docx + Lampiran B 'Pertanyaan Tersulit' (8 soal); temuan baru: item FNT5/FNT7/FAA6/KIH7 memuat variabel Y. Naskah kini 16 hlm.
