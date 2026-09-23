@@ -10,7 +10,12 @@ https://claude.ai/code/artifact/10c8dee2-6796-4133-a964-edb49980adc1
 
 Isi: catatan penggunaan, SPK (kop Kemlu + [Satker]), Lampiran I rincian harga, Lampiran II Syarat Umum (23 angka),
 Adendum SPK (jenis A volume/nilai, B jadwal, C pemberian kesempatan, D administratif), lampiran adendum + daftar periksa.
-Belum ada versi .docx — ekspor kalau Aldo minta.
+Versi Word (23 Sep 2026): `C:\Users\rivsy\Documents\Template SPK dan Adendum SPK - Barang Jasa Lainnya.docx`
+(mesin ini). 13 hlm A4, dibuat ulang dengan docx-js, BUKAN ekspor mentah Claude Doc. Tambahan dibanding Doc:
+isian wajib berlatar kuning, pilihan berlatar biru muda, kaki halaman paraf PPK/Penyedia, nomor halaman mulai
+dari 1 di SPK dan di Adendum, lampiran adendum landscape + blok tanda tangan, daftar periksa jadi halaman
+terpisah khusus PPK. Doc dan .docx sekarang dua salinan terpisah: edit di satu tidak ikut ke yang lain.
+Cara render/cek dokumen di mesin ini: [[reference-office-render]].
 
 Fakta yang sudah dicek live (23 Sep 2026) — pakai ini, jangan riset ulang:
 - Pasal 28 ayat (4) Perpres 16/2018 jo. Perpres 46/2025: SPK untuk Barang/Jasa Lainnya > Rp50 jt s.d. Rp200 jt;
