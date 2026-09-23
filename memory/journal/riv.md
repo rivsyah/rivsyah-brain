@@ -10,3 +10,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-09-22T14:51Z  Hapus C:\Users\rivsy\Herd\sipama-next (port Next.js SIPAMA) atas permintaan Aldo. sipama.test dan sipama-app.test diverifikasi masih 200. Kartu SIPAMA ditandai: port Next.js dibatalkan, jangan diulang.
 - 2026-09-23T06:16Z  Review deck ujian proposal tesis Erna (Downloads\Presentasi_Thesis_Perwakilan_RI.pptx) vs PDF proposal: Agency Theory ada di 2.1.1 tapi tak dipakai di hipotesis; daftar cacat PDF di kartu kemlu/project_tesis_erna.md. Mesin ini tak punya pypdf/python-pptx/poppler; pakai venv sementara di scratchpad.
 - 2026-09-23T06:24Z  Tesis Erna: Agency Theory dihapus dari deck -> Downloads\Presentasi_Thesis_Perwakilan_RI_v2.pptx (slide 2/18/19/20 + notes 19/20); asli tidak disentuh. Render via PowerPoint COM.
+- 2026-09-23T06:27Z  Tesis Erna: slide 21 v2 diperbaiki (EBO dikonsepkan sebagai rasio, diukur 7 item Likert); deck v2 selesai.

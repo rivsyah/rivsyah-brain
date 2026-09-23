@@ -42,5 +42,7 @@ Hasilnya ada di `Presentasi_Thesis_Perwakilan_RI_v2.pptx`. File asli tidak diuba
 - Slide 2 dan 18: "Empat" jadi "Tiga".
 - Notes slide 19: berisi jawaban siap pakai kalau penguji menanyakan Agency Theory. Notes slide 20: "Ketiga teori".
 
-Status: yang belum dikerjakan adalah slide 21 (salah menyebut EBO "diukur dari rasio") dan semua cacat
-di PDF. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
+- Slide 21: keterangan EBO sekarang "dikonsepkan sebagai rasio output terhadap input anggaran
+  (Mardiasmo, 2018); diukur dengan 7 item kuesioner skala Likert 1–5". Kotak navy ditinggikan sedikit.
+
+Status: deck selesai. Semua cacat di PDF belum diperbaiki. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
