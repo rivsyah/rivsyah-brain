@@ -60,4 +60,9 @@ Tiga studi terakhir BELUM ada di Daftar Pustaka proposal. Proposal juga belum pu
 Jebakan teknis: notes master deck ini tidak punya placeholder isi, jadi python-pptx tidak bisa membuat notes baru.
 Notes harus dibuat dengan menyalin notesSlide lewat XML.
 
-Status: deck selesai. Semua cacat di PDF belum diperbaiki. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
+**Naskah (23 Sep 2026):** `Downloads\Naskah_Presentasi_Ujian_Proposal_Erna.docx`, 12 halaman, 1.731 kata,
+sekitar 16 menit dengan kecepatan 120 kata per menit. Satu bagian per slide (31 slide), dengan waktu kumulatif.
+Lampiran A berisi 8 antisipasi pertanyaan penguji. Lampiran B berisi 8 perbaikan proposal.
+Dibangun dengan docx-js (npm lokal di scratchpad) dan dirender lewat Word COM (`ExportAsFixedFormat`) lalu PyMuPDF.
+
+Status: deck dan naskah selesai. Semua cacat di PDF belum diperbaiki, dan daftarnya ada di Lampiran B naskah. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
