@@ -25,10 +25,42 @@ Diverifikasi hidup dengan `GET /api/v2/users/me` → HTTP 200.
 | **Rivaldo** (pribadi) | dua project bernama `SIGAP`, keduanya `aws-us-east-2`, dibuat 22 Sep 2026 |
 | **M. Dedi** | project `bei` di `aws-ap-southeast-1` — **milik pihak ketiga** |
 
-**HARD — kunci ini melihat org Dedi.** Satu API key memberi akses ke ketiga org. Setiap skrip yang
-memakai `NEON_API_KEY` **wajib menyebut `org_id` atau `project_id` secara eksplisit**. Jangan pernah
-menjalankan operasi yang "daftar semua project lalu kerjakan semuanya" — itu akan menyentuh basis
-data orang lain. Ini kasus nyata dari absolut isolasi scope.
+**HARD — kunci ber-scope akun melihat org Dedi.** Satu API key akun memberi akses ke ketiga org.
+Setiap skrip yang memakai `NEON_API_KEY` **wajib menyebut `org_id` atau `project_id` secara
+eksplisit**. Jangan pernah menjalankan operasi yang "daftar semua project lalu kerjakan semuanya" —
+itu akan menyentuh basis data orang lain. Ini kasus nyata dari absolut isolasi scope.
+
+**Ada jalan teknis, bukan cuma disiplin (ditemukan 26 Sep 2026).** `neon api-keys create` menerima
+`--org-id` dan `--project-id`. Kunci ber-scope org atau project secara **struktural** tidak bisa
+menyentuh org lain — batasnya ikut di kredensialnya, bukan bergantung pada tiap skrip berkelakuan
+benar. Aturan "wajib sebut org_id" di atas adalah kontrol disiplin dan tetap berlaku selama masih ada
+kunci akun; ganti kuncinya dan aturan itu jadi otomatis. Bonus: jebakan `GET /api/v2/projects` →
+HTTP 400 `org_id is required` di bawah ikut hilang.
+
+Untuk kerja sehari-hari pilih **org-scoped**, bukan project-scoped. Kunci project-scoped tidak bisa
+membuat project, dan kamu masih mungkin perlu bikin project baru di `aws-ap-southeast-1` (lihat
+jebakan region di bawah).
+
+**Status kunci per 26 Sep 2026:**
+
+| Kunci | Scope | Di mana | Melihat org Dedi? |
+|---|---|---|---|
+| id 3356515 (MCP lama) | akun | 6 config agent | **dicabut 26 Sep 2026** |
+| id 3366951 (MCP baru) | project `tiny-pine-06410895`, read-only | `~/.claude.json` saja | tidak — aman |
+| `Bara`, id 3356477 | **akun** | `env.db` | **ya — masih terbuka** |
+
+Kunci `Bara` masih ber-scope akun. Posisinya lebih benar karena tinggal di `env.db` dan dipakai dari
+IP mesin ini sendiri, tapi ia tetap melihat `bei` milik Dedi. Rencana penggantinya:
+
+```
+neon api-keys create --name bara-rivaldo --org-id <org Rivaldo>
+neon api-keys revoke 3356477
+```
+
+lalu tulis kunci baru ke `env.db` lewat `~/brain/bin/envdb-setup.sh` **di terminal Aldo sendiri**,
+jangan di sesi agent — apa pun yang diketik di sesi masuk transkrip. Belum dikerjakan per 26 Sep 2026.
+
+Detail jebakan CLI-nya ada di [[reference-neon-cli]].
 
 Catatan API: `GET /api/v2/projects` **tanpa** `org_id` menjawab HTTP 400 `org_id is required`,
 bukan 401. Jangan salah baca 400 itu sebagai kunci mati — kuncinya hidup, parameternya yang kurang.
