@@ -18,6 +18,10 @@
 - 🟡 26 Sep 2026 — Tapi **aplikasi SIGAP-BUP belum pindah**: `Herd\sigap-bup\.env` masih
   `DB_CONNECTION=sqlite`. Skema sudah di Postgres (28 tabel), aplikasinya belum menunjuk ke sana.
   Lihat [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
+- 🔴 26 Sep 2026 — **`Herd\sigap-bup` TIDAK punya git**, dan ada `.git` nyasar di `C:\Users\rivsy`
+  tanpa `.gitignore` yang mengklaim `.ssh` + `env.db` + `.claude.json`. Belum bocor (0 commit, 0 file
+  terlacak), tapi migrasi Postgres tanpa rollback itu taruhan. Bereskan sebelum lanjut:
+  [Git nyasar di home](shared/ops/reference_stray_git_home.md).
 - 🔵 26 Sep 2026 — **SIGAP-BUP pindah ke Postgres, SEDANG BERJALAN, di-pause Aldo.** Project Neon
   baru `sigap-bup` / `rapid-lab-46810989` (org AIgnited, ap-southeast-1, **PG17**) sudah dibuat dan
   **10 migrasi lolos**. Penyebab blocker lama sudah pasti: libpq 16 tidak bisa bicara dengan PG18.
@@ -43,7 +47,7 @@
 
 ### Kemlu — dashboard Laravel (`C:\Users\rivsy\Herd\`)
 
-- [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — Dashboard Logistik Diplomatik (TongDip Monitor) di Herd\dpld-kemlu, dari Claude Design
+- [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
 - [SIPAMA Kemlu](kemlu/project_sipama_kemlu.md) — Dashboard Sistem Informasi Pengamanan (9 modul) di Herd\sipama → sipama.test
 - [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, seed Wasdit BUM 2026, gerbang pagu + audit
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
@@ -81,6 +85,7 @@
 
 - [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga); rotasi selesai 26 Sep: NOL kunci ber-scope akun, `env.db` pakai kunci org AIgnited; scope kunci ikut org PROJECT, bukan org pemilik; kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; login CLI OAuth tetap akun-penuh jadi `org_id` tetap wajib; `NEON_DATABASE_URL` sudah benar + terbukti jalan lewat pdo_pgsql; branch live bernama `main` bukan `production`; KOREKSI: host `-pooler` tidak perlu dibuang dan `pooler_enabled` bukan prediktor konektivitas — pdo_pgsql gagal di PG18 karena libpq 16, dan jalan mulus di PG17
 - [Neon CLI](shared/reference/reference_neon_cli.md) — Neon 5.0.1; `neon mcp -y` bawaan cetak API key akun-penuh ke 6 config — pakai `--agent --project-id --read-only`, dan `-y` bisa PAKAI ULANG kunci lama; `neon config init` bisa pasang zod rusak
+- [Git nyasar di home](shared/ops/reference_stray_git_home.md) — **BAHAYA LATEN**: ada `.git` di `C:\Users\rivsy` (0 commit, tanpa .gitignore) yang mengklaim `.ssh`, `env.db`, `.claude.json`; dan `Herd\sigap-bup` TIDAK punya version control sendiri
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
 - [Ignited Research masthead](shared/reference/reference_ignited_masthead.md) — "Ignited Research · Independent Analysis" untuk semua brief; "Independent Research" sudah pensiun
