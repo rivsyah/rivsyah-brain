@@ -57,7 +57,6 @@
 - [Equity Research Series](research/project_equity_research_series.md) — seri sell-side Ignited (BBCA/INDY/BMRI/RANS); pipeline content.py→build.py→verify.py + jebakan reportlab
 - [BBCA Company Focus](research/project_bbca_company_focus.md) — equity note "The CASA Dividend"; MODEL dict + verify.py 56 checks
 - [The Landlord That Rents](research/project_landlord_that_rents.md) — brief 34pp menilai kertas kerja BLU Aset & Dana Diplomasi Kemlu; "Retention Agenda"
-- [From Rulemaker to Buyer](research/project_bpp_procurement.md) — LKPP→Badan Pengadaan Pemerintah, EN edisi-2 37pp; klaim Rp360trn dibantah, basis terukur Rp25,69trn
 - [The Seventy-Dollar Budget](research/project_seventy_dollar_budget.md) — Indonesia Outlook 2026 v2 35pp; enam asumsi APBN 2026 jebol, "Absorption Agenda"
 - [The Clock and the Ledger](research/project_clock_and_ledger.md) — scorecard Aschenbrenner 36pp, suara CIO hedge fund; "Four Ledgers"
 - [The Next Test](research/project_next_test_2027.md) — brief El Niño ketiga, dwibahasa satu folder; "Lead-Time Agenda", membuka dengan skor call sendiri
@@ -89,6 +88,13 @@
 - [Impor Claude Design](shared/reference/reference_design_login.md) — DesignSync bisa kedaluwarsa di tengah sesi; hanya /design-login dari terminal interaktif yang memulihkan
 
 ## Archive
+
+- **From Rulemaker to Buyer** (brief LKPP→Badan Pengadaan Pemerintah) — **dihapus atas
+  permintaan Aldo, 26 Sep 2026.** Folder `Research Reports\Rulemaker-to-Buyer` dipindah ke
+  Recycle Bin (89 berkas, 18 MB, termasuk PDF 37 hlm + deck 16 slide); kartunya dicabut.
+  Jebakan pipeline-nya diselamatkan ke
+  [The Seventy-Dollar Budget](research/project_seventy_dollar_budget.md) karena brief itu
+  fork dari folder tersebut dan pipeline-nya sama.
 
 <!-- Kartu HILANG dari disk, hanya tersisa barisnya di indeks lama — tulis ulang kalau masih perlu:
      project_pdp_kemlu      — Sistem Terpadu Diplomasi Pengadaan+VMS, Herd\pdp-kemlu → pdp-kemlu.test, 4 peran + gerbang KPA

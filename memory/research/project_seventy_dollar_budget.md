@@ -65,3 +65,24 @@ RDG hold-at-5.75% and the RAPBN 2027 ICP-band test) in a "What would change our 
 35pp. This v2 edition supersedes v1 for circulation. v2 gate traps: CSS `text-transform:uppercase`
 changes extracted PDF text (match case-insensitively), and reference markers should be detected by
 PyMuPDF's superscript flag, not font size.
+
+**Jebakan pipeline yang diwarisi dari brief BPP (fork dari folder ini, 15 Ags–3 Sep 2026, folder
+brief-nya sudah dihapus).** Empat cacat render yang kena ke pipeline `content.py → charts.py →
+build.py → verify.py` ini, bukan hanya ke brief itu:
+
+- **`S.note()` wajib membungkus teks.** `savefig.bbox="tight"` membiarkan nota sumber yang panjang
+  melebarkan kanvas SVG melewati lebar figure 7,1 inci. `figure svg{width:100%}` lalu mengecilkan
+  seluruh eksibit agar notanya muat — jadi grafiknya yang menyusut, bukan teksnya. Enam dari tiga
+  belas eksibit tampil di 60–70% ukuran sebelum pembungkus dipasang di `style.py`.
+- **`Circle` di koordinat axes menggambar elips.** Ruang axes tidak isotropik pada kanvas W×H;
+  radius y harus dikali `W/H`. Pakai `Ellipse(w, h*(W/H))`.
+- **`tr.grp` mengubah selnya jadi huruf besar.** Kelas itu membawa `text-transform:uppercase`,
+  sehingga baris total `Rp20–58trn` terbaca `RP20–58TRN` di render maupun di teks yang diekstrak
+  verify. Tambahkan `tr.total` untuk penekanan tanpa transform.
+- **`.kpi .t .k` dan `.v` mewarisi `text-align:justify` dari `body`.** Label huruf besar pendek
+  terentang melintasi ubinnya ("PROCUREMENT    SPEND CITED"). Keduanya butuh `text-align:left`.
+
+Satu pola yang layak ditiru: kalau angka inti sebuah brief adalah **konstruksi penulis** dan bukan
+data terbit, jadikan label kejujurannya bagian dari gerbang build — `verify.py` di brief BPP gagal
+kalau lima frasa penanda hilang dari PDF (asumsi dinyatakan, catatan tanpa-data-primer, caveat sub
+judice, dan seterusnya).
