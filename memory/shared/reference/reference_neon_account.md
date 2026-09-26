@@ -50,15 +50,23 @@ jebakan region di bawah).
 | `Bara`, id 3356477 | **akun** | `env.db` | **ya — masih terbuka** |
 
 Kunci `Bara` masih ber-scope akun. Posisinya lebih benar karena tinggal di `env.db` dan dipakai dari
-IP mesin ini sendiri, tapi ia tetap melihat `bei` milik Dedi. Rencana penggantinya:
+IP mesin ini sendiri, tapi ia tetap melihat `bei` milik Dedi. Rencana penggantinya, **dengan urutan
+ini**:
 
-```
-neon api-keys create --name bara-rivaldo --org-id <org Rivaldo>
-neon api-keys revoke 3356477
-```
+1. `neon api-keys create --name bara-rivaldo --org-id <org Rivaldo>` — kunci tampil sekali, salin.
+2. `~/brain/bin/envdb-setup.sh NEON_API_KEY` → jawab `y` → tempel. **Nama kuncinya wajib disebut.**
+   Tanpa argumen, skrip itu hanya menanyakan kunci yang *belum* ada, jadi `NEON_API_KEY` yang sudah
+   terisi dilewati tanpa pesan.
+3. Verifikasi dari sesi agent — hanya kode HTTP yang dicetak, kuncinya tidak: project org Rivaldo
+   harus terbaca, org Dedi harus ditolak.
+4. `neon api-keys revoke 3356477` — kunci akun, jadi tanpa `--org-id`.
 
-lalu tulis kunci baru ke `env.db` lewat `~/brain/bin/envdb-setup.sh` **di terminal Aldo sendiri**,
-jangan di sesi agent — apa pun yang diketik di sesi masuk transkrip. Belum dikerjakan per 26 Sep 2026.
+Cabut **terakhir**, bukan kedua. Kalau kunci baru salah tempel, kunci lama masih hidup dan tidak ada
+yang putus. Urutan lama (buat → cabut → simpan) bisa meninggalkan `env.db` berisi kunci mati.
+
+Langkah 1 dan 2 **di terminal Aldo sendiri**, jangan di sesi agent — termasuk bukan lewat prefiks `!`
+— karena apa pun yang diketik atau dicetak di sesi masuk transkrip. Org id: `neon orgs list`, sengaja
+tidak ditulis di sini. Belum dikerjakan per 26 Sep 2026.
 
 Detail jebakan CLI-nya ada di [[reference-neon-cli]].
 
