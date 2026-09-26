@@ -11,6 +11,13 @@
 - 🟡 26 Sep 2026 — kunci Neon `Bara` (id 3356477) di `env.db` masih ber-scope akun, jadi masih
   melihat org pihak ketiga. Ganti jadi org-scoped; langkahnya di
   [Akun Neon](shared/reference/reference_neon_account.md). Butuh terminal Aldo sendiri.
+- 🔵 26 Sep 2026 — **SIGAP-BUP pindah ke Postgres, SEDANG BERJALAN, di-pause Aldo.** Project Neon
+  baru `sigap-bup` / `rapid-lab-46810989` (org AIgnited, ap-southeast-1, **PG17**) sudah dibuat dan
+  **10 migrasi lolos**. Penyebab blocker lama sudah pasti: libpq 16 tidak bisa bicara dengan PG18.
+  Lanjutannya — seed (butuh `Wasdit BUM 2026.xlsx`, `database/data/` tidak ada), `setval` sequence,
+  140 tes Pest terhadap Postgres di branch terpisah — ada di
+  [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) bagian 26 Sep. Desain v2 **sudah terpasang**, jangan
+  diimpor ulang; salinan utuh di `docs/SIGAP-BUP-v2.dc.html`.
 
 ## User & identity
 

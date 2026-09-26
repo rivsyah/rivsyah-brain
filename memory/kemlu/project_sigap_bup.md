@@ -68,5 +68,67 @@ dan `workers-php` **dikelola komunitas, bukan resmi Cloudflare maupun Laravel** 
 sistem pemerintah. Caveat README-nya: migrasi jalan saat container boot lewat HTTP (jaga tetap
 kecil), dan satu instance container = satu pohon proses PHP.
 
-**Belum diputuskan:** region Neon, org pemilik, dan apakah data anggaran Kemlu boleh berada di
-region luar negeri. Lihat [[reference-neon-account]] jebakan 3.
+**Belum diputuskan:** apakah data anggaran Kemlu boleh berada di region luar negeri.
+
+## 26 Sep 2026 — project Neon baru dibuat, 10 migrasi LOLOS di Postgres 17
+
+Aldo menyetujui, project dibuat: **`sigap-bup`, id `rapid-lab-46810989`, org AIgnited,
+region `aws-ap-southeast-1` (Singapura), Postgres 17**, database `neondb`, endpoint pooler mati.
+Ini membereskan tiga hal sekaligus dibanding project lama: region, scope org, dan versi Postgres.
+
+**Penyebab blocker `pdo_pgsql` sudah PASTI: libpq 16 tidak bisa bicara dengan server Postgres 18.**
+Dibuktikan lewat pembanding terkendali — mesin sama, libpq 16.14 sama, skrip probe sama:
+
+| Target | Hasil |
+|---|---|
+| project lama, **PG18**, us-east-2 | 5 dari 5 varian DSN gagal, `SSL SYSCALL error: Connection reset by peer` |
+| project baru, **PG17**, ap-southeast-1 | varian `host + sslmode=require` **OK**, server `PostgreSQL 17.11` |
+
+Jadi bukan firewall, bukan pooler, bukan kredensial. **Kalau membuat project Neon untuk dipakai dari
+PHP di mesin ini, pilih Postgres 17.** Varian `options=endpoint%3D...` dan `sslmode=verify-full`
+tetap gagal di PG17 juga — jangan dipakai, `sslmode=require` saja.
+
+**Migrasi lolos semua tanpa satu pun perubahan kode.** `php artisan migrate` menjalankan 10 migrasi,
+27 tabel, semua DONE. `config/database.php` sudah punya koneksi `pgsql` dengan
+`'url' => env('DB_URL')`, jadi tidak perlu menulis kredensial ke `.env`:
+
+```bash
+# URI diambil saat jalan, tidak pernah mendarat di disk
+cd ~/Herd/sigap-bup
+~/brain/bin/envdb.sh run NEON_API_KEY -- bash -c '
+URI=$(curl -s -H "Authorization: Bearer $NEON_API_KEY" \
+  "https://console.neon.tech/api/v2/projects/rapid-lab-46810989/connection_uri?database_name=neondb&role_name=neondb_owner&pooled=false" \
+  | python -c "import sys,json;print(json.load(sys.stdin)[\"uri\"])")
+DB_CONNECTION=pgsql DB_URL="$URI" DB_SSLMODE=require php artisan migrate --force'
+```
+
+Pola itu layak ditiru untuk perintah artisan lain terhadap Neon.
+
+**Berhenti di sini (Aldo bilang pause).** Yang belum dikerjakan, urut prioritas:
+1. **Seed.** `DatabaseSeeder` memanggil `WasditSeeder`, tapi **`database/data/` tidak ada di disk** —
+   hanya `scripts/import-wasdit.mjs` yang ada. Jadi seed butuh `Wasdit BUM 2026.xlsx` diimpor ulang
+   dulu. Cek di mana file xlsx-nya sebelum menjalankan seeder.
+2. **`setval()` semua sequence** setelah seed, kalau seed memasukkan id eksplisit.
+3. **Jalankan 140 tes Pest terhadap Postgres.** `phpunit.xml` memaku `DB_CONNECTION=sqlite` tanpa
+   `force="true"`, jadi env var dari luar seharusnya menang. Pakai **branch Neon terpisah** untuk
+   tes — `RefreshDatabase` akan mengosongkan database yang ditunjuk.
+4. **13 raw SQL + 9 `groupBy`** belum diuji dengan data; baru bisa dibuktikan setelah seed.
+5. Aldo menulis `NEON_DATABASE_URL` baru ke `env.db` sendiri (nilai lama masih menunjuk project
+   PG18 yang tidak bisa disambung PHP).
+
+## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
+
+Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design
+`4ce251f1-c607-477f-9851-d850d42d2a29` **sudah dikerjakan 5 Sep 2026** (lihat baris v2 di atas).
+Buktinya di repo: `resources/js/lib/v2.tsx` berisi palet `#0F2557`/`#F5A80C`/`#F3F2EC`,
+`resources/js/layouts/sigap-layout.tsx` 32,5 KB.
+
+**Salinan penuh desainnya sudah ada di disk**, jadi DesignSync tidak diperlukan lagi untuk file ini:
+`docs/SIGAP-BUP-v2.dc.html` **347.893 byte** (utuh) + `docs/support-v2.js` 69.150 byte.
+Itu persis kenapa sesi 5 Sep menyimpannya — `get_file` memotong di 256 KiB. Baca dari `docs/`,
+jangan lewat MCP.
+
+DesignSync sendiri **sedang tidak terotorisasi** di sesi ini ("needs design-system authorization"),
+jadi membandingkan dengan versi remote tidak bisa tanpa `/design-login` dari terminal Aldo — lihat
+[[reference-design-login]]. Artinya: kalau desainnya berubah setelah 5 Sep, tidak ada cara
+memastikannya dari sesi ini.
