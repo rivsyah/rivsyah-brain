@@ -102,7 +102,48 @@ URI=$(curl -s -H "Authorization: Bearer $NEON_API_KEY" \
 DB_CONNECTION=pgsql DB_URL="$URI" DB_SSLMODE=require php artisan migrate --force'
 ```
 
-Pola itu layak ditiru untuk perintah artisan lain terhadap Neon.
+Pola itu layak ditiru untuk perintah artisan lain terhadap Neon — **tapi per 26 Sep 2026 pola itu
+SEDANG RUSAK.** Baca blok di bawah dulu.
+
+### RUSAK — kunci di `env.db` tidak menjangkau project ini
+
+Rotasi kunci Neon dan penempatan project ini saling bertabrakan. Diuji 26 Sep 2026:
+
+```
+GET /api/v2/auth        -> auth_method: api_key_org, account_id: org Rivaldo
+GET /projects/rapid-lab-46810989            -> HTTP 404
+GET .../connection_uri                      -> HTTP 404
+```
+
+404, bukan 403 — Neon menyembunyikan keberadaan resource di luar scope kunci. **Jangan salah baca
+404 ini sebagai project terhapus.** Project `sigap-bup` ada dan sehat; kuncinya yang tidak
+berhak melihatnya.
+
+Sebabnya dua keputusan yang masing-masing benar tapi berlawanan arah:
+
+| Keputusan | Hasil |
+|---|---|
+| Kunci `env.db` di-scope ke satu org, supaya tidak melihat org pihak ketiga | scope = **Rivaldo** |
+| Project Kemlu ditaruh di org yang benar, bukan org pribadi | project = **AIgnited** |
+
+**Perbaikannya: kunci harus mengikuti pekerjaan, bukan sebaliknya.** `NEON_API_KEY` di `env.db`
+seharusnya ber-scope **AIgnited**, karena di sanalah satu-satunya project yang butuh otomasi. Org
+Rivaldo hanya menyimpan dua project `SIGAP` kembar yang kosong dan tidak dipakai.
+
+```
+neon api-keys create --name bara-aignited --org-id <org AIgnited>
+~/brain/bin/envdb-setup.sh NEON_API_KEY     # jawab y, tempel — di terminal Aldo sendiri
+# verifikasi dulu, baru cabut kunci lama
+```
+
+**Jangan** memindahkan `sigap-bup` ke org Rivaldo untuk mengakali ini. Itu mengembalikan pekerjaan
+Kemlu ke scope pribadi — persis yang baru saja dibereskan, dan melanggar absolut isolasi scope.
+
+**Peringatan 26 Sep 2026 (±12:20Z) — pola di atas sedang gagal.** `NEON_API_KEY` di `env.db` diganti
+ke kunci org Rivaldo (`bara-rivaldo`), dan kunci itu **tidak bisa** menjangkau `rapid-lab-46810989`:
+API menjawab 404 `project not found`. Akibatnya `python` gagal, `URI` kosong, dan `artisan migrate`
+**tetap jalan** dengan `DB_URL` kosong. Cek status kunci di [[reference-neon-account]] sebelum
+menjalankan pola ini.
 
 **Berhenti di sini (Aldo bilang pause).** Yang belum dikerjakan, urut prioritas:
 1. **Seed.** `DatabaseSeeder` memanggil `WasditSeeder`, tapi **`database/data/` tidak ada di disk** —

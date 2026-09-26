@@ -21,7 +21,7 @@ Diverifikasi hidup dengan `GET /api/v2/users/me` → HTTP 200.
 
 | Org | Isi per 22 Sep 2026 |
 |---|---|
-| **AIgnited** | kosong, belum ada project |
+| **AIgnited** | kosong per 22 Sep; **sejak 26 Sep berisi `sigap-bup`** (`rapid-lab-46810989`, `aws-ap-southeast-1`, PG17) |
 | **Rivaldo** (pribadi) | dua project bernama `SIGAP`, keduanya `aws-us-east-2`, dibuat 22 Sep 2026 |
 | **M. Dedi** | project `bei` di `aws-ap-southeast-1` — **milik pihak ketiga** |
 
@@ -41,32 +41,61 @@ Untuk kerja sehari-hari pilih **org-scoped**, bukan project-scoped. Kunci projec
 membuat project, dan kamu masih mungkin perlu bikin project baru di `aws-ap-southeast-1` (lihat
 jebakan region di bawah).
 
-**Status kunci per 26 Sep 2026:**
+**Status kunci per 26 Sep 2026, ±12:20Z:**
 
 | Kunci | Scope | Di mana | Melihat org Dedi? |
 |---|---|---|---|
 | id 3356515 (MCP lama) | akun | 6 config agent | **dicabut 26 Sep 2026** |
 | id 3366951 (MCP baru) | project `tiny-pine-06410895`, read-only | `~/.claude.json` saja | tidak — aman |
-| `Bara`, id 3356477 | **akun** | `env.db` | **ya — masih terbuka** |
+| `Bara`, id 3356477 | **akun** | sudah tidak di `env.db`, tapi **belum dicabut** | **ya, sampai dicabut** |
+| `bara-rivaldo`, id 3366980 | org Rivaldo | `env.db` → `NEON_API_KEY` | tidak — terbukti |
 
-Kunci `Bara` masih ber-scope akun. Posisinya lebih benar karena tinggal di `env.db` dan dipakai dari
-IP mesin ini sendiri, tapi ia tetap melihat `bei` milik Dedi. Rencana penggantinya, **dengan urutan
-ini**:
+**`bara-rivaldo` lolos uji, tapi org-nya salah.** Hasil uji dengan kunci dari `env.db`:
 
-1. `neon api-keys create --name bara-rivaldo --org-id <org Rivaldo>` — kunci tampil sekali, salin.
+| Uji | Hasil |
+|---|---|
+| `GET /api/v2/auth` | 200, `auth_method: api_key_org` |
+| `GET /api/v2/projects` tanpa `org_id` | 200, hanya dua kembar `SIGAP` milik org Rivaldo |
+| `GET /api/v2/projects?org_id=<Dedi>` | **404** `not allowed to perform this action on the organization` |
+| `GET /api/v2/users/me/organizations` | 200, hanya `Rivaldo` yang terlihat |
+| `GET /api/v2/projects/rapid-lab-46810989` | **404** `project not found` |
+| `GET /api/v2/users/me` | **404** |
+
+Baris kelima masalahnya. Project yang aktif, `sigap-bup` (`rapid-lab-46810989`), ada di org
+**AIgnited**. Org Rivaldo hanya berisi dua kembar `SIGAP` kosong di `us-east-2` yang sudah
+digantikan. Selama `NEON_API_KEY` masih `bara-rivaldo`, pola `envdb.sh run NEON_API_KEY` di
+[[project-sigap-bup]] untuk mengambil connection string **gagal**.
+
+Scope penggantinya menunggu Aldo. Usulan agent: kunci `--project-id rapid-lab-46810989`. Alasan
+memilih org-scoped di atas — perlu bikin project baru di `ap-southeast-1` — sudah terpenuhi, karena
+`sigap-bup` sudah ada di sana. Kemampuan kunci project-scoped membuat branch tes belum diuji.
+
+Tiga hal yang berlaku untuk kunci org apa pun:
+
+- Penolakan lintas org datang sebagai **404, bukan 403**. Jangan baca 404 itu sebagai "tidak ada".
+- `GET /api/v2/users/me` menjawab **404** untuk kunci org. Itu bukan tanda kunci mati. Cek jenis
+  kunci tanpa mencetaknya lewat `GET /api/v2/auth` → `auth_method`.
+- **Login CLI `neon` (OAuth) tetap ber-scope akun** dan masih melihat ketiga org. Aturan HARD
+  "wajib sebut `org_id`" di atas tetap berlaku untuk setiap perintah `neon`, walau kunci `env.db`
+  sudah sempit.
+
+**Urutan rotasi kunci `env.db`** (dipakai 26 Sep 2026, pakai lagi untuk rotasi berikutnya):
+
+1. `neon api-keys create --name <nama> --org-id <org>` atau `--project-id <project>` — kunci tampil
+   sekali, salin.
 2. `~/brain/bin/envdb-setup.sh NEON_API_KEY` → jawab `y` → tempel. **Nama kuncinya wajib disebut.**
    Tanpa argumen, skrip itu hanya menanyakan kunci yang *belum* ada, jadi `NEON_API_KEY` yang sudah
    terisi dilewati tanpa pesan.
-3. Verifikasi dari sesi agent — hanya kode HTTP yang dicetak, kuncinya tidak: project org Rivaldo
-   harus terbaca, org Dedi harus ditolak.
-4. `neon api-keys revoke 3356477` — kunci akun, jadi tanpa `--org-id`.
+3. Verifikasi dari sesi agent dengan uji di tabel atas. Hanya kode HTTP yang dicetak, kuncinya tidak.
+4. Cabut kunci lama. Kunci akun: `neon api-keys revoke <id>`. Kunci org atau project: tambah
+   `--org-id <org>`.
 
 Cabut **terakhir**, bukan kedua. Kalau kunci baru salah tempel, kunci lama masih hidup dan tidak ada
 yang putus. Urutan lama (buat → cabut → simpan) bisa meninggalkan `env.db` berisi kunci mati.
 
 Langkah 1 dan 2 **di terminal Aldo sendiri**, jangan di sesi agent — termasuk bukan lewat prefiks `!`
 — karena apa pun yang diketik atau dicetak di sesi masuk transkrip. Org id: `neon orgs list`, sengaja
-tidak ditulis di sini. Belum dikerjakan per 26 Sep 2026.
+tidak ditulis di sini.
 
 Detail jebakan CLI-nya ada di [[reference-neon-cli]].
 

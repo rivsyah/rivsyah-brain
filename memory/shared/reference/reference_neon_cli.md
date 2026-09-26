@@ -78,8 +78,10 @@ ditulis di sini karena berkas terlacak ditulis seolah publik. Kunci org dan kunc
 dilaporkan terpisah: `neon api-keys list` hanya menampilkan yang level akun,
 `neon api-keys list --org-id <org>` sisanya.
 
-Yang **belum** dikerjakan: kunci `Bara` (id 3356477) di `env.db` masih ber-scope akun, jadi masih
-melihat org pihak ketiga. Rencananya diganti org-scoped — lihat [[reference-neon-account]].
+Kunci `env.db` diganti 26 Sep 2026 ke `bara-rivaldo` (id 3366980, org Rivaldo). Kunci akun `Bara`
+(id 3356477) belum dicabut, dan scope pengganti final masih menunggu Aldo — lihat
+[[reference-neon-account]]. Login CLI `neon` sendiri (OAuth) tetap ber-scope akun dan melihat ketiga
+org.
 
 ## Jebakan 2 — `neon skills -y` melebarkan allowlist izin tanpa bertanya
 

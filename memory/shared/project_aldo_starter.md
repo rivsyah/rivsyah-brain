@@ -68,10 +68,12 @@ Dua diuji hidup 22 Sep 2026, keduanya tanpa pernah mencetak nilainya:
 
 - `VERCEL_TOKEN` → `envdb.sh run VERCEL_TOKEN -- vercel whoami` → akun `rivsyah`. Vercel CLI
   54.18.7 terpasang global lewat npm di `C:\Program Files\nodejs`.
-- `NEON_API_KEY` → `GET /api/v2/users/me` HTTP 200, akun `rivsyah@gmail.com`. Neon CLI (`neonctl`)
-  dan `psql` **tidak** terpasang di mesin ini; API REST-nya dipakai langsung lewat `curl`.
-  Topologi akun, dan tiga jebakannya, ada di [[reference-neon-account]] — baca sebelum menyentuh
-  Neon, karena kunci itu juga melihat org milik pihak ketiga.
+- `NEON_API_KEY` → `GET /api/v2/users/me` HTTP 200, akun `rivsyah@gmail.com`. `psql` **tidak**
+  terpasang di mesin ini; API REST-nya dipakai langsung lewat `curl`. Topologi akun dan jebakannya
+  ada di [[reference-neon-account]] — baca sebelum menyentuh Neon.
+  **Sejak 26 Sep 2026 isinya kunci org, bukan kunci akun.** Kunci org menjawab `/users/me` dengan
+  HTTP 404 — itu bukan tanda kunci mati. Cek dengan `GET /api/v2/auth`. Neon CLI 5.0.1 kini
+  terpasang — lihat [[reference-neon-cli]].
 
 Tambah lewat `~/brain/bin/envdb-setup.sh` **di terminal biasa**, jangan di dalam sesi Claude Code —
 skripnya sendiri menolak jalan tanpa `/dev/tty`, dan apa pun yang diketik di sesi masuk transkrip.
