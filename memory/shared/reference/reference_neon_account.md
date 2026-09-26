@@ -129,6 +129,12 @@ sudah ada **wajib menyebut namanya**: `envdb-setup.sh NEON_DATABASE_URL`.
 Ambil connection string dengan `neon connection-string main --project-id rapid-lab-46810989`, dan
 **buang `-pooler`** dari host.
 
+Membuang `-pooler` itu wajib, bukan kehati-hatian: endpoint project baru `ep-holy-morning-b3x0zp4r`
+juga **`pooler_enabled: false`** (diverifikasi 26 Sep 2026 lewat
+`GET /api/v2/projects/<id>/endpoints`). Sama seperti project lama. Host `-pooler` di project ini akan
+gagal dengan `SSL SYSCALL error: Connection reset by peer`, dan errornya menyesatkan — kelihatan
+seperti masalah TLS atau firewall, padahal poolernya memang mati.
+
 ### Sejarah — project lama yang sudah ditinggalkan
 
 Yang di bawah ini menggambarkan project `SIGAP` di org **Rivaldo**: branch **`production`**, region
