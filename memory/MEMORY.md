@@ -8,14 +8,16 @@
 - 🟢 22 Sep 2026 — aldo-starter dipasang. Brain di `~/brain`, vault ini yang kanonik.
   Sisa: pasang blok `hooks` ke `~/.claude/settings.json`, lalu bersihkan kartu lama di
   `~/.claude/projects/C--Users-rivsy/memory/` supaya tinggal pointer.
-- 🟡 26 Sep 2026 — Neon dirapikan: nol kunci ber-scope akun, `env.db` pakai kunci org AIgnited
-  (id 3367030), MCP dipin ke `rapid-lab-46810989` read-only di `~/.claude.json` saja, dua kembar
-  `SIGAP` kosong **dihapus** (org Rivaldo kini kosong), scaffold Neon dicabut dari repo brain.
-  **Sisa: `NEON_DATABASE_URL` menunjuk project yang sudah dihapus** — sekarang gagal keras, bukan
-  diam-diam mendarat di DB kosong. Perbaiki dengan `envdb-setup.sh NEON_DATABASE_URL` di terminal
-  Aldo; nama kuncinya wajib disebut. Branch live bernama **`main`**, bukan `production`. Kunci yatim
-  `bara-rivaldo` (3366980) belum dicabut — classifier memblokir, dan org-nya kosong jadi tidak
-  berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
+- 🟢 26 Sep 2026 — Neon **SELESAI dirapikan**: nol kunci ber-scope akun, `env.db` pakai kunci org
+  AIgnited (id 3367030), MCP dipin ke `rapid-lab-46810989` read-only di `~/.claude.json` saja, dua
+  kembar `SIGAP` kosong dihapus (org Rivaldo kini kosong), scaffold Neon dicabut dari repo brain.
+  `NEON_DATABASE_URL` sudah benar dan **terbukti jalan lewat `pdo_pgsql`** — PG 17.11, 28 tabel,
+  0,4 detik. **Koreksi: host `-pooler` TIDAK perlu dibuang** — penyebab kegagalan lama adalah libpq 16
+  vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
+  kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
+- 🟡 26 Sep 2026 — Tapi **aplikasi SIGAP-BUP belum pindah**: `Herd\sigap-bup\.env` masih
+  `DB_CONNECTION=sqlite`. Skema sudah di Postgres (28 tabel), aplikasinya belum menunjuk ke sana.
+  Lihat [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
 - 🔵 26 Sep 2026 — **SIGAP-BUP pindah ke Postgres, SEDANG BERJALAN, di-pause Aldo.** Project Neon
   baru `sigap-bup` / `rapid-lab-46810989` (org AIgnited, ap-southeast-1, **PG17**) sudah dibuat dan
   **10 migrasi lolos**. Penyebab blocker lama sudah pasti: libpq 16 tidak bisa bicara dengan PG18.
@@ -78,7 +80,7 @@
 
 ## Reference
 
-- [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga); rotasi selesai 26 Sep: NOL kunci ber-scope akun, `env.db` pakai kunci org AIgnited; scope kunci ikut org PROJECT, bukan org pemilik; kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; login CLI OAuth tetap akun-penuh jadi `org_id` tetap wajib; `NEON_DATABASE_URL` masih basi; branch live bernama `main` bukan `production`; pdo_pgsql mesin ini TIDAK bisa TCP 5432 ke Neon, hanya SQL-over-HTTP yang jalan
+- [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga); rotasi selesai 26 Sep: NOL kunci ber-scope akun, `env.db` pakai kunci org AIgnited; scope kunci ikut org PROJECT, bukan org pemilik; kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; login CLI OAuth tetap akun-penuh jadi `org_id` tetap wajib; `NEON_DATABASE_URL` sudah benar + terbukti jalan lewat pdo_pgsql; branch live bernama `main` bukan `production`; KOREKSI: host `-pooler` tidak perlu dibuang dan `pooler_enabled` bukan prediktor konektivitas — pdo_pgsql gagal di PG18 karena libpq 16, dan jalan mulus di PG17
 - [Neon CLI](shared/reference/reference_neon_cli.md) — Neon 5.0.1; `neon mcp -y` bawaan cetak API key akun-penuh ke 6 config — pakai `--agent --project-id --read-only`, dan `-y` bisa PAKAI ULANG kunci lama; `neon config init` bisa pasang zod rusak
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)

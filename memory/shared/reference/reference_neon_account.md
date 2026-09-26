@@ -111,38 +111,50 @@ bukan 401. Jangan salah baca 400 itu sebagai kunci mati — kuncinya hidup, para
 
 ## Ke mana NEON_DATABASE_URL menunjuk
 
-**BASI per 26 Sep 2026 ±12:50Z — belum diperbaiki.** `NEON_API_KEY` sudah pindah ke org AIgnited,
-tapi `NEON_DATABASE_URL` **masih menunjuk project mati**: region `us-east-2`, dan masih memakai host
-`-pooler` yang terbukti gugur di mesin ini (lihat jebakan 1 di bawah). Diverifikasi dengan membaca
-hanya bagian region dan host, tanpa mencetak kredensialnya.
+**BENAR dan TERBUKTI JALAN per 26 Sep 2026 ±13:4xZ.** Aldo memperbaikinya sendiri setelah rotasi
+kunci. Diuji dari sesi agent tanpa mencetak kredensial:
 
-Host-nya `ep-mute-mode-b5v29wg9-pooler`, `us-east-2` — endpoint milik `tiny-pine-06410895`.
+| Yang diuji | Hasil |
+|---|---|
+| Region | `ap-southeast-1` — benar |
+| Endpoint | `ep-holy-morning-b3x0zp4r-pooler.c-4.ap-southeast-1.aws.neon.tech` |
+| Database | `neondb` |
+| Versi server | **PostgreSQL 17.11** |
+| Tabel di schema `public` | **28** |
+| SQL-over-HTTP, URL apa adanya | HTTP 200 |
+| **`pdo_pgsql` (PHP 8.4.23 Herd), URL apa adanya** | **OK, 0,4 detik** |
+| `pdo_pgsql`, host tanpa `-pooler` | OK, 0,5 detik |
 
-**Sejak 13:1xZ project itu DIHAPUS, jadi URL-nya sekarang mati total.** Ini justru perbaikan: sampai
-13:01Z URL lama masih menjawab 200 lewat SQL-over-HTTP (PG 18.6, 0 tabel), artinya klien yang
-menyambung tidak dapat error sama sekali — ia hanya mendarat di database kosong dan mengira berhasil.
-Sekarang kegagalannya berisik, bukan diam. **Gagal keras lebih baik daripada benar yang salah.**
+**KOREKSI — host `-pooler` TIDAK perlu dibuang.** Kartu ini sebelumnya menyatakan membuang `-pooler`
+itu wajib, dengan alasan `pooler_enabled: false` di endpoint. Itu **salah**, dan agent yang
+menuliskannya ikut menyarankannya ke Aldo. `pooler_enabled: false` masih benar sebagai nilai API, tapi
+koneksi lewat nama host `-pooler` **tetap berhasil** — diuji langsung dengan `pdo_pgsql`, dua-duanya
+sukses dalam waktu yang sama.
 
-Akibatnya kunci dan connection string tidak sepadan: kuncinya melihat `sigap-bup`, URL-nya menunjuk
-project yang sudah tidak ada. Perbaiki lewat `envdb-setup.sh NEON_DATABASE_URL` di terminal Aldo
-sendiri.
+Artinya penyebab kegagalan lama harus diatribusikan ulang: **yang membunuh koneksi di project lama
+adalah libpq 16 melawan Postgres 18, bukan poolernya.** Di Postgres 17 `pdo_pgsql` yang sama jalan
+mulus lewat kedua host. Jebakan 1 di bawah masih mencatat pooler sebagai salah satu sebab — baca itu
+sebagai dugaan yang sudah terbantah, bukan fakta.
 
-**Penyebab kenapa ini terlewat:** `envdb-setup.sh` **tanpa argumen** hanya menanyakan kunci yang
-belum ada. `NEON_DATABASE_URL` sudah terisi, jadi dilewati tanpa pesan sama sekali. Rotasi kunci yang
-sudah ada **wajib menyebut namanya**: `envdb-setup.sh NEON_DATABASE_URL`.
+**Pelajaran metodenya:** `pooler_enabled` di API bukan prediktor apakah host `-pooler` bisa
+disambung. Jangan menyimpulkan konektivitas dari field konfigurasi. Uji jalur yang sebenarnya dipakai
+klien — untuk Laravel itu `pdo_pgsql`, bukan SQL-over-HTTP, dan bukan tes TCP. TCP 5432 terbuka di
+kedua host bahkan ketika protokolnya gagal, jadi tes port juga tidak membuktikan apa pun.
 
-**Target yang benar:** project `sigap-bup` (`rapid-lab-46810989`), org **AIgnited**,
+**Jebakan `envdb-setup.sh` yang membuat perbaikan ini sempat terlewat sekali:** tanpa argumen, skrip
+itu hanya menanyakan kunci yang **belum** ada. `NEON_DATABASE_URL` sudah terisi, jadi dilewati tanpa
+pesan sama sekali. Rotasi nilai yang sudah ada **wajib menyebut namanya**:
+`envdb-setup.sh NEON_DATABASE_URL`.
+
+**Target yang benar, untuk rujukan:** project `sigap-bup` (`rapid-lab-46810989`), org **AIgnited**,
 `aws-ap-southeast-1`, **Postgres 17**, branch default bernama **`main`** (`br-curly-pond-b3wscbzi`) —
 **bukan `production`**. Skrip apa pun yang menyebut branch `production` akan gagal di project ini.
-Ambil connection string dengan `neon connection-string main --project-id rapid-lab-46810989`, dan
-**buang `-pooler`** dari host kalau ada. `--pooled` bawaannya `false` (dicek di `--help` v5.0.1),
-jadi hasil bawaan perintah itu memang sudah tanpa `-pooler`.
+Ambil connection string dengan `neon connection-string main --project-id rapid-lab-46810989`.
 
-Membuang `-pooler` itu wajib, bukan kehati-hatian: endpoint project baru `ep-holy-morning-b3x0zp4r`
-juga **`pooler_enabled: false`** (diverifikasi 26 Sep 2026 lewat
-`GET /api/v2/projects/<id>/endpoints`). Sama seperti project lama. Host `-pooler` di project ini akan
-gagal dengan `SSL SYSCALL error: Connection reset by peer`, dan errornya menyesatkan — kelihatan
-seperti masalah TLS atau firewall, padahal poolernya memang mati.
+**Tapi aplikasinya BELUM pindah.** `C:\Users\rivsy\Herd\sigap-bup\.env` masih
+`DB_CONNECTION=sqlite` (dicek 26 Sep 2026). Jadi 28 tabel di Neon itu masuk lewat jalur lain, bukan
+dari konfigurasi aplikasi yang berjalan. Skema sudah di Postgres, aplikasinya masih di SQLite —
+lihat [[project-sigap-bup]] untuk sisa pekerjaannya.
 
 ### Sejarah — project lama yang SUDAH DIHAPUS
 
@@ -172,11 +184,17 @@ memang ±30 MB, dan angka itu tidak berubah walau compute-nya sudah dipakai.
    Lima varian DSN diuji, semuanya `SQLSTATE[08006] ... SSL SYSCALL error: Connection reset by peer`:
    pooler+require, pooler+`options=endpoint`, host langsung+require, host langsung+`options=endpoint`,
    dan verify-full. TCP 5432 sendiri terbuka (diuji `/dev/tcp`), jadi bukan firewall.
-   Dua penyebab yang terbukti:
-   - **Pooler dimatikan** di endpoint (`pooler_enabled: false`) padahal `NEON_DATABASE_URL` memakai
-     host `-pooler`. Tiga varian gugur hanya karena ini.
-   - **libpq klien 16.14 vs server Postgres 18.** Herd PHP 8.4.23 membawa libpq 16; varian host
-     langsung pun tetap direset.
+   **Penyebabnya SATU, bukan dua — diatribusikan ulang 26 Sep 2026:**
+   - **libpq klien 16 vs server Postgres 18.** Herd PHP 8.4.23 membawa libpq 16. Semua varian gugur,
+     termasuk host langsung, jadi ini yang sebenarnya membunuh koneksi.
+   - ~~Pooler dimatikan (`pooler_enabled: false`)~~ — **dugaan ini TERBANTAH.** Terhadap project
+     Postgres 17, `pdo_pgsql` yang sama berhasil lewat host `-pooler` **maupun** host langsung, walau
+     `pooler_enabled` tetap `false`. Nilai field itu tidak menentukan apakah host `-pooler` bisa
+     disambung.
+
+   Konsekuensi praktisnya: masalah ini **hilang sendiri di Postgres 17** dan tidak perlu diakali.
+   Kalau `pdo_pgsql` direset lagi di project Neon baru, periksa **versi Postgres server** lebih dulu,
+   bukan poolernya.
 
    **Yang BERHASIL: SQL over HTTP.** `POST https://<endpoint-tanpa-pooler>/sql` dengan header
    `Neon-Connection-String: <url>` menjawab normal, termasuk mengembalikan error parser Postgres
