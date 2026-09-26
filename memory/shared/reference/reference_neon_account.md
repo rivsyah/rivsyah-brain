@@ -41,34 +41,40 @@ Untuk kerja sehari-hari pilih **org-scoped**, bukan project-scoped. Kunci projec
 membuat project, dan kamu masih mungkin perlu bikin project baru di `aws-ap-southeast-1` (lihat
 jebakan region di bawah).
 
-**Status kunci per 26 Sep 2026, ±12:20Z:**
+**Status kunci per 26 Sep 2026, ±12:50Z — rotasi SELESAI.**
 
-| Kunci | Scope | Di mana | Melihat org Dedi? |
+**Tidak ada lagi kunci ber-scope akun.** `neon api-keys list` menjawab *"You have no account API
+keys."* Sejak itu tidak ada satu pun API key yang bisa menyentuh org Dedi. Absolut isolasi scope
+sekarang dijaga kredensialnya sendiri, bukan disiplin pemanggil.
+
+| Kunci | Scope | Di mana | Status |
 |---|---|---|---|
-| id 3356515 (MCP lama) | akun | 6 config agent | **dicabut 26 Sep 2026** |
-| id 3366951 (MCP baru) | project `tiny-pine-06410895`, read-only | `~/.claude.json` saja | tidak — aman |
-| `Bara`, id 3356477 | **akun** | sudah tidak di `env.db`, tapi **belum dicabut** | **ya, sampai dicabut** |
-| `bara-rivaldo`, id 3366980 | org Rivaldo | `env.db` → `NEON_API_KEY` | tidak — terbukti |
+| `AIgnited`, id 3367030 | org AIgnited, semua project | `env.db` → `NEON_API_KEY` | **aktif, ini yang dipakai** |
+| id 3367047 | project `rapid-lab-46810989`, read-only | `~/.claude.json` (MCP) | aktif |
+| `bara-rivaldo`, id 3366980 | org Rivaldo, semua project | sudah tidak dipakai | **yatim** — hanya menjangkau dua kembar kosong; aman tapi sampah |
+| `Bara`, id 3356477 | akun | — | dicabut 26 Sep 2026 |
+| id 3356515 (MCP pertama) | akun | — | dicabut 26 Sep 2026 |
+| id 3366951 (MCP kedua) | project `tiny-pine-06410895` | — | dicabut 26 Sep 2026; pin-nya ke project mati |
 
-**`bara-rivaldo` lolos uji, tapi org-nya salah.** Hasil uji dengan kunci dari `env.db`:
+Kunci `env.db` diverifikasi: `auth_method: api_key_org`, hanya org `AIgnited` terlihat,
+`GET /api/v2/projects/rapid-lab-46810989` → **200**.
+
+**Perilaku kunci org, terbukti lewat pengujian 26 Sep 2026** — ini yang durabel, bukan id kuncinya:
 
 | Uji | Hasil |
 |---|---|
-| `GET /api/v2/auth` | 200, `auth_method: api_key_org` |
-| `GET /api/v2/projects` tanpa `org_id` | 200, hanya dua kembar `SIGAP` milik org Rivaldo |
-| `GET /api/v2/projects?org_id=<Dedi>` | **404** `not allowed to perform this action on the organization` |
-| `GET /api/v2/users/me/organizations` | 200, hanya `Rivaldo` yang terlihat |
-| `GET /api/v2/projects/rapid-lab-46810989` | **404** `project not found` |
-| `GET /api/v2/users/me` | **404** |
+| `GET /api/v2/auth` | 200, `auth_method: api_key_org` — cara aman mengecek jenis kunci tanpa mencetaknya |
+| `GET /api/v2/projects` tanpa `org_id` | 200, hanya project org kunci itu — **tidak** 400 seperti kunci akun |
+| `GET /api/v2/projects?org_id=<org lain>` | **404** `not allowed to perform this action on the organization` |
+| `GET /api/v2/users/me/organizations` | 200, hanya org kunci itu |
+| `GET /api/v2/projects/<project org lain>` | **404** `project not found` |
+| `GET /api/v2/users/me` | **404** — bukan tanda kunci mati |
 
-Baris kelima masalahnya. Project yang aktif, `sigap-bup` (`rapid-lab-46810989`), ada di org
-**AIgnited**. Org Rivaldo hanya berisi dua kembar `SIGAP` kosong di `us-east-2` yang sudah
-digantikan. Selama `NEON_API_KEY` masih `bara-rivaldo`, pola `envdb.sh run NEON_API_KEY` di
-[[project-sigap-bup]] untuk mengambil connection string **gagal**.
-
-Scope penggantinya menunggu Aldo. Usulan agent: kunci `--project-id rapid-lab-46810989`. Alasan
-memilih org-scoped di atas — perlu bikin project baru di `ap-southeast-1` — sudah terpenuhi, karena
-`sigap-bup` sudah ada di sana. Kemampuan kunci project-scoped membuat branch tes belum diuji.
+**Pelajaran yang mahal: scope kunci harus mengikuti org project, bukan org pemiliknya.** Kunci
+`bara-rivaldo` dibuat untuk org Rivaldo karena di situlah project pertama dibuat. Lalu project live
+pindah ke org **AIgnited**, dan kunci itu langsung jadi tidak berguna — 404 untuk project yang
+dipakai. Sebelum mencetak kunci, pastikan dulu project mana yang benar-benar dipakai dan di org mana
+ia duduk.
 
 Tiga hal yang berlaku untuk kunci org apa pun:
 
@@ -104,8 +110,30 @@ bukan 401. Jangan salah baca 400 itu sebagai kunci mati — kuncinya hidup, para
 
 ## Ke mana NEON_DATABASE_URL menunjuk
 
-Project `SIGAP` di org **Rivaldo**, branch **`production`** (branch default), region `aws-us-east-2`,
-**Postgres 18**, basis data `neondb`.
+**BASI per 26 Sep 2026 ±12:50Z — belum diperbaiki.** `NEON_API_KEY` sudah pindah ke org AIgnited,
+tapi `NEON_DATABASE_URL` **masih menunjuk project mati**: region `us-east-2`, dan masih memakai host
+`-pooler` yang terbukti gugur di mesin ini (lihat jebakan 1 di bawah). Diverifikasi dengan membaca
+hanya bagian region dan host, tanpa mencetak kredensialnya.
+
+Akibatnya kunci dan connection string tidak sepadan: kuncinya melihat `sigap-bup`, URL-nya menunjuk
+kembar kosong yang sudah ditinggalkan. Perbaiki lewat `envdb-setup.sh NEON_DATABASE_URL` di terminal
+Aldo sendiri.
+
+**Penyebab kenapa ini terlewat:** `envdb-setup.sh` **tanpa argumen** hanya menanyakan kunci yang
+belum ada. `NEON_DATABASE_URL` sudah terisi, jadi dilewati tanpa pesan sama sekali. Rotasi kunci yang
+sudah ada **wajib menyebut namanya**: `envdb-setup.sh NEON_DATABASE_URL`.
+
+**Target yang benar:** project `sigap-bup` (`rapid-lab-46810989`), org **AIgnited**,
+`aws-ap-southeast-1`, **Postgres 17**, branch default bernama **`main`** (`br-curly-pond-b3wscbzi`) —
+**bukan `production`**. Skrip apa pun yang menyebut branch `production` akan gagal di project ini.
+Ambil connection string dengan `neon connection-string main --project-id rapid-lab-46810989`, dan
+**buang `-pooler`** dari host.
+
+### Sejarah — project lama yang sudah ditinggalkan
+
+Yang di bawah ini menggambarkan project `SIGAP` di org **Rivaldo**: branch **`production`**, region
+`aws-us-east-2`, **Postgres 18**, basis data `neondb`. Disimpan karena jebakan-jebakannya masih
+mengajarkan sesuatu, bukan karena project ini masih dipakai.
 
 **Database itu KOSONG — nol tabel di skema `public`.** Diverifikasi 22 Sep 2026 lewat
 `information_schema.tables`, hasilnya `rowCount: 0`. Angka `synthetic_storage_size` 31,7 MB itu

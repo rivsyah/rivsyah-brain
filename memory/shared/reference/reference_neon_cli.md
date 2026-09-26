@@ -62,26 +62,38 @@ entri Neon dari semua config**, baru jalankan.
 | `Zed/settings.json` | `context_servers.Neon` | **JSONC** — ada komentar + trailing comma, `JSON.parse` gagal; sunting sebagai teks |
 | `.codex/config.toml` | `[mcp_servers.Neon]` + `[mcp_servers.Neon.http_headers]` | TOML; sub-tabelnya menjorok, jadi `\n[` di kolom 0 menandai tabel berikutnya |
 
-### Status per 26 Sep 2026 — sudah dibereskan
+### Status per 26 Sep 2026 ±12:50Z — selesai
 
-Kunci akun-penuh `neon-cli-mcp-20260922T120228Z-003e` (id 3356515) **dicabut** 26 Sep 2026. Ia hidup
-empat hari di enam config dan masih terpakai beberapa menit sebelum dicabut, jadi bukan kunci mati
-yang dibiarkan.
+MCP hanya terpasang di `~/.claude.json`, dengan kunci ber-scope project
+`rapid-lab-46810989` (id 3367047) dan `readonly=true`. Lima config agent lain bersih — diverifikasi
+nol `mcp.neon.tech` dan nol `napi_`. **Tidak ada lagi kunci ber-scope akun di seluruh akun Neon.**
+Daftar kunci lengkap dan sejarah rotasinya ada di [[reference-neon-account]].
 
-Penggantinya `neon-cli-mcp-20260926T115353Z-7901` (id **3366951**), ber-scope project
-`tiny-pine-06410895`, `readonly=true`, dan **hanya** di `~/.claude.json`. Lima config agent lain
-sudah bersih dari Neon.
+Dua kunci MCP sebelumnya sudah dicabut. Yang pertama (id 3356515, ber-scope akun) hidup empat hari di
+enam config. Yang kedua (id 3366951) aman tapi **dipin ke project yang salah** — project kosong yang
+sudah ditinggalkan, jadi MCP-nya tidak berguna selama ±1 jam tanpa memberi tanda apa pun.
 
-Mencabut kunci ber-scope project **butuh `--org-id`**, tidak seperti kunci akun:
-`neon api-keys revoke 3366951 --org-id <org>`. Ambil org id dengan `neon orgs list` — sengaja tidak
-ditulis di sini karena berkas terlacak ditulis seolah publik. Kunci org dan kunci akun juga
-dilaporkan terpisah: `neon api-keys list` hanya menampilkan yang level akun,
-`neon api-keys list --org-id <org>` sisanya.
+**Pelajaran: kunci ber-scope aman tidak berarti benar.** Pin yang menunjuk project mati gagal dalam
+diam — MCP tetap menyambung, tools tetap muncul, databasenya saja yang kosong. Setiap kali project
+pindah, `?projectId=` di URL MCP ikut basi dan tidak ada yang memperingatkan.
 
-Kunci `env.db` diganti 26 Sep 2026 ke `bara-rivaldo` (id 3366980, org Rivaldo). Kunci akun `Bara`
-(id 3356477) belum dicabut, dan scope pengganti final masih menunggu Aldo — lihat
-[[reference-neon-account]]. Login CLI `neon` sendiri (OAuth) tetap ber-scope akun dan melihat ketiga
-org.
+**Melaporkan dan mencabut kunci berbeda per level.** `neon api-keys list` hanya menampilkan kunci
+level akun; kunci org dan project butuh `neon api-keys list --org-id <org>`. Begitu juga pencabutan:
+kunci akun cukup `neon api-keys revoke <id>`, kunci org atau project **wajib** `--org-id <org>`. Org
+id diambil dengan `neon orgs list`, sengaja tidak ditulis di sini karena berkas terlacak ditulis
+seolah publik.
+
+Login CLI `neon` sendiri (OAuth) **tetap ber-scope akun** dan masih melihat ketiga org, termasuk org
+pihak ketiga. Jadi mencabut semua kunci akun tidak menutup jalur CLI. Aturan HARD "wajib sebut
+`org_id`" di [[reference-neon-account]] tetap berlaku untuk tiap perintah `neon`.
+
+**Dua hal kecil di CLI v5.0.1:**
+
+- `neon endpoints list` **tidak ada** — perintahnya dihapus dan errornya berantakan (`Unknown
+  commands` plus assertion libuv). Pakai `neon branches list --project-id <id>` lalu
+  `neon connection-string <branch> --project-id <id>`.
+- `neon api-keys list` menulis baris INFO ke stderr. Di PowerShell 5.1 itu muncul sebagai
+  `NativeCommandError` walau exit code-nya 0. Jangan dibaca sebagai kegagalan.
 
 ## Jebakan 2 — `neon skills -y` melebarkan allowlist izin tanpa bertanya
 

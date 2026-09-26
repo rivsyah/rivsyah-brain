@@ -8,9 +8,11 @@
 - 🟢 22 Sep 2026 — aldo-starter dipasang. Brain di `~/brain`, vault ini yang kanonik.
   Sisa: pasang blok `hooks` ke `~/.claude/settings.json`, lalu bersihkan kartu lama di
   `~/.claude/projects/C--Users-rivsy/memory/` supaya tinggal pointer.
-- 🟡 26 Sep 2026 — `NEON_API_KEY` di `env.db` kini `bara-rivaldo` (org Rivaldo): lolos uji, tidak
-  melihat org pihak ketiga, **tapi tidak menjangkau `sigap-bup` di org AIgnited** — pola migrasi
-  SIGAP-BUP gagal sampai kunci diganti. Menunggu Aldo: scope pengganti, lalu cabut `Bara` (3356477).
+- 🟡 26 Sep 2026 — Rotasi kunci Neon **SELESAI**: nol kunci ber-scope akun, `env.db` pakai kunci org
+  AIgnited (id 3367030, 200 ke `sigap-bup`), MCP dipin ke `rapid-lab-46810989` read-only di
+  `~/.claude.json` saja. **Sisa satu: `NEON_DATABASE_URL` masih menunjuk project mati** (`us-east-2`,
+  host `-pooler`) — butuh `envdb-setup.sh NEON_DATABASE_URL` di terminal Aldo, nama kuncinya wajib
+  disebut. Branch default project baru bernama **`main`**, bukan `production`.
   Detail di [Akun Neon](shared/reference/reference_neon_account.md).
 - 🔵 26 Sep 2026 — **SIGAP-BUP pindah ke Postgres, SEDANG BERJALAN, di-pause Aldo.** Project Neon
   baru `sigap-bup` / `rapid-lab-46810989` (org AIgnited, ap-southeast-1, **PG17**) sudah dibuat dan
@@ -74,7 +76,7 @@
 
 ## Reference
 
-- [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga, WAJIB pin org_id); kunci ber-scope `--org-id` bikin batas itu teknis, bukan disiplin; kunci `env.db` kini org Rivaldo dan TIDAK menjangkau `sigap-bup` (org AIgnited); kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; project SIGAP KOSONG (30 MB itu katalog sistem, bukan data); pdo_pgsql mesin ini TIDAK bisa TCP 5432 ke Neon, hanya SQL-over-HTTP yang jalan
+- [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga); rotasi selesai 26 Sep: NOL kunci ber-scope akun, `env.db` pakai kunci org AIgnited; scope kunci ikut org PROJECT, bukan org pemilik; kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; login CLI OAuth tetap akun-penuh jadi `org_id` tetap wajib; `NEON_DATABASE_URL` masih basi; branch live bernama `main` bukan `production`; pdo_pgsql mesin ini TIDAK bisa TCP 5432 ke Neon, hanya SQL-over-HTTP yang jalan
 - [Neon CLI](shared/reference/reference_neon_cli.md) — Neon 5.0.1; `neon mcp -y` bawaan cetak API key akun-penuh ke 6 config — pakai `--agent --project-id --read-only`, dan `-y` bisa PAKAI ULANG kunci lama; `neon config init` bisa pasang zod rusak
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
