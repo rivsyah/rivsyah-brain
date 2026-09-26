@@ -22,7 +22,7 @@ Diverifikasi hidup dengan `GET /api/v2/users/me` → HTTP 200.
 | Org | Isi per 22 Sep 2026 |
 |---|---|
 | **AIgnited** | kosong per 22 Sep; **sejak 26 Sep berisi `sigap-bup`** (`rapid-lab-46810989`, `aws-ap-southeast-1`, PG17) |
-| **Rivaldo** (pribadi) | dua project bernama `SIGAP`, keduanya `aws-us-east-2`, dibuat 22 Sep 2026 |
+| **Rivaldo** (pribadi) | **KOSONG sejak 26 Sep 2026.** Dua kembar `SIGAP` di `us-east-2` dihapus setelah diverifikasi nol tabel |
 | **M. Dedi** | project `bei` di `aws-ap-southeast-1` — **milik pihak ketiga** |
 
 **HARD — kunci ber-scope akun melihat org Dedi.** Satu API key akun memberi akses ke ketiga org.
@@ -51,13 +51,14 @@ sekarang dijaga kredensialnya sendiri, bukan disiplin pemanggil.
 |---|---|---|---|
 | `AIgnited`, id 3367030 | org AIgnited, semua project | `env.db` → `NEON_API_KEY` | **aktif, ini yang dipakai** |
 | id 3367047 | project `rapid-lab-46810989`, read-only | `~/.claude.json` (MCP) | aktif |
-| `bara-rivaldo`, id 3366980 | org Rivaldo, semua project | sudah tidak dipakai | **yatim** — hanya menjangkau dua kembar kosong; aman tapi sampah |
+| `bara-rivaldo`, id 3366980 | org Rivaldo, semua project | sudah tidak dipakai | **yatim, belum dicabut** — org Rivaldo kini kosong, jadi kunci ini tidak menjangkau apa pun. Sampah, bukan risiko |
 | `Bara`, id 3356477 | akun | — | dicabut 26 Sep 2026 |
 | id 3356515 (MCP pertama) | akun | — | dicabut 26 Sep 2026 |
 | id 3366951 (MCP kedua) | project `tiny-pine-06410895` | — | dicabut 26 Sep 2026; pin-nya ke project mati |
 
 Kunci `env.db` diverifikasi: `auth_method: api_key_org`, hanya org `AIgnited` terlihat,
-`GET /api/v2/projects/rapid-lab-46810989` → **200**.
+`GET /api/v2/projects/rapid-lab-46810989` → **200**. Diuji ulang 13:01Z: branch `main` dan
+`connection_uri` juga 200; org Rivaldo, org Dedi, dan kembar `tiny-pine-06410895` ditolak 404.
 
 **Perilaku kunci org, terbukti lewat pengujian 26 Sep 2026** — ini yang durabel, bukan id kuncinya:
 
@@ -115,9 +116,16 @@ tapi `NEON_DATABASE_URL` **masih menunjuk project mati**: region `us-east-2`, da
 `-pooler` yang terbukti gugur di mesin ini (lihat jebakan 1 di bawah). Diverifikasi dengan membaca
 hanya bagian region dan host, tanpa mencetak kredensialnya.
 
+Host-nya `ep-mute-mode-b5v29wg9-pooler`, `us-east-2` — endpoint milik `tiny-pine-06410895`.
+
+**Sejak 13:1xZ project itu DIHAPUS, jadi URL-nya sekarang mati total.** Ini justru perbaikan: sampai
+13:01Z URL lama masih menjawab 200 lewat SQL-over-HTTP (PG 18.6, 0 tabel), artinya klien yang
+menyambung tidak dapat error sama sekali — ia hanya mendarat di database kosong dan mengira berhasil.
+Sekarang kegagalannya berisik, bukan diam. **Gagal keras lebih baik daripada benar yang salah.**
+
 Akibatnya kunci dan connection string tidak sepadan: kuncinya melihat `sigap-bup`, URL-nya menunjuk
-kembar kosong yang sudah ditinggalkan. Perbaiki lewat `envdb-setup.sh NEON_DATABASE_URL` di terminal
-Aldo sendiri.
+project yang sudah tidak ada. Perbaiki lewat `envdb-setup.sh NEON_DATABASE_URL` di terminal Aldo
+sendiri.
 
 **Penyebab kenapa ini terlewat:** `envdb-setup.sh` **tanpa argumen** hanya menanyakan kunci yang
 belum ada. `NEON_DATABASE_URL` sudah terisi, jadi dilewati tanpa pesan sama sekali. Rotasi kunci yang
@@ -127,7 +135,8 @@ sudah ada **wajib menyebut namanya**: `envdb-setup.sh NEON_DATABASE_URL`.
 `aws-ap-southeast-1`, **Postgres 17**, branch default bernama **`main`** (`br-curly-pond-b3wscbzi`) —
 **bukan `production`**. Skrip apa pun yang menyebut branch `production` akan gagal di project ini.
 Ambil connection string dengan `neon connection-string main --project-id rapid-lab-46810989`, dan
-**buang `-pooler`** dari host.
+**buang `-pooler`** dari host kalau ada. `--pooled` bawaannya `false` (dicek di `--help` v5.0.1),
+jadi hasil bawaan perintah itu memang sudah tanpa `-pooler`.
 
 Membuang `-pooler` itu wajib, bukan kehati-hatian: endpoint project baru `ep-holy-morning-b3x0zp4r`
 juga **`pooler_enabled: false`** (diverifikasi 26 Sep 2026 lewat
@@ -135,17 +144,27 @@ juga **`pooler_enabled: false`** (diverifikasi 26 Sep 2026 lewat
 gagal dengan `SSL SYSCALL error: Connection reset by peer`, dan errornya menyesatkan — kelihatan
 seperti masalah TLS atau firewall, padahal poolernya memang mati.
 
-### Sejarah — project lama yang sudah ditinggalkan
+### Sejarah — project lama yang SUDAH DIHAPUS
 
 Yang di bawah ini menggambarkan project `SIGAP` di org **Rivaldo**: branch **`production`**, region
-`aws-us-east-2`, **Postgres 18**, basis data `neondb`. Disimpan karena jebakan-jebakannya masih
-mengajarkan sesuatu, bukan karena project ini masih dipakai.
+`aws-us-east-2`, **Postgres 18**, basis data `neondb`. **Project itu dan kembarannya dihapus
+26 Sep 2026** — keduanya diverifikasi nol tabel lewat `information_schema.tables` sesaat sebelum
+dihapus. Bagian ini disimpan karena jebakan-jebakannya masih mengajarkan sesuatu, bukan karena
+project-nya masih ada.
+
+**Satu koreksi metode, dari penghapusan ini.** Kartu ini sempat menyatakan kedua kembar
+`active_time_seconds: 0`, jadi "belum pernah melayani query". Saat dicek ulang 26 Sep,
+`tiny-pine-06410895` ternyata sudah 1084 detik compute dan 275 detik CPU — aktivitas inspeksi agent
+sendiri, bukan data. Angka itu bergerak, jadi **jangan pakai `active_time_seconds` sebagai bukti
+kosong**. Yang memutuskan hanya `select count(*) from information_schema.tables where
+table_schema='public'`. Ukuran storage juga tidak memutuskan: keduanya tetap 31,7 MB baseline
+walau salah satunya pernah aktif.
 
 **Database itu KOSONG — nol tabel di skema `public`.** Diverifikasi 22 Sep 2026 lewat
-`information_schema.tables`, hasilnya `rowCount: 0`. Angka `synthetic_storage_size` 31,7 MB itu
-**katalog sistem Postgres saja**, bukan data. `active_time_seconds` dan `cpu_used_sec` keduanya 0:
-compute-nya belum pernah melayani satu query pun. Jangan pernah membaca ukuran storage Neon sebagai
-bukti ada isinya — untuk project kosong angkanya memang ±30 MB.
+`information_schema.tables`, hasilnya `rowCount: 0`, dan dikonfirmasi ulang 26 Sep sesaat sebelum
+dihapus. Angka `synthetic_storage_size` 31,7 MB itu **katalog sistem Postgres saja**, bukan data.
+Jangan pernah membaca ukuran storage Neon sebagai bukti ada isinya — untuk project kosong angkanya
+memang ±30 MB, dan angka itu tidak berubah walau compute-nya sudah dipakai.
 
 **Empat hal yang harus diperlakukan sebagai jebakan:**
 
@@ -170,8 +189,11 @@ bukti ada isinya — untuk project kosong angkanya memang ±30 MB.
 3. **Region `aws-us-east-2` (Ohio) salah untuk pengguna Indonesia.** Neon punya
    `aws-ap-southeast-1` (Singapura). **Region tidak bisa diubah setelah project dibuat** — satu-satunya
    jalan adalah project baru. Selama database masih kosong, pindah itu gratis.
-4. **Ada dua project bernama `SIGAP`.** Keduanya kosong, dibuat di hari yang sama — kembar tak
-   disengaja. Jangan hapus tanpa perintah Aldo; penghapusan project Neon tidak bisa dibatalkan.
+4. ~~**Ada dua project bernama `SIGAP`.**~~ **SELESAI 26 Sep 2026** — keduanya dihapus atas perintah
+   Aldo setelah diverifikasi nol tabel. Aturannya tetap berlaku untuk project berikutnya:
+   **penghapusan project Neon tidak bisa dibatalkan, jadi jangan hapus tanpa perintah Aldo.**
+   `neon projects delete <id>` **langsung jalan tanpa konfirmasi** — tidak ada prompt, tidak ada
+   flag `--force`. Satu perintah salah ketik langsung menghapus.
 
 ## Untuk apa project ini
 

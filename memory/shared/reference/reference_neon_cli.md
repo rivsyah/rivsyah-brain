@@ -11,8 +11,9 @@ Neon CLI versi **5.0.1** terpasang global di mesin riv (`npm i -g neon@latest`).
 `rivsyah@gmail.com` — akun yang benar menurut aturan identitas. `neon me` memicu alur OAuth browser
 sendiri kalau sesi belum terotorisasi, jadi tidak perlu `neon login` terpisah.
 
-Proyek yang di-link: `tiny-pine-06410895`, branch `production`. Link-nya ditulis ke `.neon` di
-direktori kerja.
+`neon link` menulis link-nya ke `.neon` di direktori kerja. **Tidak ada direktori yang di-link lagi
+per 26 Sep 2026** — link di `~/brain` dilepas dan project tujuannya dihapus. Lihat bagian pembersihan
+di bawah.
 
 ## Jebakan 1 — `neon mcp -y` bawaan mencetak API key akun-penuh ke 6 file
 
@@ -124,5 +125,22 @@ separuh — seluruh berkas `v4/classic/external.*` tidak ikut ter-ekstrak. Perba
 menambahkan sendiri `.neon`, `.env.local`, dan `node_modules/` ke `.gitignore`, tapi **tidak**
 `.claude/` maupun `skills-lock.json`. Pola `*.env` di gitignore brain tidak menangkap `.env.local`,
 jadi jangan mengandalkan pola lama itu.
+
+### `~/brain` sudah dibersihkan — jangan scaffold Neon di sini lagi
+
+26 Sep 2026 seluruh scaffold deploy dicabut dari repo brain: `.neon`, `.env.local`, `neon.ts`,
+`package.json`, `package-lock.json`, `node_modules/`. Yang tersisa hanya `.claude/skills/` dan
+`skills-lock.json`, keduanya gitignored.
+
+**Memasangnya di `~/brain` sejak awal memang salah.** Repo itu memory dan infrastruktur agent, dan
+aturannya jelas: kode nyata ke `~/dev`, bukan ke sini. Akibat nyatanya bukan teoretis — repo memory
+sempat menyimpan kredensial database di `.env.local` dan sebuah link `.neon` ke project yang
+kemudian mati. Kerja Neon yang asli ada di `C:\Users\rivsy\Herd\sigap-bup`.
+
+Baris `.neon`, `.env.local`, `node_modules/`, `.claude/`, `skills-lock.json` sengaja **ditinggal** di
+`.gitignore` brain. Kalau suatu saat ada yang menjalankan `neon link` di sini lagi, jaringnya sudah
+terpasang.
+
+Catatan: `neon` CLI **tidak punya** `unlink`. Melepas link = hapus `.neon` dan `.env.local` sendiri.
 
 Lihat juga [[project_aldo_starter]] untuk kunci lain yang terpasang di env.db.

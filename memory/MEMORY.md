@@ -8,12 +8,14 @@
 - 🟢 22 Sep 2026 — aldo-starter dipasang. Brain di `~/brain`, vault ini yang kanonik.
   Sisa: pasang blok `hooks` ke `~/.claude/settings.json`, lalu bersihkan kartu lama di
   `~/.claude/projects/C--Users-rivsy/memory/` supaya tinggal pointer.
-- 🟡 26 Sep 2026 — Rotasi kunci Neon **SELESAI**: nol kunci ber-scope akun, `env.db` pakai kunci org
-  AIgnited (id 3367030, 200 ke `sigap-bup`), MCP dipin ke `rapid-lab-46810989` read-only di
-  `~/.claude.json` saja. **Sisa satu: `NEON_DATABASE_URL` masih menunjuk project mati** (`us-east-2`,
-  host `-pooler`) — butuh `envdb-setup.sh NEON_DATABASE_URL` di terminal Aldo, nama kuncinya wajib
-  disebut. Branch default project baru bernama **`main`**, bukan `production`.
-  Detail di [Akun Neon](shared/reference/reference_neon_account.md).
+- 🟡 26 Sep 2026 — Neon dirapikan: nol kunci ber-scope akun, `env.db` pakai kunci org AIgnited
+  (id 3367030), MCP dipin ke `rapid-lab-46810989` read-only di `~/.claude.json` saja, dua kembar
+  `SIGAP` kosong **dihapus** (org Rivaldo kini kosong), scaffold Neon dicabut dari repo brain.
+  **Sisa: `NEON_DATABASE_URL` menunjuk project yang sudah dihapus** — sekarang gagal keras, bukan
+  diam-diam mendarat di DB kosong. Perbaiki dengan `envdb-setup.sh NEON_DATABASE_URL` di terminal
+  Aldo; nama kuncinya wajib disebut. Branch live bernama **`main`**, bukan `production`. Kunci yatim
+  `bara-rivaldo` (3366980) belum dicabut — classifier memblokir, dan org-nya kosong jadi tidak
+  berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
 - 🔵 26 Sep 2026 — **SIGAP-BUP pindah ke Postgres, SEDANG BERJALAN, di-pause Aldo.** Project Neon
   baru `sigap-bup` / `rapid-lab-46810989` (org AIgnited, ap-southeast-1, **PG17**) sudah dibuat dan
   **10 migrasi lolos**. Penyebab blocker lama sudah pasti: libpq 16 tidak bisa bicara dengan PG18.
