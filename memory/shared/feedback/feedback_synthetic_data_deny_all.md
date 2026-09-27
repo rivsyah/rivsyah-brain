@@ -16,6 +16,12 @@ metadata:
 - Audit keluaran sebelum dikirim ke mana pun. Setiap string harus palsu, kode, tanggal, atau token
   izin.
 - Saat memeriksa data asli, cetak nama kolom, panjang, dan jumlah saja, jangan nilainya.
+- **Masker "bentuk" wajib menyamarkan semua huruf Unicode**, bukan hanya `[A-Za-z]`. 27 Sep 2026 masker
+  Latin-saja meloloskan satu nama beraksara Arab ke transkrip. Pakai kelas huruf Unicode
+  (`[^\W\d_]` dengan flag Unicode), atau cetak panjang dan kelas karakter saja.
+- Untuk data dummy yang **realistis** (bukan sekadar sintetis), pola yang terbukti:
+  `C:\Users\rivsy\Herd\sigap-bup\scripts\generate-dummy.mjs` (mesin ini) — setiap string dilacak asal-
+  usulnya, generator berhenti bila ada yang bukan buatannya/validator atau sama dengan nilai asli.
 - **Daftar yang menjaga data** (misalnya file tes mana yang menyemai data asli dan harus dikecualikan)
   dihitung dari keluaran **lengkap** dan dihitung ulang tiap kali dipakai. Jangan dibangun dari
   `grep | head -N`: `head` memotong diam-diam tanpa tanda. Pasang batas bawah jumlah (mis. "≥ 6 file")

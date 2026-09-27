@@ -1,6 +1,6 @@
 ---
 name: reference-stray-git-home
-description: Ada repo git nyasar di C:\Users\rivsy (0 commit, tanpa .gitignore) yang mengklaim seluruh home termasuk .ssh dan env.db — hapusnya MENUNGGU Aldo; Herd\sigap-bup sudah punya git sendiri sejak 27 Sep 2026 (baseline 97d1861)
+description: Ada repo git nyasar di C:\Users\rivsy (0 commit, 3.515 blob yatim 192 MB dari 2 Jul 2026) yang mengklaim seluruh home — Aldo mengizinkan hapus 27 Sep, tapi agent diblokir pengaman + kunci berkas, jadi Aldo menghapus sendiri; Herd\sigap-bup sudah punya git sendiri
 metadata:
   node_type: memory
   type: reference
@@ -38,11 +38,23 @@ git -C <dir> rev-parse --show-toplevel
 Kalau jawabannya `C:/Users/rivsy`, berarti direktori itu tidak punya repo sendiri dan kamu sedang
 bicara dengan repo home.
 
-**Rekomendasi:** hapus `C:\Users\rivsy\.git`. Tidak ada yang hilang — nol commit, nol file terlacak.
-Status 27 Sep 2026: masih 0 commit (harness melaporkan "Recent commits" kosong).
+**Rekomendasi:** hapus `C:\Users\rivsy\.git`. Tidak ada commit dan tidak ada file terlacak.
 
-⚠ OPEN: hapus `C:\Users\rivsy\.git`? Ditanyakan 26 Sep dan 27 Sep 2026. Jawaban "lanjutkan" pada 27 Sep
-**tidak** dibaca sebagai ya — menghapus repo butuh ya eksplisit.
+**Temuan 27 Sep 2026:** repo itu menyimpan **3.515 blob yatim (192 MB)**, semuanya bertanggal **2 Jul 2026**
+— jejak satu kali `git add` di home yang stage-nya kemudian dibatalkan. Tidak ada tree atau commit, jadi
+nama berkasnya tidak tercatat. Versi *terkini* `env.db`, `.claude.json`, `.bash_history`, `.gitconfig`
+tidak ada di antaranya; versi 2 Juli-nya tidak bisa dipastikan. Alasan tambahan untuk menghapus.
+
+**Status 27 Sep 2026:** Aldo **mengizinkan** hapus ("silahkan"). Agent tetap tidak bisa:
+- `rm -rf` ditolak pengaman mode otomatis Claude Code ("Irreversible Local Destruction").
+- Ganti nama (`mv` ke `.git-nyasar-2026-09-27`, cara yang bisa dibalik) gagal dua kali: `Permission
+  denied` dari Windows, karena berkas di dalamnya dipegang proses lain — kemungkinan sesi Claude lain
+  yang berjalan dari `~` (ada 10+ sesi) dan menjalankan `git status` di home. Proses `fsmonitor` tidak
+  aktif untuk repo ini.
+
+⚠ OPEN: Aldo menghapus sendiri dari terminalnya, setelah sesi Claude yang berjalan dari `~` ditutup:
+`Remove-Item -Recurse -Force C:\Users\rivsy\.git` (PowerShell). Setelah itu cek dengan
+`git -C C:\Users\rivsy rev-parse --show-toplevel` → harus menjawab "not a git repository".
 
 ## 2. `Herd\sigap-bup` — SELESAI 27 Sep 2026
 

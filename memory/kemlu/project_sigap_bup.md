@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP-BUP GRP Biro Umum & Pengadaan Kemlu di Herd\\sigap-bup → sigap-bup.test; git sejak 27 Sep (8dfd123: 5 bug Postgres diperbaiki, gerbang pagu terbukti terkunci di PG17); seed ke Neon MENUNGGU keputusan residensi data + izin SheetJS untuk xlsx baru"
+description: "SIGAP-BUP GRP Biro Umum & Pengadaan Kemlu di Herd\\sigap-bup → sigap-bup.test; git sejak 27 Sep (8dfd123: 5 bug Postgres; 01863c4: seed DUMMY bawaan, entitas disamarkan — keputusan Aldo: Neon hanya dummy, data asli lokal); seed dummy ke Neon main MENUNGGU Aldo (ditolak pengaman agent)"
 metadata: 
   node_type: memory
   type: project
@@ -147,20 +147,17 @@ dari README dan `scripts/import-wasdit.mjs`; skrip itu kini **wajib** diberi pat
 
 **xlsx baru.** `C:\Users\rivsy\Downloads\Wasdit BUM 2026.xlsx` bertanggal 27 Sep 2026 adalah **versi
 lebih baru** dari sumber JSON Juli: 61 sheet (dulu 60), PAGU DIPA Rp 360.045.093.000 (dulu
-350.607.991.000), realisasi Rp 270.850.062.085 (dulu 160.823.589.841). Belum diekstrak.
-⚠ OPEN: ekstraksi butuh SheetJS. `node_modules/xlsx` tidak terpasang, dan memasang dari
-`cdn.sheetjs.com` **ditolak pengaman mode otomatis** ("Code from External"). Butuh izin Aldo. Setelah
-ekstraksi ulang, angka keras di `LayarTest` (350_607_991_000 / 160_823_589_841) dan README ikut
-diperbarui. Cek ulang panjang kolom juga (lihat bug 1).
+350.607.991.000), realisasi Rp 270.850.062.085 (dulu 160.823.589.841). ~~⚠ OPEN: butuh izin SheetJS~~ —
+**SELESAI 27 Sep**: Aldo mengizinkan, xlsx sudah diekstrak. Lihat bagian "27 Sep (lanjutan)" di bawah.
 
 **Uji Postgres tanpa data asli** — alat di `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\` (mesin ini,
 README di sana). Caranya: branch Neon buangan dari `main`, seed **sintetis** (tolak-semua, lihat
 [[feedback_synthetic_data_deny_all]]), lalu props Inertia 30 layar × 5 peran + 10 ekspor CSV
 dibandingkan antara SQLite dan Postgres. **Enam** file tes menyemai data Wasdit asli: `AdminTest`,
-`EksekutifTest`, `LaporanTest`, `LayarTest`, `PemaketanTest`, `TopbarTest` (26 tes). File-file itu
-**tidak boleh** dijalankan ke Neon sebelum ⚠ OPEN residensi di bawah diputuskan. 114 tes sisanya aman.
-`run_pg.sh suite` menghitung daftar ini ulang dengan grep tiap jalan, jangan diganti daftar
-tulis-tangan (lihat insiden 2).
+`EksekutifTest`, `LaporanTest`, `LayarTest`, `PemaketanTest`, `TopbarTest` (26 tes). **Sejak `01863c4`
+seluruh tes memakai seed dummy** (`phpunit.xml` mengunci `SIGAP_SEED=dummy`), jadi ke-140 tes boleh ke
+Neon lewat `run_pg.sh semua`. Mode `run_pg.sh suite` (grep-pengecualian) hanya relevan bila suatu saat
+tes dijalankan dengan `SIGAP_SEED=asli` — jangan pernah ke basis data luar.
 
 Bug migrasi yang ditemukan dan diperbaiki — commit **`8dfd123`** di atas baseline:
 1. **`VARCHAR(255)`** — SQLite tidak menegakkan panjang, Postgres menolak (`SQLSTATE 22001`). Data
@@ -203,10 +200,50 @@ Kedua branch dihapus (HTTP 200), log lokal yang memuat baris itu dihapus. Yang t
 transkrip sesi. ⚠ OPEN: Aldo sebaiknya mengecek setelan berbagi dua berkas Drive milik `UP-2026-0001`.
 Aturannya: [[feedback_synthetic_data_deny_all]].
 
-⚠ OPEN (hukum, Aldo yang memutuskan): **data asli Kemlu boleh ke Neon `aws-ap-southeast-1`?**
-PP 71/2019 Pasal 20 ayat (2) mewajibkan PSE Lingkup Publik mengelola, memproses, dan/atau menyimpan
-sistem dan data elektroniknya di wilayah Indonesia. Keputusan ini memblokir tiga hal: seed ke `main`,
-26 tes Wasdit di Postgres, dan `.env` yang menunjuk ke Neon. Ditanyakan ke Aldo 27 Sep 2026.
+~~⚠ OPEN: data asli Kemlu boleh ke Neon `aws-ap-southeast-1`?~~ — **DIPUTUSKAN Aldo 27 Sep 2026:
+"gunakan data dummy yang mendekati data real, samarkan entitas Kemlu".** Jadi Neon (dan basis data luar
+negeri mana pun, termasuk deploy Cloudflare nanti) **hanya berisi dummy**; data asli tetap lokal.
+Latar: PP 71/2019 Pasal 20 ayat (2) mewajibkan PSE Lingkup Publik mengelola/memproses/menyimpan data di
+wilayah Indonesia, dan Neon tidak punya region Indonesia (8 region AWS, terdekat Singapura — dicek 27 Sep).
+
+## 27 Sep 2026 (lanjutan) — seed dummy bawaan (`01863c4`), xlsx 27 Sep diekstrak
+
+**Ekstraksi xlsx 27 Sep** (SheetJS 0.20.3 dari `cdn.sheetjs.com`, kini devDependency): 131 MAK, 830
+permintaan, 46 alokasi, 34 SPP, 5 KKP, 5 kontrak. Awalnya Σ pagu kurang Rp 9.199.175.000 dari SUMMARY:
+sheet `6023.EBB.951.052.A` punya kolom baru berjudul **`(532111) RM`** (format kurung terbalik) yang
+tidak dikenali regex. Diperbaiki; akun dengan sumber dana kedua mendapat kode berakhiran **`-RM`**
+(`…052.A.532111-RM`, `…971.054.A.533121-RM`) supaya `kode` tetap unik. Σ pagu kini sama persis dengan
+SUMMARY. JSON Juli diarsipkan di `C:\Users\rivsy\Herd\sigap-bup\storage\app\private\wasdit-2026-07\`
+(mesin ini, tidak dilacak git). Sembilan sheet tidak diekstrak (mis. "Daftar Pengembalian Belanja",
+"Pemaketan Pekerjaan", "Timeline Pengadaan") — memang belum pernah dipakai seeder.
+
+**Seed dummy** — `scripts/generate-dummy.mjs` → `database/seeders/dummy/` (dilacak git, 891 KB):
+- Dipertahankan: jumlah baris, kode anggaran (`6023.EBA.994…`, KRO/RO/akun standar), tanggal, token
+  kategori (bank, status, jenis). Nominal diacak ±15% (Σ pagu dummy Rp 356,6 M vs asli Rp 360,0 M).
+- Disamarkan: 384 orang (nama Indonesia palsu yang konsisten per orang; PPK dipetakan per kata pertama
+  karena seeder mencocokkan PPK lewat kata pertama), penyedia, nomor SPTJB/SPP/SP2D/kontrak (format asli,
+  unit fiktif `ADM-…`), tautan (`drive.example.com`), kartu KKP (`4000…`), billing, satker `000001`,
+  DIPA `SP DIPA-000.01.1.000001/2026`, semua uraian (templat per akun), admin `admin@sigap.test`,
+  lokasi `PaketSeeder`.
+- Tolak-semua dengan bukti: generator berhenti bila ada string yang bukan buatannya/validator, atau
+  sama dengan nilai asli. Cek independen: 0 dari 266 nama lengkap asli, 0 kata entitas. Deterministik.
+- `config/sigap.php` + `SIGAP_SEED` (`dummy` bawaan, `asli` hanya lokal). Tes membandingkan total dengan
+  `WasditSeeder::ringkasan()` set aktif. SQLite 140/140 untuk kedua set.
+- **Kode `6023` sengaja tidak disamarkan**: KRO/RO/akun adalah kode standar nasional, dan `6023` tertanam
+  di frontend (`rkakl.tsx`), seeder, dan 12 file tes. ⚠ OPEN: samarkan juga bila Aldo mau.
+- **Branding UI tetap Kemlu** (sidebar "Kementerian Luar Negeri RI", kop BAR dengan satker 403247,
+  placeholder `drive.kemlu.go.id`) — bukan data. ⚠ OPEN: samarkan untuk demo publik bila Aldo mau.
+
+**Yang tertahan pengaman mode otomatis (bukan keputusan Aldo):**
+- **Seed dummy ke Neon `main`** ditolak sebagai "Production Deploy". `main` masih 10 migrasi dan kosong.
+  ⚠ OPEN: Aldo menjalankannya sendiri, atau memberi izin eksplisit lewat aturan izin Claude Code.
+- Suite 140 tes (dummy) ke branch sandbox `br-floral-sun-b3ad4k5k` **sudah jalan**, tetapi membaca
+  hasilnya ditolak ("Modify Shared Resources"). Log: `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\semua_pg.log`.
+- `C:\Users\rivsy\.git`: Aldo mengizinkan hapus, pengaman menolak ("Irreversible Local Destruction");
+  ganti nama gagal karena file dikunci proses lain. Lihat [[reference_stray_git_home]].
+
+**Insiden 3 (kecil):** masker bentuk hanya menyamarkan huruf Latin, jadi satu nama depan beraksara Arab
+di kolom `pic` tercetak ke transkrip. Aturan diperbarui: masker wajib mencakup semua aksara.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 

@@ -15,19 +15,18 @@
   0,4 detik. **Koreksi: host `-pooler` TIDAK perlu dibuang** — penyebab kegagalan lama adalah libpq 16
   vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
   kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
-- 🔵 27 Sep 2026 — **SIGAP-BUP → Postgres: kode SIAP, data MENUNGGU keputusan Aldo.** Git terpasang
-  (baseline `97d1861`, lalu `8dfd123`: 5 bug PG — VARCHAR 255, urutan NULL, sum numeric, LIKE, cache
-  seeder). Terbukti di PG17 **tanpa data asli**: 114 tes, 150 layar + 10 CSV identik dengan SQLite,
-  gerbang pagu `lockForUpdate` benar-benar terkunci (uji 2 proses). ⚠ Menunggu: (1) residensi — data
-  asli Kemlu boleh ke Neon Singapura? (PP 71/2019 Ps. 20 ayat 2); (2) izin SheetJS untuk xlsx 27 Sep
-  yang lebih baru. `.env` masih SQLite, Neon `main` masih 10 migrasi.
-  [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) bagian 27 Sep.
-- 🔴 27 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, tanpa .gitignore);
-  hapusnya MENUNGGU ya eksplisit Aldo. `Herd\sigap-bup` sudah punya git sendiri.
-  [Git nyasar di home](shared/ops/reference_stray_git_home.md).
-- 🟠 27 Sep 2026 — Dua insiden data kecil saat uji PG SIGAP-BUP (baris asli tercetak ke transkrip;
-  branch sandbox dihapus). Aldo perlu cek setelan berbagi 2 berkas Drive milik `UP-2026-0001`.
-  Aturan baru: [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md).
+- 🔵 27 Sep 2026 — **SIGAP-BUP → Postgres: kode SIAP, seed DUMMY siap; seed ke Neon `main` MENUNGGU
+  Aldo.** Keputusan Aldo: Neon hanya berisi **dummy yang mendekati data real, entitas Kemlu
+  disamarkan**; data asli tetap lokal. Commit `8dfd123` (5 bug PG) + `01863c4` (seed dummy bawaan,
+  `SIGAP_SEED`, ekstraksi xlsx 27 Sep: 131 MAK, 830 permintaan). SQLite 140/140 untuk kedua set; PG17
+  terbukti (114 tes, 150 layar identik, `lockForUpdate` terkunci). Seed `main` ditolak pengaman agent
+  ("Production Deploy") — Aldo jalankan sendiri. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
+- 🔴 27 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
+  2 Jul). Aldo sudah mengizinkan hapus, tapi agent diblokir pengaman + kunci berkas → **Aldo hapus
+  sendiri** dari terminal. [Git nyasar di home](shared/ops/reference_stray_git_home.md).
+- 🟠 27 Sep 2026 — Tiga insiden data kecil saat uji PG SIGAP-BUP (baris/nama asli tercetak ke
+  transkrip; branch sandbox dihapus). Aldo perlu cek setelan berbagi 2 berkas Drive milik
+  `UP-2026-0001`. Aturan: [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md).
 
 ## User & identity
 
@@ -49,7 +48,7 @@
 
 - [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
 - [SIPAMA Kemlu](kemlu/project_sipama_kemlu.md) — Dashboard Sistem Informasi Pengamanan (9 modul) di Herd\sipama → sipama.test
-- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; git sejak 27 Sep (`8dfd123`, siap Postgres); seed Neon MENUNGGU residensi + SheetJS
+- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; git sejak 27 Sep (`01863c4`: siap Postgres + seed DUMMY bawaan); Neon hanya dummy (keputusan Aldo), seed `main` menunggu Aldo
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
 - [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025 terverifikasi; git tanpa commit
@@ -92,7 +91,7 @@
 
 - [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga); rotasi selesai 26 Sep: NOL kunci ber-scope akun, `env.db` pakai kunci org AIgnited; scope kunci ikut org PROJECT, bukan org pemilik; kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; login CLI OAuth tetap akun-penuh jadi `org_id` tetap wajib; `NEON_DATABASE_URL` sudah benar + terbukti jalan lewat pdo_pgsql; branch live bernama `main` bukan `production`; KOREKSI: host `-pooler` tidak perlu dibuang dan `pooler_enabled` bukan prediktor konektivitas — pdo_pgsql gagal di PG18 karena libpq 16, dan jalan mulus di PG17
 - [Neon CLI](shared/reference/reference_neon_cli.md) — Neon 5.0.1; `neon mcp -y` bawaan cetak API key akun-penuh ke 6 config — pakai `--agent --project-id --read-only`, dan `-y` bisa PAKAI ULANG kunci lama; `neon config init` bisa pasang zod rusak
-- [Git nyasar di home](shared/ops/reference_stray_git_home.md) — **BAHAYA LATEN**: ada `.git` di `C:\Users\rivsy` (0 commit, tanpa .gitignore) yang mengklaim `.ssh`, `env.db`, `.claude.json`; hapusnya MENUNGGU ya eksplisit Aldo. `Herd\sigap-bup` sudah punya git sendiri (27 Sep, baseline 97d1861)
+- [Git nyasar di home](shared/ops/reference_stray_git_home.md) — **BAHAYA LATEN**: ada `.git` di `C:\Users\rivsy` (0 commit, 192 MB blob yatim dari 2 Jul) yang mengklaim `.ssh`, `env.db`, `.claude.json`; Aldo izinkan hapus 27 Sep, agent diblokir pengaman + kunci berkas → Aldo hapus sendiri. `Herd\sigap-bup` sudah punya git sendiri
 - [Herd di Windows](shared/ops/reference_herd_windows.md) — `herd link` gagal di sesi agen (minta elevasi, tapi tetap bilang sukses); pakai junction di `~/.config/herd/config/valet/Sites`
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
