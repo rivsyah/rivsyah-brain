@@ -1,6 +1,6 @@
 ---
 name: reference-office-render
-description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM MACET sejak 27 Sep 2026 (Adobe PDFMaker) → cek visual docx lewat render EMF per halaman; xlsx dihitung ulang + diekspor lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (kini global); TEXT() Excel rusak di locale Indonesia"
+description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; keepNext di sel tabel bikin tabel lompat halaman"
 metadata:
   type: reference
 ---
@@ -51,3 +51,16 @@ Tambahan 27 Sep 2026 (mesin riv):
   `CalculateFull` + `SaveAs(path, 51)`.
 - Paragraf kosong terakhir sesudah tabel tanda tangan bisa tumpah jadi halaman kosong: kecilkan (spacing 0,
   line exact 20, sz 2).
+
+Koreksi 27 Sep 2026 10:25 (sesi MDP PBJP, [[reference-mdp-pbjp-ringkas]]):
+- **Ekspor PDF Word JALAN lagi.** `Documents.Open` → `TablesOfContents.Update()` → `SaveAs2(docx,16)` →
+  `ExportAsFixedFormat(pdf,17)` berhasil ±12 kali berturut-turut (dokumen 75–97 hlm, ±20 detik) antara 10:00 dan
+  10:25. Satu-satunya gejala: `Close()` sesudah ekspor melempar RPC_E_DISCONNECTED — berkas keluaran tetap utuh
+  (lolos validate.py). Jadi "macet 09:50" kemungkinan kondisi sesaat (bentrok sesi lain/PDFMaker), bukan permanen.
+  Skrip yang terbukti: `C:\Users\rivsy\dev\kemlu\mdp-pbjp-ringkas\render.ps1` (catat PID WINWORD sebelum, bunuh
+  hanya proses baru di `finally`). Kalau menggantung lagi, baru pakai jalur EMF di atas.
+- **Jebakan tabel Word:** paragraf ber-`keepNext` di sel tabel mana pun membuat Word menahan baris itu bersama baris
+  berikutnya. Beberapa baris berturut-turut ber-keepNext → seluruh tabel lompat ke halaman baru dan menyisakan
+  halaman hampir kosong. Untuk judul pasal di tabel dwibahasa: jadikan baris judul sendiri (keepNext, cantSplit)
+  dan biarkan baris isi boleh terbelah (`cantSplit: false`).
+- `validate.py` juga butuh `lxml` bila dipasang ke `--target` terpisah (global sudah ada).

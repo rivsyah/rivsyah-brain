@@ -55,6 +55,7 @@
 - [Template SPK & Adendum](kemlu/reference_template_spk.md) — Claude Doc + .docx di Documents; template SPK Barang/Jasa Lainnya + adendum; dasar hukum terverifikasi (batas SPK, Ps. 54/56/79, PPN 11%; 27 Sep: Ps. 33 (2) b e-purchasing DIHAPUS Perpres 46/2025)
 - [HT PoC Satpam](kemlu/project_ht_poc_satpam.md) — KAK + RAB/HPS kuota data 20 HT; Revisi 3 (27 Sep 2026) Okt-Des = 60 unit-bulan, HPS Rp4,8 jt; Jul-Sep di luar paket, invoice AAM 113 unit-bulan tak bisa dipakai
 - [Dokumen Pokja + SPPBJ](kemlu/reference_dokumen_pokja_sppbj.md) — draf Pengumuman/Nodin/SPPBJ tender Renovasi Lt3 (26 Sep 2026); jaminan 5% HPS bila < 80% HPS (Pasal 33 (3) b); celah: klarifikasi kewajaran harga
+- [MDP PBJP LN ringkas](kemlu/reference_mdp_pbjp_ringkas.md) — FINAL 137 hlm → RINGKAS 75 hlm (.docx+.pdf di Downloads, 27 Sep 2026); 36 formulir dwibahasa 1 hlm; 12 kontradiksi diselesaikan + 9 celah terbuka (pakta integritas belum ada); builder di ~/dev/kemlu/mdp-pbjp-ringkas
 - [Pengadaan AMDK](kemlu/project_pengadaan_amdk.md) — RAB/HPS rev3 + KAK rev2 + SSKK rev1 (27 Sep 2026): Okt–Des, 2.980 galon + 120 karton, Rp64,4 jt, tanpa jaminan pelaksanaan; terbuka: pagu KAK 100 jt ≠ RAB 896,8 jt, sumber harga Rp20.000 belum ada
 - [Langganan Media Cetak](kemlu/project_langganan_media_cetak.md) — KAK + RAB/HPS Kompas/JP/Tempo/PRISMA; revisi Okt–Des (27 Sep 2026) 45 Eks/Bln, RAB Rp18.797.850; BLOCKER pagu paket KAK Rp10 jt < nilai paket; sumber harga ke-2 = harga nego Juli
 - [Tesis Erna](kemlu/project_tesis_erna.md) — deck ujian proposal S2 Akuntansi soal hedging/kurs Perwakilan RI; deck _Revisi 31 slide + naskah docx 16 hlm (Q&A, pertanyaan tersulit, perbaikan); 4 item kuesioner tumpang tindih dengan Y
@@ -92,7 +93,7 @@
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
 - [Ignited Research masthead](shared/reference/reference_ignited_masthead.md) — "Ignited Research · Independent Analysis" untuk semua brief; "Independent Research" sudah pensiun
-- [Render dokumen Office](shared/reference/reference_office_render.md) — tidak ada soffice/pdftoppm/pandoc; docx→PDF lewat Word COM MACET sejak 27 Sep (Adobe PDFMaker) → render EMF per halaman; xlsx hitung ulang + PDF lewat Excel COM (sheet hidden gagal ekspor), PyMuPDF global; TEXT() Excel rusak di locale ID → FIXED()
+- [Render dokumen Office](shared/reference/reference_office_render.md) — tidak ada soffice/pdftoppm/pandoc; docx→PDF lewat Word COM: macet 27 Sep 09:50 tapi jalan lagi 10:00–10:25 (render.ps1 di mdp-pbjp-ringkas), cadangan render EMF per halaman; keepNext di sel tabel = tabel lompat halaman; xlsx hitung ulang + PDF lewat Excel COM (sheet hidden gagal ekspor), PyMuPDF global; TEXT() Excel rusak di locale ID → FIXED()
 - [Impor Claude Design](shared/reference/reference_design_login.md) — DesignSync bisa kedaluwarsa di tengah sesi; hanya /design-login dari terminal interaktif yang memulihkan
 
 ## Archive
