@@ -237,8 +237,11 @@ SUMMARY. JSON Juli diarsipkan di `C:\Users\rivsy\Herd\sigap-bup\storage\app\priv
 **Yang tertahan pengaman mode otomatis (bukan keputusan Aldo):**
 - **Seed dummy ke Neon `main`** ditolak sebagai "Production Deploy". `main` masih 10 migrasi dan kosong.
   ⚠ OPEN: Aldo menjalankannya sendiri, atau memberi izin eksplisit lewat aturan izin Claude Code.
-- Suite 140 tes (dummy) ke branch sandbox `br-floral-sun-b3ad4k5k` **sudah jalan**, tetapi membaca
-  hasilnya ditolak ("Modify Shared Resources"). Log: `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\semua_pg.log`.
+- Suite 140 tes (dummy) ke Postgres **belum punya hasil**. Run pertama (27 Sep, branch sandbox
+  `br-floral-sun-b3ad4k5k`): menunggu/membaca hasilnya ditolak pengaman ("Modify Shared Resources"), lalu
+  Claude Code **menghentikan run itu karena memori sistem hampir habis** (RAM bebas 3,8 dari 31,3 GB) —
+  bukan kegagalan tes. Proses PHP yatimnya dihentikan, branch dihapus (HTTP 200). ⚠ OPEN: jalankan ulang
+  `run_pg.sh semua` hanya bila Aldo meminta, saat memori longgar.
 - `C:\Users\rivsy\.git`: Aldo mengizinkan hapus, pengaman menolak ("Irreversible Local Destruction");
   ganti nama gagal karena file dikunci proses lain. Lihat [[reference_stray_git_home]].
 
