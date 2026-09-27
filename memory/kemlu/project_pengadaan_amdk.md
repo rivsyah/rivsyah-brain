@@ -13,18 +13,21 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 - `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev3.xlsx` — **terkini**, isi = "Revisi 2, 27 September 2026". `rev2.xlsx` = Revisi 1 (Sep–Des).
 - `KAK_Spektek_AMDK_Setjen_Kemlu_TA2026_rev2.docx` — **terkini**, 8 hlm. `rev1.docx` = Sep–Des.
 - SSKK: `Pengadaan AMDK Sekjen\SSKK_Terisi_AMDK_Setjen_Kemlu_TA2026_rev1.docx` — **terkini** (27 Sep 2026), selaras
-  KAK rev2/RAB rev3. File tanpa `_rev1` = draf 5 Agu 2026, tidak disentuh. Isi file = SSUK e-purchasing (butir 1–67)
-  + tabel SSKK + tanda tangan PPK; yang direvisi hanya tabel SSKK dan tanda tangan:
-  12.1 periode kebutuhan Okt–Des; 12.2 10 titik (KAK 6.2) + jam 08.00–15.00; 22.1 + titik penyerahan & dokumen mutu;
-  27.1 termin bulanan + rekapitulasi per titik; 28.1 SNI 3553:2015, BPOM RI MD, halal BPJPH, PDN; 52 hanya
-  "Jaminan Pelaksanaan TIDAK disyaratkan" (Ps. 33 (2) b e-purchasing + nilai HPS Rp64,4 jt; Alternatif B dibuang,
-  4.3.b jadi "tidak berlaku"); 57.2 termin bulanan saja; 57.5 + rekapitulasi; tanggal "September 2026";
-  nama PPK "Charles Bob Ivan" -> "Charles Ivan Bob".
+  KAK rev2/RAB rev3. File tanpa `_rev1` = draf 5 Agu 2026, tidak disentuh. Isi file = SSUK e-purchasing (butir 1–67,
+  tidak diubah) + tabel SSKK + tanda tangan PPK. Yang direvisi di tabel SSKK: 4.3.b tidak berlaku + definisi
+  "Perpres PBJ" di 4.3.c; 12.1 periode Okt–Des; 12.2 10 titik (KAK 6.2), jadwal disepakati, jam 08.00–15.00, isi
+  surat jalan; 22.1–22.3 = KAK 8.1/8.3; 23.3 + 58.2 batas = "sebelum batas akhir penyelesaian tagihan TA 2026 (DJPb)";
+  27.1–27.2 termin bulanan + tempat serah terima = titik penyerahan; 28.1 SNI 3553:2015, BPOM RI MD, halal BPJPH, PDN;
+  30.1 alokasi per titik indikatif (geser antar-titik tanpa adendum); 33.2 d dasar PDN = Ps. 66 (1); 52 hanya
+  "Jaminan Pelaksanaan TIDAK disyaratkan" atas dasar Ps. 33 (1) (nilai HPS Rp64,4 jt), Alternatif B dibuang;
+  57.2 termin bulanan saja; 57.5 + rekapitulasi; tanggal "September 2026"; nama PPK "Charles Ivan Bob";
+  blok tanda tangan + butir 67 dikunci satu halaman (keepNext).
   Butir 52 sengaja TIDAK dihapus (beda dengan saran sheet 5 D11): SSUK 52.1 mewajibkan jaminan sebelum kontrak,
   jadi SSKK harus menyatakan pengecualiannya secara tegas.
-  Terbuka: 33.2 d merujuk "Pasal 78 ayat (3)" untuk produk impor/PDN, padahal teks 78 (3) yang tampil di pasal.id
-  hanya huruf a–f tanpa soal PDN [perlu verifikasi]; KAK 12.2 f menghitung denda dari "nilai kontrak", SSKK 57.3
-  dari "nilai bagian kontrak yang belum diserahkan" (SSKK lebih tepat, Ps. 79 (4)); e-mail PPK dan data Penyedia kosong.
+  Terbuka untuk PPK: dasar denda (KAK 12.2 f "nilai kontrak" vs SSKK 57.3 "bagian kontrak", bagian kontrak belum
+  didefinisikan); "Tidak ada Perpanjangan Waktu/Pemberian Kesempatan" bertentangan dengan SSUK 25/26 dan Ps. 55–56;
+  kahar 7 hari (SSKK) vs 14 hari (SSUK); 59.1 tangguh 100% vs SSUK 59.3 proporsional; SPMK di SSUK tidak dipakai
+  e-purchasing; e-mail PPK + data Penyedia kosong; salah ketik/rujuk di SSUK (30.6, 65.3 a, dll.).
 - Nomor file ≠ nomor revisi di dalam dokumen (file rev3 = Revisi 2). Naikkan keduanya satu langkah pada revisi berikut.
 
 ## Angka Revisi 2 (27 Sep 2026, periode dipersempit atas arahan Aldo)

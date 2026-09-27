@@ -138,6 +138,56 @@ Yang tetap berlaku:
 5. ~~Aldo menulis `NEON_DATABASE_URL` baru ke `env.db`~~ — **SELESAI 26 Sep**, diuji ulang 27 Sep:
    PG 17.11, 28 tabel, hanya `migrations` berisi (10 baris).
 
+## 27 Sep 2026 — git terpasang, uji Postgres tanpa data asli, 2 bug migrasi diperbaiki
+
+**Git.** `C:\Users\rivsy\Herd\sigap-bup\.git` (mesin Windows ini), branch `main`, baseline `97d1861`
+saat 140/140 hijau. `.gitignore` kini mengabaikan `database/seeders/data/` (data asli: 16 digit nomor
+KKP, nama penerima, ±1.300 tautan Google Drive) dan `*.jar` (cookie sesi curl). Path pribadi dibuang
+dari README dan `scripts/import-wasdit.mjs`; skrip itu kini **wajib** diberi path xlsx.
+
+**xlsx baru.** `C:\Users\rivsy\Downloads\Wasdit BUM 2026.xlsx` bertanggal 27 Sep 2026 adalah **versi
+lebih baru** dari sumber JSON Juli: 61 sheet (dulu 60), PAGU DIPA Rp 360.045.093.000 (dulu
+350.607.991.000), realisasi Rp 270.850.062.085 (dulu 160.823.589.841). Belum diekstrak.
+⚠ OPEN: ekstraksi butuh SheetJS. `node_modules/xlsx` tidak terpasang, dan memasang dari
+`cdn.sheetjs.com` **ditolak pengaman mode otomatis** ("Code from External"). Butuh izin Aldo. Setelah
+ekstraksi ulang, angka keras di `LayarTest` (350_607_991_000 / 160_823_589_841) dan README ikut
+diperbarui. Cek ulang panjang kolom juga (lihat bug 1).
+
+**Uji Postgres tanpa data asli** — alat di `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\` (mesin ini,
+README di sana). Caranya: branch Neon buangan dari `main`, seed **sintetis** (tolak-semua, lihat
+[[feedback_synthetic_data_deny_all]]), lalu props Inertia 30 layar × 5 peran + 10 ekspor CSV
+dibandingkan antara SQLite dan Postgres. Lima file tes (`AdminTest`, `EksekutifTest`, `LaporanTest`,
+`LayarTest`, `PemaketanTest`, 23 tes) menyemai data Wasdit asli, jadi **tidak** dijalankan ke Neon.
+117 tes sisanya bisa.
+
+Bug migrasi yang ditemukan dan diperbaiki (belum di-commit saat ditulis ⏳):
+1. **`VARCHAR(255)`** — SQLite tidak menegakkan panjang, Postgres menolak (`SQLSTATE 22001`). Data
+   asli: `permintaan_bayar.kanal` 329, `permintaan_bayar.link_dokumen` 621. **Seed asli pasti gagal di
+   Neon tanpa perbaikan ini.** Migrasi `2026_09_27_000001_widen_spreadsheet_text_columns` mengubah 8
+   kolom teks spreadsheet ke `TEXT`. Terbukti: seed sintetis dengan panjang yang sama masuk Postgres.
+2. **Urutan `NULL`** — Postgres menaruh `NULL` di akhir untuk `ASC` dan di awal untuk `DESC`, SQLite
+   kebalikannya. Di Karwas, `limit 120` memilih baris yang berbeda, dan permintaan tanpa tanggal naik
+   ke atas. Tujuh `orderBy('tanggal')` kini `orderByRaw('tanggal desc nulls last')` atau
+   `'tanggal asc nulls first'` ditambah `id` sebagai pemecah seri.
+3. **Tipe** — `sum(bigint)` di Postgres bertipe `numeric`, jadi PHP menerima string.
+   `pembagian.sheetPagu` di-cast ke int. Aggregate lain sudah di-cast.
+4. **`LIKE` peka huruf** di Postgres — `'%GUP%'` di Karwas kini `lower(keterangan) like '%gup%'`,
+   mengikuti pola `PenyediaController`. Data Juli aman (25/25 huruf besar).
+
+Yang terbukti bersih di Postgres 17.11: 150 layar×peran tanpa 5xx, tidak ada error `GROUP BY` atau
+fungsi, 10 ekspor CSV identik byte-per-byte. Raw SQL dan `groupBy` yang dikhawatirkan 26 Sep lolos
+semua. ⏳ hasil 117 tes + uji balapan `lockForUpdate`.
+
+**Insiden kecil, 27 Sep.** Generator sintetis pertama meneruskan kolom `kanal` yang ternyata berisi
+nama penerima dan nominal. Satu baris terkirim ke branch sandbox, INSERT gagal, dan pesan error-nya
+tercetak di transkrip sesi. Branch dihapus, salinan log lokal dihapus. Aturannya:
+[[feedback_synthetic_data_deny_all]].
+
+⚠ OPEN (hukum, Aldo yang memutuskan): **data asli Kemlu boleh ke Neon `aws-ap-southeast-1`?**
+PP 71/2019 Pasal 20 ayat (2) mewajibkan PSE Lingkup Publik mengelola, memproses, dan/atau menyimpan
+sistem dan data elektroniknya di wilayah Indonesia. Keputusan ini memblokir tiga hal: seed ke `main`,
+23 tes Wasdit di Postgres, dan `.env` yang menunjuk ke Neon.
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design

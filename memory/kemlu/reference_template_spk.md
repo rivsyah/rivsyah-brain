@@ -29,6 +29,11 @@ Fakta yang sudah dicek live (23 Sep 2026) — pakai ini, jangan riset ulang:
   Perlem 2/2025 = penunjukan langsung program prioritas. Perlem 2/2026 (terbit 1 Sep 2026) = katalog elektronik,
   mencabut Perlem 9/2021 — bukan soal SPK.
 - PPN 2026: 12% x DPP nilai lain 11/12 = efektif 11% untuk nonmewah (PMK 131/2024, tidak berubah untuk 2026).
+- (27 Sep 2026) Perpres 46/2025 **menghapus Pasal 33 ayat (2) huruf b** — e-purchasing TIDAK lagi otomatis bebas
+  Jaminan Pelaksanaan; yang menentukan hanya Ps. 33 (1): wajib bila nilai kontrak > Rp200 jt. Sumber lama
+  (pasal.id halaman Perpres 16/2018, artikel pelatihan) masih memuat huruf b — cek halaman Perpres 46/2025.
+- (27 Sep 2026) Pasal 78 ayat (3) hanya huruf a–f (tidak ada soal produk impor/PDN); ayat (5) huruf e = ganti
+  kerugian. Kewajiban PDN: Ps. 66 ayat (1). Sumber: pasal.id.
 
 Celah terbuka: Pasal 28 tidak mengatur SPK yang melewati Rp200 jt karena adendum (maks +10%). Ditulis sebagai
 butir "minta pendapat UKPBJ/biro hukum" di daftar periksa.

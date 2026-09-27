@@ -1,11 +1,11 @@
 ---
 name: project-landlord-that-rents
-description: "Brief \"The Landlord That Rents\" menilai kertas kerja BLU Aset & Dana Diplomasi Kemlu; Retention Agenda, 34pp di Research Reports\\Landlord-That-Rents"
+description: "Brief BPADAD - Badan Pengelola Aset dan Dana Abadi Diplomasi (ed.3, 50pp + deck 28 slide; terbit pertama sbg The Landlord That Rents) menilai kertas kerja BLU Kemlu; Retention Agenda; folder tetap Landlord-That-Rents"
 metadata: 
   node_type: memory
   type: project
   originSessionId: 4d538033-6b39-404d-ad2d-715697a084d7
-  modified: 2026-09-10T05:24:47.846Z
+  modified: 2026-09-27T12:00:00.000Z
 ---
 
 Brief Ignited Research **"The Landlord That Rents"** (34pp, terbit 10 Sep 2026) di
@@ -86,3 +86,49 @@ kertas kerja (BPADD) menghilangkan kata yang justru bekerja.
 panjang (fig-instruments menimpa label 492); `_n` deck mulai dari 0 sehingga slide judul
 tidak bernomor — itu disengaja. Proof deck lewat PowerPoint COM (`SaveAs(..., 32)`),
 LibreOffice tidak terpasang.
+
+## Edisi ketiga — 27 Sep 2026 (JUDUL BARU)
+
+**Judul: *Badan Pengelola Aset dan Dana Abadi Diplomasi*** — sub-judul "Retention first: the
+case, the numbers and the sequence for Indonesia's diplomatic asset and endowment agency".
+Aldo minta ini di sesi ed.2; aku salah baca sebagai nama badan saja. "The Landlord That
+Rents" kini judul Bab 1.5 dan disebut di sampul sebagai judul terbit pertama.
+
+**Output** (folder SENGAJA tetap `Landlord-That-Rents` — sesi lain "MBA thesis from landlord
+research" membaca path ini): `out/Badan-Pengelola-Aset-dan-Dana-Abadi-Diplomasi.pdf` 50 hlm,
+26 figure, 16 tabel, 60 sumber + `...-Deck.pptx` 28 slide. PDF/deck ed.2 dipindah ke
+`out/superseded/`, bukan dihapus.
+
+**KOREKSI BESAR — tagihan sewa audited ada di catatan LO LK TA2024.** Ed.1-2 bilang tidak bisa
+ditetapkan dan pakai floor FSR Rp286,1M (126x). Sebenarnya: Beban Sewa Rp359,53M (+13,38%) +
+Beban FSR Rp342,48M = **Rp702,0M = 310x** pendapatan sewa; rumah dinas saja 151x. Tabelnya
+bergeser satu baris; pasangan dikunci narasi (Jasa Konsultan Rp28,87M +22,75%). Sewa
+menjelaskan hampir seluruh kenaikan Belanja Jasa Rp373,3M (akrual +Rp384,9M).
+
+**Data baru:** penyusutan gedung 34,8% (akum Rp3,85T dari bruto Rp11,07T); **rasio pembaruan**
+(belanja modal gedung / beban penyusutan gedung Rp517,5M) **93% FY2024 vs 171% FY2023**,
+benchmark NSW OLG 100%; asuransi 61 dari 145 satker, nilai tanggungan Rp145,0M = 1,31% stok
+gedung, **klaim disetor ke RKUN**; deposit di tangan pemilik asing Rp30,6M; saldo idle memuat
+software Rp15,55M; temuan BPK 2021 tujuh pos tak mencatat nilai tanah Rp401,4M; koreksi luas
+tanah -198.103 m2; wilayah 22 satker (Asia 57%); jalur anggaran 8,91 -> 8,70 -> 10,02 T.
+**R10** renewal floor 100%; **C6** rasio pembaruan <100% lagi di LK FY2025 audited; R2 kini
+mencakup hasil klaim asuransi.
+
+**Cacat yang ditemukan sesi peer (semua valid, sudah diperbaiki):** metadata PDF masih
+"From Rulemaker to Buyer" + keyword LKPP (stamp.py hasil fork!), tanda tangan penutup tertanggal
+10 Sep, dua caption dengan nomor figure basi, caveat "kolom bergeser" yang sudah dicabut,
+gloss LMAN ganda. **Temuanku sendiri:** klaim "second largest balance-sheet item any of its
+ministries holds" di penutup TIDAK PERNAH diverifikasi sejak ed.1 — dihapus; empat
+rujukan paragraf basi di tabel calls; tanda "--" di deck.
+
+**Gerbang baru:** verify.py menolak teks basi (C.STALE), nomor Figure/Table ketikan tangan
+(kecuali "Table N" yang merujuk dokumen sumber), gloss ganda, "--", dan sampul tanpa judul
+kini; make.py mengecek metadata PDF setelah stamp; **make_deck.py kini punya gerbang sendiri**
+(deck dua edisi lolos tanpa dicek). Hitungan: 56 prose facts, 54 identitas.
+
+**Belum bisa:** LK Semester I 2025 & DIPA 2025 ada di e-ppid.kemlu.go.id tapi di balik
+anti-bot JS (tidak ditembus, sesuai aturan); link lama kemlu.go.id/files/repositori -> 404.
+Aldo bisa unduh manual lewat browser untuk edisi berikut (data tahun efisiensi).
+
+**Jebakan:** heredoc Git Bash merusak escape backslash-n di string Python (jadi newline asli)
+-> tulis skrip patch pakai Write tool atau chr(10).
