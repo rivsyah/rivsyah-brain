@@ -1,6 +1,6 @@
 ---
 name: Data sintetis dari data asli = tolak-semua
-description: Data uji sintetis dari data asli klien wajib tolak-semua (teks asli hanya lolos lewat pola kode ketat/daftar izin), dan daftar "tes/file mana yang aman dikirim ke DB luar" wajib dihitung dari keluaran LENGKAP, bukan `| head` — dua insiden SIGAP-BUP 27 Sep 2026
+description: Data uji sintetis dari data asli klien wajib tolak-semua (teks asli hanya lolos lewat pola kode ketat/daftar izin), dan daftar "tes/file mana yang aman dikirim ke DB luar" wajib dihitung dari keluaran LENGKAP, bukan `| head`; saat analisis pun ambang frekuensi kata tidak menyaring nama — tiga insiden 27 Sep 2026 (SIGAP-BUP, PANTAS)
 metadata:
   type: feedback
   modified: 2026-09-27T12:00:00.000Z
@@ -33,6 +33,14 @@ keluaran `grep … | head -40`. Keluaran itu terpotong tanpa tanda, jadi `Topbar
 asli) ikut jalan ke branch sandbox. Data asli masuk di dalam transaksi yang di-rollback, dan pesan error
 foreign key mencetak satu baris asli ke transkrip, termasuk nama penerima dan tautan Google Drive.
 
-**How to apply:** berlaku di semua scope, terutama `kemlu/`. Pesan error database ikut mencetak nilai
-baris. Jadi data yang belum lolos audit tidak boleh dikirim ke database luar mana pun, termasuk
-branch buangan. Konteks proyeknya: [[project_sigap_bup]].
+Kejadian ketiga, 27 Sep 2026 (sesi PANTAS, analisis — bukan generator): untuk memahami kolom uraian BKU,
+agen mencetak kata yang muncul di ≥25 baris. Ambang frekuensi itu tetap meloloskan nama depan staf, karena
+pembayaran rutin atas nama orang muncul berulang. Hanya ke transkrip sesi, tidak ke layanan lain.
+**Ambang frekuensi bukan penyaring nama.** Yang aman dicetak dari teks bebas: bagian nomenklatur standar
+(mis. teks sebelum " - " di uraian BKU), kode akun, dan hasil uji keanggotaan terhadap kosakata tetap
+(cetak "kata X muncul di N baris", bukan daftar kata).
+
+**How to apply:** berlaku di semua scope, terutama `kemlu/`, dan berlaku juga saat sekadar menganalisis
+data asli, bukan hanya saat membuat data sintetis. Pesan error database ikut mencetak nilai baris. Jadi
+data yang belum lolos audit tidak boleh dikirim ke database luar mana pun, termasuk branch buangan.
+Konteks proyeknya: [[project_sigap_bup]], [[project_pantas_kurs]].
