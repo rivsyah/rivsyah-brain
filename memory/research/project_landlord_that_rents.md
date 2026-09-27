@@ -155,3 +155,7 @@ presisi yang dicetak prosa (f"{x:.1f}"). 59 prose facts, 59 identitas. C.STALE d
 **Pelajaran:** nama akun di LK (mis. "Administrasi di LN" di blok B "Pendapatan Administrasi
 dan Penegakan Hukum") tidak menjamin sifat ekonominya — selalu baca catatan penjelas tiap
 pos sebelum mengelompokkannya.
+
+**Dipakai sebagai sumber data (read-only)** oleh tesis MBA di `~/dev/personal/wharton-thesis`
+([[project-wharton-thesis]]). `src/facts.py` di sana mengimpor `content.py`. Kalau nama konstanta di
+content.py diubah, jalankan `python src/facts.py --check` di folder tesis.

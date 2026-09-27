@@ -64,3 +64,11 @@ Koreksi 27 Sep 2026 10:25 (sesi MDP PBJP, [[reference-mdp-pbjp-ringkas]]):
   halaman hampir kosong. Untuk judul pasal di tabel dwibahasa: jadikan baris judul sendiri (keepNext, cantSplit)
   dan biarkan baris isi boleh terbelah (`cantSplit: false`).
 - `validate.py` juga butuh `lxml` bila dipasang ke `--target` terpisah (global sudah ada).
+
+Catatan 27 Sep 2026 10:31-10:45 (sesi tesis MBA, [[project-wharton-thesis]]):
+- SaveAs2 via COM gagal di SEMUA percobaan (hang / RPC_E_DISCONNECTED), termasuk docx 1 baris, saat
+  beberapa sesi lain juga memakai Word. ExportAsFixedFormat tetap jalan (72 hlm, ~40 detik).
+- Dugaan kuat: pembersihan "bunuh WINWORD yang PID-nya muncul setelah aku mulai" BERBALAPAN antar-sesi;
+  dua sesi yang start bersamaan saling membunuh Word. Bunuh proses hanya saat timeout, bukan di finally.
+- File kunci `~$nama.docx` yang tertinggal dari Word yang dibunuh membuat Word berikutnya membuka read-only;
+  hapus dulu sebelum Open.
