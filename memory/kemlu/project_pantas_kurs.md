@@ -61,5 +61,7 @@ error konsol + tangkapan layar; env `PRE_JS`, `UPLOAD`, `VIEWS`, `PREFIX`).
 
 **Jebakan:** SheetJS standalone di Node tidak bisa `writeFile` tanpa `set_fs` → pakai
 `XLSX.write(wb,{type:'buffer'})`. Tool Edit menolak file yang baru diubah skrip Python — baca ulang dulu.
+Git Bash mengubah argumen yang diawali `//` (konversi path MSYS) — jangan kirim penanda komentar `// …` sebagai
+argumen skrip; di sesi ini dua penanda kehilangan satu `/` dan jadi error sintaks JSX.
 Privasi: lihat [[feedback_synthetic_data_deny_all]] (frekuensi kata uraian meloloskan nama).
 Konteks topik yang sama (lindung nilai/kurs Perwakilan): [[project_tesis_erna]].
