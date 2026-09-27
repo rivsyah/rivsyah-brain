@@ -1,10 +1,10 @@
 ---
 name: reference-stray-git-home
-description: Ada repo git nyasar di C:\Users\rivsy (0 commit, tanpa .gitignore) yang mengklaim seluruh home termasuk .ssh dan env.db; dan Herd\sigap-bup tidak punya version control sendiri
+description: Ada repo git nyasar di C:\Users\rivsy (0 commit, tanpa .gitignore) yang mengklaim seluruh home termasuk .ssh dan env.db — hapusnya MENUNGGU Aldo; Herd\sigap-bup sudah punya git sendiri sejak 27 Sep 2026 (baseline 97d1861)
 metadata:
   node_type: memory
   type: reference
-  modified: 2026-09-26T14:00:00.000Z
+  modified: 2026-09-27T12:00:00.000Z
 ---
 
 Ditemukan 26 Sep 2026 saat memeriksa kesiapan SIGAP-BUP untuk dilanjutkan.
@@ -39,16 +39,17 @@ Kalau jawabannya `C:/Users/rivsy`, berarti direktori itu tidak punya repo sendir
 bicara dengan repo home.
 
 **Rekomendasi:** hapus `C:\Users\rivsy\.git`. Tidak ada yang hilang — nol commit, nol file terlacak.
-Menunggu keputusan Aldo per 26 Sep 2026.
+Status 27 Sep 2026: masih 0 commit (harness melaporkan "Recent commits" kosong).
 
-## 2. `Herd\sigap-bup` tidak punya version control
+⚠ OPEN: hapus `C:\Users\rivsy\.git`? Ditanyakan 26 Sep dan 27 Sep 2026. Jawaban "lanjutkan" pada 27 Sep
+**tidak** dibaca sebagai ya — menghapus repo butuh ya eksplisit.
 
-Tidak ada `.git` di `C:\Users\rivsy\Herd\sigap-bup`, dan tidak ada di `C:\Users\rivsy\Herd` juga.
-Seluruh aplikasi — 22 layar, `BudgetControlService`, `AuditService`, 140 tes Pest — hidup tanpa
-riwayat.
+## 2. `Herd\sigap-bup` — SELESAI 27 Sep 2026
 
-**Ini risiko terbesar untuk migrasi SQLite→Postgres yang sedang berjalan.** Migrasi itu menyentuh 13
-titik raw SQL, 9 `groupBy`, dan 10 `lockForUpdate` yang belum pernah benar-benar aktif. Tanpa git,
-tidak ada rollback kalau salah satu berubah perilaku. Lihat [[project-sigap-bup]].
+Dulu tidak punya version control (26 Sep). **Sekarang punya repo sendiri** di
+`C:\Users\rivsy\Herd\sigap-bup\.git` (mesin Windows ini), branch `main`, commit baseline `97d1861`
+dibuat saat 140/140 tes hijau di SQLite. `git -C Herd\sigap-bup rev-parse --show-toplevel` kini
+menjawab folder proyek, bukan home. Rinciannya di [[project_sigap_bup]].
 
-Proyek Herd lain belum diperiksa apakah punya repo sendiri.
+Proyek Herd lain belum diperiksa apakah punya repo sendiri. Yang tidak punya tetap bicara dengan
+repo home sampai `~/.git` dihapus.

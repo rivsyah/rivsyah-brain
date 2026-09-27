@@ -127,16 +127,16 @@ Yang tetap berlaku:
   tiba-tiba gagal, cek kuncinya dulu lewat [[reference-neon-account]].
 
 **Berhenti di sini (Aldo bilang pause).** Yang belum dikerjakan, urut prioritas:
-1. **Seed.** `DatabaseSeeder` memanggil `WasditSeeder`, tapi **`database/data/` tidak ada di disk** —
-   hanya `scripts/import-wasdit.mjs` yang ada. Jadi seed butuh `Wasdit BUM 2026.xlsx` diimpor ulang
-   dulu. Cek di mana file xlsx-nya sebelum menjalankan seeder.
+1. **Seed.** ~~`database/data/` tidak ada, jadi seed butuh xlsx diimpor ulang dulu~~ — **KOREKSI 27 Sep:
+   salah alamat.** `WasditSeeder` membaca `database/seeders/data/*.json`, dan folder itu **ada** (12 JSON,
+   15 Jul 2026). Seed bisa jalan tanpa xlsx. Soal xlsx baru: lihat bagian 27 Sep.
 2. **`setval()` semua sequence** setelah seed, kalau seed memasukkan id eksplisit.
 3. **Jalankan 140 tes Pest terhadap Postgres.** `phpunit.xml` memaku `DB_CONNECTION=sqlite` tanpa
    `force="true"`, jadi env var dari luar seharusnya menang. Pakai **branch Neon terpisah** untuk
    tes — `RefreshDatabase` akan mengosongkan database yang ditunjuk.
 4. **13 raw SQL + 9 `groupBy`** belum diuji dengan data; baru bisa dibuktikan setelah seed.
-5. Aldo menulis `NEON_DATABASE_URL` baru ke `env.db` sendiri (nilai lama masih menunjuk project
-   PG18 yang tidak bisa disambung PHP).
+5. ~~Aldo menulis `NEON_DATABASE_URL` baru ke `env.db`~~ — **SELESAI 26 Sep**, diuji ulang 27 Sep:
+   PG 17.11, 28 tabel, hanya `migrations` berisi (10 baris).
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
