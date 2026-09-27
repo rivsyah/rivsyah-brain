@@ -132,3 +132,26 @@ Aldo bisa unduh manual lewat browser untuk edisi berikut (data tahun efisiensi).
 
 **Jebakan:** heredoc Git Bash merusak escape backslash-n di string Python (jadi newline asli)
 -> tulis skrip patch pakai Write tool atau chr(10).
+
+## Edisi ketiga, cetakan koreksi — 27 Sep 2026 (sore)
+
+Sesi peer menemukan tiga kesalahan lagi di cetakan pertama ed.3. **Ketiganya benar**, dicek
+ke LK TA2024:
+- **"Pendapatan Administrasi di Luar Negeri" (Rp44,78M, +50,92%) BUKAN layanan konsuler** —
+  LK hlm 47: pengembalian PPN/VAT belanja rutin dari 78 Perwakilan (+ pajak bensin Wina),
+  naik karena tindak lanjut rekomendasi BPK atas LK 2023. Jadi **fee konsuler = Rp388,3M =
+  72,7%** PNBP (bukan 81,0%), dan **turun 5,79%** (412,1 -> 388,3), bukan 1,98% — kenaikan
+  refund VAT menutupi penurunannya. Basis pungutan = Rp388,3M. Refund VAT ~20x sewa estat.
+- Baris tabel t-pnbp untuk pos itu tertulis "Stable" padahal +50,92%.
+- "Sepuluh satker 63,0%" = pembulatan ganda dari 62,948% -> seharusnya **62,9%**.
+- **Temuanku sendiri saat memperbaiki:** kalimat "three of the four largest consular lines
+  fell" sejak ed.1 SALAH (empat terbesar termasuk refund VAT yang naik; hanya dua yang turun).
+  Setelah VAT dikeluarkan, "three of the four fee lines fell" jadi benar.
+
+Label edisi kini "Third edition, corrected". Checks kini membandingkan pembulatan pada
+presisi yang dicetak prosa (f"{x:.1f}"). 59 prose facts, 59 identitas. C.STALE ditambah
+"81.0 per cent", "63.0 per cent", "433.1bn gross", "four largest".
+
+**Pelajaran:** nama akun di LK (mis. "Administrasi di LN" di blok B "Pendapatan Administrasi
+dan Penegakan Hukum") tidak menjamin sifat ekonominya — selalu baca catatan penjelas tiap
+pos sebelum mengelompokkannya.
