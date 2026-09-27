@@ -47,8 +47,13 @@ negeri bagi pegawai biro umum dan pengadaan"). Status: **v1 lengkap, belum ditin
 ## Mutu saat selesai
 
 57 uji PHPUnit (56 lulus, 1 dilewati = uji 2FA bawaan), `tsc` strict + lint bersih, build Vite
-hijau, 35 rute 200. Tampilan dicek lewat tangkapan layar Chrome headless.
-**Belum:** render DOCX lewat Word COM — tertunda karena WINWORD `/Automation` milik sesi lain aktif.
+hijau, semua rute 200. Tampilan dicek lewat tangkapan layar Chrome headless; uji peramban CDP form
+Rekam Perjalanan lolos 9/9 (hitung form = hitung server). Keempat DOCX dirender lewat Word COM:
+ST 1 hlm, SPD 1 hlm/pegawai (templat SPD sengaja lebih padat: huruf 9,5, margin 1,5/1,2 cm),
+Rincian 1 hlm/pegawai, Nominatif 1 hlm lanskap.
+Cara aman Word COM saat ada WINWORD `/Automation` sesi lain: `New-Object -ComObject Word.Application`
+membuat instans BARU (PID beda), catat PID sebelum/sesudah, `Quit()` + `ReleaseComObject` di `finally`,
+jangan sentuh instans lain.
 
 ## Jebakan yang ditemukan
 

@@ -1,6 +1,6 @@
 ---
 name: reference-office-render
-description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; keepNext di sel tabel bikin tabel lompat halaman"
+description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya) dan 13:10–13:35 (sesi SIPDLN, SaveAs 17, instans sendiri), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; keepNext di sel tabel bikin tabel lompat halaman"
 metadata:
   type: reference
 ---
@@ -18,6 +18,10 @@ mekanismenya diganti:
   bisa melepasnya — tersangka utama. **Jalur yang jalan (tanpa simpan):** `$d.ActiveWindow.View.Type = 3`, lalu per halaman
   `[byte[]]$d.ActiveWindow.Panes.Item(1).Pages.Item($i).EnhMetaFileBits` → `System.Drawing.Imaging.Metafile` → gambar ke
   Bitmap 1240x1754 → PNG. Angka NUMPAGES di footer tampil bertahap ("2 dari 3") — artefak render, bukan cacat dokumen.
+  **Pembaruan 27 Sep 13:10–13:35 WIB (sesi SIPDLN-BUP):** `$d.SaveAs([ref]$pdf, [ref]17)` (SaveAs lama, bukan
+  SaveAs2) **JALAN 3x berturut-turut**, 4 docx per putaran, padahal satu WINWORD `/Automation` milik sesi lain tetap
+  hidup. `New-Object -ComObject Word.Application` membuat instans BARU (PID berbeda); `Quit()` + `ReleaseComObject`
+  di `finally` menutupnya bersih dalam 3 detik.
 - **Word COM yang macet:** catat PID di awal skrip, matikan HANYA PID itu dan hanya bila command line-nya `/Automation`.
   Sesi lain di mesin yang sama bisa sedang memakai Word. PowerShell tidak peka huruf besar: `$W` menimpa `$w` (objek
   Word) sehingga `Quit()` gagal dan Word tertinggal.
