@@ -15,20 +15,19 @@
   0,4 detik. **Koreksi: host `-pooler` TIDAK perlu dibuang** — penyebab kegagalan lama adalah libpq 16
   vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
   kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
-- 🟡 26 Sep 2026 — Tapi **aplikasi SIGAP-BUP belum pindah**: `Herd\sigap-bup\.env` masih
-  `DB_CONNECTION=sqlite`. Skema sudah di Postgres (28 tabel), aplikasinya belum menunjuk ke sana.
-  Lihat [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
-- 🔴 26 Sep 2026 — **`Herd\sigap-bup` TIDAK punya git**, dan ada `.git` nyasar di `C:\Users\rivsy`
-  tanpa `.gitignore` yang mengklaim `.ssh` + `env.db` + `.claude.json`. Belum bocor (0 commit, 0 file
-  terlacak), tapi migrasi Postgres tanpa rollback itu taruhan. Bereskan sebelum lanjut:
+- 🔵 27 Sep 2026 — **SIGAP-BUP → Postgres: kode SIAP, data MENUNGGU keputusan Aldo.** Git terpasang
+  (baseline `97d1861`, lalu `8dfd123`: 5 bug PG — VARCHAR 255, urutan NULL, sum numeric, LIKE, cache
+  seeder). Terbukti di PG17 **tanpa data asli**: 114 tes, 150 layar + 10 CSV identik dengan SQLite,
+  gerbang pagu `lockForUpdate` benar-benar terkunci (uji 2 proses). ⚠ Menunggu: (1) residensi — data
+  asli Kemlu boleh ke Neon Singapura? (PP 71/2019 Ps. 20 ayat 2); (2) izin SheetJS untuk xlsx 27 Sep
+  yang lebih baru. `.env` masih SQLite, Neon `main` masih 10 migrasi.
+  [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) bagian 27 Sep.
+- 🔴 27 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, tanpa .gitignore);
+  hapusnya MENUNGGU ya eksplisit Aldo. `Herd\sigap-bup` sudah punya git sendiri.
   [Git nyasar di home](shared/ops/reference_stray_git_home.md).
-- 🔵 26 Sep 2026 — **SIGAP-BUP pindah ke Postgres, SEDANG BERJALAN, di-pause Aldo.** Project Neon
-  baru `sigap-bup` / `rapid-lab-46810989` (org AIgnited, ap-southeast-1, **PG17**) sudah dibuat dan
-  **10 migrasi lolos**. Penyebab blocker lama sudah pasti: libpq 16 tidak bisa bicara dengan PG18.
-  Lanjutannya — seed (butuh `Wasdit BUM 2026.xlsx`, `database/data/` tidak ada), `setval` sequence,
-  140 tes Pest terhadap Postgres di branch terpisah — ada di
-  [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) bagian 26 Sep. Desain v2 **sudah terpasang**, jangan
-  diimpor ulang; salinan utuh di `docs/SIGAP-BUP-v2.dc.html`.
+- 🟠 27 Sep 2026 — Dua insiden data kecil saat uji PG SIGAP-BUP (baris asli tercetak ke transkrip;
+  branch sandbox dihapus). Aldo perlu cek setelan berbagi 2 berkas Drive milik `UP-2026-0001`.
+  Aturan baru: [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md).
 
 ## User & identity
 
@@ -42,7 +41,7 @@
 ## Operating rules — workflow and building
 
 - [English-only briefs](shared/feedback/feedback_english_only_briefs.md) — jangan bawakan edisi Bahasa Indonesia lagi; brief English only sejak 3 Sep 2026
-- [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md) — data uji dari data asli: teks diganti palsu sepanjang aslinya kecuali lolos pola kode ketat/daftar izin; kolom "kategori" bisa berisi nama orang (insiden 27 Sep)
+- [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md) — data uji dari data asli: teks diganti palsu sepanjang aslinya kecuali lolos pola kode ketat/daftar izin; daftar pengecualian data dihitung dari keluaran LENGKAP, jangan `| head` (2 insiden 27 Sep)
 
 ## Projects
 
@@ -50,7 +49,7 @@
 
 - [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
 - [SIPAMA Kemlu](kemlu/project_sipama_kemlu.md) — Dashboard Sistem Informasi Pengamanan (9 modul) di Herd\sipama → sipama.test
-- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, seed Wasdit BUM 2026, gerbang pagu + audit
+- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; git sejak 27 Sep (`8dfd123`, siap Postgres); seed Neon MENUNGGU residensi + SheetJS
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
 - [Template SPK & Adendum](kemlu/reference_template_spk.md) — Claude Doc + .docx di Documents; template SPK Barang/Jasa Lainnya + adendum; dasar hukum terverifikasi (batas SPK, Ps. 54/56/79, PPN 11%; 27 Sep: Ps. 33 (2) b e-purchasing DIHAPUS Perpres 46/2025)

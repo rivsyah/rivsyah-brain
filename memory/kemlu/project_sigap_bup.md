@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP-BUP GRP Biro Umum & Pengadaan Kemlu di Herd\\sigap-bup → sigap-bup.test, dari Claude Design + data Wasdit BUM 2026.xlsx"
+description: "SIGAP-BUP GRP Biro Umum & Pengadaan Kemlu di Herd\\sigap-bup → sigap-bup.test; git sejak 27 Sep (8dfd123: 5 bug Postgres diperbaiki, gerbang pagu terbukti terkunci di PG17); seed ke Neon MENUNGGU keputusan residensi data + izin SheetJS untuk xlsx baru"
 metadata: 
   node_type: memory
   type: project
@@ -138,7 +138,7 @@ Yang tetap berlaku:
 5. ~~Aldo menulis `NEON_DATABASE_URL` baru ke `env.db`~~ — **SELESAI 26 Sep**, diuji ulang 27 Sep:
    PG 17.11, 28 tabel, hanya `migrations` berisi (10 baris).
 
-## 27 Sep 2026 — git terpasang, uji Postgres tanpa data asli, 2 bug migrasi diperbaiki
+## 27 Sep 2026 — git terpasang, 5 bug Postgres diperbaiki (`8dfd123`), gerbang pagu terbukti terkunci
 
 **Git.** `C:\Users\rivsy\Herd\sigap-bup\.git` (mesin Windows ini), branch `main`, baseline `97d1861`
 saat 140/140 hijau. `.gitignore` kini mengabaikan `database/seeders/data/` (data asli: 16 digit nomor
@@ -156,11 +156,13 @@ diperbarui. Cek ulang panjang kolom juga (lihat bug 1).
 **Uji Postgres tanpa data asli** — alat di `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\` (mesin ini,
 README di sana). Caranya: branch Neon buangan dari `main`, seed **sintetis** (tolak-semua, lihat
 [[feedback_synthetic_data_deny_all]]), lalu props Inertia 30 layar × 5 peran + 10 ekspor CSV
-dibandingkan antara SQLite dan Postgres. Lima file tes (`AdminTest`, `EksekutifTest`, `LaporanTest`,
-`LayarTest`, `PemaketanTest`, 23 tes) menyemai data Wasdit asli, jadi **tidak** dijalankan ke Neon.
-117 tes sisanya bisa.
+dibandingkan antara SQLite dan Postgres. **Enam** file tes menyemai data Wasdit asli: `AdminTest`,
+`EksekutifTest`, `LaporanTest`, `LayarTest`, `PemaketanTest`, `TopbarTest` (26 tes). File-file itu
+**tidak boleh** dijalankan ke Neon sebelum ⚠ OPEN residensi di bawah diputuskan. 114 tes sisanya aman.
+`run_pg.sh suite` menghitung daftar ini ulang dengan grep tiap jalan, jangan diganti daftar
+tulis-tangan (lihat insiden 2).
 
-Bug migrasi yang ditemukan dan diperbaiki (belum di-commit saat ditulis ⏳):
+Bug migrasi yang ditemukan dan diperbaiki — commit **`8dfd123`** di atas baseline:
 1. **`VARCHAR(255)`** — SQLite tidak menegakkan panjang, Postgres menolak (`SQLSTATE 22001`). Data
    asli: `permintaan_bayar.kanal` 329, `permintaan_bayar.link_dokumen` 621. **Seed asli pasti gagal di
    Neon tanpa perbaikan ini.** Migrasi `2026_09_27_000001_widen_spreadsheet_text_columns` mengubah 8
@@ -170,23 +172,41 @@ Bug migrasi yang ditemukan dan diperbaiki (belum di-commit saat ditulis ⏳):
    ke atas. Tujuh `orderBy('tanggal')` kini `orderByRaw('tanggal desc nulls last')` atau
    `'tanggal asc nulls first'` ditambah `id` sebagai pemecah seri.
 3. **Tipe** — `sum(bigint)` di Postgres bertipe `numeric`, jadi PHP menerima string.
-   `pembagian.sheetPagu` di-cast ke int. Aggregate lain sudah di-cast.
+   `pembagian.sheetPagu` di-cast ke int. Tidak ada beda tipe lain di 150 layar yang diuji.
 4. **`LIKE` peka huruf** di Postgres — `'%GUP%'` di Karwas kini `lower(keterangan) like '%gup%'`,
    mengikuti pola `PenyediaController`. Data Juli aman (25/25 huruf besar).
+5. **Cache seeder `static`** — `WasditSeeder::resolveMak()` menyimpan id MAK di variabel `static` yang
+   bertahan antar-seed dalam satu proses. Di SQLite rollback ikut memundurkan autoincrement, jadi id
+   lama kebetulan tetap benar. Sequence Postgres tidak ikut di-rollback, jadi seed kedua memakai id basi
+   → pelanggaran foreign key. Ini akan menggagalkan 26 tes Wasdit di Postgres. Kini properti instance;
+   terbukti dengan seed sintetis dua kali (min id putaran 2 = 129, 547 relasi utuh).
 
-Yang terbukti bersih di Postgres 17.11: 150 layar×peran tanpa 5xx, tidak ada error `GROUP BY` atau
-fungsi, 10 ekspor CSV identik byte-per-byte. Raw SQL dan `groupBy` yang dikhawatirkan 26 Sep lolos
-semua. ⏳ hasil 117 tes + uji balapan `lockForUpdate`.
+**Hasil terverifikasi setelah `8dfd123`:**
+- SQLite: 140/140.
+- Postgres 17.11: 114/114 tes tanpa data asli; 150 layar×peran + 10 ekspor CSV **identik** dengan
+  SQLite (SHAPE/VALUE/ORDER/TYPE = 0). Tidak ada error `GROUP BY` atau fungsi; 13 raw SQL dan 9
+  `groupBy` yang dikhawatirkan 26 Sep lolos semua.
+- **Gerbang pagu terbukti terkunci**: dua proses PHP bersamaan memanggil `buatKomitmen()` (pagu 1 jt,
+  masing-masing 600 rb). Tiga ronde, tiap ronde tepat satu lolos, `komitmen_aktif` = 600 rb, dan yang
+  kalah ±50 ms lebih lambat (menunggu kunci baris). Ini pertama kalinya `lockForUpdate` benar-benar aktif.
+- Neon `main` masih 10 migrasi. Jalankan `migrate` (migrasi ke-11) tepat sebelum seed.
+- Latensi ke Singapura: ±2–3 detik per tes Pest, 114 tes ±5 menit. Seed penuh ±2,5 menit.
 
-**Insiden kecil, 27 Sep.** Generator sintetis pertama meneruskan kolom `kanal` yang ternyata berisi
-nama penerima dan nominal. Satu baris terkirim ke branch sandbox, INSERT gagal, dan pesan error-nya
-tercetak di transkrip sesi. Branch dihapus, salinan log lokal dihapus. Aturannya:
-[[feedback_synthetic_data_deny_all]].
+**Insiden data, 27 Sep — dua kali, keduanya salah agent.**
+1. Generator sintetis pertama meneruskan kolom `kanal` (teks bebas berisi nama penerima + nominal).
+   Satu baris terkirim ke branch sandbox; INSERT gagal; pesan error mencetak isinya ke transkrip.
+2. Daftar pengecualian tes ditulis tangan dari keluaran `grep | head -40` yang terpotong diam-diam, jadi
+   `TopbarTest` ikut jalan ke branch sandbox. Data Juli asli (MAK, nama PPK, satu baris permintaan)
+   masuk di dalam transaksi yang di-rollback, dan pesan error foreign key mencetak satu baris asli ke
+   transkrip — termasuk nama penerima dan **dua tautan Google Drive** milik permintaan `UP-2026-0001`.
+Kedua branch dihapus (HTTP 200), log lokal yang memuat baris itu dihapus. Yang tidak bisa ditarik:
+transkrip sesi. ⚠ OPEN: Aldo sebaiknya mengecek setelan berbagi dua berkas Drive milik `UP-2026-0001`.
+Aturannya: [[feedback_synthetic_data_deny_all]].
 
 ⚠ OPEN (hukum, Aldo yang memutuskan): **data asli Kemlu boleh ke Neon `aws-ap-southeast-1`?**
 PP 71/2019 Pasal 20 ayat (2) mewajibkan PSE Lingkup Publik mengelola, memproses, dan/atau menyimpan
 sistem dan data elektroniknya di wilayah Indonesia. Keputusan ini memblokir tiga hal: seed ke `main`,
-23 tes Wasdit di Postgres, dan `.env` yang menunjuk ke Neon.
+26 tes Wasdit di Postgres, dan `.env` yang menunjuk ke Neon. Ditanyakan ke Aldo 27 Sep 2026.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
