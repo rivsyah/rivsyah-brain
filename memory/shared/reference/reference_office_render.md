@@ -76,3 +76,10 @@ Catatan 27 Sep 2026 10:31-10:45 (sesi tesis MBA, [[project-wharton-thesis]]):
   dua sesi yang start bersamaan saling membunuh Word. Bunuh proses hanya saat timeout, bukan di finally.
 - File kunci `~$nama.docx` yang tertinggal dari Word yang dibunuh membuat Word berikutnya membuka read-only;
   hapus dulu sebelum Open.
+
+Tambahan 28 Sep 2026 (sesi KKE Furniture Lt 3, [[project-kke-furniture-lt3]]):
+- **COUNTIF/COUNTIFS dengan kriteria teks berawalan operator** ("> 110%", "<=…") dibaca sebagai perbandingan, bukan teks → hasil 0. Pakai penanda teks biasa (mis. "TIMPANG").
+- **SEARCH("BELUM") ikut cocok dengan kata "sebelum"** (tidak peka huruf) — hati-hati di aturan conditional formatting.
+- Validasi daftar lintas-sheet (mis. `='Rekap'!$B$9:$B$18`) disimpan Excel sebagai ekstensi x14; openpyxl membuangnya saat membaca ("Data Validation extension is not supported"). Urutan aman: bangun dengan openpyxl → Excel COM hitung ulang + simpan → JANGAN disimpan ulang dengan openpyxl.
+- Format angka `#,##0.##` tampil "1," untuk bilangan bulat di Excel locale ID → pakai General untuk volume.
+- Excel COM ekspor PDF per sheet (`$ws.ExportAsFixedFormat(0, path)`) jalan normal 28 Sep 14:10–14:35 (3x).
