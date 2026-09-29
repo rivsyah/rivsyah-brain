@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); berikutnya deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin)"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); berikutnya deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); c173a61 perbaikan pra-deploy (dry-run wrangler 4.143.0 lolos), menunggu 4 langkah Aldo"
 metadata: 
   node_type: memory
   type: project
@@ -318,15 +318,55 @@ jawaban: wajib untuk Containers; menunggu keputusannya.
 **Utang kualitas yang tercatat (lama, bukan dari migrasi):** PHPStan 161 temuan (properti magis
 Eloquent), ESLint 1.123 masalah, Prettier 29 berkas, Pint beberapa berkas. ⚠ OPEN.
 
-⚠ OPEN (Aldo): (1) putuskan Workers Paid USD 5/bln; (2) tambah scope `workflow` ke `GITHUB_PAT`;
-(3) perbaiki `CLOUDFLARE_ACCOUNT_ID` lewat `envdb-setup.sh`; (4) secret repo `CLOUDFLARE_API_TOKEN` di
-GitHub; (5) tambah `rivsyah.dev` ke Cloudflare + ganti NS di Hostinger. Sesudahnya agent: push, set
-secret Worker (`APP_KEY` baru, `DB_URL` Neon langsung), jalankan workflow deploy, uji 26 layar + uji
-balapan di URL live.
+⚠ OPEN (Aldo) — dicek ulang 29 Sep 22.25 WIB, **belum satu pun selesai**:
+1. Scope `workflow` di `GITHUB_PAT` (masih `repo` saja; branch di remote masih kosong).
+2. Workers Paid. Containers menjawab 401 *"Deploying containers requires the Workers Paid plan"* — jadi
+   token sudah cukup, yang kurang paketnya. [Certain]
+3. `rivsyah.dev` ditambahkan ke Cloudflare + NS di Hostinger diganti (zona belum ada, NS masih
+   `dns-parking.com`). Custom domain butuh zona **aktif**, jadi ini wajib beres **sebelum** deploy.
+4. Secret repo `CLOUDFLARE_API_TOKEN` (secret & variabel repo masih kosong).
+5. `CLOUDFLARE_ACCOUNT_ID` di `env.db` masih salah — **bukan pemblokir deploy** (variabel repo bisa diisi
+   agent dari akun tunggal token; wrangler juga memilih akun tunggal otomatis), tetapi tetap dibetulkan
+   supaya sesi lain tidak tersandung.
+
+Urutan agent sesudahnya: push (CI jalan) → isi variabel repo `CLOUDFLARE_ACCOUNT_ID` lewat API →
+`wrangler secret bulk` `APP_KEY` baru + `DB_URL` Neon dari mesin ini (tanpa Docker) → jalankan workflow
+deploy → uji 26 layar + uji balapan di URL live. **Secret dulu, baru deploy**: `envVars` dibaca saat
+container menyala, jadi container yang menyala tanpa `APP_KEY` akan meng-cache kunci kosong.
 
 **Memori mesin (dicek 29 Sep):** "memori hampir habis" 27 Sep = RAM. Commit charge 68,8 dari 82,1 GB;
 pemesan terbesar `explorer.exe` **10,9 GB** (tidak wajar, kemungkinan bocor — restart Explorer),
 29 proses `claude` 8,8 GB, `vmmem` 4,0 GB, WebView2 3,3 GB, ChatGPT 3,0 GB, NVIDIA Overlay 2,7 GB.
+
+### 29 Sep 2026 (sesi 2) — perbaikan pra-deploy (`c173a61`)
+
+Sesi deploy sebelumnya (`82921e7d`) macet setelah 15.19Z — Aldo: "not responding". Sesi itu sudah
+berhenti rapi di 15.16Z sambil menunggu 5 langkah di atas. Git bersih di `23bdbd0`, tidak ada kerja
+hilang. Dugaan penyebab macet: RAM (bebas 4,4–5,4 dari 31,3 GB; 29 proses `claude` 8,9 GB, **27 di
+antaranya dari 25–27 Sep**). [Likely] `explorer.exe` sudah pulih (0,3 GB, restart 21.40 WIB).
+
+Commit lokal **`c173a61`** (belum di remote), semua di file deploy/CI yang belum pernah diuji:
+- `tests.yml`: matriks PHP 8.3 dibuang. `composer.lock` memuat Symfony 8.1 (butuh PHP ≥ 8.4.1), jadi job
+  8.3 **pasti gagal** di `composer install`. Lock cocok untuk 8.4 dan 8.5 (`composer why-not`).
+  `composer.json` masih menulis `php: ^8.3` — tidak sinkron dengan lock, belum diubah.
+- `deploy.yml`: `@cloudflare/containers@0.3.7` + `wrangler@4.143.0` dipaku (paket container masih 0.x).
+- `Dockerfile`: direktori `storage/*`/`bootstrap/cache` dibuat eksplisit; start pakai `php artisan
+  optimize` (satu proses PHP, bukan tiga). Diuji lokal dengan cache diarahkan ke scratch: config, event,
+  route (93 rute), view semuanya DONE.
+- `worker.ts`: tipe konstruktor `DurableObjectState<{}>` (sebelumnya error tsc; tidak memblokir deploy
+  karena esbuild membuang tipe), plus `SESSION_SECURE_COOKIE=true`.
+
+Fakta terverifikasi dari kode `wrangler` 4.143.0 dan `@cloudflare/containers` 0.3.7 (29 Sep):
+- `wrangler deploy --dry-run` **menolak jalan tanpa Docker** bila ada container, kecuali
+  `--containers-rollout=none`. Dengan flag itu: bundel Worker 53,7 KiB, binding DO `SIGAP`, konfigurasi
+  `exports` diterima.
+- `workers_dev` bawaan = `routes.length === 0`. Karena ada route, **tidak butuh subdomain workers.dev**
+  (akun memang belum punya).
+- `containerFetch` memakai `request.url.replace('https:', 'http:')`, jadi Host tetap `sigap.rivsyah.dev`.
+  Batas siap port 20 detik (`TIMEOUT_TO_GET_PORTS_MS`).
+- `wrangler secret put/bulk` pada Worker yang belum ada **membuat Worker draf** di mode non-interaktif.
+  Deploy tidak pernah menghapus secret.
+- Tiga SHA action (`checkout` v7.0.0, `setup-php` 2.37.2, `setup-node` v6.4.0) valid.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 

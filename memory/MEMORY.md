@@ -20,9 +20,10 @@
   realisasi, data asli lokal, nama hanya "SIGAP BUP". Commit `8dfd123` (5 bug PG) → `01863c4` (seed
   dummy, xlsx 27 Sep) → `f5bbeeb` (UI/seed netral, "Logistik Unit Daerah"). Neon: migrasi 11, 131 MAK,
   830 permintaan, 0 jejak Kemlu. Password bawaan dipertahankan. **Deploy Cloudflare disiapkan**
-  (GitHub Actions, `sigap.rivsyah.dev`, repo privat `rivsyah/sigap-bup`, commit lokal `23bdbd0`) —
-  ⚠ menunggu Aldo: Workers Paid, scope `workflow` di PAT, `CLOUDFLARE_ACCOUNT_ID` benar, secret repo,
-  NS `rivsyah.dev` ke Cloudflare. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
+  (GitHub Actions, `sigap.rivsyah.dev`, repo privat `rivsyah/sigap-bup`, commit lokal `c173a61` =
+  perbaikan pra-deploy, dry-run wrangler lolos) — ⚠ dicek 22.25 WIB, belum satu pun selesai: scope
+  `workflow` di PAT, Workers Paid, NS `rivsyah.dev` ke Cloudflare (wajib aktif sebelum deploy), secret
+  repo; `CLOUDFLARE_ACCOUNT_ID` salah tapi bukan pemblokir. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
 - 🔴 29 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
   2 Jul). Agent diblokir pengaman + kunci berkas; **Aldo bilang akan menghapus sendiri** (29 Sep).
   [Git nyasar di home](shared/ops/reference_stray_git_home.md).
