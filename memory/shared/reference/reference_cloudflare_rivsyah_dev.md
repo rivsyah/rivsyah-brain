@@ -1,6 +1,6 @@
 ---
 name: reference-cloudflare-rivsyah-dev
-description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — 29 Sep 2026 ~23:05: NS sudah Cloudflare (gracie/syeef), zona ACTIVE; masih tertahan Workers Paid (Containers 401), izin DNS token (403), scope workflow GITHUB_PAT; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama"
+description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); masih tertahan Workers Paid (Containers 401) dan scope workflow GITHUB_PAT; izin DNS token TIDAK perlu untuk custom domain Worker; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama"
 metadata:
   type: reference
   modified: 2026-09-29
@@ -13,15 +13,20 @@ eksplisit olehnya untuk demo aplikasi yang identitas instansinya sudah disamarka
 (`athena/apollo.dns-parking.com`, apex A `2.57.91.91`, tanpa MX/TXT/DNSSEC). TLD `.dev` wajib HTTPS
 (HSTS preload).
 
-**Zona Cloudflare — ACTIVE (diverifikasi 29 Sep ~23:05 WIB).** Paket Free. Aldo sudah mengganti NS di
-Hostinger ke **`gracie.ns.cloudflare.com`** + **`syeef.ns.cloudflare.com`**; resolver publik (Cloudflare
-dan Google) sudah menjawab NS itu. Pembagian subdomain: `sigap.*` = Worker `sigap-bup` (sesi SIGAP),
+**Zona Cloudflare — ACTIVE sejak 29 Sep 2026 22.52 WIB** (`activated_on` 15:52:13Z; registry .dev
+menunjuk NS baru ±2 menit setelah Aldo menyimpan di Hostinger — catatan brain-7b). Paket Free. NS:
+**`gracie.ns.cloudflare.com`** + **`syeef.ns.cloudflare.com`**; resolver publik (Cloudflare dan Google)
+sudah menjawab NS itu. Pembagian subdomain: `sigap.*` = Worker `sigap-bup` (sesi SIGAP),
 `sipdln.*` = Worker `sipdln-bup` (SIPDLN) — jangan saling ubah rekaman/route.
 
 **Akun & token Cloudflare (env.db):**
-- `CLOUDFLARE_API_TOKEN` aktif. Bisa: akun, daftar zona, Workers scripts (200). **Tidak bisa**: rekaman
-  DNS zona (**403** setelah zona aktif; sebelumnya 10000), Access (403). Containers **401** = Workers
-  Paid belum aktif.
+- `CLOUDFLARE_API_TOKEN` aktif. Bisa: akun, daftar zona, Workers scripts, **workers/routes zona dan
+  workers/domains akun (200)**. Tidak bisa: rekaman DNS zona (403), Access (403). Containers **401**
+  (dugaan: Workers Paid belum aktif; bila tetap 401 sesudahnya, token butuh izin Containers).
+- **Izin DNS token tidak diperlukan untuk custom domain Worker** (diverifikasi 29 Sep): API "Attach Worker
+  Domain" hanya menerima `Workers Scripts Write`, dan dokumen Custom Domains: "Cloudflare will create DNS
+  records and issue necessary certificates on your behalf". 403 di `dns_records` tidak memprediksi
+  kegagalan deploy. Tambah izin hanya bila deploy pertama gagal di langkah domain.
 - `CLOUDFLARE_ACCOUNT_ID` di env.db **salah** (tidak cocok dengan satu-satunya akun token). Agent bisa
   mengambil ID yang benar dari `GET /accounts` saat jalan; env.db sendiri diisi Aldo lewat
   `envdb-setup.sh` di terminalnya.
@@ -36,7 +41,7 @@ centang scope **`workflow`** pada token yang sama (nilai token tidak berubah).
 - [[project-sipdln-bup]] — Containers + SQLite demo di image, `sipdln.rivsyah.dev`.
 
 Daftar langkah Aldo, sekali untuk semua: ~~(1) NS di Hostinger~~ **selesai 29 Sep**; (2) Workers Paid
-US$5/bln (untuk Containers); (3) scope `workflow` di GITHUB_PAT; (4) tambah izin token: Zone DNS Edit +
-Workers Routes Edit untuk rivsyah.dev (+ Access bila PANTAS); (5) opsional perbaiki
+US$5/bln (untuk Containers); (3) scope `workflow` di GITHUB_PAT; ~~(4) izin DNS/Workers Routes di token~~
+**tidak perlu** (lihat atas; PANTAS tetap butuh izin Access); (5) opsional perbaiki
 `CLOUDFLARE_ACCOUNT_ID`.
 Harga/kuota Cloudflare: [[reference-hosting-vercel-cloudflare]].

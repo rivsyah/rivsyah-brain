@@ -372,6 +372,15 @@ Fakta terverifikasi dari kode `wrangler` 4.143.0 dan `@cloudflare/containers` 0.
 - `wrangler secret put/bulk` pada Worker yang belum ada **membuat Worker draf** di mode non-interaktif.
   Deploy tidak pernah menghapus secret.
 - Tiga SHA action (`checkout` v7.0.0, `setup-php` 2.37.2, `setup-node` v6.4.0) valid.
+- Izin token untuk custom domain: referensi API "Attach Worker Domain" hanya menerima **Workers Scripts
+  Write**; panduan GitHub Actions Cloudflare = templat "Edit Cloudflare Workers"; Cloudflare membuat
+  rekaman DNS custom domain sendiri. Jadi 403 di `dns_records` bukan prediktor gagal. [Likely] Tambah
+  Zone DNS Edit **hanya bila** deploy gagal di langkah domain. (Usul sesi lain untuk menambahnya sekarang
+  tidak diikuti.) wrangler memasang domain lewat `PUT /accounts/{id}/workers/scripts/{nama}/domains/records`.
+
+**Pemegang deploy:** sesi `926ebddf` (disepakati dengan sesi lama "Project sigap-bup lanjutan" 29 Sep
+±23.10 WIB; sesi lama tidak lagi menyentuh repo, kartu ini, maupun Cloudflare/GitHub SIGAP). `sipdln.*` +
+Worker `sipdln-bup` milik sesi brain-1d. Alat baca-saja Neon main: `~/dev/kemlu/sigap-pg-probe/main_state.php`.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 

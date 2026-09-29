@@ -21,9 +21,10 @@
   dummy, xlsx 27 Sep) → `f5bbeeb` (UI/seed netral, "Logistik Unit Daerah"). Neon: migrasi 11, 131 MAK,
   830 permintaan, 0 jejak Kemlu. Password bawaan dipertahankan. **Deploy Cloudflare disiapkan**
   (GitHub Actions, `sigap.rivsyah.dev`, repo privat `rivsyah/sigap-bup`, commit lokal `c173a61` =
-  perbaikan pra-deploy, dry-run wrangler lolos) — ⚠ dicek 22.25 WIB, belum satu pun selesai: scope
-  `workflow` di PAT, Workers Paid, NS `rivsyah.dev` ke Cloudflare (wajib aktif sebelum deploy), secret
-  repo; `CLOUDFLARE_ACCOUNT_ID` salah tapi bukan pemblokir. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
+  perbaikan pra-deploy, dry-run wrangler lolos). Zona `rivsyah.dev` **active** 22.52 WIB. ⚠ Sisa Aldo:
+  scope `workflow` di PAT, Workers Paid, secret repo; `CLOUDFLARE_ACCOUNT_ID` salah tapi bukan pemblokir.
+  Deploy dipegang sesi `926ebddf` (sesi lama "Project sigap-bup lanjutan" mundur, 29 Sep ±23.10 WIB).
+  [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
 - 🔴 29 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
   2 Jul). Agent diblokir pengaman + kunci berkas; **Aldo bilang akan menghapus sendiri** (29 Sep).
   [Git nyasar di home](shared/ops/reference_stray_git_home.md).
@@ -102,7 +103,7 @@
 - [Ignited Research masthead](shared/reference/reference_ignited_masthead.md) — "Ignited Research · Independent Analysis" untuk semua brief; "Independent Research" sudah pensiun
 - [Render dokumen Office](shared/reference/reference_office_render.md) — tidak ada soffice/pdftoppm/pandoc; docx→PDF lewat Word COM: macet 27 Sep 09:50 tapi jalan lagi 10:00–10:25 dan 13:10–13:35 (SaveAs 17, instans sendiri berdampingan dgn /Automation sesi lain), cadangan render EMF per halaman; keepNext di sel tabel = tabel lompat halaman; xlsx hitung ulang + PDF lewat Excel COM (sheet hidden gagal ekspor), PyMuPDF global; TEXT() Excel rusak di locale ID → FIXED()
 - [Hosting Vercel vs Cloudflare](shared/reference/reference_hosting_vercel_cloudflare.md) — 29 Sep 2026: Vercel Hobby dilarang komersial, Pro US$20/seat + sandi US$20/proyek; Cloudflare Pages gratis komersial, Access ≤50 pengguna; PP 71/2019 Ps 20
-- [Cloudflare + rivsyah.dev](shared/reference/reference_cloudflare_rivsyah_dev.md) — 29 Sep ~23:05: NS sudah Cloudflare, zona ACTIVE; masih tertahan Workers Paid, izin DNS token, scope workflow PAT; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama
+- [Cloudflare + rivsyah.dev](shared/reference/reference_cloudflare_rivsyah_dev.md) — zona ACTIVE sejak 29 Sep 22.52 WIB; masih tertahan Workers Paid + scope workflow PAT; izin DNS token tidak perlu untuk custom domain Worker; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama
 - [Kurs JISDOR BI](shared/reference/reference_bi_jisdor.md) — unduh rentang lewat postback tombol Unduh → xlsx (tanggal m/d/yyyy); GET biasa 10 hari; wskursbi mati; ECB/Frankfurter beda 15–20 poin; port PHP jalan 29 Sep
 - [Impor Claude Design](shared/reference/reference_design_login.md) — DesignSync bisa kedaluwarsa di tengah sesi; hanya /design-login dari terminal interaktif yang memulihkan
 
