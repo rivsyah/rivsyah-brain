@@ -1,6 +1,6 @@
 ---
 name: project-sipdln-bup
-description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; identitas Kemlu disamarkan; commit awal b50b8d6"
+description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; commit awal b50b8d6"
 metadata:
   type: project
   modified: 2026-09-29
@@ -8,11 +8,17 @@ metadata:
 
 Dibangun 27 Sep 2026 atas permintaan Aldo ("buatkan aplikasi monitoring untuk perjalanan dinas luar
 negeri bagi pegawai biro umum dan pengadaan"). Status 29 Sep 2026: **v1 + keputusan Aldo 29 Sep
-terpasang, commit awal `b50b8d6` di `main` (belum ada remote). Menunggu pola nomor surat BUP.**
+terpasang, commit awal `b50b8d6` di `main` (belum ada remote). Pola nomor ST (D18) dan PHPStan 0
+temuan (D19) selesai 29 Sep malam, **belum di-commit — menunggu persetujuan Aldo**; patch penomoran
+tersimpan terpisah agar bisa jadi dua commit.**
 
 ## Keputusan Aldo 29 Sep 2026 (terkunci, D14–D16 di DECISIONS proyek)
 
-1. **Pola nomor surat BUP** akan Aldo berikan **setelah commit awal** → berikutnya: penomoran otomatis ST/SPD.
+1. **Pola nomor Surat Tugas BUP = `ST/KP/{urut}/{bulan}/{tahun}/25`** (Aldo: "ST/KP/         /09/2026/25").
+   Nomor urut dikosongkan (9 spasi tak-putus) sampai surat diagendakan, lalu diisi di form/modal
+   tahapan; bulan 2 angka + tahun dari tanggal ST. Pola bisa diubah admin di Pengaturan (wajib `{urut}`).
+   Mode "nomor manual" untuk nomor di luar pola. Ganti pola tidak mengubah nomor yang sudah terbit.
+   **SPD belum punya pola — tetap manual** (tanya Aldo bila perlu).
 2. **Penandatangan Surat Tugas PDLN = Kepala Biro Umum dan Pengadaan.** Bawaan di Pengaturan
    (`jabatan_penandatangan_st`) dan terisi otomatis di form Pejabat.
 3. **Kurs = JISDOR Bank Indonesia.** Otomatis dari situs BI (lihat bawah).
@@ -86,8 +92,11 @@ terpasang, commit awal `b50b8d6` di `main` (belum ada remote). Menunggu pola nom
 66 uji PHPUnit (65 lulus, 1 dilewati = uji 2FA bawaan), `vp check` (format + lint) dan `tsc` bersih,
 build Vite hijau, 19 rute 200, cek peramban kurs 13/13 lolos (termasuk "Perbarui dari BI" langsung
 ke situs BI), DOCX tanpa nama instansi induk dan tanpa makro tersisa.
-**Belum hijau:** PHPStan level 7 (bagian `composer ci:check` bawaan kit) — 412 temuan lama, hampir
-semua karena model tanpa anotasi `@property`; kode kurs baru sudah 0 temuan. Belum diminta Aldo.
+**29 Sep malam:** `composer ci:check` hijau penuh — PHPStan level 7 **0 temuan** (dari 412) tanpa
+baseline/ignore; 72 uji (71 lulus, 1 dilewati). Kunci: `@property` + generik relasi di semua model,
+tanggal = `CarbonImmutable` (ada `Date::use` di AppServiceProvider), pemerataan tanpa referensi `&`,
+data seeder di method bertipe. Temuan sampingan: lebar sel templat DOCX dulu pecahan (`566.929…`),
+tidak sah menurut OOXML — kini twip bulat.
 Keempat DOCX dirender lewat Word COM (27 Sep): ST 1 hlm, SPD 1 hlm/pegawai (huruf 9,5, margin
 1,5/1,2 cm), Rincian 1 hlm/pegawai, Nominatif 1 hlm lanskap.
 Cara aman Word COM saat ada WINWORD `/Automation` sesi lain: `New-Object -ComObject Word.Application`
@@ -111,6 +120,11 @@ jangan sentuh instans lain.
   lewat `replaceXmlBlock('${pisah#k}', '<w:p><w:r><w:br w:type="page"/></w:r></w:p>')`; paragraf
   berisi satu makro saja bisa dihapus utuh (`PengisiTemplat::hapusParagrafTunggal`, dipakai untuk kop kosong).
 - PhpSpreadsheet: `getDefaultStyle()` ada di Spreadsheet, **bukan** Worksheet.
+- PHPStan tidak melacak isian lewat referensi (`$x = &$arr[$k]`) → laporan palsu "selalu kosong".
+  Tulis ulang tanpa referensi. Larik literal besar di seeder bisa ditebak terlalu sempit → pindahkan
+  ke method dengan `@return` bertipe.
+- Keluaran PHPStan/PHPUnit/Pint di mesin ini berbentuk JSON ringkas (`{"tool":...}`); `-v` untuk
+  daftar lengkap. Sesi uji `curl` kedaluwarsa setelah 2 jam (SESSION_LIFETIME) → login ulang.
 - Tangkapan layar halaman ber-login: `C:\Users\rivsy\Bara\scripts\shot-login.mjs` (Chrome headless +
   CDP + cookie jar curl; login = GET /login lalu POST dengan header `X-XSRF-TOKEN`).
 - **Mesin ini ramai sesi Claude paralel (~10).** Jangan bunuh proses PHP berdasarkan waktu mulai —
@@ -119,8 +133,8 @@ jangan sentuh instans lain.
 
 ## Terbuka (Q di GRANDPLAN)
 
-Pola nomor ST/SPD BUP (Aldo memberi setelah commit), tempat produksi + kebijakan data pegawai,
-sumber data pegawai asli, integrasi pagu SIGAP-BUP dan SSO Portal BUP (v2), uang representasi ketua
-delegasi, PHPStan backlog.
+Commit penomoran + PHPStan (menunggu Aldo), pola nomor SPD (bila ada), tempat produksi + kebijakan
+data pegawai, sumber data pegawai asli, integrasi pagu SIGAP-BUP dan SSO Portal BUP (v2), uang
+representasi ketua delegasi.
 
 Terkait: [[project-sigap-bup]], [[project-bup-kemlu]], [[project-pantas-kurs]], [[reference-office-render]], [[reference-bi-jisdor]].
