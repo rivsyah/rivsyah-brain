@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password admin wajib diganti sebelum publik"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); berikutnya deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin)"
 metadata: 
   node_type: memory
   type: project
@@ -61,8 +61,14 @@ Postgres.
 
 **Sisi Cloudflare — terverifikasi 22 Sep 2026, ini fakta yang berubah dari tahun lalu:**
 Cloudflare **Containers GA sejak 13 Apr 2026**, dan paket `workers-php` menjalankan Laravel
-**apa adanya di dalam container**, dengan Worker sebagai pintu depan. Basis data eksternal
-disambung lewat **Hyperdrive** (`WorkersPhp\Hyperdrive\HttpPgsqlPDO`), jadi Neon bisa dipakai.
+**apa adanya di dalam container**, dengan Worker sebagai pintu depan. ~~Basis data eksternal
+disambung lewat Hyperdrive (`WorkersPhp\Hyperdrive\HttpPgsqlPDO`), jadi Neon bisa dipakai.~~
+**KOREKSI 29 Sep — jangan pakai jalur itu untuk aplikasi ini:** `HttpPgsqlPDO` "memakai protokol kueri
+D1" lewat HTTP (tiap kueri satu panggilan). README menyatakan transaksi no-op di D1 dan **tidak
+menjamin** transaksi/kunci baris di jalur Postgres — gerbang pagu akan rusak lagi. Pakai **`pdo_pgsql`
+langsung dari container ke Neon**: dokumen Cloudflare, lalu lintas keluar di port selain 80/443 tidak
+dicegat dan lolos bila `enableInternet = true` (bawaan). [Likely — uji balapan wajib diulang setelah
+deploy.] Lihat bagian "Langkah berikut: deploy Cloudflare".
 Dua syarat yang harus disebut lebih dulu: **Workers plan berbayar** (Containers tidak ada di free),
 dan `workers-php` **dikelola komunitas, bukan resmi Cloudflare maupun Laravel** — risiko nyata untuk
 sistem pemerintah. Caveat README-nya: migrasi jalan saat container boot lewat HTTP (jaga tetap
@@ -266,8 +272,26 @@ Design, masih bermerek lama). ⚠ OPEN keduanya bila Aldo mau.
 `PaketSeeder` dengan `SIGAP_SEED=dummy`. Isi: 131 MAK (Σ pagu Rp 356.600.727.500, realisasi
 Rp 263.743.590.000), 830 permintaan, 42 komitmen, 10 PPK, 46 alokasi, 34 SPP, 5 KKP, 5 kontrak, 8 paket.
 Diverifikasi lewat MCP baca-saja: akun hanya `admin@sigap.test`, DIPA fiktif, **0 jejak Kemlu** di
-permintaan/MAK/paket/kontrak/penyedia/PPK. ⚠ OPEN: password admin masih `password` — **wajib diganti
-sebelum situs dibuka ke publik**. `.env` lokal tetap SQLite berisi data asli Juli (tidak disentuh).
+permintaan/MAK/paket/kontrak/penyedia/PPK. **Password bawaan dipertahankan — keputusan Aldo 29 Sep**
+(email `admin@sigap.test`, password `password`; risiko diketahui: siapa pun yang tahu URL bisa masuk
+sebagai admin dan mengubah data dummy). `.env` lokal tetap SQLite berisi data asli Juli (tidak disentuh).
+
+### Langkah berikut: deploy Cloudflare (dicek 29 Sep 2026)
+
+- **Workers Paid USD 5/bulan wajib** untuk Containers; termasuk 25 GiB-jam memori, 375 menit vCPU,
+  200 GB-jam disk per bulan (halaman harga Cloudflare, diperbarui 28 Agu 2026).
+- **Token `CLOUDFLARE_API_TOKEN` di `env.db` tidak cukup**: verify 200, daftar zona 200, tetapi akun,
+  langganan, Workers, Containers, Hyperdrive semuanya **403**. Butuh token baru ber-izin tingkat akun
+  (Workers Scripts Edit + Containers Edit + Account Settings Read; tambah Workers Routes/DNS bila domain
+  sendiri). Cek juga `CLOUDFLARE_ACCOUNT_ID` cocok dengan akun tujuan.
+- **`wrangler deploy` wajib Docker yang berjalan** di mesin deploy. Mesin ini **tanpa Docker** (juga tanpa
+  `wrangler`, `gh`). Pilihan: GitHub Actions (butuh repo privat + secret) atau pasang Docker Desktop
+  (berat, RAM mesin sudah sesak).
+- Arsitektur yang disarankan: paket resmi `@cloudflare/containers` + Dockerfile sendiri (FrankenPHP/
+  PHP 8.4 + `pdo_pgsql`), DB langsung ke Neon, tanpa `workers-php`/Hyperdrive. Neon `main` sudah
+  bermigrasi dan terisi, jadi container tidak perlu migrasi saat boot.
+- ⚠ OPEN (Aldo): aktifkan Workers Paid, buat token baru, pilih jalur build, pilih URL (`*.workers.dev`
+  atau domain sendiri).
 
 **Memori mesin (dicek 29 Sep):** "memori hampir habis" 27 Sep = RAM. Commit charge 68,8 dari 82,1 GB;
 pemesan terbesar `explorer.exe` **10,9 GB** (tidak wajar, kemungkinan bocor — restart Explorer),

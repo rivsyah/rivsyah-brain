@@ -19,8 +19,9 @@
   Neon `main` TERISI dummy, identitas Kemlu disamarkan.** Keputusan Aldo: Neon hanya dummy mirip
   realisasi, data asli lokal, nama hanya "SIGAP BUP". Commit `8dfd123` (5 bug PG) → `01863c4` (seed
   dummy, xlsx 27 Sep) → `f5bbeeb` (UI/seed netral, "Logistik Unit Daerah"). Neon: migrasi 11, 131 MAK,
-  830 permintaan, 0 jejak Kemlu. ⚠ Password admin `admin@sigap.test` wajib diganti sebelum publik;
-  `.env` lokal tetap SQLite data asli. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
+  830 permintaan, 0 jejak Kemlu. Password bawaan dipertahankan (keputusan Aldo). Berikutnya: deploy
+  Cloudflare — ⚠ butuh Workers Paid, token baru (token lama 403), jalur build (tanpa Docker);
+  container + `pdo_pgsql` langsung ke Neon. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
 - 🔴 29 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
   2 Jul). Agent diblokir pengaman + kunci berkas; **Aldo bilang akan menghapus sendiri** (29 Sep).
   [Git nyasar di home](shared/ops/reference_stray_git_home.md).
@@ -48,7 +49,7 @@
 
 - [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
 - [SIPAMA Kemlu](kemlu/project_sipama_kemlu.md) — Dashboard Sistem Informasi Pengamanan (9 modul) di Herd\sipama → sipama.test
-- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; nama kini "SIGAP BUP" tanpa identitas Kemlu (`f5bbeeb`); Neon `main` terisi dummy 29 Sep; password admin wajib diganti sebelum publik
+- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; nama kini "SIGAP BUP" tanpa identitas Kemlu (`f5bbeeb`); Neon `main` terisi dummy 29 Sep; berikutnya deploy Cloudflare (container + pdo_pgsql langsung, bukan HttpPgsqlPDO)
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
 - [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025; Aldo 29 Sep: penandatangan ST = Kepala BUP, kurs JISDOR otomatis, identitas Kemlu disamarkan di app/file terlacak; commit awal b50b8d6 (main, tanpa remote); menunggu pola nomor surat
