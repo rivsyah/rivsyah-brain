@@ -78,6 +78,8 @@ diambil dari token saat itu. Zona `rivsyah.dev` SUDAH ditambahkan (status pendin
 **gracie.ns.cloudflare.com + syeef.ns.cloudflare.com**; DNS lama hanya parkir Hostinger (A 2.57.91.91, tanpa
 MX/TXT/DNSSEC) → ganti NS aman. Email izin Access: rivsyah@gmail.com. Menunggu: Aldo ganti NS di Hostinger,
 aktifkan Zero Trust Free + tambah izin token (Access Apps/Policies, IdP, DNS Edit), lalu ya untuk deploy.
+**Update 29 Sep ~23:05 (sesi SIPDLN):** NS sudah dipasang, zona rivsyah.dev **ACTIVE** — langkah
+"ganti NS" di atas selesai; sisanya lihat [[reference-cloudflare-rivsyah-dev]].
 Jebakan uji: unduhan Chrome headless via CDP dibatalkan bila `downloadPath` memakai garis miring maju di
 Windows — pakai path `C:\...`.
 

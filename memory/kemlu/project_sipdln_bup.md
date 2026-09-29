@@ -30,7 +30,7 @@ temuan (D19) selesai 29 Sep malam dan **di-commit terpisah atas persetujuan Aldo
    `git grep -i -E "kemlu|kementerian luar negeri|sekretariat jenderal"` harus kosong.
    `.claude/` + `CLAUDE.md` proyek tetap privat (gitignored) dan boleh menyebut konteks nyata.
 
-## Deploy demo Cloudflare (29 Sep 2026, disiapkan — menunggu Aldo)
+## Deploy demo Cloudflare (29 Sep 2026, disiapkan — menunggu Aldo; NS/zona sudah beres ~23:05)
 
 Aldo: "push ke cloudflare", domain rivsyah.dev dari Hostinger. Commit `a0c5c18`: Dockerfile FrankenPHP
 PHP 8.4 (gd, zip, intl, opcache; composer tanpa dev), `docker/start.sh` (APP_KEY dari secret Worker,
