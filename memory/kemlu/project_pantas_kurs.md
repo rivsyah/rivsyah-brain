@@ -1,6 +1,6 @@
 ---
 name: project-pantas-kurs
-description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); commit pertama ad74565"
+description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b"
 metadata:
   type: project
   modified: 2026-09-27
@@ -12,8 +12,10 @@ anggaran/pembayaran. "Petty cash" ditafsirkan = Uang Persediaan (UP) dalam US$ (
 
 **Di mana (mesin riv):** `C:\Users\rivsy\dev\kemlu\pantas-kurs`, disajikan Herd di
 `http://pantas-kurs.test/` lewat junction `~/.config/herd/config/valet/Sites/pantas-kurs` (lihat
-[[reference_herd_windows]]). Git lokal, branch `master`, **commit pertama `ad74565` (29 Sep 2026, atas
-permintaan Aldo)**, 25 file, belum ada remote. `.gitattributes` memaksa LF dan `vendor/** -text` karena
+[[reference_herd_windows]]). Git lokal, branch `master`, **2 commit: `e096019` (v1) → `cf1a60b` (samaran identitas)**, belum ada
+remote. Riwayat ditulis ulang 29 Sep atas permintaan Aldo: commit lama `ad74565` (memuat kode kegiatan
+6023.EBA dan label rekening kedutaan di tes, "KBRI"/"SIGAP Kemlu" di README/CSS) dibangun ulang tanpa
+identitas lalu objeknya dihapus (`reflog expire` + `gc --prune=now`); pindai semua objek git: 0 identitas. `.gitattributes` memaksa LF dan `vendor/** -text` karena
 `core.autocrlf=true` di mesin ini akan mengubah pustaka minified saat checkout. `.claude/ai_context/` (GRANDPLAN, STATUS, DECISIONS D1–D6 `proposed`) lokal saja.
 
 **Stack:** SPA statis tanpa build, pola sama dengan SIPAMA/UKPBJ — React 18.3.1 UMD + Babel standalone
@@ -47,8 +49,7 @@ Pengaturan. Ekspor .xlsx 8 sheet.
   KEM → BA-n, rekening → jenis, satker → "Satker A", nama file unggahan disembunyikan; kurs SP2D di uraian
   UP dipertahankan. **Bawaan aktif**, sakelar di Data & Pengaturan. Diverifikasi: 0 pola identitas di 6
   halaman dan 0/12.200 sel ekspor (pembanding tanpa samaran 4–12 per halaman, 1.092 sel); angka analisis
-  identik. File terlacak dibersihkan, tapi **riwayat `ad74565` masih memuat kode kegiatan 6023.EBA dan label
-  rekening kedutaan di tests/engine.test.js** — perubahan D12 belum di-commit; amend menunggu Aldo.
+  identik. File terlacak dan riwayat git sudah bersih (lihat baris Git di atas).
 - D8 kurs pengakuan belanja **dua cara berdampingan**: JISDOR tanggal belanja dan kurs SP2D GUP pengganti
   (penerimaan UP pertama sesudah belanja; 146 belanja US$771,6 rb sesudah 31 Agu belum punya GUP → pakai
   JISDOR). Angka tunggal/status memakai yang terburuk.
