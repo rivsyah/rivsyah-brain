@@ -1,23 +1,42 @@
 ---
 name: project-sipdln-bup
-description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025) terverifikasi"
+description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; identitas Kemlu disamarkan; commit awal b50b8d6"
 metadata:
   type: project
+  modified: 2026-09-29
 ---
 
 Dibangun 27 Sep 2026 atas permintaan Aldo ("buatkan aplikasi monitoring untuk perjalanan dinas luar
-negeri bagi pegawai biro umum dan pengadaan"). Status: **v1 lengkap, belum ditinjau Aldo.**
+negeri bagi pegawai biro umum dan pengadaan"). Status 29 Sep 2026: **v1 + keputusan Aldo 29 Sep
+terpasang, commit awal `b50b8d6` di `main` (belum ada remote). Menunggu pola nomor surat BUP.**
+
+## Keputusan Aldo 29 Sep 2026 (terkunci, D14–D16 di DECISIONS proyek)
+
+1. **Pola nomor surat BUP** akan Aldo berikan **setelah commit awal** → berikutnya: penomoran otomatis ST/SPD.
+2. **Penandatangan Surat Tugas PDLN = Kepala Biro Umum dan Pengadaan.** Bawaan di Pengaturan
+   (`jabatan_penandatangan_st`) dan terisi otomatis di form Pejabat.
+3. **Kurs = JISDOR Bank Indonesia.** Otomatis dari situs BI (lihat bawah).
+4. **Samarkan identitas Kemlu.** Aplikasi hanya menampilkan "SIPDLN-BUP (Sistem Informasi Perjalanan
+   Dinas Luar Negeri, Biro Umum dan Pengadaan)". Aturan: tidak ada nama kementerian, domain
+   `kemlu.go.id`, alamat, atau nama unit induk di kode, seeder, uji, README, atau pesan commit.
+   Kop surat/nama K/L diisi pemakai di layar Pengaturan; baris kop kosong tidak dicetak. Istilah PMK
+   (Paspor Diplomatik, "Perwakilan RI", "Kepala Perwakilan") tetap. Sebelum commit:
+   `git grep -i -E "kemlu|kementerian luar negeri|sekretariat jenderal"` harus kosong.
+   `.claude/` + `CLAUDE.md` proyek tetap privat (gitignored) dan boleh menyebut konteks nyata.
 
 ## Letak dan cara jalan (mesin riv)
 
 - Kode: `C:\Users\rivsy\dev\kemlu\sipdln-bup` (bukan `Herd\` — kode baru masuk `~/dev/<scope>`).
 - Situs: `http://sipdln-bup.test` lewat **junction** `C:\Users\rivsy\.config\herd\config\valet\Sites\sipdln-bup`.
   `herd link` (bat maupun phar) tidak mendaftarkan apa pun di mesin ini — pakai junction.
-- Login demo: `admin@kemlu.go.id` / `password`; data contoh menambah `operator@` dan `pimpinan@kemlu.go.id`.
-- Git: `git init` saja, **belum ada commit** (menunggu Aldo). `.claude/` dan `CLAUDE.md` di-gitignore
-  bawaan Laravel.
-- Framework ai_context terpasang: `.claude/ai_context/development/v1/` (GRANDPLAN, 00_INDEX, STATUS,
-  DECISIONS D1–D13 semua `proposed`, 6 build file). Riset regulasi di
+- Login demo: `admin@sipdln-bup.test` / `password`; data contoh menambah `operator@sipdln-bup.test`
+  dan `pimpinan@sipdln-bup.test`. (Akun `@kemlu.go.id` lama sudah dibuang — DB lokal dibangun ulang
+  29 Sep, isinya hanya data contoh.)
+- Git: branch `main` (default git mesin ini `master` — diubah dengan `git symbolic-ref HEAD
+  refs/heads/main` sebelum commit pertama), commit awal `b50b8d6` 29 Sep 2026 oleh
+  rivsyah@gmail.com, 216 file. Belum ada remote.
+- Framework ai_context: `.claude/ai_context/development/v1/` (GRANDPLAN, 00_INDEX, STATUS, DECISIONS
+  D1–D17: D14–D16 `locked`, sisanya `proposed`). Riset regulasi di
   `.claude/ai_context/reference/regulasi-pdln/README.md`.
 
 ## Isi aplikasi
@@ -26,10 +45,27 @@ negeri bagi pegawai biro umum dan pengadaan"). Status: **v1 lengkap, belum ditin
   pemerataan per pegawai, cakupan per unit, negara, per bulan, linimasa Gantt, biaya vs pagu,
   peringatan (paspor < 6 bulan setelah kembali, ST/SPD belum bernomor, kurs kosong, laporan telat).
 - Data induk: pegawai (CRUD + impor/ekspor Excel, golongan A–D otomatis), SBM uang harian per
-  negara × golongan per tahun (impor, salin tahun, rujukan negara), acuan tiket PP, pejabat, unit.
+  negara × golongan per tahun (impor, salin tahun, rujukan negara), acuan tiket PP, **kurs JISDOR**
+  (tab di menu "SBM & Kurs"), pejabat, unit.
 - Dokumen dari satu sumber (`DokumenData`): pratinjau HTML A4, DOCX dari templat (bisa diganti
   templat kantor), nominatif juga XLSX berumus.
-- Peran: administrator / operator / pimpinan (lihat saja).
+- Peran: administrator / operator / pimpinan (lihat saja). Operator boleh "Perbarui dari BI";
+  impor berkas kurs hanya admin.
+
+## Kurs JISDOR (29 Sep 2026)
+
+- Tabel `kurs_jisdor` (1 baris per hari bursa). `app/Services/JisdorBi.php` = port PHP dari
+  `pantas-kurs/tools/update_kurs.py` (Laravel Http + Guzzle `CookieJar`, postback tombol Unduh) —
+  jalan langsung ke situs BI 29 Sep 2026. Lihat [[reference-bi-jisdor]].
+- `php artisan kurs:jisdor` (bawaan: mulai 7 hari sebelum data terakhir), `--dari/--sampai`, `--json`
+  menulis ulang `database/data/kurs_jisdor.json` (seeder). Isi sekarang: 650 hari bursa,
+  2 Jan 2024 – 29 Sep 2026, cocok 194/194 dengan data PANTAS.
+- Form perjalanan baru dan "Salin perjalanan" memakai JISDOR hari bursa terakhir ≤ hari ini;
+  `PetunjukKurs` di form menunjukkan JISDOR untuk tanggal kurs + tombol "Pakai kurs ini" dan
+  "Perbarui dari BI" bila data tertinggal. Perjalanan tersimpan tidak berubah saat tabel diperbarui.
+- Jadwal `kurs:jisdor` hari kerja 11.00 dan 15.00 WIB ada di `routes/console.php`, tetapi **baru jalan
+  bila server menjalankan `php artisan schedule:run` tiap menit** — di mesin ini belum ada Task
+  Scheduler untuk itu (sengaja; tombol manual cukup untuk lokal).
 
 ## Fakta regulasi yang dipakai (dibaca dari PDF JDIH Kemenkeu, 27 Sep 2026)
 
@@ -41,16 +77,19 @@ negeri bagi pegawai biro umum dan pengadaan"). Status: **v1 lengkap, belum ditin
   g/h/i bila akomodasi disediakan; golongan di Lampiran B (A Eselon I, B Eselon II/IV/c+, C III/c–IV/b,
   D lainnya); PMK 181/2019 menghapus "> 8 jam = Business" untuk C/D. Format SPD = Lampiran C,
   Rincian = Lampiran D, Surat Tugas = Lampiran I PMK 164/2015.
-- **Kurs tidak diatur PMK** — aplikasi minta kurs + sumber + tanggal per perjalanan.
+- Sumber kurs tidak diatur PMK; **Aldo memilih JISDOR (29 Sep 2026)**. Kurs tetap bisa diubah per
+  perjalanan beserta sumber dan tanggalnya.
 - Akun DIPA BUP 2026 memakai 524211 dan 524219 (dari data SIGAP-BUP).
 
-## Mutu saat selesai
+## Mutu (29 Sep 2026)
 
-57 uji PHPUnit (56 lulus, 1 dilewati = uji 2FA bawaan), `tsc` strict + lint bersih, build Vite
-hijau, semua rute 200. Tampilan dicek lewat tangkapan layar Chrome headless; uji peramban CDP form
-Rekam Perjalanan lolos 9/9 (hitung form = hitung server). Keempat DOCX dirender lewat Word COM:
-ST 1 hlm, SPD 1 hlm/pegawai (templat SPD sengaja lebih padat: huruf 9,5, margin 1,5/1,2 cm),
-Rincian 1 hlm/pegawai, Nominatif 1 hlm lanskap.
+66 uji PHPUnit (65 lulus, 1 dilewati = uji 2FA bawaan), `vp check` (format + lint) dan `tsc` bersih,
+build Vite hijau, 19 rute 200, cek peramban kurs 13/13 lolos (termasuk "Perbarui dari BI" langsung
+ke situs BI), DOCX tanpa nama instansi induk dan tanpa makro tersisa.
+**Belum hijau:** PHPStan level 7 (bagian `composer ci:check` bawaan kit) — 412 temuan lama, hampir
+semua karena model tanpa anotasi `@property`; kode kurs baru sudah 0 temuan. Belum diminta Aldo.
+Keempat DOCX dirender lewat Word COM (27 Sep): ST 1 hlm, SPD 1 hlm/pegawai (huruf 9,5, margin
+1,5/1,2 cm), Rincian 1 hlm/pegawai, Nominatif 1 hlm lanskap.
 Cara aman Word COM saat ada WINWORD `/Automation` sesi lain: `New-Object -ComObject Word.Application`
 membuat instans BARU (PID beda), catat PID sebelum/sesudah, `Quit()` + `ReleaseComObject` di `finally`,
 jangan sentuh instans lain.
@@ -60,22 +99,28 @@ jangan sentuh instans lain.
 - `composer create-project laravel/react-starter-kit` **tanpa `--stability=dev`** memberi Laravel 12 +
   Inertia 2 (lebih tua dari SIGAP-BUP). Dengan `--stability=dev`: Laravel 13.33, Inertia 3, Vite 8
   lewat **vite-plus** (`vp build`), uji **PHPUnit** (bukan Pest), Fortify + passkey.
+- **`composer ci:check` = `npm run check` (`vp check`, printWidth 80) + `tsc` + pint + PHPStan + uji.**
+  Jalankan `npx vp check --fix` sebelum commit. `database/data/**` dikecualikan dari formatter.
+  PHPStan di mesin ini butuh `--memory-limit=1G` (php.ini 128M → crash).
+- Uji Inertia: float `16750.0` terkirim sebagai `16750` (json_encode tanpa PRESERVE_ZERO_FRACTION)
+  → bandingkan dengan int.
 - Mematikan fitur Fortify menghapus rute Wayfinder → halaman kit (register, settings, 2FA) gagal
   `tsc`; hapus halaman/komponennya sekalian.
 - PhpWord TemplateProcessor: `setValue` mengubah `\n` jadi baris baru; `cloneBlock(..., true, true)`
   lalu `cloneRow('r_no#1')` menghasilkan `${r_no#1#1}` (bersarang jalan); pemisah halaman antarblok
-  lewat `replaceXmlBlock('${pisah#k}', '<w:p><w:r><w:br w:type="page"/></w:r></w:p>')`.
+  lewat `replaceXmlBlock('${pisah#k}', '<w:p><w:r><w:br w:type="page"/></w:r></w:p>')`; paragraf
+  berisi satu makro saja bisa dihapus utuh (`PengisiTemplat::hapusParagrafTunggal`, dipakai untuk kop kosong).
 - PhpSpreadsheet: `getDefaultStyle()` ada di Spreadsheet, **bukan** Worksheet.
 - Tangkapan layar halaman ber-login: `C:\Users\rivsy\Bara\scripts\shot-login.mjs` (Chrome headless +
-  CDP + cookie jar curl).
+  CDP + cookie jar curl; login = GET /login lalu POST dengan header `X-XSRF-TOKEN`).
 - **Mesin ini ramai sesi Claude paralel (~10).** Jangan bunuh proses PHP berdasarkan waktu mulai —
   cek command line dulu (sesi ini sempat membunuh uji Postgres milik sesi SIGAP-BUP; tidak ada
   kerusakan). Jangan jalankan Word/Excel COM bila ada instans `/Automation` lain.
 
 ## Terbuka (Q di GRANDPLAN)
 
-Pola nomor ST/SPD BUP, siapa penandatangan ST PDLN, sumber kurs (KMK vs kurs tengah BI), tempat
-produksi + kebijakan data pegawai, sumber data pegawai asli, integrasi pagu SIGAP-BUP dan SSO Portal
-BUP (v2), uang representasi ketua delegasi.
+Pola nomor ST/SPD BUP (Aldo memberi setelah commit), tempat produksi + kebijakan data pegawai,
+sumber data pegawai asli, integrasi pagu SIGAP-BUP dan SSO Portal BUP (v2), uang representasi ketua
+delegasi, PHPStan backlog.
 
-Terkait: [[project-sigap-bup]], [[project-bup-kemlu]], [[reference-office-render]].
+Terkait: [[project-sigap-bup]], [[project-bup-kemlu]], [[project-pantas-kurs]], [[reference-office-render]], [[reference-bi-jisdor]].

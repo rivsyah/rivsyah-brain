@@ -51,7 +51,7 @@
 - [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; nama kini "SIGAP BUP" tanpa identitas Kemlu (`f5bbeeb`); Neon `main` terisi dummy 29 Sep; password admin wajib diganti sebelum publik
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
-- [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025 terverifikasi; git tanpa commit
+- [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025; Aldo 29 Sep: penandatangan ST = Kepala BUP, kurs JISDOR otomatis, identitas Kemlu disamarkan di app/file terlacak; commit awal b50b8d6 (main, tanpa remote); menunggu pola nomor surat
 - [Template SPK & Adendum](kemlu/reference_template_spk.md) — Claude Doc + .docx di Documents; template SPK Barang/Jasa Lainnya + adendum; dasar hukum terverifikasi (batas SPK, Ps. 54/56/79, PPN 11%; 27 Sep: Ps. 33 (2) b e-purchasing DIHAPUS Perpres 46/2025)
 - [HT PoC Satpam](kemlu/project_ht_poc_satpam.md) — KAK + RAB/HPS kuota data 20 HT; Revisi 3 (27 Sep 2026) Okt-Des = 60 unit-bulan, HPS Rp4,8 jt; Jul-Sep di luar paket, invoice AAM 113 unit-bulan tak bisa dipakai
 - [Dokumen Pokja + SPPBJ](kemlu/reference_dokumen_pokja_sppbj.md) — draf Pengumuman/Nodin/SPPBJ tender Renovasi Lt3 (26 Sep 2026); jaminan 5% HPS bila < 80% HPS (Pasal 33 (3) b); celah: klarifikasi kewajaran harga
@@ -98,7 +98,7 @@
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
 - [Ignited Research masthead](shared/reference/reference_ignited_masthead.md) — "Ignited Research · Independent Analysis" untuk semua brief; "Independent Research" sudah pensiun
 - [Render dokumen Office](shared/reference/reference_office_render.md) — tidak ada soffice/pdftoppm/pandoc; docx→PDF lewat Word COM: macet 27 Sep 09:50 tapi jalan lagi 10:00–10:25 dan 13:10–13:35 (SaveAs 17, instans sendiri berdampingan dgn /Automation sesi lain), cadangan render EMF per halaman; keepNext di sel tabel = tabel lompat halaman; xlsx hitung ulang + PDF lewat Excel COM (sheet hidden gagal ekspor), PyMuPDF global; TEXT() Excel rusak di locale ID → FIXED()
-- [Kurs JISDOR BI](shared/reference/reference_bi_jisdor.md) — unduh rentang lewat postback tombol Unduh → xlsx (tanggal m/d/yyyy); GET biasa 10 hari; wskursbi mati; ECB/Frankfurter beda 15–20 poin
+- [Kurs JISDOR BI](shared/reference/reference_bi_jisdor.md) — unduh rentang lewat postback tombol Unduh → xlsx (tanggal m/d/yyyy); GET biasa 10 hari; wskursbi mati; ECB/Frankfurter beda 15–20 poin; port PHP jalan 29 Sep
 - [Impor Claude Design](shared/reference/reference_design_login.md) — DesignSync bisa kedaluwarsa di tengah sesi; hanya /design-login dari terminal interaktif yang memulihkan
 
 ## Archive
