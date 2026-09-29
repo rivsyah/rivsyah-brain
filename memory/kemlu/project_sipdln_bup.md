@@ -9,8 +9,8 @@ metadata:
 Dibangun 27 Sep 2026 atas permintaan Aldo ("buatkan aplikasi monitoring untuk perjalanan dinas luar
 negeri bagi pegawai biro umum dan pengadaan"). Status 29 Sep 2026: **v1 + keputusan Aldo 29 Sep
 terpasang, commit awal `b50b8d6` di `main` (belum ada remote). Pola nomor ST (D18) dan PHPStan 0
-temuan (D19) selesai 29 Sep malam, **belum di-commit — menunggu persetujuan Aldo**; patch penomoran
-tersimpan terpisah agar bisa jadi dua commit.**
+temuan (D19) selesai 29 Sep malam dan **di-commit terpisah atas persetujuan Aldo: `d2284eb`
+(penomoran) lalu `0f3fcb6` (PHPStan)**. HEAD `0f3fcb6`, tanpa remote.**
 
 ## Keputusan Aldo 29 Sep 2026 (terkunci, D14–D16 di DECISIONS proyek)
 
@@ -39,8 +39,11 @@ tersimpan terpisah agar bisa jadi dua commit.**
   dan `pimpinan@sipdln-bup.test`. (Akun `@kemlu.go.id` lama sudah dibuang — DB lokal dibangun ulang
   29 Sep, isinya hanya data contoh.)
 - Git: branch `main` (default git mesin ini `master` — diubah dengan `git symbolic-ref HEAD
-  refs/heads/main` sebelum commit pertama), commit awal `b50b8d6` 29 Sep 2026 oleh
-  rivsyah@gmail.com, 216 file. Belum ada remote.
+  refs/heads/main` sebelum commit pertama). Commit oleh rivsyah@gmail.com: `b50b8d6` v1 (29 Sep),
+  `d2284eb` pola nomor ST, `0f3fcb6` PHPStan 0. Belum ada remote. Cara memisah dua perubahan yang
+  sudah bercampur jadi dua commit: simpan `git diff --binary` bagian pertama (pakai `git add -N`
+  untuk berkas baru) → `git stash -u` → `git apply --index` patch → uji → commit → `git checkout
+  stash@{0} -- .` + berkas baru dari `stash@{0}^3` → cocokkan sha1 semua berkas → commit → drop stash.
 - Framework ai_context: `.claude/ai_context/development/v1/` (GRANDPLAN, 00_INDEX, STATUS, DECISIONS
   D1–D17: D14–D16 `locked`, sisanya `proposed`). Riset regulasi di
   `.claude/ai_context/reference/regulasi-pdln/README.md`.
@@ -133,7 +136,7 @@ jangan sentuh instans lain.
 
 ## Terbuka (Q di GRANDPLAN)
 
-Commit penomoran + PHPStan (menunggu Aldo), pola nomor SPD (bila ada), tempat produksi + kebijakan
+Pola nomor SPD (bila ada), repo remote (belum ada), tempat produksi + kebijakan
 data pegawai, sumber data pegawai asli, integrasi pagu SIGAP-BUP dan SSO Portal BUP (v2), uang
 representasi ketua delegasi.
 
