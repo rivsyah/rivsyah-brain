@@ -69,6 +69,18 @@ mentah + pagu) TIDAK BOLEH ikut, karena samaran jalan di peramban dan file menta
 dikompilasi sekali (buang Babel 3 MB); token Cloudflare ber-izin Pages + `CLOUDFLARE_ACCOUNT_ID` yang benar.
 Untuk pemakaian resmi Kemlu: PP 71/2019 Ps 20 (data sektor publik di Indonesia) → perlu Pusdatin.
 
+**Persiapan deploy (29 Sep):** `npm run build` (tools/build.js) membangun `dist/` dari commit git lewat worktree
+sementara + daftar izin file; JSX dikompilasi (Babel tidak dikirim), `_headers` CSP tanpa unsafe-eval; hasil
+18 file 2,28 MB, diuji dengan CSP: 6 halaman, unggah BKU/BKT, unduh .xlsx (PANTAS_Satker-A…, 0 identitas) OK.
+Cloudflare (dicek via API): token aktif, izin Pages 200, **Access 403**, DNS rekaman 403; `CLOUDFLARE_ACCOUNT_ID`
+di env.db tetap SALAH (token hanya melihat 1 akun lain) — env.db diisi tangan oleh Aldo; untuk deploy ID bisa
+diambil dari token saat itu. Zona `rivsyah.dev` SUDAH ditambahkan (status pending, paket Free); NS Cloudflare
+**gracie.ns.cloudflare.com + syeef.ns.cloudflare.com**; DNS lama hanya parkir Hostinger (A 2.57.91.91, tanpa
+MX/TXT/DNSSEC) → ganti NS aman. Email izin Access: rivsyah@gmail.com. Menunggu: Aldo ganti NS di Hostinger,
+aktifkan Zero Trust Free + tambah izin token (Access Apps/Policies, IdP, DNS Edit), lalu ya untuk deploy.
+Jebakan uji: unduhan Chrome headless via CDP dibatalkan bila `downloadPath` memakai garis miring maju di
+Windows — pakai path `C:\...`.
+
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
 
