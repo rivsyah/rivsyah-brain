@@ -1,41 +1,41 @@
 ---
 name: project-kke-furniture-lt3
-description: "KKE Pokja paket Pengadaan Furniture (Built In) Ruang Kerja Lt 3 Gedung Tower Kemlu TA 2026 (28 Sep 2026): template xlsx 14 sheet + 23 catatan reviu KAK/spektek; builder openpyxl di ~/dev/kemlu/kke-furniture-lt3; dasar hukum dicek dari PDF lokal Perlem 12/2021 + Perpres 46/2025"
+description: "Paket Furniture (Built In) Lt 3 Gedung Tower Kemlu TA 2026 = MINI KOMPETISI e-katalog INAPROC (Lumsum, Pokja e-katalog): KKE ringkas terisi hasil evaluasi 3 penawaran (29 Sep 2026) — P3 PT Quel Avery Indonesia satu-satunya lengkap (Rp1.108.380.510 = 92,9% HPS) tetapi masih PERLU KLARIFIKASI; P1 & P2 gugur; builder di ~/dev/kemlu/kke-furniture-lt3"
 metadata:
   type: project
 ---
 
-Dibuat 28 Sep 2026 di mesin riv atas permintaan Aldo ("buatkan kertas kerja evaluasi dari pengadaan ini").
+**Metode (koreksi 28–29 Sep 2026):** E-purchasing Katalog V6 **Mini Kompetisi**, kontrak **Lumsum**, harga terendah sistem
+gugur, kode RUP 67916737, 30 hari sejak Surat Pesanan (Tata Cara A.1.4). Bukan Tender — KKE versi 28 Sep pagi
+(`Kertas Kerja Evaluasi - Pengadaan Furniture Built In Lt 3 Gedung Tower.xlsx`, 14 sheet, rezim Tender) **usang**.
+Pelaksana: Pokja Pemilihan E-katalog (Surat Penugasan 01664/KET/KP/09/2026/25, 24 Sep 2026, 6 anggota termasuk Aldo);
+nilai > Rp200 jt → Pokja (Perlem LKPP 2/2026 Ps. 17 (2) b; dicek via pasal.id). PPK Riyan Juanda: review + SP.
 
-**Sumber** (Downloads, dicetak 25 Sep 2026): `01 KAK Furniture Built In Lantai 3.pdf` (4 hlm, belum ditandatangani),
-`03 SPEKTEK Furniture Built In Lantai 3 Rev.pdf` (9 hlm), `01 SPEKTEK BUILD IN FURNITURE LANTAI 3 GEDUNG TOWER R1.pdf`
-(tabel 28 item). Paket: PPK Riyan Juanda, KPA Sekjen, akun 6023.EBB.971.054.A.533121, "perkiraan biaya" Rp1.193.019.835.
+**HPS rinci (16 Sep 2026):** 28 item, Rp1.074.792.643,98 + PPN 11% = Rp1.193.019.834,82 (= KAK). CB-15 & CB-17 vol 3.
+Data item + HPS di `~/dev/kemlu/kke-furniture-lt3/items_lt3.py` (RAHASIA). Sumber xlsx (spektek/DKH/HPS) dan PDF
+KAK/spektek/Tata Cara sudah Aldo pindah ke Recycle Bin — salinan dibaca dari sana tanpa dipulihkan.
 
-**Hasil:** `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Data Tender Furniture Lt 3 Gedung Tower\Kertas Kerja Evaluasi -
-Pengadaan Furniture Built In Lt 3 Gedung Tower.xlsx` — template KOSONG siap isi, format meniru KKE Renovasi Lt 3
-(`Data Tender Lt 3 Ruang Sekjen`). Sheet: Petunjuk, Data Paket (parameter + nama bernama HPS_PAKET dll.), Rekap penawaran
-(10 peserta, urutan, HEA, usulan pemenang/cadangan), Evaluasi P1–P5 (68 butir A–F, status otomatis), Spesifikasi (28 item),
-ARITMATIKA, Kewajaran Harga, Klarifikasi, Catatan Reviu Dokumen (R-01..R-23), Sumber Dokumen.
-Builder: `C:\Users\rivsy\dev\kemlu\kke-furniture-lt3\build_kke.py` + `recalc.ps1` (Excel COM: hitung ulang, pindai error,
-ekspor PDF). Diuji 3 skenario fiktif (harga satuan, lumsum, kewajaran < 80%, timpang, preferensi TKDN): 0 error.
+**Hasil (berkas KINI):** `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Data Tender Furniture Lt 3 Gedung Tower\KKE Mini
+Kompetisi - Furniture Built In Lt 3 Gedung Tower - Hasil Evaluasi.xlsx` — 6 sheet (1 Data, 2 Rekap, 3 Evaluasi matriks
+25 butir × 5 penyedia, 4 Harga & Spek, 5 Catatan PPK P-01..P-15, 6 Dokumen D-01..D-12), 0 error Excel.
+Penawaran dari `C:\Users\rivsy\Downloads\Furniture Lt 3\Penawaran 1..3`:
+- P1 CV. Amar Afifah Perdana (Bandar Lampung): hanya naskah penawaran teknis 20 hlm, tanpa NIB/izin/pengalaman/PM/
+  bukti peralatan/DKH berharga → **GUGUR**.
+- P2 CV. Sumber Baru Furniture (Bantul): hanya SBU + Sertifikat Standar KBLI 41019 (bukan KBLI disyaratkan) → **GUGUR**.
+- P3 PT. Quel Avery Indonesia (Tangerang; juga pemenang tender Renovasi Lt 3 Gd Pimpinan): semua kualifikasi lengkap
+  (NIB usaha kecil KBLI 46491/43304/41012; SP+BAST furniture Wamenlu Rp1,22 M Des 2024; PM Adinda Viranica SKK Arsitek
+  Muda Interior jenjang 7; gudang/workshop sewa 1.195 m²; 2 table saw, 2 router profil, 2 truk sewa) → **PERLU
+  KLARIFIKASI**: (1) jadwal 60 hari vs Tata Cara 30 hari; (2) label PDN; (3) BPA1 PM hanya masa 12/2025; (4) 2 truk sama
+  dengan paket Renovasi; (5) konfirmasi BAST ke PPK. Konfirmasi E1–E3 belum.
+- Daftar Hitam INAPROC dicek 29 Sep 2026: ketiganya tidak ditemukan (pencarian `daftar-hitam.inaproc.id/?search=`).
+- **Belum ada di berkas: harga sistem P1 & P2** — minta Aldo isi dari INAPROC.
+- P3 menawar CB-13 337%, CB-14 172%, CB-17 132% HPS → menguatkan temuan HPS janggal (P-09/P-10).
 
-**Asumsi (belum dikonfirmasi):** Tender Barang pascakualifikasi 1 file, harga terendah sistem gugur, kontrak harga satuan,
-HPS = angka KAK, durasi 30 hari, volume tiap item = 1. Pemetaan spektek: B.1/B.3/B.4 → kualifikasi; B.2/B.5/B.7 → teknis;
-B.6 → administrasi + kewajaran.
+**Temuan dokumen untuk PPK (P-01..P-15):** Tata Cara D.2 menulis PPK menetapkan pemenang (seharusnya Pokja); durasi 30 vs
+60 hari (LDK 2 & 5); preferensi TKDN wajib bila pagu > Rp1 M (Perpres Ps. 67 (2) c); SKA→SKK; perkabelan vs "exclude
+electrical"; HPS janggal (hanging cabinet Rp1,85–7,36 jt/m, AHSP CB-17 berjudul CB-11, gorden tanpa sumber harga, harga
+dasar salah).
 
-**Temuan TINGGI untuk PPK:** R-01 durasi KAK 30 hari vs spektek 60 hari; R-02 60 hari melewati TA 2026 (SPMK ±10 Nov →
-±8 Jan 2027); R-03 syarat "SKA … masih berlaku" padahal SKA sudah diganti SKK; R-04 bunyi "termasuk usaha kecil baru
-< 3 thn" bertentangan dengan pengecualian pengalaman (paket ≤ Rp2,5 M); R-05 "instalasi perkabelan" vs "Exclude electrical";
-R-06 lingkup KAK tak memuat signage/gorden + mockup kursi tanpa item; R-07 DKH & HPS rinci belum ada.
-Juga: preferensi TKDN wajib (HPS > Rp1 M) tapi spektek "PDN tanpa TKDN"; KBLI 43304/41012 ditulis "G" (seharusnya F).
-
-**Dasar hukum yang dicek dari naskah (PDF lokal `Downloads\MOFA\BUP\MoFA\`):** Perlem 12/2021 Lamp. I 3.4.2 a.2
-(pengecualian pengalaman usaha kecil baru s.d. Rp2,5 M), 4.2.4 (adendum ≥ 3 hari kalender), 4.2.7 (koreksi aritmatik hanya
-harga satuan/gabungan; lumsum = harga penawaran; kewajaran < 80%; timpang > 110%; preferensi > Rp1 M); Lamp. IV Model
-Dokumen Pemilihan Tender Barang Pascakualifikasi hlm. 367–480 (IKP 26–33, LDP, LDK, LKE, Bab X; evaluasi 3 penawar
-terendah; HEA = (1 − KP) × HP). Perpres jo. 46/2025 Ps. 30–33, 38 (3)/(6), 65 (3), 66 (2), 67 (2)–(5) dari
-`Permenlu MoU\Konsolidasi Perpres 46 2025.pdf`. Perlem 4/2024 hanya mengubah Lamp. III dan VI.
-
-Jebakan workbook: [[reference-office-render]] (COUNTIF dengan teks berawalan ">" dibaca operator; jangan simpan ulang
-dengan openpyxl setelah Excel — validasi lintas-sheet hilang). Terkait: [[reference-dokumen-pokja-sppbj]],
-[[reference-template-spk]].
+**Builder:** `build_kke_ringkas.py` (template 6 sheet) + `fill_hasil_mk.py` (isi hasil) + `recalc.ps1` (Excel COM,
+`-PdfSheets "a;b"` dipisah titik koma). `build_kke.py` = versi Tender lama. Jebakan: [[reference-office-render]].
+Terkait: [[reference-dokumen-pokja-sppbj]] (tender Renovasi Lt 3), [[reference-template-spk]].

@@ -83,3 +83,8 @@ Tambahan 28 Sep 2026 (sesi KKE Furniture Lt 3, [[project-kke-furniture-lt3]]):
 - Validasi daftar lintas-sheet (mis. `='Rekap'!$B$9:$B$18`) disimpan Excel sebagai ekstensi x14; openpyxl membuangnya saat membaca ("Data Validation extension is not supported"). Urutan aman: bangun dengan openpyxl → Excel COM hitung ulang + simpan → JANGAN disimpan ulang dengan openpyxl.
 - Format angka `#,##0.##` tampil "1," untuk bilangan bulat di Excel locale ID → pakai General untuk volume.
 - Excel COM ekspor PDF per sheet (`$ws.ExportAsFixedFormat(0, path)`) jalan normal 28 Sep 14:10–14:35 (3x).
+
+Tambahan 29 Sep 2026 ([[project-kke-furniture-lt3]]):
+- **Kriteria COUNTIF berisi desimal literal** ("<0.5", ">1.1") gagal di Excel locale ID (desimal koma) → selalu 0. Pakai `SUMPRODUCT(ISNUMBER(r)*(r<0.5))` atau `"<"&0.5`. Konkatenasi angka (`"<"&C7`) aman karena dikonversi dengan locale yang sama.
+- `recalc.ps1` lewat `powershell -File`: parameter array tidak terbaca — kirim daftar sheet sebagai satu string dipisah titik koma.
+- Sheet bernama diawali angka/berisi "&" (mis. `4 Harga & Spek`) aman di rumus asal dikutip tunggal.
