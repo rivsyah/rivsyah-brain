@@ -18,9 +18,16 @@ KAK/spektek/Tata Cara sudah Aldo pindah ke Recycle Bin — salinan dibaca dari s
 **Hasil (berkas KINI):** `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Data Tender Furniture Lt 3 Gedung Tower\KKE Mini
 Kompetisi - Furniture Built In Lt 3 Gedung Tower - Hasil Evaluasi.xlsx` — 6 sheet (1 Data, 2 Rekap, 3 Evaluasi matriks
 25 butir × 5 penyedia, 4 Harga & Spek, 5 Catatan PPK P-01..P-15, 6 Dokumen D-01..D-12), 0 error Excel.
-Penawaran dari `C:\Users\rivsy\Downloads\Furniture Lt 3\Penawaran 1..3`:
-- P1 CV. Amar Afifah Perdana (Bandar Lampung): hanya naskah penawaran teknis 20 hlm, tanpa NIB/izin/pengalaman/PM/
-  bukti peralatan/DKH berharga → **GUGUR**.
+Penawaran kini di `C:\Users\rivsy\Downloads\Pengadaan Furniture Lt 3 Ruang Sekjen\Penawaran 1..3` (folder lama
+`Downloads\Furniture Lt 3` sudah tidak ada, dicek 29 Sep). Di folder itu ada salinan KKE kerja Aldo (identik dengan
+master MOFA per 29 Sep, sedang dibuka di Excel — jangan ditimpa).
+- P1 CV. Amar Afifah Perdana (Bandar Lampung): naskah penawaran teknis 20 hlm, tanpa pengalaman/PM/bukti peralatan/
+  DKH berharga → **GUGUR**. Berkas tambahan 29 Sep sore (NIB, Sertifikat Standar, SBU): KBLI yang cocok hanya
+  **41012** (NIB 9120013200713 Usaha Kecil, lampiran B baris 10; Sertifikat Standar 91200132007130010 "Telah
+  terverifikasi", dicetak 11 Agu 2025; SBU BG002 Kecil s.d. 16 Agu 2027). 47591/46900/46491/43304 tidak ada;
+  46638 = material bangunan, bukan 46900. Janggal: lampiran NIB (dicetak 12 Jun 2025) masih "Belum Terverifikasi"
+  → cek QR. Dampak: B1, B2, B3 P1 jadi MEMENUHI; tetap GUGUR (A2, B4–B8). KKE **belum** diperbarui (menunggu
+  Aldo menutup file di Excel).
 - P2 CV. Sumber Baru Furniture (Bantul): hanya SBU + Sertifikat Standar KBLI 41019 (bukan KBLI disyaratkan) → **GUGUR**.
 - P3 PT. Quel Avery Indonesia (Tangerang; juga pemenang tender Renovasi Lt 3 Gd Pimpinan): semua kualifikasi lengkap
   (NIB usaha kecil KBLI 46491/43304/41012; SP+BAST furniture Wamenlu Rp1,22 M Des 2024; PM Adinda Viranica SKK Arsitek
