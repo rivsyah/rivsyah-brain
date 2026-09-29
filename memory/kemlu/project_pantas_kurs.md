@@ -42,6 +42,13 @@ Pengaturan. Ekspor .xlsx 8 sheet.
   BKU sampel tahun 2026; BKU unggahan lain tampil "Pagu 2026 belum diisi". Hasil: realisasi ±Rp176,6–176,8 M
   + kebutuhan ±Rp50,7 M = ±45% pagu; sisa ±Rp272 M; batas aman ±Rp114.200; status pagu Aman. Pertanyaan
   yang masih terbuka: apakah Rp500 M mencakup belanja di luar BKU ini (LS/pusat).
+- D12 (29 Sep): **samarkan identitas terkait Kemlu.** `app/samaran.js` dipasang pada data mentah sebelum
+  analisis, tolak-semua: uraian → label dari kode akun, kode kegiatan/KRO → `0000.XXX/000.000/0A.000000/<akun>`,
+  KEM → BA-n, rekening → jenis, satker → "Satker A", nama file unggahan disembunyikan; kurs SP2D di uraian
+  UP dipertahankan. **Bawaan aktif**, sakelar di Data & Pengaturan. Diverifikasi: 0 pola identitas di 6
+  halaman dan 0/12.200 sel ekspor (pembanding tanpa samaran 4–12 per halaman, 1.092 sel); angka analisis
+  identik. File terlacak dibersihkan, tapi **riwayat `ad74565` masih memuat kode kegiatan 6023.EBA dan label
+  rekening kedutaan di tests/engine.test.js** — perubahan D12 belum di-commit; amend menunggu Aldo.
 - D8 kurs pengakuan belanja **dua cara berdampingan**: JISDOR tanggal belanja dan kurs SP2D GUP pengganti
   (penerimaan UP pertama sesudah belanja; 146 belanja US$771,6 rb sesudah 31 Agu belum punya GUP → pakai
   JISDOR). Angka tunggal/status memakai yang terburuk.
@@ -57,9 +64,10 @@ rb/bulan; kebutuhan s.d. 31 Des US$2,83 jt. Uji pagu Rp227,5 M: batas aman 18.00
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
 
-**Verifikasi:** `node --test "tests/*.test.js"` (16 tes; pola glob wajib — `node --test tests/` gagal di
+**Verifikasi:** `node --test "tests/*.test.js"` (21 tes; pola glob wajib — `node --test tests/` gagal di
 Node 25) dan `node tests/render.js http://pantas-kurs.test/ <folder> 1440` (Chrome headless via CDP:
-error konsol + tangkapan layar; env `PRE_JS`, `UPLOAD`, `VIEWS`, `PREFIX`).
+error konsol + tangkapan layar; env `PRE_JS`, `UPLOAD`, `VIEWS`, `PREFIX`, `CARI` = regex identitas yang
+hanya dihitung, tidak dicetak).
 
 **Jebakan:** SheetJS standalone di Node tidak bisa `writeFile` tanpa `set_fs` → pakai
 `XLSX.write(wb,{type:'buffer'})`. Tool Edit menolak file yang baru diubah skrip Python — baca ulang dulu.
