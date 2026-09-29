@@ -52,7 +52,8 @@ tidak ada di antaranya; versi 2 Juli-nya tidak bisa dipastikan. Alasan tambahan 
   yang berjalan dari `~` (ada 10+ sesi) dan menjalankan `git status` di home. Proses `fsmonitor` tidak
   aktif untuk repo ini.
 
-⚠ OPEN: Aldo menghapus sendiri dari terminalnya, setelah sesi Claude yang berjalan dari `~` ditutup:
+29 Sep 2026: Aldo bilang **akan menghapus sendiri**. ⚠ OPEN sampai terkonfirmasi hilang (cek di sesi
+berikutnya dengan `test -d ~/.git`). Caranya, setelah sesi Claude yang berjalan dari `~` ditutup:
 `Remove-Item -Recurse -Force C:\Users\rivsy\.git` (PowerShell). Setelah itu cek dengan
 `git -C C:\Users\rivsy rev-parse --show-toplevel` → harus menjawab "not a git repository".
 

@@ -15,15 +15,15 @@
   0,4 detik. **Koreksi: host `-pooler` TIDAK perlu dibuang** — penyebab kegagalan lama adalah libpq 16
   vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
   kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
-- 🔵 27 Sep 2026 — **SIGAP-BUP → Postgres: kode SIAP, seed DUMMY siap; seed ke Neon `main` MENUNGGU
-  Aldo.** Keputusan Aldo: Neon hanya berisi **dummy yang mendekati data real, entitas Kemlu
-  disamarkan**; data asli tetap lokal. Commit `8dfd123` (5 bug PG) + `01863c4` (seed dummy bawaan,
-  `SIGAP_SEED`, ekstraksi xlsx 27 Sep: 131 MAK, 830 permintaan). SQLite 140/140 untuk kedua set; PG17
-  terbukti (114 tes, 150 layar identik, `lockForUpdate` terkunci). Seed `main` ditolak pengaman agent
-  ("Production Deploy") — Aldo jalankan sendiri. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
-- 🔴 27 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
-  2 Jul). Aldo sudah mengizinkan hapus, tapi agent diblokir pengaman + kunci berkas → **Aldo hapus
-  sendiri** dari terminal. [Git nyasar di home](shared/ops/reference_stray_git_home.md).
+- 🔵 29 Sep 2026 — **SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan):
+  Neon `main` TERISI dummy, identitas Kemlu disamarkan.** Keputusan Aldo: Neon hanya dummy mirip
+  realisasi, data asli lokal, nama hanya "SIGAP BUP". Commit `8dfd123` (5 bug PG) → `01863c4` (seed
+  dummy, xlsx 27 Sep) → `f5bbeeb` (UI/seed netral, "Logistik Unit Daerah"). Neon: migrasi 11, 131 MAK,
+  830 permintaan, 0 jejak Kemlu. ⚠ Password admin `admin@sigap.test` wajib diganti sebelum publik;
+  `.env` lokal tetap SQLite data asli. [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
+- 🔴 29 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
+  2 Jul). Agent diblokir pengaman + kunci berkas; **Aldo bilang akan menghapus sendiri** (29 Sep).
+  [Git nyasar di home](shared/ops/reference_stray_git_home.md).
 - 🟠 27 Sep 2026 — Tiga insiden data kecil saat uji PG SIGAP-BUP (baris/nama asli tercetak ke
   transkrip; branch sandbox dihapus). Aldo perlu cek setelan berbagi 2 berkas Drive milik
   `UP-2026-0001`. Aturan: [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md).
@@ -48,7 +48,7 @@
 
 - [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
 - [SIPAMA Kemlu](kemlu/project_sipama_kemlu.md) — Dashboard Sistem Informasi Pengamanan (9 modul) di Herd\sipama → sipama.test
-- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; git sejak 27 Sep (`01863c4`: siap Postgres + seed DUMMY bawaan); Neon hanya dummy (keputusan Aldo), seed `main` menunggu Aldo
+- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; nama kini "SIGAP BUP" tanpa identitas Kemlu (`f5bbeeb`); Neon `main` terisi dummy 29 Sep; password admin wajib diganti sebelum publik
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
 - [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025 terverifikasi; git tanpa commit

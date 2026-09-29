@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP-BUP GRP Biro Umum & Pengadaan Kemlu di Herd\\sigap-bup → sigap-bup.test; git sejak 27 Sep (8dfd123: 5 bug Postgres; 01863c4: seed DUMMY bawaan, entitas disamarkan — keputusan Aldo: Neon hanya dummy, data asli lokal); seed dummy ke Neon main MENUNGGU Aldo (ditolak pengaman agent)"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password admin wajib diganti sebelum publik"
 metadata: 
   node_type: memory
   type: project
@@ -231,12 +231,11 @@ SUMMARY. JSON Juli diarsipkan di `C:\Users\rivsy\Herd\sigap-bup\storage\app\priv
   `WasditSeeder::ringkasan()` set aktif. SQLite 140/140 untuk kedua set.
 - **Kode `6023` sengaja tidak disamarkan**: KRO/RO/akun adalah kode standar nasional, dan `6023` tertanam
   di frontend (`rkakl.tsx`), seeder, dan 12 file tes. ⚠ OPEN: samarkan juga bila Aldo mau.
-- **Branding UI tetap Kemlu** (sidebar "Kementerian Luar Negeri RI", kop BAR dengan satker 403247,
-  placeholder `drive.kemlu.go.id`) — bukan data. ⚠ OPEN: samarkan untuk demo publik bila Aldo mau.
+- ~~Branding UI tetap Kemlu~~ — **SELESAI 29 Sep** (`f5bbeeb`), lihat bagian 29 Sep di bawah.
 
 **Yang tertahan pengaman mode otomatis (bukan keputusan Aldo):**
-- **Seed dummy ke Neon `main`** ditolak sebagai "Production Deploy". `main` masih 10 migrasi dan kosong.
-  ⚠ OPEN: Aldo menjalankannya sendiri, atau memberi izin eksplisit lewat aturan izin Claude Code.
+- ~~Seed dummy ke Neon `main` ditolak sebagai "Production Deploy"~~ — **SELESAI 29 Sep**: setelah Aldo
+  memberi instruksi eksplisit ("isi dengan data seperti realisasi…"), perintah yang sama diizinkan.
 - Suite 140 tes (dummy) ke Postgres **belum punya hasil**. Run pertama (27 Sep, branch sandbox
   `br-floral-sun-b3ad4k5k`): menunggu/membaca hasilnya ditolak pengaman ("Modify Shared Resources"), lalu
   Claude Code **menghentikan run itu karena memori sistem hampir habis** (RAM bebas 3,8 dari 31,3 GB) —
@@ -247,6 +246,32 @@ SUMMARY. JSON Juli diarsipkan di `C:\Users\rivsy\Herd\sigap-bup\storage\app\priv
 
 **Insiden 3 (kecil):** masker bentuk hanya menyamarkan huruf Latin, jadi satu nama depan beraksara Arab
 di kolom `pic` tercetak ke transkrip. Aturan diperbarui: masker wajib mencakup semua aksara.
+
+## 29 Sep 2026 — identitas netral (`f5bbeeb`), Neon `main` terisi dummy
+
+**Keputusan Aldo:** "isi dengan data seperti realisasi, samarkan identitas Kemlu, hanya penamaan SIGAP BUP
+= Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan" (Aldo mengetik "Governement";
+dipakai ejaan "Government"). Nama aplikasi kini **"SIGAP BUP"** (spasi, bukan tanda hubung).
+
+**Commit `f5bbeeb`:** sidebar, kop halaman, dan cetakan BAR memakai nama itu; satker 403247 dan "Kementerian
+Luar Negeri" dihapus dari UI. Modul "Logistik Diplomatik" → **"Logistik Unit Daerah"** (7 kantor wilayah:
+Medan, Surabaya, Makassar, Balikpapan, Denpasar, Jayapura, Ambon; item netral) — rute `/logdip` tetap.
+Bagian "AKPSP / PAKSP" tampil sebagai "Sarana & Prasarana" (kunci `AKPSP` tetap). `APP_NAME` bawaan
+"SIGAP BUP". Admin seed `admin@sigap.test` untuk semua set. Nomor DIPA seed asli kini dari
+`SIGAP_NOMOR_DIPA` di `.env` lokal. Fixture tes ikut netral. 140/140 SQLite, `tsc` 0 error, build OK.
+Yang **sengaja tidak diubah**: kode kegiatan `6023` (lihat di atas) dan `docs/` (arsip desain Claude
+Design, masih bermerek lama). ⚠ OPEN keduanya bila Aldo mau.
+
+**Neon `main` terisi 29 Sep** (branch `br-curly-pond-b3wscbzi`): migrasi 11/11, lalu `db:seed` +
+`PaketSeeder` dengan `SIGAP_SEED=dummy`. Isi: 131 MAK (Σ pagu Rp 356.600.727.500, realisasi
+Rp 263.743.590.000), 830 permintaan, 42 komitmen, 10 PPK, 46 alokasi, 34 SPP, 5 KKP, 5 kontrak, 8 paket.
+Diverifikasi lewat MCP baca-saja: akun hanya `admin@sigap.test`, DIPA fiktif, **0 jejak Kemlu** di
+permintaan/MAK/paket/kontrak/penyedia/PPK. ⚠ OPEN: password admin masih `password` — **wajib diganti
+sebelum situs dibuka ke publik**. `.env` lokal tetap SQLite berisi data asli Juli (tidak disentuh).
+
+**Memori mesin (dicek 29 Sep):** "memori hampir habis" 27 Sep = RAM. Commit charge 68,8 dari 82,1 GB;
+pemesan terbesar `explorer.exe` **10,9 GB** (tidak wajar, kemungkinan bocor — restart Explorer),
+29 proses `claude` 8,8 GB, `vmmem` 4,0 GB, WebView2 3,3 GB, ChatGPT 3,0 GB, NVIDIA Overlay 2,7 GB.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
