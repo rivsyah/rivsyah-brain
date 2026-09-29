@@ -62,6 +62,13 @@ JISDOR 2026: 16.725 → 17.917 (+7,1%), selalu di atas asumsi (173/173 hari). La
 rb/bulan; kebutuhan s.d. 31 Des US$2,83 jt. Uji pagu Rp227,5 M: batas aman 18.006 (JISDOR) vs 17.913
 (SP2D GUP, sudah di bawah kurs terakhir).
 
+**Hosting (29 Sep, TERBUKA — menunggu Aldo):** rekomendasi **Cloudflare Pages + Access**, bukan Vercel
+(Hobby dilarang untuk kerja klien; Pro + proteksi sandi ±US$40/bulan; Cloudflare US$0, Access ≤50 pengguna),
+lihat [[reference_hosting_vercel_cloudflare]]. Syarat: build dari salinan git bersih — `data/sampel/` (BKU
+mentah + pagu) TIDAK BOLEH ikut, karena samaran jalan di peramban dan file mentah bisa diunduh; JSX
+dikompilasi sekali (buang Babel 3 MB); token Cloudflare ber-izin Pages + `CLOUDFLARE_ACCOUNT_ID` yang benar.
+Untuk pemakaian resmi Kemlu: PP 71/2019 Ps 20 (data sektor publik di Indonesia) → perlu Pusdatin.
+
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
 
