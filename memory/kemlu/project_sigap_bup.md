@@ -290,8 +290,39 @@ sebagai admin dan mengubah data dummy). `.env` lokal tetap SQLite berisi data as
 - Arsitektur yang disarankan: paket resmi `@cloudflare/containers` + Dockerfile sendiri (FrankenPHP/
   PHP 8.4 + `pdo_pgsql`), DB langsung ke Neon, tanpa `workers-php`/Hyperdrive. Neon `main` sudah
   bermigrasi dan terisi, jadi container tidak perlu migrasi saat boot.
-- ⚠ OPEN (Aldo): aktifkan Workers Paid, buat token baru, pilih jalur build, pilih URL (`*.workers.dev`
-  atau domain sendiri).
+- ~~⚠ OPEN: token baru, jalur build, URL~~ — diputuskan 29 Sep, lihat di bawah.
+
+### Progres deploy (29 Sep 2026)
+
+**Keputusan Aldo:** jalur build **GitHub Actions**; domain **`rivsyah.dev`** (domain pribadinya, dipilih
+eksplisit di sesi — lintas scope disengaja; aplikasinya sudah tanpa identitas Kemlu). Subdomain
+`sigap.rivsyah.dev` dipilih agent (asumsi, bisa diganti). Workers Paid: Aldo bertanya apakah wajib —
+jawaban: wajib untuk Containers; menunggu keputusannya.
+
+**Yang sudah ada:**
+- Repo privat **`rivsyah/sigap-bup`** dibuat (HTTP 201). **Push tertahan**: `GITHUB_PAT` (classic) hanya
+  scope `repo`; GitHub menolak berkas `.github/workflows/*` tanpa scope **`workflow`**. Remote `origin`
+  tanpa token; token dikirim lewat header saat push, tidak tersimpan di `.git/config`.
+- Commit lokal (belum di remote): `a78ff28` CI — job PostgreSQL 17 (service container) menjalankan 140
+  tes; analisis tipe dan lint dibuat informatif (`continue-on-error`). `23bdbd0` persiapan deploy:
+  `Dockerfile` (FrankenPHP `1-php8.4-bookworm`, `pdo_pgsql`), `.dockerignore` (tanpa data asli/`docs/`),
+  `wrangler.jsonc` (container `basic`, route custom domain `sigap.rivsyah.dev`), `cloudflare/worker.ts`
+  (`@cloudflare/containers`, secret `APP_KEY`/`DB_URL` lewat `envVars`), workflow `deploy` manual,
+  `URL::forceScheme('https')` di produksi, `trustProxies('*')`. **Belum diuji.**
+- Token Cloudflare baru **berfungsi** (akun 200, Workers 200) — tetapi hanya bila memakai ID akun yang
+  benar. **`CLOUDFLARE_ACCOUNT_ID` di `env.db` salah** (tidak cocok dengan satu-satunya akun token).
+  Containers menjawab 401 (dugaan: Workers Paid belum aktif). Akun belum punya subdomain `workers.dev`.
+- `rivsyah.dev`: NS masih Hostinger (`*.dns-parking.com`); apex tanpa A/MX/TXT, `www` ke IP parkir —
+  memindah NS ke Cloudflare nyaris tanpa risiko.
+
+**Utang kualitas yang tercatat (lama, bukan dari migrasi):** PHPStan 161 temuan (properti magis
+Eloquent), ESLint 1.123 masalah, Prettier 29 berkas, Pint beberapa berkas. ⚠ OPEN.
+
+⚠ OPEN (Aldo): (1) putuskan Workers Paid USD 5/bln; (2) tambah scope `workflow` ke `GITHUB_PAT`;
+(3) perbaiki `CLOUDFLARE_ACCOUNT_ID` lewat `envdb-setup.sh`; (4) secret repo `CLOUDFLARE_API_TOKEN` di
+GitHub; (5) tambah `rivsyah.dev` ke Cloudflare + ganti NS di Hostinger. Sesudahnya agent: push, set
+secret Worker (`APP_KEY` baru, `DB_URL` Neon langsung), jalankan workflow deploy, uji 26 layar + uji
+balapan di URL live.
 
 **Memori mesin (dicek 29 Sep):** "memori hampir habis" 27 Sep = RAM. Commit charge 68,8 dari 82,1 GB;
 pemesan terbesar `explorer.exe` **10,9 GB** (tidak wajar, kemungkinan bocor — restart Explorer),
