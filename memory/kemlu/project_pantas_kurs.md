@@ -1,6 +1,6 @@
 ---
 name: project-pantas-kurs
-description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo 27 Sep: pagu asumsi Rp100 M, kurs pengakuan dua cara, lokal"
+description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); commit pertama ad74565"
 metadata:
   type: project
   modified: 2026-09-27
@@ -12,8 +12,9 @@ anggaran/pembayaran. "Petty cash" ditafsirkan = Uang Persediaan (UP) dalam US$ (
 
 **Di mana (mesin riv):** `C:\Users\rivsy\dev\kemlu\pantas-kurs`, disajikan Herd di
 `http://pantas-kurs.test/` lewat junction `~/.config/herd/config/valet/Sites/pantas-kurs` (lihat
-[[reference_herd_windows]]). Git lokal di-`init`, **belum ada commit** (Aldo belum meminta), belum ada
-remote. `.claude/ai_context/` (GRANDPLAN, STATUS, DECISIONS D1–D6 `proposed`) lokal saja.
+[[reference_herd_windows]]). Git lokal, branch `master`, **commit pertama `ad74565` (29 Sep 2026, atas
+permintaan Aldo)**, 25 file, belum ada remote. `.gitattributes` memaksa LF dan `vendor/** -text` karena
+`core.autocrlf=true` di mesin ini akan mengubah pustaka minified saat checkout. `.claude/ai_context/` (GRANDPLAN, STATUS, DECISIONS D1–D6 `proposed`) lokal saja.
 
 **Stack:** SPA statis tanpa build, pola sama dengan SIPAMA/UKPBJ — React 18.3.1 UMD + Babel standalone
 7.29.9 + ECharts 5.5.0 + SheetJS 0.20.3 (dari cdn.sheetjs.com, bukan npm 0.18.5 yang rentan), semua
@@ -35,11 +36,12 @@ Pengaturan. Ekspor .xlsx 8 sheet.
   MU mutasi uang, BPJ/BPPR/BBPA titipan.
 - Belanja modal tidak rutin (Jul US$1,85 jt) → proyeksi hanya melajukan pegawai + barang.
 
-**Keputusan Aldo 27 Sep 2026 (locked D7–D10):**
-- D7 pagu kosong = **asumsi sementara Rp100 M** (menggantikan "pagu contoh"). Masalahnya: realisasi sampel
-  s.d. 27 Sep sudah ±Rp176,6–176,8 M, jadi Rp100 M sudah terlampaui Rp76,6–76,8 M; batas aman "Tidak ada";
-  kurang Rp127–128 M pada kurs terakhir. Kalau yang dimaksud sisa pagu per 27 Sep = Rp100 M, isi pagu
-  ±Rp276,6 M. Pagu DIPA nyata masih ditunggu.
+**Keputusan Aldo (DECISIONS proyek):**
+- D11 (29 Sep, menggantikan D7 "asumsi Rp100 M" dari 27 Sep): **Pagu 2026 = Rp500 M**, disimpan di
+  `data/sampel/pengaturan.json` (gitignored — angka pagu milik satker, bukan di kode). Berlaku hanya untuk
+  BKU sampel tahun 2026; BKU unggahan lain tampil "Pagu 2026 belum diisi". Hasil: realisasi ±Rp176,6–176,8 M
+  + kebutuhan ±Rp50,7 M = ±45% pagu; sisa ±Rp272 M; batas aman ±Rp114.200; status pagu Aman. Pertanyaan
+  yang masih terbuka: apakah Rp500 M mencakup belanja di luar BKU ini (LS/pusat).
 - D8 kurs pengakuan belanja **dua cara berdampingan**: JISDOR tanggal belanja dan kurs SP2D GUP pengganti
   (penerimaan UP pertama sesudah belanja; 146 belanja US$771,6 rb sesudah 31 Agu belum punya GUP → pakai
   JISDOR). Angka tunggal/status memakai yang terburuk.
