@@ -30,6 +30,23 @@ temuan (D19) selesai 29 Sep malam dan **di-commit terpisah atas persetujuan Aldo
    `git grep -i -E "kemlu|kementerian luar negeri|sekretariat jenderal"` harus kosong.
    `.claude/` + `CLAUDE.md` proyek tetap privat (gitignored) dan boleh menyebut konteks nyata.
 
+## Deploy demo Cloudflare (29 Sep 2026, disiapkan — menunggu Aldo)
+
+Aldo: "push ke cloudflare", domain rivsyah.dev dari Hostinger. Commit `a0c5c18`: Dockerfile FrankenPHP
+PHP 8.4 (gd, zip, intl, opcache; composer tanpa dev), `docker/start.sh` (APP_KEY dari secret Worker,
+kunci sementara bila kosong; `php artisan optimize`), `wrangler.jsonc` (Worker `sipdln-bup`, container
+`basic`, `max_instances` 1, route `sipdln.rivsyah.dev`), `cloudflare/worker.ts` (`@cloudflare/containers`,
+sleepAfter 15m, internet untuk kurs BI), workflow `deploy` manual (wrangler 4.143.0 + containers 0.3.7
+dipaku, sama dengan SIGAP), CI tests PHP 8.4, `trustProxies('*')` + https paksa di produksi.
+**Basis data live = SQLite data contoh dibangun saat build**; container selalu mulai dari data itu (demo,
+tanpa data asli). Password contoh tetap `password` (ikut keputusan SIGAP) — risikonya dicatat D20.
+Build/start disimulasikan tanpa Docker: lulus (login → https, 10 halaman + unduhan DOCX/XLSX 200).
+Temuan simulasi: `APP_NAME` wajib di-set di image (kalau tidak judul "Laravel"). Jebakan simulasi:
+router `server.php` bawaan Laravel harus dijalankan dengan CWD `public/`; server lama di port sama
+membuat hasil palsu — pakai port baru + `timeout`.
+Langkah Aldo (bersama SIGAP/PANTAS): [[reference-cloudflare-rivsyah-dev]]. Sesudahnya agent: repo privat
+`rivsyah/sipdln-bup`, push, secret/var repo, jalankan workflow, secret APP_KEY, uji live.
+
 ## Letak dan cara jalan (mesin riv)
 
 - Kode: `C:\Users\rivsy\dev\kemlu\sipdln-bup` (bukan `Herd\` — kode baru masuk `~/dev/<scope>`).

@@ -322,8 +322,13 @@ Eloquent), ESLint 1.123 masalah, Prettier 29 berkas, Pint beberapa berkas. ⚠ O
 1. Scope `workflow` di `GITHUB_PAT` (masih `repo` saja; branch di remote masih kosong).
 2. Workers Paid. Containers menjawab 401 *"Deploying containers requires the Workers Paid plan"* — jadi
    token sudah cukup, yang kurang paketnya. [Certain]
-3. `rivsyah.dev` ditambahkan ke Cloudflare + NS di Hostinger diganti (zona belum ada, NS masih
-   `dns-parking.com`). Custom domain butuh zona **aktif**, jadi ini wajib beres **sebelum** deploy.
+3. `rivsyah.dev` ditambahkan ke Cloudflare + NS di Hostinger diganti. Custom domain butuh zona
+   **aktif**, jadi ini wajib beres **sebelum** deploy. **Update 29 Sep ±22.45 WIB:** Aldo sudah
+   menambahkan zona (Free, status `pending`); NS Cloudflare untuk akun ini = `gracie.ns.cloudflare.com` +
+   `syeef.ns.cloudflare.com`. DNSSEC tidak aktif (tidak ada DS). **SELESAI 29 Sep 22.52 WIB:** NS diganti
+   di Hostinger, registry `.dev` menunjuk Cloudflare dalam ±2 menit, zona **active** (`activated_on`
+   15.52Z). Token bisa membaca Workers routes (zona) dan custom domains (akun), tetapi DNS records dan
+   SSL 403 — wajar untuk templat "Edit Cloudflare Workers"; `activation_check` juga 403.
 4. Secret repo `CLOUDFLARE_API_TOKEN` (secret & variabel repo masih kosong).
 5. `CLOUDFLARE_ACCOUNT_ID` di `env.db` masih salah — **bukan pemblokir deploy** (variabel repo bisa diisi
    agent dari akun tunggal token; wrangler juga memilih akun tunggal otomatis), tetapi tetap dibetulkan
