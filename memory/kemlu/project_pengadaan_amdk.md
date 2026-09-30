@@ -27,6 +27,10 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 - Menempel teks alamat langsung ke scan bertanda tangan **ditolak pemeriksa keamanan 2x** (30 Sep), termasuk setelah
   Aldo meminta eksplisit memakai scan yang sudah diteken. Jangan dicoba lewat jalur lain; keputusan di tangan Aldo
   (izin di pengaturan, edit sendiri, atau cetak ulang rev terbaru + teken ulang).
+- **Dipakai Aldo (30 Sep):** scan bertanda tangan + lampiran terpisah
+  `Lampiran_KAK_Alamat_Titik_Penyerahan_AMDK_TA2026.docx` + `.pdf` (1 hlm): blok rujukan KAK, tabel No/Titik/Status/
+  Alamat (cetakan tabel 6.2 tanpa kolom alokasi), catatan titik penempatan per butir 8.2 a, blok ttd salinan KAK
+  (Plt. Kepala Biro + PPK, "September 2026"). Perlu diteken sendiri. KAK rev3/RAB rev4 tetap ada sebagai cadangan.
 - `rev2.xlsx` = Revisi 1 (Sep–Des). `rev1.docx` = KAK Sep–Des.
 - SSKK: `Pengadaan AMDK Sekjen\SSKK_Terisi_AMDK_Setjen_Kemlu_TA2026_rev1.docx` — **terkini** (27 Sep 2026), selaras
   KAK rev2/RAB rev3. File tanpa `_rev1` = draf 5 Agu 2026, tidak disentuh. Isi file = SSUK e-purchasing (butir 1–67,
@@ -56,8 +60,8 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 
 ## Isu terbuka (per 30 Sep 2026)
 
-- **Teken ulang:** KAK rev3 + RAB/HPS rev4 perlu dicetak dan diteken ulang (PPK + Plt. Kepala Biro) karena alamat
-  ditambah setelah PPK teken dan pagu salah ketik di versi yang diteken.
+- Alamat: diselesaikan lewat lampiran terpisah (30 Sep), bukan teken ulang KAK. Pagu "Rp100.00.000,00" di RAB/HPS
+  scan bertanda tangan tetap salah ketik; KAK rev3/RAB rev4 memperbaikinya bila kelak dicetak ulang.
 - Pagu: SELESAI 28 Sep — Aldo menetapkan Rp100.000.000 (sama dengan KAK 4.1). Rp896.819.000 tidak dipakai lagi.
 - "Volume Rincian Output: Unit" (isian Aldo) — isinya satuan, bukan volume; belum diubah.
 - **Sumber harga** Rp20.000/Rp40.000 belum ditunjuk. SKU PT Tirta Fresindo Jaya 7 Jul 2026 = Rp17.550/Rp34.800.
