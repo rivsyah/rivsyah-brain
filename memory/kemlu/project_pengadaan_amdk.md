@@ -24,8 +24,9 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
   **Cacat di scan bertanda tangan:** pagu tertulis "Rp100.00.000,00" di RAB dan HPS; kolom alamat kosong.
 - File alamat: `alamat penyerahan penyediaan air minum.xlsx` (29 Sep). Menulis "Wichan"; dokumen tetap "Wican".
   Alamat hanya dirapikan spasi/tanda baca (mis. "Kahfi1" → "Kahfi 1", "Jl.M.H.Thamrin" → "Jl. M.H. Thamrin").
-- Menempel teks alamat langsung ke scan bertanda tangan **ditolak pemeriksa keamanan** (30 Sep). Jalurnya: cetak ulang
-  rev terbaru, teken ulang.
+- Menempel teks alamat langsung ke scan bertanda tangan **ditolak pemeriksa keamanan 2x** (30 Sep), termasuk setelah
+  Aldo meminta eksplisit memakai scan yang sudah diteken. Jangan dicoba lewat jalur lain; keputusan di tangan Aldo
+  (izin di pengaturan, edit sendiri, atau cetak ulang rev terbaru + teken ulang).
 - `rev2.xlsx` = Revisi 1 (Sep–Des). `rev1.docx` = KAK Sep–Des.
 - SSKK: `Pengadaan AMDK Sekjen\SSKK_Terisi_AMDK_Setjen_Kemlu_TA2026_rev1.docx` — **terkini** (27 Sep 2026), selaras
   KAK rev2/RAB rev3. File tanpa `_rev1` = draf 5 Agu 2026, tidak disentuh. Isi file = SSUK e-purchasing (butir 1–67,
