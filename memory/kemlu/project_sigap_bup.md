@@ -378,6 +378,21 @@ Fakta terverifikasi dari kode `wrangler` 4.143.0 dan `@cloudflare/containers` 0.
   Zone DNS Edit **hanya bila** deploy gagal di langkah domain. (Usul sesi lain untuk menambahnya sekarang
   tidak diikuti.) wrangler memasang domain lewat `PUT /accounts/{id}/workers/scripts/{nama}/domains/records`.
 
+**Push ke GitHub tertahan (29 Sep ±23.15 WIB) — riwayat git memuat identitas Kemlu.** Aldo sudah
+menambah scope `workflow` (22.56) dan menyimpan secret repo `CLOUDFLARE_API_TOKEN` (22.59). Sebelum push,
+pindai seluruh riwayat: commit `97d1861`/`8dfd123`/`01863c4` memuat identitas di 17–18 berkas (UI, seeder,
+tes, rute), dan `docs/` (arsip Claude Design, 561 KB, bermerek lama) ada di **semua** commit. Push apa
+adanya melanggar keputusan Aldo "samarkan identitas Kemlu" dan absolut berkas-terlacak.
+- Commit lokal **`22950a4`**: `docs/` tidak dilacak lagi (berkas tetap di disk, `.gitignore`), README tanpa
+  tautan `docs/`, daftar kata penanda instansi di `scripts/generate-dummy.mjs` pindah ke
+  `scripts/entitas.local.txt` (diabaikan git; generator berhenti bila tidak ada; keluaran dummy identik
+  byte-per-byte, 12 berkas). Pohon HEAD: 0 identitas (sisa hanya positif palsu `TooltipTrigger`→"ptri",
+  `setJenis`→"setjen", dan kata generik "luar negeri"/"perwakilan"), 0 jalur pribadi/kredensial.
+- Rencana: satu commit akar bersih (`git checkout --orphan`) untuk GitHub, riwayat lama disimpan di branch
+  lokal `riwayat-lokal`. **Ditolak pengaman mode otomatis** ("Irreversible Local Destruction", lalu
+  "Git Destructive" bahkan untuk `git status`). Tidak dicoba jalan memutar. ⚠ OPEN (Aldo): izinkan
+  eksplisit, atau jalankan sendiri. Push `main` apa adanya **jangan**.
+
 **Pemegang deploy:** sesi `926ebddf` (disepakati dengan sesi lama "Project sigap-bup lanjutan" 29 Sep
 ±23.10 WIB; sesi lama tidak lagi menyentuh repo, kartu ini, maupun Cloudflare/GitHub SIGAP). `sipdln.*` +
 Worker `sipdln-bup` milik sesi brain-1d. Alat baca-saja Neon main: `~/dev/kemlu/sigap-pg-probe/main_state.php`.

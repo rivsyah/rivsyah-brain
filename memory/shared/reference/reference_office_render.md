@@ -88,3 +88,12 @@ Tambahan 29 Sep 2026 ([[project-kke-furniture-lt3]]):
 - **Kriteria COUNTIF berisi desimal literal** ("<0.5", ">1.1") gagal di Excel locale ID (desimal koma) → selalu 0. Pakai `SUMPRODUCT(ISNUMBER(r)*(r<0.5))` atau `"<"&0.5`. Konkatenasi angka (`"<"&C7`) aman karena dikonversi dengan locale yang sama.
 - `recalc.ps1` lewat `powershell -File`: parameter array tidak terbaca — kirim daftar sheet sebagai satu string dipisah titik koma.
 - Sheet bernama diawali angka/berisi "&" (mis. `4 Harga & Spek`) aman di rumus asal dikutip tunggal.
+
+Tambahan 30 Sep 2026 (sesi AMDK alamat, [[project_pengadaan_amdk]]):
+- Word COM `ExportAsFixedFormat(pdf, 17)` jalan 3x berturut-turut di instans baru (catat PID WINWORD sebelum/sesudah
+  `New-Object`; instans keluar sendiri ≤5 detik setelah `Quit()`). Dua WINWORD lain (PID /Automation sisa 27 Sep dan
+  /Embedding) dibiarkan hidup — bukan milik sesi ini.
+- Excel `$wb.ExportAsFixedFormat(0, pdf)` tingkat workbook hanya mengekspor sheet visible. Ukuran halaman PDF ikut
+  driver printer (mis. 1218x942 pt), bukan A4 — sama dengan ekspor Aldo; printer menskalakan saat cetak.
+- Halaman kosong di akhir PDF Word bisa berasal dari `pageBreakBefore` pada paragraf kosong terakhir, bukan hanya
+  dari tinggi paragraf. Cek pPr-nya.

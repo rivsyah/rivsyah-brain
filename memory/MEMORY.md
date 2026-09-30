@@ -20,9 +20,10 @@
   realisasi, data asli lokal, nama hanya "SIGAP BUP". Commit `8dfd123` (5 bug PG) → `01863c4` (seed
   dummy, xlsx 27 Sep) → `f5bbeeb` (UI/seed netral, "Logistik Unit Daerah"). Neon: migrasi 11, 131 MAK,
   830 permintaan, 0 jejak Kemlu. Password bawaan dipertahankan. **Deploy Cloudflare disiapkan**
-  (GitHub Actions, `sigap.rivsyah.dev`, repo privat `rivsyah/sigap-bup`, commit lokal `c173a61` =
-  perbaikan pra-deploy, dry-run wrangler lolos). Zona `rivsyah.dev` **active** 22.52 WIB. ⚠ Sisa Aldo:
-  scope `workflow` di PAT, Workers Paid, secret repo; `CLOUDFLARE_ACCOUNT_ID` salah tapi bukan pemblokir.
+  (GitHub Actions, `sigap.rivsyah.dev`, repo privat `rivsyah/sigap-bup`, commit lokal `22950a4`; dry-run
+  wrangler lolos). Zona **active**, scope `workflow` + secret repo beres (29 Sep 22.5x WIB). ⚠ Sisa Aldo:
+  putuskan Workers Paid (vs Render gratis); **push tertahan** — riwayat git memuat identitas Kemlu, commit
+  akar bersih ditolak pengaman otomatis, butuh izin/aksi Aldo. `CLOUDFLARE_ACCOUNT_ID` salah (bukan pemblokir).
   Deploy dipegang sesi `926ebddf` (sesi lama "Project sigap-bup lanjutan" mundur, 29 Sep ±23.10 WIB).
   [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
 - 🔴 29 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
@@ -61,7 +62,7 @@
 - [Dokumen Pokja + SPPBJ](kemlu/reference_dokumen_pokja_sppbj.md) — draf Pengumuman/Nodin/SPPBJ tender Renovasi Lt3 (26 Sep 2026); jaminan 5% HPS bila < 80% HPS (Pasal 33 (3) b); celah: klarifikasi kewajaran harga
 - [KKE Furniture Lt 3 Tower](kemlu/project_kke_furniture_lt3.md) — MINI KOMPETISI e-katalog (Lumsum, Pokja e-katalog), BUKAN tender; KKE ringkas format Aldo (4 sheet) di MOFA, dibetulkan 29 Sep: P3 PT Quel Avery Rp1,108 M (92,9% HPS) perlu klarifikasi C2/C4, P1 & P2 gugur; harga P1 Rp954,4 jt (<80% HPS), P2 Rp965,3 jt; builder ~/dev/kemlu/kke-furniture-lt3
 - [MDP PBJP LN ringkas](kemlu/reference_mdp_pbjp_ringkas.md) — FINAL 137 hlm → RINGKAS 75 hlm (.docx+.pdf di Downloads, 27 Sep 2026); 36 formulir dwibahasa 1 hlm; 12 kontradiksi diselesaikan + 9 celah terbuka (pakta integritas belum ada); builder di ~/dev/kemlu/mdp-pbjp-ringkas
-- [Pengadaan AMDK](kemlu/project_pengadaan_amdk.md) — RAB/HPS rev3 + KAK rev2 + SSKK rev1 (27 Sep 2026): Okt–Des, 2.980 galon + 120 karton, Rp64,4 jt, tanpa jaminan pelaksanaan; terbuka: pagu KAK 100 jt ≠ RAB 896,8 jt, sumber harga Rp20.000 belum ada
+- [Pengadaan AMDK](kemlu/project_pengadaan_amdk.md) — KAK rev3 + RAB/HPS rev4 (30 Sep, alamat 10 titik, pagu 100 jt) + SSKK rev1: Okt–Des, 2.980 galon, Rp64,4 jt; scan teken 28 Sep salah ketik pagu → perlu teken ulang; sumber harga Rp20.000 belum ada
 - [Langganan Media Cetak](kemlu/project_langganan_media_cetak.md) — KAK + RAB/HPS Kompas/JP/Tempo/PRISMA; revisi Okt–Des (27 Sep 2026) 45 Eks/Bln, RAB Rp18.797.850; BLOCKER pagu paket KAK Rp10 jt < nilai paket; sumber harga ke-2 = harga nego Juli
 - [PANTAS kurs](kemlu/project_pantas_kurs.md) — pantau kas UP + selisih kurs IDR/USD + proyeksi kekurangan pagu, SPA statis di `~/dev/kemlu/pantas-kurs` → pantas-kurs.test; sampel BKU/BKT KBRI Washington 2026: beban kurs Rp10,55 M (JISDOR) / Rp10,81 M (SP2D GUP), kurs SP2D = JISDOR T-2 (8/8); Aldo: Pagu 2026 Rp500 M (29 Sep, gitignored di data/sampel/pengaturan.json → sisa ±Rp272 M, serapan ±45%), dua cara kurs berdampingan, lokal; samaran identitas Kemlu aktif bawaan; riwayat git ditulis ulang tanpa identitas (e096019 → cf1a60b)
 - [Tesis Erna](kemlu/project_tesis_erna.md) — deck ujian proposal S2 Akuntansi soal hedging/kurs Perwakilan RI; deck _Revisi 31 slide + naskah docx 16 hlm (Q&A, pertanyaan tersulit, perbaikan); 4 item kuesioner tumpang tindih dengan Y

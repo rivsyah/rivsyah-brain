@@ -1,6 +1,6 @@
 ---
 name: project-pengadaan-amdk
-description: "Paket AMDK Setjen Kemlu TA 2026 (e-purchasing, Aldo = Pejabat Pengadaan): Revisi 2 27 Sep 2026 = Okt–Des, 2.980 galon + 120 karton, Rp64,4 jt; file, metode volume, isu terbuka, jebakan workbook"
+description: "Paket AMDK Setjen Kemlu TA 2026 (e-purchasing, Aldo = Pejabat Pengadaan): Okt–Des, 2.980 galon + 120 karton, Rp64,4 jt, pagu 100 jt; KAK rev3 + RAB rev4 (30 Sep, alamat 10 titik) menunggu teken ulang; scan 28 Sep salah ketik pagu"
 metadata:
   type: project
 ---
@@ -10,8 +10,23 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 
 ## File (mesin riv, `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\`)
 
-- `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev3.xlsx` — **terkini**, isi = "Revisi 2, 27 September 2026". `rev2.xlsx` = Revisi 1 (Sep–Des).
-- `KAK_Spektek_AMDK_Setjen_Kemlu_TA2026_rev2.docx` — **terkini**, 8 hlm. `rev1.docx` = Sep–Des.
+- `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev4.xlsx` + `.pdf` — **terkini (30 Sep 2026)**, isi = "Revisi 3, 30 September 2026":
+  alamat 10 titik di sheet 1b kolom F, pagu "Rp100.00.000,00" → Rp100.000.000,00 (RAB+HPS D16), sheet 0 B21 = 100 jt,
+  sheet 5 C22–C24 #REF! diperbaiki, 1a/1b fit 1 halaman. PDF 4 hlm (RAB, HPS, 1a, 1b); ukuran halaman tidak A4 karena
+  driver printer — sama dengan ekspor Aldo 28 Sep.
+- `KAK_Spektek_AMDK_Setjen_Kemlu_TA2026_rev3.docx` + `.pdf` — **terkini (30 Sep 2026)**, 8 hlm: alamat di tabel 6.2
+  (kolom 520/1950/1700/3384/1800 dxa), 9 paragraf pengganjal sebelum "14. PENUTUP" diganti pageBreakBefore,
+  pageBreakBefore di paragraf kosong terakhir dibuang (itu sumber halaman 9 kosong di PDF 28 Sep).
+- Versi 28 Sep (diedit Aldo di Excel/Word 13:21): `rev3.xlsx`/`rev2.docx` + PDF-nya — blok ttd KAK jadi "Plt. Kepala Biro
+  Umum dan Pengadaan, Sukmo Yuwono"; blok PPN/uji pagu/peringatan dihapus dari cetakan RAB/HPS; "Volume Rincian Output"
+  diisi "Unit". Versi ini yang dicetak dan diteken → scan `SKM_367 KEM26092815360.pdf` (28 Sep 15:36, 12 hlm: KAK 1–8,
+  RAB 9, HPS 10, sheet 1a 11, sheet 1b 12). PPK sudah teken KAK/RAB/HPS; Plt. Kepala Biro belum.
+  **Cacat di scan bertanda tangan:** pagu tertulis "Rp100.00.000,00" di RAB dan HPS; kolom alamat kosong.
+- File alamat: `alamat penyerahan penyediaan air minum.xlsx` (29 Sep). Menulis "Wichan"; dokumen tetap "Wican".
+  Alamat hanya dirapikan spasi/tanda baca (mis. "Kahfi1" → "Kahfi 1", "Jl.M.H.Thamrin" → "Jl. M.H. Thamrin").
+- Menempel teks alamat langsung ke scan bertanda tangan **ditolak pemeriksa keamanan** (30 Sep). Jalurnya: cetak ulang
+  rev terbaru, teken ulang.
+- `rev2.xlsx` = Revisi 1 (Sep–Des). `rev1.docx` = KAK Sep–Des.
 - SSKK: `Pengadaan AMDK Sekjen\SSKK_Terisi_AMDK_Setjen_Kemlu_TA2026_rev1.docx` — **terkini** (27 Sep 2026), selaras
   KAK rev2/RAB rev3. File tanpa `_rev1` = draf 5 Agu 2026, tidak disentuh. Isi file = SSUK e-purchasing (butir 1–67,
   tidak diubah) + tabel SSKK + tanda tangan PPK. Yang direvisi di tabel SSKK: 4.3.b tidak berlaku + definisi
@@ -28,7 +43,7 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
   didefinisikan); "Tidak ada Perpanjangan Waktu/Pemberian Kesempatan" bertentangan dengan SSUK 25/26 dan Ps. 55–56;
   kahar 7 hari (SSKK) vs 14 hari (SSUK); 59.1 tangguh 100% vs SSUK 59.3 proporsional; SPMK di SSUK tidak dipakai
   e-purchasing; e-mail PPK + data Penyedia kosong; salah ketik/rujuk di SSUK (30.6, 65.3 a, dll.).
-- Nomor file ≠ nomor revisi di dalam dokumen (file rev3 = Revisi 2). Naikkan keduanya satu langkah pada revisi berikut.
+- Nomor file ≠ nomor revisi di dalam dokumen (RAB file rev4 = Revisi 3). Naikkan keduanya satu langkah pada revisi berikut.
 
 ## Angka Revisi 2 (27 Sep 2026, periode dipersempit atas arahan Aldo)
 
@@ -38,11 +53,14 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 - Alokasi titik: titik 2–10 = ROUND(rata-rata x bulan), Pejambon menampung selisih →
   2.504 / 81 / 77 / 71 / 69 / 51 / 46 / 34 / 26 / 21. Di workbook sudah jadi rumus (sheet 1b), di KAK tabel 6.2 statis.
 
-## Isu terbuka (belum diputus Aldo per 27 Sep 2026)
+## Isu terbuka (per 30 Sep 2026)
 
-- **Pagu tidak sama:** KAK 4.1 = Rp100.000.000; RAB/HPS "Alokasi Dana / Pagu Paket" = Rp896.819.000 (dari Aldo 8 Sep).
+- **Teken ulang:** KAK rev3 + RAB/HPS rev4 perlu dicetak dan diteken ulang (PPK + Plt. Kepala Biro) karena alamat
+  ditambah setelah PPK teken dan pagu salah ketik di versi yang diteken.
+- Pagu: SELESAI 28 Sep — Aldo menetapkan Rp100.000.000 (sama dengan KAK 4.1). Rp896.819.000 tidak dipakai lagi.
+- "Volume Rincian Output: Unit" (isian Aldo) — isinya satuan, bukan volume; belum diubah.
 - **Sumber harga** Rp20.000/Rp40.000 belum ditunjuk. SKU PT Tirta Fresindo Jaya 7 Jul 2026 = Rp17.550/Rp34.800.
-  Pembanding baru 1 dari minimal 2; kotak peringatan merah di HPS tetap tercetak sampai ini beres.
+  Pembanding baru 1 dari minimal 2. Kotak peringatan merah sudah dihapus Aldo dari cetakan HPS 28 Sep; masalahnya tetap.
 - 3 titik bukan gedung kantor (Jagakarsa, Wican = rumah dinas; Cipayung = wisma) = 106 galon dari akun 521111.
 - Pemaketan: seluruh AMDK TA 2026 ≈ 11.917 galon ≈ Rp238 jt > Rp200 jt bila dipandang satu kebutuhan
   (kewenangan PPK + jaminan pelaksanaan). Dasar pasokan Agustus–September belum diketahui.
