@@ -54,3 +54,7 @@ Penyedia paket bulanan sebelumnya: CV. Milan Sentosa.
   utuh. File aslinya disimpan LibreOffice, jadi pane RAB ikut bergeser saat dibuka Excel; sudah direset ke A1.
 - docx: edit `document.xml` per `<w:t>` dengan lxml (semua target ada di satu run, tidak perlu merge_runs), zip ulang
   dengan urutan entri asli. Cek visual lewat render EMF, bukan ekspor PDF — lihat [[reference-office-render]].
+
+Koreksi 30 Sep 2026 (dari POK di Wasdit, sheet Sheet94): "Pengadaan Keperluan Sehari-hari Perkantoran Biro Umum" adalah nama
+**subkomponen 002.H**, bukan komponen 002. Komponen 002 = "Operasional dan Pemeliharaan Kantor". Baris "002" di RAB paket ini
+(dan KAK HT) memakai nama yang keliru. Paket [[project-gws-business-standard]] sudah memakai nama yang benar.

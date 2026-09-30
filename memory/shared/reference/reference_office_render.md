@@ -97,3 +97,13 @@ Tambahan 30 Sep 2026 (sesi AMDK alamat, [[project_pengadaan_amdk]]):
   driver printer (mis. 1218x942 pt), bukan A4 — sama dengan ekspor Aldo; printer menskalakan saat cetak.
 - Halaman kosong di akhir PDF Word bisa berasal dari `pageBreakBefore` pada paragraf kosong terakhir, bukan hanya
   dari tinggi paragraf. Cek pPr-nya.
+
+Tambahan 30 Sep 2026 (sesi GWS, [[project-gws-business-standard]]):
+- **Excel COM `.NumberFormat` lewat PowerShell memakai konvensi locale ID** (getter mengembalikan `#.##0,00`). Menulis kode en-US
+  (`"Rp"#,##0.00`) terbaca salah → tampil `Rp75000000,000`. Aman: baca format sel yang benar lalu tulis balik apa adanya
+  (round-trip), atau tambahkan literal teks ke bagian pertama format lama.
+- Parameter skrip `$Src` tertimpa variabel `$src` (PowerShell tidak peka huruf besar) dan tipe `[string]`-nya ikut → array hasil
+  `Split` jadi teks, COM melempar DISP_E_BADINDEX. Jangan pakai nama variabel yang sama dengan parameter.
+- Word COM `ExportAsFixedFormat(pdf,17)` jalan 2x (16:22–16:25) di instans baru; Excel `$wb.ExportAsFixedFormat(0,pdf)` jalan 4x.
+- Pola docx dari template (lxml, klon paragraf/tabel prototipe, sampul + footer dipertahankan) terbukti; tabel ≤ 8 baris diberi
+  keepNext di semua baris kecuali terakhir agar tidak terbelah — sengaja, dan menggeser tabel utuh ke halaman berikut.
