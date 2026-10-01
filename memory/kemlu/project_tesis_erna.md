@@ -1,16 +1,18 @@
 ---
 name: project-tesis-erna
-description: "Deck ujian proposal tesis Erna Diana (S2 Akuntansi STIESIA) soal hedging/kurs/fleksibilitas anggaran Perwakilan RI; hasil review 23 Sep 2026"
+description: "Tesis Erna Diana (S2 Akuntansi STIESIA) soal hedging/kurs/fleksibilitas anggaran Perwakilan RI: deck + naskah ujian proposal (23 Sep 2026), lalu masukan 3 dosen + cek daftar pustaka (1 Okt 2026)"
 metadata:
   type: project
-  modified: 2026-09-23
+  modified: 2026-10-01
 ---
 
 Tesis Erna Diana (NPM 25.6.05.45.0949, S2 Akuntansi STIESIA Surabaya, pembimbing Prof. Wahidahwati).
 Judul: pengaruh kebijakan internal hedging, fluktuasi nilai tukar, dan fleksibilitas alokasi anggaran
 terhadap efisiensi belanja operasional Perwakilan RI. Regresi linier berganda, 3 X + 1 Y, 28 item Likert.
 
-File (versi 23 Sep 2026, di `C:\Users\rivsy\Downloads\`, mesin ini):
+File: sejak 1 Okt 2026 semua berkas tesis ada di `C:\Users\rivsy\Downloads\Thesis Teh Erna\` (mesin ini),
+termasuk scan masukan dosen `Image23092026165625_001.pdf`. Path `Downloads\...` di bawah adalah lokasi lama.
+File (versi 23 Sep 2026):
 - `Ujian Proposal Tesis Erna signed.pdf` — 67 hlm, kata pengantar bertanggal 3 Sep 2026.
 - `Presentasi_Thesis_Perwakilan_RI.pptx` — 29 slide, dengan speaker notes.
 
@@ -68,4 +70,33 @@ Titik lemah lain: model hanya pengaruh langsung, padahal konsep fit dalam Contin
 Jebakan: `validate.py` gagal pada docProps/core.xml karena tidak bisa mengambil dc.xsd dari internet. Itu masalah jaringan, bukan cacat dokumen.
 Dibangun dengan docx-js (npm lokal di scratchpad) dan dirender lewat Word COM (`ExportAsFixedFormat`) lalu PyMuPDF.
 
-Status: deck dan naskah selesai. Semua cacat di PDF belum diperbaiki, dan daftarnya ada di Lampiran C naskah. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`). LibreOffice dan poppler tidak ada.
+**Masukan ujian proposal (ujian 23 Sep 2026; ditranskripsi 1 Okt 2026, hanya di chat, tidak ada file).**
+Scan = 3 lembar "Perbaikan Proposal Tesis", satu per dosen, tulisan tangan. Nomor halaman cetak = nomor halaman PDF.
+- Wahidahwati (pembimbing): (1) aspek penulisan sesuai buku pedoman; (2) daftar pustaka diteliti lagi;
+  (3) semua masukan penguji direvisi.
+- Lilis Ardini (penguji 1): (1) judul di sampul "jangan terpisah": baris "REPUBLIK INDONESIA DI LUAR NEGERI"
+  jadi paragraf sendiri (jarak 32 pt vs 24 pt); (2) hlm 12 Tabel 1 ikuti format buku pedoman (grid penuh +
+  arsir abu-abu, tanpa baris Sumber); (3) hlm 24, 25, 28 "Border hilangkan semua": PDF tidak punya garis di
+  halaman itu; satu-satunya kesamaannya bullet (•), jadi dibaca sebagai bullet (cocok dengan Ikhsan). Bullet
+  juga ada di hlm 26, 32, 33, 61; (4) Gambar 1 hlm 38: label "Variabel independen/dependen" di kotak dihapus;
+  (5) Tabel 2 Ringkasan Hipotesis hlm 43 dihapus → Tabel 3–6 jadi 2–5; (6) "Sumber dan Jenis Data" hlm 48
+  satu-satunya bagian berspasi 1,5 (lainnya spasi 2), judulnya berspasi huruf; (7) lihat buku pedoman.
+- Ikhsan Budi Riharjo (penguji 2): (1) penulisan ikut pedoman STIESIA: urutan penulisan, hindari bullet,
+  daftar pustaka; (2) PERTANYAAN: kenapa responden dibagi inti & pelengkap (hlm 47)? dianalisis terpisah?
+Buku pedoman tesis STIESIA tidak ada online. Panduan kutipan STIESIA (academia.edu, 403) memakai Harvard-APA.
+
+**Cek daftar pustaka (1 Okt 2026, Crossref + OpenAlex):**
+- **Kemungkinan fiktif:** Lee & Wang (2023) dan Nguyen & Faff (2022). Judulnya tidak ditemukan, dan DOI-nya
+  milik artikel lain (jifm.12165 = van Nieuw Amerongen dkk. 2022; irfa.2022.102168 = Wang, Dong & Liu 2022).
+  Keduanya dikutip di Bab 1 (termasuk hlm 12).
+- Ahrens & Ferry (2021): judul, halaman, DOI salah. Aslinya "...a Foucauldian perspective on the UK
+  government's response to COVID-19 for England", AAAJ 34(6) 1332–1344, doi 10.1108/AAAJ-07-2020-4659.
+- Greer dkk. (2023): judul tidak ada; JPART 33(4) 688–700 = "Signaling Resilience...". Tidak dikutip.
+- Di Francesco (2016): penulis kedua Alford hilang; halaman 232–256. Mamonov dkk. (2024): JBF 168, 107285.
+  Pangestuti (2022): hlm 2863–2874. Ross (1973): "Prinsipal's" → "Principal's".
+- Miksalmina (2015): tidak ada di Crossref/OpenAlex, belum tentu palsu; tidak dikutip.
+- 14 DOI lain cocok. Daftar Tabel/Gambar: semua nomor halaman meleset (Tabel 1 tertulis 6, aslinya 12).
+
+Status: deck dan naskah selesai. Masukan dosen sudah ditranskripsi. Revisi proposal dikerjakan Erna sendiri;
+belum ada yang diubah di PDF. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`).
+LibreOffice dan poppler tidak ada; render PDF pakai PyMuPDF (`python` 3.11, bukan `py`).
