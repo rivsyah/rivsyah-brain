@@ -1,6 +1,6 @@
 ---
 name: reference-office-render
-description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya) dan 13:10–13:35 (sesi SIPDLN, SaveAs 17, instans sendiri), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; teks sel berawalan '=' dari openpyxl bikin Excel gagal membuka file; keepNext di sel tabel bikin tabel lompat halaman"
+description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya) dan 13:10–13:35 (sesi SIPDLN, SaveAs 17, instans sendiri), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; teks sel berawalan '=' dari openpyxl bikin Excel gagal membuka file; keepNext di sel tabel bikin tabel lompat halaman; pptx→PDF/PNG lewat PowerPoint 16 COM jalan (4 Okt); heredoc Git Bash di sesi agen merusak garis miring terbalik ganda (skrip ber-backslash tulis lewat Write tool)"
 metadata:
   type: reference
 ---
@@ -115,3 +115,15 @@ Tambahan 4 Okt 2026 (sesi RAB pernikahan, [[project_rab_pernikahan]]):
   dengan `=` (atau set `cell.data_type = "s"`); builder sebaiknya menolak teks seperti itu sebelum menyimpan.
 - Excel COM `CalculateFull` + `UsedRange.Rows.AutoFit()` + `ExportAsFixedFormat(0, pdf)` jalan 4x berturut-turut
   (09:00–09:20 WIB). AutoFit mengabaikan sel merge: tinggi baris judul merge harus diset ulang sesudahnya.
+
+Tambahan 4 Okt 2026 (sesi rapat Kemendag PBJ LN, [[project-rapat-kemendag-pbjln]]):
+- **PowerPoint 16 COM jalan**: `Presentations.Open(path, -1, 0, 0)` lalu `SaveAs(pdf, 32)` untuk PDF dan
+  `Slides(i).Export(png, "PNG", 1600, 900)` untuk QA per slide. Instans keluar sendiri beberapa detik setelah `Quit()`.
+  Skrip: `C:\Users\rivsy\dev\kemlu\rapat-kemendag-pbjln\render.ps1` (juga docx lewat Word COM).
+- Word COM `ExportAsFixedFormat(pdf, 17)` jalan 2x (10:40–10:50 WIB) berdampingan dengan WINWORD milik sesi lain.
+- **Heredoc Git Bash di tool Bash agen merusak escape**: dua garis miring terbalik berturut-turut runtuh jadi satu,
+  walau delimiter heredoc dikutip. Akibatnya regex JS berisi pembatas kata berubah jadi karakter backspace, dan jalur
+  awalan jalur panjang Windows (`\\?\`) di Python patah. Skrip yang memuat garis miring terbalik ditulis dengan
+  Write tool, lalu dijalankan. Untuk menyalin berkas di jalur > 260 karakter: PowerShell `Copy-Item -LiteralPath`
+  dengan awalan `\\?\`.
+- pptxgenjs 4.x: margin sel tabel dalam **inci**; nilai ≥ 1 dibaca sebagai poin. `margin: [0, 6, 0, 6]` = 6 inci → tabel rusak.
