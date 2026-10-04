@@ -8,9 +8,9 @@ metadata:
   modified: 2026-10-04
 ---
 
-SIGAP-BUP — Government Resource Planning Biro Umum dan Pengadaan Kemlu, dibangun 16 Jul 2026 di `C:\Users\rivsy\Herd\sigap-bup` → http://sigap-bup.test (login admin@kemlu.go.id / password).
+SIGAP-BUP — Government Resource Planning Biro Umum dan Pengadaan Kemlu, dibangun mulai 15–16 Jul 2026 (berkas spesifikasi dan proyek Laravel lahir 15 Jul; dicek 4 Okt) di `C:\Users\rivsy\Herd\sigap-bup` → http://sigap-bup.test (login admin@kemlu.go.id / password).
 
-- Stack: Laravel 13 + Inertia v3 + React 19/TS + Tailwind, SQLite, Herd. Dokumen spesifikasi 01–07 di `C:\Users\rivsy\Downloads\MOFA\SIGAP-BUP\GRP-BUP-Kemlu`; desain dari proyek Claude Design "Buat prototype ini" (e893d511-03b1-49e7-a1ef-817d0bb4c11c, file SIGAP-BUP.dc.html — salinan di docs/).
+- Stack: Laravel 13 + Inertia v3 + React 19/TS + Tailwind, SQLite, Herd. Dokumen spesifikasi 01–07 di `C:\Users\rivsy\Downloads\MOFA\Project\SIGAP-BUP\GRP-BUP-Kemlu` (mesin riv; koreksi 4 Okt — path tanpa `\Project` tidak ada); desain dari proyek Claude Design "Buat prototype ini" (e893d511-03b1-49e7-a1ef-817d0bb4c11c, file SIGAP-BUP.dc.html — salinan di docs/).
 - Seed dari `Wasdit BUM 2026.xlsx` (60 sheet) via `scripts/import-wasdit.mjs` (SheetJS → JSON) + `WasditSeeder`: 128 MAK (Σ pagu Rp 350.607.991.000 persis SUMMARY), 587 permintaan UP/TUP, 46 alokasi PPK, 27 SPP, KKP/kontrak/MONEV/RVRO/MP PNBP.
 - Inti: BudgetControlService (gerbang pagu BR-KOM-1/2/3), AuditService append-only, RBAC session-role (operator/ppk/ppspm/bendahara/kpa) + SoD maker≠penguji. 87 tes Pest lulus.
 - 5 Sep 2026: sistem kapabilitas peran di `Konsep::CAPABILITIES` (guard rute `sigap.role:can,<kapabilitas>` + props `sigap.can/why` + komponen `AksiButton`/`AksiTerkunci` di lib/sigap.tsx), beranda per peran (KPA→eksekutif, PPK→rkakl, PPSPM→antrean, Bendahara→karwas, Operator→permintaan), To-Do sadar-peran, mesin status Draf→Diajukan (draf tak membebani pagu), SoD berbasis akun (kolom maker_user_id/penguji_user_id). LainnyaController dipecah jadi Kontrak/Penyedia/Kkp/Spm/Kinerja/Pengembalian Controller. Layar baru Pengembalian Belanja (BR-KOM-7).
@@ -451,3 +451,25 @@ DesignSync sendiri **sedang tidak terotorisasi** di sesi ini ("needs design-syst
 jadi membandingkan dengan versi remote tidak bisa tanpa `/design-login` dari terminal Aldo — lihat
 [[reference-design-login]]. Artinya: kalau desainnya berubah setelah 5 Sep, tidak ada cara
 memastikannya dari sesi ini.
+
+## 4 Okt 2026 — audit baca-saja untuk KTI ([[project-kti-sigap-sipdln]])
+
+- Uji ulang di HEAD `22950a4` (SQLite memori, seed dummy): **140/140 lulus, 956 asersi**, 55 detik.
+- **Status 16 aturan bisnis spesifikasi:** 10 penuh; sebagian 3 (BR-PFM-4 target serapan tetap di kode
+  58,3; BR-KOM-6 dicek per lembar RKA-K/L bukan per MAK; BR-PRC-2 dicek ke sisa pagu MAK, bukan pagu
+  paket/HPS); BR-PFM-3 rekonsiliasi SAKTI masih **simulasi**; BR-KOM-5 (bukti wajib) dan BR-PRC-3
+  (metode sesuai nilai) **belum ditegakkan**.
+- **Celah keamanan pra-produksi (bukan bug demo, tapi wajib sebelum dipakai bersama):** peran disimpan
+  di sesi dan **siapa pun yang login bisa ganti peran lewat `POST /role`** (tidak ada kolom peran di
+  users); peran Auditor dan Pejabat Pengadaan belum ada; penguji ≠ pembayar (SP2D) belum ditegakkan;
+  `SpmController::terbit` hanya membandingkan persona; jejak audit append-only hanya konvensi (tak
+  dikunci DB); `PermintaanController::sp2d` punya jalur cadangan untuk baris lama tanpa komitmen yang
+  menaikkan realisasi tanpa gerbang; peringatan umur memakai tanggal tetap `Konsep::HARI_INI` = 2026-07-15;
+  bukti hanya tautan (tak ada penyimpanan berkas).
+- Ukuran: 59 rute, 17 controller khusus SIGAP, 19 model, 27 tabel (18 domain), 26 layar/7 grup; ±3.000
+  baris PHP khusus SIGAP, 9.262 baris TS/TSX khusus SIGAP. Spesifikasi 01 §7 hanya berisi target (0 pagu
+  minus, SPP→SP2D ≥40% lebih cepat, selisih SAKTI ≤0,5%, adopsi ≥95%/3 bln, SUS ≥80) — **belum ada data
+  manfaat terukur**.
+- Rujukan regulasi di spesifikasi 07 §1 menyebut PMK 210/PMK.05/2022 untuk UP/TUP/LS; KTI memakai
+  **PMK 62/2023 jo. PMK 107/2024** (terverifikasi dari konsiderans PMK 32/2025; TUP wajib
+  dipertanggungjawabkan ≤1 bulan sejak SP2D, dicek live 4 Okt).

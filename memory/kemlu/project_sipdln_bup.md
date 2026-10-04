@@ -173,4 +173,13 @@ Pola nomor SPD (bila ada), repo remote (belum ada), tempat produksi + kebijakan
 data pegawai, sumber data pegawai asli, integrasi pagu SIGAP-BUP dan SSO Portal BUP (v2), uang
 representasi ketua delegasi.
 
+## 4 Okt 2026 — dipakai di KTI ([[project-kti-sigap-sipdln]])
+
+Uji ulang di HEAD `a0c5c18`: **72 kasus, 71 lulus, 1 dilewati (uji 2FA bawaan), 376 asersi**; PHPStan
+**0 galat**. Belum terukur: kondisi "sebelum aplikasi" di GRANDPLAN §1 berlabel **asumsi**, data lokal
+hanya contoh (36 pegawai, 12 perjalanan). Aturan PMK yang terdokumentasi tapi **belum dikodekan**: konversi
+jam→hari Pasal 8(4), 30% rawat inap, 80% suami/istri pendamping, 80% pegawai setempat; 100% menginap transit
+masih sunting manual. Dokumen perencanaan basi: GRANDPLAN §0 bilang belum ada yang terkunci, ringkasan D4
+masih "kurs manual", STATUS masih menulis Q1 terbuka.
+
 Terkait: [[project-sigap-bup]], [[project-bup-kemlu]], [[project-pantas-kurs]], [[reference-office-render]], [[reference-bi-jisdor]].

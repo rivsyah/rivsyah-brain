@@ -5,6 +5,9 @@
 
 ## NOW — active focus (update when it goes stale)
 
+- 🟡 4 Okt 2026 — **KTI SIGAP BUP + SIPDLN-BUP** untuk percepatan PG PNS selesai sebagai draf (41 hlm,
+  verify 16/16) + draf kasar netral untuk Dedi. Menunggu Aldo: isian NIP/jabatan/pengesah, konfirmasi tafsir
+  "PGPNS" dan maksud "untuk Dedi". [KTI SIGAP + SIPDLN](kemlu/project_kti_sigap_sipdln.md).
 - 🟢 22 Sep 2026 — aldo-starter dipasang. Brain di `~/brain`, vault ini yang kanonik.
   Sisa: pasang blok `hooks` ke `~/.claude/settings.json`, lalu bersihkan kartu lama di
   `~/.claude/projects/C--Users-rivsy/memory/` supaya tinggal pointer.
@@ -65,6 +68,8 @@
 - [GWS Business Standard 6 seat](kemlu/project_gws_business_standard.md) — KAK/Spektek + RAB/HPS 30 Sep 2026, periode 2026–2027, akun 994.002.M.522119, HPS Rp21.090.000 (median Elitery/Google/e-katalog); JANGAN sebut tunggakan; ada di e-katalog (e-purchasing wajib); pagu 522119 Rp75 jt tak cukup tanpa revisi; builder ~/dev/kemlu/gws-langganan-2026
 - [PANTAS kurs](kemlu/project_pantas_kurs.md) — pantau kas UP + selisih kurs IDR/USD + proyeksi kekurangan pagu, SPA statis di `~/dev/kemlu/pantas-kurs` → pantas-kurs.test; sampel BKU/BKT KBRI Washington 2026: beban kurs Rp10,55 M (JISDOR) / Rp10,81 M (SP2D GUP), kurs SP2D = JISDOR T-2 (8/8); Aldo: Pagu 2026 Rp500 M (29 Sep, gitignored di data/sampel/pengaturan.json → sisa ±Rp272 M, serapan ±45%), dua cara kurs berdampingan, lokal; samaran identitas Kemlu aktif bawaan; riwayat git ditulis ulang tanpa identitas (e096019 → cf1a60b); 4 Okt: deploy di balik Access TERTAHAN — Pages `pantas-kurs` dibuat kosong (522), `pantas.rivsyah.dev` pending CNAME, `tools/cloudflare.mjs` siap (belum commit); menunggu Aldo: Zero Trust Free + izin token Access ×3 + DNS Edit
 - [Tesis Erna](kemlu/project_tesis_erna.md) — deck ujian proposal S2 Akuntansi soal hedging/kurs Perwakilan RI; deck _Revisi 31 slide + naskah docx 16 hlm (Q&A, pertanyaan tersulit, perbaikan); 4 item kuesioner tumpang tindih dengan Y; semua berkas kini di Downloads\Thesis Teh Erna; masukan 3 dosen (ujian 23 Sep) ditranskripsi 1 Okt — "border" hlm 24/25/28 = bullet; 2 referensi kemungkinan fiktif (Lee & Wang 2023, Nguyen & Faff 2022); checklist revisi .docx 6 hlm (4 Okt)
+- [KTI SIGAP + SIPDLN](kemlu/project_kti_sigap_sipdln.md) — makalah format Permenlu 23/2020 untuk percepatan pangkat/golongan Aldo, 41 hlm, verify 16/16 (4 Okt 2026); isian kuning NIP/jabatan/pengesah menunggu Aldo; draf kasar netral 4 hlm "untuk Dedi" = ASUMSI (Dedi pihak ketiga); builder ~/dev/kemlu/kti-sigap-sipdln; hasil di Downloads\Riv's Journey\KTI SIGAP-SIPDLN
+- [KTI & percepatan pangkat](kemlu/reference_kti_percepatan_pangkat.md) — Permenlu 23/2020 format makalah; AK pengembangan profesi JF PK & PPBJ DICABUT PermenPANRB 1/2023 → KTI tak otomatis menambah AK; jalur hidup: SKP Sangat Baik 150%, penghargaan Permenlu 2/2026 (usul Sekjen ke Komite), kenaikan pangkat istimewa Pasal 40; naik pangkat tiap bulan sejak 1 Okt 2025 (Per BKN 4/2025)
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 
