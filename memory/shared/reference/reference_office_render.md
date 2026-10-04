@@ -1,6 +1,6 @@
 ---
 name: reference-office-render
-description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya) dan 13:10–13:35 (sesi SIPDLN, SaveAs 17, instans sendiri), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; keepNext di sel tabel bikin tabel lompat halaman"
+description: "Mesin riv: tidak ada LibreOffice/pdftoppm/pandoc; docx→PDF lewat Word COM — sempat macet 27 Sep 09:50 tapi JALAN lagi 10:00–10:25 (sesi MDP, ±12x; Close() RPC_E_DISCONNECTED tak berbahaya) dan 13:10–13:35 (sesi SIPDLN, SaveAs 17, instans sendiri), cadangan: render EMF per halaman; xlsx lewat Excel 16 COM, PDF→PNG lewat PyMuPDF (global); TEXT() Excel rusak di locale Indonesia; teks sel berawalan '=' dari openpyxl bikin Excel gagal membuka file; keepNext di sel tabel bikin tabel lompat halaman"
 metadata:
   type: reference
 ---
@@ -107,3 +107,11 @@ Tambahan 30 Sep 2026 (sesi GWS, [[project-gws-business-standard]]):
 - Word COM `ExportAsFixedFormat(pdf,17)` jalan 2x (16:22–16:25) di instans baru; Excel `$wb.ExportAsFixedFormat(0,pdf)` jalan 4x.
 - Pola docx dari template (lxml, klon paragraf/tabel prototipe, sampul + footer dipertahankan) terbukti; tabel ≤ 8 baris diberi
   keepNext di semua baris kecuali terakhir agar tidak terbelah — sengaja, dan menggeser tabel utuh ke halaman berikut.
+
+Tambahan 4 Okt 2026 (sesi RAB pernikahan, [[project_rab_pernikahan]]):
+- **Teks sel yang diawali `=`** (mis. keterangan "= tamu − 30") ditulis openpyxl sebagai rumus rusak. Excel COM lalu
+  melempar "Unable to get the Open property of the Workbooks class" — mode repair (`CorruptLoad=1`) juga gagal dan tidak
+  ada log `error*.xml` di %TEMP%. Uji pembeda: workbook openpyxl 1 sel terbuka normal. Perbaikan: jangan awali teks
+  dengan `=` (atau set `cell.data_type = "s"`); builder sebaiknya menolak teks seperti itu sebelum menyimpan.
+- Excel COM `CalculateFull` + `UsedRange.Rows.AutoFit()` + `ExportAsFixedFormat(0, pdf)` jalan 4x berturut-turut
+  (09:00–09:20 WIB). AutoFit mengabaikan sel merge: tinggi baris judul merge harus diset ulang sesudahnya.
