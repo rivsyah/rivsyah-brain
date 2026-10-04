@@ -228,8 +228,11 @@ Pemetaan baris: TRANS, KODE, DEBET, KREDIT, NAMA.
   - Nama yang di-rebind: BMN_TOTAL, SATKER, INSTRUMENTS, UNASSIGNED_PCT, RETENTION_GAP,
     RENT_BILL_X, INS_*.
   - Nilai lama disimpan di nama `_JUN25` / GAP_2024.
-  - `facts.py --check` = DRIFT, 43 dari 354 fakta. Peer sudah diberi tahu; snapshot tidak
-    disentuh.
+  - `facts.py --check` sempat DRIFT 43 dari 354 fakta. Peer sudah menyelaraskan tesis ke
+    ed.4 (4 Okt): `--check` kini lolos, kunci tengah tahun membaca nama `_JUN25`.
+  - Peer juga memverifikasi ulang secara independen dua angka v4 ke sumber: layanan utang
+    Rp195.659.351.477 (LK 2024) dan baris LO25 + DTEL_2025 (neraca percobaan LBP 2025).
+    Keduanya cocok.
 - **LK TA 2026 Semester I** (`Research Reports\Kemlu\Laporan_Keuangan_Kemlu_TA_2026___Semester_I.pdf`):
   - Metadata menunjukkan cetakan Google Docs, penulis "Rokeu", dibuat 30 Jul 2026, tanpa ID
     e-PPID. Jadi ini dokumen internal (scope kemlu), BUKAN versi terbit.
