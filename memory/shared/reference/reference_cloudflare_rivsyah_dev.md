@@ -1,6 +1,6 @@
 ---
 name: reference-cloudflare-rivsyah-dev
-description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); per 4 Okt tinggal Workers Paid (Containers 401) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama"
+description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); per 4 Okt tinggal Workers Paid (Containers 401) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME → PANTAS butuh Zone DNS Edit; Zero Trust belum aktif (4 Okt), onboarding Free wajib isi metode bayar; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo"
 metadata:
   type: reference
   modified: 2026-10-04
@@ -17,7 +17,8 @@ eksplisit olehnya untuk demo aplikasi yang identitas instansinya sudah disamarka
 menunjuk NS baru ±2 menit setelah Aldo menyimpan di Hostinger — catatan brain-7b). Paket Free. NS:
 **`gracie.ns.cloudflare.com`** + **`syeef.ns.cloudflare.com`**; resolver publik (Cloudflare dan Google)
 sudah menjawab NS itu. Pembagian subdomain: `sigap.*` = Worker `sigap-bup` (sesi SIGAP),
-`sipdln.*` = Worker `sipdln-bup` (SIPDLN) — jangan saling ubah rekaman/route.
+`sipdln.*` = Worker `sipdln-bup` (SIPDLN), `pantas.*` = Pages `pantas-kurs` (PANTAS) — jangan saling ubah
+rekaman/route.
 
 **Akun & token Cloudflare (env.db):**
 - `CLOUDFLARE_API_TOKEN` aktif. Bisa: akun, daftar zona, Workers scripts, **workers/routes zona dan
@@ -27,6 +28,13 @@ sudah menjawab NS itu. Pembagian subdomain: `sigap.*` = Worker `sigap-bup` (sesi
   Domain" hanya menerima `Workers Scripts Write`, dan dokumen Custom Domains: "Cloudflare will create DNS
   records and issue necessary certificates on your behalf". 403 di `dns_records` tidak memprediksi
   kegagalan deploy. Tambah izin hanya bila deploy pertama gagal di langkah domain.
+- **Custom domain Pages BEDA dengan Worker** (diverifikasi 4 Okt, PANTAS): `POST .../pages/projects/<p>/domains`
+  hanya mendaftarkan domain; statusnya tetap pending *"CNAME record not set"* sampai CNAME dibuat. Dashboard
+  membuat CNAME otomatis, API tidak. Jadi Pages lewat API butuh **Zone DNS Edit**. Token punya Pages Edit
+  (buat proyek `pantas-kurs` 200).
+- **Zero Trust/Access belum aktif** (4 Okt: `access.api.error.not_enabled`; `/access/organizations` 403 10000).
+  Onboarding Zero Trust Free: pilih nama tim + paket + **wajib isi metode pembayaran walau Free, tidak ditagih**
+  (dok resmi `learning-paths/secure-internet-traffic/initial-setup/create-zero-trust-org`).
 - `CLOUDFLARE_ACCOUNT_ID` di env.db **salah** (tidak cocok dengan satu-satunya akun token). Agent bisa
   mengambil ID yang benar dari `GET /accounts` saat jalan; env.db sendiri diisi Aldo lewat
   `envdb-setup.sh` di terminalnya.
@@ -53,11 +61,13 @@ container (SIGAP + SIPDLN) memakai satu langganan US$5 dan berbagi kuota yang sa
 
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
-- [[project_pantas_kurs]] — Pages + Access (butuh Zero Trust Free + izin Access di token).
+- [[project_pantas_kurs]] — Pages + Access. Proyek Pages sudah dibuat 4 Okt (kosong); butuh Zero Trust Free +
+  izin token Access (Apps/Policies, Org/IdP/Groups, Service Tokens) + Zone DNS Edit.
 - [[project-sipdln-bup]] — Containers + SQLite demo di image, `sipdln.rivsyah.dev`.
 
 Daftar langkah Aldo, sekali untuk semua: ~~(1) NS di Hostinger~~ **selesai 29 Sep**; (2) Workers Paid
 US$5/bln (untuk Containers) — **belum, per 4 Okt**; ~~(3) scope `workflow` di GITHUB_PAT~~ **selesai 29 Sep**;
-~~(4) izin DNS/Workers Routes di token~~ **tidak perlu** (lihat atas; PANTAS tetap butuh izin Access);
-(5) opsional perbaiki `CLOUDFLARE_ACCOUNT_ID`.
+~~(4) izin DNS/Workers Routes di token~~ **tidak perlu untuk Worker** (lihat atas);
+(5) opsional perbaiki `CLOUDFLARE_ACCOUNT_ID`; (6) khusus PANTAS: Zero Trust Free + izin token Access ×3 +
+Zone DNS Edit — **belum, per 4 Okt**.
 Harga/kuota Cloudflare: [[reference-hosting-vercel-cloudflare]].

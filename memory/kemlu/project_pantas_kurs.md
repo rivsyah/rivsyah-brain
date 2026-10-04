@@ -1,9 +1,9 @@
 ---
 name: project-pantas-kurs
-description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b"
+description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b; 4 Okt: Pages pantas-kurs dibuat kosong, deploy di balik Access menunggu Zero Trust Free + izin token"
 metadata:
   type: project
-  modified: 2026-09-27
+  modified: 2026-10-04
 ---
 
 **Apa:** permintaan Aldo 27 Sep 2026 — aplikasi monitoring "petty cash" satker Perwakilan Washington DC
@@ -80,6 +80,23 @@ MX/TXT/DNSSEC) → ganti NS aman. Email izin Access: rivsyah@gmail.com. Menunggu
 aktifkan Zero Trust Free + tambah izin token (Access Apps/Policies, IdP, DNS Edit), lalu ya untuk deploy.
 **Update 29 Sep ~23:05 (sesi SIPDLN):** NS sudah dipasang, zona rivsyah.dev **ACTIVE** — langkah
 "ganti NS" di atas selesai; sisanya lihat [[reference-cloudflare-rivsyah-dev]].
+
+**Deploy 4 Okt 2026 — TERTAHAN di langkah Aldo.** Aldo: "lanjutkan project ini" (menempel rencana 29 Sep) →
+dibaca sebagai ya untuk deploy **di balik Access**; D10 "lokal saja" sudah digantikan rencana itu. Dicek via API:
+**Zero Trust BELUM aktif** (`access.api.error.not_enabled`; `/access/organizations` 403 10000). Yang sudah:
+- Proyek Pages **`pantas-kurs` dibuat** (kosong, production branch `master`); `pantas-kurs.pages.dev` → 522
+  sampai ada deploy, jadi belum ada isi yang tayang. Token punya Pages Edit (buat proyek 200).
+- Domain **`pantas.rivsyah.dev` ditempel** ke proyek, status pending: **API Pages TIDAK membuat CNAME**
+  ("CNAME record not set"; dashboard membuatnya otomatis) → token butuh Zone DNS Edit.
+- `tools/cloudflare.mjs` (ready/access/dns/gate/deploy/livetest), `npm run deploy`, `tests/render.js` terima
+  `HEADERS` (JSON) untuk uji di balik Access. Email izin dari `ACCESS_EMAIL`, ID akun dari `GET /accounts`
+  (env.db tetap salah). `gate` menolak deploy bila host pages.dev belum dialihkan ke login Access.
+  **Belum di-commit**, bersama package.json, tools/build.js, tools/serve.js, README.
+- Tes 21/21; build ulang dari `cf1a60b` 18 file 2,28 MB; wrangler 4.147.0 lewat `npx` (tidak ada global).
+Menunggu Aldo: (1) Zero Trust Free di akun "Rivsyah@gmail.com's Account" — onboarding **wajib isi metode
+pembayaran walau Free, tidak ditagih** (dok resmi); (2) izin token: Access Apps and Policies Edit, Access
+Organizations/IdP/Groups Edit, Access Service Tokens Edit (hanya untuk `livetest`), Zone DNS Edit rivsyah.dev.
+Sesudahnya: `access` → `dns` → `gate` → `deploy` → `gate` → `livetest`.
 Jebakan uji: unduhan Chrome headless via CDP dibatalkan bila `downloadPath` memakai garis miring maju di
 Windows — pakai path `C:\...`.
 
