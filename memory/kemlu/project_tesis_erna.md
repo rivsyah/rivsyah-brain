@@ -97,6 +97,13 @@ Buku pedoman tesis STIESIA tidak ada online. Panduan kutipan STIESIA (academia.e
 - Miksalmina (2015): tidak ada di Crossref/OpenAlex, belum tentu palsu; tidak dikutip.
 - 14 DOI lain cocok. Daftar Tabel/Gambar: semua nomor halaman meleset (Tabel 1 tertulis 6, aslinya 12).
 
-Status: deck dan naskah selesai. Masukan dosen sudah ditranskripsi. Revisi proposal dikerjakan Erna sendiri;
+**Checklist revisi (4 Okt 2026):** `Thesis Teh Erna\Checklist_Revisi_Proposal_Tesis_Erna.docx`, 6 hlm A4,
+kotak centang Word (content control) per poin. Bagian: A Wahidahwati (W1–W3), B Lilis (L1–L7), C Ikhsan (I1–I2),
+D daftar pustaka (D1–D13), E saran jawaban responden inti/pelengkap (disarankan: hapus pembagian), F temuan lain
+di luar catatan dosen (F1 erigo store hlm 57, F2 VIF/tolerance, F3 item tumpang tindih Y, F4 hlm 11, F5 kurs 2025),
+G cek akhir. Builder docx-js di scratchpad sesi (npm `docx` 9.8.1 dipasang lokal; global tidak ada).
+Render Word COM. `creator` kosong di docx-js tetap jadi "Un-named" → core.xml ditambal lewat zipfile.
+
+Status: deck dan naskah selesai. Masukan dosen sudah ditranskripsi dan dijadikan checklist. Revisi proposal dikerjakan Erna sendiri;
 belum ada yang diubah di PDF. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`).
 LibreOffice dan poppler tidak ada; render PDF pakai PyMuPDF (`python` 3.11, bukan `py`).
