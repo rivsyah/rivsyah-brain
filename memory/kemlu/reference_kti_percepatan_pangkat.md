@@ -36,10 +36,12 @@ render PNG PyMuPDF, `Read` PDF butuh pdftoppm yang tidak ada).
   Perbaikan 75% dari koefisien tahunan (Pasal 37). Per BKN 3/2023: tambahan AK 25% untuk ijazah lebih tinggi
   (Pasal 14); unsur pengembangan profesi hanya muncul di penyesuaian konvensional → integrasi.
 - **Kenaikan pangkat istimewa** (PermenPANRB 1/2023 Pasal 40): untuk pejabat fungsional dengan penilaian kinerja
-  dan keahlian luar biasa; pelaksanaan "sesuai ketentuan peraturan perundang-undangan" (aturan teknisnya
-  belum dicek).
+  dan keahlian luar biasa; pelaksanaan "sesuai ketentuan peraturan perundang-undangan". **Dicek 4 Okt 2026:**
+  aturan teknisnya = SE Kepala BKN 5/2022 (KPLB: ≥1 tahun dalam pangkat, penilaian amat baik/SB 1 tahun, AK
+  bukan syarat) + SE Kepala BKN 9/2024 angka 5.e.3. Detail di [[reference_aturan_pangkat_jfpk]].
 - **Peraturan BKN 4/2025**: periode kenaikan pangkat PNS **setiap tanggal 1 tiap bulan**, berlaku 1 Okt 2025
-  (mencabut Per BKN 4/2023).
+  (mencabut Per BKN 4/2023). Hanya mengubah periode — **syarat 2 tahun dalam pangkat bagi JF tetap** (Per BKN
+  3/2023 Ps 15; Permenlu 4/2024 Ps 42).
 
 ## Permenlu 2/2026 — Pemberian Penghargaan oleh Kemlu (BN 2026/671, berlaku 28 Sep 2026)
 
