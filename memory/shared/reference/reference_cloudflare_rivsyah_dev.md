@@ -1,9 +1,9 @@
 ---
 name: reference-cloudflare-rivsyah-dev
-description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); masih tertahan Workers Paid (Containers 401) dan scope workflow GITHUB_PAT; izin DNS token TIDAK perlu untuk custom domain Worker; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama"
+description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); per 4 Okt tinggal Workers Paid (Containers 401) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker; SIGAP/PANTAS/SIPDLN menunggu langkah yang sama"
 metadata:
   type: reference
-  modified: 2026-09-29
+  modified: 2026-10-04
 ---
 
 Dicek lewat API (baca saja) 29 Sep 2026 ~22:55 WIB, dari mesin riv. Domain pribadi Aldo, dipilih
@@ -32,8 +32,17 @@ sudah menjawab NS itu. Pembagian subdomain: `sigap.*` = Worker `sigap-bup` (sesi
   `envdb-setup.sh` di terminalnya.
 - Belum ada subdomain `workers.dev` (dibuat otomatis saat halaman Workers & Pages dibuka pertama kali).
 
-**GitHub:** `GITHUB_PAT` classic hanya scope `repo` → push berkas `.github/workflows/*` ditolak. Perlu
-centang scope **`workflow`** pada token yang sama (nilai token tidak berubah).
+**GitHub:** ~~`GITHUB_PAT` classic hanya scope `repo`~~ — Aldo mencentang scope **`workflow`** 29 Sep 22.56 WIB;
+dicek ulang 4 Okt: header `x-oauth-scopes` = `repo, workflow`. Push berkas `.github/workflows/*` kini bisa.
+Catatan 4 Okt: satu skrip "buat repo + `git remote add` + push" (SIPDLN) ditolak pengaman mode otomatis
+Claude Code ("Remote Repoint") → minta persetujuan eksplisit Aldo di chat dulu, jangan cari jalan lain.
+
+**Cek ulang 4 Okt 2026 (API, baca saja):** Containers masih **401** *"requires the Workers Paid plan"*;
+`workers/scripts` 200 tapi **0 Worker** (belum ada yang terdeploy, termasuk SIGAP); `workers/domains` 0;
+`workers.dev` 404 (belum ada subdomain); `CLOUDFLARE_ACCOUNT_ID` env.db masih tidak cocok.
+Harga dicek live 4 Okt: Workers Paid minimal **US$5/bln** (halaman Workers diperbarui 2 Okt 2026);
+Containers termasuk 25 GiB-jam memori, 375 vCPU-menit, 200 GB-jam disk per bulan (halaman 28 Agu 2026);
+tipe `basic` = 1/4 vCPU, 1 GiB, 4 GB disk (halaman limit 30 Sep 2026).
 
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
@@ -41,7 +50,7 @@ centang scope **`workflow`** pada token yang sama (nilai token tidak berubah).
 - [[project-sipdln-bup]] — Containers + SQLite demo di image, `sipdln.rivsyah.dev`.
 
 Daftar langkah Aldo, sekali untuk semua: ~~(1) NS di Hostinger~~ **selesai 29 Sep**; (2) Workers Paid
-US$5/bln (untuk Containers); (3) scope `workflow` di GITHUB_PAT; ~~(4) izin DNS/Workers Routes di token~~
-**tidak perlu** (lihat atas; PANTAS tetap butuh izin Access); (5) opsional perbaiki
-`CLOUDFLARE_ACCOUNT_ID`.
+US$5/bln (untuk Containers) — **belum, per 4 Okt**; ~~(3) scope `workflow` di GITHUB_PAT~~ **selesai 29 Sep**;
+~~(4) izin DNS/Workers Routes di token~~ **tidak perlu** (lihat atas; PANTAS tetap butuh izin Access);
+(5) opsional perbaiki `CLOUDFLARE_ACCOUNT_ID`.
 Harga/kuota Cloudflare: [[reference-hosting-vercel-cloudflare]].

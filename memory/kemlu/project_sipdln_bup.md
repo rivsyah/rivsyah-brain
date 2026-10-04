@@ -1,9 +1,9 @@
 ---
 name: project-sipdln-bup
-description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; commit awal b50b8d6"
+description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; commit awal b50b8d6; deploy demo sipdln.rivsyah.dev (a0c5c18) per 4 Okt menunggu Workers Paid + izin Aldo buat repo/push"
 metadata:
   type: project
-  modified: 2026-09-29
+  modified: 2026-10-04
 ---
 
 Dibangun 27 Sep 2026 atas permintaan Aldo ("buatkan aplikasi monitoring untuk perjalanan dinas luar
@@ -46,6 +46,22 @@ router `server.php` bawaan Laravel harus dijalankan dengan CWD `public/`; server
 membuat hasil palsu — pakai port baru + `timeout`.
 Langkah Aldo (bersama SIGAP/PANTAS): [[reference-cloudflare-rivsyah-dev]]. Sesudahnya agent: repo privat
 `rivsyah/sipdln-bup`, push, secret/var repo, jalankan workflow, secret APP_KEY, uji live.
+
+**Cek 4 Okt 2026 (sesi brain-84, lewat API, tanpa mencetak rahasia):**
+- `GITHUB_PAT` kini ber-scope `repo, workflow` — langkah Aldo ini **selesai** (29 Sep 22.56 WIB).
+- Containers masih **401** *"requires the Workers Paid plan"* → **Workers Paid belum aktif**. Ini satu-satunya
+  pemblokir dari sisi Cloudflare. Akun belum punya Worker apa pun (SIGAP juga belum), belum ada
+  subdomain `workers.dev`, `CLOUDFLARE_ACCOUNT_ID` di env.db masih salah (bukan pemblokir).
+- Riwayat git SIPDLN dipindai **semua commit**: 0 identitas instansi, 0 pola rahasia/jalur pribadi,
+  penulis semua `rivsyah@gmail.com`, `docker/start.sh` LF + bit eksekusi. Aman untuk dipush.
+- **Membuat repo + `git remote add` + push dalam satu skrip DITOLAK pengaman mode otomatis
+  ("Remote Repoint")**. Tidak dicoba jalur lain. Repo masih 404, remote lokal kosong. Butuh persetujuan
+  eksplisit Aldo di chat (atau aturan izin Bash) sebelum diulang.
+- Harga dicek live 4 Okt: Workers Paid minimal US$5/bln (halaman Workers 2 Okt 2026); Containers termasuk
+  25 GiB-jam memori, 375 vCPU-menit, 200 GB-jam disk/bln (halaman 28 Agu 2026). Tipe `basic` = 1/4 vCPU,
+  1 GiB, 4 GB disk (halaman limit 30 Sep 2026).
+- Tes Docker image sungguhan belum pernah jalan (mesin tanpa Docker). Menambah langkah uji-image di
+  workflow butuh commit baru → aturan proyek: commit hanya atas permintaan Aldo. Belum dilakukan.
 
 ## Letak dan cara jalan (mesin riv)
 
