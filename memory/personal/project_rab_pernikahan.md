@@ -1,6 +1,6 @@
 ---
 name: RAB Tunangan & Pernikahan
-description: "RAB tunangan Rp50 jt (muat, Rumah Rp48,2 jt) + nikah Rp200 jt. Sejak 4 Okt 2026 ada 18 opsi venue di sheet Alternatif Venue (venue dipilih di C5). 300 tamu: CIBIS Park Gold 300 (Rp170 jt, resmi 2026) total Rp232,5 jt — lebih Rp32,5 jt, muat bila cincin/mahar/seserahan terpisah; Swasana premium est. Rp362 jt; Hadjatan mulai Rp52,5 jt tier belum terbit. Intimate termurah NIWA Prive. Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
+description: "RAB tunangan Rp50 jt (muat, Rumah Rp48,2 jt) + nikah Rp200 jt. Sejak 4 Okt 2026 ada 19 opsi venue di sheet Alternatif Venue (venue dipilih di C5). 300 tamu: CIBIS Park Gold 300 (Rp170 jt, resmi 2026) total Rp232,5 jt — lebih Rp32,5 jt, muat bila cincin/mahar/seserahan terpisah; Swasana premium est. Rp362 jt; Hadjatan mulai Rp52,5 jt tier belum terbit. Intimate termurah NIWA Prive. Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
 metadata:
   type: project
 ---
@@ -48,7 +48,7 @@ Berkas tidak disimpan.
   Rp126 jt (maks 250 orang, Jakbar); CIBIS 100 Rp193,4 jt; CIBIS 200 Rp213,5 jt; CIBIS 300 Rp232,5 jt (Rp198,9 jt tanpa
   pribadi); Clara 200 di Lippo Rp287,5 jt; Swasana premium est. Rp362 jt; Dewandaru 300 (Memopro, cuplikan) Rp441,8 jt.
   Intimate: NIWA Silver 100/200 Rp99,1/112,4 jt; NIWA Gold 100/200 Rp134,3/146 jt; Bunga Rampai 30 pax Rp137,6 jt;
-  Cerita Rasa 100 Rp169 jt (listing basi); Arena Lakeside 100/200 Rp220/285,4 jt; Azalia 200 Rp221 jt.
+  Cerita Rasa Glasshouse resmi 2026: 100 pax Rp171,9 jt, 200 pax Rp218,1 jt; Arena Lakeside 100/200 Rp220/285,4 jt; Azalia 200 Rp221 jt.
 - Fakta baru: CIBIS Park = Sirih Gading Venue Management, Jl. TB Simatupang No.2 (pricelist Gold 2026 upd 31 Jul 2026 dari
   Aldo: 100/200/300/400/500/600 pax = Rp135/153/170/183/199/213 jt; deposit Rp2 jt; DP Rp5 jt hangus). NIWA Prive
   (Cipayung, Jaktim) = venue baru Sirih Gading, open house 4 Okt 2026; Silver 100/200 pax Rp37,5/49 jt, Gold Rp77/87 jt
@@ -60,4 +60,9 @@ Berkas tidak disimpan.
 terpisah). Aldo yang minta ke Swasana.
 ⚠ OPEN: apakah Rp200 jt termasuk cincin, mahar, seserahan? Ini menentukan apakah CIBIS 300 muat.
 ⚠ OPEN: NIWA Prive — porsi, jam, nett/++ belum diketahui (harga dari iklan).
+- Cerita Rasa (PDF Price List Banquet Event 2026 dari Aldo, dibuat 30 Sep 2026): Glasshouse 80–250 pax, 3 jam; buffet
+  Menu Cerita/Rasa/Nusantara Rp315/365/415 rb++ per pax; pajak & servis 17,7%; minimum belanja Glasshouse Rp35 jt;
+  sewa Glasshouse Rp10 jt (Sen–Kam) / Rp15 jt (Jum–Min) nett — dianggap terpisah dari minimum belanja (⚠ belum
+  dikonfirmasi). Joglo/Function Room untuk lamaran: venue + makan ±Rp34–41 jt, tidak muat RAB tunangan Rp50 jt.
+  Brosur Glass House (PDF kedua) hanya foto.
 
