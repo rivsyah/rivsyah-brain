@@ -95,3 +95,28 @@ register 13 sewa lawan 499 penggunaan, gedung terdepresiasi 37,1%. Tambahan sumb
 
 Klaim asuransi 1,31% dicabut, karena datanya salah (lihat [[project-landlord-that-rents]]). Cutoff kini
 4 Okt 2026. Hasil: 73 hlm, gerbang 89 cek lolos, 100 rujukan.
+
+## Selaras dengan brief edisi 4 — 4 Okt 2026 (siang)
+
+Brief direbase ke ed.4 (judul tetap BPADAD). Nama-nama di content.py berubah makna, jadi
+facts.py tesis sudah disesuaikan:
+- Nilai pertengahan 2025 kini memakai nama `_JUN25`: `BMN_JUN25`, `INSTRUMENTS_JUN25`, `UNASSIGNED_JUN25`.
+- facts.py mengecek bahwa transkripsi `fy2025.py` sama persis dengan nilai brief (BMN, gedung, idle).
+- `BMN_SERIES` sudah memuat 2025, jadi facts.py tidak menambahkannya lagi.
+
+Angka tesis yang kini berlaku:
+- **Kelipatan sewa akrual di kedua sisi: 226× (FY2025: Rp748,9 M lawan Rp3,31 M), 246× (FY2024).**
+  Angka 310× dicabut karena mencampur beban akrual dengan penerimaan kas.
+- Yield FY2025 akrual 0,006%.
+- **Gap retensi = PNBP FY2025 Rp483,1 M − pagu PNBP 2026 = Rp253,0 M.** Korpus pada imbal 4–7%:
+  Rp3,61–6,33 T; pada 3%: Rp8,43 T.
+- **Rasio pembaruan gedung bersih cicilan 55% (FY2024)**; bruto 93% ikut menghitung cicilan
+  Rp195,7 M atas kredit 7 gedung.
+- Subbab baru 4.8 "Buildings bought on credit" + tabel kredit: BNI/Mandiri, 2016–2019, ditarik
+  Rp1,90 T, sisa Rp670,8 M akhir 2025.
+- Fee konsuler akrual FY2025 −16,06%.
+
+Sumber arus FY2025 adalah neraca percobaan akrual audited yang dilampirkan di LBP 2025, ditambah
+identitas akun "Diterima dari Entitas Lain" = PNBP. render.ps1 kini menutup Word miliknya sendiri
+setelah sukses, dengan syarat proses baru dan StartTime ≤6 detik setelah job dimulai, karena
+Word suka tertinggal dan mengunci file. Hasil: 75 hlm, 22 tabel, gerbang 109 cek lolos.
