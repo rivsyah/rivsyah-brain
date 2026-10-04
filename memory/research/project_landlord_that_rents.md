@@ -159,3 +159,23 @@ pos sebelum mengelompokkannya.
 **Dipakai sebagai sumber data (read-only)** oleh tesis MBA di `~/dev/personal/wharton-thesis`
 ([[project-wharton-thesis]]). `src/facts.py` di sana mengimpor `content.py`. Kalau nama konstanta di
 content.py diubah, jalankan `python src/facts.py --check` di folder tesis.
+
+## Koreksi & data baru — 4 Okt 2026 (sesi tesis MBA)
+
+- **LBP TA 2025 AUDITED sudah terbit** di e-PPID (25 Sep 2026): `e-ppid.kemlu.go.id/file-service/storage/uploads/
+  17903157556ab60cebe5d31_VII__Data_perbendaharaan_atau_inventaris_Tahun_2025__1_.pdf` (686 hlm, ada text layer,
+  tabel ringkasan TIDAK offset). Neraca 31 Des 2025: BMN Rp59.304.526.726.246 (+0,59%); tanah tetap
+  Rp43,78 T; gedung Rp11,27 T (+2,47%, akumulasi penyusutan 37,06%); 131 Perwakilan.
+- **Saldo idle terkonfirmasi tanah sewa:** koreksi audit sesuai PMK 100/2025 memindahkan tanah hak pakai
+  jangka panjang di 5 pos (Canberra, Nairobi, Abuja, Kota Kinabalu, Kuala Lumpur) ke akun baru 166117
+  "Hak Pakai Tanah Luar Negeri" Rp229,5 M. Saldo idle turun 62,30% menjadi Rp128,6 M (Rp94,8 M aset tetap +
+  Rp33,8 M software/lisensi).
+- **Register FY2025 setahun penuh:** 499 penetapan status penggunaan lawan 13 sewa; instrumen pemanfaatan lain
+  nol; penjualan 51, pemusnahan 92, penghapusan 26 (total 681). BMN tanpa PSP 5,25% (Juni: 16,78%).
+- **KLAIM ASURANSI ED.3 SALAH:** "nilai tanggungan Rp145,0 M = 1,31% stok gedung" keliru. LBP audited:
+  nilai pertanggungan Rp1,13 T, premi Rp145,0 M. Total Rp145,0 M itu digelembungkan entri mustahil di Tabel A:
+  premi Rp114,1 M untuk rumah dinas Brasília yang ditanggung Rp11,5 M (digitnya = nomor polis 114 11 4181501).
+  Laporan Semester I menyajikan total yang sama sebagai nilai pertanggungan. 47 dari 146 satker
+  diasuransikan di FY2025.
+- LK TA 2025 audited (arus) belum ditemukan publik. File `Laporan_Keuangan_Kemlu_TA_2026___Semester_I.pdf`
+  di folder Kemlu adalah cetakan Google Docs internal Rokeu, BUKAN versi terbit; tidak dipakai.

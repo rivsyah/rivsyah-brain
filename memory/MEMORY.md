@@ -94,7 +94,7 @@
 
 - [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
-- [Tesis MBA Wharton](personal/project_wharton_thesis.md) — draft 72 hlm "The Landlord That Rents" dari brief BLU Aset Kemlu; MBA Wharton TIDAK punya tesis (jalur: ISP REAL 8990 atau Lauder Master's Thesis 30–35 hlm); pipeline docx-js + Word PDF + gerbang 86 cek
+- [Tesis MBA Wharton](personal/project_wharton_thesis.md) — draft 72 hlm "The Landlord That Rents" dari brief BLU Aset Kemlu; MBA Wharton TIDAK punya tesis (jalur: ISP REAL 8990 atau Lauder Master's Thesis 30–35 hlm); pipeline docx-js + Word PDF + gerbang 89 cek; 4 Okt: neraca pindah ke LBP 2025 audited
 - [RAB Tunangan & Pernikahan](personal/project_rab_pernikahan.md) — tunangan Rp50 jt muat (Rumah Rp48,2 jt); nikah 300 tamu di Swasana TIDAK muat Rp200 jt (est. Rp362 jt, batas paket venue Rp139 jt); harga 300 pax belum terbit; builder ~/dev/personal/rab-pernikahan
 - [Bara (agent)](shared/project_bara_agent.md) — agent all-in-one bernama Bara, workspace di ~/Bara; ~/Herd sengaja tidak di-rename (parked path Herd)
 

@@ -82,3 +82,16 @@ Sovereign Estate Abroad: Evidence from Indonesia's Diplomatic Property.*
 
 Terkait: [[project-landlord-that-rents]] (sumber data, dibaca read-only),
 [[reference-office-render]].
+
+## Update 4 Okt 2026
+
+Neraca dipindah ke **LBP TA 2025 audited** (terbit e-PPID 25 Sep 2026). Modul baru `src/fy2025.py`
+(nilai ditranskrip + 9 identitas: komponen = total, satker = total, register = total, persentase
+cocok). Arus tetap FY2024, karena LK 2025 audited belum publik. Angka utama kini: BMN Rp59,30 T,
+tanah+gedung Rp55,05 T (92,8%), saldo idle Rp128,6 M setelah tanah sewa Rp229,5 M direklasifikasi,
+register 13 sewa lawan 499 penggunaan, gedung terdepresiasi 37,1%. Tambahan sumber publik:
+- DPR 9 Jul 2025: hanya ±33 dari 132 perwakilan punya gedung + wisma sendiri.
+- LPDP ditambah Rp15 T (Periskop, 21 Sep 2026).
+
+Klaim asuransi 1,31% dicabut, karena datanya salah (lihat [[project-landlord-that-rents]]). Cutoff kini
+4 Okt 2026. Hasil: 73 hlm, gerbang 89 cek lolos, 100 rujukan.
