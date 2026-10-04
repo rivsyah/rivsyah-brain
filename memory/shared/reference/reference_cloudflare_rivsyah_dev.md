@@ -43,6 +43,13 @@ Claude Code ("Remote Repoint") → minta persetujuan eksplisit Aldo di chat dulu
 Harga dicek live 4 Okt: Workers Paid minimal **US$5/bln** (halaman Workers diperbarui 2 Okt 2026);
 Containers termasuk 25 GiB-jam memori, 375 vCPU-menit, 200 GB-jam disk per bulan (halaman 28 Agu 2026);
 tipe `basic` = 1/4 vCPU, 1 GiB, 4 GB disk (halaman limit 30 Sep 2026).
+**Model tagihan Containers** (halaman harga, dicek live 4 Okt oleh sesi SIGAP): CPU ditagih **hanya saat aktif
+dipakai**. Memori dan disk ditagih sesuai ukuran instance **selama container menyala**. Container yang tidur
+(lewat `sleepAfter`) **tidak ditagih**. Kelebihan kuota: memori US$0,0000025/GiB-detik, vCPU
+US$0,000020/vCPU-detik, disk US$0,00000007/GB-detik; Workers, Durable Objects, dan egress ditagih terpisah.
+Perkiraan satu container `basic`: demo dengan `sleepAfter` 15 menit ≈ **US$5–6/bln**; menyala 24 jam terus
+≈ **US$12/bln** ditambah CPU aktif. [Likely — hitungan agent dari tarif, belum ada tagihan nyata.] Dua
+container (SIGAP + SIPDLN) memakai satu langganan US$5 dan berbagi kuota yang sama.
 
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
