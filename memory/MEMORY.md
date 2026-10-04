@@ -97,7 +97,7 @@
 - [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
 - [Tesis MBA Wharton](personal/project_wharton_thesis.md) — draft 72 hlm "The Landlord That Rents" dari brief BLU Aset Kemlu; MBA Wharton TIDAK punya tesis (jalur: ISP REAL 8990 atau Lauder Master's Thesis 30–35 hlm); pipeline docx-js + Word PDF + gerbang 89 cek; 4 Okt: neraca pindah ke LBP 2025 audited
-- [RAB Tunangan & Pernikahan](personal/project_rab_pernikahan.md) — tunangan Rp50 jt muat (Rumah Rp48,2 jt); nikah 300 tamu di Swasana TIDAK muat Rp200 jt (est. Rp362 jt, batas paket venue Rp139 jt); harga 300 pax belum terbit; builder ~/dev/personal/rab-pernikahan
+- [RAB Tunangan & Pernikahan](personal/project_rab_pernikahan.md) — tunangan Rp50 jt muat; nikah: 18 opsi venue dibandingkan, 300 tamu terbaik CIBIS Park Rp232,5 jt (lebih Rp32,5 jt; muat bila cincin/mahar/seserahan terpisah), Swasana est. Rp362 jt; intimate termurah NIWA Prive; ⚠ harga Hadjatan 300 pax
 - [Bara (agent)](shared/project_bara_agent.md) — agent all-in-one bernama Bara, workspace di ~/Bara; ~/Herd sengaja tidak di-rename (parked path Herd)
 
 ## Reference
@@ -109,6 +109,7 @@
 - [Agent roster](shared/ops/agent_roster.md) — agent mana di mesin mana, dan aturan yang menjaga beberapa mesin tetap satu brain
 - [GPU Worker & Wan2GP](aignited/reference_gpu_worker.md) — path GPU worker, Wan2GP, dan state login-autostart (Startup folder + scheduled task)
 - [Ignited Research masthead](shared/reference/reference_ignited_masthead.md) — "Ignited Research · Independent Analysis" untuk semua brief; "Independent Research" sudah pensiun
+- [Riset harga IG/TikTok/Bridestory](shared/reference/reference_social_price_research.md) — caption IG lengkap di og:description; carousel terbaca setelah popup ditutup; TikTok CAPTCHA jangan diselesaikan; Bridestory 403 → tandai 'cuplikan'
 - [Render dokumen Office](shared/reference/reference_office_render.md) — tidak ada soffice/pdftoppm/pandoc; docx→PDF lewat Word COM: macet 27 Sep 09:50 tapi jalan lagi 10:00–10:25 dan 13:10–13:35 (SaveAs 17, instans sendiri berdampingan dgn /Automation sesi lain), cadangan render EMF per halaman; keepNext di sel tabel = tabel lompat halaman; xlsx hitung ulang + PDF lewat Excel COM (sheet hidden gagal ekspor), PyMuPDF global; TEXT() Excel rusak di locale ID → FIXED(); teks sel berawalan "=" dari openpyxl → Excel gagal buka file
 - [Hosting Vercel vs Cloudflare](shared/reference/reference_hosting_vercel_cloudflare.md) — 29 Sep 2026: Vercel Hobby dilarang komersial, Pro US$20/seat + sandi US$20/proyek; Cloudflare Pages gratis komersial, Access ≤50 pengguna; PP 71/2019 Ps 20
 - [Cloudflare + rivsyah.dev](shared/reference/reference_cloudflare_rivsyah_dev.md) — zona ACTIVE sejak 29 Sep 22.52 WIB; per 4 Okt tinggal Workers Paid (scope workflow PAT beres, 0 Worker terdeploy); izin DNS token tidak perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME (butuh DNS Edit); Zero Trust belum aktif, onboarding Free wajib isi metode bayar; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo
