@@ -97,6 +97,30 @@ Detail proyek kemlu/ lain sengaja TIDAK ditarik ke sini.
   - PP 6/1974 DICABUT PP 94/2021, tidak ada izin wajib.
   - Batasnya: jam kerja (Ps 4 f), larangan kerja untuk perusahaan asing tanpa penugasan PPK (Ps 5 e), dan konflik kepentingan.
 
+**Admit rate & peer** (US News, masuk fall 2025, via Poets&Quants 2 Agu 2026):
+- Admit rate: Wharton 18,6%, CBS 25,7%, HBS 11,2%, GSB 6,8%, Sloan 18,8%, Yale 28,5%, Kellogg 28,1%, Booth 27,3%, Haas 21,4%, Georgetown 64,4%.
+- R2 Jan 2027 peer: HBS 5 Jan, GSB 6 Jan, Kellogg 6 Jan, Yale 6 Jan, Georgetown 6 Jan, Booth 7 Jan, Haas 7 Jan, Sloan 12 Jan. HBS & Sloan tanpa R3.
+- Tes Inggris:
+  - Tidak wajib di Yale SOM & Sloan.
+  - HBS "discouraged" di bawah TOEFL 109 / IELTS 7,5.
+  - GSB TOEFL 100 (5,0) / IELTS 7,0.
+- COA 2026-27: HBS US$130.318, GSB 140.940, Yale 128.976, Sloan ±134.200.
+- Need-based HBS/GSB dipotong kalau dana luar > ±US$40 rb. GSB: penerima sponsor "typically" tidak eligible. Jadi dengan LPDP, need-based tidak relevan.
+- Knight-Hennessy: syarat S1 lulus ≥Jan 2020 (kohort 2027) dan wajib GSB R1.
+- Jalur mid-career:
+  - MIT Sloan Fellows MBA: pengalaman ≥10 th, 12 bln, tes opsional, tanpa tes Inggris, tenggat 20 Okt 2026 / 26 Jan 2027.
+  - Stanford MSx: ≥8 th, 12 bln mulai Jul, tenggat 6 Jan / 11 Feb 2027, ada di daftar LPDP.
+
+**Visa & kebijakan AS (4 Okt 2026):**
+- Biaya: SEVIS F US$350 / J US$220, visa US$185. Visa integrity fee US$250 sudah jadi UU tapi belum ada aturan pelaksana.
+- Wawancara wajib tatap muka di negara asal. Akun medsos wajib publik sejak Jun 2025. Indonesia TIDAK ada di daftar larangan masuk 39 negara.
+- Aturan D/S final 17 Jul 2026 tapi ditunda pengadilan 14 Sep (DHS banding 30 Sep).
+- CPT dipersempit Agu 2026 (Penn sempat jeda). Tidak relevan untuk J-Term/PNS.
+- Pendanaan pemerintah pada J-1 memicu 212(e). Tidak masalah untuk PNS yang memang wajib pulang.
+- Pasar: niat calon internasional mendaftar ke AS turun 63%→53% (GMAC 2026), aplikasi Sloan -25%. Persaingan sedikit melunak [Likely].
+
+**Kurs:** JISDOR Rp17.898/USD (2 Okt 2026). COA US$135–143 rb/th ≈ Rp2,4–2,6 M/th.
+
 **Lain:** GMAT Focus US$275 di test center / US$300 online, 5×/12 bln, jeda 16 hari, tanpa batas seumur hidup.
 TOEFL iBT skala 1–6 sejak 21 Jan 2026, skor 0–120 ikut dilaporkan selama transisi 2 tahun.
 EducationUSA gratis di Jakarta (Kedubes AS + @america).
