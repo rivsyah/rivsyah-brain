@@ -82,7 +82,7 @@
 
 - [Equity Research Series](research/project_equity_research_series.md) — seri sell-side Ignited (BBCA/INDY/BMRI/RANS); pipeline content.py→build.py→verify.py + jebakan reportlab
 - [BBCA Company Focus](research/project_bbca_company_focus.md) — equity note "The CASA Dividend"; MODEL dict + verify.py 56 checks
-- [BPADAD — Badan Pengelola Aset dan Dana Abadi Diplomasi](research/project_landlord_that_rents.md) — ed.3 50pp + deck 28 slide (dulu "The Landlord That Rents"); sewa audited Rp702,0M = 310x; renewal ratio 93%; folder tetap Landlord-That-Rents
+- [BPADAD — Badan Pengelola Aset dan Dana Abadi Diplomasi](research/project_landlord_that_rents.md) — ed.4 4 Okt 2026: 55pp + deck 34, basis audited 31 Des 2025; gap Rp253,0M; sewa 226x (akrual); renewal bersih 55%; utang 7 gedung Rp670,8M; LK Sem I 2026 = print internal, tak dipakai
 - [The Seventy-Dollar Budget](research/project_seventy_dollar_budget.md) — Indonesia Outlook 2026 v2 35pp; enam asumsi APBN 2026 jebol, "Absorption Agenda"
 - [The Clock and the Ledger](research/project_clock_and_ledger.md) — scorecard Aschenbrenner 36pp, suara CIO hedge fund; "Four Ledgers"
 - [The Next Test](research/project_next_test_2027.md) — brief El Niño ketiga, dwibahasa satu folder; "Lead-Time Agenda", membuka dengan skor call sendiri

@@ -1,11 +1,11 @@
 ---
 name: project-landlord-that-rents
-description: "Brief BPADAD - Badan Pengelola Aset dan Dana Abadi Diplomasi (ed.3, 50pp + deck 28 slide; terbit pertama sbg The Landlord That Rents) menilai kertas kerja BLU Kemlu; Retention Agenda; folder tetap Landlord-That-Rents"
+description: "Brief BPADAD - Badan Pengelola Aset dan Dana Abadi Diplomasi (ed.4 4 Okt 2026, 55pp + deck 34 slide, basis audited 31 Des 2025; terbit pertama sbg The Landlord That Rents) menilai kertas kerja BLU Kemlu; Retention Agenda; folder tetap Landlord-That-Rents"
 metadata: 
   node_type: memory
   type: project
   originSessionId: 4d538033-6b39-404d-ad2d-715697a084d7
-  modified: 2026-09-27T12:00:00.000Z
+  modified: 2026-10-04T05:00:00.000Z
 ---
 
 Brief Ignited Research **"The Landlord That Rents"** (34pp, terbit 10 Sep 2026) di
@@ -101,13 +101,15 @@ research" membaca path ini): `out/Badan-Pengelola-Aset-dan-Dana-Abadi-Diplomasi.
 
 **KOREKSI BESAR — tagihan sewa audited ada di catatan LO LK TA2024.** Ed.1-2 bilang tidak bisa
 ditetapkan dan pakai floor FSR Rp286,1M (126x). Sebenarnya: Beban Sewa Rp359,53M (+13,38%) +
-Beban FSR Rp342,48M = **Rp702,0M = 310x** pendapatan sewa; rumah dinas saja 151x. Tabelnya
+Beban FSR Rp342,48M = **Rp702,0M** [ED.4: kelipatan 310x/151x SALAH BASIS — beban akrual dibagi penerimaan KAS Rp2,27M; akrual kedua sisi = **246x**, rumah dinas 120x]. Tabelnya
 bergeser satu baris; pasangan dikunci narasi (Jasa Konsultan Rp28,87M +22,75%). Sewa
 menjelaskan hampir seluruh kenaikan Belanja Jasa Rp373,3M (akrual +Rp384,9M).
 
 **Data baru:** penyusutan gedung 34,8% (akum Rp3,85T dari bruto Rp11,07T); **rasio pembaruan**
-(belanja modal gedung / beban penyusutan gedung Rp517,5M) **93% FY2024 vs 171% FY2023**,
+(belanja modal gedung / beban penyusutan gedung Rp517,5M) **93% FY2024 vs 171% FY2023**
+[ED.4: 93% MENGHITUNG CICILAN+BUNGA UTANG 7 GEDUNG Rp195,7M SEBAGAI RENEWAL; bersih = **55%**],
 benchmark NSW OLG 100%; asuransi 61 dari 145 satker, nilai tanggungan Rp145,0M = 1,31% stok
+[ED.4: SALAH — Rp145,0M itu total PREMI; tanggungan Rp1,13T = 10,1%; 47 dari 146 satker FY2025]
 gedung, **klaim disetor ke RKUN**; deposit di tangan pemilik asing Rp30,6M; saldo idle memuat
 software Rp15,55M; temuan BPK 2021 tujuh pos tak mencatat nilai tanah Rp401,4M; koreksi luas
 tanah -198.103 m2; wilayah 22 satker (Asia 57%); jalur anggaran 8,91 -> 8,70 -> 10,02 T.
@@ -179,3 +181,58 @@ content.py diubah, jalankan `python src/facts.py --check` di folder tesis.
   diasuransikan di FY2025.
 - LK TA 2025 audited (arus) belum ditemukan publik. File `Laporan_Keuangan_Kemlu_TA_2026___Semester_I.pdf`
   di folder Kemlu adalah cetakan Google Docs internal Rokeu, BUKAN versi terbit; tidak dipakai.
+
+## Edisi keempat — 4 Okt 2026 (sesi ini)
+
+**Basis pindah ke posisi audited 31 Des 2025.** Sumber baru (publik): LBP TA 2025 Audited
+(e-PPID 25 Sep 2026; disimpan `sources/LBP_Kemlu_TA_2025_Audited.pdf`). Lampirannya memuat
+**neraca percobaan akrual tingkat K/L 31 Des 2025 (audited)** = semua akun LO FY2025.
+Pemetaan baris: TRANS, KODE, DEBET, KREDIT, NAMA.
+
+- **Identitas kunci:** di LK 2024 Tabel 107, DDEL = PNBP LRA dan DKEL = belanja LRA,
+  keduanya persis sampai rupiah. Maka FY2025: **PNBP Rp483.105.394.611 (−9,60%)**, belanja
+  Rp9.330,3M.
+- **Gap retensi FY2025 = Rp253,0M** (FY2024 Rp304,3M). Korpus 4–7% = **Rp3,61–6,33T**, yaitu
+  28–49x saldo idle Rp128,6M.
+- **Sewa FY2025** Rp748,9M (premises 360,1 + FSR 388,8; +6,68%); sewa diterima akrual Rp3,31M →
+  **226x**. Fee konsuler akrual −16,1% (visa −38,9%, paspor −14,9%, dokumen +9,1%); refund VAT
+  +36,1%.
+- **Penyusutan gedung FY2025** Rp501,0M; keausan 37,06%. C6 tetap terbuka karena LK TA 2025
+  (arus/LRA) belum terbit per 4 Okt.
+- **Buku utang 7 gedung** (data publik di LK 2024 C.5.2/C.6.1 dan PMK 53/PMK.02/2015):
+  - Tujuh gedung: London, Phnom Penh, Chicago, Johor Bahru, Kuching, Warsawa, Tawau. Bank: BNI
+    dan Mandiri. Ditarik ±Rp1,90T pada 2016–2019.
+  - Saldo: Rp941,3M (Des 2023) → 799,8M (Des 2024) → **670,8M (Des 2025)**. Angka Des 2025 cocok
+    sampai rupiah dengan neraca percobaan audited.
+  - FY2024 dibayar Rp195,7M: pokok 141,6M dan bunga ±54,1M (±6,2%). Bunga dihitung turunan.
+- **Koreksi ed.4:**
+  - Basis kelipatan sewa (310x → 246x, akrual kedua sisi).
+  - Renewal (93% → 55% bersih).
+  - Asuransi (temuan peer, terverifikasi).
+  - Idle Rp339,6M direklasifikasi audit ke Hak Pakai Tanah LN Rp229,5M, tidak terjual → idle
+    Rp128,6M. Ini mengonfirmasi bacaan brief sejak ed.1.
+- **Calls jadi 8:**
+  - C6 dirumuskan ulang: bersih dari layanan utang, ambang Rp501,0M.
+  - **C7:** kelipatan sewa FY2026 >200x.
+  - **C8:** plafon PNBP di RKA-K/L FY2027 <Rp300M dan baris BLU nol.
+- R8 dan R10 diperbarui (lantai renewal bersih dari layanan utang).
+- **Output:** PDF 55 hlm, 30 figure, 18 tabel, 63 referensi. Gate: 78 prose facts, 83 identitas,
+  19 akronim, 28 penjaga stale, 0 gagal. Deck 34 slide, gate bersih, sudah di-proof via
+  PowerPoint COM.
+- **File baru:** `src/content_v4.py`, `src/charts4.py`.
+- **KESALAHAN SAYA:** build menimpa PDF ed.3 (namanya sama). Hanya deck ed.3 yang sempat
+  disalin ke `out/superseded/`.
+  - **Pelajaran:** salin PDF dan deck ke `superseded/` SEBELUM `make.py` dijalankan.
+- **Koordinasi peer:** content.py dibaca read-only oleh tesis MBA (snapshot `data/facts.json`
+  terkunci).
+  - Nama yang di-rebind: BMN_TOTAL, SATKER, INSTRUMENTS, UNASSIGNED_PCT, RETENTION_GAP,
+    RENT_BILL_X, INS_*.
+  - Nilai lama disimpan di nama `_JUN25` / GAP_2024.
+  - `facts.py --check` = DRIFT, 43 dari 354 fakta. Peer sudah diberi tahu; snapshot tidak
+    disentuh.
+- **LK TA 2026 Semester I** (`Research Reports\Kemlu\Laporan_Keuangan_Kemlu_TA_2026___Semester_I.pdf`):
+  - Metadata menunjukkan cetakan Google Docs, penulis "Rokeu", dibuat 30 Jul 2026, tanpa ID
+    e-PPID. Jadi ini dokumen internal (scope kemlu), BUKAN versi terbit.
+  - TIDAK dipakai di brief publik. Status menunggu jawaban Aldo.
+  - Isinya ada saya baca: sewa H1 +26%, PNBP H1 Rp238,8M melampaui plafon setahun, MP I PNBP
+    Rp22,6M menahan renovasi. Data ini jangan masuk brief kecuali versi terbitnya keluar.
