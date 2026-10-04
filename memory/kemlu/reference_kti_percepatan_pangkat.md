@@ -55,3 +55,7 @@ render PNG PyMuPDF, `Read` PDF butuh pdftoppm yang tidak ada).
   atau dasar usulan kenaikan pangkat istimewa — [Likely], belum dikonfirmasi Biro SDM.
 
 Dipakai di [[project-kti-sigap-sipdln]].
+
+**Untuk Aldo:** ia kini JF Penata Kanselerai (ditegaskan 4 Okt 2026, [[user-jabatan-kemlu]]), jadi Permenlu 23/2020
+berlaku langsung sebagai pedoman KTI-nya. Kode unit untuk penomoran naskah: Kepmenlu 40/B/HK/09/2025/01
+(23 Sep 2025) — 63 unit kerja kode 19–81, BUP = 25; dasar: Permenlu 13/2024 Tata Naskah Dinas (BN 2024/989).
