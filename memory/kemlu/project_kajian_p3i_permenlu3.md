@@ -53,5 +53,13 @@ blok pengesahan PPK/Tim Teknis/Penyedia. Tanpa nama Aldo/mention akun. Belum die
 doc). Hal internal (RAB, posisi termin) sengaja tidak masuk dokumen. C5 (policy brief/pedoman implementasi) membuka
 inkonsistensi KAK sendiri — keputusan PPK apakah dibawa ke rapat.
 
-**Status:** matriks siap dipakai di rapat pembahasan; tanggal rapat belum ada. Terkait: [[project_rapat_kemendag_pbjln]]
+**Kertas kerja Excel (5 Okt 2026, permintaan Aldo):** `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Jasa Konsultan Kajian
+RPermenlu 03 2023 P3I\Kertas Kerja Catatan Koreksi LP P3I.xlsx` — 4 lembar: Identitas (usulan, petunjuk, contoh pengisian,
+ringkasan otomatis COUNTIF/COUNTIFS, disusun/direviu, pengesahan), A-B Matriks Koreksi (kolom kuning: tanggapan, dropdown
+hasil pembahasan, dropdown status tindak lanjut Belum/Sebagian/Selesai, catatan verifikasi), C Keputusan Rapat, D Redaksional.
+Cetak A4 lanskap 7 hlm (Identitas skala tetap 85% + pemisah halaman sesudah baris 24). Rumus diuji dengan isian contoh → OK.
+Builder `C:\Users\rivsy\dev\kemlu\koreksi-lp-p3i\` (`build_xlsx.py` menolak menimpa tanpa `--force`; `finalize.ps1` =
+Excel COM hitung ulang + AutoFit + ekspor PDF). Excel = salinan kerja; Claude Doc tidak ikut berubah bila Excel diisi.
+
+**Status:** matriks (Doc + Excel) siap dipakai di rapat pembahasan; tanggal rapat belum ada. Terkait: [[project_rapat_kemendag_pbjln]]
 (fakta Lampiran A/B), [[reference_mdp_pbjp_ringkas]] (9 celah), [[project_pdp_kemlu]] (VMS).
