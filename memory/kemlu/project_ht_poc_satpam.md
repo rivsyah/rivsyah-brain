@@ -32,3 +32,5 @@ Kontrak harus diteken sebelum 1 Okt 2026 agar tidak mundur tanggal.
 
 Cara bangun ulang: openpyxl pada koordinat asli, lalu Excel COM menghapus baris (rumus lintas sheet ikut geser),
 `CalculateFull`, simpan. Docx: `merge_runs.py` dulu (run terpecah 2.426). Lihat [[reference_office_render]].
+
+Nama PPK menurut Aldo (5 Okt 2026): **Charles Bob Ivan**. Dokumen paket ini masih memakai "Charles Ivan Bob" — ganti bila dicetak ulang; dokumen yang sudah diteken tidak disentuh. Lihat [[project-gws-business-standard]].

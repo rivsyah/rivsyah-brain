@@ -58,3 +58,5 @@ Penyedia paket bulanan sebelumnya: CV. Milan Sentosa.
 Koreksi 30 Sep 2026 (dari POK di Wasdit, sheet Sheet94): "Pengadaan Keperluan Sehari-hari Perkantoran Biro Umum" adalah nama
 **subkomponen 002.H**, bukan komponen 002. Komponen 002 = "Operasional dan Pemeliharaan Kantor". Baris "002" di RAB paket ini
 (dan KAK HT) memakai nama yang keliru. Paket [[project-gws-business-standard]] sudah memakai nama yang benar.
+
+Nama PPK menurut Aldo (5 Okt 2026): **Charles Bob Ivan**. Dokumen paket ini masih memakai "Charles Ivan Bob" — ganti bila dicetak ulang; dokumen yang sudah diteken tidak disentuh. Lihat [[project-gws-business-standard]].

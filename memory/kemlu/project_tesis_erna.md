@@ -130,6 +130,32 @@ batas waktu 7 Okt di halaman 1. Bagian: A–C catatan dosen (dirujuk ke pasal pe
 pustaka, D14 kutipan "&"/et al.; entri benar ditulis format STIESIA), E saran responden, F1–F5 sistematika,
 G1–G8 format Bab 5, H1–H5 temuan lain (= F lama). v1 dibiarkan apa adanya. Builder `build_checklist_v2.js`.
 
-Status: deck dan naskah selesai. Masukan dosen sudah ditranskripsi dan dijadikan checklist v2. Revisi proposal dikerjakan Erna sendiri;
-belum ada yang diubah di PDF. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`).
+**Proposal direvisi (5 Okt 2026, atas perintah Aldo "langsung perbaiki"):**
+`Thesis Teh Erna\Proposal_Tesis_Erna_Revisi.docx` (+ `.pdf`), 76 hlm. File Word asli proposal TIDAK ada di mesin
+ini, jadi naskah dibangun ulang dari PDF ujian. Builder + sumber teks: `~/dev/kemlu/tesis-erna/` (docx-js; Word
+COM memperbarui daftar isi, daftar tabel/gambar, nomor SEQ). Berisi 33 komentar Word "Catatan Revisi" untuk dicek
+Erna (wajib dihapus sebelum cetak). Yang diubah:
+- Sistematika pedoman 3.1: sampul luar+dalam, Halaman Persetujuan (Lamp 4), Bab 3 jadi 3.1–3.5, Jadwal Penelitian
+  (usulan Okt 2026–Mar 2027), 1.4 Manfaat Praktis/Teoritis/Kebijakan, subbab baru 2.1.5 Penelitian Terdahulu
+  (Allayannis & Ofek 2001, Wang et al. 2024, Christanto & Wijayanti 2023, Putri & Harahap 2024).
+- Format Bab 5: margin 4-3-4-3, TNR 12 spasi 2, inden 1,27 cm, nomor halaman (sampul tanpa nomor, romawi tengah
+  bawah, isi mulai 1 kanan atas), urutan penomoran, bullet → huruf/angka, tabel tanpa garis tegak + baris sumber,
+  istilah asing miring otomatis, rentang angka tidak terpotong.
+- Isi: responden inti/pelengkap dihapus (jawaban Pak Ikhsan), 265 → 264, uji t ditulis ulang + arah koefisien,
+  VIF/tolerance dibetulkan, Streiner dihapus, jenis data = data subjek, butir FNT5/FNT7/FAA6/KIH7 dirumuskan
+  ulang, Gambar 1 digambar ulang tanpa label, Tabel 2 dihapus, 7,87%, terdepresiasi, Rp135,5 jt = selisih.
+- **Perpres 50/2024 di kalimat pertama Bab 1 keliru** (itu tukin Kemenkop UKM); diganti Perpres 150/2024 tentang
+  Kemlu (5 Nov 2024). Inpres 1/2025 = Efisiensi Belanja APBN/APBD TA 2025 (22 Jan 2025).
+- Daftar pustaka 32 entri format Lampiran 12; semua kutipan ↔ entri cocok (dicek otomatis).
+- Lampiran 2 baru (permintaan Aldo): daftar 132 Perwakilan RI = 95 KBRI + 30 KJRI + 4 KRI (Tawau, Songkhla,
+  Darwin, Vanimo) + 3 PTRI (ASEAN-Jakarta, New York, Jenewa); sumber Wikipedia per 2026 (portal Kemlu tak bisa
+  dibuka); KBRI Sana'a dikecualikan (ditutup sementara sejak 2019). Kuesioner Bagian I merujuk lampiran ini.
+Masih perlu Erna: sumber Tabel 1 dan konsistensi kurs 2025 (Rp16.000 vs Rp15.400; puncak Rp16.640 < rata-rata
+Rp16.862), sumber kutipan Bhima Yudhistira, tanggal unduh JISDOR, entri BPK RI 2014, jadwal, klaim Ahrens & Ferry.
+Jebakan teknis: Word COM putus koneksi saat `Close` (file sudah tersimpan); Word `SaveAs2` mengisi
+`cp:lastModifiedBy` dengan nama Aldo → wajib ditambal di core.xml; caption tebal harus lewat style "Caption"
+(bukan format langsung) agar Daftar Tabel tidak ikut tebal; baris baru di caption dibuang dari daftar lewat Find ^l.
+
+Status: deck, naskah, checklist v2, dan proposal revisi selesai. Erna tinggal mengecek 33 komentar sebelum 7 Okt.
+Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`).
 LibreOffice dan poppler tidak ada; render PDF pakai PyMuPDF (`python` 3.11, bukan `py`).

@@ -1,12 +1,12 @@
 ---
 name: project-gws-business-standard
-description: "Paket Langganan Google Workspace Business Standard 6 seat BUP Kemlu periode 2026–2027 (akun 6023.EBA.994.002.M.522119): KAK/Spektek + RAB/HPS dibuat 30 Sep 2026, HPS Rp21.090.000 incl PPN (median 3 sumber); produk ada di e-katalog (e-purchasing wajib, Pasal 50 (5)); pagu akun 522119 tidak cukup tanpa revisi"
+description: "Paket Langganan Google Workspace Business Standard 6 seat BUP Kemlu periode 2026–2027 (akun 6023.EBA.994.002.M.522119): KAK/Spektek + RAB/HPS dibuat 30 Sep 2026; Aldo ubah ke 2 paket = Rp42.180.000 (1 Okt); PPK Charles Bob Ivan (5 Okt); harga 1 paket = median 3 sumber; produk ada di e-katalog (e-purchasing wajib, Pasal 50 (5)); pagu akun 522119 tidak cukup tanpa revisi"
 metadata:
   type: project
 ---
 
 Paket: Pengadaan Langganan Lisensi Google Workspace Business Standard (6 Seat) untuk Biro Umum dan Pengadaan Kemlu,
-Periode 2026–2027. Barang, akun 6023.EBA.994.002.M.522119 Belanja Langganan Daya dan Jasa Lainnya. PPK Charles Ivan Bob.
+Periode 2026–2027. Barang, akun 6023.EBA.994.002.M.522119 Belanja Langganan Daya dan Jasa Lainnya. PPK **Charles Bob Ivan** (koreksi Aldo 5 Okt 2026; paket lain masih memakai urutan lama "Charles Ivan Bob").
 6 seat = 1 akun per bagian: Sekro BUP, Rumga, PBMN, Pemeliharaan, PAKSP, BLP.
 
 **Arahan Aldo (30 Sep 2026):** jangan sebut tunggakan / periode 2025–2026 di dokumen; paket ini hanya periode 2026–2027;
@@ -14,7 +14,8 @@ format = Spektek + RAB/HPS paket [[project-langganan-media-cetak]].
 
 ## File (mesin riv)
 
-- `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Spesifikasi Teknis - Langganan Google Workspace Business Standard Biro Umum Kemlu 2026-2027.docx` + `.pdf` (8 hlm)
+- **Lokasi sejak 1 Okt 2026:** subfolder `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Pengadaan Lisensi Google Workspace Business 2026\` (Aldo memindahkan).
+- `...\Spesifikasi Teknis - Langganan Google Workspace Business Standard Biro Umum Kemlu 2026-2027.docx` + `.pdf` (8 hlm)
 - `...\RAB dan HPS - Langganan Google Workspace Business Standard Biro Umum Kemlu 2026-2027.xlsx` + `.pdf` (RAB landscape, HPS portrait;
   sheet tersembunyi Kertas Kerja HPS, Uji Silang 15 butir, Petunjuk)
 - Builder: `C:\Users\rivsy\dev\kemlu\gws-langganan-2026\` (README.txt berisi urutan jalan). Template = paket Media Cetak Okt–Des.
@@ -47,3 +48,15 @@ format = Spektek + RAB/HPS paket [[project-langganan-media-cetak]].
 - Tanggal mulai masa 12 bulan harus dicek di Admin Console (menu Penagihan) — tidak boleh mendahului tanggal kontrak.
 - Tanggal tanda tangan diketik "......... Oktober 2026".
 - Pasal 19 ayat (2) huruf c (penyebutan merek, bagian dari sistem yang ada) terverifikasi s.d. konsolidasi Perpres 12/2021.
+
+## Revisi 1–5 Okt 2026
+
+- **1 Okt (Aldo, di Word/Excel):** volume jadi **2 paket** — RAB E25 = 2, KAK 7.1 kolom Volume = 2, KAK 4.2 dan terbilang HPS =
+  **Rp42.180.000** (2 x Rp19.000.000 + PPN Rp4.180.000). PDF RAB/HPS diekspor ulang lewat Acrobat PDFMaker.
+- **5 Okt (atas permintaan Aldo):** nama PPK diganti "Charles Bob Ivan" langsung di berkas versi Aldo (bukan build ulang):
+  KAK sampul + tabel bab 5 + blok ttd; RAB N37, HPS F35, Kertas Kerja HPS N26. PDF KAK ikut diekspor ulang (yang lama masih
+  versi 30 Sep bernilai Rp21,09 jt). Cadangan versi 1 Okt ada di scratchpad sesi, bukan di folder Aldo.
+- Builder `~/dev/kemlu/gws-langganan-2026` sudah disamakan (nama + 2 paket); build ulang = 0 selisih teks/sel dengan berkas kini.
+- **Belum konsisten (dibiarkan, keputusan Aldo):** teks KAK 1.2, 2.1, 6.1, 7.2, 8 serta RAB E8/E12/E13 dan HPS C11/C19 masih
+  menyebut "6 seat x 12 bulan (1 paket)"; lembar tersembunyi Petunjuk masih menulis Rp21.090.000. Paket kedua tidak dijelaskan
+  di dokumen. Kebutuhan pagu naik ke Rp42,18 jt.
