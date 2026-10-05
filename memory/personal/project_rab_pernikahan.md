@@ -1,6 +1,6 @@
 ---
 name: RAB Tunangan & Pernikahan
-description: "RAB tunangan Rp50 jt (muat, Rumah Rp48,2 jt) + nikah Rp200 jt. Sejak 4 Okt 2026 ada 19 opsi venue di sheet Alternatif Venue (venue dipilih di C5). 300 tamu: CIBIS Park Gold 300 (Rp170 jt, resmi 2026) total Rp232,5 jt — lebih Rp32,5 jt, muat bila cincin/mahar/seserahan terpisah; Swasana premium est. Rp362 jt; Hadjatan mulai Rp52,5 jt tier belum terbit. Intimate termurah NIWA Prive. Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
+description: "RAB tunangan Rp50 jt + nikah Rp200 jt, 7 sheet (RAB + kolom Ditanggung, Alternatif Venue 20 opsi, Rencana Tabungan dua fase, Daftar Undangan). Per 5 Okt 2026: tunangan Rp56,7 jt (lebih Rp6,7 jt karena cincin Frank & co. Rp32 jt), nikah CIBIS 300 Rp213,1 jt (lebih Rp13,1 jt; CIBIS 200 Rp194,8 jt muat). Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
 metadata:
   type: project
 ---
@@ -8,8 +8,8 @@ metadata:
 Dibuat 4 Okt 2026, sesi Bara di mesin riv. Scope: personal.
 
 **Lokasi (mesin riv):** `C:\Users\rivsy\dev\personal\rab-pernikahan\`. Alur: `data.py` (item, harga, sumber) →
-`build.py` → `recalc.ps1` (Excel COM) → `verify.py` (gerbang). Hasil: `out\RAB_Tunangan_Pernikahan.xlsx`, 5 sheet:
-Ringkasan, RAB Tunangan, RAB Pernikahan, Alternatif Venue, Sumber. Alat Office: [[reference_office_render]].
+`build.py` → `recalc.ps1` (Excel COM) → `verify.py` (gerbang). Hasil: `out\RAB_Tunangan_Pernikahan.xlsx`, 7 sheet:
+Ringkasan, RAB Tunangan, RAB Pernikahan, Alternatif Venue, Rencana Tabungan, Daftar Undangan, Sumber. Alat Office: [[reference_office_render]].
 
 **Asumsi yang dipakai:** "300 orang" = 300 tamu, bukan 300 kartu undangan. Tamu tunangan 70 (asumsi). Lokasi tunangan
 default Rumah; toggle Rumah/Restoran/Hotel di sel C6. Dana cadangan = persen × semua item: 10% tunangan, 5% nikah.
@@ -56,8 +56,8 @@ Berkas tidak disimpan.
   katering saja. Swasana Hadjatan Package (Kulo WO, grup Kediaman Corp) mulai Rp52,5 jt, 100–700 pax (IG 27 Sep 2026).
   "Levictus" = Leviticus 11 (Meruya, Jakbar). Cara riset: [[reference_social_price_research]].
 
-⚠ OPEN: harga Hadjatan 300 pax — harus ≤ ±Rp120 jt agar nikah muat Rp200 jt (≤ ±Rp154 jt bila cincin/mahar/seserahan
-terpisah). Aldo yang minta ke Swasana.
+⚠ OPEN: harga Hadjatan 300 pax — per 5 Okt harus ≤ ±Rp140 jt agar nikah muat Rp200 jt (≤ ±Rp158 jt bila mahar &
+seserahan terpisah). Aldo yang minta ke Swasana.
 ⚠ OPEN: apakah Rp200 jt termasuk cincin, mahar, seserahan? Ini menentukan apakah CIBIS 300 muat.
 ⚠ OPEN: NIWA Prive — porsi, jam, nett/++ belum diketahui (harga dari iklan).
 - Cerita Rasa (PDF Price List Banquet Event 2026 dari Aldo, dibuat 30 Sep 2026): Glasshouse 80–250 pax, 3 jam; buffet
@@ -65,4 +65,20 @@ terpisah). Aldo yang minta ke Swasana.
   sewa Glasshouse Rp10 jt (Sen–Kam) / Rp15 jt (Jum–Min) nett — dianggap terpisah dari minimum belanja (⚠ belum
   dikonfirmasi). Joglo/Function Room untuk lamaran: venue + makan ±Rp34–41 jt, tidak muat RAB tunangan Rp50 jt.
   Brosur Glass House (PDF kedua) hanya foto.
+
+**Update 5 Okt 2026 — daftar perubahan dari Aldo (dibuat bersama pasangan):**
+- Sheet baru: `Daftar Undangan` (400 baris, dropdown pihak/kelompok/acara/jenis/RSVP, ringkasan vs kapasitas venue dan
+  50 undangan cetak) dan `Rencana Tabungan` (setoran dua fase per orang; jadwal bayar venue ikut syarat CIBIS: DP Rp5 jt,
+  cicilan 10/20/20/30% di bulan +1..+4, pelunasan H-1 bulan; tanggal masih CONTOH). Kolom `Ditanggung` (Berdua/Pria/
+  Wanita/Ortu pria/Ortu wanita) di kedua RAB; default Berdua, mahar/seserahan/hantaran = Pria. Verify 1.105 rumus lulus.
+- Tunangan: tenda/kursi/sound, undangan digital, souvenir, Hiace dihapus; MC Rp500 rb; cincin SEKALI untuk tunangan +
+  nikah: Frank & co. Love Poetry Marea Diamond Couple 18K Rp32 jt (halaman produk, dicek 5 Okt 2026) masuk RAB Tunangan;
+  dekorasi Rp2,5 jt, hantaran Rp3 jt, foto+video Rp2,7 jt, MUA ibu Rp800 rb; cadangan tunangan 10% → 5%.
+- Nikah: siraman & midodareni Rp8,5 jt (harga terbawah kisaran invidoto 2025); undangan hardcover 50 lembar; mobil Rp1 jt;
+  tip Rp2 jt; seragam keluarga dihapus; prewedding Rp2 jt; seserahan Rp7,5 jt; souvenir Rp5 rb. Opsi CIBIS Gold 400 pax
+  Rp183 jt ditambahkan (total Rp227,1 jt).
+- Hasil: tunangan Rp56,69 jt; nikah CIBIS 300 Rp213,06 jt (tanpa mahar & seserahan Rp194,7 jt); total dua acara
+  Rp269,75 jt vs Rp250 jt. Tabungan contoh (mulai Nov 2026, booking Des 2026, tunangan Mar 2027, nikah Okt 2027): fase 1
+  Rp32,9 jt/bln sampai Apr 2027 (puncak cicilan CIBIS), fase 2 Rp12,4 jt/bln. Booking venue lebih dekat ke hari H
+  menurunkan setoran puncak (contoh booking Apr 2027: ±Rp23,6 jt/bln).
 
