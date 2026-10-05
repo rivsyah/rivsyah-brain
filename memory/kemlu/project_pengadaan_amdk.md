@@ -1,6 +1,6 @@
 ---
 name: project-pengadaan-amdk
-description: "Paket AMDK Setjen Kemlu TA 2026 (e-purchasing, Aldo = Pejabat Pengadaan): Okt–Des, 2.980 galon + 120 karton, Rp64,4 jt, pagu 100 jt; KAK rev3 + RAB rev4 (30 Sep, alamat 10 titik) menunggu teken ulang; scan 28 Sep salah ketik pagu"
+description: "Paket AMDK Setjen Kemlu TA 2026 (e-purchasing, Aldo = Pejabat Pengadaan): Okt–Des, 2.980 galon + 120 karton, Rp64,4 jt, pagu 100 jt; PPK = Charles Bob Ivan; dipakai scan teken 28 Sep + Lampiran alamat rev1; cadangan KAK rev4 + RAB rev5"
 metadata:
   type: project
 ---
@@ -10,18 +10,25 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 
 ## File (mesin riv, `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\`)
 
-- `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev4.xlsx` + `.pdf` — **terkini (30 Sep 2026)**, isi = "Revisi 3, 30 September 2026":
+- **Nama PPK yang benar: Charles Bob Ivan** (koreksi Aldo, 5 Okt 2026). "Charles Ivan Bob" di semua versi sebelumnya salah.
+- Semua file AMDK dipindah Aldo ke subfolder `Pengadaan AMDK Sekjen\` (30 Sep 11:04).
+- `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev5.xlsx` + `.pdf` — **terkini (5 Okt 2026)**, isi = "Revisi 4, 5 Oktober 2026":
+  sheet 0 B23 = Charles Bob Ivan (ditarik ke M40 RAB/HPS), M33 "Oktober 2026", baris riwayat 71. 153 rumus, 0 error.
+- `KAK_Spektek_AMDK_Setjen_Kemlu_TA2026_rev4.docx` + `.pdf` — **terkini (5 Okt 2026)**, 8 hlm: nama PPK di sampul, butir 5,
+  dan blok ttd; tanggal ttd "Oktober 2026". Selain itu sama dengan rev3.
+- `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev4.xlsx` + `.pdf` — 30 Sep 2026, isi = "Revisi 3, 30 September 2026":
   alamat 10 titik di sheet 1b kolom F, pagu "Rp100.00.000,00" → Rp100.000.000,00 (RAB+HPS D16), sheet 0 B21 = 100 jt,
   sheet 5 C22–C24 #REF! diperbaiki, 1a/1b fit 1 halaman. PDF 4 hlm (RAB, HPS, 1a, 1b); ukuran halaman tidak A4 karena
   driver printer — sama dengan ekspor Aldo 28 Sep.
-- `KAK_Spektek_AMDK_Setjen_Kemlu_TA2026_rev3.docx` + `.pdf` — **terkini (30 Sep 2026)**, 8 hlm: alamat di tabel 6.2
+- `KAK_Spektek_AMDK_Setjen_Kemlu_TA2026_rev3.docx` + `.pdf` — 30 Sep 2026, 8 hlm: alamat di tabel 6.2
   (kolom 520/1950/1700/3384/1800 dxa), 9 paragraf pengganjal sebelum "14. PENUTUP" diganti pageBreakBefore,
   pageBreakBefore di paragraf kosong terakhir dibuang (itu sumber halaman 9 kosong di PDF 28 Sep).
 - Versi 28 Sep (diedit Aldo di Excel/Word 13:21): `rev3.xlsx`/`rev2.docx` + PDF-nya — blok ttd KAK jadi "Plt. Kepala Biro
   Umum dan Pengadaan, Sukmo Yuwono"; blok PPN/uji pagu/peringatan dihapus dari cetakan RAB/HPS; "Volume Rincian Output"
   diisi "Unit". Versi ini yang dicetak dan diteken → scan `SKM_367 KEM26092815360.pdf` (28 Sep 15:36, 12 hlm: KAK 1–8,
   RAB 9, HPS 10, sheet 1a 11, sheet 1b 12). PPK sudah teken KAK/RAB/HPS; Plt. Kepala Biro belum.
-  **Cacat di scan bertanda tangan:** pagu tertulis "Rp100.00.000,00" di RAB dan HPS; kolom alamat kosong.
+  **Cacat di scan bertanda tangan:** pagu tertulis "Rp100.00.000,00" di RAB dan HPS; kolom alamat kosong; nama PPK
+  tercetak "Charles Ivan Bob" (sampul + butir 5 + ttd KAK, ttd RAB, ttd HPS) padahal yang benar Charles Bob Ivan.
 - File alamat: `alamat penyerahan penyediaan air minum.xlsx` (29 Sep). Menulis "Wichan"; dokumen tetap "Wican".
   Alamat hanya dirapikan spasi/tanda baca (mis. "Kahfi1" → "Kahfi 1", "Jl.M.H.Thamrin" → "Jl. M.H. Thamrin").
 - Menempel teks alamat langsung ke scan bertanda tangan **ditolak pemeriksa keamanan 2x** (30 Sep), termasuk setelah
@@ -30,7 +37,8 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 - **Dipakai Aldo (30 Sep):** scan bertanda tangan + lampiran terpisah
   `Lampiran_KAK_Alamat_Titik_Penyerahan_AMDK_TA2026.docx` + `.pdf` (1 hlm): blok rujukan KAK, tabel No/Titik/Status/
   Alamat (cetakan tabel 6.2 tanpa kolom alokasi), catatan titik penempatan per butir 8.2 a, blok ttd salinan KAK
-  (Plt. Kepala Biro + PPK, "September 2026"). Perlu diteken sendiri. KAK rev3/RAB rev4 tetap ada sebagai cadangan.
+  (Plt. Kepala Biro + PPK, "September 2026"). Diganti **`..._rev1.docx` + `.pdf` (5 Okt 2026)**: nama PPK Charles Bob
+  Ivan, tanggal "Oktober 2026". Perlu diteken sendiri. KAK rev4/RAB rev5 tetap ada sebagai cadangan.
 - `rev2.xlsx` = Revisi 1 (Sep–Des). `rev1.docx` = KAK Sep–Des.
 - SSKK: `Pengadaan AMDK Sekjen\SSKK_Terisi_AMDK_Setjen_Kemlu_TA2026_rev1.docx` — **terkini** (27 Sep 2026), selaras
   KAK rev2/RAB rev3. File tanpa `_rev1` = draf 5 Agu 2026, tidak disentuh. Isi file = SSUK e-purchasing (butir 1–67,
