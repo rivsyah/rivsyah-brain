@@ -83,7 +83,7 @@ Scan = 3 lembar "Perbaikan Proposal Tesis", satu per dosen, tulisan tangan. Nomo
   satu-satunya bagian berspasi 1,5 (lainnya spasi 2), judulnya berspasi huruf; (7) lihat buku pedoman.
 - Ikhsan Budi Riharjo (penguji 2): (1) penulisan ikut pedoman STIESIA: urutan penulisan, hindari bullet,
   daftar pustaka; (2) PERTANYAAN: kenapa responden dibagi inti & pelengkap (hlm 47)? dianalisis terpisah?
-Buku pedoman tesis STIESIA tidak ada online. Panduan kutipan STIESIA (academia.edu, 403) memakai Harvard-APA.
+Buku pedoman tesis STIESIA tidak ada online, tetapi Aldo memberi salinannya 5 Okt 2026 (lihat "Buku Pedoman" di bawah).
 
 **Cek daftar pustaka (1 Okt 2026, Crossref + OpenAlex):**
 - **Kemungkinan fiktif:** Lee & Wang (2023) dan Nguyen & Faff (2022). Judulnya tidak ditemukan, dan DOI-nya
@@ -104,6 +104,32 @@ di luar catatan dosen (F1 erigo store hlm 57, F2 VIF/tolerance, F3 item tumpang 
 G cek akhir. Builder docx-js di scratchpad sesi (npm `docx` 9.8.1 dipasang lokal; global tidak ada).
 Render Word COM. `creator` kosong di docx-js tetap jadi "Un-named" → core.xml ditambal lewat zipfile.
 
-Status: deck dan naskah selesai. Masukan dosen sudah ditranskripsi dan dijadikan checklist. Revisi proposal dikerjakan Erna sendiri;
+**Buku Pedoman (5 Okt 2026):** `C:\Users\rivsy\Downloads\Buku Pedoman Tesis S2 New.pdf` (mesin ini), 99 hlm,
+terenkripsi AES tapi text layer terbaca PyMuPDF. Halaman buku = halaman PDF − 5; rujuk dengan nomor bagian.
+- **Batas revisi proposal: 2 minggu sejak ujian (2.4 butir 4.e.2) → Rabu 7 Okt 2026.** Revisi setelah ujian
+  tesis maks 3 bulan; ujian tesis butuh TOEFL ≥ 500, surat bebas plagiasi, 4 eksemplar softcover biru.
+- Sistematika proposal (3.1): awal = Halaman Judul (sampul luar & dalam, Lamp 2), Halaman Persetujuan (Lamp 4),
+  Daftar Isi. Bab 3 = 3.1 Jenis Penelitian & Gambaran Populasi, 3.2 Teknik Pengambilan Sampel, 3.3 Teknik
+  Pengumpulan Data (jenis, sumber, teknik), 3.4 Variabel & DOV, 3.5 Teknik Analisis Data. Akhir = Jadwal
+  Penelitian + Daftar Pustaka. 2.1 Tinjauan Teoritis wajib memuat hasil penelitian yang relevan.
+- "Urutan penulisan" (5.3 butir 1.d) = BAB 1 → 1.1 → 1.1.1 → 1. → a. → 1) → a). Pointers/bullet dilarang
+  (5.9 butir 1.e) — menguatkan tafsiran "border" = bullet.
+- Format (5.9): A4, margin atas 4/bawah 3/kiri 4/kanan 3 cm, TNR 12, spasi 2, alinea inden 7 ketukan.
+  Nomor halaman proposal (5.1): sampul tanpa nomor, awal romawi tengah bawah, isi angka arab mulai 1 kanan atas.
+- Tabel (5.4, Lamp 13): "Tabel n" + judul di atas, tanpa garis tegak, tak boleh terpotong halaman, sumber di
+  bawah. Gambar: nomor + judul di bawah.
+- Pustaka (Lamp 12, Harvard-APA versi STIESIA): "dan" bukan "&"; > 2 penulis et al. di teks, dilarang et al. di
+  daftar; format "Nama, I. dan I. Nama. Tahun. Judul. __Jurnal__ Vol(No): hlm."; contoh tanpa DOI; peraturan wajib
+  masuk daftar.
+Pelanggaran naskah yang ditemukan: isi mulai hlm 7 dan bernomor tengah bawah, sampul bernomor "i", tidak ada
+Halaman Persetujuan dan Jadwal Penelitian, Bab 3 tak sesuai sistematika, Tabel 3–6 terpotong halaman, semua entri
+pustaka berformat APA biasa, 11 kutipan memakai "&" (hlm 12, 15, 42, 49, 50, 52).
+
+**Checklist v2 (5 Okt 2026):** `Thesis Teh Erna\Checklist_Revisi_Proposal_Tesis_Erna_v2.docx`, 9 hlm. Kotak
+batas waktu 7 Okt di halaman 1. Bagian: A–C catatan dosen (dirujuk ke pasal pedoman), D1–D14 (+ D13 format
+pustaka, D14 kutipan "&"/et al.; entri benar ditulis format STIESIA), E saran responden, F1–F5 sistematika,
+G1–G8 format Bab 5, H1–H5 temuan lain (= F lama). v1 dibiarkan apa adanya. Builder `build_checklist_v2.js`.
+
+Status: deck dan naskah selesai. Masukan dosen sudah ditranskripsi dan dijadikan checklist v2. Revisi proposal dikerjakan Erna sendiri;
 belum ada yang diubah di PDF. Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`).
 LibreOffice dan poppler tidak ada; render PDF pakai PyMuPDF (`python` 3.11, bukan `py`).
