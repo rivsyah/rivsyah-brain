@@ -11,6 +11,7 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
 ## File (mesin riv, `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\`)
 
 - **Nama PPK yang benar: Charles Bob Ivan** (koreksi Aldo, 5 Okt 2026). "Charles Ivan Bob" di semua versi sebelumnya salah.
+  Nama + NIP pejabat untuk semua paket BUP: [[reference_pejabat_bup]].
 - Semua file AMDK dipindah Aldo ke subfolder `Pengadaan AMDK Sekjen\` (30 Sep 11:04).
 - `RAB_HPS_AMDK_Setjen_Kemlu_TA2026_rev5.xlsx` + `.pdf` — **terkini (5 Okt 2026)**, isi = "Revisi 4, 5 Oktober 2026":
   sheet 0 B23 = Charles Bob Ivan (ditarik ke M40 RAB/HPS), M33 "Oktober 2026", baris riwayat 71. 153 rumus, 0 error.
