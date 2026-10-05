@@ -1,6 +1,6 @@
 ---
 name: project-rapat-kemendag-pbjln
-description: "Rapat koordinasi PBJ LN dengan Biro Keuangan Setjen Kemendag, Senin 5 Okt 2026 14.00 (surat KU.01.00/1052/SJ-DAG/SD/10/2026): pointers DOCX 6 hlm + deck PPTX 11 slide dibuat 4 Okt 2026; isu = uang muka TA 2026 untuk pameran TA 2027; sikap: Permenlu 3/2023 menjawab CARA mengadakan, bukan KAPAN APBN boleh dibayar (ranah Kemenkeu)"
+description: "Rapat koordinasi PBJ LN dengan Biro Keuangan Setjen Kemendag, Senin 5 Okt 2026 14.00 (surat KU.01.00/1052/SJ-DAG/SD/10/2026): pointers versi Aldo = Pointers_Rapat_Rivaldo.docx (5 Okt) dan deck v2 12 slide mengikutinya; isu = uang muka TA 2026 untuk pameran TA 2027; sikap: Permenlu 3/2023 menjawab CARA mengadakan, pembayaran lintas TA ranah Kemenkeu"
 metadata:
   type: project
 ---
@@ -23,6 +23,20 @@ Sumber: `C:\Users\rivsy\Downloads\DS SD 1052.pdf`.
     pembicara di tiap slide; footer "bahan diskusi, bukan pendapat hukum resmi"). Untuk ditayangkan ke Kemendag.
 - Builder: `C:\Users\rivsy\dev\kemlu\rapat-kemendag-pbjln\` (build_pptx.js, build_docx.js, render.ps1, README.md).
 - Preseden format: `Downloads\MOFA\BUP\Renovasi KBRI Beijing\` (Bahan_Rapat docx + Slide_Rapat pptx, Jul 2026).
+
+## Versi 2 — 5 Okt 2026 (pegangan sekarang)
+
+Aldo menyunting pointers sendiri: **`Pointers_Rapat_Rivaldo.docx`** (folder yang sama, 11.19 WIB). Pointers buatan
+Bara ganti nama jadi `Pointers_Rapat_Karo_Koordinasi_PBJ_LN_Kemendag 1.docx`. Perubahan Aldo: bagian "hal yang perlu
+dihindari", dasar hukum, praktik Kemlu, dan catatan verifikasi dibuang; sewa ruang = Penunjukan Langsung **atau
+Pengadaan yang Dikecualikan** (Perpres Ps 61 (1) b–c: tarif yang dipublikasikan / praktik bisnis mapan); opsi A disebut
+"pengadaan Pra DIPA 2027"; opsi C dilunakkan jadi "perlu diskusi dengan DJPb dan DJA" (tabel D tetap "jangan
+dianjurkan"); booth "masuk kategori Jasa Lainnya" tanpa syarat; kesimpulan H tinggal 2 butir.
+Deck v2 = 12 slide mengikuti urutan pointers itu: Inti Isu → Kedudukan → Penerapan → Batas Permenlu → Opsi → Dukungan
+Kemlu → Pertanyaan untuk Kemendag → Kesimpulan (2 butir) → Lampiran 1 ambang nilai, 2 bentuk kontrak, 3 rincian
+ketentuan APBN (cadangan tanya jawab). Deck v1 (11 slide) disimpan di `rapat-kemendag-pbjln\out\v1-2026-10-04\`.
+Satu penyimpangan sadar: pointers B2 menulis "APBN/APBD", slide tetap "APBN" karena Ps 1 angka 1 Permenlu hanya
+menyebut K/L dan APBN (sudah disampaikan ke Aldo).
 
 ## Sikap yang diusulkan ke pimpinan
 
