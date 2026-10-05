@@ -12,7 +12,12 @@ mekanismenya diganti:
 - **docx → PDF:** Word 16 lewat COM di PowerShell:
   `$w = New-Object -ComObject Word.Application; $d = $w.Documents.Open(path, $false, $true);`
   `$d.ComputeStatistics(2)` (jumlah halaman) lalu `$d.ExportAsFixedFormat(pdfPath, 17)`; tutup dengan `$w.Quit()`.
-  **MACET sejak 27 Sep 2026:** `ExportAsFixedFormat`, `SaveAs2` ke PDF (17) dan ke XPS (18) menggantung tanpa dialog —
+  **Jalur paling andal (5 Okt 2026, sesi Media Cetak):** `$d.SaveAs([ref]$pdf, [ref]17)` (SaveAs lama, argumen
+  `[ref]`), TANPA `$wd.DisplayAlerts = 0` — selesai 1 detik. Di sesi yang sama `ExportAsFixedFormat` macet 4/4 (buka
+  read-only, read-write, dokumen kosong baru, tujuan di luar %TEMP%; semuanya dengan `DisplayAlerts = 0`), padahal sesi
+  lain hari itu lancar memakai ExportAsFixedFormat. Jadi: coba SaveAs [ref] dulu; macet → bunuh PID sendiri, jangan ulang
+  cara yang sama. Riwayat:
+  **Macet 27 Sep 2026 09:39–09:50:** `ExportAsFixedFormat`, `SaveAs2` ke PDF (17) dan ke XPS (18) menggantung tanpa dialog —
   juga saat TIDAK ada proses Office lain (diuji 09:50). Open dan `ComputeStatistics` tetap jalan. Add-in
   `PDFMaker.OfficeAddin` (Adobe Acrobat; printer default "Adobe PDF") termuat di instance otomasi dan hanya admin yang
   bisa melepasnya — tersangka utama. **Jalur yang jalan (tanpa simpan):** `$d.ActiveWindow.View.Type = 3`, lalu per halaman
@@ -47,7 +52,7 @@ Tambahan 27 Sep 2026 (mesin riv):
 - **Jangan jalankan dua ekspor PDF Office bersamaan** (mis. sesi utama + subagent). Word dan Excel sama-sama macet
   tanpa dialog (Excel berjudul "Publishing..."); proses harus dibunuh. Satu pengguna COM pada satu waktu.
   Koreksi (sesi Media Cetak, 09:50): ekspor PDF **Word** tetap macet walau sendirian — lihat butir docx → PDF di atas.
-  Ekspor PDF Excel jalan normal saat sendirian.
+  Ekspor PDF Excel jalan normal saat sendirian. Pembaruan: macetnya ternyata tidak permanen — lihat "Jalur paling andal".
 - Skrip skill docx (`merge_runs.py`, `office/validate.py`) butuh `defusedxml`: `pip install --target <scratchpad>/pylib
   defusedxml` lalu `PYTHONPATH=<scratchpad>/pylib`. `lxml` sudah ada global.
 - Hapus/sisip baris xlsx yang dirujuk rumus: pakai Excel COM (`Rows(n).Delete()`), bukan openpyxl — openpyxl tidak

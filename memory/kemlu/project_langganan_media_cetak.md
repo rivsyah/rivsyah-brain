@@ -46,7 +46,7 @@ Penyedia paket bulanan sebelumnya: CV. Milan Sentosa.
 ## Terbuka (per 5 Okt 2026)
 
 - **Set bertanda tangan 28 Sep memuat nama PPK lama** di bawah tanda tangan (KAK sampul + butir 5 + ttd, RAB, HPS).
-  PDF ekspor 28 Sep juga masih nama lama. Perlu ekspor ulang (Word/Excel, manual — otomasi PDF Word macet) + teken ulang.
+  Perlu cetak + teken ulang. Kedua PDF di folder Surat Kabar sudah diekspor ulang 5 Okt dengan nama benar (lihat bawah).
 - Pagu: SELESAI 28 Sep — Aldo menetapkan pagu paket Rp50.000.000 di KAK dan RAB/HPS (sebelumnya KAK Rp10 jt,
   RAB/HPS Rp896.819.000 = pagu akun/detail). Catatan lama Rp896,8 jt masih tertinggal di lembar Uji Silang/Petunjuk.
 - **Sumber harga kedua kosong** (Uji Silang #7 BELUM LENGKAP). Kandidat siap pakai: harga hasil negosiasi paket Juli 2026
@@ -70,6 +70,8 @@ Koreksi 30 Sep 2026 (dari POK di Wasdit, sheet Sheet94): "Pengadaan Keperluan Se
 
 Nama PPK menurut Aldo (5 Okt 2026): **Charles Bob Ivan**. Sudah dibetulkan 5 Okt di kedua berkas terkini, langsung di
 XML (KAK 3 tempat; xlsx 1 shared string = RAB N40, HPS F38, Kertas Kerja N32), tanpa Office COM karena sesi HT/AMDK/GWS
-memakai Office bersamaan. PDF 28 Sep dan pindaian bertanda tangan tidak disentuh. NIP cocok dengan dokumen buatan manusia
+memakai Office bersamaan. Kedua PDF lalu diekspor ulang dan ditimpa: RAB/HPS lewat Excel COM per sheet (RAB, HPS) +
+digabung PyMuPDF; KAK lewat Word `SaveAs([ref]pdf,[ref]17)`. Ukuran halaman dan jumlah setiap kata identik dengan ekspor
+PDFMaker Aldo 28 Sep; bedanya hanya urutan nama. Pindaian bertanda tangan tidak disentuh. NIP cocok dengan dokumen buatan manusia
 (Koran - Juli.xlsx, HPS Seragam Juli). Sumber salah kemungkinan template `Referensi Dokumen PP\Format KAK dan Spesifikasi
 Teknis.docx`, yang memuat kedua versi nama. Lihat [[project-gws-business-standard]], [[project-pengadaan-amdk]].
