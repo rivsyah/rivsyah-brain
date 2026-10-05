@@ -48,7 +48,7 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
   27.1–27.2 termin bulanan + tempat serah terima = titik penyerahan; 28.1 SNI 3553:2015, BPOM RI MD, halal BPJPH, PDN;
   30.1 alokasi per titik indikatif (geser antar-titik tanpa adendum); 33.2 d dasar PDN = Ps. 66 (1); 52 hanya
   "Jaminan Pelaksanaan TIDAK disyaratkan" atas dasar Ps. 33 (1) (nilai HPS Rp64,4 jt), Alternatif B dibuang;
-  57.2 termin bulanan saja; 57.5 + rekapitulasi; tanggal "September 2026"; nama PPK "Charles Ivan Bob";
+  57.2 termin bulanan saja; 57.5 + rekapitulasi; tanggal "Oktober 2026" dan nama PPK "Charles Bob Ivan" (keduanya 5 Okt, menyamakan KAK rev4/RAB rev5);
   blok tanda tangan + butir 67 dikunci satu halaman (keepNext).
   Butir 52 sengaja TIDAK dihapus (beda dengan saran sheet 5 D11): SSUK 52.1 mewajibkan jaminan sebelum kontrak,
   jadi SSKK harus menyatakan pengecualiannya secara tegas.

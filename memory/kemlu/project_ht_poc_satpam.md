@@ -6,13 +6,18 @@ metadata:
 ---
 
 Paket: Pengadaan Layanan Kuota Data Seluler untuk 20 unit HT PoC (Hytera, BMN) Satpam Setjen Kemlu. Jasa Lainnya,
-Pengadaan Langsung. Akun 6023.EBA.994.002.H.521111 "Penyediaan Data Cellular HT". PPK Charles Ivan Bob.
+Pengadaan Langsung. Akun 6023.EBA.994.002.H.521111 "Penyediaan Data Cellular HT". PPK **Charles Bob Ivan** (koreksi Aldo 5 Okt 2026; lihat [[reference_pejabat_bup]]).
 Penyedia berjalan: PT Anggoro Anonindo Mandiri (AAM).
 
-File di mesin riv, folder `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\`:
-- Revisi 3 (27 Sep 2026): `RAB dan HPS - Layanan Kuota Data HT PoC Satpam Setjen Kemlu Okt-Des 2026.xlsx` dan
-  `Spesifikasi Teknis - Layanan HT PoC Satpam Setjen Kemlu Okt-Des 2026.docx` (docx ini = "KAK" menurut Aldo).
-- Revisi 2 (2-8 Sep 2026, Juli-Des, 113 unit-bulan): nama sama dengan akhiran `TA 2026`, TIDAK disentuh.
+File di mesin riv, folder `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\` (berkas kini di subfolder; terlihat 5 Okt):
+- `Pengadaan Data Celluar HT 2026\RAB dan HPS - Layanan Kuota Data HT PoC Satpam Setjen Kemlu Okt-Des 2026.xlsx` + `.pdf`
+  (RAB, HPS, Daftar Unit) dan `Spesifikasi Teknis - Layanan HT PoC ... Okt-Des 2026.pdf`. Versi ini sudah disunting Aldo
+  28 Sep (baris digeser, ttd Plt. Kepala Biro Sukmo Yuwono): edit di file ini, jangan build ulang dari skrip lama.
+- **KAK .docx tertukar folder:** `Spesifikasi Teknis - Layanan HT PoC ... Okt-Des 2026.docx` ada di
+  `Pengadaan Surat Kabar Kesekjenan\`, sedangkan KAK Media Cetak .docx ada di folder HT. Belum dipindah (5 Okt).
+- Scan bertanda tangan `Pengadaan Data Celluar HT 2026\SKM_367 KEM26092815390.pdf` (28 Sep, 11 hlm: KAK 1-8, RAB,
+  HPS, Daftar Unit): PPK sudah teken di atas nama tercetak "Charles Ivan Bob"; Plt. Kepala Biro belum teken.
+- Revisi 2 (Juli-Des, 113 unit-bulan) berakhiran `TA 2026` di folder induk, tidak disentuh.
 
 Angka Revisi 3 (diverifikasi ulang lewat hitungan independen):
 - Volume 20 unit x 3 bulan = 60 unit-bulan, 1 Okt s.d. 31 Des 2026. Baris Kelompok A/B digabung jadi satu.
@@ -33,4 +38,7 @@ Kontrak harus diteken sebelum 1 Okt 2026 agar tidak mundur tanggal.
 Cara bangun ulang: openpyxl pada koordinat asli, lalu Excel COM menghapus baris (rumus lintas sheet ikut geser),
 `CalculateFull`, simpan. Docx: `merge_runs.py` dulu (run terpecah 2.426). Lihat [[reference_office_render]].
 
-Nama PPK menurut Aldo (5 Okt 2026): **Charles Bob Ivan**. Dokumen paket ini masih memakai "Charles Ivan Bob" — ganti bila dicetak ulang; dokumen yang sudah diteken tidak disentuh. Lihat [[project-gws-business-standard]].
+5 Okt 2026: nama PPK diganti "Charles Bob Ivan" langsung di XML berkas versi Aldo (xlsx: 1 shared string = RAB O35 +
+HPS O23; KAK docx: 3 tempat), nilai rumus tetap; kedua PDF diekspor ulang dengan susunan sama (hanya baris nama beda).
+Scan 28 Sep tetap bernama lama. Saran: koreksi tulisan tangan + paraf PPK (renvoi), supaya tanggal 28 Sep (sebelum
+kontrak 1 Okt) tetap utuh; cetak ulang + teken ulang memaksa memilih antara tanggal mundur atau HPS sesudah kontrak.
