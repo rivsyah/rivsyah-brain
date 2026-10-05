@@ -1,15 +1,16 @@
 ---
 name: project_kajian_p3i_permenlu3
-description: "Kajian konsultan PT Pilar Pradana Persada Internasional (P3I) untuk revisi Permenlu 3/2023 (batasan nilai PBJ LN wilayah -> per negara). Laporan Pendahuluan (Okt 2026) direviu 5 Okt 2026: 6 selisih dengan KAK, LP = pemicu termin I 30%."
+description: "Kajian konsultan PT Pilar Pradana Persada Internasional (P3I) untuk revisi Permenlu 3/2023 (batasan nilai PBJ LN wilayah -> per negara). LP (Okt 2026) direviu 5 Okt 2026; matriks catatan koreksi = Claude Doc (A7/B11/C7/D6); LP = pemicu termin I 30%; klaim awal tabel 5.2 rusak SALAH."
 metadata:
   type: project
 ---
 
 **Paket:** Jasa Konsultansi Kajian Batasan Nilai PBJ LN dlm rangka Revisi Permenlu 3/2023. Satker Setjen (BUP),
 PPK Rudy Setiawan, HPS/RAB Rp99 jt. SPK 007/PPK-UKPBJ/SPK/09/2026/25 tgl 2 Sep 2026. Penyedia PT P3I
-(Dirut Irwan Febriansyah). Berkas KAK + legalitas: `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Jasa Konsultan Kajian RPermenlu 03 2023 P3I\`
+(Dirut Irwan Febriansyah). Berkas KAK + RAB + legalitas: `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Jasa Konsultan Kajian RPermenlu 03 2023 P3I\`
 (folder Pejabat Pengadaan → peran Aldo di paket ini kemungkinan Pejabat Pengadaan; reviu LP = sisi PPK/Tim Teknis).
-LP: `Downloads\Laporan Pendahuluan Revisi Permenlu 3 Tahun 2023 P3I.pdf` (22 hlm, teks bisa diekstrak pdftotext).
+LP: `Downloads\Laporan Pendahuluan Revisi Permenlu 3 Tahun 2023 P3I.pdf` (22 hlm; nomor kaki halaman = indeks PDF;
+teks via pdftotext/PyMuPDF; Read tool PDF gagal karena pdftoppm tidak ada). SPK/SPMK sendiri BELUM ada di mesin.
 
 **KAK inti:** batas nilai wilayah → per negara (131 Perwakilan: 95 KBRI, 30 KJRI, 4 KRI, 2 PTRI + negara akreditasi);
 matriks min. 6 kolom (negara, Perwakilan, wilayah lama, batas PP vs Pokja, metode, dasar data); rumusan norma +
@@ -17,14 +18,40 @@ penjelasan + ketentuan transisi + mekanisme pembaruan berkala; min 2 TA; 90 hari
 DISETUJUI PPK, termin II 70% (laporan akhir, policy brief, pedoman implementasi, matriks final, paparan);
 Ps 17b revisi tanpa biaya; Ps 17d penajaman lingkup asal substansi utama tetap.
 Catatan: daftar keluaran KAK (10 a-h) tidak memuat "policy brief" dan "pedoman implementasi" yang disebut di termin II.
+**RAB (INTERNAL, jangan masuk dokumen ke penyedia):** Ketua Tim 2,0 OB × Rp22 jt, Anggota 2,0 OB × Rp18 jt, staf admin
+2,0 OB × Rp3,5 jt, komunikasi/FGD Rp1 jt, penggandaan 4 eks Rp1 jt → Rp89 jt + PPN 11% = Rp98,79 jt. 2,0 OB = 2 bulan,
+mendukung durasi 60 hari, bukan 90 hari seperti tertulis di KAK.
 
-**Reviu LP (5 Okt 2026) — selisih dengan KAK:**
-1. Jangka waktu tidak konsisten: LP "60 hari, paling lambat 24 Nov" (60 hari = 31 Okt; 24 Nov = hari ke-84); KAK 90 hari (= 30 Nov). Cek SPK.
-2. Lingkup dilebarkan ke tata kelola (PO, kontrak bilingual, framework agreement, TTD digital, VMS) "atas diskusi"/SPMK; inti per negara tidak jadi pusat.
-3. Tidak ada format matriks 6 kolom, daftar negara/131 Perwakilan, cara menutup semua negara.
-4. Tidak menyebut norma/penjelasan/transisi/pembaruan berkala, pedoman implementasi.
-5. Tidak ada susunan tenaga ahli, dasar hukum (Perpres 16/2018 jo 46/2025, Perlem 12/2021 jo 4/2024), sumber kurs, periode data, daftar Perwakilan sampel, lampiran kuesioner.
-6. Jadwal LP 8 minggu: Laporan Antara minggu 3-4 (≈29 Sep) — per 5 Okt sudah lewat, kuesioner belum dikirim.
-Editorial: tabel pemangku kepentingan (5.2) kolomnya bergeser; "actual".
+**Permenlu 3/2023 — pasal yang terkena revisi lampiran (dicek dari teks 5 Okt 2026):** huruf A Lampiran (besaran nilai)
+dirujuk Pasal 5 ayat (4) [PPK, e-purchasing ayat (3) huruf i], Pasal 6 ayat (4) [Pejabat Pengadaan], Pasal 16 ayat (2)–(3)
+[metode e-purchasing/PL/tender-seleksi menurut nilai]. Huruf B Lampiran (batas bukti kontrak: bukti pembelian, kuitansi,
+SPK, surat perjanjian; surat pesanan untuk e-purchasing) dirujuk Pasal 22 ayat (2)–(3). Pasal 28 = penyesuaian dengan
+ketentuan PBJ negara setempat (Keputusan Kepala Perwakilan; dasar ketentuan setempat terpublikasi atau pertimbangan
+tertulis kantor hukum setempat; diterjemahkan).
 
-**Status:** reviu disampaikan ke Aldo 5 Okt 2026; belum ada catatan koreksi resmi. Terkait: [[project_rapat_kemendag_pbjln]] (fakta Lampiran A/B), [[reference_mdp_pbjp_ringkas]] (9 celah), [[project_pdp_kemlu]] (VMS).
+**Reviu LP (5 Okt 2026) — temuan, diverifikasi 81 cek teks per halaman:**
+1. Jangka waktu: LP "mulai 2 Sep, 60 hari, selesai ≤24 Nov" tidak konsisten. 60 hari dari 2 Sep = 31 Okt; 24 Nov = hari
+   ke-84 = tepat hari ke-60 bila mulai 26 Sep → dugaan SPMK 26 Sep (BELUM dicek). KAK 90 hari. Maka "jadwal sudah
+   tertinggal" hanya benar bila mulai 2 Sep — klaim [Certain] di chat awal terlalu kuat.
+2. Lingkup melebar ke tata kelola: templat kontrak bilingual, kontrak payung, TTD digital/kontrak elektronik, VMS.
+   Kajian bentuk kontrak sendiri sejalan KAK 9.b.2. LP menyebut dasar SPK/SPMK/diskusi tanpa pasal/notulen.
+3. Tidak ada: matriks 6 kolom, daftar negara/131 Perwakilan, metode untuk negara di luar sampel, tenaga ahli,
+   dasar hukum (0 sebutan Perpres/LKPP), sumber kurs, periode data, instrumen (kuesioner dll.), norma/peralihan/
+   pembaruan berkala, policy brief/pedoman implementasi, K/L lain + APIP sebagai pemangku.
+4. VMS skala Cukup 1/Baik 2/Sangat Baik 3 tanpa kategori buruk. Perlem LKPP 4/2021 menurut sumber sekunder
+   (christiangamas.net, 5 Okt): 4 indikator (kualitas-kuantitas 30%, biaya 20%, waktu 30%, layanan 20%), skor 1–3,
+   skor 0 = Buruk bila kontrak diputus PPK. Belum dicek ke naskah JDIH.
+5. Redaksional: "actual" (hlm 10, 16), "serta tandai" (hlm 16), "<" (hlm 20), "Langkah" kapital (hlm 21), tanpa daftar
+   isi/nomor tabel/lampiran.
+**KOREKSI:** klaim awal "tabel 5.2 kolom bergeser" SALAH — artefak `pdftotext -layout`; render PyMuPDF menunjukkan
+tabel rapi. Lihat [[reference-office-render]].
+
+**Matriks catatan koreksi (5 Okt 2026):** Claude Doc "Catatan Koreksi Laporan Pendahuluan P3I" —
+https://claude.ai/code/artifact/d4ffbab6-898b-4915-a2ae-ffbf90b1124a — A1–A7 (syarat persetujuan LP), B1–B11
+(penajaman), C1–C7 (keputusan rapat), D1–D6 (redaksional); kolom tanggapan konsultan + dropdown hasil pembahasan;
+blok pengesahan PPK/Tim Teknis/Penyedia. Tanpa nama Aldo/mention akun. Belum diekspor ke Word (Export di menu nama
+doc). Hal internal (RAB, posisi termin) sengaja tidak masuk dokumen. C5 (policy brief/pedoman implementasi) membuka
+inkonsistensi KAK sendiri — keputusan PPK apakah dibawa ke rapat.
+
+**Status:** matriks siap dipakai di rapat pembahasan; tanggal rapat belum ada. Terkait: [[project_rapat_kemendag_pbjln]]
+(fakta Lampiran A/B), [[reference_mdp_pbjp_ringkas]] (9 celah), [[project_pdp_kemlu]] (VMS).

@@ -127,3 +127,10 @@ Tambahan 4 Okt 2026 (sesi rapat Kemendag PBJ LN, [[project-rapat-kemendag-pbjln]
   Write tool, lalu dijalankan. Untuk menyalin berkas di jalur > 260 karakter: PowerShell `Copy-Item -LiteralPath`
   dengan awalan `\\?\`.
 - pptxgenjs 4.x: margin sel tabel dalam **inci**; nilai ≥ 1 dibaca sebagai poin. `margin: [0, 6, 0, 6]` = 6 inci → tabel rusak.
+
+Tambahan 5 Okt 2026 (sesi kajian P3I, [[project_kajian_p3i_permenlu3]]):
+- **`pdftotext -layout` menggeser isi sel tabel** bila tinggi sel di satu baris berbeda: kolom kanan tampak "bergeser"
+  satu baris padahal di PDF rapi. Klaim "tabel rusak" sempat masuk reviu lalu harus ditarik. Jangan mengklaim cacat
+  tata letak dari teks ekstraksi; render halamannya dengan PyMuPDF (`page.get_pixmap(dpi=80).save(png)`) lalu lihat.
+- Read tool untuk PDF gagal (butuh pdftoppm). Jalur yang jalan: `pdftotext` (ada di /mingw64/bin Git Bash) atau PyMuPDF
+  `get_text()` per halaman — cocok untuk skrip cek klaim per nomor halaman.
