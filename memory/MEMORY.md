@@ -13,7 +13,8 @@
   Kanselerai, bukan PPBJ.** Menunggu Aldo: isian NIP/jenjang/pengesah, maksud "untuk Dedi".
   [KTI SIGAP + SIPDLN](kemlu/project_kti_sigap_sipdln.md).
 - 🔴 5 Okt 2026 — **Tesis Erna: batas revisi proposal Rabu 7 Okt 2026** (pedoman 2.4 butir 4.e.2: 2 minggu
-  sejak ujian 23 Sep, untuk persetujuan tim penguji). Checklist v2 9 hlm berbasis buku pedoman sudah jadi.
+  sejak ujian 23 Sep, untuk persetujuan tim penguji). Checklist v2 + **proposal revisi 76 hlm** (dibangun ulang
+  dari PDF, 33 komentar untuk dicek Erna, Lampiran 2 daftar 132 Perwakilan) sudah jadi 5 Okt.
   [Tesis Erna](kemlu/project_tesis_erna.md).
 - 🟢 22 Sep 2026 — aldo-starter dipasang. Brain di `~/brain`, vault ini yang kanonik.
   Sisa: pasang blok `hooks` ke `~/.claude/settings.json`, lalu bersihkan kartu lama di
@@ -113,6 +114,7 @@
 
 ## Reference
 
+- [Konektor Google = akun Dedi](shared/ops/reference_google_connector_account.md) — Gmail/Drive di Claude desktop riv login sebagai irwndedi@gmail.com, bukan Aldo; jangan dipakai untuk data Aldo sampai disambung ulang (5 Okt 2026)
 - [Akun Neon](shared/reference/reference_neon_account.md) — 3 org (satu milik pihak ketiga); rotasi selesai 26 Sep: NOL kunci ber-scope akun, `env.db` pakai kunci org AIgnited; scope kunci ikut org PROJECT, bukan org pemilik; kunci org menjawab 404 lintas-org dan di `/users/me` — bukan tanda mati; login CLI OAuth tetap akun-penuh jadi `org_id` tetap wajib; `NEON_DATABASE_URL` sudah benar + terbukti jalan lewat pdo_pgsql; branch live bernama `main` bukan `production`; KOREKSI: host `-pooler` tidak perlu dibuang dan `pooler_enabled` bukan prediktor konektivitas — pdo_pgsql gagal di PG18 karena libpq 16, dan jalan mulus di PG17
 - [Neon CLI](shared/reference/reference_neon_cli.md) — Neon 5.0.1; `neon mcp -y` bawaan cetak API key akun-penuh ke 6 config — pakai `--agent --project-id --read-only`, dan `-y` bisa PAKAI ULANG kunci lama; `neon config init` bisa pasang zod rusak
 - [Git nyasar di home](shared/ops/reference_stray_git_home.md) — **BAHAYA LATEN**: ada `.git` di `C:\Users\rivsy` (0 commit, 192 MB blob yatim dari 2 Jul) yang mengklaim `.ssh`, `env.db`, `.claude.json`; Aldo izinkan hapus 27 Sep, agent diblokir pengaman + kunci berkas → Aldo hapus sendiri. `Herd\sigap-bup` sudah punya git sendiri
