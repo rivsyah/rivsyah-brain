@@ -58,6 +58,13 @@ US$0,000020/vCPU-detik, disk US$0,00000007/GB-detik; Workers, Durable Objects, d
 Perkiraan satu container `basic`: demo dengan `sleepAfter` 15 menit ≈ **US$5–6/bln**; menyala 24 jam terus
 ≈ **US$12/bln** ditambah CPU aktif. [Likely — hitungan agent dari tarif, belum ada tagihan nyata.] Dua
 container (SIGAP + SIPDLN) memakai satu langganan US$5 dan berbagi kuota yang sama.
+**Kenapa Workers Paid — dijelaskan ke Aldo 6 Okt (keputusan masih TERBUKA):** Paid hanya wajib *kalau
+aplikasi PHP/Laravel tetap di Cloudflare*. Workers Free hanya JS/WASM, **10 ms CPU per request, 128 MB per
+isolate** (halaman limit, 5 Sep 2026) → Laravel tidak bisa jalan; PHP di Cloudflare hanya lewat Containers,
+dan Containers mensyaratkan Paid (API 401). Jalur gratis `workers-php` + HttpPgsqlPDO merusak transaksi
+(lihat [[project_sigap_bup]]). Pembanding: cold start Containers *"often in the 1-3 second range"*
+(FAQ Containers, 5 Okt 2026); Render Free 512 MB RAM / 0,1 CPU, tidur setelah 15 menit, bangun ±1 menit,
+Docker didukung (docs/komunitas Render, dicek 6 Okt).
 
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
