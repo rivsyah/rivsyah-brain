@@ -32,8 +32,12 @@ Fakta yang sudah dicek live (23 Sep 2026) — pakai ini, jangan riset ulang:
 - (27 Sep 2026) Perpres 46/2025 **menghapus Pasal 33 ayat (2) huruf b** — e-purchasing TIDAK lagi otomatis bebas
   Jaminan Pelaksanaan; yang menentukan hanya Ps. 33 (1): wajib bila nilai kontrak > Rp200 jt. Sumber lama
   (pasal.id halaman Perpres 16/2018, artikel pelatihan) masih memuat huruf b — cek halaman Perpres 46/2025.
-- (27 Sep 2026) Pasal 78 ayat (3) hanya huruf a–f (tidak ada soal produk impor/PDN); ayat (5) huruf e = ganti
-  kerugian. Kewajiban PDN: Ps. 66 ayat (1). Sumber: pasal.id.
+- ~~(27 Sep 2026) Pasal 78 ayat (3) hanya huruf a–f; ayat (5) huruf e = ganti kerugian~~ — **SALAH per konsolidasi
+  resmi LKPP Perpres 46/2025 (dicek 6 Okt 2026):** Ps. 78 ayat (3) kini huruf a–i (g/h/i = TKDN lebih rendah, barang
+  impor, produk impor self declare); **ayat (5) DIHAPUS**; jenis sanksi ada di **ayat (4)** (a. digugurkan, b. pencairan
+  jaminan, c. Daftar Hitam, d. ganti kerugian, e. denda). Kutip ganti kerugian sebagai "Ps. 78 ayat (3) huruf e dan ayat
+  (4) huruf d". Kewajiban PDN: Ps. 66 (diganti penuh 46/2025, urutan TKDN+BMP 40% / TKDN 25%). Ps. 54 ayat (2) = tambah
+  maks 10%; Ps. 85 ayat (1) huruf a + ayat (2) = layanan sengketa LKPP. Lihat [[project-pengadaan-bus-zenix-2026]].
 
 Celah terbuka: Pasal 28 tidak mengatur SPK yang melewati Rp200 jt karena adendum (maks +10%). Ditulis sebagai
 butir "minta pendapat UKPBJ/biro hukum" di daftar periksa.

@@ -149,3 +149,13 @@ Tambahan 6 Okt 2026 (sesi evaluasi pakaian dinas, [[project_evaluasi_pakaian_din
 - PDF pindaian tanpa text layer dan tanpa OCR (tesseract tidak ada): render PyMuPDF, potong pita yang relevan per halaman,
   gabungkan 3 potongan per gambar, lalu baca visual. 65 halaman BST terbaca dalam 22 gambar.
 - `validate.py` skill pptx/docx butuh `defusedxml`: `pip install --target <scratchpad>/pylib defusedxml` + `PYTHONPATH`.
+
+Tambahan 6 Okt 2026 (sesi bus + Zenix, [[project-pengadaan-bus-zenix-2026]]):
+- **Excel COM `Worksheets.Item('X').Copy()` lalu `UsedRange.Value2 = UsedRange.Value2` MENGGANTUNG** tanpa dialog (instans
+  harus dibunuh). Untuk salinan "nilai saja" satu lembar: setelah Excel hitung ulang + simpan, buka dengan openpyxl
+  `data_only=True`, hapus lembar lain, simpan sebagai berkas baru (format dan merge tetap).
+- Word `ExportAsFixedFormat(pdf,17)` + Excel `$wb.ExportAsFixedFormat(0,pdf)` jalan 3x berturut-turut 13.00–13.15 WIB.
+- Skrip patch Python yang memuat kutip bertingkat atau `\t`/`\n` di dalam string: tulis ke berkas lewat Write tool lalu
+  jalankan. Heredoc Git Bash gagal ("unexpected EOF while looking for matching `'`") dan bisa meruntuhkan escape.
+- Tab di docx dari lxml: tulis `<w:tab/>` (bukan karakter `\t` di `<w:t>`); dengan indentasi gantung, Word memakai posisi
+  indentasi kiri sebagai tab stop implisit sehingga penanda "a." rapi.

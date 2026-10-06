@@ -5,6 +5,10 @@
 
 ## NOW — active focus (update when it goes stale)
 
+- 🟡 6 Okt 2026 — **Paket Bus 30+1 + Innova Zenix Q HV TA 2026**: KAK/Spektek, RAB/HPS, SSUK+SSKK (x2) jadi di
+  `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Bus Kemlu dan Innova Zenix\`. Zenix siap (Rp609,2 jt = proyeksi). Bus
+  TERHAMBAT: HPS Rp1,317 M > SBM bus sedang Rp1,1 M, listing DGMI tidak aktif, inden 90-120 hr. Menunggu Aldo: PPK (Dina A?)
+  + NIP, keputusan bus. [Bus + Zenix 2026](kemlu/project_pengadaan_bus_zenix_2026.md).
 - 🟡 6 Okt 2026 — **Rapat evaluasi pengadaan pakaian dinas ASN TA 2026** (tanggal rapat belum disebut): pointers 8 hlm
   + deck 17 slide di `Downloads\MOFA\BUP\Rapat Evaluasi Pakaian Dinas ASN 2026\`. Tahap 2 = 129 pegawai mutasi pulang
   (258 kemeja); kendala: tanggal tiba + cek penerima Tahap 1. Sesudah rapat: catat kesimpulan. [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md).
@@ -69,8 +73,8 @@
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
 - [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025; Aldo 29 Sep: penandatangan ST = Kepala BUP, kurs JISDOR otomatis, identitas Kemlu disamarkan di app/file terlacak; commit awal b50b8d6 (main, tanpa remote); nomor ST ST/KP/{urut}/{bulan}/{tahun}/25 (d2284eb) + PHPStan 0 (0f3fcb6); deploy demo Cloudflare disiapkan (a0c5c18, sipdln.rivsyah.dev); 4 Okt: riwayat bersih, tinggal Workers Paid + izin Aldo buat repo/push (pengaman "Remote Repoint"); 6 Okt usul rewrite Hono+Astro (Dedi): agent sarankan jangan — hemat ≤US$5/bln, ±1 minggu, KTI menyebut Laravel 13
-- [Template SPK & Adendum](kemlu/reference_template_spk.md) — Claude Doc + .docx di Documents; template SPK Barang/Jasa Lainnya + adendum; dasar hukum terverifikasi (batas SPK, Ps. 54/56/79, PPN 11%; 27 Sep: Ps. 33 (2) b e-purchasing DIHAPUS Perpres 46/2025)
-- [Pejabat BUP](kemlu/reference_pejabat_bup.md) — PPK = **Charles Bob Ivan** NIP 19861108 200901 1 001 (bukan "Ivan Bob"); Plt. Kabiro Sukmo Yuwono; grep "Ivan Bob" sebelum serah dokumen
+- [Template SPK & Adendum](kemlu/reference_template_spk.md) — Claude Doc + .docx di Documents; template SPK Barang/Jasa Lainnya + adendum; dasar hukum terverifikasi (batas SPK, Ps. 54/56/79, PPN 11%; 27 Sep: Ps. 33 (2) b e-purchasing DIHAPUS Perpres 46/2025; 6 Okt: Ps. 78 ayat (5) DIHAPUS, sanksi di ayat (4))
+- [Pejabat BUP](kemlu/reference_pejabat_bup.md) — PPK = **Charles Bob Ivan** NIP 19861108 200901 1 001 (bukan "Ivan Bob") untuk RO paket Aldo; PPK berbeda per RO (peta 8 PPK Wasdit 2026; kendaraan EBB.951.051.A = Dina A); Plt. Kabiro Sukmo Yuwono; grep "Ivan Bob" sebelum serah dokumen
 - [HT PoC Satpam](kemlu/project_ht_poc_satpam.md) — KAK + RAB/HPS kuota data 20 HT, Okt-Des = 60 unit-bulan, HPS Rp4,8 jt; berkas di subfolder (KAK docx tertukar ke folder Surat Kabar); nama PPK dikoreksi 5 Okt, scan teken 28 Sep masih nama lama
 - [Dokumen Pokja + SPPBJ](kemlu/reference_dokumen_pokja_sppbj.md) — draf Pengumuman/Nodin/SPPBJ tender Renovasi Lt3 (26 Sep 2026); jaminan 5% HPS bila < 80% HPS (Pasal 33 (3) b); celah: klarifikasi kewajaran harga
 - [KKE Furniture Lt 3 Tower](kemlu/project_kke_furniture_lt3.md) — MINI KOMPETISI e-katalog (Lumsum, Pokja e-katalog), BUKAN tender; KKE ringkas format Aldo (4 sheet) di MOFA, dibetulkan 29 Sep: P3 PT Quel Avery Rp1,108 M (92,9% HPS) perlu klarifikasi C2/C4, P1 & P2 gugur; harga P1 Rp954,4 jt (<80% HPS), P2 Rp965,3 jt; builder ~/dev/kemlu/kke-furniture-lt3
@@ -88,6 +92,7 @@
 - [Kajian P3I revisi Permenlu 3/2023](kemlu/project_kajian_p3i_permenlu3.md) — konsultan batas nilai PBJ LN per negara, Rp99 jt, SPK 2 Sep 2026; LP direviu 5 Okt; matriks catatan koreksi = Claude Doc (A7/B11/C7/D6, link di kartu); jangka waktu 60/84/90 hari tak konsisten (24 Nov = hari ke-60 dari 26 Sep → cek SPMK); LP = pemicu termin I 30%; klaim tabel 5.2 rusak SALAH (artefak pdftotext); kertas kerja Excel 4 lembar di folder paket (builder ~/dev/kemlu/koreksi-lp-p3i)
 - [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md) — rapat 5 Okt 2026 14.00 dgn Biro Keuangan Kemendag soal uang muka TA 2026 untuk pameran 2027; pegangan = Pointers_Rapat_Rivaldo.docx (suntingan Aldo, 5 Okt) + deck v2 12 slide di Downloads\MOFA\BUP\Rapat Kemendag PBJ LN 5 Okt 2026; sikap: Permenlu 3/2023 = cara mengadakan, bayar lintas TA = ranah Kemenkeu (opsi A pemilihan dini / B KTJ); kartu memuat fakta terverifikasi Permenlu 3/2023 (+Lampiran A/B), PMK 145/2017, 160/2015, 60/2018
 - [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md) — RUP 67117950, PT Rimonz Rp948,3 jt (63,5% HPS), 1.827 pegawai × 2 kemeja; pointers 8 hlm + deck 17 slide (6 Okt) di Downloads\MOFA\BUP\Rapat Evaluasi Pakaian Dinas ASN 2026, builder ~/dev/kemlu/rapat-evaluasi-pakaian-dinas; 3.302 kemeja (90%) "telah diperbaiki" 20 Jul–28 Agu; median ukuran XL→3XL; Tahap 2 (Aldo 6 Okt) = 129 pegawai mutasi pulang, 258 kemeja ≈ Rp102,2 jt, HPS ≤ Rp775 rb/kemeja → ≤ Rp200 jt; jaminan pelaksanaan & tanggal SP Tahap 1 belum dicek
+- [Bus + Zenix 2026](kemlu/project_pengadaan_bus_zenix_2026.md) — RO 6023.EBB.951.051.A.532111 PNBP pagu Rp2,2 M; 6 dok + 2 salinan unggah INAPROC (6 Okt); HPS bus Rp1.317.332.500 (> SBM Rp1,1 M, listing tidak aktif, inden 90-120 hr), Zenix Rp609.200.000 (ready stock); PPK Dina Amalia Indriyati (Wasdit) NIP kosong; PMK 84/2025 menggantikan 109/2023 (tak ada bayar-dulu-dengan-jaminan untuk barang); Perlem 2/2026: nego > Rp200 jt oleh Pokja; builder ~/dev/kemlu/pengadaan-bus-zenix-2026
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 

@@ -86,7 +86,10 @@ Opsi untuk Kemendag bawa ke Kemenkeu: A pemilihan dini + bayar setelah DIPA 2027
 - **PP 45/2013 Ps 163 s.t.d.d. PP 50/2018**: sisa kontrak tahunan rupiah murni tidak dapat diluncurkan; KTJ non-tahun
   terakhir boleh diluncurkan tanpa tambah pagu.
 - **PER-17/PB/2025** (LLAT 2025) masih mencantumkan PMK 145/2017, 160/2015, 60/2018 jo 93/2020, 62/2023 jo 107/2024,
-  109/2023 (RPATA), 1/2024 (valas) sebagai dasar. Perdirjen LLAT 2026 belum ada per 4 Okt 2026.
+  109/2023 (RPATA), 1/2024 (valas) sebagai dasar. Perdirjen LLAT 2026 belum ada per 4 Okt 2026 (dicek lagi 6 Okt: belum).
+  **Koreksi 6 Okt 2026:** PMK 109/2023 sudah DICABUT oleh **PMK 84/2025** (ditetapkan 21 Nov 2025; RPATA; bayar hanya
+  setelah selesai 100%, jaminan pembayaran hanya untuk pekerjaan pengawasan; kesempatan lintas TA <= 90 hari, kontrak
+  diteken <= 30 Nov). PMK 62/2023 kini juga diubah PMK 41/2026. Lihat [[project-pengadaan-bus-zenix-2026]].
 - **Permenlu 5/2022** (juknis akuntansi Kemlu): Belanja Dibayar di Muka (contoh sewa rumah HS 1 Okt–30 Sep) dan Deposit
   Sewa Gedung Perwakilan (Aset Lain-lain).
 - **Permendag 14/2025** (tetap 8 Mei 2025): tata cara promosi dagang LN (pameran + misi dagang); tidak dibaca utuh.

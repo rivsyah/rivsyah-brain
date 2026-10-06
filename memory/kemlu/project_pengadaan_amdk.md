@@ -57,6 +57,8 @@ Surat Pesanan, akun 521111. Aldo menyusun RAB/HPS dan KAK sebagai Pejabat Pengad
   didefinisikan); "Tidak ada Perpanjangan Waktu/Pemberian Kesempatan" bertentangan dengan SSUK 25/26 dan Ps. 55–56;
   kahar 7 hari (SSKK) vs 14 hari (SSUK); 59.1 tangguh 100% vs SSUK 59.3 proporsional; SPMK di SSUK tidak dipakai
   e-purchasing; e-mail PPK + data Penyedia kosong; salah ketik/rujuk di SSUK (30.6, 65.3 a, dll.).
+  **Rujukan usang (dicek 6 Okt 2026, konsolidasi LKPP Perpres 46/2025):** SSKK 51.2 mengutip "Pasal 78 ayat (5) huruf e"
+  — ayat (5) sudah DIHAPUS; yang benar "Pasal 78 ayat (3) huruf e dan ayat (4) huruf d". Perbaiki bila SSKK dicetak ulang.
 - Nomor file ≠ nomor revisi di dalam dokumen (RAB file rev4 = Revisi 3). Naikkan keduanya satu langkah pada revisi berikut.
 
 ## Angka Revisi 2 (27 Sep 2026, periode dipersempit atas arahan Aldo)
