@@ -70,8 +70,8 @@ sementara; bandwidth habis tanpa metode bayar → semua layanan gratis disuspend
 **Kenapa Workers Paid — dijelaskan ke Aldo 6 Okt (keputusan masih TERBUKA):** Paid hanya wajib *kalau
 aplikasi PHP/Laravel tetap di Cloudflare*. Workers Free hanya JS/WASM, **10 ms CPU per request, 128 MB per
 isolate** (halaman limit, 5 Sep 2026) → Laravel tidak bisa jalan; PHP di Cloudflare hanya lewat Containers,
-dan Containers mensyaratkan Paid (API 401). Jalur gratis `workers-php` + HttpPgsqlPDO merusak transaksi
-(lihat [[project_sigap_bup]]). Pembanding: cold start Containers *"often in the 1-3 second range"*
+dan Containers mensyaratkan Paid (API 401). `workers-php` **bukan** jalan gratis — ia juga berjalan di
+Containers, dan jalur DB-nya (HttpPgsqlPDO) merusak transaksi (lihat [[project_sigap_bup]]). Pembanding: cold start Containers *"often in the 1-3 second range"*
 (FAQ Containers, 5 Okt 2026); Render Free 512 MB RAM / 0,1 CPU, tidur setelah 15 menit, bangun ±1 menit,
 Docker didukung (docs/komunitas Render, dicek 6 Okt).
 
