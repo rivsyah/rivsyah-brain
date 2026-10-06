@@ -143,8 +143,9 @@ Tambahan 5 Okt 2026 (sesi kajian P3I, [[project_kajian_p3i_permenlu3]]):
 Tambahan 6 Okt 2026 (sesi evaluasi pakaian dinas, [[project_evaluasi_pakaian_dinas_asn]]):
 - `render.ps1` (Word `ExportAsFixedFormat` + PowerPoint `SaveAs 32`/`Export PNG`) jalan 3x berturut-turut, 10.20–10.35 WIB.
 - **Spasi tak-putus di builder JS**: karakter U+00A0 literal yang diketik lewat Write tool bisa tersimpan sebagai spasi
-  biasa, sehingga `fix()` tidak berefek (nominal "Rp1,88 / miliar" terpotong). Tulis `" "`, lalu cek dengan
-  `grep -n "const NB" file | cat -A` (harus tampil `M-BM- `).
+  biasa, sehingga `fix()` tidak berefek (nominal "Rp1,88 / miliar" terpotong). Tulis escape JS backslash-u-00A0 lewat
+  Write tool, bukan heredoc (heredoc Git Bash agen mengubah escape itu jadi karakter mentah). Cek:
+  `grep -n "const NB" file | cat -A` harus menampilkan `M-BM- ` di dalam tanda kutip.
 - PDF pindaian tanpa text layer dan tanpa OCR (tesseract tidak ada): render PyMuPDF, potong pita yang relevan per halaman,
   gabungkan 3 potongan per gambar, lalu baca visual. 65 halaman BST terbaca dalam 22 gambar.
 - `validate.py` skill pptx/docx butuh `defusedxml`: `pip install --target <scratchpad>/pylib defusedxml` + `PYTHONPATH`.
