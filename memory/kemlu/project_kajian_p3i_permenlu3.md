@@ -61,5 +61,22 @@ Cetak A4 lanskap 7 hlm (Identitas skala tetap 85% + pemisah halaman sesudah bari
 Builder `C:\Users\rivsy\dev\kemlu\koreksi-lp-p3i\` (`build_xlsx.py` menolak menimpa tanpa `--force`; `finalize.ps1` =
 Excel COM hitung ulang + AutoFit + ekspor PDF). Excel = salinan kerja; Claude Doc tidak ikut berubah bila Excel diisi.
 
-**Status:** matriks (Doc + Excel) siap dipakai di rapat pembahasan; tanggal rapat belum ada. Terkait: [[project_rapat_kemendag_pbjln]]
+**Kuesioner P3I "Versi Final" (diterima 6 Okt 2026, PDF dibuat 6 Okt 07.42):** `...\Kuesioner_Final_Revisi_Permenlu_3_2023_P3I_Kemlu.pdf`
+26 hlm, 109 pertanyaan (A–N), 55 bertanda * ("disarankan wajib", akan dipindah ke Google Form), 34 isian paragraf;
+Lampiran A rekap transaksi 19 kolom, B sumber harga/marketplace, C kualitas data. Periode data 2022–2026.
+Reviu 6 Okt (dicek otomatis ke teks): (1) skenario stress test US$250.000 Goods & Services dan US$750.000 Works — di atas
+batas tertinggi yang berlaku di SEMUA wilayah; asal angka tidak dijelaskan; tidak ada skenario jasa konsultansi;
+(2) "threshold" tak didefinisikan — 0 sebutan Pejabat Pengadaan/Pokja/Pengadaan Langsung/Pasal; (3) metode C1 dan
+dokumen H1 tidak memakai istilah Pasal 16/22; (4) data per negara akreditasi hanya isian paragraf; (5) 2022 = era
+Permenlu 1/2019, Lampiran A tanpa penanda aturan/tanggal kontrak; (6) lingkup: ITPC/KDEI/IIPC di A1, bagian F (penyedia
+Indonesia + mitra lokal), bagian J (PBJ K/L lain); (7) tidak ditanya: Pasal 28, tarif tenaga ahli lokal, pelaku PP/Pokja,
+sertifikasi PBJ; (8) duplikat D5=M5, D6≈M6, A9≈J3, B7≈H7; tanpa tenggat/narahubung/perkiraan waktu;
+(9) Google Form = akun siapa (KAK 16 data milik Kemlu); tanpa persetujuan Kepala Perwakilan. Hlm 23 hanya 1 opsi N6.
+**Lampiran A Permenlu 3/2023 (dilihat langsung 6 Okt, hlm 17–18, USD):** 17 wilayah; batas Pejabat Pengadaan
+(E-purchasing/PL/PnL; di atasnya Tender/Seleksi Pokja) barang/konstruksi/jasa lainnya US$35.000–244.000 (terendah: Afrika
+Selatan, Afrika Utara, Asia Selatan, Asia Tengah; tertinggi Eropa Barat), konsultansi US$18.000–210.000. Catatan kaki:
+nilai berdasarkan rata-rata besaran nilai pengadaan per wilayah.
+
+**Status:** matriks (Doc + Excel) siap dipakai di rapat pembahasan; tanggal rapat belum ada. Kuesioner sebaiknya tidak
+diedarkan sebelum direvisi dan disetujui PPK (butir A4). Terkait: [[project_rapat_kemendag_pbjln]]
 (fakta Lampiran A/B), [[reference_mdp_pbjp_ringkas]] (9 celah), [[project_pdp_kemlu]] (VMS).
