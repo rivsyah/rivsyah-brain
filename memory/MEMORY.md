@@ -5,6 +5,9 @@
 
 ## NOW — active focus (update when it goes stale)
 
+- 🟡 6 Okt 2026 — **Rapat evaluasi pengadaan pakaian dinas ASN TA 2026** (tanggal rapat belum disebut): pointers 7 hlm
+  + deck 15 slide di `Downloads\MOFA\BUP\Rapat Evaluasi Pakaian Dinas ASN 2026\`. Isu kunci: penerima produksi Nov
+  vs batas 2 setel/pegawai/tahun. Sesudah rapat: catat kesimpulan. [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md).
 - 🟡 5 Okt 2026 14.00 — **Rapat Kemendag (Biro Keuangan) soal PBJ LN + uang muka pameran lintas TA.** Pegangan:
   `Pointers_Rapat_Rivaldo.docx` (suntingan Aldo) + deck v2 12 slide yang mengikutinya (5 Okt 11.24). Sesudah rapat:
   catat kesimpulannya di kartu. [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md).
@@ -84,6 +87,7 @@
 - [KTI & percepatan pangkat](kemlu/reference_kti_percepatan_pangkat.md) — Permenlu 23/2020 format makalah; AK pengembangan profesi JF PK & PPBJ DICABUT PermenPANRB 1/2023 → KTI tak otomatis menambah AK; jalur hidup: SKP Sangat Baik 150%, penghargaan Permenlu 2/2026 (usul Sekjen ke Komite), kenaikan pangkat istimewa Pasal 40 (teknis: KPLB SE BKN 5/2022); naik pangkat tiap bulan sejak 1 Okt 2025 (Per BKN 4/2025), syarat 2 thn tetap
 - [Kajian P3I revisi Permenlu 3/2023](kemlu/project_kajian_p3i_permenlu3.md) — konsultan batas nilai PBJ LN per negara, Rp99 jt, SPK 2 Sep 2026; LP direviu 5 Okt; matriks catatan koreksi = Claude Doc (A7/B11/C7/D6, link di kartu); jangka waktu 60/84/90 hari tak konsisten (24 Nov = hari ke-60 dari 26 Sep → cek SPMK); LP = pemicu termin I 30%; klaim tabel 5.2 rusak SALAH (artefak pdftotext); kertas kerja Excel 4 lembar di folder paket (builder ~/dev/kemlu/koreksi-lp-p3i)
 - [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md) — rapat 5 Okt 2026 14.00 dgn Biro Keuangan Kemendag soal uang muka TA 2026 untuk pameran 2027; pegangan = Pointers_Rapat_Rivaldo.docx (suntingan Aldo, 5 Okt) + deck v2 12 slide di Downloads\MOFA\BUP\Rapat Kemendag PBJ LN 5 Okt 2026; sikap: Permenlu 3/2023 = cara mengadakan, bayar lintas TA = ranah Kemenkeu (opsi A pemilihan dini / B KTJ); kartu memuat fakta terverifikasi Permenlu 3/2023 (+Lampiran A/B), PMK 145/2017, 160/2015, 60/2018
+- [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md) — RUP 67117950, PT Rimonz Rp948,3 jt (63,5% HPS), 1.827 pegawai × 2 kemeja; pointers 7 hlm + deck 15 slide (6 Okt) di Downloads\MOFA\BUP\Rapat Evaluasi Pakaian Dinas ASN 2026, builder ~/dev/kemlu/rapat-evaluasi-pakaian-dinas; 3.302 kemeja (90%) "telah diperbaiki" 20 Jul–28 Agu; median ukuran XL→3XL; HPS/ABT hitung 1 kemeja = 1 setel → batas 2 setel/tahun mengikat produksi Nov; jaminan pelaksanaan & tanggal SP belum dicek
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 
