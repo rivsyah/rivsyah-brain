@@ -75,6 +75,18 @@ Containers, dan jalur DB-nya (HttpPgsqlPDO) merusak transaksi (lihat [[project_s
 (FAQ Containers, 5 Okt 2026); Render Free 512 MB RAM / 0,1 CPU, tidur setelah 15 menit, bangun ±1 menit,
 Docker didukung (docs/komunitas Render, dicek 6 Okt).
 
+**Opsi tulis ulang ke Hono (+ Astro) agar gratis — dibahas 6 Okt (sesi PANTAS), keputusan TERBUKA.** Pemicu:
+Dedi menyebut Laravel untuk Cloudflare keliru. Temuan: kedua app = **Laravel + Inertia + React 19** (starter kit),
+jadi UI React (SIGAP 205 file/29 rb baris, SIPDLN 120/28 rb, termasuk shadcn) bisa dipakai lagi; yang ditulis
+ulang backend: SIGAP ±3,8 rb baris PHP + 11 migrasi + 140 tes (±2,7 rb baris), SIPDLN ±6,1 rb baris + 9 migrasi
++ tes ±1,2 rb baris + PhpWord/PhpSpreadsheet (DOCX/XLSX sisi server). Astro tidak perlu (UI sudah React; cukup
+SPA statis + API Hono). Gratis mungkin: Workers Free 100 rb req/hari, 10 ms CPU/req (tunggu I/O tidak dihitung,
+lewat batas → error 1102; dok limit 5 Sep 2026); D1 Free 5 jt baris baca/hari, 100 rb tulis/hari, 5 GB (dok 21 Apr
+2026); Neon Free 1 GB/proyek, 100 CU-jam/bln, tanpa kartu (neon.com/pricing 6 Okt). Syarat: DOCX/XLSX pindah ke
+peramban; hash kata sandi di Worker berisiko > 10 ms → login lewat Cloudflare Access. Biaya tersembunyi: **kedua
+KTI menulis "Laravel 13 (PHP 8.4), Inertia v3, React 19"** + hasil uji PostgreSQL → harus direvisi bila ditulis
+ulang. Rekomendasi agent: jangan tulis ulang hanya demi US$5/bln demo; pemakaian resmi tetap di server Kemlu.
+
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
 - [[project_pantas_kurs]] — Pages + Access. Proyek Pages sudah dibuat 4 Okt (kosong); butuh Zero Trust Free +
