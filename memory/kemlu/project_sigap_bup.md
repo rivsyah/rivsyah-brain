@@ -435,6 +435,24 @@ deploy yang ada ditujukan ke Cloudflare, jadi Render berarti konfigurasi baru.
 
 Memori mesin 4 Okt: RAM bebas 7,1 dari 31,3 GB; 34 proses `claude` 5,4 GB.
 
+### 6 Okt 2026 — usul tulis ulang ke Hono + Astro supaya gratis (TERBUKA, agent: jangan)
+
+Dedi menyebut membuat aplikasi Laravel untuk Cloudflare itu keliru; Aldo bertanya apakah tulis ulang ke
+Hono + Astro bisa di-deploy gratis. Cek ulang hari itu: `main` masih `22950a4` (riwayat bersih belum
+dijalankan), Workers Paid belum aktif.
+- **Bisa gratis secara teknis** [Likely]: Hono di Workers Free + aset statis gratis + Neon lewat driver
+  WebSocket atau Hyperdrive (transaksi + `FOR UPDATE` didukung). Fakta platform:
+  [[reference-hosting-vercel-cloudflare]]. Astro kurang cocok — SIGAP dashboard interaktif 26 layar; bila
+  tetap ditulis ulang, pakai Hono + halaman React yang ada sebagai SPA.
+- **Alasan agent menolak:** ±3.000 baris PHP khusus SIGAP, 59 rute, login/sesi/validasi, 140 tes, dan uji
+  balapan gerbang pagu harus dibangun dan dibuktikan ulang; **KTI SIGAP menulis "dibangun dengan Laravel 13
+  (PHP 8.4)"** dan mengutip bukti uji itu (`content/sigap/teks.js`), jadi KTI ikut direvisi; batas 10 ms CPU
+  berisiko untuk verifikasi bcrypt saat login [Likely]; yang dihemat hanya ±US$5–6/bln. Laravel cocok untuk
+  tujuan akhir (server di Indonesia, Pusat Data dan TI sebagai pemilik platform menurut KTI); yang tidak
+  cocok hanya tempat demonya.
+- **Opsi gratis tanpa tulis ulang:** Google Cloud Run (Dockerfile yang ada, Singapura, butuh kartu di akun
+  billing, ±1 sesi setup) atau Render Free (bangun ±1 menit). Opsi cepat: Workers Paid.
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design

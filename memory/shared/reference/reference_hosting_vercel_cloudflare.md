@@ -31,6 +31,21 @@ sekarang aset `public/build` (gitignored) dibangun di GitHub Actions sebelum ima
 Perbandingan dengan Cloudflare `basic`: CPU 2,5× dan RAM 2× lebih kecil. Argumen 6 Okt: Aldo bertanya kenapa
 harus Workers Paid → dijawab "tidak wajib; wajib hanya kalau tetap di Cloudflare"; keputusan masih terbuka.
 
+**Google Cloud Run (gratis untuk container, dicek live 6 Okt 2026):** kuota gratis per bulan untuk billing
+berbasis request = 2 juta request, 180.000 vCPU-detik, 360.000 GiB-detik, dihitung per akun billing; **wajib
+akun billing aktif (kartu)**, ditagih hanya di atas kuota. Domain sendiri lewat *domain mapping* masih
+**preview** ("not production-ready"), tersedia di `asia-southeast1` (Singapura, sama dengan Neon) tetapi **tidak**
+di `asia-southeast2` (Jakarta); alternatifnya Load Balancer (berbayar) atau Firebase Hosting. Dockerfile SIGAP
+(FrankenPHP, port 8080) cocok dengan port bawaan Cloud Run. Belum ada akun/kredensial Google Cloud di env.db.
+
+**Workers Free untuk aplikasi JavaScript (dicek live 6 Okt 2026):** 100.000 request/hari, 10 ms CPU per
+request (halaman harga 2 Okt 2026); request ke aset statis gratis tanpa batas di kedua paket; **Hyperdrive ada
+di paket Free** (100.000 query/hari). Driver Neon: mode HTTP hanya transaksi batch non-interaktif; mode
+WebSocket `Pool`/`Client` mendukung transaksi interaktif (`SELECT … FOR UPDATE`), tetapi di Workers harus
+dibuka dan ditutup dalam satu handler request. D1 tetap haram untuk SIGAP (tanpa transaksi).
+Usul 6 Okt (dari Dedi, lewat Aldo): tulis ulang SIGAP ke Hono + Astro supaya gratis di Cloudflare → agent
+menyarankan **jangan**; detail dan alasannya di [[project_sigap_bup]]. Keputusan di tangan Aldo.
+
 **Regulasi (Indonesia):** PP 71/2019 Pasal 20 ayat (2): penyelenggara sistem elektronik lingkup publik
 wajib mengelola, memproses, dan/atau menyimpan sistem dan data elektronik di wilayah Indonesia; ayat (3)
 pengecualian bila teknologi penyimpanannya tidak tersedia di dalam negeri. Relevan bila aplikasi dipakai
