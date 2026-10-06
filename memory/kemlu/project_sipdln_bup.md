@@ -63,6 +63,25 @@ Langkah Aldo (bersama SIGAP/PANTAS): [[reference-cloudflare-rivsyah-dev]]. Sesud
 - Tes Docker image sungguhan belum pernah jalan (mesin tanpa Docker). Menambah langkah uji-image di
   workflow butuh commit baru → aturan proyek: commit hanya atas permintaan Aldo. Belum dilakukan.
 
+**Usul rewrite ke Hono + Astro (6 Okt 2026, dari Dedi lewat Aldo) — saran agent: jangan sekarang;
+keputusan di tangan Aldo.** (Usul yang sama untuk SIGAP dijawab sesi SIGAP: jangan — [[project_sigap_bup]].)
+- Bisa gratis di Workers Free [Likely], tapi desain harus berubah karena **10 ms CPU per request**: DOCX/XLSX
+  dibuat di browser; login lewat Cloudflare Access (Zero Trust Free ≤50 pengguna, OTP email) karena hashing
+  kata sandi yang aman tidak muat 10 ms; DB = D1 (Free: 5 jt baris baca + 100 rb tulis per hari, 500 MB/DB,
+  50 query per invocation; dok 21 Apr 2026). Token sekarang **401 di D1** (perlu izin D1 Edit), KV 200, R2
+  belum diaktifkan (dicek 6 Okt). Aset statis gratis tanpa batas, tidak dihitung ke 100 rb request/hari.
+- Astro kurang berguna untuk dasbor di balik login → bila rewrite, Hono + React (Vite) memakai ulang 16 halaman.
+- Ukuran kerja (diukur 6 Okt): PHP app 6.147 baris + routes/migrasi/seeder 1.027; React halaman 10.279 +
+  lainnya 6.970 baris (Inertia → API); uji 1.169 baris (72 kasus); 6 view Blade; 4 templat DOCX. Perkiraan
+  ±1 minggu kerja agent [Guessing].
+- Hemat paling banyak US$5/bln — **nol bila SIGAP tetap di Containers** (satu langganan). Gratis tanpa rewrite
+  sudah bisa lewat Render (lambat bangun). Rewrite hanya membeli: gratis + cepat + tetap di Cloudflare.
+- **KTI SIPDLN menyebut "Laravel 13 (PHP 8…)" dan "72 uji"** ([[project-kti-sigap-sipdln]]) → rewrite membuat
+  fakta KTI basi. KTI sengaja tidak menyebut Cloudflare/rivsyah.dev (daftar terlarang di `verify.py`).
+- Bila Aldo tetap mau: v2 di folder terpisah, v1 utuh sebagai pembanding paritas (data sama → angka dan isi
+  dokumen sama). Usul aturan (belum disetujui Aldo): pilih stack dari tujuan deploy — Cloudflare → Hono + D1
+  sejak awal; Herd/server instansi → Laravel.
+
 ## Letak dan cara jalan (mesin riv)
 
 - Kode: `C:\Users\rivsy\dev\kemlu\sipdln-bup` (bukan `Herd\` — kode baru masuk `~/dev/<scope>`).
