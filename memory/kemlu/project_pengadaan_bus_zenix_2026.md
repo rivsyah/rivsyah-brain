@@ -43,6 +43,9 @@ dan ND usulan kendis 2024, di folder paket.
 - Jaminan Pelaksanaan 5% wajib kedua paket (Perpres 46/2025 Ps 33, Perlem LKPP 2/2026 Ps 20). HPS wajib > Rp100 jt (Ps 26(7);
   Perlem 2/2026 Ps 13) dan diunggah .xlsx; total HPS <= pagu RUP atau checkout ditolak.
 - Pelaksana e-purchasing > Rp200 jt: Pokja Pemilihan (PPK hanya untuk kriteria Perlem 2/2026 Ps 16(2)); bukan PP.
+- **Risiko SP batal otomatis** (tambahan 7 Okt 2026): penyedia wajib menyetujui SP dalam tenggat sistem (3 hari; panduan
+  kompetisi > Rp200 jt: 14x24 jam); lewat → batal otomatis TANPA jalur pemulihan. Sudah terjadi pada paket Furniture Lt 3.
+  Pantau tenggat begitu SP terbit. Lihat [[reference_katalog_v6_sp_batal]].
 - Zenix: SBSK PMK 172/2020 (dasar RKBMN 2026) — Eselon I-II sedan/SUV, MPV 2.000 cc = kelas Eselon III; TKDN Zenix belum
   terlihat di listing (cek Kemenperin). Inpres 7/2022 tidak melarang hibrida.
 

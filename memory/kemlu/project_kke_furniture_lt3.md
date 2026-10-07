@@ -1,9 +1,19 @@
 ---
 name: project-kke-furniture-lt3
-description: "Paket Furniture (Built In) Lt 3 Gedung Tower Kemlu TA 2026 = MINI KOMPETISI e-katalog INAPROC (Lumsum, Pokja e-katalog): KKE ringkas format Aldo (4 sheet) terisi hasil 3 penawaran (29 Sep 2026) — P3 PT Quel Avery Indonesia satu-satunya lengkap (Rp1.108.380.510 = 92,9% HPS), PERLU KLARIFIKASI C2/C4; P1 & P2 gugur; builder di ~/dev/kemlu/kke-furniture-lt3"
+description: "Paket Furniture (Built In) Lt 3 Gedung Tower Kemlu TA 2026 = MINI KOMPETISI e-katalog INAPROC (Lumsum, Pokja e-katalog): KKE ringkas format Aldo (4 sheet) terisi hasil 3 penawaran (29 Sep 2026) — P3 PT Quel Avery Indonesia satu-satunya lengkap (Rp1.108.380.510 = 92,9% HPS), PERLU KLARIFIKASI C2/C4; P1 & P2 gugur; builder di ~/dev/kemlu/kke-furniture-lt3. 7 Okt 2026: SP terbit lalu BATAL OTOMATIS (penyedia tidak approve sampai batas konfirmasi) → surat dispensasi ke LKPP; folder paket kini di Downloads/MOFA/Pejabat Pengadaan/Pengadaan Furniture Lt 3 Ruang Sekjen (hanya KKE versi Aldo 15:51)"
 metadata:
   type: project
 ---
+
+**Status 7 Okt 2026:** mini kompetisi selesai, PPK menerbitkan SP, kontrak didaftarkan di SAKTI, tetapi penyedia tidak
+menyetujui SP sampai batas konfirmasi → status paket di e-Katalog batal otomatis. LKPP: rollback tidak bisa, bersurat ke
+Direktur Pasar Digital Pengadaan. Draf suratnya: [[project_surat_lkpp_furniture_lt3]]. Aturan SP/batal otomatis:
+[[reference_katalog_v6_sp_batal]].
+**Lokasi berkas berubah (dicek 7 Okt 2026, mesin riv):** folder paket kini
+`C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Pengadaan Furniture Lt 3 Ruang Sekjen\` (KKE .xlsx/.pdf + Penawaran 1–3).
+KKE di sana = **versi Aldo 29 Sep 15:51** (masih memuat cacat di bawah). Folder `Data Tender Furniture Lt 3 Gedung Tower`
+berisi versi terbetulkan 16:14 **tidak ditemukan lagi** (cari s.d. kedalaman 6 di Downloads/Documents). Jalur lama di
+bawah ini historis.
 
 **Metode (koreksi 28–29 Sep 2026):** E-purchasing Katalog V6 **Mini Kompetisi**, kontrak **Lumsum**, harga terendah sistem
 gugur, kode RUP 67916737, 30 hari sejak Surat Pesanan (Tata Cara A.1.4). Bukan Tender — KKE versi 28 Sep pagi
