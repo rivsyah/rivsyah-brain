@@ -5,6 +5,7 @@
 
 ## NOW — active focus (update when it goes stale)
 
+- 🟡 7 Okt 2026 — **BA selisih biaya swakelola BSBI 2026 (IDP × UNJ)**: draf .docx 4 hlm di `Downloads\`, selisih Rp17,36 jt beban UNJ, maks Termin II Rp264,27 jt. Menunggu: isian kuning (Feni), cek pajak 13% + Termin I. [BA selisih BSBI 2026](kemlu/project_ba_selisih_bsbi_2026.md).
 - 🟡 6 Okt 2026 — **Paket Bus 30+1 + Innova Zenix Q HV TA 2026**: KAK/Spektek, RAB/HPS, SSUK+SSKK (x2) jadi di
   `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Bus Kemlu dan Innova Zenix\`. Zenix siap (Rp609,2 jt = proyeksi). Bus
   TERHAMBAT: HPS Rp1,317 M > SBM bus sedang Rp1,1 M, listing DGMI tidak aktif, inden 90-120 hr. Menunggu Aldo: PPK (Dina A?)
@@ -93,6 +94,7 @@
 - [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md) — rapat 5 Okt 2026 14.00 dgn Biro Keuangan Kemendag soal uang muka TA 2026 untuk pameran 2027; pegangan = Pointers_Rapat_Rivaldo.docx (suntingan Aldo, 5 Okt) + deck v2 12 slide di Downloads\MOFA\BUP\Rapat Kemendag PBJ LN 5 Okt 2026; sikap: Permenlu 3/2023 = cara mengadakan, bayar lintas TA = ranah Kemenkeu (opsi A pemilihan dini / B KTJ); kartu memuat fakta terverifikasi Permenlu 3/2023 (+Lampiran A/B), PMK 145/2017, 160/2015, 60/2018
 - [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md) — RUP 67117950, PT Rimonz Rp948,3 jt (63,5% HPS), 1.827 pegawai × 2 kemeja; pointers 8 hlm + deck 17 slide (6 Okt) di Downloads\MOFA\BUP\Rapat Evaluasi Pakaian Dinas ASN 2026, builder ~/dev/kemlu/rapat-evaluasi-pakaian-dinas; 3.302 kemeja (90%) "telah diperbaiki" 20 Jul–28 Agu; median ukuran XL→3XL; Tahap 2 (Aldo 6 Okt) = 129 pegawai mutasi pulang, 258 kemeja ≈ Rp102,2 jt, HPS ≤ Rp775 rb/kemeja → ≤ Rp200 jt; jaminan pelaksanaan & tanggal SP Tahap 1 belum dicek
 - [Bus + Zenix 2026](kemlu/project_pengadaan_bus_zenix_2026.md) — RO 6023.EBB.951.051.A.532111 PNBP pagu Rp2,2 M; 6 dok + 2 salinan unggah INAPROC (6 Okt); HPS bus Rp1.317.332.500 (> SBM Rp1,1 M, listing tidak aktif, inden 90-120 hr), Zenix Rp609.200.000 (ready stock); PPK Dina Amalia Indriyati (Wasdit) NIP kosong; PMK 84/2025 menggantikan 109/2023 (tak ada bayar-dulu-dengan-jaminan untuk barang); Perlem 2/2026: nego > Rp200 jt oleh Pokja; builder ~/dev/kemlu/pengadaan-bus-zenix-2026
+- [BA selisih BSBI 2026](kemlu/project_ba_selisih_bsbi_2026.md) — draf BA 7 Okt 2026 IDP×UNJ: kontrak Rp495,09 jt, tagihan Rp512,46 jt, selisih Rp17,36 jt beban UNJ, maks T2 Rp264,27 jt; risiko pajak 13% (beban riil ±Rp51,3 jt) + tagihan beda RAB; docx di Downloads, builder ~/dev/kemlu/ba-selisih-bsbi-2026
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 
