@@ -1,6 +1,6 @@
 ---
 name: Surat ke LKPP — pemulihan status paket e-Katalog Furniture Lt 3 Tower yang batal otomatis
-description: "Draf surat a.n. Sekjen (Plt. Kepala BUP) ke Direktur Pasar Digital Pengadaan LKPP, 7 Okt 2026: SP paket Furniture Built In Lt 3 Gedung Tower (RUP 67916737) batal otomatis karena penyedia tidak menyetujui SP sampai batas konfirmasi, padahal kontrak sudah di SAKTI; minta dispensasi pulihkan ke tahap konfirmasi atau terbitkan ulang SP ke pemenang sama; 22 isian kuning; jalur resmi pemulihan TIDAK ADA, jadi siapkan mini kompetisi ulang paralel"
+description: "Draf surat a.n. Sekjen (Plt. Kepala BUP) ke Direktur Pasar Digital Pengadaan LKPP, 7 Okt 2026: SP paket Furniture Built In Lt 3 Gedung Tower (RUP 67916737) batal otomatis karena penyedia tidak menyetujui SP sampai batas konfirmasi, padahal kontrak sudah di SAKTI; minta dispensasi pulihkan ke tahap konfirmasi atau terbitkan ulang SP ke pemenang sama; 22 isian kuning; jalur resmi pemulihan TIDAK ADA, jadi siapkan mini kompetisi ulang paralel. 8 Okt: Aldo menyunting surat (sisa 4 masalah, lihat OPEN) + draf surat pernyataan penyedia 1 hlm (Direktur Lianni Hertanto, NIB 1312210034528, meterai)"
 metadata:
   type: project
 ---
@@ -40,7 +40,34 @@ Pengadaan Digital LKPP. Fakta LKPP yang dipakai: [[reference_katalog_v6_sp_batal
 tambahan di surat. Cek kolom "Tenggat waktu untuk merespon pesanan" dan log status paket.
 ⚠ OPEN: SAKTI — aturan batal/ubah data kontrak bila SP baru terbit tidak ditemukan; tanya Biro Keuangan atau KPPN.
 
+## Suntingan Aldo (8 Okt 2026 15.55, berkas MOFA; isian kuning masih kosong)
+Butir konsultasi dengan Direktorat Pasar Digital dihapus. Permohonan tinggal satu: pulihkan ke tahap konfirmasi
+(opsi terbit ulang SP dan "arahan lain" dihapus). Butir "perketat pemantauan" dihapus. Lampiran tinggal SP,
+tangkapan layar, bukti SAKTI.
+⚠ OPEN (dilaporkan ke Aldo 8 Okt):
+1. Butir 2 kini "PPK ... telah telah menyelesaikan mini kompetisi": kata "telah" ganda. Isinya juga berisiko,
+   karena mini kompetisi > Rp200 jt wajib oleh Pokja (Perlem 2/2026 Ps 17 (2) b). Surat LKPP 4 Sep 2026 menyebut fitur
+   mini kompetisi oleh PPK hanya untuk percepatan pembangunan Papua.
+2. Butir permohonan kurang kata: "dispensasi dan arahan penyelesaian memulihkan status" → perlu "berupa pemulihan".
+3. Butir 7b masih menulis "surat pernyataan penyedia terlampir", tetapi daftar lampiran tidak memuatnya lagi.
+4. Penawaran P3 (surat pernyataan 25 Sep 2026) menjanjikan 60 hari kalender sejak SPMK; surat LKPP menulis 30 hari sejak SP.
+   Samakan dengan SP.
+
+## Lampiran: surat pernyataan penyedia (8 Okt 2026)
+- Draf: `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Pengadaan Furniture Lt 3 Ruang Sekjen\Surat Pernyataan
+  Penyedia - Tidak Menolak SP Furniture Lt 3 (draf).docx` (mesin riv) — 1 hlm A4, Arial 11, 12 isian kuning,
+  sisa ruang 3,2 cm untuk kop asli penyedia (kop pindaian ±2 cm lebih tinggi dari placeholder).
+- Builder: `build_pernyataan.js` + `verify_pernyataan.py` (33 cek, termasuk sisa ruang kop) di folder builder yang sama.
+- Identitas dari berkas Penawaran 3: NIB OSS 1312210034528 (alamat GreenLake City Rukan Colosseum No. 67, Petir,
+  Cipondoh, Kota Tangerang 15147) + Surat Pernyataan penawaran 25 Sep 2026 (Lianni Hertanto, Direktur). Surel
+  penyedia sengaja tidak dimuat.
+- 5 butir: tidak menolak SP (tenggat + sebab, kuning); tetap bersedia dengan harga/spesifikasi/volume/jangka waktu
+  "sesuai SP" (angka hari sengaja tidak ditulis); teken paling lambat 1 hari kerja setelah dipulihkan/terbit ulang;
+  tidak menuntut harga/waktu tambahan; sanksi bila tidak benar. Meterai Rp10.000 + cap.
+- Cek sebelum dipakai: status sistem harus "Batal Otomatis", bukan "Ditolak" — kalau penyedia menolak, butir 1 tidak benar.
+
 ## Status
-7 Okt 2026: draf diserahkan ke Aldo, menunggu isian dan keputusan penanda tangan. Kirim lewat
+7 Okt 2026: draf diserahkan ke Aldo, menunggu isian dan keputusan penanda tangan. 8 Okt: draf surat pernyataan
+diserahkan; penyedia perlu menyalinnya ke kop sendiri, mengisi, lalu menandatangani di atas meterai. Kirim lewat
 eoffice.lkpp.go.id/persuratan atau surat fisik. Saran: siapkan mini kompetisi ulang secara paralel (oleh Pokja,
 judul kompetisi beda) — [Likely] jawaban LKPP berupa arahan ulang, karena FAQ resmi menyuruh beli ulang.
