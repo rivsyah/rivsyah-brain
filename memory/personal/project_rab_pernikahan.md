@@ -1,6 +1,6 @@
 ---
 name: RAB Tunangan & Pernikahan
-description: "RAB tunangan Rp50 jt + nikah Rp200 jt, 7 sheet (RAB + kolom Ditanggung, Alternatif Venue 20 opsi, Rencana Tabungan dua fase, Daftar Undangan). Per 5 Okt 2026: tunangan Rp56,7 jt (lebih Rp6,7 jt karena cincin Frank & co. Rp32 jt), nikah CIBIS 300 Rp211,0 jt (lebih Rp11,0 jt; CIBIS 200 Rp192,7 jt muat). Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
+description: "RAB tunangan Rp50 jt + nikah Rp200 jt, 7 sheet (RAB + kolom Ditanggung, Alternatif Venue 20 opsi, Rencana Tabungan dua fase, Daftar Undangan). Per 5 Okt 2026: tunangan Rp56,7 jt (lebih Rp6,7 jt karena cincin Frank & co. Rp32 jt), nikah CIBIS 300 Rp216,9 jt (lebih Rp16,9 jt; CIBIS 200 Rp196,7 jt muat). Souvenir nikah Rp30 rb/pcs. Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
 metadata:
   type: project
 ---
@@ -86,4 +86,7 @@ seserahan terpisah). Aldo yang minta ke Swasana.
   jadi "Tip kru vendor" Rp2 jt karena nasi box kru sudah termasuk CIBIS. Nikah CIBIS 300 kini Rp210,96 jt; CIBIS 200
   Rp192,7 jt; fase 2 tabungan contoh Rp12,0 jt/bln. Catatan: CIBIS mewajibkan pengantin menyediakan cetakan foto untuk
   photo gallery (2 set × 4 panel) dan 2 standing frame — belum dianggarkan (kecil).
+- 8 Okt 2026 (permintaan Aldo): souvenir nikah Rp30 rb/pcs (225 pcs untuk 300 tamu = Rp6,75 jt). Nikah CIBIS 300 kini
+  Rp216,87 jt (tanpa mahar & seserahan Rp198,49 jt); CIBIS 200 Rp196,65 jt; total dua acara Rp273,6 jt vs Rp250 jt;
+  fase 2 tabungan contoh Rp13,1 jt/bln. Hemat bila souvenir 1 per undangan + 10% (165 pcs): ±Rp1,9 jt.
 
