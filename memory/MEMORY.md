@@ -144,6 +144,7 @@
 - [Cloudflare + rivsyah.dev](shared/reference/reference_cloudflare_rivsyah_dev.md) — zona ACTIVE sejak 29 Sep 22.52 WIB; per 4 Okt tinggal Workers Paid (scope workflow PAT beres, 0 Worker terdeploy); izin DNS token tidak perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME (butuh DNS Edit); Zero Trust belum aktif, onboarding Free wajib isi metode bayar; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo
 - [Kurs JISDOR BI](shared/reference/reference_bi_jisdor.md) — unduh rentang lewat postback tombol Unduh → xlsx (tanggal m/d/yyyy); GET biasa 10 hari; wskursbi mati; ECB/Frankfurter beda 15–20 poin; port PHP jalan 29 Sep
 - [Impor Claude Design](shared/reference/reference_design_login.md) — DesignSync bisa kedaluwarsa di tengah sesi; hanya /design-login dari terminal interaktif yang memulihkan
+- [PER-9/PB/2026 LLAT](kemlu/reference_per9_pb_2026_llat.md) — Langkah akhir TA 2026 (berlaku 8 Okt, cabut PER-8): kontrak & SPM-LS BAST s.d. 30 Sep → 9 Okt; Okt → 6 Nov; RPATA kode 171 17-23 Des; KKP s.d. 16 Des; Perwakilan LN bebas setor sisa UP (Ps 31)
 
 ## Archive
 
