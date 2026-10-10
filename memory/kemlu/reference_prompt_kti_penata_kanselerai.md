@@ -98,7 +98,12 @@ penulis") dan Lampiran III butir b. Pengungkapan AI wajib di subbagian Metode (p
 ## Terbuka
 
 1. Konfirmasi ke Pusat Pembinaan JF: Lampiran III (frasa AK) masih diminta? siapa pengesah perpustakaan kini?
-2. Belum diuji di model AI sungguhan (Claude/ChatGPT) — uji sekali dengan topik contoh sebelum dibagikan luas.
+2. Uji kering 10 Okt (subagen Claude, data fiktif "KBRI Contohland", topik selisih kurs): Tahap 0–1 berhenti di gerbang,
+   gerbang kerahasiaan terpicu pada bahan Terbatas. 8 perbaikan diterapkan: BERHENTI di Tahap 3–4; gerbang kerahasiaan
+   SEBELUM bahan diunggah (catatan "lampirkan bahan pada pesan yang sama" dihapus); agregasi tak menghapus status
+   Terbatas (SE 5.c.2); "ingatan bukan sumber" → [[VERIFIKASI]]; nama unit rekomendasi dari penulis; Lampiran III hanya
+   bila diminta (formulir Ps 21 Bab V); batas 3 penulis pembantu = pola Ps 23(2) saja; label (d) Lampiran II dibetulkan
+   ("utuh dan runtun"). Belum diuji di model lemah (kelas GPT-4o-mini) atau model berpenelusuran web.
 
 Terkait: [[reference-kti-percepatan-pangkat]], [[project-kti-sigap-sipdln]], [[project-kti-mitra-diklat-pk]],
 [[user-jabatan-kemlu]], [[reference_aturan_pangkat_jfpk]].
