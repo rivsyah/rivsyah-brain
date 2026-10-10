@@ -37,3 +37,10 @@ Dasar "Memperhatikan": Surat Menkeu S-708/MK.03/2026 tgl 8 Okt 2026 (Langkah Str
 - Ps 63: DJPb boleh menolak NRK, menolak SPM, membatalkan SP2D atas dasar pengendalian belanja Menkeu;
   pembayaran lalu lewat mekanisme tunggakan.
 - Ps 61: pengajuan di luar batas waktu hanya dengan persetujuan Direktur Pelaksanaan Anggaran.
+
+## Rangkuman PDF (10 Okt 2026)
+PDF 7 hlm gabungan PER-9 + S-708 (kalender batas waktu Okt 2026-Feb 2027, tabel "yang diperketat S-708"):
+`C:\Users\rivsy\Downloads\Rangkuman PER-9_PB_2026 dan S-708_MK.03_2026.pdf`. Builder: `C:\Users\rivsy\dev\kemlu\rangkuman-llat-2026\build.py`
+(HTML -> Chrome headless -> stempel halaman PyMuPDF). Footer menandai "Terbatas" karena S-708 bersifat Rahasia.
+Koreksi tafsir: S-708 Lamp. 2 membatasi **pemberian kesempatan** (lewat 31 Des) ke Prioritas Presiden, bukan seluruh RPATA
+BAST 19-31 Des [Likely].
