@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 442198e7-41cd-48b8-9da8-ca7988158a76
-  modified: 2026-08-15T14:47:50.396Z
+  modified: 2026-10-10T20:10:00.000Z
 ---
 
 Kajian kebijakan independen **"Too Big to Fail — Terlalu Besar untuk Gagal: Koperasi
@@ -159,3 +159,42 @@ PDF + deck, EIU = `background` kecuali Aldo tandai `cleared`). Cutoff usulan 10 
   Fitch BBB neg, S&P BBB stabil).
 - Tesis TIDAK terbantah; justru menguat. Cara paling mungkin tesis salah: program diperlakukan sebagai
   subsidi tertutup enam tahun (~1% PDB), bukan risiko fiskal.
+
+## Rebuild master prompt v3 — SELESAI 10 Okt 2026 (cutoff 10 Okt 2026)
+
+Disetujui Aldo ("setuju, approved") lalu dibangun penuh. **Brief berdiri sendiri** (tak ada "second
+edition"). Hasil: `out/Too-Big-to-Fail.pdf` **30 hlm**, 21 figur, 11 tabel badan + 5 lampiran, 3 kotak,
+69 referensi, 40 klaim bergrade A–D; deck **24 slide**. Gerbang: pra-render 72/72, `verify.py --pdf` 20/20,
+deck 10/10, deck dibuka PowerPoint (COM via PowerShell). Versi 3 Sep disalin ke `out/superseded/`;
+`out/.delivered.json` = ledger hash file terkirim (`python src/supersede.py --mark` sesudah kirim).
+EIU = `background` (tidak dikutip). 12 brief DEN = S2–S13, semuanya publik.
+
+**Fakta T1 baru yang mengubah brief:**
+- Peminjam = **PT Agrinas Pangan Nusantara (Persero)**, eks PT Yodya Karya, di bawah Danantara
+  (PMK 15/2026 Ps 1; filing Mandiri). Fasilitas sindikasi **Rp240 t, 6%, 72 bln, 27 Okt 2025** (LK BNI H1 2026).
+- Saldo ke Agrinas: 3 bank Rp140,1 t (31 Des 2025) → **Rp166,9 t (30 Jun 2026)** = **32,7% ekuitas BNI**,
+  18,8% Mandiri, 17,3% BRI. OJK Rp149 t (Des 2025) = uang ditarik → anggapan lama "komitmen" SALAH.
+- PMK 15/2026 ditetapkan 16 Mar, berlaku 1 Apr 2026 (bukan 5 Apr). RAPBN 2027 diajukan **14 Agu** (bukan 16).
+- Dasbor Simkopdes (dibaca sendiri, status 10 Okt): transaksi **Rp208,38 mi**, 84.290 trx; 28.019 gerai
+  rampung; 26.911 manajer; simpanan anggota Rp41,1 mi; Jawa 30% koperasi / 60% transaksi; Papua 8,5% / 0,6%.
+  Disclaimer dasbor: hanya POS + penyedia terintegrasi → angka = batas bawah.
+- Omzet nyaris datar sejak 22 Agu (+Rp3,4 mi) padahal SPHP lewat koperasi 16,6 jt kg s.d. 23 Sep →
+  inferensi memo "omzet berhenti saat kuota SPHP habis" DITARIK.
+- Cicilan I Rp37,7 t jatuh tempo 25 Sep; dana ditempatkan di bank, belum cair per 7 Okt (menunggu verifikasi);
+  gerbang pembayaran PMK 15 = serah terima, bukan operasi. Menkeu Suahasil sejak 14 Sep.
+- Dana Desa 2027 Rp77 t = 51 KDMP + 25 reguler + 1 insentif → sisa Rp26 t, terendah sejak 2015.
+- Selisih 58% vs Rp34,57 t (2026) TERJAWAB: 58,03% dari pagu per desa yang totalnya Rp59,57 t.
+
+**Model & skenario (v3):** base ρ=0% (bukan 12%) → biaya 6 thn **Rp300 t (1,3% PDB 2025)**; rentang
+Rp209–474 t; cicilan Rp57,0 t/thn pada penarikan penuh = 112% earmark 2027 = 212× omzet tercatat setahun.
+**Calls C1–C7:** C1 cicilan I dibayar ≥Rp30 t (31 Des 2026) · C2 omzet 2026 <Rp0,5 t (31 Des 2026) ·
+C3 simpanan tanpa penjaminan (30 Jun 2027) · C4 LKPP 2026 tanpa jadwal kontinjen (30 Jun 2027) ·
+C5 RAPBN 2028 ≥Rp30 t (31 Agu 2027) · C6 tak ada aksi rating menyebut program (31 Des 2027) ·
+C7 omzet 2027 <Rp5 t (31 Jan 2028).
+
+**Cacat build 3 Sep yang ketahuan:** sampul & metadata PDF 3 Sep tertulis "Data cutoff: 31 July 2026"
+(stamp.py hard-code) padahal isi 3 Sep. Kini stamp membaca META dan `verify.py --pdf` membaca balik sampul.
+
+**Pipeline v3** (lihat README proyek): templat t00–t11 berisi token `{{key}}`, `[[fig:]]`, `[[cite:]]`,
+`[[g:]]`; tables.py menggenerate semua tabel; verification.md digenerate dari content.py (315 rekaman,
+17 koreksi). Jebakan baru sudah ditulis ke §13 master prompt v3.

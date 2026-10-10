@@ -36,3 +36,8 @@ v3 merges that copy, v2, and the lessons from the briefs in this scope.
 
 **How to apply:** start every new policy brief from v3. When a build finds a new trap, add it to
 §13 of v3 and to the project card, in the same turn.
+
+**First brief built end-to-end under v3:** [[project-koperasi-merah-putih]] (*Too Big to Fail*, 10 Oct 2026,
+30 pp + 24-slide deck). Its pipeline (token templates, generated tables and register, `verify.py --pdf`,
+`proof.py`, `supersede.py` ledger, PowerShell-COM deck proof) is the reference implementation. Six traps
+from that build were added to §13 on 10 Oct 2026.

@@ -5,7 +5,7 @@
 
 ## NOW — active focus (update when it goes stale)
 
-- 🟡 10 Okt 2026 — **Too Big to Fail rebuild master prompt v3**: memo Phase 0 di `Research Reports\Too-Big-to-Fail\scope-memo-v3.md`, menunggu "setuju" Aldo (judul, Firebreak, PDF+deck, tanda EIU). [Koperasi Merah Putih](research/project_koperasi_merah_putih.md).
+- 🟢 10 Okt 2026 — **Too Big to Fail v3 SELESAI**: PDF 30 hlm + deck 24 slide, cutoff 10 Okt, gerbang 72/72 + PDF 20/20 + deck 10/10; peminjam = Agrinas (T1), biaya base Rp300 t; 7 calls mulai 31 Des 2026. [Koperasi Merah Putih](research/project_koperasi_merah_putih.md).
 - 🟡 10 Okt 2026 — **KTI PNBP kekonsuleran / dana abadi diplomasi** (Aldo: aset DIKELUARKAN, fokus PNBP paspor/visa/dokumen yang dipungut Perwakilan): Tahap 1 dilaporkan, 3 judul (usulan agen: Judul 2 penggunaan dana PNBP, UU 9/2018 Ps 33). Menunggu Aldo: pilih judul, izin brief riset v3 (lintas scope), A11, A10, penyusun kertas kerja BUP, NIP + SK PK. [KTI PNBP Kekonsuleran](kemlu/project_kti_blu_aset_dana_abadi.md).
 - 🟡 10 Okt 2026 — **KTI mitra diklat LN bagi Penata Kanselerai v2** (38 hlm, verify 21/21, lolos Gerbang Mutu master prompt KTI; v1 di subfolder arsip) di `Downloads\Riv's Journey\KTI Mitra Diklat PK\`: tak ada "Clingendael untuk kanselerai" → jangkar Singapura (SCP) + IDFR Malaysia + ITEC India. Menunggu Aldo: putuskan + tulis ulang bagian analisis (Ps 17(2)a), isian kuning, konfirmasi Pusbinjabfung. [KTI Mitra Diklat PK](kemlu/project_kti_mitra_diklat_pk.md).
 - 🟡 8 Okt 2026 — **Surat ke LKPP: SP Furniture Lt 3 Tower batal otomatis** (kontrak sudah di SAKTI): surat 2 hlm (disunting Aldo 8 Okt, 4 masalah terbuka) + surat pernyataan penyedia 1 hlm, keduanya di folder paket MOFA. Jalur resmi pemulihan TIDAK ADA → saran siapkan mini kompetisi ulang paralel. [Surat LKPP Furniture Lt 3](kemlu/project_surat_lkpp_furniture_lt3.md).
@@ -118,7 +118,7 @@
 - [El Niño Brief](research/project_el_nino_brief.md) — "Both Sides of the Drought" 36pp; eksposur dua sisi beras/sawit, "Ballast Agenda"
 - [One Price, Two Ledgers](research/project_one_price_two_ledgers.md) — rerun v2 brief chokepoint 34pp; "Counterweight Agenda", verify.py jadi gerbang build
 - [Two Gates, One Price](research/project_two_gates_one_price.md) — brief 30pp krisis chokepoint Hormuz/Bab al-Mandab; "Ballast Agenda"
-- [Koperasi Merah Putih](research/project_koperasi_merah_putih.md) — brief EN "Too Big to Fail" 36hlm + deck 32 (cutoff 3 Sep 2026); rebuild v3 Phase 0 menunggu persetujuan (10 Okt); lead: peminjam Himbara = Agrinas, absen dari brief
+- [Koperasi Merah Putih](research/project_koperasi_merah_putih.md) — brief EN "Too Big to Fail" v3: 30 hlm + deck 24 slide, cutoff 10 Okt 2026; peminjam Himbara = Agrinas (Rp240 t, 32,7% ekuitas BNI); base Rp300 t/6 thn; sampul PDF 3 Sep sempat basi (cutoff 31 Jul)
 - [The Price of Proof](research/project_price_of_proof.md) — paper kedua 37pp untuk stakeholder Indonesia; CBAM/EUDR/labour, "Evidence Chain"
 - [Lestari Advisors](research/project_lestari_advisors.md) — lamaran Junior Business Analyst + paper "The Delivery Gap" 23pp; CV Aldo tanpa text layer
 - [China Outlook Brief](research/project_china_outlook_brief.md) — brief 34pp Indonesia-facing; "Symmetry Agenda", + deck PPTX + infografis, 3 jebakan build
