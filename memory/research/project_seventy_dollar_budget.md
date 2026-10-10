@@ -1,6 +1,6 @@
 ---
 name: project-seventy-dollar-budget
-description: "The Seventy-Dollar Budget" — Indonesia Economic Outlook 2026 brief (33pp + deck + infographic) in Research Reports\Indonesia Outlook only 2026
+description: "The Seventy-Dollar Budget" — Indonesia Economic Outlook 2026 brief, live at Research Reports\Seventy-Dollar-Budget (standalone 36pp + 23-slide deck, 16 Aug 2026); v3 rerun started 10 Oct 2026
 metadata:
   type: project
 ---
@@ -86,3 +86,41 @@ Satu pola yang layak ditiru: kalau angka inti sebuah brief adalah **konstruksi p
 data terbit, jadikan label kejujurannya bagian dari gerbang build — `verify.py` di brief BPP gagal
 kalau lima frasa penanda hilang dari PDF (asumsi dinyatakan, catatan tanpa-data-primer, caveat sub
 judice, dan seterusnya).
+
+## Status per 10 Oct 2026 — v3 rerun (Phase 0)
+
+**Live folder:** `C:\Users\rivsy\Downloads\Research Reports\Seventy-Dollar-Budget\` (this machine).
+The v1 folder `Indonesia Outlook 2026 Only\` no longer exists — ignore the path in the first
+paragraph above. Last delivery: standalone 36pp PDF + 23-slide deck, cutoff 16 Aug 2026.
+Sources moved: the DEN month folders are now `Research Reports\References\Juli` and `\Agustus`;
+new top-level files in `References\` dated 6 Sep (EIU 2027 outlook 69pp Type3 = needs render,
+IBC synthesis / 15 recommendations / ART draft position paper, DEN Inflation Sep, DEN Weekly IV Aug,
+DEN food prices Aug, a published Hormuz energy-security policy brief).
+
+**Facts that change the brief (all T1-checked unless noted):**
+- BI Governor Perry Warjiyo **resigned 27 Jul 2026**; Destry Damayanti confirmed by DPR plenary
+  1 Sep 2026 (2026–2031). Both earlier editions missed the resignation, which fell before their
+  cutoff — a real omission.
+- Finance Minister **Suahasil Nazara from 14 Sep 2026** (Keppres 97/P/2026), replacing Purbaya
+  Yudhi Sadewa. The 2.85% deficit projection was Purbaya's.
+- **APBN 2027 passed 29 Sep 2026**: ICP US$75 single point, no band, no trigger (Kemenkeu DJSEF,
+  24 Sep); growth 6%, inflation 2.5%, Rp17,500, SBN 10Y 6.9%, deficit 2.4%, revenue Rp3,435.1trn,
+  spending Rp4,106.2trn. Brent was above US$100 within two days (US$103.50 on 1 Oct).
+- **APBN KiTa to 31 Aug 2026**: deficit Rp240.1trn = 0.93% of GDP (narrower than 1.35% a year
+  earlier); primary surplus Rp154trn; revenue +25.4% (65.2% of target); subsidy + compensation
+  Rp331.4trn = 74.2% of ceiling, +52.1%; compensation Rp154.4trn now **paid monthly**.
+- CPI Aug 3.19%, Sep 3.28%; IHPB Aug 6.18% → wedge 2.99 points (May 2.68 / Jun 3.17 / Jul 2.78).
+- ICP Jul US$81.68, Aug US$89.43 (Kepmen ESDM 352.K/MG.03/MEM.M/2026).
+- 10Y yield fell to 6.93–6.97% in late Aug (back at the 6.9% assumption); ~7.13% in early Oct is
+  a single unverified press figure.
+
+**Governing thought has to change.** The monthly compensation mechanism and the narrow, narrowing
+deficit weaken the old limb "the cost is hidden in deferred obligations". What survives and gets
+stronger: the shock is *paid* on-budget (subsidy + compensation +52%) and *funded* by a windfall
+from the same oil price, so the budget's apparent health is a hedge, not resilience — and the 2027
+budget writes that hedge on a single price point. Two of the six 2026 assumptions have healed on
+outturn (growth: H1 average ≈5.45% vs 5.4%; yield: late-Aug ≈6.95% vs 6.9%), so "all six broke" is
+no longer true as stated.
+
+**Decisions pending with Aldo (Phase 0):** governing thought, title, framework name, and the
+clearance marking for DEN briefs and EIU material (v3 §5.6: unmarked non-public = background).
