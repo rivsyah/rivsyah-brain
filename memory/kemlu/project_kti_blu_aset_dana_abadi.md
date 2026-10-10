@@ -1,6 +1,6 @@
 ---
 name: project-kti-blu-aset-dana-abadi
-description: "KTI (makalah Permenlu 23/2020), awalnya 'BLU Pengelolaan Aset dan Dana Abadi Diplomasi' — 10 Okt 2026 Aldo MENGELUARKAN aset (Kemlu hanya Pengguna Barang) → fokus PNBP kekonsuleran yang dipungut Perwakilan (paspor, visa, dokumen keimigrasian/konsuler). Tahap 1 dilaporkan: 3 judul (tata kelola pasca-PP 21/2025; penggunaan dana PNBP UU 9/2018 Ps 33 = usulan agen; dana abadi berbasis PNBP). Fakta kunci: PP 21/2025 Ps 5 (PNBP K/L lain yang dipungut Perwakilan = PNBP Kemlu), Ps 6 setor Kas Negara; PMK 53/2026 Ps 3(3) selisih lebih PNBP BLU → tambahan dana abadi"
+description: "KTI (makalah Permenlu 23/2020) 'Penggunaan Dana PNBP Kekonsuleran bagi Peningkatan Layanan Perwakilan RI' (Judul 2, pilihan Aldo 10 Okt 2026); aset dikeluarkan; brief riset TIDAK dikutip, hanya sumber publik, analisis baru; A11 = dana abadi dikelola Kemlu dari PNBP paspor/visa/legalisasi/dokumen untuk layanan konsuler, pelindungan WNI, operasional Perwakilan. Tahap 2 (kerangka) dilaporkan, menunggu persetujuan. Fakta kunci: PP 21/2025 Ps 5 + Ps 6; UU 9/2018 Ps 20, 29, 33, 34; PP 23/2005 Ps 4(2)c + Ps 19(1); PMK 53/2026 Ps 3(3)"
 metadata:
   type: project
   modified: 2026-10-10
@@ -19,9 +19,28 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
 
 ## Status
 
-- Tahap 0 dilaporkan → Aldo jawab fokus saja. **Tahap 1 dilaporkan 10 Okt 2026**, BERHENTI menunggu pilihan judul.
-- Masih terbuka dari Tahap 0: izin brief riset, A11 paragraf gagasan, A10 masalah, penyusun + status terbuka kertas
-  kerja BUP, NIP + SK PK Ahli Pertama, format bawaan.
+- Tahap 0 → Tahap 1 → **Tahap 2 (kerangka) dilaporkan 10 Okt 2026**, BERHENTI menunggu persetujuan kerangka.
+
+## Keputusan Aldo (jawaban Tahap 1, 10 Okt 2026)
+
+1. **Judul 2**: Penggunaan Dana PNBP Kekonsuleran bagi Peningkatan Layanan Perwakilan RI (anak judul usulan agen,
+   opsional: "Menuju Dana Abadi yang Dikelola Kementerian Luar Negeri").
+2. **Brief riset TIDAK dikutip; KTI hanya dari sumber publik; analisis harus benar-benar baru.** → jangan pakai
+   ukuran, pembanding, atau kesimpulan brief (mis. ukuran selisih PNBP–pagu, pembanding OWWA/ICWF/Korea Foundation,
+   teori Dye & McGuire, Brickley dkk.). KTI memakai: uji earmarking (Buchanan 1963; McCleary 1991; OECD 1998),
+   kriteria UU 9/2018 Ps 33(2) sebagai syarat desain, patok banding AS/Kanada + LPDP/LDKPI + BLU dana bergulir
+   kementerian teknis, desain BLU dana khusus di Kemlu.
+3. **A11 (substansi, belum paragraf):** tujuan akhir = dana abadi; sumber = paspor, visa, legalisasi, dokumen;
+   penggunaan = layanan kekonsuleran, pelindungan WNI, operasional Perwakilan; pengelola = Kemlu. Paragraf kata-kata
+   Aldo sendiri masih diminta sebelum Tahap 3.
+4. **A10:** "resistensi Kemenkeu" → agen sarankan dibingkai sebagai kriteria persetujuan selektif (UU 9/2018 Ps 33(2)
+   + penjelasan, Ps 34), bukan "resistensi" (Ps 17(2)b, C6). Surat Menkeu S-708/MK.03/2026 (RAHASIA) TIDAK boleh
+   jadi bukti.
+5. **Penulis:** Rivaldo = penyusun; akan berpartner dengan diplomat ATAU Penata Kanselerai Ahli Madya (belum dipilih).
+   Catatan agen: diplomat tak memenuhi Ps 3 kecuali mantan PK → jadikan narasumber; PK Madya bisa penulis pembantu.
+   Rencana BLU/dana abadi **belum pernah disampaikan terbuka** → naskah = usulan penulis, tak menyebut rencana internal.
+   Penyusun kertas kerja BUP: belum dijawab.
+6. NIP masuk [[user-jabatan-kemlu]]; SK PK Ahli Pertama menyusul. Format bawaan dianggap disetujui (tak dibantah).
 - Belum ada folder hasil/builder. Rencana: `Downloads\Riv's Journey\KTI PNBP Kekonsuleran\` + `~/dev/kemlu/kti-pnbp-kekonsuleran`
   (nama folder menyesuaikan judul terpilih), dibuat saat Tahap 3.
 
@@ -82,7 +101,27 @@ PNBP kekonsuleran:
 - **LKj Direktorat Konsuler 2024** (kemlu.go.id/files/repositori/65397/...): pagu Rp28.936.363.000 → revisi
   Rp29.859.437.000 "karena penambahan target PNBP"; realisasi Rp29.850.707.355 (99,97%); 67.418 stiker legalisasi;
   paspor diplomatik elektronik, visa.kemlu.go.id + e-Visa diplomatik/dinas (Permenlu 8/2024).
-- KMK persetujuan penggunaan dana PNBP Kemlu: tidak ditemukan publik.
+- KMK persetujuan penggunaan dana PNBP Kemlu: tidak ditemukan publik (pola lama: KMK per K/L, mis. 171/KMK.02/2007
+  Polri, dasar PP 73/1999 era UU 20/1997).
+- **UU 9/2018** lain (teks dibaca): Ps 16(1) Instansi Pengelola PNBP = K/L + Kementerian BUN, (2) dipimpin Menteri
+  selaku PA/PB; Ps 20 seluruh PNBP dikelola dalam sistem APBN; Ps 29 seluruh PNBP wajib disetor ke Kas Negara; Ps 30
+  (2)–(4) bayar lewat instansi pengelola dalam hal tertentu, wajib setor tepat waktu, sanksi. LN 2018/147, TLN 6245.
+- **PP 23/2005** (JDIH Kemenkeu, teks 2005; cek perubahan PP 74/2012): Ps 4 syarat substantif (a) barang/jasa layanan
+  umum, (b) wilayah/kawasan, (c) pengelolaan dana khusus; teknis; administratif; Ps 5 Menkeu menetapkan atas usul
+  menteri (penuh/bertahap ≤3 thn, keputusan ≤3 bln); Ps 14(5) pendapatan BLU dikelola langsung untuk belanja sesuai
+  RBA; Ps 16(5) investasi jangka pendek; **Ps 19(1) investasi jangka panjang hanya dengan persetujuan Menkeu**; Ps 29
+  surplus dipakai tahun berikut kecuali diperintah setor.
+- PMK 155/PMK.02/2021 Tata Cara Pengelolaan PNBP jo. PMK 58/2023 (berlaku 29 Mei 2023): definisi Pagu Penggunaan Dana
+  PNBP. MP PNBP: PMK 110/PMK.05/2021 Ps 23 → PER-8/PB/2021 jo. PER-2/PB/2023 (pertimbangan realisasi setoran +
+  belanja, tahun lalu, proyeksi, rencana; MP tahap I/II; dihitung sistem) [Likely].
+- Pembanding (publik): AS 8 U.S.C. §1714 surcharge disetor ke rekening Consular and Border Security Programs, tersedia
+  sampai habis; MRV fee ditahan (PL 103-236) [Likely]. Kanada: Passport Revolving Fund, fee = satu-satunya sumber,
+  Revolving Funds Act, siklus seimbang 10 tahun (2013–2023, 2023–2033), surplus tergerus, suntikan C$25 jt 2023–24
+  [Likely, canada.ca]. BLU dana bergulir kementerian teknis: LPDB-KUMKM (unit non-eselon pola BLU, Kemenkop),
+  LPMUKP (BLU KKP, Permen KP 3/2017 → 2/2022 → 15/2025) [Likely].
+- Teori (bibliografi dicek): Buchanan 1963 JPE 71(5) 457–469 doi 10.1086/258794; McCleary 1991 WBRO 6(1) 81–104;
+  OECD 1998 User Charging for Government Services, PUMA Occasional Papers No. 22 (penulis beda antarkatalog);
+  Tobin 1974 AER 64(2) 427–432 [via sumber sekunder].
 
 Dana abadi dan BLU (cek pertama, sebelum pivot):
 - **PMK 53/2026** Tata Cara Pengelolaan Dana KPI — ditetapkan 22 Jul 2026 (Purbaya), berlaku saat diundangkan (berita:
