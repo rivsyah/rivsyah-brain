@@ -19,7 +19,12 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
 
 ## Status
 
-- Tahap 0 → Tahap 1 → **Tahap 2 (kerangka) dilaporkan 10 Okt 2026**, BERHENTI menunggu persetujuan kerangka.
+- Tahap 0 → 1 → 2 (kerangka **disetujui Aldo 11 Okt 2026**: "setujui") → **Tahap 3: draf Bab I selesai 11 Okt**
+  (1.003 kata; A 639, B 69, C 67, D 228; 4 penanda), BERHENTI menunggu tanggapan. Berikutnya Bab II A.
+- Berkas: `Downloads\Riv's Journey\KTI PNBP Kekonsuleran\` — `draf\01-bab-I-pendahuluan.md` + `Sumber\` (6 PDF publik:
+  PP 21/2025, PP 44/2025, UU 9/2018, LK Kemlu TA 2024 Audited Buku I, LKj Direktorat Konsuler 2024, PMK 53/2026).
+  Builder docx belum ada (Tahap 5; pola [[project-kti-mitra-diklat-pk]]).
+- Paragraf A11 belum dikirim: dibutuhkan sebelum Bab II D (bukan sebelum Bab I).
 
 ## Keputusan Aldo (jawaban Tahap 1, 10 Okt 2026)
 
@@ -122,6 +127,37 @@ PNBP kekonsuleran:
 - Teori (bibliografi dicek): Buchanan 1963 JPE 71(5) 457–469 doi 10.1086/258794; McCleary 1991 WBRO 6(1) 81–104;
   OECD 1998 User Charging for Government Services, PUMA Occasional Papers No. 22 (penulis beda antarkatalog);
   Tobin 1974 AER 64(2) 427–432 [via sumber sekunder].
+
+Ditemukan 11 Okt 2026 (sesi scope kemlu, sumber publik):
+- **PP 44/2025** Tata Cara Penetapan Tarif, Pengelolaan, dan Penyelesaian Keberatan, Keringanan, dan Pengembalian PNBP —
+  ditetapkan + diundangkan 19 Sep 2025 (Prabowo), berlaku saat diundangkan (Ps 112), LN 2025/156 [BPK]; Ps 111 mencabut
+  PP 58/2020, 59/2020, 69/2020 (aturan pelaksana tetap berlaku sepanjang tak bertentangan). Ps 2: Pengelola PNBP =
+  Menteri selaku pengelola fiskal + Pimpinan Instansi Pengelola PNBP. **Ps 46** = isi UU 9/2018 Ps 33 + ayat (4)
+  persetujuan/penolakan "dituangkan dalam bentuk surat Menteri" (→ menjelaskan kenapa KMK Kemlu tak ada di publik);
+  penjelasan Ps 46(3)a: "penyelenggaraan Pengelolaan PNBP" antara lain kegiatan yang langsung terkait layanan kepada
+  Wajib Bayar. **Ps 47** tinjau ulang periodik; penjelasan (3): "perubahan" = penurunan besaran penggunaan dana PNBP
+  dan/atau pengurangan kegiatan. **Ps 48: Menteri dapat menerbitkan pengaturan tersendiri atas persetujuan penggunaan
+  dana PNBP untuk jenis PNBP tertentu** (dasar: peraturan perundang-undangan atau kebijakan Pemerintah) = tuas desain.
+- **LK Kemlu TA 2024 Audited Buku I** (publik: kemlu.go.id/files/repositori/65377/..._LK_Kemlu_TA_2024_Audited___Buku_I.pdf;
+  "Jakarta, Mei 2025"; 145 satker = 13 pusat + 132 Perwakilan): PNBP Rp534.394.583.417 = 120,41% estimasi
+  Rp443.806.270.000. Tabel 9/10 (2024 vs 2023): visa Rp95.301.059.797 vs 81.174.688.340 (+17,40%; estimasi 12,78 M →
+  745,63%); paspor 158.375.485.939 vs 171.461.650.039 (−7,63%); dokumen kekonsuleran 110.816.682.908 vs 110.827.775.891
+  (−0,01%); pelayanan lainnya di LN 23.790.055.719 vs 48.680.389.801 (−51,13%); administrasi di LN 44.776.361.056 =
+  pengembalian VAT dari 78 Perwakilan (BUKAN layanan konsuler; diakui tanpa "rincian dari Fungsi Konsuler"). Penyebab
+  menurut CaLK: visa naik karena 2 jalur (e-visa ditangani langsung Ditjen Imigrasi + Perwakilan; Permenkumham 26/2020
+  masa pandemi e-visa saja); paspor turun "dapat dikarenakan" masa berlaku 10 thn, sejak Agu 2024 paspor WNI di LN 5 thn
+  (Permenkumham 19/2024); dokumen turun karena Konvensi Apostille (Perpres 2/2021, efektif Sep 2022); pelayanan lainnya
+  turun karena program khusus K/L teknis berakhir (rekalibrasi TKI Malaysia, pasporisasi Arab Saudi). **MP PNBP tahap I
+  hanya 40% pagu DIPA PNBP → Perwakilan tunda kontrak renovasi; tahap II (Agustus) 80%; tahap III baru November** →
+  belanja modal Rp747,43 M vs 1.288,38 M (−41,99%). Alur setor: Bendahara Penerimaan Perwakilan → rekening PNBP Kemlu
+  pusat → Bendahara Penerimaan Pusat → Kas Negara (Keputusan Kepala Perwakilan tentang Pola Setor PNBP + SOP; sesuai
+  Permenlu 26/2020); kas di Bendahara Penerimaan Rp7.653.639.038 (2023: Rp12.046.952.654). Catatan: sebagian angka ini
+  juga dipakai brief riset (sumber sama) → di KTI dikutip langsung ke LK; Bab I sengaja tak memakai agregat "fee konsuler".
+- PP 45/2024 (tarif PNBP Kemenkumham): ditetapkan + diundangkan 18 Okt 2024, berlaku 17 Des 2024, LN 2024/240,
+  TLN 7000 [BPK]; dicabut sebagian oleh PP 30/2026 (PNBP Kementerian Hukum) — tarif keimigrasian tetap PP 45/2024
+  [Likely]. PMK 7/PMK.02/2023 (pembayaran PNBP keimigrasian dengan instrumen pembayaran internasional, BN 2023/124,
+  mencabut PMK 157/PMK.02/2022) jo. PMK 46/2024 [Likely]. CNBC 6 Mei 2026: DJA (Plh Dirjen Sudarto) sedang merombak
+  tarif PNBP K/L lewat perubahan PP; tak menyebut Kemlu.
 
 Dana abadi dan BLU (cek pertama, sebelum pivot):
 - **PMK 53/2026** Tata Cara Pengelolaan Dana KPI — ditetapkan 22 Jul 2026 (Purbaya), berlaku saat diundangkan (berita:
