@@ -1,11 +1,11 @@
 ---
 name: project-landlord-that-rents
-description: "Brief Retention Before Agency (master prompt v3, 10 Okt 2026, 31pp + deck 23 slide): urutan reformasi aset diplomatik & dana abadi Kemlu; Retention Agenda 5 stream 11 aksi; folder tetap Landlord-That-Rents; ed.4 (BPADAD) dibekukan"
+description: "Brief Retention Before Agency versi PNBP konsuler (10 Okt 2026, 31pp + deck 25 slide): fokus PNBP paspor/visa/dokumen; aset BMN dibuang (dikelola Kemenkeu); Retention Agenda 5 stream 10 aksi; versi estate diarsip; folder tetap Landlord-That-Rents; ed.4 dibekukan"
 metadata: 
   node_type: memory
   type: project
   originSessionId: 4d538033-6b39-404d-ad2d-715697a084d7
-  modified: 2026-10-10T11:30:00.000Z
+  modified: 2026-10-10T14:45:00.000Z
 ---
 
 Brief Ignited Research **"The Landlord That Rents"** (34pp, terbit 10 Sep 2026) di
@@ -242,7 +242,7 @@ Pemetaan baris: TRANS, KODE, DEBET, KREDIT, NAMA.
 
 ## Rebuild master prompt v3 — 10 Okt 2026: *Retention Before Agency*
 
-**Status: TERKIRIM 10 Okt 2026.** Brief berdiri sendiri: tidak ada label edisi dan
+**Status: DIGANTIKAN 10 Okt 2026 sore oleh versi PNBP konsuler (lihat bagian berikut); diarsip di `out/superseded/2026-10-10-estate-*` dan `src/estate/`.** Brief berdiri sendiri: tidak ada label edisi dan
 tidak merujuk brief lain.
 
 - **File.** `out/Retention-Before-Agency.pdf` (31 hlm; 23 figur, 14 tabel, 3 kotak,
@@ -303,3 +303,69 @@ tidak merujuk brief lain.
 - **Jebakan baru** dicatat di §13 v3: hatch.color, letter-spacing, hyphen dan U+2011,
   caption ter-escape, caption tabel yatim, locale PowerPoint, label grade D yang
   rendernya sama dengan angka grade A, entity `&ndash;`.
+
+## Rebuild PNBP konsuler — 10 Okt 2026 (sore): *Retention Before Agency*
+
+**Status: TERKIRIM 10 Okt 2026.** Instruksi Aldo: buang pengelolaan aset, karena BMN
+dikelola Kemenkeu sebagai Pengelola Barang dan Kemlu hanya Pengguna Barang; fokus ke
+PNBP paspor, visa, dokumen dan layanan konsuler lain.
+
+- **File.** `out/Retention-Before-Agency.pdf` (31 hlm; 22 figur, 13 tabel, 3 kotak,
+  69 referensi) dan `out/Retention-Before-Agency-Deck.pptx` (25 slide, 3 chart native).
+  Ada juga `out/delivery-note.md` (dibuat oleh `src/delivery_note.py`).
+  - Versi estate pagi ini diarsip di `out/superseded/2026-10-10-estate-*`, skripnya di
+    `src/estate/`.
+  - `out/DELIVERED.json` berlabel `2026-10-10-pnbp`.
+- **Gate.** Brief 56 cek, 0 gagal; 74 identitas lolos. Deck: 129 angka dicek balik,
+  0 masalah; terbuka di PowerPoint (COM).
+- **Keputusan saya (tercatat).**
+  - Judul tetap; subjudul jadi "Sequencing Indonesia's Consular Revenue Reform".
+  - Stream baru: Retain, Price, Count, Protect, Build last.
+  - Pelindungan WNI dipertahankan sebagai penggunaan PNBP.
+  - S1 dan S6 tetap background.
+- **Temuan kunci (semua dari sumber publik).**
+  - PNBP FY2025 Rp483,1 M, dengan fee konsuler Rp324,5 M (67,2%; turun 16,4%). Sisanya
+    refund VAT Rp61,4 M, pengembalian persekot gaji Rp64,5 M, pemulihan lain dan
+    properti.
+  - Seri: FY2021 Rp413,7 M; FY2022 Rp436,9 M; FY2023 Rp538,2 M; FY2024 Rp534,4 M.
+    Realisasi selalu 108–127% dari estimasi.
+  - **PP 21/2025 Pasal 5:** PNBP kementerian lain yang dipungut perwakilan adalah PNBP
+    Kemlu, tetapi dengan tarif kementerian asal. Jadi paspor dan visa bertarif Imigrasi
+    (PP 45/2024), sebesar 59,4% fee; Kemlu hanya menetapkan tarif dokumen (37,0%).
+  - Lampiran PP 21/2025 menggantikan PP 49/2016:
+    - legalisasi dalam negeri Rp25.000 (hanya WNA) menjadi Rp50.000 (semua pemohon);
+    - dokumen bisnis US$125 menjadi US$140;
+    - dokumen nonbisnis US$25 menjadi US$30;
+    - mulai berlaku Juli 2025.
+  - VoA 89,8% dari 5,16 juta visa tahun 2024. PNBP Imigrasi 2024 Rp9,01 T (visa
+    Rp5,03 T). Visa di perwakilan turun 27,8% (2023–2025), sementara kedatangan WNA naik
+    31,8%.
+  - Plafon PNBP FY2026 Rp230,1 M (47,6% PNBP; 70,9% fee). Sebanyak 99,5% ada di program
+    Dukungan Manajemen (Setjen 011.01.WA); hanya Rp1,1 M di program pelindungan.
+  - MP PNBP: PMK 110/PMK.05/2021 membolehkan tahap I 60% sejak Januari, tetapi FY2024
+    hanya 40%. PP 58/2020 sudah dicabut oleh PP 44/2025 (Pasal 46).
+  - Kurs: rupiah melemah 10% menambah penerimaan Rp17,9–43,3 M tetapi menambah biaya
+    TPLN dan staf lokal Rp333,2 M (estimasi).
+  - Pembanding:
+    - AS (CBSP): US$3,47 miliar (FY2019), lalu US$1,99 miliar (FY2020); GAO mencatat
+      turun 41%; dana darurat US$300 juta.
+    - UK: consular premium £18,62 per paspor.
+    - Filipina: posts boleh memakai valas sebagai working fund (GAA 2025).
+  - Kasus WNI 2024: 67.297 (LKj PWNI). Dipulangkan dari krisis 2025: 27.768.
+- **Belum ditemukan:**
+  - surat persetujuan penggunaan PNBP Kemlu dan persentasenya;
+  - jumlah apostille nasional;
+  - volume layanan per perwakilan;
+  - biaya per layanan.
+- **Call, diurutkan menurut tenggat.**
+  - C1: plafon FY2027 di bawah Rp300 M, tenggat 31 Mar 2027.
+  - C2, C3 dan C4, tenggat 30 Sep 2027:
+    - C2: fee FY2026 di bawah FY2025;
+    - C3: visa perwakilan FY2026 di bawah Rp58,6 M;
+    - C4: dokumen FY2026 tidak di bawah Rp120,0 M.
+  - C5: tidak ada bebas visa untuk Australia, India, Jepang atau Korea Selatan, tenggat
+    31 Des 2027.
+  - C6 (tidak ada BLU) dan C7 (tidak ada dana pelindungan), tenggat 31 Des 2028.
+- **Jebakan baru** dicatat di §13 v3: lampiran regulasi yang berupa pindaian; reproduksi
+  DDTC; escape `\u` di tool call; `chart.has_title`; pertanyaan bab yang terpotong
+  antarhalaman; anggaran pencarian web yang dipakai bersama oleh agen riset.
