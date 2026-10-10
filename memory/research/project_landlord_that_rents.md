@@ -1,11 +1,11 @@
 ---
 name: project-landlord-that-rents
-description: "Brief BPADAD - Badan Pengelola Aset dan Dana Abadi Diplomasi (ed.4 4 Okt 2026, 55pp + deck 34 slide, basis audited 31 Des 2025; terbit pertama sbg The Landlord That Rents) menilai kertas kerja BLU Kemlu; Retention Agenda; folder tetap Landlord-That-Rents"
+description: "Brief Retention Before Agency (master prompt v3, 10 Okt 2026, 31pp + deck 23 slide): urutan reformasi aset diplomatik & dana abadi Kemlu; Retention Agenda 5 stream 11 aksi; folder tetap Landlord-That-Rents; ed.4 (BPADAD) dibekukan"
 metadata: 
   node_type: memory
   type: project
   originSessionId: 4d538033-6b39-404d-ad2d-715697a084d7
-  modified: 2026-10-04T05:00:00.000Z
+  modified: 2026-10-10T11:30:00.000Z
 ---
 
 Brief Ignited Research **"The Landlord That Rents"** (34pp, terbit 10 Sep 2026) di
@@ -239,3 +239,67 @@ Pemetaan baris: TRANS, KODE, DEBET, KREDIT, NAMA.
   - TIDAK dipakai di brief publik. Status menunggu jawaban Aldo.
   - Isinya ada saya baca: sewa H1 +26%, PNBP H1 Rp238,8M melampaui plafon setahun, MP I PNBP
     Rp22,6M menahan renovasi. Data ini jangan masuk brief kecuali versi terbitnya keluar.
+
+## Rebuild master prompt v3 — 10 Okt 2026: *Retention Before Agency*
+
+**Status: TERKIRIM 10 Okt 2026.** Brief berdiri sendiri: tidak ada label edisi dan
+tidak merujuk brief lain.
+
+- **File.** `out/Retention-Before-Agency.pdf` (31 hlm; 23 figur, 14 tabel, 3 kotak,
+  46 referensi). `out/Retention-Before-Agency-Deck.pptx` (23 slide, 3 chart native).
+  Ada juga `out/data/*.csv`, `out/proof/`, `out/proof_deck/` dan `out/delivery-note.md`
+  (catatan §14).
+  - PDF dan deck ed.4, dossier ed.4 serta README ed.4 diarsip ke `out/superseded/`
+    (`ed4-*`).
+  - `out/DELIVERED.json` menandai file terkirim. `make.py` mengarsipnya dulu sebelum
+    rebuild.
+- **Gate.** Brief 57 cek, 0 gagal (16 pra-render, 37 PDF, 4 PDF bercap). Gate deck: 100
+  angka dicek balik, 0 masalah. Deck terbuka di PowerPoint (ekspor COM lewat
+  `src/make_deck_proof.ps1`).
+- **Keputusan Aldo.** Judul "Retention Before Agency: Sequencing Indonesia's Diplomatic
+  Asset and Endowment Reform"; kerangka the Retention Agenda; pohon pertanyaan versi Aldo
+  (aset hak milik dan PNBP; biaya gedung DIPA; infrastruktur; pelindungan WNI berulang dan
+  asuransi diaspora; imun vs komersial; skenario).
+- **Keputusan saya (tercatat).**
+  - S1 (kertas kerja) dan S6 (cetakan LK Sem I 2026) diperlakukan sebagai `background`
+    sesuai default v3. Tidak ada kutipan, angka atau grafik dari keduanya. Brief kini
+    menilai pilihan reformasi secara umum, bukan menilai kertas kerja.
+  - Output PDF + deck; font Garamond terpasang.
+- **Arsitektur v3.**
+  - `content.py` baru: 307 angka, masing-masing dengan unit/periode/basis/sumber/locus/
+    grade; 48 sumber dengan status clearance; 71 identitas; model skenario
+    deterministik; CALLS lima bagian; ACTIONS tujuh bagian.
+  - Placeholder `{{N:key|spec}}` dan `{{S:key}}`. Angka besaran yang diketik di prosa
+    menggagalkan gate; yang diizinkan hanya kelas identifier (tahun, tanggal, sitasi
+    hukum, ID).
+  - Skrip `ledger.py` → `src/verification.md` dan `dossier.py` → `sources/dossier.md`.
+  - `content_ed4.py` = store ed.4 yang dibekukan untuk pembaca peer (mengimpor
+    content_add/v3/v4). Skrip ed.4 ada di `src/ed4/`.
+- **Temuan dan angka kunci.**
+  - PNBP FY2025 kas Rp 483,1 M. Ini dari lampiran LRA per akun di LBP 2025 Audited,
+    yang baru ditemukan; totalnya sama dengan akun 313121. Fee kas turun 16,4%.
+  - Plafon FY2026 Rp 230,1 M → gap Rp 253,0 M = 95% dari program pelindungan WNI FY2026
+    (Rp 266,2 M = Setjen 193,8 + Protkons 72,3).
+  - Biaya menjalankan gedung FY2025 Rp 1,27 T (akrual) + penyusutan Rp 501,0 M; sewa
+    226× (akrual).
+  - Renewal bersih 55%. Gedung kantor Rp 8,28 T (522 item); hunian Rp 2,91 T (760).
+  - MP PNBP tahap I hanya 40% (LK 2024) menunda kontrak renovasi perwakilan.
+  - Kasus WNI 2024: 67.297 (2023: 53.598 versi Feb 2025, atau 44.521 versi Jan 2024).
+    Dipulangkan 2025: 27.768. Tidak ada skema asuransi diaspora negara. PMI sudah di
+    BPJS (Rp 370.000 per kontrak 24 bulan).
+  - Pembanding: OWWA US$25 dana amanah; ICWF dari biaya layanan konsuler; Korea
+    Foundation US$12 dari paspor US$52.
+- **Koreksi.** FCDO: 933 dari 2.711 gedung yang dinilai (34%), BUKAN dari ±6.500.
+  Klaim "idle sebagian besar tak bisa dijual" dicabut, karena komposisi Rp 128,6 M
+  tidak diungkap.
+- **Konflik sumber yang belum bisa diselesaikan.** Tanggal putusan Paris: 11 Des 2025
+  (Jus Mundi; teks 403) atau 18 Des (opini) → grade C. Klaim kasasi Prancis 12 Jun 2025
+  bersumber dari Payan (EJT).
+- **Call, diurutkan menurut tenggat.**
+  - C4: renewal bersih < penyusutan di LK FY2025 audited, tenggat 31 Des 2026.
+  - C3: plafon FY2027 < Rp 300 M, tenggat 31 Mar 2027.
+  - C5: sewa > 200× FY2026, dan C6: fee FY2026 < FY2025; keduanya 30 Sep 2027.
+  - C1, C2, C8: tenggat 31 Des 2028. C7: tenggat 31 Des 2029.
+- **Jebakan baru** dicatat di §13 v3: hatch.color, letter-spacing, hyphen dan U+2011,
+  caption ter-escape, caption tabel yatim, locale PowerPoint, label grade D yang
+  rendernya sama dengan angka grade A, entity `&ndash;`.
