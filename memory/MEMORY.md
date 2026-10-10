@@ -36,14 +36,11 @@
   0,4 detik. **Koreksi: host `-pooler` TIDAK perlu dibuang** — penyebab kegagalan lama adalah libpq 16
   vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
   kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
-- 🔵 11 Okt 2026 (cek ulang, tak berubah sejak 4 Okt; 140/140) — **SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan):
-  siap deploy, tertahan dua langkah Aldo.** Neon `main` berisi dummy (0 jejak Kemlu), password bawaan
-  dipertahankan (keputusan Aldo). Deploy: GitHub Actions → Cloudflare Containers, `sigap.rivsyah.dev`,
-  repo privat `rivsyah/sigap-bup` **masih kosong**; secret token + variabel `CLOUDFLARE_ACCOUNT_ID` terisi
-  (4 Okt); commit lokal `22950a4`, pohon dipindai ulang bersih. ⚠ Sisa Aldo: (1) **riwayat git bersih** —
-  pengaman otomatis menolak 4× (29 Sep, 4 Okt), **agent jangan coba lagi**; Aldo jalankan sendiri di Git
-  Bash atau beri izin eksplisit di sesi; `pre-push` lokal menolak riwayat lama. (2) **Workers Paid** belum
-  aktif (cek 4 Okt; alternatif Render gratis). Pemegang deploy: sesi `c4e7d156` (11 Okt).
+- 🔵 11 Okt 2026 — **SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan):
+  riwayat bersih SELESAI (`main` = `3e4a0ee`, lama di branch lokal `riwayat-lokal`) + di-push ke GitHub 11 Okt; tinggal Workers Paid.** Latar: Neon `main` berisi dummy (0 jejak Kemlu), password bawaan
+  dipertahankan (keputusan Aldo). Deploy: GitHub Actions → Cloudflare Containers, `sigap.rivsyah.dev`;
+  secret token + variabel `CLOUDFLARE_ACCOUNT_ID` terisi (4 Okt). ⚠ Sisa Aldo: **Workers Paid** belum aktif
+  (cek 11 Okt; alternatif Render gratis). Pemegang deploy: sesi `c4e7d156` (11 Okt).
   [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md).
 - 🔴 29 Sep 2026 — `.git` nyasar di `C:\Users\rivsy` **masih ada** (0 commit, 192 MB blob yatim dari
   2 Jul). Agent diblokir pengaman + kunci berkas; **Aldo bilang akan menghapus sendiri** (29 Sep).
@@ -72,7 +69,7 @@
 
 - [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
 - [SIPAMA Kemlu](kemlu/project_sipama_kemlu.md) — Dashboard Sistem Informasi Pengamanan (9 modul) di Herd\sipama → sipama.test
-- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; nama kini "SIGAP BUP" tanpa identitas Kemlu (`f5bbeeb`); Neon `main` terisi dummy 29 Sep; deploy Cloudflare siap (container + pdo_pgsql langsung, bukan HttpPgsqlPDO), tertahan riwayat git bersih (Aldo) + Workers Paid per 11 Okt
+- [SIGAP-BUP Kemlu](kemlu/project_sigap_bup.md) — GRP Biro Umum & Pengadaan di Herd\sigap-bup → sigap-bup.test, gerbang pagu + audit; nama kini "SIGAP BUP" tanpa identitas Kemlu (`f5bbeeb`); Neon `main` terisi dummy 29 Sep; deploy Cloudflare siap (container + pdo_pgsql langsung, bukan HttpPgsqlPDO), riwayat bersih + push GitHub 11 Okt (`main` 3e4a0ee, lama di branch lokal `riwayat-lokal`); tertahan Workers Paid per 11 Okt
 - [UKPBJ Kemlu](kemlu/project_ukpbj_kemlu.md) — Dashboard Monitoring Pengadaan 10 tampilan + 5 peran (RBAC) di Herd\ukpbj-kemlu; jebakan Babel import()→require()
 - [BUP Kemlu](kemlu/project_bup_kemlu.md) — Portal Biro Umum dan Pengadaan: Next.js 16 di Herd/bup-kemlu-next + broker SSO ke SIGAP-BUP/SIPAMA/MONPBJP/PDP-VMS
 - [SIPDLN-BUP](kemlu/project_sipdln_bup.md) — monitoring PDLN pegawai BUP + drafting ST/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test (junction, bukan herd link); SBM 2026 = PMK 32/2025; Aldo 29 Sep: penandatangan ST = Kepala BUP, kurs JISDOR otomatis, identitas Kemlu disamarkan di app/file terlacak; commit awal b50b8d6 (main, tanpa remote); nomor ST ST/KP/{urut}/{bulan}/{tahun}/25 (d2284eb) + PHPStan 0 (0f3fcb6); deploy demo Cloudflare disiapkan (a0c5c18, sipdln.rivsyah.dev); 4 Okt: riwayat bersih, tinggal Workers Paid + izin Aldo buat repo/push (pengaman "Remote Repoint"); 6 Okt usul rewrite Hono+Astro (Dedi): agent sarankan jangan — hemat ≤US$5/bln, ±1 minggu, KTI menyebut Laravel 13

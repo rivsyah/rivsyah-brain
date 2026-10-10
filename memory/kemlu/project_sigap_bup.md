@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), tertahan riwayat git bersih (pengaman menolak 4x — Aldo yang jalankan) + Workers Paid; cek ulang 11 Okt tak berubah, 140/140"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), 11 Okt riwayat bersih + push GitHub (main 3e4a0ee; riwayat lama di branch lokal riwayat-lokal, jangan push); tertahan Workers Paid"
 metadata: 
   node_type: memory
   type: project
@@ -468,6 +468,27 @@ Aldo: "lanjutkan project SIGAP BUP" sambil menempel jawaban 6 Okt soal tulis ula
 - Perintah riwayat bersih yang disiapkan (pohon sama persis dengan `22950a4`, riwayat lama tetap di branch
   lokal `riwayat-lokal`, tidak ada berkas disentuh):
   `git branch riwayat-lokal main && git reset --soft "$(git commit-tree 'HEAD^{tree}' -m '...')"`.
+
+**Riwayat bersih SELESAI 11 Okt 2026** — Aldo memilih opsi rekomendasi ("pilih yang rekomendasi tadi") setelah
+pertanyaan eksplisit di sesi; kali ini pengaman mengizinkan. `main` = **`3e4a0ee`** "SIGAP BUP: kode awal" (commit
+akar tanpa induk, pohon `86fe572` identik dengan `22950a4`, penulis `rivsyah@gmail.com`). Riwayat lama utuh di
+branch lokal **`riwayat-lokal`** (= `22950a4`) — **jangan pernah di-push**; `pre-push` tetap menjaganya. Push
+`main` ke `rivsyah/sigap-bup` berhasil (token lewat header, tidak tersimpan di `.git/config`). Pelajaran: izin
+eksplisit Aldo di sesi yang berjalan membuat pengaman meloloskan operasi yang 4× ditolak tanpa izin itu.
+
+**CI pertama di GitHub (11 Okt, commit `3e4a0ee`) — OPEN "140 tes ke Postgres" sejak 27 Sep SELESAI:**
+- `tests / postgres` (PostgreSQL 17 service container): **140 lulus, 956 asersi, 25,4 detik**.
+- `tests / ci (8.4)` dan `ci (8.5)` (SQLite): 140 lulus. Baris `exit code 1` di log = langkah PHPStan
+  (`continue-on-error`, 161 temuan lama), bukan tes.
+- `linter / quality`: gagal informatif — setelah Pint + Prettier menulis ulang, **ESLint tinggal 12 error** (bukan
+  ±1.100 seperti catatan 29 Sep; angka lama memuat temuan format). Run tetap hijau (`continue-on-error`).
+- Dependabot aktif untuk versi GitHub Actions (run pertama sukses).
+- KTI SIGAP Tabel evaluasi menulis "140 lulus; 956 asersi" tanpa menyebut basis data — kini terbukti juga di
+  PostgreSQL 17 (fakta untuk Aldo; teks KTI ditulis Aldo).
+- Cara baca log job: `curl -sL` ke `.../actions/jobs/<id>/logs` (urllib Python meneruskan header Authorization ke
+  blob storage → 403).
+- Workers Paid dicek lagi sesudah CI: Containers masih **401**. Skrip deploy siap: `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\deploy-sigap.sh` (mesin ini, di luar repo)
+  (cek 200 → `wrangler secret bulk` APP_KEY baru + DB_URL lewat stdin → dispatch `deploy.yml`).
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
