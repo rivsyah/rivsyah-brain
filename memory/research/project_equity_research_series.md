@@ -28,6 +28,9 @@ TP benar-benar ~12 bulan. Reviewer subagent mengusulkan "31 Des terdekat" — di
 Lingkungan (dikoreksi 10 Okt 2026, sore): Python 3.11 kini punya reportlab 5.0.1, pypdf 6.20.0, requests,
 defusedxml, lxml (+ pypdfium2, PyMuPDF, matplotlib, openpyxl). Python 3.12 belum dicek; svglib tidak terpasang.
 **Run v2 pertama: BMRI 10 Okt 2026 — BUY TP 6,600** (PDF + XLSX + deck, 22 gate lolos) → [[project-bmri-company-focus]].
+**Run v2 kedua: BBCA 10 Okt 2026 — BUY TP 8,400** (PDF 18 hlm + XLSX dengan data table + deck 12, 20 gate lolos; XLSX
+dicek 40 nilai vs model Python) → [[project-bbca-company-focus]]. Pola baru yang layak dipakai ulang: `export_model.py`
+→ `model.json` dibaca deck; XLSX membaca registry/driver yang sama dan punya sheet Checks.
 
 ⚠ Cek 10 Okt 2026: berkas RANS & INDY **tidak ada lagi** di `Downloads` (folder Equity Research kini hanya BBCA,
 BMRI, prompt v1+v2, satu PDF bernomor). Path RANS di bawah sudah basi — tanya Aldo bila perlu.

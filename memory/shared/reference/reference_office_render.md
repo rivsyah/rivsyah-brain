@@ -166,3 +166,18 @@ Tambahan 10 Okt 2026 (sesi roadmap pangkat JFPK, [[project_roadmap_pangkat_jfpk]
   `Quit()`, tunggu ≤5 dtk, bunuh PID itu hanya bila masih hidup. Menghindari balapan antarsesi yang tercatat 27 Sep.
   Skrip: `C:\Users\rivsy\dev\kemlu\roadmap-pangkat-jfpk\render.ps1` — `SaveAs2(docx,16)` + `ExportAsFixedFormat(pdf,17)`
   jalan 3x berturut-turut (16.05–16.20 WIB), 22 hlm, daftar isi terisi.
+
+Tambahan 10 Okt 2026 malam (sesi BBCA v2, [[project-bbca-company-focus]]):
+- **pptxgenjs 4.0.1: `lineDash` harus STRING** (satu gaya untuk semua seri). Array per seri (`["solid","dash"]`) menulis
+  XML yang membuat PowerPoint gagal membuka berkas ("PowerPoint could not open the file"), padahal `validate.py` skill
+  pptx LOLOS. Ditemukan dengan bisect: varian satu-slide per slide, buka satu per satu lewat PowerPoint COM.
+  Jebakan bisect zip: `writestr(item, data)` dengan ZipInfo milik arsip sumber mengubah offset-nya → baca berikutnya
+  "Bad magic number"; tulis dengan `writestr(item.filename, data, compress_type=ZIP_DEFLATED)`.
+- **Label chart PowerPoint locale-proof tanpa overlay** (alternatif cara BMRI): skalakan nilai ke bilangan bulat dan tulis
+  titik desimal sebagai literal — `0\.0` (×10), `0\.00` (×100), `0\.0"%"`; ribuan `#\,##0` hanya bila SEMUA nilai ≥ 1.000.
+  Sembunyikan value axis (`valAxisHidden`) bila data label sudah ada; nilai ≥ 1.000 di tornado → taruh di label kategori.
+- **Data table Excel lewat COM:** `$rng.Table([System.Reflection.Missing]::Value, $inputCell)` (data table satu variabel,
+  kolom). Sel input WAJIB satu sheet dengan tabelnya; simpan range dan sel input sebagai defined name agar skrip
+  menemukannya. Jangan simpan ulang dengan openpyxl sesudahnya (TABLE() dan nilai cache hilang).
+- `validate.py` skill pptx gagal di bawah `python -I` (butuh foldernya di sys.path) — jalankan tanpa `-I`.
+- `markitdown` tidak terpasang di Python 3.11; QA teks deck: ekspor PDF lewat PowerPoint COM lalu baca teks dengan pypdfium2.
