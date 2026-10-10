@@ -165,3 +165,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-10T08:04Z  Rangkum S-708/MK.03/2026 (Rahasia; vault pointer saja); temuan: paket Bus+Zenix 532111 kena penundaan/blokir, kartu bus diamend
 - 2026-10-10T08:07Z  kemlu: hitung uang harian PDLN gol III/b (Gol D) Paris+Oslo 25 Okt-1 Nov 2026 pakai SBM PMK 32/2025 (Perancis D 381, Norwegia D 386) = USD 2.226,80 (pulang 1 hari) / 2.381,20 (pulang 2 hari); kurs JISDOR SIPDLN diperbarui ke 9 Okt 2026 = Rp17.884
 - 2026-10-10T08:13Z  Reviu jadwal perjadin LN Paris-Oslo 25 Okt-1 Nov 2026 (Jamkes Pimpri): tiba Jakarta 04.20 mustahil, bentrok jadwal 29 Okt, hari 28 Okt duplikat; rawan dipotong S-708 (30% perjadin)
+- 2026-10-10T08:15Z  kemlu: jadwal PDLN Paris-Oslo diterima; pergi 20j15m (1 hari 40%), pulang tertulis 31 Okt 14.00 Oslo -> 1 Nov 04.20 WIB = 8j20m (tidak mungkin via Dubai, minta cek tiket); total UH gol D tetap USD 2.226,80
