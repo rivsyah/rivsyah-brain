@@ -25,8 +25,9 @@ data twin + chart block Markdown, 20 gate G1–G20, output Part A/B/C. Bug v1: "
 **Keputusan konvensi (agent, 10 Okt):** valuation date = akhir tahun buku PERTAMA yang > 6 bulan setelah DATE
 (Okt 2026 → 31 Des 2027, FY27F). Ini menggeser konvensi BBCA (Sep 2026 pakai BVPS FY26F) ±1 tahun ke depan, supaya
 TP benar-benar ~12 bulan. Reviewer subagent mengusulkan "31 Des terdekat" — ditolak karena TP jadi nilai hari ini.
-Lingkungan: per 10 Okt Python 3.11/3.12 di mesin ini TIDAK punya reportlab/pypdf/svglib (3.11 punya pypdfium2,
-matplotlib, openpyxl) — install dulu sebelum build.
+Lingkungan (dikoreksi 10 Okt 2026, sore): Python 3.11 kini punya reportlab 5.0.1, pypdf 6.20.0, requests,
+defusedxml, lxml (+ pypdfium2, PyMuPDF, matplotlib, openpyxl). Python 3.12 belum dicek; svglib tidak terpasang.
+**Run v2 pertama: BMRI 10 Okt 2026 — BUY TP 6,600** (PDF + XLSX + deck, 22 gate lolos) → [[project-bmri-company-focus]].
 
 ⚠ Cek 10 Okt 2026: berkas RANS & INDY **tidak ada lagi** di `Downloads` (folder Equity Research kini hanya BBCA,
 BMRI, prompt v1+v2, satu PDF bernomor). Path RANS di bawah sudah basi — tanya Aldo bila perlu.
