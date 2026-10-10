@@ -1,6 +1,6 @@
 ---
 name: Roadmap MBA AS (Wharton/Columbia) — Aldo sebagai PNS JF Penata Kanselerai
-description: "v1 4 Okt 2026: jalur utama masuk Agu 2028 (R1 Sep 2027), opsi cepat CBS J-Term Jan 2028; LPDP Tahap 1 2027 TANPA LoA lebih dulu (batas usia PNS S2 37 th per 31 Des thn daftar); Wharton/CBS tanpa deferral; cerita = BPADAD; fakta live tenggat/COA/LPDP/TB/tukin/ikatan dinas 2n"
+description: "v1.1 10 Okt 2026 (Word+PDF 13 hlm di Riv's Journey\\mba-us-roadmap, builder ~/dev/personal/mba-us-roadmap): utama Agu 2028 (R1 Sep 2027), opsi CBS J-Term Jan 2028; JALUR KRITIS = bahasa Inggris (TOEFL ITP 493, IELTS belum ada); LPDP Tahap 1 2027 bila IELTS ≥6,5, else Tahap 2; usia 29 aman; Wharton/CBS tanpa deferral; OPEN: status LPDP Tahap 2 2026 (SBM ITB–BU) + AIgnited di resume"
 metadata:
   type: project
 ---
@@ -14,11 +14,32 @@ Detail proyek kemlu/ lain sengaja TIDAK ditarik ke sini.
 
 - **Jalur utama:** daftar R1 Sep 2027 → masuk Agu 2028, lulus Mei 2030.
 - **Opsi cepat:** CBS J-Term Jan 2028. Lamanya 16 bln dan tanpa magang musim panas, jadi ikatan dinas lebih
-  pendek. Tenggat diperkirakan pertengahan Jun / pertengahan Agu 2027 (pola 2025–2026). Putuskan di gerbang Mei 2027.
+  pendek. Tenggat diperkirakan pertengahan Jun / pertengahan Agu 2027 (pola 2025–2026). Putuskan di gerbang G2 (Jun 2027).
 - **Agu 2027 (R2 5 Jan 2027):** hanya kalau skor GMAT/GRE sudah ada sebelum ±15 Des 2026. Hampir pasti terlalu mepet.
-- **Urutan dana:** LPDP Tahap 1 2027 tanpa LoA. Pilih 3 MBA (mis. UPenn, Columbia, Harvard). Status CPB punya
+- **Urutan dana (diperbarui v1.1):** LPDP Tahap 1 2027 tanpa LoA HANYA bila IELTS ≥6,5 sebelum pertengahan Feb 2027; selain itu Tahap 2 2027. Pilih 3 MBA (mis. UPenn, Columbia, Harvard). Status CPB punya
   waktu 18 bln untuk LoA unconditional, cukup untuk J-Term maupun Agu 2028. Cadangan: Tahap 2 2027, lalu Tahap 1 2028 dengan LoA.
 - **Cerita:** BPADAD. Pakai hanya angka LK/LBP audited yang publik, jangan kertas kerja internal tanpa izin tertulis.
+
+## v1.1 — 10 Okt 2026: dokumen Word + PDF
+
+Aldo minta "buatkan dalam bentuk word pdf". Hasilnya 13 hlm A4 (sampul + 12), Bahasa Indonesia, register "Anda",
+dengan tag [Pasti]/[Kemungkinan besar]/[Dugaan].
+- **Builder (mesin riv):** `C:\Users\rivsy\dev\personal\mba-us-roadmap\`. Jalankan `bash make.sh`, urutannya:
+  charts.py → build.js (docx-js lewat NODE_PATH ke node_modules wharton-thesis) → render.ps1 (Word COM, SaveAs [ref] 17)
+  → verify.py (gerbang 247 cek) → salin ke `C:\Users\rivsy\Downloads\Riv's Journey\mba-us-roadmap\`.
+- Angka volatil hanya ada di `facts.json`. Kurs JISDOR 9 Okt 2026 = Rp17.884.
+- **Perubahan isi vs v1 (chat 4 Okt):**
+  - Jalur kritis kini **bahasa Inggris**, bukan GMAT.
+  - Urutan LPDP: Tahap 1 2027 bila IELTS ≥6,5 sebelum pertengahan Feb. Bila tidak, Tahap 2 2027 (pas untuk J-Term).
+    Bila tidak juga, Tahap 1 2028 dengan LoA (tanpa sertifikat bahasa).
+  - Columbia, Yale SOM, dan MIT Sloan (tanpa tes Inggris) jadi tulang punggung daftar sekolah.
+  - Ada lampiran cabang "LPDP Tahap 2 2026 masih berjalan".
+  - Gerbang G0–G4: Nov 2026, Feb 2027, Jun 2027, Des 2027, Jun 2028.
+  - "Riwayat versi" dihapus dari dokumen supaya halaman terakhir tidak satu baris.
+- **Jebakan build:**
+  - Entri folder `word/media/` di zip docx-js ikut terhitung sebagai gambar. Saring nama yang berakhiran "/".
+  - Daftar isi berbentuk daftar tumpah ke halaman 2. Diganti satu paragraf kecil.
+  - Jeda halaman paksa sebelum lampiran menyisakan halaman nyaris kosong. Dibuang, sekarang dijaga gerbang ≥500 karakter per halaman.
 
 ## Fakta live (dicek 4 Okt 2026, volatil — cek ulang tiap siklus)
 
@@ -127,14 +148,24 @@ EducationUSA gratis di Jakarta (Kedubes AS + @america).
 
 ## ⚠ OPEN (butuh Aldo)
 
-- ⚠ OPEN: usia (batas LPDP 37 per 31 Des tahun daftar), TMT PNS, jenjang JF PK, IPK & bahasa pengantar S1.
-- ⚠ OPEN: skor tes yang sudah ada (IELTS/TOEFL/GMAT/GRE)?
+- ⚠ OPEN (10 Okt): **status LPDP Tahap 2 2026** (double degree SBM ITB–Boston Univ.; surat usulan Kemlu sudah
+  diteken Jul 2026; tracker 1 Agu: IELTS & LoA belum). Kalau masih jalan, wawancara 14 Okt–20 Nov 2026. Jebakan:
+  S2 LPDP hanya sekali + pindah PT dalam→luar negeri hanya untuk Papua/afirmasi (Pedoman Umum 9.1).
+- ⚠ OPEN: jenjang JF PK (tidak dicek; tidak mengubah rencana).
+- SELESAI 10 Okt, dari tracker LPDP + resume di `C:\Users\rivsy\Downloads\Riv's Journey\` (mesin riv):
+  - Usia 29 (lahir Okt 1996). Aman untuk LPDP PNS sampai tahun daftar 2033.
+  - S1 Akuntansi Unsoed 2015–2019, IPK 3,60 (non-Inggris).
+  - IB Analyst Okt 2021–Apr 2022, pemerintah sejak Mei 2022. Jeda Agu 2019–Okt 2021 kosong di resume.
+  - TOEFL ITP 493 (tidak berlaku LN). IELTS/GMAT belum ada.
+  - Knight-Hennessy tidak eligible (S1 lulus 2019). MSx/Sloan Fellows tidak eligible (pengalaman <8/10 th).
 - ⚠ OPEN: apakah Kemlu punya seleksi TB internal + siapa eselon II penanda tangan surat usulan LPDP? Jadwal penempatan ke Perwakilan?
 - ⚠ OPEN: peran & status formal AIgnited terhadap aturan PNS (jam kerja, konflik kepentingan, entitas asing?).
   Esai MBA/LPDP harus konsisten dengan ikatan dinas.
 - ⚠ OPEN: tanggal nikah & apakah pasangan ikut (F-2 tidak boleh kerja, LPDP S2 tanpa tunjangan keluarga).
   Lihat [[project_rab_pernikahan]].
-- ⚠ OPEN: pilih J-Term vs Agu 2028 (gerbang Mei 2027).
+- ⚠ OPEN: pilih J-Term vs Agu 2028 (gerbang G2, Jun 2027).
+- ⚠ OPEN: "CEO & Co-Founder Aignited.id (Mei 2025–kini)" tertulis di resume, bersamaan dengan status PNS. Dokumen
+  menyarankan kejelasan tertulis (atasan/Biro SDM/Inspektorat) sebelum CV dipakai ke LPDP/Kemlu/kampus.
 - ⚠ OPEN: izin tertulis Kemlu untuk mengutip kertas kerja internal (sama dengan OPEN di [[project_wharton_thesis]]).
 
 Terkait: [[project_wharton_thesis]], [[project_landlord_that_rents]], [[project_rab_pernikahan]].

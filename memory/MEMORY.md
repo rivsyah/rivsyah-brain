@@ -125,7 +125,7 @@
 - [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
 - [Tesis MBA Wharton](personal/project_wharton_thesis.md) — draft 72 hlm "The Landlord That Rents" dari brief BLU Aset Kemlu; MBA Wharton TIDAK punya tesis (jalur: ISP REAL 8990 atau Lauder Master's Thesis 30–35 hlm); pipeline docx-js + Word PDF + gerbang 109 cek; 4 Okt: selaras brief ed.4 (226x akrual, gap Rp253,0M, renewal bersih 55%, kredit 7 gedung)
-- [Roadmap MBA AS](personal/project_mba_us_roadmap.md) — v1 4 Okt 2026: utama Agu 2028 (R1 Sep 2027), opsi CBS J-Term Jan 2028; LPDP Tahap 1 2027 tanpa LoA dulu (usia PNS S2 ≤37 per 31 Des); Wharton/CBS tanpa deferral; cerita BPADAD; banyak ⚠ OPEN data diri
+- [Roadmap MBA AS](personal/project_mba_us_roadmap.md) — v1.1 10 Okt 2026: Word+PDF 13 hlm di Riv's Journey\mba-us-roadmap (builder ~/dev/personal/mba-us-roadmap, gerbang 247 cek); utama Agu 2028, opsi CBS J-Term Jan 2028; JALUR KRITIS bahasa Inggris (ITP 493); ⚠ OPEN status LPDP Tahap 2 2026 (SBM ITB–BU) + AIgnited di resume
 - [RAB Tunangan & Pernikahan](personal/project_rab_pernikahan.md) — 7 sheet (RAB + Ditanggung, 20 opsi venue, tabungan dua fase, daftar undangan); per 5 Okt: tunangan Rp56,7 jt (cincin Frank & co. Rp32 jt), nikah CIBIS 300 Rp216,9 jt, CIBIS 200 Rp196,7 jt muat; ⚠ harga Hadjatan 300 pax
 - [Bara (agent)](shared/project_bara_agent.md) — agent all-in-one bernama Bara, workspace di ~/Bara; ~/Herd sengaja tidak di-rename (parked path Herd)
 
