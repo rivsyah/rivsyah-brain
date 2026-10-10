@@ -1,6 +1,6 @@
 ---
 name: project-evaluasi-pakaian-dinas-asn
-description: "Rapat evaluasi pengadaan pakaian dinas (kemeja) ASN Kemlu TA 2026 (RUP 67117950, PT Rimonz, Rp948,3 jt = 63,5% HPS): pointers 8 hlm + deck 17 slide (6 Okt 2026); 3.302 kemeja (90%) diserahkan ulang 'telah diperbaiki' 20 Jul-28 Agu; median ukuran XL->3XL; Tahap 2 (keputusan Aldo 6 Okt) = 129 pegawai mutasi pulang ke pusat, 258 kemeja, fitting per orang Okt, produksi Nov"
+description: "Pengadaan pakaian dinas (kemeja) ASN Kemlu TA 2026: Tahap I RUP 67117950 PT Rimonz Rp948,3 jt (63,5% HPS), 3.302 kemeja diperbaiki; rapat evaluasi 6 Okt (pointers 8 hlm + deck 17 slide). TAHAP II: dokumen KAK/RAB/HPS/SSUK+SSKK dibuat 10 Okt 2026 untuk 154 pegawai = 308 kemeja, HPS Rp107.692.200 (median 5 listing Katalog Rp315.000 + PPN), mini kompetisi oleh Pejabat Pengadaan, BAST <= 4 Des 2026"
 metadata:
   type: project
 ---
@@ -48,6 +48,37 @@ Pelaksanaan Pengadaan Pakaian Dinas ASN ... TA 2026"). Tanggal rapat tidak diseb
 Pinggang kemeja wanita sempit (beda dari sampel); lengan terlalu panjang di ukuran besar; lengan terlalu lebar;
 kerah semua kemeja tidak tegas/menggantung (perlu bahan setara kerah kemeja pejabat).
 
+## Tahap II — dokumen pengadaan (10 Okt 2026)
+
+Permintaan Aldo 10 Okt: "buat dokumen KAK/Spektek, RAB, HPS, SSUK SSKK untuk pengadaan batch 2".
+- **Data berubah:** berkas Tahap 2 diperbarui 10 Okt 15.25 (dipindah ke `Downloads\MOFA\BUP\Rapat Evaluasi Pakaian
+  Dinas ASN 2026\`, mesin riv): **154 pegawai (95 pria, 59 wanita), 51 dari 64 satker = 308 kemeja.** Kolom E kini berisi
+  nama + nomor HP PIC satker (data pribadi; jangan disalin). Kolom E "angka 1 Biro Hukum" (6 Okt) sudah tidak relevan.
+- **ND Tahap II:** ND Plt. Kepala BUP 51513/PL/10/2026/25 (7 Okt 2026) ke seluruh JPT Pratama: Tahap II untuk pegawai yang
+  belum terdaftar/mendapatkan pakaian dinas di Tahap I; nama paket "Pengadaan Pakaian Dinas ASN di Lingkungan Satuan Kerja
+  Pusat Kemlu TA 2026 Tahap II". Plt. Kepala BUP = Sukmo Yuwono (dikonfirmasi ND ini).
+- **Penawaran Rimonz** RKI/X/2026 (7 Okt): 258 Pc x Rp350.000 termasuk PPN & PPh = Rp90,3 jt (masih data 129 pegawai).
+- **Survei Katalog Elektronik 10 Okt** (7 listing kemeja ASN Kemlu, harga tayang termasuk PPN, Nilai Dasar = /1,11):
+  Buana Internusa Global 305.250; Mitraco Wirajaya Perdana 335.220; Pojokpas Askepindo Pratama 349.650; Kartika Baru
+  377.400; Aneka Sumber Rejeki 421.800; Krida Utama Sejahtera 377.400 (min. 1.000 pcs, tidak dipakai); Dafina Citra Mandiri
+  499.500 (pre-order 60 hari, tidak dipakai). Rimonz di katalog = penyedia umum 123 produk.
+- **HPS:** median 5 listing = Nilai Dasar **Rp315.000** (Rp349.650 termasuk PPN) x 308 = **Rp107.692.200**. > Rp100 jt ->
+  HPS wajib + unggah (Perlem LKPP 2/2026 Ps 13); <= Rp200 jt -> mini kompetisi oleh Pejabat Pengadaan (Ps 17(2)a), tanpa
+  Jaminan Pelaksanaan (Ps 20(1); Perpres Ps 33(1)). Di bawah SBM Rp906.000/setel (PMK 32/2025 Lamp. I angka 37, hlm 36,
+  DIVERIFIKASI) dan exercise Rp396.000.
+- **Berkas:** `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Pengadaan Seragam ASN Kemlu\Pengadaan Pakaian Dinas ASN
+  Kemlu Tahap II\` — KAK Spektek (11 hlm, 3 gambar desain dari lampiran izin prinsip), RAB dan HPS (.xlsx + PDF 3 hlm:
+  RAB, HPS, Rincian Volume; lembar tersembunyi Kertas Kerja HPS/Uji Silang/Petunjuk), SSUK dan SSKK (36 hlm), Rincian HPS
+  untuk INAPROC. Builder `C:\Users\rivsy\dev\kemlu\pdasn-tahap2-2026\` (verify 176 lolos, 0 gagal).
+- **Isi kunci KAK/SSKK:** fitting per orang + kartu ukur 9 titik + toleransi (usulan: leher/manset +-0,5; bahu/lengan +-1;
+  dada/pinggang/pinggul +-2; panjang badan +-1,5 cm), sampel praproduksi disegel, pelapis kerah fusible kaku, kampuh >= 1,5
+  cm, uji pakai per orang sebelum BAST, pemeriksaan ukuran >= 20%/satker, 45 hari kalender, BAST <= 4 Des 2026 (PER-9:
+  SPM <= 9 Des), kesempatan maks. BAST 18 Des dan tidak lintas TA, purna jual 60 hari sejak BAST, KBLI 14111/14120/46412/47711.
+- **Isian kuning sebelum teken:** Kode RUP (KAK 4.1), e-mail PPK (SSKK 5). Uji manual: daftar nominatif final + cek tidak
+  ada penerima Tahap I, tanggal tiba, tim teknis.
+- Insiden kecil 10 Okt: saat memeriksa kolom E berkas Tahap 2, nama + nomor HP PIC 64 satker tercetak ke transkrip sesi
+  lokal (tidak dipakai di dokumen). Sesudahnya hanya kolom A-D yang dibaca.
+
 ## Tahap 2 — keputusan Aldo 6 Okt 2026
 
 Pekerjaan berikutnya **untuk pegawai yang mutasi pulang ke pusat Kemlu**. Fitting per orang Oktober, produksi November.
@@ -62,7 +93,7 @@ Pekerjaan berikutnya **untuk pegawai yang mutasi pulang ke pusat Kemlu**. Fittin
 
 ## Terbuka
 
-1. Cocokkan 129 nama Tahap 2 dengan penerima Tahap 1 (batas 2 setel); data ukur ulang Juni sudah mencatat 1 pegawai
+1. Cocokkan 154 nama Tahap II dengan penerima Tahap 1 (batas 2 setel); data ukur ulang Juni sudah mencatat 1 pegawai
    "tambah 1 pulang posting".
 2. Tanggal SP, BAST akhir, rekonsiliasi volume 3.778/3.654/BAST, jaminan pelaksanaan Tahap 1 (Ps 33 ayat (2) b
    e-purchasing dihapus Perpres 46/2025; <80% HPS → 5% HPS = Rp74.615.500) — belum dicek.
