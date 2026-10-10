@@ -1,9 +1,9 @@
 ---
 name: Roadmap percepatan pangkat JFPK Aldo
-description: "Roadmap 5 tahun (Okt 2026–Okt 2031) kenaikan pangkat Aldo sebagai JF Penata Kanselerai, dibuat 4 Okt 2026. Verdict: IV/c dalam 5 tahun TIDAK MUNGKIN (aturan 2 tahun × 5 langkah); target utama III/d Ahli Muda ±Des 2030; stretch Ahli Madya IV/a ±akhir 2031 (butuh KPLB + SB + Perwakilan rawan/berbahaya + S2 + formasi)"
+description: "Roadmap 5 tahun (Okt 2026–Okt 2031) kenaikan pangkat Aldo sebagai JF Penata Kanselerai, dibuat 4 Okt 2026, jadi Word+PDF 22 hlm 10 Okt 2026 (Downloads\\Riv's Journey\\Roadmap Pangkat JFPK; builder ~/dev/kemlu/roadmap-pangkat-jfpk). Verdict: IV/c dalam 5 tahun TIDAK MUNGKIN; utama III/d Ahli Muda ±Des 2030; ambisius Ahli Madya IV/a ±Des 2031"
 metadata:
   type: project
-  modified: 2026-10-04
+  modified: 2026-10-10
 ---
 
 # Roadmap percepatan pangkat JFPK — 4 Okt 2026
@@ -20,17 +20,27 @@ Aturan dasarnya: [[reference_aturan_pangkat_jfpk]].
 
 ## Verdict
 
-- **IV/c (plafon JFPK) dalam 5 tahun: tidak mungkin.** 5 langkah × minimal 2 tahun. Paling cepat ±akhir 2035
-  (dengan 1 KPLB + booster terus) atau ±akhir 2036 (tanpa KPLB).
-- Hasil hitungan bulanan (TMT perkiraan; evaluasi periodik Kemlu triwulanan + jeda Ukom/SK 1–2 bulan):
+- **IV/c (plafon JFPK) dalam 5 tahun: tidak mungkin.** 5 langkah × minimal 2 tahun. Batas mutlak Agu 2036
+  (Agu 2035 dengan 1 KPLB); dengan jeda nyata model: ±Feb 2037 tanpa KPLB, ±Feb 2036 dengan KPLB.
+- **Angka final = keluaran `model.py` (10 Okt 2026)** — AK diakui per triwulan; TMT pangkat +2 bln, pangkat+jenjang
+  +3 bln setelah akhir triwulan. Beberapa tanggal bergeser 1–3 bln dari jawaban chat 4 Okt; dokumen yang berlaku:
 
-| Skenario | III/c+Muda | III/d | IV/a+Madya | IV/c |
-|---|---|---|---|---|
-| A Baik terus | ±Mar 2030 | ±Apr 2034 | ±Jun 2038 | ±2046 |
-| B SB mulai 2027 | ±Mar 2029 | ±Feb 2032 | ±Nov 2034 | ±2040 |
-| C SB mulai 2026 | ±Des 2028 | ±Nov 2031 | ±Agu 2034 | ±2039–40 |
-| D C + rawan 2029–32 + S2 lulus saat Muda | ±Des 2028 | ±Des 2030 | ±Des 2032 | 2036–38 |
-| F D + berbahaya 2 thn + KPLB ±Sep 2027 | III/c ±Sep 2027, Muda ±Jan 2028 | ±Okt 2029 | ±Nov–Des 2031 | 2035–36 |
+| Jalur | III/c+Muda | III/d | IV/a+Madya | IV/b | IV/c | Okt 2031 |
+|---|---|---|---|---|---|---|
+| A Baik terus | Mar 2030 | Mei 2034 | Jun 2038 | Agu 2042 | Agu 2046 | III/c Muda |
+| B SB mulai 2027 | Mar 2029 | Feb 2032 | Sep 2034 | Agu 2037 | Feb 2040 | III/c Muda |
+| C SB mulai 2026 | Des 2028 | Nov 2031 | Jun 2034 | Mei 2037 | Nov 2039 | III/c Muda |
+| D C + rawan 2029–32 + S2 Jan 2030 | Des 2028 | Des 2030 | Des 2032 | Nov 2035 | Mei 2038 | III/d Muda |
+| F D + berbahaya Apr 2028–Mar 2030 + KPLB Sep 2027 + S2 Jan 2029 | III/c Sep 2027, Muda Jan 2028 | Sep 2029 | Des 2031 | Agu 2034 | Feb 2037 | III/d Muda |
+| D+ / F+ (berbahaya lagi saat Madya) | — | — | — | Feb 2035 / Feb 2034 | Feb 2037 / Feb 2036 | — |
+
+## Dokumen Word + PDF (10 Okt 2026)
+
+- Hasil (mesin riv): `C:\Users\rivsy\Downloads\Riv's Journey\Roadmap Pangkat JFPK\Roadmap Percepatan Pangkat JFPK -
+  Rivaldo H.docx` dan `.pdf` — 22 hlm, 9 bab + 3 lampiran, Gambar 1 linimasa, verify 13/13.
+- Builder: `C:\Users\rivsy\dev\kemlu\roadmap-pangkat-jfpk\` (model.py → figures.py → build.js → render.ps1 →
+  verify.py; README di sana; tanpa git). Ubah parameter di `SKENARIO` lalu jalankan ulang bila data berubah.
+- Ditandai "dokumen kerja pribadi, bukan dokumen resmi" + pengungkapan bantuan AI; tanpa logo, tanpa NIP.
 
 - Rencana utama = D. Stretch = F (jenjang tertinggi Ahli Madya tepat di batas 5 tahun).
 - Tuas paling murah dan paling mendesak: **predikat 2026 = Sangat Baik** (bukti SIGAP BUP, SIPDLN-BUP, KTI);
