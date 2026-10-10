@@ -13,12 +13,20 @@ master prompt di `Equity Research\PROMPT-sellside-research.md`; BBCA & BMRI (Com
 (Company Focus, BUY 4,050), lalu **RANS** — Initiation of Coverage: **SELL, TP IDR 115 (-44.7% vs 208)**.
 
 **Master prompt v2 (10 Okt 2026)** = `Equity Research\PROMPT-sellside-research-v2.md` — pakai ini; v1 arsip.
-Isi: 12 sector profile (bank pakai GGM, bukan EBITDA/EV), matriks modul per REPORT_TYPE (Results Review ≠ Flash),
-tag data A/C/E/P + DRAFT otomatis, rute valuasi FCFF↔WACC↔EV bridge / FCFE-GGM↔CoE (v1 hitung utang dua kali),
-TP input = hipotesis (±5%, tanpa back-solve), lantai exhibit per tipe, palet chart tervalidasi (navy chrome saja;
-ember = subjek; kategorikal #2563A8→#E8590C→#169C8C→#D99A00→#8A5CC2→#5B8C2A; scatter maks 3 warna), tanpa
-dual-axis, chart block + data twin untuk Markdown, 20 gate G1–G20, output Part A/B/C. Bug v1: "{FIRM_NAME}
-Research" mencetak "Ignited Research Research".
+Isi: 12 sector profile yang mengalir ke risiko/estimasi/valuasi (bank: GGM + CoE, tanpa EV/EBITDA), matriks modul
+per REPORT_TYPE (Results Review ≠ Flash), tag data A/C/E/P (A = dibaca di sesi ini; ingatan model = P) + DRAFT
+otomatis, rute valuasi FCFF↔WACC↔EV bridge / FCFE-GGM↔CoE (v1 hitung utang dua kali), horizon DCF ≥ 10 thn,
+mid-year + TV (1+r)^−(N−0,5), GGM wajib g ≤ ROE × (1 − payout jangka panjang), dividen 3 basis (DPS declared;
+equity roll/CFF paid; total return ex-date 12 bln), TP input = hipotesis (±5% DAN rating sama, tanpa back-solve),
+front page ≤ 320 kata, lantai exhibit per tipe, palet chart tervalidasi (navy chrome saja; ember = subjek;
+kategorikal #2563A8→#E8590C→#169C8C→#D99A00→#8A5CC2→#5B8C2A; scatter maks 3 warna), tanpa dual-axis,
+data twin + chart block Markdown, 20 gate G1–G20, output Part A/B/C. Bug v1: "{FIRM_NAME} Research" mencetak
+"Ignited Research Research".
+**Keputusan konvensi (agent, 10 Okt):** valuation date = akhir tahun buku PERTAMA yang > 6 bulan setelah DATE
+(Okt 2026 → 31 Des 2027, FY27F). Ini menggeser konvensi BBCA (Sep 2026 pakai BVPS FY26F) ±1 tahun ke depan, supaya
+TP benar-benar ~12 bulan. Reviewer subagent mengusulkan "31 Des terdekat" — ditolak karena TP jadi nilai hari ini.
+Lingkungan: per 10 Okt Python 3.11/3.12 di mesin ini TIDAK punya reportlab/pypdf/svglib (3.11 punya pypdfium2,
+matplotlib, openpyxl) — install dulu sebelum build.
 
 ⚠ Cek 10 Okt 2026: berkas RANS & INDY **tidak ada lagi** di `Downloads` (folder Equity Research kini hanya BBCA,
 BMRI, prompt v1+v2, satu PDF bernomor). Path RANS di bawah sudah basi — tanya Aldo bila perlu.

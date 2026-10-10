@@ -5,10 +5,17 @@ metadata:
   node_type: memory
   type: project
   originSessionId: ec3ee6c6-402d-4d5a-869a-f96ae3be58b0
-  modified: 2026-09-03T08:53:34.390Z
+  modified: 2026-10-10T00:00:00.000Z
 ---
 
 Equity research note pertama Ignited Research (format sell-side ala Trimegah/Mandiri Sekuritas): **BBCA IJ — "The CASA Dividend"**, Company Focus 5pp, 2 Agustus 2026, di `Downloads\Research Reports\Equity Research\BBCA\` (user memindahkan folder dari `Research Reports\BBCA` ke subfolder Equity Research bersama INDY/BMRI/RANS). BUY, TP IDR 8,300 (GGM 3.47x FY26F P/BV; ROE 21%, CoE 11.75%, g 8%), harga 6,325 (31 Jul 2026), upside +31.2%.
+
+⚠ **Temuan 10 Okt 2026 (belum dikoreksi, menunggu Aldo):** GGM tidak konsisten dengan payout model. Rumus
+(ROE − g) ÷ (CoE − g) mengandaikan g = ROE × (1 − payout). g 8% dengan ROE 21% butuh payout jangka panjang ~62%,
+padahal model memakai payout 75% (FY26–28F: 360/479, 385/513, 419/558). Pada payout 75%: g = 5,25%, P/BV wajar
+2,42x → TP ±IDR 5.800 (× BVPS FY26F 2.401; −12,8% vs 6.675) atau ±6.150 (× BVPS FY27F 2.531; −8,1%). TP 8.300
+hanya bertahan bila payout jangka panjang turun ke ~62% — dan itu harus ditulis eksplisit. Ditemukan oleh red-team
+master prompt sell-side v2 ([[project-equity-research-series]]); gate G10 v2 kini menangkap pola ini.
 
 **Rerun 3 Sep 2026** (cutoff close 2 Sep): harga 6.675 (-17.3% YTD, basis year-end 2025 = 8.075 per Kontan/RRI — aggregator YTD tidak konsisten), TP tetap 8.300 → upside +24.3% + yield 5.4%. Bukti tesis masuk: NIM Juli pulih ke 5,5% (trough Juni 5,2%), 7M26 NP Rp35,3tn +1,6%, interim ke-2 Rp25 dibayar 16 Sep (Rp20 sudah Juni), buyback Rp5tn jalan; BMRI/BBNI justru pangkas guidance NIM. Himbara rally Agustus (BBRI 3.420, 1H26 +17,5%). PDF baru `..._2026-09-03.pdf` (versi 2 Aug disimpan); deck + model di-update in-place.
 

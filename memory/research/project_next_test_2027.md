@@ -40,6 +40,22 @@ Watch · Plant · Stock · Flex · Say; EIU = `background` (subscription, unmark
 charts with USDA PSD / World Bank Pink Sheet / FAO; deliverables PDF + deck; 34 pp; new calls
 D7–D10. When he answers, record the picks here.
 
+**Revision 1 of the memo (same day):** Aldo answered the memo by attaching 12 DEN documents for
+Sep–Oct 2026 (in `Research Reports\References\`, all with text layers). Intake done →
+`Next Test 2027\sources\dossier.md` (Layer 1 S17–S28 with page refs, Layer 2 A1–C4, conflicts
+K1–K8). He did **not** say "approve"; memo revised and approval re-requested. Load-bearing new
+facts: **BPS projects rice output −12.0% y/y (~1 Mt) for Sep–Nov 2026** (S17 p2; was −0.9% for
+Aug–Oct a month earlier — verify at BPS); standing crop 28.07% Aug vs 29.8% in 2023; **CBP 4.6 Mt
+at 16 Sep** (was 5.25 Mt 9 Aug; 2.3 Mt released YTD); SPHP 98.8% of target by 20 Sep, +1 Mt
+allocation; rice aid extended Oct–Dec Rp17trn; **rice at mills +6.04% y/y vs retail +2.8%** (HET
+squeezing mills — the suppression thesis in numbers); chicken up on MBG *and feed costs*; BMKG low
+band 49.2% Oct (DEN now writes 0–100 mm — band correction confirmed); DEN 2026 VF estimate 5.4–6.3%
+(DEN's own Sep projection overshot by >half — treat as upper anchor, grade C); CPO exports +12.2%
+y/y; Jan–Aug trade surplus USD7.3bn vs 29.3bn; Brent +68% YTD; passed APBN 2027 social protection
+Rp539.7trn vs RAPBN 549.9 (K3, verify). New governing thought: **"the lean season widens at both
+ends"** — Sep–Nov harvest shortfall at the front, late 2027 main harvest at the back. New call D11
+(Sep–Nov outturn ≥8% below 2025).
+
 **New data 3 Sep → 10 Oct (all to verify at primary in Phase 2 except CPC):**
 CPC 10 Sep historic 75%, 8 Oct historic 54% SON / **83% OND** / 70% NDJ, synopsis "strong-to-very
 strong El Niño likely through JFM 2027 (>83%)", Niño-3.4 Jul +1.4 / Aug +1.8 / **Sep +2.1**,

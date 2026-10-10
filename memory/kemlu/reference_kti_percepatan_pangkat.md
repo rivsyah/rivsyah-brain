@@ -3,7 +3,7 @@ name: reference-kti-percepatan-pangkat
 description: "Aturan KTI Kemlu + jalur percepatan pangkat PNS (dicek 4 Okt 2026): Permenlu 23/2020 format makalah; angka kredit unsur pengembangan profesi JF Penata Kanselerai & PPBJ DICABUT PermenPANRB 1/2023 (1 Jul 2023) → KTI tak lagi otomatis menambah AK; jalur yang hidup: predikat SKP Sangat Baik = 150% AK, penghargaan Permenlu 2/2026, kenaikan pangkat istimewa Pasal 40; periode naik pangkat bulanan sejak 1 Okt 2025 (Per BKN 4/2025)"
 metadata:
   type: reference
-  modified: 2026-10-04
+  modified: 2026-10-10
 ---
 
 # KTI di Kemlu dan jalur percepatan pangkat — dicek 4 Okt 2026
@@ -27,6 +27,10 @@ render PNG PyMuPDF, `Read` PDF butuh pdftoppm yang tidak ada).
   sumber 1 spasi; peraturan = nomor-tahun, judul miring, tanggal, LN/BN, kota; internet wajib tanggal akses.
 - Angka kredit: perorangan 100%; 2 penulis 60/40; 3 penulis 50/25/25; 4 penulis 40/20/20/20 (Pasal 22–23).
   **Tapi dasar AK-nya sudah tidak hidup** — lihat bawah.
+- **Status (dicek dari teks, 10 Okt 2026): Permenlu 23/2020 masih berlaku.** Permenlu 4/2024 Ps 74 hanya mencabut
+  Permenlu 19/2019, 21/2019, 24/2019. PermenPANRB 1/2023 Ps 47(2)e tetap mewajibkan instansi pembina menyusun pedoman
+  KTI; Ps 61 menyatakan aturan pelaksana tetap berlaku sepanjang tidak bertentangan. Yang gugur hanya Bab V–VI (AK).
+  Buku terbit ≥49 hlm batang tubuh (Ps 6(2)g). Master prompt KTI: [[reference-prompt-kti-penata-kanselerai]].
 
 ## PermenPANRB 1/2023 + Peraturan BKN 3/2023
 

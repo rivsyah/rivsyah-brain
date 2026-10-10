@@ -135,3 +135,27 @@ program, tanpa foto pihak ketiga. Diagram kotak matplotlib **wajib** `fig.subplo
 dengan margin subplot bawaan tinggi satu unit data menyusut ~23% dan teks meluber keluar
 kotaknya. Setelah menambah/menghapus figur atau tabel, audit ulang seluruh rujukan silang —
 nomor caption digenerate CSS counter, jadi rujukan di prosa tidak ikut bergeser sendiri.
+
+## Rebuild master prompt v3 — Phase 0 (10 Okt 2026)
+
+Aldo minta brief diperbarui dengan master prompt v3. Memo Phase 0 ada di
+`Too-Big-to-Fail\scope-memo-v3.md`; **menunggu persetujuan** (rekomendasi: judul tetap, Firebreak tetap,
+PDF + deck, EIU = `background` kecuali Aldo tandai `cleared`). Cutoff usulan 10 Okt 2026. PDF + deck
+3 Sep sudah disalin ke `out\superseded\*_cutoff-2026-09-03.*` SEBELUM build apa pun.
+
+**Lead baru dari pemindaian Phase 0 (T3, BELUM diverifikasi ke sumber):**
+- **Peminjam fasilitas Himbara = PT Agrinas Pangan Nusantara (BUMN pembangun gerai)**, sindikasi Rp240 t,
+  6%, 72 bulan (Katadata mengutip laporan BNI). Brief 3 Sep **tidak menyebut Agrinas sama sekali** — celah.
+- Ditarik ~Rp175 t, terpakai ~Rp106 t, 24.184 bangunan (Bloomberg Technoz, ±pertengahan Sep). Kalau benar,
+  perlakuan OJK Rp148,6 t sebagai "komitmen, bukan penarikan" keliru dan basis model bergeser.
+- Cicilan pertama ~Rp37–37,7 t jatuh tempo 25 Sep 2026; dana "sudah ditempatkan di Himbara" (Wamenkeu,
+  1 Okt) tetapi pencairan menunggu verifikasi + audit BPK.
+- UU APBN 2027 disahkan 29 Sep 2026: belanja Rp4.106,26 t, defisit Rp671,16 t (2,4% PDB). Pasal 14 final
+  (Rp51 t Dana Desa untuk KDMP) belum dicek ke teks UU.
+- Simkopdes **Rp207,77 mi / 83.049 transaksi per 5 Okt 2026** (Liputan6) — datar sejak Rp205 mi (22 Agu).
+  ~80% nilai = beras SPHP Rp92,77 mi + minyak goreng Rp47,11 mi + pupuk NPK/urea Rp26,36 mi.
+- Operasional: 7.028 dalam verifikasi (17 Sep), soft launch "mungkin Oktober" menunggu Perpres tata kelola;
+  pengawas simpan-pinjam diusulkan di luar OJK (Okt). Rating tak berubah sejak Jul (Moody's Baa2 neg,
+  Fitch BBB neg, S&P BBB stabil).
+- Tesis TIDAK terbantah; justru menguat. Cara paling mungkin tesis salah: program diperlakukan sebagai
+  subsidi tertutup enam tahun (~1% PDB), bukan risiko fiskal.
