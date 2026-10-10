@@ -105,22 +105,67 @@ DEN food prices Aug, a published Hormuz energy-security policy brief).
   Yudhi Sadewa. The 2.85% deficit projection was Purbaya's.
 - **APBN 2027 passed 29 Sep 2026**: ICP US$75 single point, no band, no trigger (Kemenkeu DJSEF,
   24 Sep); growth 6%, inflation 2.5%, Rp17,500, SBN 10Y 6.9%, deficit 2.4%, revenue Rp3,435.1trn,
-  spending Rp4,106.2trn. Brent was above US$100 within two days (US$103.50 on 1 Oct).
+  spending Rp4,106.3trn (= revenue + deficit; one source rounds to 4,106.2). Brent was above US$100 within two days (US$103.50 on 1 Oct).
 - **APBN KiTa to 31 Aug 2026**: deficit Rp240.1trn = 0.93% of GDP (narrower than 1.35% a year
   earlier); primary surplus Rp154trn; revenue +25.4% (65.2% of target); subsidy + compensation
   Rp331.4trn = 74.2% of ceiling, +52.1%; compensation Rp154.4trn now **paid monthly**.
 - CPI Aug 3.19%, Sep 3.28%; IHPB Aug 6.18% → wedge 2.99 points (May 2.68 / Jun 3.17 / Jul 2.78).
 - ICP Jul US$81.68, Aug US$89.43 (Kepmen ESDM 352.K/MG.03/MEM.M/2026).
-- 10Y yield fell to 6.93–6.97% in late Aug (back at the 6.9% assumption); ~7.13% in early Oct is
-  a single unverified press figure.
+- 10Y yield touched 6.93–6.97% in late Aug, then rose again: 7.12% (4 Sep) → 7.17% (15 Sep) →
+  7.16% (2 Oct). It did **not** stay healed — see the September block below.
 
 **Governing thought has to change.** The monthly compensation mechanism and the narrow, narrowing
 deficit weaken the old limb "the cost is hidden in deferred obligations". What survives and gets
 stronger: the shock is *paid* on-budget (subsidy + compensation +52%) and *funded* by a windfall
 from the same oil price, so the budget's apparent health is a hedge, not resilience — and the 2027
-budget writes that hedge on a single price point. Two of the six 2026 assumptions have healed on
-outturn (growth: H1 average ≈5.45% vs 5.4%; yield: late-Aug ≈6.95% vs 6.9%), so "all six broke" is
-no longer true as stated.
+budget writes that hedge on a single price point. Only growth has healed on outturn (H1
+average ≈5.45% vs 5.4%); the yield went back above 7.1% in September, so the count is five of six
+missed, not four.
 
-**Decisions pending with Aldo (Phase 0):** governing thought, title, framework name, and the
-clearance marking for DEN briefs and EIU material (v3 §5.6: unmarked non-public = background).
+**Decisions pending with Aldo (Phase 0):** see the September block below (memo revision 2).
+
+## Status per 10 Oct 2026 — September evidence (Phase 0 revision 2)
+
+Twelve DEN files dated 4 Sep – 8 Oct sit in `Research Reports\References\` (Data Visual Sep,
+Monetary Brief Sep, Weekly I–V Sep, food prices Sep II and IV, Inflation Sep and Oct, Trade Brief
+Aug). All have clean text layers and no restriction phrases. Memo revision 2 is
+`Seventy-Dollar-Budget\sources\phase0_memo_v3.md`; revision 1 is kept as `phase0_memo_v3_r1.md`.
+
+**Data conflict:** 10Y yield for 28 Aug = 6.97% (DEN Weekly IV Aug) vs 7.03% (DEN Weekly I Sep and
+the Monetary Brief's end-Aug column). Rupiah and IHSG match for that date. Resolve against BI/PHEI.
+
+**New facts (DEN, citing T1 originators — verify at T1 before use):**
+- Revenue to Aug: tax +24.1% (VAT +38.9%, oil and gas income tax +63.8%, non-oil income tax
+  +16.6%); non-tax +41.7% (non-oil natural resources +81.0%). Increase ≈ Rp416trn y/y (derived).
+  Net debt financing Rp506.0trn against a Rp240.1trn deficit.
+- Current-account deficit Q2 2026 US$12.5bn = 3.3% of GDP (Q1 US$4.0bn, 1.1%); overall BoP Q2
+  −US$0.9bn; reserves Aug US$146.5bn (5.4 months). Trade surplus Jul +0.12bn, Aug +3.55bn;
+  Jan–Aug +7.3bn vs +29.3bn in 2025. Export volume Aug −18.6% y/y (coal −28%, RKAB quotas).
+- Wedge Sep 3.48 pts (IHPB 6.76 − CPI 3.28), the widest of the series. CPI Sep: core 2.84,
+  administered 3.25, volatile food 5.03. Non-subsidised fuel was raised in early September.
+- Transfers to regions −24.1% y/y to Aug (Rp419.9trn) — a cut designed into APBN 2026, not an oil
+  response; regional capital spending −26.0%.
+- El Niño very strong (BMKG ENSO Jul–Sep +2.63); BPS sees rice output −12% y/y in Sep–Nov; rains
+  late (Nov–Dec) in 61% of season zones. Rice aid extended Oct–Dec at Rp17trn.
+- Brent Sep average US$102.3; 2026 average US$89.0. BI held 5.75% on 22–23 Sep and leans on
+  swap/DNDF incentives; the Fed hiked 25bp on 16 Sep. Rupiah 17,898 and IHSG 6,036.9 on 2 Oct.
+- APBN 2027: TKD Rp735trn, education Rp824trn, social protection Rp539.7trn. ESDM raised coal
+  quota by 15–20Mt for three Bayan units; DEN ties Q4 stimulus room to the extra royalties.
+- DEN expects Q3 growth above Q2 (5.29%); central-ministry spending +33% y/y to Aug.
+
+**Thesis status:** survives and widens — the payer is the price surge (oil, coal, nickel and the
+price part of import VAT), not oil alone. Phase 1 crux test: the commodity-linked share of the
+~Rp416trn increase. Below one third → the v3 conditional stop and a new governing thought. Most
+likely way it is wrong: VAT and non-oil income tax grew through compliance.
+
+**Calls revised (8):** old C1 (Q3 GDP below Q2) dropped and replaced by Q3 household consumption
+below 5.0%; added Q3 current-account deficit below 2.5% of GDP and volatile food above 6% in
+Oct–Dec; the oil-share call dropped because the share is measurable now.
+
+**Recommended to Aldo:** keep the title, the subtitle and "The Absorption Agenda" (his earlier
+picks); DEN and EIU default to `background` unless he marks them `cleared`. Awaiting approval;
+nothing built.
+
+**Lesson:** revision 1 claimed "mining took 36 times the FDI of non-resource manufacturing". Wrong:
+36 was the waffle's square count for 35.6%; the multiple is 35.6 / 1.54 ≈ 23. Check any "N times"
+claim against the two shares, never against chart geometry.

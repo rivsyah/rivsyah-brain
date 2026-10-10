@@ -3,7 +3,7 @@ name: Aturan pangkat & jenjang JF Penata Kanselerai
 description: "Aturan kenaikan pangkat/jenjang JFPK yang berlaku per 4 Okt 2026 (dicek dari teks peraturan): koefisien & AK, syarat 2 tahun dalam pangkat (tidak diubah Per BKN 4/2025), Ukom JPM, bonus AK Perwakilan rawan/berbahaya + ijazah, KPLB SE BKN 5/2022, distribusi predikat Kemlu"
 metadata:
   type: reference
-  modified: 2026-10-04
+  modified: 2026-10-10
 ---
 
 # Aturan pangkat & jenjang JFPK — dicek 4 Okt 2026
@@ -56,6 +56,12 @@ JFPK tidak punya Ahli Utama → **IV/c = plafon pangkat di JFPK**.
 
 ## Belum berubah (cek ulang bila ada kabar)
 
-PP Manajemen ASN turunan UU 20/2023 belum ditemukan terbit; Per BKN 3/2023 belum dicabut (cek 4 Okt 2026).
+PP Manajemen ASN turunan UU 20/2023 belum ditemukan terbit; Per BKN 3/2023 belum dicabut (cek 4 Okt 2026; dicek ulang
+10 Okt 2026: masih sama, PP 11/2017 jo. 17/2020 tetap dipakai per UU 20/2023 Ps 75; PermenPANRB 1/2023 belum diubah).
+Naik jenjang **tanpa syarat karya tulis**: PermenPANRB 1/2023 Ps 29(2) = AK kumulatif + lulus Ukom + predikat ≥Baik
+1 thn; Ps 29(3) izinkan syarat tambahan per JF, Permenlu 4/2024 tak menambah.
+**Dipantau:** rancangan PermenPANRB "JF di Bidang Hubungan Luar Negeri" (program 2026, Kepsesmen 224/2026) — bila
+terbit, bisa mengganti PermenPANRB 13/2018 dan memicu aturan pelaksana Kemlu baru. Lihat
+[[reference-prompt-kti-penata-kanselerai]].
 
 Dipakai di [[project_roadmap_pangkat_jfpk]]. Terkait [[reference_kti_percepatan_pangkat]], [[user_jabatan_kemlu]].

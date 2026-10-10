@@ -31,7 +31,9 @@ penulis") dan Lampiran III butir b. Pengungkapan AI wajib di subbagian Metode (p
   MLA, Chicago/Turabian, CSE, AMA/ICMJE/Vancouver (Lamp II Bab II angka 5). Lampiran I A–E + III.
 - **PermenPANRB 1/2023** — ditetapkan 6 Jan 2023, berlaku 1 Jul 2023 (Ps 63), BN 2023/54. Ps 62 huruf b mencabut
   ketentuan AK, unsur pengembangan profesi, tim penilai, kenaikan pangkat/jenjang di 293 peraturan JF termasuk
-  PermenPANRB 13/2018 (butir "ssss"). **Ps 61**: aturan pelaksana tetap berlaku sepanjang tidak bertentangan.
+  PermenPANRB 13/2018 (Ps 62 b **angka 97**; di Ps 60 = huruf "ssss": wajib disesuaikan paling lambat 5 tahun sejak
+  diundangkan 12 Jan 2023). Ps 29(2): naik jenjang = AK kumulatif + lulus Ukom + predikat ≥Baik 1 thn — tanpa karya
+  tulis. **Ps 61**: aturan pelaksana tetap berlaku sepanjang tidak bertentangan.
   **Ps 47(2)e**: instansi pembina tetap wajib menyusun pedoman KTI inovatif. → Permenlu 23/2020 hidup; Bab V–VI (AK)
   kehilangan dasar.
 - **Permenlu 4/2024** (Juklak & Juknis JFPK) — ditetapkan 23 Jul 2024, BN 2024/419. Ps 74 mencabut Permenlu 19/2019
@@ -81,6 +83,17 @@ penulis") dan Lampiran III butir b. Pengungkapan AI wajib di subbagian Metode (p
   PDP konon diteken 16 Jul 2026, berlaku 16 Jan 2027 [Likely, berita saja]. UU 14/2008 Ps 17 huruf f (hubungan luar
   negeri), h (rahasia pribadi), i (memorandum dirahasiakan).
 - Plagiasi: tidak ada aturan umum LAN/KemenPANRB untuk karya ASN; yang mengikat Permenlu 23/2020.
+- Status hukum (agen kedua): Permenlu 23/2020 Berlaku di JDIH Kemlu + BPK (Details/163077), tanpa relasi ubah/cabut;
+  nol Permenlu/Kepmenlu KTI baru sejak 2021 (173 dokumen JDIH dibaca). Dua dasar "mengingat"-nya sudah dicabut
+  (Permenlu 21/2019 oleh 4/2024; Per BKN 21/2018 oleh Per BKN 11/2022) — tidak mencabut 23/2020. Permenlu 1/2021 SKHK
+  diundangkan 13 Jan 2021, BN 2021/15; Ps 25 skor KTI (81–100 = 100% AK) ikut mati. PermenPANRB 13/2018: ditetapkan
+  1 Mar 2018, diundangkan 5 Mar 2018; PermenPANRB 40/2020 = Standar Kompetensi JFPK (BN 2020/570), bukan perubahan
+  13/2018. Permenlu 4/2024 diundangkan 24 Jul 2024. PermenPANRB 1/2023 belum diubah; PP Manajemen ASN turunan UU 20/2023
+  belum terbit (PP 11/2017 jo. 17/2020 tetap, UU 20/2023 Ps 75).
+- **DIPANTAU:** program PermenPANRB 2026 (Kepsesmen 224/2026, 5 Mei 2026) memuat rancangan PermenPANRB "Jabatan
+  Fungsional di Bidang Hubungan Luar Negeri" bersama Kemlu (sudah dipaparkan, bahas internal). Bila terbit → kemungkinan
+  ganti 13/2018 + aturan pelaksana Kemlu baru [Guessing] → **perbarui prompt ini**. Klaster terbaru (PermenPANRB 19/2026
+  JF Bidang Hukum, 29 Sep 2026, BN 2026/688) tetap menugasi instansi pembina menyusun pedoman KTI.
 
 ## Terbuka
 
