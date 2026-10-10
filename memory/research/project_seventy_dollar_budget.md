@@ -204,3 +204,34 @@ outlook keeps ICP at US$83 → implies Q4 ≈ US$56; oil lifting 573.9k b/d vs 6
 September); net debt financing fell from Rp506.0trn (Aug) to 494.3trn (Sep); TKD allocation revised to
 Rp727.2trn. Anomalies logged in `sources/phase1_t1_facts.md` — incl. DEN's "non-oil SDA grew 81%"
 being a misreading of "81% of outlook".
+
+## Status per 10 Oct 2026 — v3 delivered (35 pp)
+
+Aldo approved the revised governing thought after the conditional stop. Delivered
+`Seventy-Dollar-Budget\out\The-Seventy-Dollar-Budget.pdf`: 35 pp, 22 figures, 16 tables, 3 boxes, 53 references,
+gates html 59/0 · pdf 9/0 · final 11/0. Old PDF (16 Aug) and deck (1 Sep) in `out\superseded\`; deck not rebuilt.
+Title, subtitle and "The Absorption Agenda" (Band · Bank · Target · Redirect, 10 actions) unchanged.
+
+**Governing thought:** the 2026 oil windfall only paid the 2026 oil bill (price-linked revenue +Rp143.9trn vs
+subsidy+compensation +Rp132.2trn, Jan–Sep); the narrower deficit (1.24% vs 1.55% of GDP) rests on refunds paid out
+−Rp125.2trn and a one-off BI surplus Rp55trn; 2027 is written on a single US$75 ICP.
+
+**T1 facts found in this round (all cited in the brief):**
+- UU 17/2025 (APBN 2026) **Art. 18**: windfall SDA PNBP may be netted against higher energy subsidy/compensation, and
+  that part is NOT shared with regions (no DBH underpayment). **Art. 42**: government *may* propose an APBN-P when an
+  assumption deviates ≥10% — ICP (+31%) and inflation (+31%) crossed it in 2026; no amendment. Art. 17(1): subsidy
+  programme Rp318.9trn.
+- NK RAPBN 2026 Buku II Table 6.1: +US$1 ICP → revenue +3.5, spending +10.3, deficit −6.8 (Rp trn); +Rp100 FX → −0.8.
+  Oil-only: the table omits coal/nickel/CPO/import VAT (its own text says revenue effect "can be larger"). The 2027
+  NK table could not be retrieved — the 2026 one stands in, labelled.
+- **Brent Sep 2026 average US$114.16 (EIA RBRTE)**, not US$102.3 (that is the 2 Oct spot). BI: oil touched US$132 in Sep.
+- BI-Rate path: 4.75% → +50 bp 20 May → +25 bp 9 Jun (extra weekly RDG) → +25 bp 18 Jun = 5.75%; held Aug, Sep.
+- BoP Q2: CAD US$12.5bn = 3.3% GDP (Q1 revised to US$3.6bn, 1.0%); oil & gas trade deficit Jan–Aug US$21.29bn.
+- Lapsem outlook (7 Jul): deficit 2.85% (Rp734.3trn); 2025 outturn 2.92%.
+- BMKG 22 Sep: ENSO +2.63 very strong El Niño; late rains in 61.08% of land; BPS: Sep–Nov rice harvest −0.33m ha.
+
+**Calls to score (resolve Nov 2026 – Feb 2027):** C1 Q3 household consumption < 5.0% (5 Nov, BPS) · C2 Q3 CAD < 2.5%
+GDP (late Nov, BI) · C3 BI-Rate stays 5.75% Oct–Dec · C4 volatile food > 6.0% in any month Oct–Dec · C5 WPI−CPI ≥ 2.5
+pts each month Oct–Dec (two consecutive months below falsifies) · C6 compensation ≥ Rp200trn by 31 Dec ·
+C7 full-year refunds ≥ 30% below 2025 (roughly even) · C8 2026 deficit 2.5–2.9% of GDP. Score them against the
+brief's own rules; never move a threshold after the fact.

@@ -41,3 +41,9 @@ v3 merges that copy, v2, and the lessons from the briefs in this scope.
 30 pp + 24-slide deck). Its pipeline (token templates, generated tables and register, `verify.py --pdf`,
 `proof.py`, `supersede.py` ledger, PowerShell-COM deck proof) is the reference implementation. Six traps
 from that build were added to §13 on 10 Oct 2026.
+
+**Reference implementation of v3:** `Downloads\Research Reports\Seventy-Dollar-Budget\src\` (10 Oct 2026).
+Prose lives in `src/tmpl/*.html` with tokens (`{{n:key}}`, `{{v:key}}`, `{{a:key}}`, `{{ref:key}}`, `{{FIG|TBL|BOXHEAD}}`);
+`tables.py` generates tables from `content.py`; `verify.py` has three stages (html/pdf/final) and fails any digit in the
+rendered text that is not a content.py record or a structural pattern. Copy this skeleton for the next brief instead of
+starting from the v2 builds.
