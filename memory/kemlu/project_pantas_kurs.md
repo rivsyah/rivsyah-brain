@@ -1,9 +1,9 @@
 ---
 name: project-pantas-kurs
-description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b; 4 Okt: Pages pantas-kurs dibuat kosong, deploy di balik Access menunggu Zero Trust Free + izin token"
+description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b; 4 Okt: Pages pantas-kurs dibuat kosong, deploy di balik Access menunggu Zero Trust Free + izin token; 11 Okt: dicek ulang, masih tertahan di langkah Aldo yang sama; kurs JISDOR s.d. 9 Okt (17.884) di working tree, belum commit"
 metadata:
   type: project
-  modified: 2026-10-04
+  modified: 2026-10-11
 ---
 
 **Apa:** permintaan Aldo 27 Sep 2026 — aplikasi monitoring "petty cash" satker Perwakilan Washington DC
@@ -99,6 +99,30 @@ Organizations/IdP/Groups Edit, Access Service Tokens Edit (hanya untuk `livetest
 Sesudahnya: `access` → `dns` → `gate` → `deploy` → `gate` → `livetest`.
 Jebakan uji: unduhan Chrome headless via CDP dibatalkan bila `downloadPath` memakai garis miring maju di
 Windows — pakai path `C:\...`.
+
+**Cek 11 Okt 2026 (Aldo: "lanjutkan project PANTAS KURS") — MASIH TERTAHAN di langkah Aldo yang sama.**
+- API, baca saja (11 Okt ±00.50 WIB): `zt_apps`/`idp`/`svc_token` 403 *not_enabled*, `org` 403, `dns` 403. Pages
+  `pantas-kurs` masih tanpa deployment; `pantas.rivsyah.dev` tetap pending *"CNAME record not set"*.
+- Token di env.db = **token pengguna** (dashboard: My Profile → API Tokens; `/user/tokens/verify` 200 aktif), bukan
+  token akun (`/accounts/<id>/tokens/verify` 401). Akun yang terlihat: satu, "Rivsyah@gmail.com's Account".
+- Dok dicek live: onboarding Zero Trust Free tetap wajib isi data pembayaran, *"you will not be charged"* (dok
+  diperbarui 23 Apr 2026). Nama izin (halaman permissions, 1 Okt 2026): `Access: Apps and Policies`,
+  `Access: Organizations, Identity Providers, and Groups`, `Access: Service Tokens` — akhiran Edit atau Write
+  (keduanya tercantum); zona: `DNS` Edit/Write.
+- Kurs diperbarui (`tools/update_kurs.py`): 204 observasi s.d. **9 Okt 2026 = 17.884** (29 Sep 17.998 cocok kartu BI).
+  Python menulis CRLF → dinormalkan ke LF. **Belum di-commit** (bersama tooling deploy), jadi build tetap dari
+  `cf1a60b` (kurs s.d. 25 Sep) sampai Aldo mengizinkan commit.
+- Tes 21/21; build `cf1a60b` 18 file 2,28 MB; render lokal 6 tampilan OK dengan kurs baru: kurs terakhir Rp17.884
+  (+8,4% vs 16.500; 183/183 hari bursa di atas asumsi), proyeksi sisa pagu 31 Des +Rp273 M, batas aman Rp114.328
+  (JISDOR) / Rp114.235 (SP2D GUP), saldo US$1,44 jt ±54 hari. Catatan: halaman Proyeksi menampilkan "Sisa pagu"
+  +Rp323 M (= pagu − realisasi, belum dikurangi kebutuhan) di samping +Rp273 M di Ringkasan (sesudah kebutuhan) —
+  bukan bug, tapi label bisa membingungkan.
+- Konteks dari Aldo: ia menempel jawaban sesi SIGAP soal komentar Dedi ("aplikasi JS lebih cocok untuk Cloudflare
+  gratis"). PANTAS sudah JS statis → Pages Free cukup, **tidak butuh Workers Paid**. Satu-satunya "biaya": kartu saat
+  onboarding Zero Trust (tidak ditagih). Cadangan bila Aldo menolak isi kartu: sandi Basic Auth lewat Pages Functions
+  (Workers Free) — lebih lemah dari Access (sandi bersama, tanpa OTP/log); belum dibangun.
+- Pemantau `ready --wait` dijalankan di latar sesi 2a4da0ac (maks 4 jam sejak ±00.55 WIB 11 Okt). Bila siap, urutan:
+  `access` (ACCESS_EMAIL = rivsyah@gmail.com) → `dns` → `gate` → `deploy` → `gate` → `livetest`.
 
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.

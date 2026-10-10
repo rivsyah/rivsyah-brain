@@ -1,11 +1,11 @@
 ---
 name: project-sigap-bup
-description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), tertahan riwayat git bersih (pengaman menolak 4x — Aldo yang jalankan) + Workers Paid"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), tertahan riwayat git bersih (pengaman menolak 4x — Aldo yang jalankan) + Workers Paid; cek ulang 11 Okt tak berubah, 140/140"
 metadata: 
   node_type: memory
   type: project
   originSessionId: 71829bcd-e6cd-47be-b04d-d53c62f945d3
-  modified: 2026-10-04
+  modified: 2026-10-11
 ---
 
 SIGAP-BUP — Government Resource Planning Biro Umum dan Pengadaan Kemlu, dibangun mulai 15–16 Jul 2026 (berkas spesifikasi dan proyek Laravel lahir 15 Jul; dicek 4 Okt) di `C:\Users\rivsy\Herd\sigap-bup` → http://sigap-bup.test (login admin@kemlu.go.id / password).
@@ -452,6 +452,22 @@ dijalankan), Workers Paid belum aktif.
   cocok hanya tempat demonya.
 - **Opsi gratis tanpa tulis ulang:** Google Cloud Run (Dockerfile yang ada, Singapura, butuh kartu di akun
   billing, ±1 sesi setup) atau Render Free (bangun ±1 menit). Opsi cepat: Workers Paid.
+
+### 11 Okt 2026 — cek ulang, belum ada yang berubah (pemegang deploy: sesi `c4e7d156`)
+
+Aldo: "lanjutkan project SIGAP BUP" sambil menempel jawaban 6 Okt soal tulis ulang Hono. Pertanyaan 6 Okt
+("Cloudflare hanya untuk demo atau dipakai lama?") **belum dijawab**. Agent memakai rekomendasinya sendiri:
+**demo saja, tidak tulis ulang** — asumsi, dikatakan ke Aldo. Pemegang deploy kini sesi `c4e7d156`.
+- Git lokal `22950a4`, pohon bersih, riwayat lama (akar `97d1861`) masih ada. Pindai ulang semua berkas
+  terlacak: 0 kata penanda instansi, 0 jalur pribadi, 0 kredensial. Satu positif palsu pola `sk-…` = ID acak
+  tautan `drive.example.com` di `database/seeders/dummy/permintaan.json`.
+- GitHub `rivsyah/sigap-bup` 200, **0 branch**. Cloudflare: Containers **401** (Workers Paid belum aktif),
+  0 Worker, 0 custom domain.
+- Neon `main` (MCP baca-saja): 28 tabel, 11 migrasi, 1 akun (`@sigap.test`), 0 akun lain.
+- SQLite **140/140, 956 asersi**, 57 detik, PHP 8.4.23 (Herd).
+- Perintah riwayat bersih yang disiapkan (pohon sama persis dengan `22950a4`, riwayat lama tetap di branch
+  lokal `riwayat-lokal`, tidak ada berkas disentuh):
+  `git branch riwayat-lokal main && git reset --soft "$(git commit-tree 'HEAD^{tree}' -m '...')"`.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 

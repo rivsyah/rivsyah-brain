@@ -1,9 +1,9 @@
 ---
 name: reference-cloudflare-rivsyah-dev
-description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); per 4 Okt tinggal Workers Paid (Containers 401) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME → PANTAS butuh Zone DNS Edit; Zero Trust belum aktif (4 Okt), onboarding Free wajib isi metode bayar; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo"
+description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); per 4 Okt tinggal Workers Paid (Containers 401) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME → PANTAS butuh Zone DNS Edit; Zero Trust belum aktif (4 Okt, dicek ulang 11 Okt: masih), onboarding Free wajib isi metode bayar (dok 23 Apr 2026); token env.db = token pengguna; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo"
 metadata:
   type: reference
-  modified: 2026-10-04
+  modified: 2026-10-11
 ---
 
 Dicek lewat API (baca saja) 29 Sep 2026 ~22:55 WIB, dari mesin riv. Domain pribadi Aldo, dipilih
@@ -35,6 +35,11 @@ rekaman/route.
 - **Zero Trust/Access belum aktif** (4 Okt: `access.api.error.not_enabled`; `/access/organizations` 403 10000).
   Onboarding Zero Trust Free: pilih nama tim + paket + **wajib isi metode pembayaran walau Free, tidak ditagih**
   (dok resmi `learning-paths/secure-internet-traffic/initial-setup/create-zero-trust-org`).
+  **Dicek ulang 11 Okt 2026:** Zero Trust masih belum aktif (API 403 *not_enabled*); dok onboarding (diperbarui
+  23 Apr 2026) tetap: *"this step is still needed but you will not be charged"*. Token di env.db adalah **token
+  pengguna** (My Profile → API Tokens), bukan token akun. Nama izin per halaman permissions (1 Okt 2026):
+  `Access: Apps and Policies`, `Access: Organizations, Identity Providers, and Groups`, `Access: Service Tokens`
+  (akhiran Edit atau Write — keduanya tercantum), zona `DNS` Edit/Write.
 - `CLOUDFLARE_ACCOUNT_ID` di env.db **salah** (tidak cocok dengan satu-satunya akun token). Agent bisa
   mengambil ID yang benar dari `GET /accounts` saat jalan; env.db sendiri diisi Aldo lewat
   `envdb-setup.sh` di terminalnya.
