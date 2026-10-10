@@ -1,6 +1,6 @@
 ---
 name: project-next-test-2027
-description: "The Next Test (El Niño brief, Downloads\\Research Reports\\Next Test 2027) — standalone, 3 Sep cutoff edition 27pp + deck 24 slides; v3 rebuild to 10 Oct cutoff awaiting Phase 0 approval; live RONI error in circulating edition"
+description: "The Next Test (El Niño brief, Downloads\\Research Reports\\Next Test 2027) — v3 edition delivered 10 Oct 2026 (cutoff 10 Oct): PDF 30pp + deck 28 slides, all gates pass; 3 Sep edition in circulation still has the RONI error (correction note = Aldo's call)"
 metadata: 
   node_type: memory
   type: project
@@ -8,78 +8,53 @@ metadata:
   modified: 2026-10-10
 ---
 
-## CURRENT STATE — 10 Oct 2026 (read this first; the history below is the August build)
+## CURRENT STATE — 10 Oct 2026, v3 edition DELIVERED (read this first)
 
-**Delivered and in circulation:** `out\The-Next-Test.pdf` (27 pp, gate 134 checks) and
-`out\The-Next-Test-deck.pptx` (24 slides, python-pptx + deck_charts.py, package validates), both
-**3 Sep 2026 cutoff**. Aldo posted it on LinkedIn (EN caption, then an ID caption on request).
+**Delivered (not yet published):** `out\The-Next-Test.pdf` (30 pp) and `out\The-Next-Test-deck.pptx`
+(28 slides), **cutoff 10 Oct 2026**, built to master prompt v3 after Aldo's "approve" of scope memo Rev 1.
+Superseded 3 Sep copies are in `out\superseded\`. Gates: `verify.py` + `--pdf` 817 checks, `--deck` 534
+checks, all passed. 24 figures, 16 tables, 3 boxes, 49 references, 11 calls, 26 identities, 525 numbers
+swept against records. Chart data in `out\data\*.csv` (24). Delivery note: `Next Test 2027\delivery-note-v3.md`.
 
-- **Standalone since 3 Sep.** The predecessor scorecard was removed at Aldo's instruction ("do not
-  mention previous research"); Section I rewritten as "The divergence". verify.py has a BACKREF
-  check that fails the build on "previous brief / this series / Bought and Sold" etc.
-- **Indonesian edition set aside** (see [[feedback-english-only-briefs]]). `*-id.html` and
-  `make-id.ps1` are out of sync with content.py and will not build. Do not revive unasked.
-- **Calls at 3 Sep:** D3 passed (VF 4.06 > core 2.92, Aug print), D4 failed (BMKG Sep low-rain
-  share 75.05% < 77%). Scored in content.CALL_STATUS; the gate requires the prose to say
-  "D3 passed" / "D4 failed".
-- **By 10 Oct the other two resolved:** D1 passed (CPC historic 75% on 10 Sep), D2 failed (FAO
-  rice did not regain its premium; cereals led in Aug +2.2 vs rice +0.5, and Sep +5.1 vs +1.4).
-  Record: **2 passed, 2 failed, 2 open (D5, D6)**.
+- **Title** "The Next Test: Why Indonesia's 2027 Food Year Is Decided in 2026". **Framework** The
+  Lead-Time Agenda, streams WATCH · PLANT · STOCK · FLEX · SAY, 10 actions (W1 W2 P1 P2 S1 S2 F1 F2 Y1 Y2).
+  Findings are numbered 1–6 ("Finding 3"), never F1–F6, because F belongs to the FLEX actions.
+- **Governing thought:** the shock has reached the harvest (BPS Sep–Nov rice −11.95%), late rains push
+  the 2027 main crop back (BMKG: onset late over 61.08% of land), so the lean season widens at both ends;
+  the reserve that bridges it is drawing down (5.2 Mt end-Aug → 4.6 Mt 16 Sep) and is topped up case by case.
+- **Reserve model** `src\model.py` (grade D): base end-Dec 3.0 Mt, low ~2.5 Mt Feb–Mar, end-Apr 2.7 Mt;
+  upside 3.9; downside 0.7; stress 0.3. Every scenario ends 2026 below the 4 Mt target. Biggest lever:
+  rice aid continued into 2027 (−1.0 Mt).
+- **Calls:** D1 passed, D2 failed, D3 passed, D4 failed. Open by date: D8 31 Dec 2026 · D9 4 Jan 2027 ·
+  D10 8 Jan · D7 14 Jan · D11 ~Jan 2027 · D5 31 Mar · D6 Q1 KSA release. Score them when they resolve.
+- **EIU = background** (never cited/charted). Old EIU-derived deck plates + `deck_charts.py` moved to
+  `deck\_retired_2026-09-03\`. The deck now reuses the brief's own plates (`charts\*.png`).
+- **Open for Aldo:** (1) the circulating 3 Sep edition + deck still carry the raw-index "historic"
+  error — whether to send recipients a correction note is his call (the new brief stays standalone and
+  does not mention it); (2) publishing the v3 edition (LinkedIn etc.) is his act.
 
-**LIVE ERROR in the circulating edition (found 10 Oct, not yet corrected):** the brief and deck
-say CPC's "historic" = Niño-3.4 ≥ +2.5°C, and the RONI box says CPC probabilities "are published
-on the raw index". **Wrong.** CPC's 8 Oct 2026 discussion (primary) defines historic as a
-**3-month RONI ≥ +2.5°C**. In the brief since 15 Aug. The fix strengthens the hazard case (83% on
-the relative index). Whether "very strong" +2.0 is RONI-based too: verify at CPC strengths page.
+**Build architecture (v3), reusable for the next brief:** `content.py` is a number store — `n(key, v,
+unit, period, basis, scope, src, grade)` registers every printed value; `model.py` registers into the same
+store. `build.py` resolves `{{META:x}}`, `<!-- TABLE:name -->` (rows generated from content/model),
+`[[ref:K]]` / `[[cite:K|f-id]]` (author-date from `refs.py`), `[[f-id]]`/`[[t-id]]`/`[[b-id]]` (exhibit
+numbers written into the HTML, no CSS counters), and writes `styles-gen.css` (running header from META).
+`verify.py` has **no number allow-list**: it strips dates/years/ids by grammar and matches every remaining
+number against the store (long series excluded so nothing passes by coincidence). `make.ps1` runs both
+documents and all three gates; `deck_proof.ps1` exports slides via PowerPoint COM.
 
-**v3 rebuild in progress.** Aldo pasted master prompt v3 on 10 Oct ("update this research with this
-prompt"), Section 1 unfilled. Phase 0 scope memo written to `Next Test 2027\scope-memo-v3.md`
-and shown in chat; **STOPPED for approval** per v3. Recommendations in it: title "The Next Test:
-Why Indonesia's 2027 Food Year Is Decided in 2026"; framework Lead-Time Agenda with streams
-Watch · Plant · Stock · Flex · Say; EIU = `background` (subscription, unmarked) → replace EIU
-charts with USDA PSD / World Bank Pink Sheet / FAO; deliverables PDF + deck; 34 pp; new calls
-D7–D10. When he answers, record the picks here.
-
-**Revision 1 of the memo (same day):** Aldo answered the memo by attaching 12 DEN documents for
-Sep–Oct 2026 (in `Research Reports\References\`, all with text layers). Intake done →
-`Next Test 2027\sources\dossier.md` (Layer 1 S17–S28 with page refs, Layer 2 A1–C4, conflicts
-K1–K8). He did **not** say "approve"; memo revised and approval re-requested. Load-bearing new
-facts: **BPS projects rice output −12.0% y/y (~1 Mt) for Sep–Nov 2026** (S17 p2; was −0.9% for
-Aug–Oct a month earlier — verify at BPS); standing crop 28.07% Aug vs 29.8% in 2023; **CBP 4.6 Mt
-at 16 Sep** (was 5.25 Mt 9 Aug; 2.3 Mt released YTD); SPHP 98.8% of target by 20 Sep, +1 Mt
-allocation; rice aid extended Oct–Dec Rp17trn; **rice at mills +6.04% y/y vs retail +2.8%** (HET
-squeezing mills — the suppression thesis in numbers); chicken up on MBG *and feed costs*; BMKG low
-band 49.2% Oct (DEN now writes 0–100 mm — band correction confirmed); DEN 2026 VF estimate 5.4–6.3%
-(DEN's own Sep projection overshot by >half — treat as upper anchor, grade C); CPO exports +12.2%
-y/y; Jan–Aug trade surplus USD7.3bn vs 29.3bn; Brent +68% YTD; passed APBN 2027 social protection
-Rp539.7trn vs RAPBN 549.9 (K3, verify). New governing thought: **"the lean season widens at both
-ends"** — Sep–Nov harvest shortfall at the front, late 2027 main harvest at the back. New call D11
-(Sep–Nov outturn ≥8% below 2025).
-
-**New data 3 Sep → 10 Oct (all to verify at primary in Phase 2 except CPC):**
-CPC 10 Sep historic 75%, 8 Oct historic 54% SON / **83% OND** / 70% NDJ, synopsis "strong-to-very
-strong El Niño likely through JFM 2027 (>83%)", Niño-3.4 Jul +1.4 / Aug +1.8 / **Sep +2.1**,
-Niño-1+2 Sep +3.9, next discussion 12 Nov · BPS Sep CPI (1 Oct): headline 3.28%, core 2.84%,
-**VF 5.03%**, index 112.31, YTD 2.17%, attributed to weather disruption + input costs, drivers
-chilli/chicken/rice/eggs · FAO: Aug cereal 116.3 (+2.2%), rice +0.5%; Sep cereal **122.8**
-(+5.1% m/m, +17.2% y/y, highest since Dec 2023), rice +1.4%; FAO world rice 2026/27 −1.9% on
-margins and El Niño (Aug value may be revised to 116.8 — check) · BI held 5.75% on 22–23 Sep (4th
-hold); oil spiked to US$132 then <US$100 · **APBN 2027 passed 29 Sep**: revenue Rp3,435.1trn,
-spending Rp4,106.3trn, deficit 2.4%, rupiah assumed 17,500 vs 17,984 that day, inflation 2.5% ·
-**BMKG 22 Sep: onset late in 529 zones = 61.08%**, shorter season over 51.90% of land, IOD +0.376;
-8 Oct: very strong, ends late Q1 2027, drought into Oct for Java/Bali/NT; BMKG's own Niño-3.4 +2.83
-(end Aug) / +2.63 (JAS) conflicts with CPC — different dataset · Bulog peak 5.4 Mt, absorption 4.09
-Mt by 6 Oct; current stock unknown · fertiliser 2026 allocation 9.84 Mt, HET urea Rp1,800/kg
-since 22 Oct 2025; 2027 allocation not yet published.
-
-**Traps from this session (also added to v3 §13 where they are build traps):**
-- A search summary called the +2.6°C weekly value "Niño-3.4"; the CPC deck shows it was **Niño-3**.
-  Never take a region label from a summary.
-- DEN reported BMKG low-rainfall shares as "0–10 mm"; BMKG's own "Rendah" band is **0–100 mm**.
-- `python -I` (required for untrusted source files) ignores PYTHONIOENCODING, so printing a
-  ligature crashes on cp1252. Use `python -I -X utf8`.
-- Bash heredocs (`python - <<'PY'`) silently failed every replacement containing `\n` or a
-  non-ASCII character; use the Edit tool or a script written to disk.
+**Traps learned in this build (add to v3 §13 if not there):**
+- A CSS hex escape (`\0000B7`) **swallows one following space**: "RESEARCH ·INDEPENDENT". End every
+  escape with its own space.
+- Forced page breaks per section left 5 half-empty pages; let sections flow and keep table titles and
+  source notes with their tables (`break-after/before: avoid`, `.keep` for short tables).
+- STALE substring matching flags "23 September 2026" for "3 September 2026" — anchor at a word boundary.
+- matplotlib labels built with `{v:+.1f}` print a hyphen-minus; use a helper that emits U+2212.
+- A search summary called a weekly +2.6°C value "Niño-3.4"; it was Niño-3. Never take a region label
+  from a summary. DEN's "0–10 mm" BMKG band is really 0–100 mm. BMKG's IOD +0.376 is "moving towards
+  positive", not "positive".
+- `python -I` ignores PYTHONIOENCODING → use `python -I -X utf8`. Bash heredocs mangle `\n` and
+  non-ASCII; write patch scripts to disk.
+- BPS blocks curl/WebFetch (403); the built-in browser reads bps.go.id fine.
 
 ---
 
