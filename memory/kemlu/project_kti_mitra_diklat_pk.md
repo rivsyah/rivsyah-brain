@@ -60,9 +60,31 @@ Format mengikuti preseden [[project-kti-sigap-sipdln]] (makalah Permenlu 23/2020
   via hibah LDKPI seperti Sesdilu Internasional); peta jalan 2027–2029.
 - Pengungkapan AI ada di Bab I D. Jabatan "Penata Kanselerai [[Ahli Pertama]]" (disorot).
 
+## Versi 2 (10 Okt 2026 18.06) — audit dengan master prompt KTI v1
+
+Aldo menempelkan master prompt KTI ([[reference-prompt-kti-penata-kanselerai]]) tanpa instruksi lain → ditafsirkan:
+jalankan Gerbang Mutu 28 butir pada naskah ini (bukan memulai Tahap 0). Hasil: 19 butir lulus sejak awal, 9
+diperbaiki: (6) sampul + "di Bidang Kekanseleraian"; (8) sitasi/periode: "7–8 pelatihan" TANPA "per tahun"
+(LKj tak menyebut per tahun), 204/88 = "total" di LKj 2024; (9) 3 opini yang tertulis sebagai fakta; (11) Kesimpulan 1
+salah sebut SD di antara kelulusan terendah + caveat: di jenjang Madya perencanaan 3% (aturan nasional) → pola
+"sisi internasional" hanya jelas di kenaikan ke Muda; (15) rekomendasi + waktu & indikator (C10); (17) tanggal
+penetapan peraturan + SE Sekjen SE/00008/HK/04/2026/03; (21) pengungkapan AI: Claude Opus 5.5, Anthropic, Claude
+Code; (25) ±25 singkatan didefinisikan, "prapenempatan", nama lembaga asing tegak (EYD V); (26) Lampiran III jadi
+berkas terpisah "siapkan bila diminta", pengesah perpustakaan → [[Kepala Pusdiklat (konfirmasi)]].
+Pembiayaan terverifikasi: ITEC tanggung kursus, akomodasi, kunjungan studi, tiket, uang hidup (laman ITEC Kedubes
+India Baku); SCP tanggung uang harian, akomodasi, asuransi, TIKET = pemerintah pengusul (brosur SCP 2018) → skor K3
+Singapura mengandaikan pelatihan di Jakarta; AAI: biaya kursus, materi, tunjangan + jalur "targeted" bagi staf
+organisasi yang dicalonkan. Hasil: 38 hlm, pokok bahasan 7.032 kata, abstrak 164, verify 21/21, 0 kalimat kembar
+vs KTI SIGAP/SIPDLN. Versi 1 dipindah ke subfolder `arsip - versi 1 (10 Okt 16.05)`.
+
 ## Terbuka (Aldo)
 
-Isian kuning: NIP, pangkat, jenjang, nomor surat, pengesah (Kepala BUP), pejabat perpustakaan, meterai.
-Status Peraturan LAN 10/2018 (dicabut/tidak) belum dipastikan di JDIH LAN — dikutip untuk Ps 29–30 saja.
+1. **Pasal 17(2)a Permenlu 23/2020** ("murni hasil pemikiran penulis"): naskah ini disusun AI. Sebelum teken surat
+   pernyataan, Aldo harus memutuskan sendiri: mitra jangkar + skor/bobot K1–K6, tafsir data Ukom, model 5 lapis +
+   peta jalan, rekomendasi per unit; lalu menulis ulang dengan kata-katanya. Kalimat "Penulis menelaah, menyunting,
+   dan memutuskan..." di Bab I D baru benar setelah itu.
+2. Isian kuning: NIP, pangkat, jenjang, nomor surat, pengesah (Kepala BUP), pejabat perpustakaan, meterai.
+3. Konfirmasi ke Pusat Pembinaan JF: Lampiran III masih diminta? pengesah perpustakaan? templat sampul/logo?
+4. Status Peraturan LAN 10/2018 (dicabut/tidak) belum dipastikan di JDIH LAN — dikutip untuk Ps 29–30 saja.
 
 Terkait: [[reference-kti-percepatan-pangkat]], [[user-jabatan-kemlu]], [[reference_aturan_pangkat_jfpk]].

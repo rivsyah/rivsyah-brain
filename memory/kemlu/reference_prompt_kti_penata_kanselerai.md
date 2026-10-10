@@ -104,6 +104,13 @@ penulis") dan Lampiran III butir b. Pengungkapan AI wajib di subbagian Metode (p
    Terbatas (SE 5.c.2); "ingatan bukan sumber" → [[VERIFIKASI]]; nama unit rekomendasi dari penulis; Lampiran III hanya
    bila diminta (formulir Ps 21 Bab V); batas 3 penulis pembantu = pola Ps 23(2) saja; label (d) Lampiran II dibetulkan
    ("utuh dan runtun"). Belum diuji di model lemah (kelas GPT-4o-mini) atau model berpenelusuran web.
+3. Uji pakai pertama (10 Okt 18.06): Gerbang Mutu Blok E dijalankan pada KTI nyata [[project-kti-mitra-diklat-pk]]
+   → 19/28 lulus awal, 9 diperbaiki. Bahan untuk prompt v2: (a) butir 27 perlu membedakan sebutan NETRAL
+   "angka kredit" (mis. "PermenPANRB 1/2023 mencabut ketentuan angka kredit") dari klaim/janji; (b) C8 perlu aturan
+   EYD V bahwa nama diri asing (lembaga, program) TIDAK dimiringkan, hanya istilah dan judul; (c) C8 paling banyak
+   menjaring kesalahan (±25 singkatan tak didefinisikan, termasuk singkatan yang muncul pertama di sitasi, mis.
+   "Pusdiklat") — layak jadi butir gerbang tersendiri; (d) B11/E11 menangkap kesimpulan yang tak setia pada tabel;
+   tambahkan cek "pola data berlaku di semua subkelompok?"; (e) bentuk terikat "pra-" serangkai.
 
 Terkait: [[reference-kti-percepatan-pangkat]], [[project-kti-sigap-sipdln]], [[project-kti-mitra-diklat-pk]],
 [[user-jabatan-kemlu]], [[reference_aturan_pangkat_jfpk]].
