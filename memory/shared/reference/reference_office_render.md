@@ -159,3 +159,10 @@ Tambahan 6 Okt 2026 (sesi bus + Zenix, [[project-pengadaan-bus-zenix-2026]]):
   jalankan. Heredoc Git Bash gagal ("unexpected EOF while looking for matching `'`") dan bisa meruntuhkan escape.
 - Tab di docx dari lxml: tulis `<w:tab/>` (bukan karakter `\t` di `<w:t>`); dengan indentasi gantung, Word memakai posisi
   indentasi kiri sebagai tab stop implisit sehingga penanda "a." rapi.
+
+Tambahan 10 Okt 2026 (sesi roadmap pangkat JFPK, [[project_roadmap_pangkat_jfpk]]):
+- **PID Word milik skrip diambil dari jendela dokumen**, bukan dari selisih daftar proses: setelah `Documents.Open`,
+  `GetWindowThreadProcessId($doc.ActiveWindow.Hwnd)` (P/Invoke user32) memberi PID instans sendiri. Di `finally`:
+  `Quit()`, tunggu ≤5 dtk, bunuh PID itu hanya bila masih hidup. Menghindari balapan antarsesi yang tercatat 27 Sep.
+  Skrip: `C:\Users\rivsy\dev\kemlu\roadmap-pangkat-jfpk\render.ps1` — `SaveAs2(docx,16)` + `ExportAsFixedFormat(pdf,17)`
+  jalan 3x berturut-turut (16.05–16.20 WIB), 22 hlm, daftar isi terisi.
