@@ -52,3 +52,10 @@ dan ND usulan kendis 2024, di folder paket.
 Rujukan pasal terverifikasi (konsolidasi LKPP Perpres 46/2025): Ps 19(2)d, 26(7), 33, 54(2), 56, 66, 78(3)-(4) [ayat (5)
 DIHAPUS], 79(4)-(5), 85(1)a+(2). Teks ekstrak regulasi di scratchpad sesi (tidak permanen). Terkait: [[reference_pejabat_bup]],
 [[reference_template_spk]], [[project_pengadaan_amdk]], [[reference-office-render]].
+
+## 10 Okt 2026 — PENGHALANG BARU: S-708/MK.03/2026 (8 Okt 2026)
+Surat Menkeu butir 3.b: belanja kendaraan bermotor baru **akun 532111** yang belum dibeli/diikat kontrak s.d. 8 Okt 2026
+**ditunda dan diblokir** (Halaman IV DIPA, kode 9). Paket ini belum berkontrak → kena, dua-duanya (bus DAN Zenix).
+Surat tidak membatasi ke rupiah murni, jadi PNBP [Likely] ikut kena. Satu-satunya jalan: pengecualian di Lampiran II
+angka 4.c S-89/MK.03/2026 (18 Feb 2026) — isinya belum dicek. Usul revisi blokir paling lambat 16 Okt 2026.
+Lihat [[reference-s708-mk03-2026]].

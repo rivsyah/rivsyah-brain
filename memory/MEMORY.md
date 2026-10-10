@@ -7,7 +7,7 @@
 
 - 🟡 8 Okt 2026 — **Surat ke LKPP: SP Furniture Lt 3 Tower batal otomatis** (kontrak sudah di SAKTI): surat 2 hlm (disunting Aldo 8 Okt, 4 masalah terbuka) + surat pernyataan penyedia 1 hlm, keduanya di folder paket MOFA. Jalur resmi pemulihan TIDAK ADA → saran siapkan mini kompetisi ulang paralel. [Surat LKPP Furniture Lt 3](kemlu/project_surat_lkpp_furniture_lt3.md).
 - 🟡 7 Okt 2026 — **BA selisih biaya swakelola BSBI 2026 (IDP × UNJ)**: draf .docx 4 hlm di `Downloads\`, selisih Rp17,36 jt beban UNJ, maks Termin II Rp264,27 jt. Menunggu: isian kuning (Feni), cek pajak 13% + Termin I. [BA selisih BSBI 2026](kemlu/project_ba_selisih_bsbi_2026.md).
-- 🟡 6 Okt 2026 — **Paket Bus 30+1 + Innova Zenix Q HV TA 2026**: KAK/Spektek, RAB/HPS, SSUK+SSKK (x2) jadi di
+- 🔴 10 Okt 2026 — **Paket Bus + Zenix kena S-708/MK.03/2026**: kendaraan baru akun 532111 belum berkontrak per 8 Okt → ditunda + blokir; cek pengecualian S-89 Lamp II 4.c; revisi s.d. 16 Okt. Latar 6 Okt: **Paket Bus 30+1 + Innova Zenix Q HV TA 2026**: KAK/Spektek, RAB/HPS, SSUK+SSKK (x2) jadi di
   `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Bus Kemlu dan Innova Zenix\`. Zenix siap (Rp609,2 jt = proyeksi). Bus
   TERHAMBAT: HPS Rp1,317 M > SBM bus sedang Rp1,1 M, listing DGMI tidak aktif, inden 90-120 hr. Menunggu Aldo: PPK (Dina A?)
   + NIP, keputusan bus. [Bus + Zenix 2026](kemlu/project_pengadaan_bus_zenix_2026.md).
@@ -144,6 +144,7 @@
 - [Cloudflare + rivsyah.dev](shared/reference/reference_cloudflare_rivsyah_dev.md) — zona ACTIVE sejak 29 Sep 22.52 WIB; per 4 Okt tinggal Workers Paid (scope workflow PAT beres, 0 Worker terdeploy); izin DNS token tidak perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME (butuh DNS Edit); Zero Trust belum aktif, onboarding Free wajib isi metode bayar; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo
 - [Kurs JISDOR BI](shared/reference/reference_bi_jisdor.md) — unduh rentang lewat postback tombol Unduh → xlsx (tanggal m/d/yyyy); GET biasa 10 hari; wskursbi mati; ECB/Frankfurter beda 15–20 poin; port PHP jalan 29 Sep
 - [Impor Claude Design](shared/reference/reference_design_login.md) — DesignSync bisa kedaluwarsa di tengah sesi; hanya /design-login dari terminal interaktif yang memulihkan
+- [S-708/MK.03/2026](kemlu/reference_s708_mk03_2026.md) — Surat Menkeu 8 Okt 2026 Langkah Strategis Belanja TW IV; RAHASIA → vault hanya pointer + dampak (bus/Zenix diblokir)
 - [PER-9/PB/2026 LLAT](kemlu/reference_per9_pb_2026_llat.md) — Langkah akhir TA 2026 (berlaku 8 Okt, cabut PER-8): kontrak & SPM-LS BAST s.d. 30 Sep → 9 Okt; Okt → 6 Nov; RPATA kode 171 17-23 Des; KKP s.d. 16 Des; Perwakilan LN bebas setor sisa UP (Ps 31)
 
 ## Archive
