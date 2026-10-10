@@ -102,6 +102,7 @@
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 
+- [Master prompt policy brief](research/reference_policy_brief_master_prompt.md) — v3 10 Okt 2026 di Research Reports\policy-brief-master-prompt-v3.md (v2 tetap di sampingnya); tambah tier sumber, grade A–D, katalog exhibit, gerbang verify sebagai tabel, jebakan build
 - [Equity Research Series](research/project_equity_research_series.md) — seri sell-side Ignited (BBCA/INDY/BMRI/RANS); pipeline content.py→build.py→verify.py + jebakan reportlab
 - [BBCA Company Focus](research/project_bbca_company_focus.md) — equity note "The CASA Dividend"; MODEL dict + verify.py 56 checks
 - [BPADAD — Badan Pengelola Aset dan Dana Abadi Diplomasi](research/project_landlord_that_rents.md) — ed.4 4 Okt 2026: 55pp + deck 34, basis audited 31 Des 2025; gap Rp253,0M; sewa 226x (akrual); renewal bersih 55%; utang 7 gedung Rp670,8M; LK Sem I 2026 = print internal, tak dipakai
