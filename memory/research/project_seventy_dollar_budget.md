@@ -169,3 +169,38 @@ nothing built.
 **Lesson:** revision 1 claimed "mining took 36 times the FDI of non-resource manufacturing". Wrong:
 36 was the waffle's square count for 35.6%; the multiple is 35.6 / 1.54 ≈ 23. Check any "N times"
 claim against the two shares, never against chart geometry.
+
+## Status per 10 Oct 2026 — Phase 1 conditional stop (crux test failed)
+
+Aldo approved Phase 0 revision 2 on 10 Oct with the defaults: title, subtitle and "The Absorption
+Agenda" kept; DEN and EIU = `background` (never cited; every number from public T1); cutoff
+10 Oct; PDF only.
+
+**New T1 source — use it first next time.** Kemenkeu's APBN KiTa press decks are public PDFs with a
+real text layer: `media.kemenkeu.go.id/getmedia/.../Publikasi-Web-Konpers-APBN-KiTa-(<Bulan>-2026).pdf`
+(index at kemenkeu.go.id/apbnkita → "APBN Kita 2026 (Publikasi)" → "Tampilkan berkas unduh"; the
+page is JS-rendered, so use the browser, not WebFetch). WebFetch saves the PDF binary under
+`~/.claude/projects/.../tool-results/`; copy it to a scratch folder and extract with PyMuPDF. The
+deck for **9 Oct 2026 (data to 30 Sep)** came out the day before the cutoff. Some tables are images:
+render the slide to PNG and read it.
+
+**Crux test (pre-registered; `sources/crux_test.md`, `src/crux_test.py`):** the price-linked share of
+the revenue rise is 27.5% to Aug and 30.2% to Sep (all import VAT counted = upper bound); 32.7% with
+import income tax and import duty. Below one third → F3 failed → conditional stop. Revenue rise to
+Sep Rp475.6trn = price surge 143.9 (30%) + refunds paid out −125.2 (26%; Rp323.9 → 198.7trn,
+−38.7%, DJP via press, grade B) + one-off BI surplus 55.0 in KND (12%) + everything else 151.5 (32%).
+Subsidy + compensation rose Rp132.2trn (244.6 → 376.8), so the price surge paid for itself.
+Deficit to Sep 1.24% vs 1.55%; if ≥20% of the refund fall is timing, the underlying deficit is no
+narrower than a year earlier. Kemenkeu: domestic VAT +53.9% net vs +7.8% gross, "refund management in
+the fuel wholesale trade sector".
+
+**Proposed governing thought (awaiting Aldo):** the 2026 oil windfall only paid the 2026 oil bill;
+the narrower deficit rests on Rp125trn of refunds not paid out and a one-off Rp55trn BI transfer —
+so the 2027 budget, on a single US$75 price, starts with less room than 2026 suggests.
+
+**Other T1 facts from the decks:** ICP Jan–Sep avg US$91.9 (Sep ≈ US$113 implied); official 2026
+outlook keeps ICP at US$83 → implies Q4 ≈ US$56; oil lifting 573.9k b/d vs 610k; 10Y 7.17% and rupiah
+17,937 on 2 Oct; PNBP already 107% of the APBN target; compensation unchanged Aug→Sep (nothing paid in
+September); net debt financing fell from Rp506.0trn (Aug) to 494.3trn (Sep); TKD allocation revised to
+Rp727.2trn. Anomalies logged in `sources/phase1_t1_facts.md` — incl. DEN's "non-oil SDA grew 81%"
+being a misreading of "81% of outlook".
