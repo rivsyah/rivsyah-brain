@@ -1,6 +1,6 @@
 ---
 name: reference-cloudflare-rivsyah-dev
-description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); per 4 Okt tinggal Workers Paid (Containers 401) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME → PANTAS butuh Zone DNS Edit; Zero Trust belum aktif (4 Okt, dicek ulang 11 Okt: masih), onboarding Free wajib isi metode bayar (dok 23 Apr 2026); token env.db = token pengguna; SIGAP/PANTAS/SIPDLN menunggu langkah Aldo"
+description: "Domain rivsyah.dev (Hostinger) + akun Cloudflare Aldo — zona ACTIVE sejak 29 Sep 2026 22.52 WIB (NS gracie/syeef); Workers Paid AKTIF 11 Okt 08.58 WIB (Containers 200) — scope workflow GITHUB_PAT sudah beres; izin DNS token TIDAK perlu untuk custom domain Worker, TAPI custom domain Pages lewat API tidak membuat CNAME → PANTAS butuh Zone DNS Edit; Zero Trust Free AKTIF 11 Okt ±08.44 WIB (tim otomatis raspy-dew-c84e); token env.db = token pengguna, kini Access ×3 Edit + DNS Edit; PANTAS TAYANG 11 Okt di balik Access (pantas.rivsyah.dev); SIGAP/SIPDLN lihat kartunya"
 metadata:
   type: reference
   modified: 2026-10-11
@@ -22,7 +22,8 @@ rekaman/route.
 
 **Akun & token Cloudflare (env.db):**
 - `CLOUDFLARE_API_TOKEN` aktif. Bisa: akun, daftar zona, Workers scripts, **workers/routes zona dan
-  workers/domains akun (200)**. Tidak bisa: rekaman DNS zona (403), Access (403). Containers **401**
+  workers/domains akun (200)**. ~~Tidak bisa: rekaman DNS zona (403), Access (403)~~ — **sejak 11 Okt bisa** (izin Edit,
+  lihat di bawah). Containers **401**
   (dugaan: Workers Paid belum aktif; bila tetap 401 sesudahnya, token butuh izin Containers).
 - **Izin DNS token tidak diperlukan untuk custom domain Worker** (diverifikasi 29 Sep): API "Attach Worker
   Domain" hanya menerima `Workers Scripts Write`, dan dokumen Custom Domains: "Cloudflare will create DNS
@@ -45,6 +46,15 @@ rekaman/route.
   dok onboarding 17 Apr 2026). Jalur alternatif: API `POST /accounts/<id>/access/organizations` (body `auth_domain`,
   `name`; izin `Access: Organizations, Identity Providers, and Groups` Write). Dok API tidak menyebut syarat
   paket/pembayaran — **belum teruji** apakah diterima tanpa memilih paket Free di dashboard.
+  **AKTIF 11 Okt ±08.44 WIB:** setelah beberapa kali Get started, dashboard membuat organisasi sendiri dengan **nama tim
+  otomatis `raspy-dew-c84e`** (pola `adjective-noun-hex4`, sama dengan bawaan API) dan paket **Zero Trust Free**;
+  Aldo tidak melaporkan isian kartu. Halaman login Access: `raspy-dew-c84e.cloudflareaccess.com`. Cloudflare
+  otomatis menambah IdP bawaan bertipe `cloudflare`; OTP tetap harus dibuat sendiri.
+- **Izin token per 11 Okt ±08.50 WIB (Aldo mengedit):** Access: Apps and Policies, Access: Organizations, Identity
+  Providers, and Groups, Access: Service Tokens — semua **Edit** — + Zone DNS **Edit**; nilai token tidak berubah.
+  Sebelum diedit, izin Access-nya ternyata **Read** saja: GET 200 tetapi POST `identity_providers` →
+  403 `1010 auth.forbidden`. Selama Zero Trust belum aktif, GET Access membalas *not_enabled* sehingga Read vs Edit
+  tidak kelihatan. **POST Access membalas HTTP 201**, bukan 200 — klien yang hanya menerima 200 akan salah lapor gagal.
 - `CLOUDFLARE_ACCOUNT_ID` di env.db **salah** (tidak cocok dengan satu-satunya akun token). Agent bisa
   mengambil ID yang benar dari `GET /accounts` saat jalan; env.db sendiri diisi Aldo lewat
   `envdb-setup.sh` di terminalnya.
@@ -97,15 +107,21 @@ peramban; hash kata sandi di Worker berisiko > 10 ms → login lewat Cloudflare 
 KTI menulis "Laravel 13 (PHP 8.4), Inertia v3, React 19"** + hasil uji PostgreSQL → harus direvisi bila ditulis
 ulang. Rekomendasi agent: jangan tulis ulang hanya demi US$5/bln demo; pemakaian resmi tetap di server Kemlu.
 
+**11 Okt 2026 — WORKERS PAID AKTIF** (Containers API 200 sejak 08.58 WIB; Aldo membeli lewat dashboard). Periode
+tagihan 11 Okt – 11 Nov; usage awal US$0,00. Jalur dashboard terbaru (dari tangkapan layar Aldo): sidebar **Compute →
+Workers plans** (juga bisa lewat `dash.cloudflare.com/?to=/:account/workers/plans`). Subdomain `workers.dev` akun kini
+ada. Worker pertama `sigap-bup` dibuat 11 Okt oleh `wrangler secret bulk` (sesi SIGAP `c4e7d156`), lalu workflow
+deploy GitHub dijalankan. SIPDLN tinggal izin Aldo untuk buat repo + push (pengaman "Remote Repoint").
+
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
-- [[project_pantas_kurs]] — Pages + Access. Proyek Pages sudah dibuat 4 Okt (kosong); butuh Zero Trust Free +
-  izin token Access (Apps/Policies, Org/IdP/Groups, Service Tokens) + Zone DNS Edit.
+- ~~[[project_pantas_kurs]] — Pages + Access~~ **TAYANG 11 Okt 2026** di `pantas.rivsyah.dev` + `pantas-kurs.pages.dev`,
+  dikunci aplikasi Access "PANTAS" (hanya rivsyah@gmail.com, OTP); CNAME `pantas` proxied dibuat lewat API.
 - [[project-sipdln-bup]] — Containers + SQLite demo di image, `sipdln.rivsyah.dev`.
 
-Daftar langkah Aldo, sekali untuk semua: ~~(1) NS di Hostinger~~ **selesai 29 Sep**; (2) Workers Paid
-US$5/bln (untuk Containers) — **belum, per 4 Okt**; ~~(3) scope `workflow` di GITHUB_PAT~~ **selesai 29 Sep**;
+Daftar langkah Aldo, sekali untuk semua: ~~(1) NS di Hostinger~~ **selesai 29 Sep**; ~~(2) Workers Paid
+US$5/bln (untuk Containers)~~ **AKTIF 11 Okt 08.58 WIB**; ~~(3) scope `workflow` di GITHUB_PAT~~ **selesai 29 Sep**;
 ~~(4) izin DNS/Workers Routes di token~~ **tidak perlu untuk Worker** (lihat atas);
-(5) opsional perbaiki `CLOUDFLARE_ACCOUNT_ID`; (6) khusus PANTAS: Zero Trust Free + izin token Access ×3 +
-Zone DNS Edit — **belum, per 4 Okt**.
+(5) opsional perbaiki `CLOUDFLARE_ACCOUNT_ID`; ~~(6) khusus PANTAS: Zero Trust Free + izin token Access ×3 +
+Zone DNS Edit~~ **selesai 11 Okt** (PANTAS tayang).
 Harga/kuota Cloudflare: [[reference-hosting-vercel-cloudflare]].

@@ -1,6 +1,6 @@
 ---
 name: project-pantas-kurs
-description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b; 4 Okt: Pages pantas-kurs dibuat kosong, deploy di balik Access menunggu Zero Trust Free + izin token; 11 Okt: dicek ulang, masih tertahan di langkah Aldo yang sama; kurs JISDOR s.d. 9 Okt (17.884) di working tree, belum commit"
+description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b; **TAYANG 11 Okt 2026 di balik Cloudflare Access** (https://pantas.rivsyah.dev + pantas-kurs.pages.dev, login OTP hanya rivsyah@gmail.com, tim raspy-dew-c84e), build cf1a60b, uji live LOLOS; kurs JISDOR s.d. 9 Okt (17.884) + 2 perbaikan tools/cloudflare.mjs di working tree, belum commit"
 metadata:
   type: project
   modified: 2026-10-11
@@ -53,7 +53,8 @@ Pengaturan. Ekspor .xlsx 8 sheet.
 - D8 kurs pengakuan belanja **dua cara berdampingan**: JISDOR tanggal belanja dan kurs SP2D GUP pengganti
   (penerimaan UP pertama sesudah belanja; 146 belanja US$771,6 rb sesudah 31 Agu belum punya GUP → pakai
   JISDOR). Angka tunggal/status memakai yang terburuk.
-- D9 aturan kurs SP2D T-2 tetap (bisa diubah). D10 **lokal saja**, tanpa deploy/publikasi.
+- D9 aturan kurs SP2D T-2 tetap (bisa diubah). ~~D10 lokal saja~~ — digantikan D13 (4 Okt, "lanjutkan" = deploy
+  demo di balik Cloudflare Access, hanya pemilik); **tayang 11 Okt 2026**, lihat blok DEPLOY di bawah.
 
 **Angka sampel (1 Jan–27 Sep 2026):** rekonsiliasi formulir cocok persis (terima 12.457.275,85; keluar
 11.012.136,12; saldo 1.445.139,73). Belanja bersih US$10,06 jt. Beban kurs vs asumsi APBN Rp16.500:
@@ -132,6 +133,29 @@ Windows — pakai path `C:\...`.
   GET organizations 403 10000, DNS 403; **POST identity_providers 403 1010 `auth.forbidden`** → izin Access di token
   baru **Read**. Belum ada yang dibuat di Access. `tools/cloudflare.mjs`: baca organisasi kini opsional (hanya untuk
   dicetak). Menunggu Aldo mengubah izin Access ke **Edit** + menambah DNS Edit, lalu "sudah".
+
+**DEPLOY 11 Okt 2026 ±09.00 WIB — TAYANG di balik Access** (Aldo ubah izin token ke Edit + DNS Edit, lalu "sudah check").
+- `ready` 01:52Z READY (semua 5 cek ok). Nilai token tidak berubah setelah izin diedit (env.db tetap).
+- `access`: IdP One-time PIN dibuat (selain IdP bawaan `cloudflare` yang dibuat Cloudflare saat organisasi lahir;
+  aplikasi hanya mengizinkan OTP), kebijakan **"PANTAS - hanya pemilik"** (allow, email rivsyah@gmail.com, sesi 24 jam),
+  aplikasi **PANTAS** (self-hosted) untuk `pantas-kurs.pages.dev`, `*.pantas-kurs.pages.dev`, `pantas.rivsyah.dev`.
+  Login: `raspy-dew-c84e.cloudflareaccess.com`.
+- **Bug alat diperbaiki:** `api()` hanya menganggap HTTP 200 sukses, padahal POST Access membalas **201** → kini 2xx.
+  Percobaan pertama sudah membuat IdP OTP walau skrip melapor gagal; jalan ulang idempoten menemukannya.
+- `dns`: CNAME `pantas` → `pantas-kurs.pages.dev` (proxied) dibuat; domain Pages **active** beberapa menit kemudian.
+- `gate` SEBELUM deploy: 4/4 URL pages.dev 302 ke login Access. `deploy`: wrangler 4 lewat npx, 17 file + `_headers`,
+  deployment `a6dd3d5a`, branch master (produksi). `gate` SESUDAH: 7/7 URL pages.dev terkunci (termasuk
+  `a6dd3d5a.*`, `master.*`, subdomain acak); `pantas.rivsyah.dev` dicek lewat `curl --resolve` ke IP Cloudflare
+  (DNS lokal mesin riv masih cache NXDOMAIN): 5/5 path 302 ke login.
+- `livetest` **LOLOS**: file identik 17/17, 5 header keamanan ada, unggah BKU 1.442 + BKT 6 transaksi, 6 tampilan
+  render, 0 error konsol, 0 pola identitas; token uji + kebijakan uji dihapus, token lama ditolak.
+- **Jebakan uji identitas:** `render.js` memakai flag `gi`; pola `EBA` tanpa `\b` cocok di dalam kata **"beban"**
+  → 4 "masalah" palsu (4/8/10/2 = jumlah kata "beban"). Pakai `\b(...)\b` di `CARI`.
+- Yang tayang = **build `cf1a60b` (kurs s.d. 25 Sep)**; versi online **tanpa data sampel** — pengguna mengunggah
+  BKU/BKT sendiri, diolah di peramban. Kurs 9 Okt + 2 perbaikan `tools/cloudflare.mjs` + tooling lama masih
+  **belum di-commit** (menunggu izin Aldo); sesudah commit: `npm run build && npm run deploy`, lalu `gate`.
+- Catatan lingkungan: wrangler menjalankan `git status` dari folder Temp dan ikut memindai `.git` nyasar di home
+  (peringatan izin `Recent/`, `SendTo/`, …) — tidak berbahaya untuk deploy, lihat [[reference_stray_git_home]].
 
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.

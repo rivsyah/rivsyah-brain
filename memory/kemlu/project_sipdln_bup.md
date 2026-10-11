@@ -9,8 +9,8 @@ metadata:
 ## 11 Okt 2026 — aturan PMK tambahan (belum di-commit, menunggu izin Aldo)
 
 Aldo: "lanjutkan project SIPDLN" sambil menempelkan saran 6 Okt (jangan rewrite ke Hono). Tafsir agent:
-jalur Laravel diteruskan, rewrite tidak dijalankan. Cek API 11 Okt: Containers masih 401 (Workers Paid
-belum aktif), 0 Worker, repo `rivsyah/sipdln-bup` 404 (repo `sigap-bup` ada). Jadi deploy tetap tertahan;
+jalur Laravel diteruskan, rewrite tidak dijalankan. Cek API 11 Okt 08.52 WIB: Containers masih 401 (Workers Paid
+belum aktif — **KOREKSI: aktif 11 Okt 08.58 WIB**, lihat [[reference-cloudflare-rivsyah-dev]]), 0 Worker, repo `rivsyah/sipdln-bup` 404 (repo `sigap-bup` ada). Jadi deploy tetap tertahan;
 yang dikerjakan = ketentuan PMK yang di KTI berstatus "belum/sebagian" (rencana Tahap 1 KTI, Tw IV 2026).
 
 - **D21 Pasal 8 ayat 4** — isian jam per arah (1–72; kosong = 1 hari). 1–24 jam = 1 hari, 25–48 = 2,
