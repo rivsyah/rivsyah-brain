@@ -89,4 +89,7 @@ seserahan terpisah). Aldo yang minta ke Swasana.
 - 8 Okt 2026 (permintaan Aldo): souvenir nikah Rp30 rb/pcs (225 pcs untuk 300 tamu = Rp6,75 jt). Nikah CIBIS 300 kini
   Rp216,87 jt (tanpa mahar & seserahan Rp198,49 jt); CIBIS 200 Rp196,65 jt; total dua acara Rp273,6 jt vs Rp250 jt;
   fase 2 tabungan contoh Rp13,1 jt/bln. Hemat bila souvenir 1 per undangan + 10% (165 pcs): ±Rp1,9 jt.
+- 11 Okt 2026 (permintaan Aldo): opsi Cerita Rasa Glasshouse 250 pax akhir pekan, Menu Rasa + stall siomay & bakwan malang
+  (125 porsi tiap stall, asumsi) + listrik 1 jt: venue + makan nett Rp137,23 jt (makanan Rp103 jt++ → Rp121,23 jt nett).
+  Total RAB nikah dengan vendor standar Rp240,83 jt (lebih Rp40,8 jt). Rencana Tabungan masih pakai jadwal bayar CIBIS.
 
