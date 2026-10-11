@@ -52,6 +52,17 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
   Dewan Penyantun; instrumen risiko rendah Ps 16(5); evaluasi 5 tahunan); tahapan = DUA JALUR PARALEL (aturan 2027;
   kelembagaan 2027–2029) — sengaja BUKAN urutan "retensi dulu baru lembaga" (itu tesis brief riset; KTI harus beda).
   Total pokok bahasan ±4.670 (I 1.064, II A 657, II B 935, II C 1.223, II D ±790). Berikutnya Bab III.
+- **4 usulan desain II D DISETUJUI Aldo (11 Okt, "LANJUT")**: patokan persentase realisasi PNBP (tanpa angka),
+  cadangan kedaruratan, evaluasi 5 tahunan, dua jalur paralel 2027 / 2027–2029.
+- **Bab III selesai 11 Okt** (603 kata): 3 kesimpulan (per tujuan) + Tabel 6 enam rekomendasi (jalur aturan 1–3,
+  kelembagaan 4–6) dengan unit dari **Permenlu 4/2025** (dibaca dari peraturan.go.id; ditetapkan 14 Mar 2025, BN
+  2025/202 [Likely]): Biro Perencanaan dan Organisasi Ps 53–54 (perencanaan, kelembagaan, tata laksana); Biro Keuangan
+  Ps 99–100 (PNBP Ps 100 a–b), Bagian Pelaksanaan Anggaran Ps 102–103 (pengelolaan PNBP), Subbagian PNBP dan
+  Penyelesaian Beban Pusat Ps 104–105, Bagian Pengendalian Anggaran Ps 106 (anggaran Perwakilan RM+PNBP), Bagian
+  Akuntansi dan Pelaporan Keuangan Ps 101 d; Biro Hukum Ps 122; Ditjen Protkons Ps 469; Direktorat Konsuler Ps 515
+  (paspor dinas/diplomatik, visa diplomatik, legalisasi, jasa konsuler WNA); Direktorat Pelindungan WNI Ps 553
+  (kasus, kedaruratan, layanan publik). **Total pokok bahasan 5.270** (I 1.064 = 20,2%, II 3.603, III 603).
+  Berikutnya: Abstrak (≤200 kata) lalu Daftar Pustaka; lalu Tahap 4 Gerbang Mutu 28 butir; Tahap 5 docx.
 - Teori diverifikasi dari teks asli: **McCleary 1991** (WBRO 6(1) 81–104; PDF Bank Dunia di `Sumber\`): earmarking
   "appears to apply the benefit principle"; "strong earmarking" bila penerima manfaat jelas membayar (barang bersifat
   privat); "in general, it has not worked very well"; dana jalan "not automatic and remains dependent on government
