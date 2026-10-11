@@ -29,6 +29,24 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
   APBN + kelebihan pendapatan BLU (pola PMK 53/2026 Ps 3(3)).
 - Aldo tak mengenali "kertas kerja BUP" → dijelaskan: `Downloads\Research Reports\Landlord-That-Rents\sources\
   Konsep_BLU_Aset_dan_Dana_Diplomasi.pdf` (+ ekstrak teks `kemlu_working_paper_raw.txt`); TIDAK dibuka sesi ini.
+  **Aldo 11 Okt: "saya adalah penyusunnya"** → gagasan dana abadi = milik Aldo; orisinalitas aman. Dokumen tetap
+  internal (gagal C4): jangan dibuka/dikutip lewat AI.
+- **Pengamatan nyata Aldo (11 Okt):** "pengadaan bersumber PNBP yang harus menunggu penetapan MP" → dipasang di Bab I
+  (akhir Latar Belakang) dan Bab II B.5, tanpa detail tambahan (tahun/lama menunggu belum diberikan).
+- **Bab II B selesai 11 Okt** (930 kata; Tabel 1 tarif, Tabel 2 realisasi 2023–2024, Gambar 1 alur 8 langkah,
+  Tabel 3 MP aturan vs 2024, data PWNI). Total pokok bahasan 2.647 (I 1.064, II A 653, II B 930). Berikutnya Bab II C.
+  Sumber\ kini 11 PDF publik (+ LKj PWNI 2024, PP 45/2024, Permenlu 26/2020, PER-8/PB/2021, PER-2/PB/2023).
+- Data publik baru: **LKj Direktorat PWNI 2024** (kemlu.go.id/files/repositori/65397/..._LKJ_Dit__PWNI_2024.pdf,
+  "Jakarta, 20 Februari 2025"): 67.297 kasus ditangani, 60.122 selesai (84,52%); khusus 5.177/4.138 (79,93%), umum
+  62.120/55.984 (90,12%); evakuasi Lebanon & Suriah 259 + 2 orang; 3.354 online scam; 137 bebas hukuman mati; 169 ibu
+  & anak; 767 ABK/nelayan; hak finansial Rp212.162.072.574; pagu Dit PWNI Rp52.289.840.000 → Rp45.061.892.000
+  (realokasi Rp1.227.926.000 ke KBRI Khartoum untuk biaya 2023 + self-blocking/realokasi Setjen Rp6.000.022.000;
+  narasi LKj memuat salah ketik "Rp 1.227.926.258.000"); hambatan: keterbatasan anggaran akibat refocusing.
+  **PP 45/2024 Lampiran III** (dibaca dari gambar halaman 20–22): paspor biasa nonelektronik 5/10 thn Rp350.000/650.000;
+  elektronik 5/10 thn Rp650.000/950.000; SPLP WNI Rp100.000, WNA Rp150.000; percepatan Rp1.000.000; visa kunjungan
+  7–180 hari Rp250.000–2.000.000; beberapa kali perjalanan 60 hari–10 thn Rp1.500.000–15.000.000; visa tinggal
+  terbatas Rp500.000; verifikasi visa tujuan tertentu Rp1–8 jt. LK 2024: total PNBP 2023 Rp538.225.801.495 (−0,71%).
+  LK Kemlu TA 2025 audited: tidak ditemukan publik (Okt 2026). LK tak merinci belanja bersumber PNBP → PERLU DATA.
 - Berkas: `Downloads\Riv's Journey\KTI PNBP Kekonsuleran\` — `draf\01-bab-I-pendahuluan.md` + `Sumber\` (6 PDF publik:
   PP 21/2025, PP 44/2025, UU 9/2018, LK Kemlu TA 2024 Audited Buku I, LKj Direktorat Konsuler 2024, PMK 53/2026).
   Builder docx belum ada (Tahap 5; pola [[project-kti-mitra-diklat-pk]]).

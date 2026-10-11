@@ -126,6 +126,12 @@ Windows — pakai path `C:\...`.
   Aldo perlu menulis "sudah" setelah Zero Trust + izin token. Urutan sesudahnya: `access` (ACCESS_EMAIL =
   rivsyah@gmail.com) → `dns` → `gate` → `deploy` → `gate` → `livetest`. Izin commit (tooling + kurs 9 Okt) juga
   masih ditunggu.
+- **11 Okt ±08.44 WIB: Zero Trust AKTIF** (Aldo lewat dashboard; tombol Get started akhirnya membuat organisasi
+  dengan **nama tim otomatis `raspy-dew-c84e`**, paket **Zero Trust Free** — halaman login Access =
+  `raspy-dew-c84e.cloudflareaccess.com`, netral). Token: GET apps/policies/IdP/service tokens 200 (semua kosong),
+  GET organizations 403 10000, DNS 403; **POST identity_providers 403 1010 `auth.forbidden`** → izin Access di token
+  baru **Read**. Belum ada yang dibuat di Access. `tools/cloudflare.mjs`: baca organisasi kini opsional (hanya untuk
+  dicetak). Menunggu Aldo mengubah izin Access ke **Edit** + menambah DNS Edit, lalu "sudah".
 
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
