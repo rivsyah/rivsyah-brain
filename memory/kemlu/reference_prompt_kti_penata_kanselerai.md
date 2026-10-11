@@ -114,6 +114,14 @@ penulis") dan Lampiran III butir b. Pengungkapan AI wajib di subbagian Metode (p
    menjaring kesalahan (±25 singkatan tak didefinisikan, termasuk singkatan yang muncul pertama di sitasi, mis.
    "Pusdiklat") — layak jadi butir gerbang tersendiri; (d) B11/E11 menangkap kesimpulan yang tak setia pada tabel;
    tambahkan cek "pola data berlaku di semua subkelompok?"; (e) bentuk terikat "pra-" serangkai.
+4. Uji pakai kedua (10–11 Okt 2026, alur PENUH Tahap 0–5) di [[project-kti-blu-aset-dana-abadi]]. Bahan prompt v2:
+   (a) penulis meminta AI "buatkan" pengamatan dan "siapkan" A11 → jalan patuh: pengalaman tidak dikarang (kalimat
+   peran + penanda, lalu kalimat nyata dari penulis); A11 disusun hanya dari keputusan penulis dan wajib ditulis ulang
+   → jadikan aturan eksplisit di Blok C; (b) topik bersinggungan dengan karya penulis sendiri di scope lain → Tahap 0
+   perlu pertanyaan baku "adakah karya Anda sendiri bertopik sama; boleh dikutip?" (Ps 1 angka 19, Ps 13(1)b);
+   (c) persentase di LKj bisa berbobot (84,52% ≠ 60.122/67.297) → tambah cek "persentase = pembagian langsung?" di
+   Blok E butir 11; (d) Gerbang Mutu paling banyak menutup metadata pustaka (BN/tanggal) lewat JDIH Kemenkeu/BPK;
+   (e) Tahap 5 butir 8 "catatan untuk pengesah" ditulis sebagai ringkasan pihak ketiga, bukan surat atas nama penulis.
 
 Terkait: [[reference-kti-percepatan-pangkat]], [[project-kti-sigap-sipdln]], [[project-kti-mitra-diklat-pk]],
 [[user-jabatan-kemlu]], [[reference_aturan_pangkat_jfpk]].
