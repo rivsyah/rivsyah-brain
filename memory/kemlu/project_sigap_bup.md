@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), 11 Okt riwayat bersih + push GitHub (main 3e4a0ee; riwayat lama di branch lokal riwayat-lokal, jangan push); tertahan Workers Paid"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), 11 Okt LIVE di https://sigap.rivsyah.dev (82d4711; instance APAC bom03; livecheck 13/13; layar terautentikasi dicek Aldo); riwayat lama di branch lokal riwayat-lokal, jangan push"
 metadata: 
   node_type: memory
   type: project
@@ -489,6 +489,63 @@ eksplisit Aldo di sesi yang berjalan membuat pengaman meloloskan operasi yang 4�
   blob storage → 403).
 - Workers Paid dicek lagi sesudah CI: Containers masih **401**. Skrip deploy siap: `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\deploy-sigap.sh` (mesin ini, di luar repo)
   (cek 200 → `wrangler secret bulk` APP_KEY baru + DB_URL lewat stdin → dispatch `deploy.yml`).
+
+### 11 Okt 2026 — deploy pertama: hidup tapi menggantung; akar masalah + perbaikan (`82d4711`)
+
+**Workers Paid aktif 08.58 WIB** (Aldo membeli; dashboard: sidebar **Compute → Workers plans**). Skrip
+`C:\Users\rivsy\dev\kemlu\sigap-pg-probe\deploy-sigap.sh` mengisi secret (`wrangler secret bulk` membuat Worker
+`sigap-bup`), lalu workflow deploy run 38103639275 **sukses** (aset → image Docker di runner → registry → Worker +
+container + custom domain). Container app `sigap-bup-sigapcontainer`, tipe basic, 1 instance `sigap` di **lax13**.
+
+**Gejala:** DNS + TLS `sigap.rivsyah.dev` jalan, tetapi semua permintaan (termasuk `/robots.txt`) menggantung sampai
+klien menyerah. `wrangler tail` hanya menunjukkan outcome `canceled`, tanpa exception.
+
+**Diagnosis (berurutan, supaya sesi lain tidak mengulang):**
+1. API `containers/applications/<id>`: health active 1, healthy 1, failed 0; network `mode: private`, tanpa IPv4/IPv6.
+2. Log stdout/stderr container lewat **Workers Observability**: `POST /accounts/{acc}/workers/observability/telemetry/query`
+   (`view: "events"`, `queryId` wajib, `timeframe` ms) — token `CLOUDFLARE_API_TOKEN` lolos. Isinya: `php artisan optimize`
+   selesai ±0,1 dtk, lalu *"Caddy serving PHP app on :8080"* / *"FrankenPHP started"*. Worker berulang menulis
+   *"Container error: Failed to verify port 8080 is available after 20100ms, last error: The operation was aborted"*.
+3. Kode `@cloudflare/containers` 0.3.7 (`dist/lib/container.js`): kesiapan port = `tcpPort.fetch('http://' + pingEndpoint)`,
+   `pingEndpoint` bawaan `'ping'` → **GET "/"**, `PING_TIMEOUT_MS = 5000` per percobaan, total 20 dtk.
+4. Neon (MCP baca-saja): tabel `sessions` **377 baris**, terakhir 09.14 WIB → container **bisa** mencapai Neon lewat
+   TCP 5432 (asumsi 29 Sep terbukti). Rute "/" membuka sesi di Neon; dari LAX ke Singapura (±170 ms per bolak-balik,
+   plus TLS + SCRAM + bangun compute Neon) prosesnya > 5 dtk → port tak pernah "siap" → semua permintaan tertahan.
+   377 baris sesi = sampah dari ping (tanpa cookie); dibersihkan sendiri oleh lotre sesi Laravel.
+5. Penempatan: dok arsitektur Containers (30 Sep 2026) — instance baru ke lokasi terdekat yang sudah punya image;
+   DO dan container tidak dijamin satu lokasi. **wrangler 4.143.0 menerima `containers[].constraints.regions`**
+   (ENAM/WNAM/EEUR/WEUR/APAC/SAM/ME/OC/AFR) — terdokumentasi di referensi konfigurasi Wrangler.
+
+**Perbaikan `82d4711`** (dry-run lokal lolos, bundel 53,69 KiB): `pingEndpoint = 'localhost/up'` (rute health Laravel
+tanpa sesi/DB); `"constraints": { "regions": ["APAC"] }`; DO baru `env.SIGAP.get(env.SIGAP.idFromName('sigap-apac'),
+{ locationHint: 'apac' })` (petunjuk lokasi hanya berlaku saat DO pertama dibuat; DO lama `sigap` + container LAX
+tidur sendiri setelah `sleepAfter` 15 menit). Deploy ulang = run 38104754013.
+
+Catatan lain: bot pemindai sudah menembak `/.env` di port 80/8080/8443/8880 dalam ±6 menit setelah sertifikat
+terbit — `.env` tidak ada di image dan akar web `/app/public`, jadi aman, tapi itu bukti situs langsung dipindai.
+Uji live tanpa login: `C:\Users\rivsy\dev\kemlu\sigap-pg-probe\livecheck.sh`.
+
+**LIVE 11 Okt 2026 ±09.25 WIB — https://sigap.rivsyah.dev** (deploy ulang run 38104754013 sukses, commit `82d4711`).
+- `livecheck.sh` **13/13 lulus**: DNS, `/up` 200 (1,2 dtk dingin, 0,2–0,7 dtk hangat), `/` tamu → 302 `/login`, `/login` 200
+  dengan nama SIGAP BUP, cookie sesi terbit (sesi tertulis ke Neon) + `Secure` + `HttpOnly`, aset `/build/assets/*.js` 200,
+  rute tak dikenal 404 tanpa jejak debug, 0 kata penanda instansi di HTML.
+- Instance `sigap-apac` di **bom03 (Mumbai)** — region APAC, bukan Singapura; `constraints` hanya setingkat region
+  (tidak ada pilihan kota). Instance lama `sigap` (lax13) inactive. `/login` dari mesin ini **1,7–2,2 dtk** (5 kali);
+  sebagian besar = buka koneksi + 2 kueri sesi Mumbai↔Singapura. Halaman terautentikasi dengan banyak kueri
+  kemungkinan lebih lambat — belum diukur (butuh login).
+- **Belum diuji agent:** layar setelah login dan uji balapan di URL live — agent dilarang memasukkan kata sandi di host
+  non-lokal; Aldo yang mengecek. Uji balapan 27 Sep memakai jalur DB yang sama (`pdo_pgsql` langsung).
+- Opsi percepatan bila Aldo mau (BELUM dikerjakan): koneksi PDO persisten via env (hemat jabat-tangan TLS+SCRAM tiap
+  permintaan; perlu uji balapan ulang karena menyentuh transaksi gerbang pagu) atau aset statis lewat Workers Assets.
+- Temuan sesi SIPDLN (11 Okt): ping bawaan ke "/" juga gagal bila "/" mengalihkan + `URL::forceScheme('https')` —
+  runtime mengikuti `Location: https://ping/...` lalu menolak HTTPS ke container. `pingEndpoint` ke `/up` menutup keduanya.
+
+**Koreksi pindai identitas 11 Okt (kesalahan agent):** pindai pagi itu memakai `grep -i -F -f <pola>` — di Git Bash
+perintah ini **crash (exit 134)** dengan berkas `scripts/entitas.local.txt`, dan karena stderr dibuang hasilnya tampak
+"0 temuan". Diulang dengan Python (`git show` per berkas, 299 berkas di `82d4711`): kecocokan hanya `biro umum`
+(nama aplikasi pilihan Aldo "... Biro Umum dan Pengadaan" + lokasi/uraian dummy), `perwakilan` (token kategori
+`lingkup` di generator), `ptri` (positif palsu `TooltipTrigger`). Sama dengan kesimpulan 4 Okt. **Jangan pakai
+`grep -f` untuk pindai ini di mesin Windows; pakai Python.**
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
