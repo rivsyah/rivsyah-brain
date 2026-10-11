@@ -40,6 +40,11 @@ rekaman/route.
   pengguna** (My Profile → API Tokens), bukan token akun. Nama izin per halaman permissions (1 Okt 2026):
   `Access: Apps and Policies`, `Access: Organizations, Identity Providers, and Groups`, `Access: Service Tokens`
   (akhiran Edit atau Write — keduanya tercantum), zona `DNS` Edit/Write.
+  **Dashboard 11 Okt 2026 (dilaporkan Aldo, 2 tangkapan layar):** halaman "Welcome to Cloudflare Zero Trust" →
+  tombol **Get started** hanya membuka Overview Zero Trust yang sama; **formulir nama tim tidak muncul** (beda dari
+  dok onboarding 17 Apr 2026). Jalur alternatif: API `POST /accounts/<id>/access/organizations` (body `auth_domain`,
+  `name`; izin `Access: Organizations, Identity Providers, and Groups` Write). Dok API tidak menyebut syarat
+  paket/pembayaran — **belum teruji** apakah diterima tanpa memilih paket Free di dashboard.
 - `CLOUDFLARE_ACCOUNT_ID` di env.db **salah** (tidak cocok dengan satu-satunya akun token). Agent bisa
   mengambil ID yang benar dari `GET /accounts` saat jalan; env.db sendiri diisi Aldo lewat
   `envdb-setup.sh` di terminalnya.

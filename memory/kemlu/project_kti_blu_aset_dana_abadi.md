@@ -19,8 +19,16 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
 
 ## Status
 
-- Tahap 0 → 1 → 2 (kerangka **disetujui Aldo 11 Okt 2026**: "setujui") → **Tahap 3: draf Bab I selesai 11 Okt**
-  (1.003 kata; A 639, B 69, C 67, D 228; 4 penanda), BERHENTI menunggu tanggapan. Berikutnya Bab II A.
+- Tahap 0 → 1 → 2 (kerangka **disetujui Aldo 11 Okt 2026**: "setujui") → Tahap 3: Bab I (Aldo: "lanjut") →
+  **Bab II A selesai 11 Okt** (653 kata); Bab I kini 1.063 kata; total pokok bahasan 1.716. BERHENTI; berikutnya
+  Bab II B (Fakta di Lapangan).
+- Aldo minta agen "buatkan" kalimat pengamatan + "siapkan" paragraf A11. Agen: pengalaman TIDAK dikarang (Ps 17(2)a/b,
+  C1) → dipasang kalimat relevansi peran (BUP: kepastian pencairan menentukan jadwal pengadaan) + penanda konfirmasi;
+  A11 = draf dari 4 keputusan Aldo (`draf\00-A11-gagasan-penulis-DRAF.md`), wajib ditulis ulang Aldo. Catatan hukum
+  ke Aldo: PNBP tetap wajib disetor dulu (UU 9/2018 Ps 29) → "dihimpun" diuji di Bab II D lewat pembiayaan investasi
+  APBN + kelebihan pendapatan BLU (pola PMK 53/2026 Ps 3(3)).
+- Aldo tak mengenali "kertas kerja BUP" → dijelaskan: `Downloads\Research Reports\Landlord-That-Rents\sources\
+  Konsep_BLU_Aset_dan_Dana_Diplomasi.pdf` (+ ekstrak teks `kemlu_working_paper_raw.txt`); TIDAK dibuka sesi ini.
 - Berkas: `Downloads\Riv's Journey\KTI PNBP Kekonsuleran\` — `draf\01-bab-I-pendahuluan.md` + `Sumber\` (6 PDF publik:
   PP 21/2025, PP 44/2025, UU 9/2018, LK Kemlu TA 2024 Audited Buku I, LKj Direktorat Konsuler 2024, PMK 53/2026).
   Builder docx belum ada (Tahap 5; pola [[project-kti-mitra-diklat-pk]]).
@@ -127,6 +135,21 @@ PNBP kekonsuleran:
 - Teori (bibliografi dicek): Buchanan 1963 JPE 71(5) 457–469 doi 10.1086/258794; McCleary 1991 WBRO 6(1) 81–104;
   OECD 1998 User Charging for Government Services, PUMA Occasional Papers No. 22 (penulis beda antarkatalog);
   Tobin 1974 AER 64(2) 427–432 [via sumber sekunder].
+
+Diverifikasi 11 Okt 2026 untuk Bab II A (teks dibaca):
+- **Permenlu 26/2020** (BN 2020/1616): Menimbang b "untuk melaksanakan ketentuan Pasal 2 ayat (4) PP 49/2016"; Ps 24(1)
+  prioritas distribusi pagu PNBP oleh unit eselon II perencanaan; **Ps 34** penggunaan sebagian dana PNBP setelah
+  persetujuan Menkeu (besaran ditetapkan Menkeu; alur Satker → Sekjen (konsep proposal) → Menteri → Menkeu); **Ps 34(4)
+  PNBP tidak dapat digunakan langsung untuk belanja Satker**; Ps 35 MP; BAB V saldo mengendap. PP 21/2025 TANPA klausul
+  peralihan untuk aturan pelaksana; PP 44/2025 **Ps 110** punya (aturan pelaksana PP 58/59/69 tahun 2020 tetap berlaku
+  sepanjang tak bertentangan).
+- **PMK 110/PMK.05/2021** Tata Cara Penetapan MP PNBP (BN 2021/922) → **PER-8/PB/2021** Juknis Penetapan MP PNBP secara
+  Elektronik: Ps 1 angka 7 definisi MP; Ps 2(2) MP ≤ pagu DIPA PNBP; Ps 3(1) pertimbangan (realisasi setoran+belanja TA
+  berjalan & sebelumnya, proyeksi, rencana, monev); **Ps 3(3) tahap I ≤60%, II ≤80%, III ≤100% pagu DIPA PNBP** — PER-2/PB/2023
+  mengubah Ps 3(4)–(5) (+4a–4d, Ps 3A, Ps 30) tapi batas 60/80/100 TETAP; penilaian pakai rata-rata 3 tahun.
+- PP 27/2014 Ps 4(1) "Menteri Keuangan selaku bendahara umum negara adalah Pengelola Barang Milik Negara"; Ps 6(1)
+  "Menteri/Pimpinan Lembaga ... adalah Pengguna Barang" (Pengguna Barang = MENLU, bukan "Kemlu"). Kepmenlu
+  32/B/KP/04/2025/01 = "Kamus Kompetensi Teknis Jabatan Fungsional Penata Kanselerai" (JDIH Kemlu 109606).
 
 Ditemukan 11 Okt 2026 (sesi scope kemlu, sumber publik):
 - **PP 44/2025** Tata Cara Penetapan Tarif, Pengelolaan, dan Penyelesaian Keberatan, Keringanan, dan Pengembalian PNBP —
