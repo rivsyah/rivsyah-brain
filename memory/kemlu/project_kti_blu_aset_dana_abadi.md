@@ -63,6 +63,19 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
   (paspor dinas/diplomatik, visa diplomatik, legalisasi, jasa konsuler WNA); Direktorat Pelindungan WNI Ps 553
   (kasus, kedaruratan, layanan publik). **Total pokok bahasan 5.270** (I 1.064 = 20,2%, II 3.603, III 603).
   Berikutnya: Abstrak (≤200 kata) lalu Daftar Pustaka; lalu Tahap 4 Gerbang Mutu 28 butir; Tahap 5 docx.
+- **Abstrak + Daftar Pustaka selesai 11 Okt** — TAHAP 3 TUNTAS. Abstrak 188 kata, 5 kata kunci (`draf\00-abstrak.md`);
+  pustaka 27 entri = 7 dokumen (APA 7) + 20 peraturan (format Lampiran II: nomor-tahun, judul miring, tanggal, LN/BN,
+  kota) di `draf\07-daftar-pustaka.md`; 4 penanda (Tobin naskah asli; PMK 46/2024 tanggal+BN; PMK 53/2026 BN;
+  Permenlu 4/2025 BN 202 [Likely]). Metadata diverifikasi: UU 9/2018 disahkan 23 Agu 2018; PP 44/2025 LN 156 (TLN
+  7140); PP 45/2024 LN 240; Perpres 111/2021 LN 2021/272; PER-8/PB/2021 8 Sep 2021; PER-2/PB/2023 2 Mar 2023; PMK
+  7/PMK.02/2023 judul lengkap "Mekanisme Pembayaran PNBP atas Pelayanan Keimigrasian ... Instrumen Pembayaran
+  Internasional yang Diterbitkan oleh Bank Asing atau Nonbank yang Berasal dari Luar Negeri", 30 Jan 2023, BN 2023/124
+  (diubah PMK 46/2024, 5 Jul 2024); PP 23/2005 13 Jun 2005 LN 48; **PP 74/2012 (28 Agu 2012, LN 171) hanya mengubah Ps 9,
+  10, 11, 22, 33, sisip 37A/B, 38A, 40A, hapus 38 → Ps 4, 5, 14, 16, 19, 29 PP 23/2005 utuh** (teks dibaca); PP 27/2014
+  24 Apr 2014 LN 92; PP 28/2020 LN 142; PP 49/2016 LN 233; 8 U.S.C. §1714 "Surcharges related to consular services".
+  Perapian: sebutan Permenkumham 19/2024 dihapus dari II A.4 (tak dibaca langsung); PP 23/2005 kini ditulis lengkap
+  (jo. PP 74/2012) pada kemunculan pertama di II D.1. **Pokok bahasan final draf 5.292 kata**; penanda dalam teks 8.
+  Berikutnya: Tahap 4 Gerbang Mutu 28 butir, lalu Tahap 5 (.docx via builder, pola [[project-kti-mitra-diklat-pk]]).
 - Teori diverifikasi dari teks asli: **McCleary 1991** (WBRO 6(1) 81–104; PDF Bank Dunia di `Sumber\`): earmarking
   "appears to apply the benefit principle"; "strong earmarking" bila penerima manfaat jelas membayar (barang bersifat
   privat); "in general, it has not worked very well"; dana jalan "not automatic and remains dependent on government
