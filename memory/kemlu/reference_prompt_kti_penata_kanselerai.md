@@ -97,7 +97,10 @@ penulis") dan Lampiran III butir b. Pengungkapan AI wajib di subbagian Metode (p
 
 ## Terbuka
 
-1. Konfirmasi ke Pusat Pembinaan JF: Lampiran III (frasa AK) masih diminta? siapa pengesah perpustakaan kini?
+1. Aldo 11 Okt 2026 menjawab: Lampiran III **tidak diminta** (sumber konfirmasinya tidak disebut) → prompt v1.1
+   mengeluarkannya dari paket (nama berkas tetap `-v1.md`); pengesah perpustakaan **menyusul**; templat sampul/logo
+   masih terbuka. Aldo bertanya "SE Sekjen yang mana" → dijawab: SE/00008/HK/04/2026/03, salinan di folder
+   `Downloads\MOFA\Permenlu MoU\` miliknya sendiri.
 2. Uji kering 10 Okt (subagen Claude, data fiktif "KBRI Contohland", topik selisih kurs): Tahap 0–1 berhenti di gerbang,
    gerbang kerahasiaan terpicu pada bahan Terbatas. 8 perbaikan diterapkan: BERHENTI di Tahap 3–4; gerbang kerahasiaan
    SEBELUM bahan diunggah (catatan "lampirkan bahan pada pesan yang sama" dihapus); agregasi tak menghapus status
