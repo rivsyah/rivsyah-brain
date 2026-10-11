@@ -41,6 +41,17 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
   kriteria Ps 33(2)/46(2) sebagai syarat desain (pokok ditetapkan di awal, belanja dari hasil, evaluasi berkala; pintu
   hukum PP 44/2025 Ps 48), Tabel 4 patok banding (LPDP, LDKPI, LPDB-KUMKM/LPMUKP, AS §1714, Kanada PRF), kesenjangan
   aturan internal. Total pokok bahasan 3.879 (I 1.064, II A 657, II B 935, II C 1.223). Berikutnya Bab II D (A11).
+- **Urutan prioritas penggunaan hasil DISETUJUI Aldo (11 Okt, "lanjut")**: layanan konsuler → pelindungan WNI →
+  operasional Perwakilan.
+- **Bab II D selesai 11 Okt** (±790 kata): Tabel 5 pilihan wadah (a) Ps 33/46+48, (b) dana abadi BUN pola LDKPI/LPDP,
+  (c) BLU dana khusus Kemlu = pilihan penulis; pokok dari pembiayaan investasi APBN (PMK 53/2026 Ps 3(2)) berpatokan
+  persentase realisasi PNBP konsuler yang ditetapkan Menkeu + tambahan dari kelebihan PNBP BLU/sisa hasil (Ps 3(3),
+  17(2)); aturan belanja (Tobin 1974, VERIFIKASI): hanya dari hasil, batas dari rata-rata pokok beberapa tahun,
+  urutan prioritas, cadangan kedaruratan, sisa → pokok; tata kelola = 5 uji McCleary sisanya (rencana investasi PMK
+  53/2026 Ps 14 + persetujuan Menkeu PP 23/2005 Ps 19(1); SPI + dewan pengawas; komite pengarah Kemlu+Kemenkeu ala
+  Dewan Penyantun; instrumen risiko rendah Ps 16(5); evaluasi 5 tahunan); tahapan = DUA JALUR PARALEL (aturan 2027;
+  kelembagaan 2027–2029) — sengaja BUKAN urutan "retensi dulu baru lembaga" (itu tesis brief riset; KTI harus beda).
+  Total pokok bahasan ±4.670 (I 1.064, II A 657, II B 935, II C 1.223, II D ±790). Berikutnya Bab III.
 - Teori diverifikasi dari teks asli: **McCleary 1991** (WBRO 6(1) 81–104; PDF Bank Dunia di `Sumber\`): earmarking
   "appears to apply the benefit principle"; "strong earmarking" bila penerima manfaat jelas membayar (barang bersifat
   privat); "in general, it has not worked very well"; dana jalan "not automatic and remains dependent on government
