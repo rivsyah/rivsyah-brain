@@ -1,6 +1,6 @@
 ---
 name: project-sigap-bup
-description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), 11 Okt LIVE di https://sigap.rivsyah.dev (82d4711; instance APAC bom03; livecheck 13/13; layar terautentikasi dicek Aldo); riwayat lama di branch lokal riwayat-lokal, jangan push"
+description: "SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan) di Herd\\sigap-bup → sigap-bup.test; git: 8dfd123 5 bug Postgres, 01863c4 seed DUMMY, f5bbeeb identitas netral tanpa Kemlu; Neon main TERISI dummy 29 Sep (0 jejak Kemlu); password bawaan dipertahankan (keputusan Aldo); deploy Cloudflare: container + pdo_pgsql langsung ke Neon, JANGAN HttpPgsqlPDO (transaksi tak terjamin); per 4 Okt siap deploy (22950a4, repo GitHub kosong, secret+variabel terisi), 11 Okt LIVE di https://sigap.rivsyah.dev (6d26ead: tanpa bingkai starter kit, cek start container 204; instance APAC bom03; livecheck 13/13; tes 142); riwayat lama di branch lokal riwayat-lokal, jangan push"
 metadata: 
   node_type: memory
   type: project
@@ -546,6 +546,46 @@ perintah ini **crash (exit 134)** dengan berkas `scripts/entitas.local.txt`, dan
 (nama aplikasi pilihan Aldo "... Biro Umum dan Pengadaan" + lokasi/uraian dummy), `perwakilan` (token kategori
 `lingkup` di generator), `ptri` (positif palsu `TooltipTrigger`). Sama dengan kesimpulan 4 Okt. **Jangan pakai
 `grep -f` untuk pindai ini di mesin Windows; pakai Python.**
+
+### 11 Okt 2026 — layar SIGAP terbungkus bingkai starter kit; diperbaiki (`6d26ead`) + dicocokkan dengan desain v2
+
+**Keluhan Aldo** (tangkapan layar situs live): sesudah login tampak sidebar "Laravel Starter Kit" (Platform/Dashboard,
+Repository, Documentation, "Admin BUP") dan header kosong — "kenapa tampilan ini ada, tidak jelas, hilangkan".
+**Akar:** `resources/js/app.tsx` (sejak commit pertama) memberi layout bawaan `AppLayout` ke SEMUA halaman selain
+`auth/`, `settings/`, `welcome` — termasuk `sigap/*`, yang memasang `SigapLayout` (100vh) sendiri → tampil dobel,
+SigapLayout terjepit. Kemungkinan tak terlihat di lokal karena cookie `sidebar_state` menciutkan sidebar. [Guessing]
+**Perbaikan `6d26ead`:** `sigap/*` → tanpa layout bawaan; halaman pengaturan akun (masih `AppLayout`) diberi nama
+"SIGAP BUP", tautan Repository/Documentation dihapus, tombol "Kembali ke SIGAP"; logo Laravel di halaman login →
+tanda "S". `app-header.tsx` + `welcome.tsx` masih memuat tautan starter kit tetapi tidak dipakai rute mana pun.
+
+**Pencocokan dengan desain v2** (permintaan Aldo; sumber = `docs/SIGAP-BUP-v2.dc.html` lokal 5 Sep, utuh — remote
+tidak dicek, DesignSync perlu login desain): NAV 7 grup — 5 grup identik; grup 04 aplikasi punya tambahan
+"Pengembalian Belanja" (BY-04, BR-KOM-7, 5 Sep); grup 05 "Logistik Diplomatik" → "Logistik Unit Daerah" (keputusan
+29 Sep). META 25 layar desain: 22 identik penuh; beda = logdip (samaran), deskripsi kontrak (+"perekaman kontrak"),
+deskripsi users (tanpa "tampilan baca saja"). Sengaja beda dari tangkapan desain: "SIGAP-BUP" → "SIGAP BUP",
+footer sidebar tanpa "SATKER 403247 · Kementerian Luar Negeri RI" (samaran 29 Sep).
+**Verifikasi visual lokal** (data dummy, bukan data asli): basis data sementara di scratchpad
+(`DB_CONNECTION=sqlite DB_DATABASE=<scratch> SIGAP_SEED=dummy php artisan migrate --seed` + `PaketSeeder`; pengalihan
+dibuktikan dulu lewat `tinker` baca saja supaya `database/database.sqlite` berisi data asli tidak tersentuh), server
+`php -S 127.0.0.1:8010 ../vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php` **dijalankan dari
+`public/`** (dari akar repo router gagal `require index.php`), browser bawaan → login akun seed → Dashboard Serapan
+tampil penuh seperti desain. Jebakan Windows: `TaskStop` pada `timeout php -S` membunuh pembungkus saja; proses
+`php.exe` tetap mendengarkan port → cek baris perintah PID lalu `Stop-Process`.
+
+**Pengaman start container (`ContainerHealthCheck`, global, paling depan):** host `containerstarthealthcheck` dan `ping`
+→ 204 tanpa sesi/DB. Alasan (dari kode `@cloudflare/containers` 0.3.7 + temuan sesi SIPDLN): `doStartContainer` selalu
+`fetch('http://containerstarthealthcheck')` ke "/" (pingEndpoint tidak berlaku), mengikuti pengalihan; "/" → login
+dengan `URL::forceScheme('https')` → `https://containerstarthealthcheck/login` → runtime menolak HTTPS → error bukan
+"not listening" → ulang → `NO_CONTAINER_INSTANCE_ERROR` (503). Lolos selama ini karena cek pertama jatuh sebelum
+FrankenPHP mendengarkan; rawan bila DO mulai ulang saat container masih jalan (`state != healthy`). SIPDLN memilih jalan
+lain (hapus forceScheme + Worker set `X-Forwarded-Proto` + 301 http→https).
+Tes kini **142** (140 + 2 `ContainerHealthCheckTest`), 964 asersi — **KTI SIGAP menulis 140**; angka itu milik Aldo
+untuk diperbarui bila perlu.
+**Tayang 11 Okt 09.58 WIB** (deploy run 38106612253 sukses ±09.56): bundel live `app-CrCemcvE.js` (hash sama dengan build
+lokal — build deterministik); di 71 chunk JS live "Laravel Starter Kit" 0, "react-starter-kit" 0, "Kembali ke SIGAP" 1;
+livecheck 13/13. Jebakan: sesudah deploy selesai, instance lama masih melayani ±2 menit sampai instance baru siap
+(versi aplikasi container tidak naik untuk perubahan image saja; lihat `health.instances.starting`). Jangan simpulkan
+"deploy tidak berefek" sebelum hash aset live berubah.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
