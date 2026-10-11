@@ -121,8 +121,11 @@ Windows — pakai path `C:\...`.
   gratis"). PANTAS sudah JS statis → Pages Free cukup, **tidak butuh Workers Paid**. Satu-satunya "biaya": kartu saat
   onboarding Zero Trust (tidak ditagih). Cadangan bila Aldo menolak isi kartu: sandi Basic Auth lewat Pages Functions
   (Workers Free) — lebih lemah dari Access (sandi bersama, tanpa OTP/log); belum dibangun.
-- Pemantau `ready --wait` dijalankan di latar sesi 2a4da0ac (maks 4 jam sejak ±00.55 WIB 11 Okt). Bila siap, urutan:
-  `access` (ACCESS_EMAIL = rivsyah@gmail.com) → `dns` → `gate` → `deploy` → `gate` → `livetest`.
+- Pemantau `ready --wait` (sesi 2a4da0ac, mulai ±00.55 WIB 11 Okt) **habis waktu 4 jam tanpa perubahan** (TIMEOUT;
+  satu kali "fetch failed"). Cek ulang 11 Okt 08.10 WIB: masih WAIT. **Tidak ada pemantau yang jalan sekarang** —
+  Aldo perlu menulis "sudah" setelah Zero Trust + izin token. Urutan sesudahnya: `access` (ACCESS_EMAIL =
+  rivsyah@gmail.com) → `dns` → `gate` → `deploy` → `gate` → `livetest`. Izin commit (tooling + kurs 9 Okt) juga
+  masih ditunggu.
 
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
