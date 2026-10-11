@@ -38,7 +38,7 @@
   vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
   kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
 - 🔵 11 Okt 2026 — **SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan):
-  LIVE 11 Okt di https://sigap.rivsyah.dev** (`6d26ead`: bingkai starter kit dibuang, menu cocok desain v2 kecuali samaran; container APAC/Mumbai, uji tanpa login 13/13, tes 142). Latar: Neon `main` berisi dummy (0 jejak Kemlu), password bawaan
+  LIVE 11 Okt di https://sigap.rivsyah.dev** (`cf22eb5`: bingkai starter kit dibuang, Logistik Diplomatik kembali (keputusan Aldo 11 Okt), pohon terbuka penuh, pendaftaran ditutup; container APAC/Mumbai, uji tanpa login 13/13, tes 142). Latar: Neon `main` berisi dummy (0 jejak Kemlu), password bawaan
   dipertahankan (keputusan Aldo). Deploy: GitHub Actions → Cloudflare Containers, `sigap.rivsyah.dev`;
   secret token + variabel `CLOUDFLARE_ACCOUNT_ID` terisi (4 Okt). Workers Paid aktif 11 Okt 08.58 WIB. ⚠ Sisa Aldo: cek layar setelah
   login (agent dilarang memasukkan kata sandi di host non-lokal). Pemegang deploy: sesi `c4e7d156` (11 Okt).
@@ -62,6 +62,7 @@
 ## Operating rules — workflow and building
 
 - [English-only briefs](shared/feedback/feedback_english_only_briefs.md) — jangan bawakan edisi Bahasa Indonesia lagi; brief English only sejak 3 Sep 2026
+- [Samaran identitas: lingkup](shared/feedback/feedback_samaran_identitas_lingkup.md) — "samarkan identitas Kemlu" = nama instansi/satker/data asli, BUKAN istilah domain (diplomatik, Perwakilan RI); tanya dulu sebelum ganti nama modul (11 Okt: Logistik Diplomatik dikembalikan)
 - [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md) — data uji dari data asli: teks diganti palsu sepanjang aslinya kecuali lolos pola kode ketat/daftar izin; daftar pengecualian data dihitung dari keluaran LENGKAP, jangan `| head`; saat analisis pun, frekuensi kata uraian ≥25 tetap meloloskan nama (3 insiden 27 Sep)
 
 ## Projects

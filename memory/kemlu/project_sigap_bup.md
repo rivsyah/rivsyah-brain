@@ -260,7 +260,8 @@ di kolom `pic` tercetak ke transkrip. Aturan diperbarui: masker wajib mencakup s
 dipakai ejaan "Government"). Nama aplikasi kini **"SIGAP BUP"** (spasi, bukan tanda hubung).
 
 **Commit `f5bbeeb`:** sidebar, kop halaman, dan cetakan BAR memakai nama itu; satker 403247 dan "Kementerian
-Luar Negeri" dihapus dari UI. Modul "Logistik Diplomatik" → **"Logistik Unit Daerah"** (7 kantor wilayah:
+Luar Negeri" dihapus dari UI. Modul "Logistik Diplomatik" → **"Logistik Unit Daerah"** (**DIBATALKAN 11 Okt — kembali
+"Logistik Diplomatik" atas keputusan Aldo, lihat bagian 11 Okt**) (7 kantor wilayah:
 Medan, Surabaya, Makassar, Balikpapan, Denpasar, Jayapura, Ambon; item netral) — rute `/logdip` tetap.
 Bagian "AKPSP / PAKSP" tampil sebagai "Sarana & Prasarana" (kunci `AKPSP` tetap). `APP_NAME` bawaan
 "SIGAP BUP". Admin seed `admin@sigap.test` untuk semua set. Nomor DIPA seed asli kini dari
@@ -560,7 +561,7 @@ tanda "S". `app-header.tsx` + `welcome.tsx` masih memuat tautan starter kit teta
 
 **Pencocokan dengan desain v2** (permintaan Aldo; sumber = `docs/SIGAP-BUP-v2.dc.html` lokal 5 Sep, utuh — remote
 tidak dicek, DesignSync perlu login desain): NAV 7 grup — 5 grup identik; grup 04 aplikasi punya tambahan
-"Pengembalian Belanja" (BY-04, BR-KOM-7, 5 Sep); grup 05 "Logistik Diplomatik" → "Logistik Unit Daerah" (keputusan
+"Pengembalian Belanja" (BY-04, BR-KOM-7, 5 Sep); grup 05 "Logistik Diplomatik" → "Logistik Unit Daerah" (dibatalkan 11 Okt, lihat di bawah; keputusan
 29 Sep). META 25 layar desain: 22 identik penuh; beda = logdip (samaran), deskripsi kontrak (+"perekaman kontrak"),
 deskripsi users (tanpa "tampilan baca saja"). Sengaja beda dari tangkapan desain: "SIGAP-BUP" → "SIGAP BUP",
 footer sidebar tanpa "SATKER 403247 · Kementerian Luar Negeri RI" (samaran 29 Sep).
@@ -586,6 +587,30 @@ lokal — build deterministik); di 71 chunk JS live "Laravel Starter Kit" 0, "re
 livecheck 13/13. Jebakan: sesudah deploy selesai, instance lama masih melayani ±2 menit sampai instance baru siap
 (versi aplikasi container tidak naik untuk perubahan image saja; lihat `health.instances.starting`). Jangan simpulkan
 "deploy tidak berefek" sebelum hash aset live berubah.
+
+### 11 Okt 2026 — Logistik Diplomatik kembali, pohon terbuka penuh, pendaftaran ditutup (`cf22eb5`)
+
+- **Keputusan Aldo 11 Okt** (tanya "kenapa logistik daerah??????", lalu memilih opsi "Ya, seperti desain"): modul AT-02
+  kembali **"Logistik Diplomatik"** — nama menu, judul, deskripsi, dan data ilustrasi 7 Perwakilan RI (KBRI Tokyo,
+  KBRI Den Haag, PTRI Jenewa, KJRI Hamburg, KBRI Canberra, KBRI Cairo, KBRI Washington D.C.; Blanko Paspor
+  Diplomatik, Blanko Konsuler, Kantong Diplomatik, Segel & Label) dipulihkan dari `f5bbeeb^` (`logdip.tsx` +
+  konstanta `AsetController`). Konsekuensi yang disebut ke Aldo: modul ini menunjukkan aplikasi milik kementerian luar
+  negeri. **Tetap netral:** nama Kemlu, satker, akun persediaan 117131 ("Dokumen Berharga", bukan "Keimigrasian"),
+  dan frasa META desain "(integrasi DPLD)" — tidak dipulihkan karena integrasinya tidak ada; catatan kaki halaman
+  menulis "integrasi DPLD belum aktif". Penyamaran 29 Sep sebagai tafsir agent: rename modul ini ternyata tidak
+  diharapkan Aldo — **jangan memperluas "samarkan identitas" ke istilah domain tanpa bertanya.**
+- **Panah lipat terbuka semua sejak awal** (permintaan Aldo): tabel Realisasi per Bagian di Dashboard Serapan dan pohon
+  Struktur Pagu — state dibalik jadi `tertutup` (yang dicatat hanya baris yang ditutup pengguna). Kontrak (kartu
+  dipilih satu untuk form termin) dan panah sumber→tujuan di Revisi DIPA sengaja tidak diubah.
+- **Pendaftaran akun ditutup di demo** (saran dalam opsi yang dipilih Aldo): `config/fortify.php` →
+  `env('SIGAP_REGISTRASI', true) ? Features::registration() : null` (array_filter); Worker memasang
+  `SIGAP_REGISTRASI=false`; prop `canRegister` menyembunyikan "Sign up" di login. Lokal + tes tetap aktif.
+- Verifikasi lokal (DB dummy): pohon RKA-KL terbuka sampai akun, tabel Serapan memuat 5 bagian + 144 kode akun,
+  halaman Logistik tanpa error konsol. Tes 142/142.
+- **Tayang 11 Okt** (cek live): `/register` 404, `canRegister:false`, 71 chunk JS live: "Logistik Diplomatik" 3, "Logistik Unit Daerah" 0,
+  "Laravel Starter Kit" 0; livecheck 13/13. (Manifest: `sigap-layout` bukan kunci entri — pindai semua chunk.)
+- **KTI SIGAP** (`content/sigap/teks.js` baris 191) masih menulis "logistik unit daerah" untuk modul 05 — kini basi;
+  teks KTI milik Aldo.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
