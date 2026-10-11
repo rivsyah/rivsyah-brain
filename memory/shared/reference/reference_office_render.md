@@ -181,3 +181,12 @@ Tambahan 10 Okt 2026 malam (sesi BBCA v2, [[project-bbca-company-focus]]):
   menemukannya. Jangan simpan ulang dengan openpyxl sesudahnya (TABLE() dan nilai cache hilang).
 - `validate.py` skill pptx gagal di bawah `python -I` (butuh foldernya di sys.path) — jalankan tanpa `-I`.
 - `markitdown` tidak terpasang di Python 3.11; QA teks deck: ekspor PDF lewat PowerPoint COM lalu baca teks dengan pypdfium2.
+
+Tambahan 11 Okt 2026 (sesi materi akuntansi, [[project_materi_akuntansi_edisi2]]):
+- **HTML -> PDF tanpa Office: Edge headless jalan** (msedge 155, mesin riv): `msedge.exe --headless=new --disable-gpu
+  --no-pdf-header-footer --user-data-dir=<folder sendiri> --print-to-pdf=<pdf> file:///<html>`, +-4 dtk untuk dokumen kecil.
+  `@page` dan halaman bernama (`page: cover`, sampul tanpa margin) dihormati. Tautan internal menjadi named destination:
+  PyMuPDF `doc.resolve_names()` memberi id -> halaman, dipakai untuk nomor halaman daftar isi (render 2 kali).
+  Header/footer berjalan ditempel PyMuPDF (`insert_font` Segoe UI lalu `subset_fonts()`).
+- Chromium kadang menulis font Type3 (ext 'n/a' di `get_page_fonts`) — glyph-nya tertanam, bukan cacat.
+- Builder contoh: `C:\Users\rivsy\dev\personal\materi-akuntansi\build.py` (mesin riv).
