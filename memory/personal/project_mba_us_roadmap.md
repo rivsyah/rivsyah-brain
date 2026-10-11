@@ -168,4 +168,4 @@ EducationUSA gratis di Jakarta (Kedubes AS + @america).
   menyarankan kejelasan tertulis (atasan/Biro SDM/Inspektorat) sebelum CV dipakai ke LPDP/Kemlu/kampus.
 - ⚠ OPEN: izin tertulis Kemlu untuk mengutip kertas kerja internal (sama dengan OPEN di [[project_wharton_thesis]]).
 
-Terkait: [[project_wharton_thesis]], [[project_landlord_that_rents]], [[project_rab_pernikahan]].
+Terkait: [[project_wharton_thesis]], [[project_landlord_that_rents]], [[project_rab_pernikahan]], [[project_gmat_study_module]] (modul belajar GMAT, 11 Okt).
