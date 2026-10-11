@@ -1,6 +1,6 @@
 ---
 name: project-pantas-kurs
-description: "PANTAS — aplikasi pantau kas UP (petty cash) Perwakilan + selisih kurs IDR/USD + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; sampel BKU/BKT KBRI Washington TA 2026; keputusan Aldo: kurs pengakuan dua cara, lokal, Pagu 2026 Rp500 M (29 Sep, di data/sampel/pengaturan.json); riwayat git bersih: e096019 → cf1a60b; **TAYANG 11 Okt 2026 di balik Cloudflare Access** (https://pantas.rivsyah.dev + pantas-kurs.pages.dev, login OTP hanya rivsyah@gmail.com, tim raspy-dew-c84e), build cf1a60b, uji live LOLOS; kurs JISDOR s.d. 9 Okt (17.884) + 2 perbaikan tools/cloudflare.mjs di working tree, belum commit"
+description: "PANTAS — aplikasi pantau kas UP Perwakilan + selisih kurs + proyeksi kekurangan pagu; SPA statis di ~/dev/kemlu/pantas-kurs → pantas-kurs.test; **v1.1 (11 Okt, 75009b0): BKU saja (tanpa BKT), valuta setempat via konversi PU di BKU, laporan Realisasi Program per MAK + real-time**; sampel kini KBRI Singapura 1 Jan–9 Okt 2026 (Washington diarsip); TAYANG di balik Cloudflare Access https://pantas.rivsyah.dev (OTP hanya rivsyah@gmail.com, tim raspy-dew-c84e), livetest LOLOS; temuan sampel: proyeksi kurang Rp3,6–7,0 M s.d. 31 Des, batas aman Rp14.500–16.000"
 metadata:
   type: project
   modified: 2026-10-11
@@ -175,7 +175,39 @@ salah satu peserta ("Mas Kado/Koko" di transkrip kemungkinan "Mas Kukuh" sesuai 
   tampilan bersama yang menyimpan data di server luar (pejabat itu sendiri menyebut dasbor serupa dipersoalkan unit TI
   pusat); form input harian (dobel dengan aplikasi keuangan).
 - **Butuh untuk mulai v1.1:** contoh ekspor laporan realisasi (satu satker, satu bulan, RM + PNBP) dan BKU Singapura
-  satu bulan — lewat pemilik akses, gitignored. **Status: usulan dikirim ke Aldo 11 Okt, menunggu setuju.**
+  satu bulan — lewat pemilik akses, gitignored. **Status: Aldo menjawab dengan dua file (11 Okt) → dikerjakan jadi v1.1.**
+
+**v1.1 — 11 Okt 2026 (commit `4d75bf0` alat deploy + kurs 9 Okt, `75009b0` v1.1; TAYANG + livetest LOLOS).**
+Aldo: *"1. seperti dokumen excel realisasi program 2. BKU singapur — hanya memakai BKU tidak memakai BKT"*, dengan
+`Downloads\realisasi_program.xls` + `Downloads\FormulirBKU.xls` (BKU KBRI Singapura, menimpa nama file sampel lama).
+Kirim file dibaca sebagai "ya" untuk v1.1 + izin commit yang ditawarkan bersamanya (dikatakan ke Aldo).
+- **Data:** sampel bawaan sekarang Singapura (`data/sampel/FormulirBKU.xls` + `realisasi_program.xls`); sampel Washington
+  + BKT + `pengaturan.json` (Pagu Rp500 M) dipindah ke `data/sampel/arsip-washington/` (masih gitignored).
+- **Format BKU Singapura:** valuta `US$` (214 baris) + `SIN$` (1.553); footer per valuta; kode baru `PU` (pembelian/
+  penjualan valuta, 164 baris), `PK-xxx` (koreksi: PK-PU, PK-KB, PK-<akun> tanpa MAK), `815111A`, PNBP berhuruf
+  (425221F, 425222F/H, 425223E, 425228A/C, 425229A/B). Kode MAK BKU `KKKK.KRO/RO.KOM/SUB.DETAIL/AKUN`: DETAIL = nomor
+  rincian yang sama dengan komponen terakhir baris MAK laporan.
+- **Format laporan Realisasi Program:** 1 sheet, kepala dua baris (Uraian | Pagu: Awal, Cadangan, Lepas, Sisa Cad |
+  Realisasi Pagu: SPP Lalu, Bulan Ini, S.d Bulan Ini, Sisa Bulan Ini + 2 kolom % tanpa label); baris MAK
+  `PROGRAM/KKKK.KRO/RO.KOM.SUB.DETAIL` lalu baris akun 6 digit; nilai rupiah berupa teks en-US; "Periode dd-mm-yyyy s.d
+  dd-mm-yyyy"; penanda "Tidak semua Kurs SP2D"; baris tanda tangan di bawah "Total" (tidak dibaca).
+- **Model kurs teruji (agregat):** belanja SIN$ ÷ kurs konversi PU terakhir × kurs SP2D GUP = 99,74% realisasi laporan
+  (galat median per MAK 0,6%); alternatif JISDOR tanggal 99,62%.
+- **Keputusan proyek baru:** D14 valuta via konversi PU, D15 laporan realisasi = sumber pagu/realisasi resmi (urutan isian >
+  laporan > pengaturan sampel), D16 BKT tidak dipakai, D17 samaran MAK bernomor urut + valuta "ML" + kode satker dihapus.
+- **Angka sampel Singapura (1 Jan–9 Okt 2026):** rekonsiliasi per valuta persis; 26 tanggal konversi 1,2474–1,2793
+  SIN$/US$; belanja US$6,86 jt ekuivalen; beban kurs vs 16.500 Rp6,61 M (JISDOR) / Rp6,65 M (GUP); pagu Rp150,47 M
+  (pegawai 53,52 / barang 95,74 / modal 1,20), realisasi Rp120,21 M (79,9%), sisa Rp30,25 M; MAK cocok 75/77 (2 MAK
+  US$8 + 4 baris koreksi tanpa MAK −US$911, di bawah ambang 0,1%); saldo UP US$1,34 jt ±60 hari.
+  **Proyeksi:** kebutuhan US$1,89–2,08 jt s.d. 31 Des (laju 3/6 bulan) → **kurang Rp3,6–7,0 M** pada kurs 17.884; pada
+  kurs asumsi pun kurang Rp4,1 M (beban kurs yang sudah terserap); batas aman Rp14.500–16.000 → status Pagu Kritis.
+  [Likely — metode laju sederhana; Juni US$1,02 jt mungkin memuat belanja sekali bayar.]
+- **Uji:** tes 25/25 (LRP dan dua valuta pakai data sintetis); render 7 tampilan 0 pola identitas; ekspor .xlsx 0/34.931
+  sel berpola identitas dengan samaran (samaran mati: ratusan, membuktikan pemeriksaan bekerja); livetest LOLOS.
+- **Perbaikan sampingan:** crash bila BKU tanpa penerimaan UP (teks cek GUP); build.js membaca pola identitas dari
+  `.claude/terlarang.txt` (lokal) supaya kata identitas tidak masuk git.
+- **Jebakan:** heredoc Bash membuang `\` → regex `SIN\$` jadi `SIN$` (cocok "Mesin") → 161 temuan palsu; tulis
+  skrip pemeriksa lewat file.
 
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
