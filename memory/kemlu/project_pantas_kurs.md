@@ -209,8 +209,10 @@ Kirim file dibaca sebagai "ya" untuk v1.1 + izin commit yang ditawarkan bersaman
 - **Jebakan:** heredoc Bash membuang `\` → regex `SIN\$` jadi `SIN$` (cocok "Mesin") → 161 temuan palsu; tulis
   skrip pemeriksa lewat file.
 
-**Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
-(tidak); nama PANTAS.
+**Masih terbuka (per 11 Okt, sesudah v1.1):** ~~pagu DIPA nyata~~ (kini dari laporan Realisasi Program); kurs asumsi
+khusus DIPA (sementara 16.500); siapa lagi yang boleh masuk Access (email tim); banyak satker sekaligus (usul rapat,
+belum diminta); laju proyeksi mana yang dipakai untuk dilaporkan (3 vs 6 bulan); nama PANTAS; simpan data di
+peramban (tidak). Uji layar ponsel 390 px 11 Okt: 7 tampilan tanpa geser halaman, tabel bergeser di dalam kotaknya.
 
 **Verifikasi:** `node --test "tests/*.test.js"` (21 tes; pola glob wajib — `node --test tests/` gagal di
 Node 25) dan `node tests/render.js http://pantas-kurs.test/ <folder> 1440` (Chrome headless via CDP:
