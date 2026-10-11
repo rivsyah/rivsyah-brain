@@ -1,10 +1,46 @@
 ---
 name: project-sipdln-bup
-description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; commit awal b50b8d6; deploy demo sipdln.rivsyah.dev (a0c5c18) per 4 Okt menunggu Workers Paid + izin Aldo buat repo/push"
+description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; HEAD a0c5c18; 11 Okt: aturan PMK D21–D23 (jam→hari per arah, menginap 100%, rawat inap 30%) dikodekan, 90 uji hijau, BELUM di-commit; deploy demo sipdln.rivsyah.dev masih menunggu Workers Paid/Render + izin repo/push"
 metadata:
   type: project
-  modified: 2026-10-04
+  modified: 2026-10-11
 ---
+
+## 11 Okt 2026 — aturan PMK tambahan (belum di-commit, menunggu izin Aldo)
+
+Aldo: "lanjutkan project SIPDLN" sambil menempelkan saran 6 Okt (jangan rewrite ke Hono). Tafsir agent:
+jalur Laravel diteruskan, rewrite tidak dijalankan. Cek API 11 Okt: Containers masih 401 (Workers Paid
+belum aktif), 0 Worker, repo `rivsyah/sipdln-bup` 404 (repo `sigap-bup` ada). Jadi deploy tetap tertahan;
+yang dikerjakan = ketentuan PMK yang di KTI berstatus "belum/sebagian" (rencana Tahap 1 KTI, Tw IV 2026).
+
+- **D21 Pasal 8 ayat 4** — isian jam per arah (1–72; kosong = 1 hari). 1–24 jam = 1 hari, 25–48 = 2,
+  49–72 = 3. Hari kegiatan = lama kalender − hari perjalanan kedua arah. **Tafsir per arah** (pergi dan
+  pulang dikonversi sendiri-sendiri) — teks pasal tidak menyebut; DJPb KPPN Kotabumi dan Permendag
+  1618/2020 hanya mengulang tabel. Dipilih karena cocok dengan tanggal kalender. **Perlu konfirmasi PPK.**
+- **D22 Pasal 13 ayat 5a** — malam menginap saat transit/setiba (berangkat) dan transit (kembali), 0–3;
+  tiap malam menaikkan satu hari perjalanan dari 40% ke 100%.
+- **D23 Lampiran A ket. 1 PMK 181/2019** — hari rawat inap per peserta + negara tempat dirawat; hari itu
+  dipindah dari hari kegiatan ke baris "Rawat inap di rumah sakit" @30%; dokumen menandai "(rawat inap)".
+  Rincian hari kini punya kolom `jenis` (berangkat/kegiatan/kembali; baris lama diisi migrasi).
+- **Belum dikodekan, sengaja:** ket. 2 (istri/suami pendamping 80%) dan ket. 3 (pegawai setempat 80% tarif
+  terendah) — butuh peserta bukan pegawai (Pihak Lain) atau pegawai Perwakilan; tidak ada di BUP.
+- Teks pasal dibaca ulang dari PDF JDIH 11 Okt (WebFetch menyimpan PDF, PyMuPDF mengekstrak teks): Pasal 8
+  tidak diubah 227/2016 maupun 181/2019. **PMK 32/2025 Pasal 2–3: Lampiran II bersifat "dapat dilampaui"**
+  → tiket PDLN (Lampiran II angka 18) bukan batas. Label KTI "Batas tiket 134 kota" kurang tepat.
+- Mutu: `composer ci:check` hijau — **90 uji (89 lulus, 1 dilewati), 486 asersi**, PHPStan 0, Pint, vp, tsc.
+  18 kasus uji baru (`tests/Unit/AturanHitungTest.php`, `tests/Feature/WaktuPerjalananTest.php`).
+  Diuji di peramban bawaan: form baru (baris tersusun ulang dari jam), simpan, detail, Rincian Biaya, form ubah;
+  angka sama dengan uji PHP (Amerika Serikat gol D 8 hari: US$ 2.771,40; rawat inap 2 hari: US$ 2.145,60).
+- Data contoh: perjalanan New York kini 8–15 Nov, 28/26 jam, 1 malam menginap setiba. Simulasi langkah DB
+  Dockerfile (migrate --seed + ContohSeeder dari nol) lulus.
+- DB lokal: dicadangkan → diuji → dikembalikan → migrasi → data contoh dibangun ulang (12 perjalanan,
+  JISDOR s.d. 9 Okt utuh). 13 berkas diubah + 2 baru, belum di-commit. Usul pesan commit: "Aturan PMK: waktu
+  perjalanan dari jam, menginap transit 100%, rawat inap 30%".
+- **KTI SIPDLN kini basi ke arah aman:** Tabel 9 → 11 penuh / 2 sebagian / 0 belum (dulu 9/2/2), uji 90
+  (dulu 72). Perbarui hanya bila Aldo minta ([[project-kti-sigap-sipdln]]).
+- Jebakan: `Path.write_text` Python di Windows menulis CRLF → tiga model sempat jadi CRLF (dibetulkan ke LF).
+  Pakai Edit/Write atau tulis biner. PHPStan menolak `$list[$i]['k'] -= x` pada larik berbentuk (shape) —
+  bangun ulang barisnya utuh.
 
 Dibangun 27 Sep 2026 atas permintaan Aldo ("buatkan aplikasi monitoring untuk perjalanan dinas luar
 negeri bagi pegawai biro umum dan pengadaan"). Status 29 Sep 2026: **v1 + keputusan Aldo 29 Sep

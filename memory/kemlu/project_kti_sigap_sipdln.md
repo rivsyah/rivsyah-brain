@@ -3,7 +3,7 @@ name: project-kti-sigap-sipdln
 description: "DUA KTI terpisah (makalah, Permenlu 23/2020) untuk percepatan pangkat/golongan Aldo (JF Penata Kanselerai): 'Pengendalian Melekat ... SIGAP BUP untuk Satuan Kerja Pusat' 36 hlm dan 'Otomasi Administrasi PDLN Berbasis Aturan ... SIPDLN-BUP untuk Satuan Kerja Pusat' 32 hlm — verify 16/16 masing-masing, 0 kalimat kembar (4 Okt 2026); sasaran satker pusat Kemlu, BUP = purwarupa; + draf kasar netral untuk Dedi (asumsi); builder ~/dev/kemlu/kti-sigap-sipdln"
 metadata:
   type: project
-  modified: 2026-10-04
+  modified: 2026-10-11
 ---
 
 # KTI SIGAP BUP dan KTI SIPDLN-BUP (4 Okt 2026)
@@ -66,5 +66,11 @@ KTI kedua tidak boleh menyalin naskah ini.
 2. Konfirmasi maksud "untuk Dedi".
 3. Cek uraian proses lama sesuai pengamatannya; putuskan pengungkapan AI + surat pernyataan butir b.
 4. Opsional: tangkapan layar aplikasi berdata contoh; nama aplikasi tingkat Kementerian (mis. tanpa "BUP").
+5. **11 Okt 2026 — KTI SIPDLN tertinggal dari aplikasi (arah aman)** ([[project-sipdln-bup]]): Tabel 9 kini
+   11 penuh / 2 sebagian / 0 belum (naskah: 9/2/2), uji 90 (naskah: 72); "konversi jam" dan "100% transit"
+   sudah diterapkan, "uang harian khusus" menjadi sebagian (rawat inap saja). Kode itu **belum di-commit**.
+   **Label baris "Batas tiket 134 kota (PMK 32/2025 Lampiran II angka 18)" kurang tepat:** Pasal 3 ayat (2)
+   PMK 32/2025 — Lampiran II bersifat "dapat dilampaui", bukan batas tertinggi. Usul ganti "Acuan tiket".
+   Perbarui naskah hanya bila Aldo minta.
 
 Terkait: [[project-sigap-bup]], [[project-sipdln-bup]], [[reference-kti-percepatan-pangkat]], [[user-jabatan-kemlu]], [[reference-office-render]].
