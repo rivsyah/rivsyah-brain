@@ -113,11 +113,22 @@ Workers plans** (juga bisa lewat `dash.cloudflare.com/?to=/:account/workers/plan
 ada. Worker pertama `sigap-bup` dibuat 11 Okt oleh `wrangler secret bulk` (sesi SIGAP `c4e7d156`), lalu workflow
 deploy GitHub dijalankan. SIPDLN tinggal izin Aldo untuk buat repo + push (pengaman "Remote Repoint").
 
+**11 Okt 2026 — SIPDLN TAYANG** di `https://sipdln.rivsyah.dev` (izin Aldo "deploy" di sesi SIPDLN). Repo privat
+`rivsyah/sipdln-bup` dibuat agent lewat API; rahasia repo `CLOUDFLARE_API_TOKEN` diisi agent dengan sealed box
+(`libsodium-wrappers`, nilai tak tercetak) — tidak perlu Aldo menempel token di GitHub. Worker `sipdln-bup` dibuat
+`wrangler secret bulk`. **Dua jebakan `@cloudflare/containers` 0.3.7** (berlaku untuk semua app Laravel di sini):
+(1) cek port bawaan `GET http://ping/` → set `pingEndpoint = 'localhost/up'`; (2) cek SAAT START di-hardcode
+`http://containerstarthealthcheck/` (rute "/", tak bisa diganti) dan **mengikuti pengalihan** — bila aplikasi memaksa
+`URL::forceScheme('https')`, pengalihan berantai "/" → login menjadi https dan runtime menolak (*"Connecting to a
+container using HTTPS is not currently supported"*) → semua permintaan 500. Pola benar: Worker alihkan http → https
+di tepi + kirim `X-Forwarded-Proto: https`, Laravel `trustProxies('*')`, tanpa forceScheme. `constraints.regions:
+["APAC"]` memindah instance dari lax13 ke bom03 (Mumbai). Detail: [[project-sipdln-bup]].
+
 **Yang menunggu langkah Aldo yang sama:**
 - [[project_sigap_bup]] — Containers + Neon, `sigap.rivsyah.dev`.
 - ~~[[project_pantas_kurs]] — Pages + Access~~ **TAYANG 11 Okt 2026** di `pantas.rivsyah.dev` + `pantas-kurs.pages.dev`,
   dikunci aplikasi Access "PANTAS" (hanya rivsyah@gmail.com, OTP); CNAME `pantas` proxied dibuat lewat API.
-- [[project-sipdln-bup]] — Containers + SQLite demo di image, `sipdln.rivsyah.dev`.
+- ~~[[project-sipdln-bup]] — Containers + SQLite demo di image~~ **TAYANG 11 Okt 2026** di `sipdln.rivsyah.dev`.
 
 Daftar langkah Aldo, sekali untuk semua: ~~(1) NS di Hostinger~~ **selesai 29 Sep**; ~~(2) Workers Paid
 US$5/bln (untuk Containers)~~ **AKTIF 11 Okt 08.58 WIB**; ~~(3) scope `workflow` di GITHUB_PAT~~ **selesai 29 Sep**;

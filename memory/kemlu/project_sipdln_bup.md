@@ -1,12 +1,41 @@
 ---
 name: project-sipdln-bup
-description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; HEAD a0c5c18; 11 Okt: aturan PMK D21–D23 (jam→hari per arah, menginap 100%, rawat inap 30%) dikodekan, 90 uji hijau, BELUM di-commit; deploy demo sipdln.rivsyah.dev masih menunggu Workers Paid/Render + izin repo/push"
+description: "SIPDLN-BUP — aplikasi monitoring perjalanan dinas luar negeri pegawai Biro Umum dan Pengadaan + drafting Surat Tugas/SPD/Rincian/Nominatif; Laravel 13 di ~/dev/kemlu/sipdln-bup → sipdln-bup.test; SBM 2026 (PMK 32/2025); kurs JISDOR otomatis; nomor ST ST/KP/{urut}/{bulan}/{tahun}/25; identitas Kemlu disamarkan; PHPStan 0; 11 Okt: aturan PMK D21–D23 (2e1b1af) + LIVE di https://sipdln.rivsyah.dev (Cloudflare Containers, bom03), repo privat rivsyah/sipdln-bup, HEAD fa20a6b"
 metadata:
   type: project
   modified: 2026-10-11
 ---
 
-## 11 Okt 2026 — aturan PMK tambahan (belum di-commit, menunggu izin Aldo)
+## 11 Okt 2026 — LIVE di https://sipdln.rivsyah.dev
+
+Izin Aldo "deploy" di chat (setelah ia membeli Workers Paid, aktif 08.58 WIB). Urutan yang dijalankan agent:
+commit `2e1b1af` (D21–D23) → repo **privat** `rivsyah/sipdln-bup` (API, `origin` tanpa token) → push →
+variabel repo `CLOUDFLARE_ACCOUNT_ID` (dari `GET /accounts`; env.db masih salah) + rahasia
+`CLOUDFLARE_API_TOKEN` (sealed box `libsodium-wrappers` 0.7.15 di scratchpad, nilai tak tercetak) → Worker
+`sipdln-bup` + secret `APP_KEY` baru lewat `wrangler@4.143.0 secret bulk` (membuat Worker bila belum ada)
+→ tunggu CI `tests` hijau → `workflow_dispatch` `deploy`. Tiga deploy (run 38104084294, 38105032495,
+38105806118); dua yang pertama sukses di Actions tetapi live 500:
+
+- **Akar 1** (`0d7ee13`): cek port bawaan `@cloudflare/containers` 0.3.7 = `GET http://ping/` dan fetch-nya
+  **mengikuti pengalihan**. Perbaikan `pingEndpoint = 'localhost/up'` (tip sesi SIGAP). Sekalian
+  `constraints.regions: ["APAC"]` — instance pertama di **lax13** (Los Angeles); kini **bom03** (Mumbai),
+  region saja, kota tidak bisa dipilih.
+- **Akar 2** (`fa20a6b`): cek SAAT START library di-hardcode `http://containerstarthealthcheck/` (rute "/",
+  tidak terpengaruh `pingEndpoint`) dan juga mengikuti pengalihan. "/" → `/dashboard` (relatif) → `/login`
+  **absolut https** karena `URL::forceScheme('https')` → runtime menolak: *"Connecting to a container using
+  HTTPS is not currently supported"*. Perbaikan: hapus forceScheme; Worker mengalihkan http → https (301) di
+  tepi dan mengirim `X-Forwarded-Proto: https` (dipercaya `trustProxies('*')`). Diuji lokal dulu dengan
+  `php -S` + `APP_ENV=production` + sesi/cache `array`: internal → `http://…/login`, pengunjung →
+  `https://sipdln.rivsyah.dev/login`. **Pelajaran: di container Cloudflare, jangan pakai forceScheme; aplikasi
+  yang "/"-nya mengalihkan akan gagal start.**
+- Uji live tanpa login (agent tidak memasukkan kata sandi di situs non-lokal): `/up` 200 (dingin 2,8 dtk,
+  hangat 0,55), `/login` 200 (hangat 0,28 dtk), aset JS/CSS 200, `http://` → 301 https, `/dashboard` →
+  `https://…/login`, cookie sesi `secure; httponly; samesite=lax`, 0 identitas instansi di halaman login.
+  **Uji layar setelah login = Aldo** (akun demo sama dengan lokal).
+- Biaya: satu langganan Workers Paid US$5/bln dipakai bersama SIGAP (dicek live 11 Okt: minimal US$5/akun/bln).
+- Deploy berikutnya: push `main` → tunggu `tests` → jalankan workflow `deploy` (manual).
+
+## 11 Okt 2026 — aturan PMK tambahan (commit `2e1b1af`, atas izin Aldo "deploy")
 
 Aldo: "lanjutkan project SIPDLN" sambil menempelkan saran 6 Okt (jangan rewrite ke Hono). Tafsir agent:
 jalur Laravel diteruskan, rewrite tidak dijalankan. Cek API 11 Okt 08.52 WIB: Containers masih 401 (Workers Paid
@@ -34,8 +63,8 @@ yang dikerjakan = ketentuan PMK yang di KTI berstatus "belum/sebagian" (rencana 
 - Data contoh: perjalanan New York kini 8–15 Nov, 28/26 jam, 1 malam menginap setiba. Simulasi langkah DB
   Dockerfile (migrate --seed + ContohSeeder dari nol) lulus.
 - DB lokal: dicadangkan → diuji → dikembalikan → migrasi → data contoh dibangun ulang (12 perjalanan,
-  JISDOR s.d. 9 Okt utuh). 13 berkas diubah + 2 baru, belum di-commit. Usul pesan commit: "Aturan PMK: waktu
-  perjalanan dari jam, menginap transit 100%, rawat inap 30%".
+  JISDOR s.d. 9 Okt utuh). 13 berkas diubah + 2 baru → commit `2e1b1af` "Aturan PMK: waktu perjalanan dari
+  jam, menginap transit 100%, rawat inap 30%" (atas izin Aldo "deploy").
 - **KTI SIPDLN kini basi ke arah aman:** Tabel 9 → 11 penuh / 2 sebagian / 0 belum (dulu 9/2/2), uji 90
   (dulu 72). Perbarui hanya bila Aldo minta ([[project-kti-sigap-sipdln]]).
 - Jebakan: `Path.write_text` Python di Windows menulis CRLF → tiga model sempat jadi CRLF (dibetulkan ke LF).
