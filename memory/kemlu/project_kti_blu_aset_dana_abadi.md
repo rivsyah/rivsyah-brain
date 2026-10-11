@@ -86,6 +86,17 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
   (26/27 Agu 2025, BN 2025/642, unit noneselon KKP pola BLU) [Likely]; LPDB-KUMKM Permenkop 8/2020 (15 Okt 2020) status
   belum pasti. Cek kalimat kembar vs 3 KTI Aldo sebelumnya: 0 (hanya judul Kepmenlu 32 sama). Penanda 12 → 8.
   Pokok bahasan 5.328; abstrak 190. BERHENTI menunggu keputusan → Tahap 5 (.docx).
+- **TAHAP 5 PAKET AKHIR SELESAI 11 Okt 2026.** Hasil di `Downloads\Riv's Journey\KTI PNBP Kekonsuleran\`:
+  `KTI PNBP Kekonsuleran - Rivaldo H.docx` + `.pdf` (33 hlm: sampul, Lampiran I A + I B, abstrak, daftar isi/tabel/
+  gambar/singkatan, Bab I–III 5.588 kata menurut Word-text, 6 tabel, 2 gambar, pustaka 27) dan `Catatan Penyerahan KTI
+  PNBP.docx` (2 hlm: ringkasan untuk pengesah ditulis pihak ketiga netral, 13 isian, 7 langkah). Builder
+  `~/dev/kemlu/kti-pnbp-kekonsuleran` (README; `build.js --draf "C:/..."` — path /c/ gagal di Node Windows;
+  `content/md.js` = pengubah Markdown → docx-js; `figures.py` Gambar 1 alur 8 langkah + Gambar 2 desain dana abadi;
+  `verify.py` 25 cek LULUS 25/25 termasuk regresi 84,52%/"menunjukkan"/"resistensi" dan kata terlarang lintas scope).
+  Perbaikan saat build: keterangan "Tabel N." bertitik (lib.caption), Tabel 2 "RI" → "Republik Indonesia", penulis
+  pustaka LKj = "Direktorat Pelindungan WNI" (cocok dengan sitasi), judul C → "Kegunaan atau Manfaat", rujukan Tabel 6.
+  Jebakan: patch Python via heredoc Git Bash merusak "\n" (pakai Edit tool). Sisa isian kuning: 7 di naskah +
+  administratif (mitra, pangkat/jabatan SK, kop/nomor/tanggal, pengesah I A, pejabat perpustakaan I B).
 - Teori diverifikasi dari teks asli: **McCleary 1991** (WBRO 6(1) 81–104; PDF Bank Dunia di `Sumber\`): earmarking
   "appears to apply the benefit principle"; "strong earmarking" bila penerima manfaat jelas membayar (barang bersifat
   privat); "in general, it has not worked very well"; dana jalan "not automatic and remains dependent on government
