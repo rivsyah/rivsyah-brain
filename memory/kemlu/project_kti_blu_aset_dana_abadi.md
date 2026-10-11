@@ -36,6 +36,27 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
 - **Bab II B selesai 11 Okt** (930 kata; Tabel 1 tarif, Tabel 2 realisasi 2023–2024, Gambar 1 alur 8 langkah,
   Tabel 3 MP aturan vs 2024, data PWNI). Total pokok bahasan 2.647 (I 1.064, II A 653, II B 930). Berikutnya Bab II C.
   Sumber\ kini 11 PDF publik (+ LKj PWNI 2024, PP 45/2024, Permenlu 26/2020, PER-8/PB/2021, PER-2/PB/2023).
+- **Bab II C selesai 11 Okt** (Aldo "lanjut" tanpa data belanja PNBP → batasan data dinyatakan terbuka di naskah).
+  1.223 kata: uji earmarking McCleary (3 uji → prioritas penggunaan: layanan konsuler > pelindungan WNI > operasional),
+  kriteria Ps 33(2)/46(2) sebagai syarat desain (pokok ditetapkan di awal, belanja dari hasil, evaluasi berkala; pintu
+  hukum PP 44/2025 Ps 48), Tabel 4 patok banding (LPDP, LDKPI, LPDB-KUMKM/LPMUKP, AS §1714, Kanada PRF), kesenjangan
+  aturan internal. Total pokok bahasan 3.879 (I 1.064, II A 657, II B 935, II C 1.223). Berikutnya Bab II D (A11).
+- Teori diverifikasi dari teks asli: **McCleary 1991** (WBRO 6(1) 81–104; PDF Bank Dunia di `Sumber\`): earmarking
+  "appears to apply the benefit principle"; "strong earmarking" bila penerima manfaat jelas membayar (barang bersifat
+  privat); "in general, it has not worked very well"; dana jalan "not automatic and remains dependent on government
+  judgments"; **9 uji** (link pembayar–penerima; perlu tidaknya; kecukupan sumber; distorsi; aturan investasi;
+  pengaman akuntansi/audit; konsistensi kebijakan + pengawas dana ekstra-anggaran; kapasitas lembaga; batas waktu).
+  Buchanan 1963: hanya deskripsi umum (dua barang publik, penerimaan umum vs pajak diikat) — isi lain tak terverifikasi.
+  OECD 1998: hanya "not only to recover costs ... more effective and efficient". **UU 9/2018 Penjelasan Ps 33(2)**:
+  a kemampuan negara + selektif; b kebijakan fiskal = kapasitas pendapatan + prioritas alokasi; **c "Kebutuhan
+  pendanaan Instansi Pengelola PNBP untuk pelayanan PNBP menjadi prioritas utama untuk dibiayai"**; Ps 33(3)a "kegiatan
+  lainnya" = di luar tusi unit penghasil, terutama peningkatan pelayanan. **Perpres 111/2021** (15 Des 2021): Ps 1
+  angka 1 dana abadi "tidak dapat digunakan untuk belanja"; angka 8 LPDP = satuan kerja noneselon Kemenkeu berpola
+  BLU; Dewan Penyantun mengarahkan bidang prioritas, afirmasi, proporsi penggunaan hasil, pembagian tugas K/L Teknis.
+  **PMK 53/2026 Ps 17**: hasil → hibah, operasional LDKPI, penugasan; sisa kas → optimalisasi kas / tambah Dana KPI.
+  **8 U.S.C. §1714**: surcharge "deposited in the Consular and Border Security Programs account", "available until
+  expended". **Kanada PRF** (IRCC transition binder 2025-05): fee → PRF; Revolving Funds Act; siklus 10 thn; defisit
+  >$1 → Menteri tak berwenang belanja operasional; Service Fees Act (standar layanan, remisi, penyesuaian tahunan).
 - Data publik baru: **LKj Direktorat PWNI 2024** (kemlu.go.id/files/repositori/65397/..._LKJ_Dit__PWNI_2024.pdf,
   "Jakarta, 20 Februari 2025"): 67.297 kasus ditangani, 60.122 selesai (84,52%); khusus 5.177/4.138 (79,93%), umum
   62.120/55.984 (90,12%); evakuasi Lebanon & Suriah 259 + 2 orang; 3.354 online scam; 137 bebas hukuman mati; 169 ibu
