@@ -76,6 +76,16 @@ PNBP kekonsuleran sebagai sumbernya; judul 1–2 menguji jalur tanpa lembaga bar
   Perapian: sebutan Permenkumham 19/2024 dihapus dari II A.4 (tak dibaca langsung); PP 23/2005 kini ditulis lengkap
   (jo. PP 74/2012) pada kemunculan pertama di II D.1. **Pokok bahasan final draf 5.292 kata**; penanda dalam teks 8.
   Berikutnya: Tahap 4 Gerbang Mutu 28 butir, lalu Tahap 5 (.docx via builder, pola [[project-kti-mitra-diklat-pk]]).
+- **Tahap 4 Gerbang Mutu dijalankan 11 Okt** ("lanjut"): 20 lulus (2 dengan catatan), 4 sebagian (1, 5, 18, 28),
+  4 belum karena menunggu Tahap 5/data (6, 7, 20, 26). Perbaikan agen: **"84,52%" PWNI = capaian BERBOBOT (55% kasus
+  khusus, 45% umum), bukan 60.122/67.297 (=89,34%) → dihapus dari kalimat**; Kesimpulan 2 + abstrak "menunjukkan" →
+  "mengisyaratkan" (bukti tak langsung) + rujukan (Tabel 3; Bab II Bagian B.4); "sulit diperkirakan" → "sebagian muncul
+  mendadak"; bentuk peraturan dana abadi = preseden Perpres 111/2021 atau PMK 53/2026 (penanda ditutup). Metadata
+  ditutup: **PMK 46/2024** ditetapkan 3 Jul 2024, diundangkan 5 Jul, BN 2024/373; **PMK 53/2026** diundangkan 29 Jul
+  2026, BN 2026/524; **Permenlu 4/2025** diundangkan 18 Mar 2025, BN 2025/202 (BPK). LPMUKP kini Permen KP 15/2025
+  (26/27 Agu 2025, BN 2025/642, unit noneselon KKP pola BLU) [Likely]; LPDB-KUMKM Permenkop 8/2020 (15 Okt 2020) status
+  belum pasti. Cek kalimat kembar vs 3 KTI Aldo sebelumnya: 0 (hanya judul Kepmenlu 32 sama). Penanda 12 → 8.
+  Pokok bahasan 5.328; abstrak 190. BERHENTI menunggu keputusan → Tahap 5 (.docx).
 - Teori diverifikasi dari teks asli: **McCleary 1991** (WBRO 6(1) 81–104; PDF Bank Dunia di `Sumber\`): earmarking
   "appears to apply the benefit principle"; "strong earmarking" bila penerima manfaat jelas membayar (barang bersifat
   privat); "in general, it has not worked very well"; dana jalan "not automatic and remains dependent on government
