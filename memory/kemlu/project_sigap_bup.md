@@ -612,6 +612,24 @@ livecheck 13/13. Jebakan: sesudah deploy selesai, instance lama masih melayani �
 - **KTI SIGAP** (`content/sigap/teks.js` baris 191) masih menulis "logistik unit daerah" untuk modul 05 — kini basi;
   teks KTI milik Aldo.
 
+### 11 Okt 2026 — utang mutu dicicil (`563199d`)
+
+Aldo: "Continue pending matters". Dikerjakan tanpa keputusan baru:
+- **Linter CI**: Pint + Prettier + ESLint `--fix` (urutan job `linter`), sisa 12 error ESLint (skrip `scripts/*.mjs` tanpa
+  globals Node, unused param, escape regex) dibereskan; `eslint.config.js` kini mengabaikan `docs/` dan memberi globals Node
+  ke `scripts/**/*.mjs`. Diff besar (±18 rb baris) = format murni. Urutan Prettier→ESLint baru stabil di putaran kedua.
+  `generate-dummy.mjs` diuji ulang: keluaran 12 berkas identik byte-per-byte.
+- **PHPStan 161 → 41**: 23 relasi model diberi tipe kembalian + `@return BelongsTo<X, $this>` (larastan baru mengenali
+  relasi); `findOrFail($data['..._id'])` → `findOrFail($request->integer('..._id'))` (8 controller; kolom divalidasi
+  `required|integer|exists`). **Sisa 41**: 11 `missingType.iterableValue`, 10 `nullsafe.neverNull` (sengaja belum —
+  membuang `?->` mengurangi ketahanan bila data relasi tidak lengkap), alias `selectRaw` (`n`, `sd`, `komitmen`, `kunci`)
+  di AdminController/LaporanController (perbaiki dengan `->toBase()`), `fopen` bisa false (LaporanController 122/132),
+  `match` tanpa default (LaporanController 43), `file_get_contents` bisa false (WasditSeeder 64/70), `cek()` tanpa tipe.
+  KTI SIGAP menulis "161 temuan" — kini 41 (teks milik Aldo).
+- `composer.json` php `^8.4.1` (lock Symfony 8.1); `composer update --lock` hanya mengganti hash + URL phpdotenv
+  (org pindah, commit sama).
+- Tes 142/142, tsc 0, ESLint 0, Pint lolos.
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design
