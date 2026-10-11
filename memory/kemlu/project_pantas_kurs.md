@@ -157,6 +157,26 @@ Windows — pakai path `C:\...`.
 - Catatan lingkungan: wrangler menjalankan `git status` dari folder Temp dan ikut memindai `.git` nyasar di home
   (peringatan izin `Recent/`, `SendTo/`, …) — tidak berbahaya untuk deploy, lihat [[reference_stray_git_home]].
 
+**Masukan rapat 5 Okt 2026 (dibaca 11 Okt dari `Downloads\Transkrip_Project_kukuh.md` — transkrip Whisper, dokumen
+internal, belum didengar ulang manusia; ringkasan proyek di `.claude/ai_context/raw_materials/2026-10-05_masukan-rapat.md`).**
+Seorang pejabat keuangan (punya akses aplikasi keuangan Perwakilan lewat VPN) memberi arahan kepada tim yang termasuk Aldo:
+prototipe "live monitoring" realisasi anggaran Perwakilan, dimulai dari BKU, uji coba 2–3 bulan; sekaligus bahan tesis
+salah satu peserta ("Mas Kado/Koko" di transkrip kemungkinan "Mas Kukuh" sesuai nama file — tebakan).
+- **Sudah dipenuhi PANTAS:** baca ekspor BKU/BKT, kurs SP2D (JISDOR T-2), pengakuan estimasi→SP2D GUP (D8), realisasi
+  rupiah, sisa pagu + prediksi kekurangan (Proyeksi = calon instrumen tesis), samaran, daring di balik Access.
+- **Celah (urut usulan v1.1):** (1) laporan realisasi bulanan **per akun** format template "realisasi dolar" (Pagu |
+  SPB/SP2D s.d. bulan lalu | sisa | bulan berjalan dari BKU | sisa) — butuh pagu per akun; (2) status belum/sudah SP2D
+  per transaksi + koreksi kurs saat SP2D; (3) kurs estimasi SP2D manual (rapat: Rp17.000) selain JISDOR; (4) sumber dana
+  **RM vs PNBP**; (5) **valuta selain US$** — contoh berikutnya Singapura, sedangkan parser melewati transaksi non-US$
+  (sampel Washington menyembunyikan celah ini karena mata uang setempat = US$; JISDOR hanya USD → perlu kurs lain);
+  (6) multi-satker, belakangan.
+- **Tidak disarankan agent:** kode satker asli sebagai samaran (usul rapat; [Likely] dapat dilacak dari dokumen anggaran
+  publik → tetap "Satker A"); data mentah di GitHub/spreadsheet daring; tarik otomatis dengan akses/sandi orang lain;
+  tampilan bersama yang menyimpan data di server luar (pejabat itu sendiri menyebut dasbor serupa dipersoalkan unit TI
+  pusat); form input harian (dobel dengan aplikasi keuangan).
+- **Butuh untuk mulai v1.1:** contoh ekspor laporan realisasi (satu satker, satu bulan, RM + PNBP) dan BKU Singapura
+  satu bulan — lewat pemilik akses, gitignored. **Status: usulan dikirim ke Aldo 11 Okt, menunggu setuju.**
+
 **Masih terbuka:** pagu DIPA nyata; kurs asumsi khusus DIPA (sementara 16.500); simpan data di peramban
 (tidak); nama PANTAS.
 
