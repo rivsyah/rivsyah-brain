@@ -66,12 +66,13 @@ KTI kedua tidak boleh menyalin naskah ini.
 2. Konfirmasi maksud "untuk Dedi".
 3. Cek uraian proses lama sesuai pengamatannya; putuskan pengungkapan AI + surat pernyataan butir b.
 4. Opsional: tangkapan layar aplikasi berdata contoh; nama aplikasi tingkat Kementerian (mis. tanpa "BUP").
-5. **11 Okt 2026 — KTI SIPDLN tertinggal dari aplikasi (arah aman)** ([[project-sipdln-bup]]): Tabel 9 kini
-   11 penuh / 2 sebagian / 0 belum (naskah: 9/2/2), uji 90 (naskah: 72); "konversi jam" dan "100% transit"
-   sudah diterapkan, "uang harian khusus" menjadi sebagian (rawat inap saja). Kode itu di-commit `2e1b1af` dan
-   **live** di https://sipdln.rivsyah.dev sejak 11 Okt (KTI sengaja tidak menyebut URL/Cloudflare).
-   **Label baris "Batas tiket 134 kota (PMK 32/2025 Lampiran II angka 18)" kurang tepat:** Pasal 3 ayat (2)
-   PMK 32/2025 — Lampiran II bersifat "dapat dilampaui", bukan batas tertinggi. Usul ganti "Acuan tiket".
-   Perbarui naskah hanya bila Aldo minta.
+5. ~~KTI SIPDLN tertinggal dari aplikasi~~ **DIPERBARUI 11 Okt 2026** (Aldo: "Continue pending matters"):
+   Tabel 9 kini 11 penuh / 2 sebagian (konversi jam + 100% transit "Diterapkan"; uang harian khusus "Sebagian"
+   = rawat inap saja); baris tiket → "Acuan tiket 134 kota, bersifat dapat dilampaui" (PMK 32/2025 Ps 3 ayat 2);
+   uji 90 (89 lulus, 1 dilewati, 486 asersi, uji ulang 11 Okt); paragraf baris hari menjelaskan Pasal 8(4)
+   per arah (tafsir, perlu konfirmasi PPK), 5a, rawat inap; keterbatasan + kesimpulan + rekomendasi + tahap 1
+   diselaraskan; "repositori dan CI belum aktif" → sudah aktif. Tetap 32 hlm; verify 16/16 (angka kunci di
+   `verify.py` kini 90/486), verify-pair 0 kalimat kembar, draf Dedi diselaraskan (7/7). Versi 4 Okt
+   dipindah ke `arsip - versi 4 Okt\`. KTI SIGAP tidak diubah. Tetap tanpa URL/Cloudflare.
 
 Terkait: [[project-sigap-bup]], [[project-sipdln-bup]], [[reference-kti-percepatan-pangkat]], [[user-jabatan-kemlu]], [[reference-office-render]].
