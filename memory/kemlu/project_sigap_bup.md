@@ -630,6 +630,32 @@ Aldo: "Continue pending matters". Dikerjakan tanpa keputusan baru:
   (org pindah, commit sama).
 - Tes 142/142, tsc 0, ESLint 0, Pint lolos.
 
+### 12 Okt 2026 — fitur baru RPD tahunan (PA-05) (`8ca6ba6`, `0823111`)
+
+Permintaan Aldo: "menu untuk input rincian proyeksi RPD Tahunan Anggaran berjalan dari januari - desember".
+- **Menu** "Rencana Penarikan Dana" di grup 02 (setelah MP PNBP), rute `/rpd`, META PA-05, ikon `calendar` (sudah ada).
+- **Data**: tabel `rencana_penarikan_dana` (FK `mata_anggaran_id`, `tahun`, `b01..b12` bigint, `diubah_oleh_user_id`,
+  unik `mata_anggaran_id+tahun`). Model `RencanaPenarikanDana` (`KOLOM`, `bulan()`). Tahun = DIPA aktif.
+- **Gerbang**: `RpdController::store` — Σ 12 bulan ≤ pagu MAK, di dalam `DB::transaction` + `lockForUpdate` baris MAK;
+  audit `create`/`update` dengan nilai sebelum→sesudah. Kewenangan `rpd.ubah` = operator, PPK, KPA (bendahara/PPSPM 403).
+- **Layar**: 4 tile (pagu, Σ RPD + MAK belum sesuai, RPD kumulatif s.d. bulan berjalan, realisasi + deviasi), profil
+  bulanan (bulan berjalan amber), tabel per MAK 12 kolom (sticky), panel isian 12 bulan + "Sebar rata pagu" / "Pola khas
+  satker" / "Kosongkan". **Bulan berjalan = tanggal hari ini** (`RpdController::bulanBerjalan`), bukan `Konsep::HARI_INI`
+  (15 Jul): realisasi dummy berasal dari xlsx 27 Sep, jadi pakai Juli memberi deviasi palsu +45%; dengan Oktober −5,2%.
+- **Realisasi bulanan per MAK TIDAK tersedia**: permintaan bayar SP2D dummy hanya ±Rp12 M dari realisasi Rp263 M
+  (LS tidak tercatat per bulan) → pembanding hanya kumulatif s.d. hari ini.
+- **RpdSeeder** (dummy saja, pola 3/5/7/8/9/10/9/9/9/9/10/12 %, Σ = pagu, satu INSERT massal, tidak menimpa).
+- **Tes 149** (142 + 7 RPD; `/rpd` masuk smoke test LayarTest). Verifikasi visual lokal (DB dummy): simpan via UI → toast.
+- **Neon tidak terjangkau dari mesin ini (12 Okt)**: TCP 5432 terbuka, tetapi TLS diputus ("SSL SYSCALL error: Connection
+  reset by peer", libpq 16.14, server tetap PG 17.11) — padahal 26–29 Sep jalan. Dugaan jaringan lokal (ISP/VPN/antivirus).
+  [Guessing] Karena itu **container kini menjalankan `migrate --force --isolated` + `RpdSeeder` saat menyala** (Dockerfile
+  CMD, `|| true` agar start tidak gagal; galat ke log Observability). Neon MCP tetap baca-saja untuk verifikasi.
+- **TAYANG 12 Okt 13.52 WIB** (deploy `0823111`): `/rpd` tamu → 302 login; Neon (MCP): migrasi 12 (terakhir
+  `2026_10_12_000001_create_rencana_penarikan_dana_table`, dibuat container saat start), 131 baris RPD TA 2026 untuk 131 MAK,
+  0 baris yang Σ ≠ pagu. livecheck 12/13 — satu gagal = DoH/1.1.1.1 timeout dari mesin ini (jaringan lokal), bukan situs.
+- Lanjutan yang wajar (BELUM, perlu Aldo): ganti `Konsep::TARGET_SERAPAN` (58,3% tetap, BR-PFM-4 sebagian) dengan RPD
+  kumulatif di Dashboard/Eksekutif → deviasi halaman III DIPA ala IKPA.
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design
