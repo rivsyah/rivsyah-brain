@@ -277,3 +277,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-12T03:04Z  kemlu 12 Okt: dokumen Pakaian Dinas ASN Tahap II diperbarui ke data 12 Okt (158 pegawai, 98L/60P, 52 satker, 316 kemeja; IDP 3/2, Itwil II 1/0 baru); HPS Rp110.489.400; folder Tahap II ditimpa, verify 176/0.
 - 2026-10-12T03:07Z  Tesis Erna: skrip Google Apps Script pembuat Google Form kuesioner (kriteria bercabang, dropdown 132 Perwakilan, 4 grid Likert, spreadsheet jawaban) -> Thesis Teh Erna\Kuesioner_GoogleForm_AppsScript.gs + ~/dev/kemlu/tesis-erna. Belum dijalankan; harus di akun Google Erna.
 - 2026-10-12T06:25Z  kemlu PANTAS 12 Okt: tombol ciutkan menu samping (permintaan Aldo, ikon panel) — commit cb42d16, pilihan tersimpan di localStorage pantas.menu.ciut, tersembunyi di layar <=1080 px; deploy + gate + livetest LOLOS.
+- 2026-10-12T06:29Z  kemlu PANTAS 12 Okt: tombol ciutkan menu dipindah ke atas samping judul PANTAS (permintaan Aldo); deploy + livetest.
