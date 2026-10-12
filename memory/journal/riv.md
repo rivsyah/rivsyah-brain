@@ -274,3 +274,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-11T07:21Z  SIGAP BUP 11 Okt: utang mutu 563199d - ESLint 0 (linter CI hijau), PHPStan 161->41 (tipe relasi model + request->integer), composer php ^8.4.1; tes 142/142; generator dummy identik. Sisa 41 PHPStan dicatat di kartu. Deploy berjalan.
 - 2026-10-11T07:24Z  SIGAP BUP 11 Okt: 563199d CI semua hijau (linter pertama kali lulus, ci 8.4/8.5, postgres 17) + deploy sukses; livecheck sesudahnya.
 - 2026-10-11T08:45Z  personal: RAB 11 Okt — opsi Cerita Rasa Glasshouse 250 pax Menu Rasa + 2 stall: venue+makan nett Rp137,2 jt, total nikah Rp240,8 jt. Verify 1.123 rumus lulus.
+- 2026-10-12T03:04Z  kemlu 12 Okt: dokumen Pakaian Dinas ASN Tahap II diperbarui ke data 12 Okt (158 pegawai, 98L/60P, 52 satker, 316 kemeja; IDP 3/2, Itwil II 1/0 baru); HPS Rp110.489.400; folder Tahap II ditimpa, verify 176/0.

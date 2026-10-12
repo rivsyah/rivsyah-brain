@@ -1,6 +1,6 @@
 ---
 name: project-evaluasi-pakaian-dinas-asn
-description: "Pengadaan pakaian dinas (kemeja) ASN Kemlu TA 2026: Tahap I RUP 67117950 PT Rimonz Rp948,3 jt (63,5% HPS), 3.302 kemeja diperbaiki; rapat evaluasi 6 Okt (pointers 8 hlm + deck 17 slide). TAHAP II: dokumen KAK/RAB/HPS/SSUK+SSKK dibuat 10 Okt 2026 untuk 154 pegawai = 308 kemeja, HPS Rp107.692.200 (median 5 listing Katalog Rp315.000 + PPN), mini kompetisi oleh Pejabat Pengadaan, BAST <= 4 Des 2026"
+description: "Pengadaan pakaian dinas (kemeja) ASN Kemlu TA 2026: Tahap I RUP 67117950 PT Rimonz Rp948,3 jt (63,5% HPS), 3.302 kemeja diperbaiki; rapat evaluasi 6 Okt (pointers 8 hlm + deck 17 slide). TAHAP II: dokumen KAK/RAB/HPS/SSUK+SSKK dibuat 10 Okt 2026, diperbarui 12 Okt: 158 pegawai = 316 kemeja, HPS Rp110.489.400 (median 5 listing Katalog Rp315.000 + PPN), mini kompetisi oleh Pejabat Pengadaan, BAST <= 4 Des 2026"
 metadata:
   type: project
 ---
@@ -49,6 +49,8 @@ Pinggang kemeja wanita sempit (beda dari sampel); lengan terlalu panjang di ukur
 kerah semua kemeja tidak tegas/menggantung (perlu bahan setara kerah kemeja pejabat).
 
 ## Tahap II — dokumen pengadaan (10 Okt 2026)
+
+**Pembaruan 12 Okt 2026:** data per 12 Okt 10.00 (`Downloads\DATA PENGADAAN PDASN KEMENLU TA 2026 TAHAP 2.xlsx`) = **158 pegawai (98 pria, 60 wanita), 52 satker, 316 kemeja**; berubah: Setditjen IDP 1/1 -> 3/2, Itwil II baru 1/0. HPS = 316 x Rp315.000 + PPN = **Rp110.489.400**. Dokumen di folder Tahap II ditimpa (verify 176/0). Angka 154/308/Rp107.692.200 di bawah = versi 10 Okt.
 
 Permintaan Aldo 10 Okt: "buat dokumen KAK/Spektek, RAB, HPS, SSUK SSKK untuk pengadaan batch 2".
 - **Data berubah:** berkas Tahap 2 diperbarui 10 Okt 15.25 (dipindah ke `Downloads\MOFA\BUP\Rapat Evaluasi Pakaian
