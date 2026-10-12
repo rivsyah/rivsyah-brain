@@ -210,7 +210,7 @@ Kirim file dibaca sebagai "ya" untuk v1.1 + izin commit yang ditawarkan bersaman
   skrip pemeriksa lewat file.
 
 **Masih terbuka (per 11 Okt, sesudah v1.1):** ~~pagu DIPA nyata~~ (kini dari laporan Realisasi Program); kurs asumsi
-khusus DIPA (sementara 16.500); siapa lagi yang boleh masuk Access (email tim); banyak satker sekaligus (usul rapat,
+khusus DIPA (sementara 16.500); ~~siapa lagi yang boleh masuk Access~~ (12 Okt: Kukuh ditambahkan, kukuh.panuntun23@gmail.com — kebijakan "PANTAS - hanya pemilik" kini 2 email; jalankan `access` dengan ACCESS_EMAIL berisi SEMUA alamat, dipisah koma, karena daftar baru menggantikan yang lama); banyak satker sekaligus (usul rapat,
 belum diminta); laju proyeksi mana yang dipakai untuk dilaporkan (3 vs 6 bulan); nama PANTAS; simpan data di
 peramban (tidak). Uji layar ponsel 390 px 11 Okt: 7 tampilan tanpa geser halaman, tabel bergeser di dalam kotaknya.
 
