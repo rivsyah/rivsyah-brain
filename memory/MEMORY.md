@@ -16,7 +16,7 @@
   `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Bus Kemlu dan Innova Zenix\`. Zenix siap (Rp609,2 jt = proyeksi). Bus
   TERHAMBAT: HPS Rp1,317 M > SBM bus sedang Rp1,1 M, listing DGMI tidak aktif, inden 90-120 hr. Menunggu Aldo: PPK (Dina A?)
   + NIP, keputusan bus. [Bus + Zenix 2026](kemlu/project_pengadaan_bus_zenix_2026.md).
-- 🟡 10 Okt 2026 — **Pakaian dinas ASN Tahap II: dokumen KAK/RAB/HPS/SSUK+SSKK siap teken** (RUP 67117950, pagu Rp500 jt; 158 pegawai = 316 kemeja, HPS Rp110.489.400; versi suntingan Aldo = master, mini kompetisi oleh PP, BAST <= 4 Des) di `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Seragam ASN Kemlu\Pengadaan Pakaian Dinas ASN Kemlu Tahap II\`. Sisa: Kode RUP, e-mail PPK, daftar nominatif final. Rapat evaluasi 6 Okt: hasil belum dicatat. [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md).
+- 🟡 10 Okt 2026 — **Pakaian dinas ASN Tahap II: dokumen KAK/RAB/HPS/SSUK+SSKK siap teken** (158 pegawai = 316 kemeja, HPS Rp110.489.400; versi suntingan Aldo = master, mini kompetisi oleh PP, BAST <= 4 Des) di `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Seragam ASN Kemlu\Pengadaan Pakaian Dinas ASN Kemlu Tahap II\`. Sisa: Kode RUP, e-mail PPK, daftar nominatif final. Rapat evaluasi 6 Okt: hasil belum dicatat. [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md).
 - 🟡 5 Okt 2026 14.00 — **Rapat Kemendag (Biro Keuangan) soal PBJ LN + uang muka pameran lintas TA.** Pegangan:
   `Pointers_Rapat_Rivaldo.docx` (suntingan Aldo) + deck v2 12 slide yang mengikutinya (5 Okt 11.24). Sesudah rapat:
   catat kesimpulannya di kartu. [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md).
