@@ -33,8 +33,13 @@ Permintaan Aldo 14 Okt 2026: "buatkan dokumen KAK/Spektek, RAB, HPS, SSUK SSKK" 
 - Perpol 4/2020 Ps 17 jo. Perpol 1/2023 (BN 2023/70) ganti lampiran pakaian Satpam; atasan krem, celana cokelat tua [Likely].
 - > Rp200 jt: mini kompetisi oleh Pokja (Perlem LKPP 2/2026 Ps 17(2)b), Jaminan Pelaksanaan 5% (Perpres Ps 33(1)).
 
+## Anggaran (arahan Aldo 15 Okt 2026)
+Kode RUP **67117950**, pagu **Rp500.000.000**, COA **WA.6023.EBA.994.002.0H.521119** — sudah masuk semua dokumen (rebuild
+verify 146/0). Catatan: 67117950 = RUP Pakaian Dinas ASN Tahap I (pagu Rp1.877.040.000, sudah berkontrak Rimonz) di
+[[project_evaluasi_pakaian_dinas_asn]] -> pastikan RUP direvisi di SIRUP; Katalog menolak RUP yang tidak cocok.
+
 ## Isian kuning / terbuka
-Akun + subkomponen + pagu + Kode RUP (asumsi akun 521119, RO EBA.994.002 -> PPK Charles Bob Ivan; cek), e-mail PPK (SSKK 5),
+PPK Charles Bob Ivan (RO 002.H), e-mail PPK (SSKK 5),
 SP paling lambat 4 Nov 2026 (30 hari kalender, BAST <= 4 Des). Cek kontrak alih daya Satpam tidak sudah memuat seragam.
 Daftar personel + ukuran, contoh/desain atribut dari Bag. Pengamanan. Selisih 147 vs 148, siapa 27 penerima olahraga tambahan.
 Terkait: [[reference_pejabat_bup]], [[project_evaluasi_pakaian_dinas_asn]], [[reference_katalog_v6_sp_batal]], [[project_ht_poc_satpam]].
