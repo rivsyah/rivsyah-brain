@@ -1,6 +1,6 @@
 ---
 name: project-seragam-satpam-2026
-description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp305.706.400 (median Katalog), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%; paket B (PDL Sus) melampaui SBM per setel -> perlu keputusan"
+description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp299.743.000 (15 Okt, paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
 metadata:
   type: project
 ---
@@ -28,8 +28,12 @@ Permintaan Aldo 14 Okt 2026: "buatkan dokumen KAK/Spektek, RAB, HPS, SSUK SSKK" 
 - PMK 32/2025 Lamp. I angka 37: Pakaian Kerja Satpam DKI Rp1.585.000/setel; huruf f: **sudah termasuk perlengkapan** (sepatu,
   PDL, kopel, ikat pinggang, tali kur+peluit, kaos kaki, topi, kaos security, atribut lain), maks 2 setel/tahun, selektif.
   Pajak tidak disebut -> diperlakukan batas termasuk PPN.
-- Kit A per personel incl PPN Rp1.571.427 (lolos). **Kit B Rp1,75 jt > SBM** -> opsi: baton/borgol/rompi dikeluarkan sebagai
-  peralatan (tanya Biro Keuangan), hitung 2 setel, atau turunkan spek.
+- Kit A per personel incl PPN Rp1.571.427 (lolos). Kit B median Rp1.746.030 > SBM. **15 Okt, arahan Aldo "maksimal SBM":**
+  seragam PDL Sus 558.500 -> **476.300**, sepatu PDL Sus 427.900 -> **364.900** (sebelum PPN; turun proporsional, rumus MIN di
+  Kertas Kerja HPS; barang bersama kelompok A tetap median) -> kit B Rp1.584.858. HPS baru **Rp299.743.000** (B Rp52.413.600).
+  Builder: harga.py BATAS_SBM_IDS. Diterapkan langsung ke berkas suntingan Aldo (KAK 11.07 + xlsx 09.58; 15 sel via Excel COM,
+  total+terbilang KAK via XML). Aldo menghapus PDF dan salinan INAPROC dari folder; tidak dibuat ulang. Risiko: harga di bawah
+  median -> mini kompetisi bisa sepi.
 - Perpol 4/2020 Ps 17 jo. Perpol 1/2023 (BN 2023/70) ganti lampiran pakaian Satpam; atasan krem, celana cokelat tua [Likely].
 - > Rp200 jt: mini kompetisi oleh Pokja (Perlem LKPP 2/2026 Ps 17(2)b), Jaminan Pelaksanaan 5% (Perpres Ps 33(1)).
 
