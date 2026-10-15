@@ -1,6 +1,6 @@
 ---
 name: project-langganan-media-cetak
-description: "Paket Langganan Media Cetak (Kompas, Jakarta Post, Tempo, PRISMA) Setjen Kemlu: KAK + RAB/HPS Okt–Des 2026, RAB Rp18.797.850, pagu paket Rp50 jt (Aldo 28 Sep); nama PPK dibetulkan jadi Charles Bob Ivan 5 Okt — set teken 28 Sep masih nama lama"
+description: "Paket Langganan Media Cetak (Kompas, Jakarta Post, Tempo, PRISMA) Setjen Kemlu: TERKINI = revisi Nov–Des 2026 (15 Okt), 30 Eks/Bln, RAB = HPS Rp12.531.900, pagu paket Rp50 jt; versi Okt–Des Rp18.797.850 disimpan; PPK Charles Bob Ivan"
 metadata:
   type: project
 ---
@@ -11,6 +11,13 @@ Barang, Pengadaan Langsung, akun 6023.EBA.994.002.H.521111 "Penyediaan Surat Kab
 Penyedia paket bulanan sebelumnya: CV. Milan Sentosa.
 
 ## File (mesin riv, `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\`)
+
+- **TERKINI (15 Okt 2026, atas arahan Aldo): Nov–Des 2026.** Empat berkas `... Nov-Des 2026` (.xlsx, .docx, dan PDF
+  keduanya) di `Pengadaan Surat Kabar Kesekjenan\` — folder yang benar. Dibangun dari berkas Okt-Des (tidak disentuh).
+  3/5/4/3 eks x 2 bln = 6/10/8/6 Eks/Bln (30). Nilai Dasar Rp11.290.000 + PPN Rp1.241.900 = RAB = HPS **Rp12.531.900**
+  (sudah bulat ratusan). HPS periode 1 Nov s.d. 31 Des 2026 (2 bulan). Tanggal ttd "September" → "......... Oktober 2026".
+  KAK hasil Word 28 Sep terpecah per kata (run per kata) — edit per run dengan cek konteks paragraf. PDF KAK lewat
+  Word `SaveAs([ref],[ref]17)`, PDF RAB/HPS lewat Excel per sheet + gabung PyMuPDF.
 
 - **Terkini (Aldo menata ulang folder 28 Sep 2026):**
   - `Pengadaan Surat Kabar Kesekjenan\RAB dan HPS - Langganan Media Cetak Setjen Kemlu Okt-Des 2026.xlsx`
