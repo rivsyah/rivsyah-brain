@@ -1,6 +1,6 @@
 ---
 name: Materi Akuntansi Edisi 2 (Riv's Journey)
-description: "11 Okt 2026 PAUSE: tulis ulang 8 PDF materi akuntansi (keuangan/manajemen/korporat) jadi Edisi 2 = 6 PDF (Panduan, Dasar 9 bab, Menengah 13, Lanjut 19, Bank Soal, Daftar Koreksi); builder C:\\Users\\rivsy\\dev\\personal\\materi-akuntansi (mesin riv); 8 berkas selesai & lulus gerbang, sisanya belum"
+description: "SELESAI 18 Okt 2026: 8 PDF akuntansi lama -> Edisi 2 = 6 PDF (Panduan 83 hlm, Dasar 294, Menengah 365, Lanjut 525, Bank Soal 195, Koreksi 56) di folder materi\\Edisi 2 (Okt 2026); builder C:\\Users\\rivsy\\dev\\personal\\materi-akuntansi (mesin riv)"
 metadata:
   type: project
 ---
@@ -29,23 +29,13 @@ belajar dan materi belajar ini dari tingkat beginner, intermediate, dan advance"
 - `build.py` (gerbang isi dulu, lalu 2 pass Edge untuk nomor halaman daftar isi), `tools/verify_content.py`,
   `verify_pdf.py`, `tools/compile_koreksi.py` (audit/*.md → Buku 05), `sumber/*.txt` teks PDF lama.
 
-## Status PAUSE (11 Okt 2026, ±10.35 WIB — Aldo: "pause")
+## Status SELESAI (18 Okt 2026)
 
-- 13 agen dihentikan. **Selesai & lulus gerbang (0 ERROR/0 WARN):** Dasar Bab 1; Menengah Bab 1, 10, 11;
-  Lanjut Bab 1, 13, 17; Bank Soal Paket D1. Daftar rujukan `zz-rujukan.md` Dasar/Menengah/Lanjut.
-- **Belum:** Dasar Bab 2–9 + Lampiran A + `_pengantar.md`; Menengah Bab 2–9, 12–13 + `_pengantar.md`;
-  Lanjut Bab 2–12, 14–16, 18–19 + `_pengantar.md`; seluruh Panduan (12 bagian); Bank Soal bagian01, D2, D3,
-  M1–M3, L1–L3; semua `audit/A*.md` (masih kosong); Buku 05; build + QA.
-- Hitungan sebagian bab yang belum ditulis sudah ada di `out/scratch/<KODE>/` (A02 Bab 5–8, A04 Bab 5–9,
-  A07 Bab 5–6, A08 Bab 7–8, A09 Bab 9, A10 Bab 13, A11 Bab 17).
-
-## Melanjutkan
-
-1. Luncurkan ulang agen per baris tugas PLAN.md untuk berkas yang belum ada (prompt sama; minta pakai
-   `out/scratch/<KODE>/` yang sudah ada; minta audit juga mencakup bab yang sudah selesai).
-2. `python -I tools/compile_koreksi.py` → `python -I build.py` → `python -I verify_pdf.py --png` → QA visual.
-3. Salin 6 PDF ke subfolder baru di folder materi; tanyakan Aldo apakah 8 PDF lama dipindah ke arsip.
-
+- 6 PDF di `C:\Users\rivsy\Downloads\Riv's Journey\Materi Bahan Belajar\Financial, Managerial Accounting, Corporate Accounting\Edisi 2 (Okt 2026)\` (mesin riv): Panduan 83 hlm, Dasar 294, Menengah 365, Lanjut 525, Bank Soal 195 (213 soal), Daftar Koreksi 56 (313 koreksi, 25 berdampak tinggi). 8 PDF lama tidak diubah.
+- Gerbang: 77 berkas isi 0 ERROR/0 WARN; verify_pdf 6/6 lulus (daftar isi = tujuan tautan, soal = jawaban).
+- Keputusan agen A12: jadwal memakai total ±316 jam (±26/13/9 jam/minggu untuk 12/24/36 minggu), bukan 12/6/4 jam di PLAN — mengikuti perkiraan jam per bab.
+- ⚠ OPEN: banyak ketentuan IAS/IFRS ditulis tanpa cek teks resmi PSAK (tercatat di audit/*.md "Catatan lain"); 8 PDF lama mau diarsip?
+- Agen bisa berhenti di tengah karena token OAuth kedaluwarsa (401) — luncurkan ulang untuk berkas yang belum ada.
 ## Fakta kunci (dicek 11 Okt 2026; rinci di FACTS.md)
 
 Penomoran PSAK/ISAK baru efektif 1 Jan 2024 (1xx↔IFRS, 2xx↔IAS); KSPKI 4 pilar efektif 2024; SAK EP efektif
