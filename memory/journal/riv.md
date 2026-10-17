@@ -308,3 +308,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T14:41Z  SIGAP BUP 17 Okt: menu ringkas f9cc374 - 4 layar ilustrasi/simulasi disembunyikan, BAS jadi tab Referensi, Ekspor jadi tombol Unduh CSV, Kontrak/Karwas -> Kontrak; 27->21 layar, 7->6 grup; tes 152; deploy berjalan. b645e5f (target RPD) sudah tayang.
 - 2026-10-17T14:41Z  hedge-desk 01 dijalankan: uji jangkauan dari Worker CF sementara (dihapus), D4-D15 locked (Supabase Free v1/Pro sebelum live, Alpaca, Indodax), build file 02-04 ditulis; temuan: CLOUDFLARE_ACCOUNT_ID di env.db tidak cocok dengan token
 - 2026-10-17T14:45Z  SIGAP BUP 17 Okt: f9cc374 (menu ringkas) TAYANG; CI hijau.
+- 2026-10-17T14:47Z  ukpbj-nextjs: 7 peran (+PPK, Kasubbag->2 Ketua Tim [asumsi]), ambang Perwakilan Lampiran A Permenlu 3/2023 (17 wilayah USD), PL/PnL/e-purch dibatasi ambang, noise 23->~14 grafik; build+7 peran diverifikasi
