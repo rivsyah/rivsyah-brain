@@ -1,6 +1,6 @@
 ---
 name: project-pco-retreat-dham-2026
-description: "Pengadaan Jasa PCO Retreat Dewan HAM PBB (PTRI Jenewa, Sofitel Nusa Dua 18-21 Okt 2026): KAK/Spektek + RAB/HPS dibuat 17 Okt 2026; nilai estimasi Rp197 jt, HPS Rp196.390.000, Pengadaan Langsung"
+description: "Pengadaan Jasa PCO Retreat Dewan HAM PBB (PTRI Jenewa, Sofitel Nusa Dua 18-21 Okt 2026): KAK/Spektek + RAB/HPS 17 Okt 2026; TANPA transportasi; RAB = HPS Rp198.471.000 (batas Rp199 jt), Pengadaan Langsung"
 metadata:
   type: project
 ---
@@ -16,7 +16,11 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
 - Konteks kegiatan: `Downloads\Retreat Dewan HAM\` (ND 53035/PL dan 53182/TI Dit. HAM dan Migrasi ke BUP; tema
   "20 Years, One Council..."; narahubung EO Putu Arik). Aldo ikut ke Bali 17-22 Okt.
 
-## Angka
+## Angka (TERKINI, revisi Aldo 17 Okt sore)
+- Aldo: **transportasi dibuang** (Hiace, Innova, bus) karena ada paket terpisah Pengadaan Sewa Kendaraan; **RAB maks Rp199 jt, HPS menyesuaikan RAB**.
+- Kini RAB = HPS = Rp198.471.552 -> dibulatkan **Rp198.471.000** (18 item, kelompok A-E). Volume dikembalikan: LO 6x4, foto/video 4 hari, ekskursi 80 org, show mgmt 4 hari (+gladi 17 Okt). Verify 75/0.
+
+## Angka versi pertama (diganti)
 - RAB Rp196.551.030 (= HPS satuan dibulatkan ke atas ribuan). HPS Rp196.390.302 -> dibulatkan **Rp196.390.000**.
 - HPS = median sumber (survei daring 17 Okt + referensi kontrak PCO IAF ke-2 TA 2024), PPN 12% x 11/12.
 - Survei awal Rp222 jt > pagu -> volume dipangkas (foto/video 3 hari, LO 5 org, ekskursi 50 org, Innova 6 unit-hari);
