@@ -311,3 +311,6 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T14:47Z  ukpbj-nextjs: 7 peran (+PPK, Kasubbag->2 Ketua Tim [asumsi]), ambang Perwakilan Lampiran A Permenlu 3/2023 (17 wilayah USD), PL/PnL/e-purch dibatasi ambang, noise 23->~14 grafik; build+7 peran diverifikasi
 - 2026-10-17T15:13Z  CF materi: 17 Okt dilanjutkan lagi; 10 agen di-resume
 - 2026-10-17T15:14Z  GMAT: versi PDF 53 hlm dibuat (build_pdf.js + Chrome print-to-pdf), disalin ke Downloads\Riv's Journey\gmat-module
+- 2026-10-17T15:16Z  IB Edisi 2 dilanjutkan 17 Okt: Buku 00 build 47 hlm + verify.py LOLOS; perbaikan pencocokan outline (abaikan spasi). Agen Buku 01-04 jalan lagi.
+- 2026-10-17T15:20Z  SIGAP BUP 17 Okt: Eksekutif ringkas untuk pimpinan 4fa94ce - persona pimpinan (Eselon I, read-only), antrean = ringkasan + 5 terlama tanpa jenis batal, periode IKPA dinamis; tes 154; deploy berjalan.
+- 2026-10-17T15:25Z  SIGAP BUP 17 Okt: 4fa94ce (Eksekutif ringkas pimpinan) TAYANG; CI hijau.

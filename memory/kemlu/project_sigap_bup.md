@@ -676,6 +676,17 @@ Aldo bertanya menu mana yang noise; agent menyarankan, Aldo: "sesuaikan dan kerj
 - Laporan Realisasi ikut target RPD (terlewat di `b645e5f`). Tes 152.
 - **KTI SIGAP** menyebut 26 layar / 7 grup + modul 05 Tahap 3 — kini menu 21 layar / 6 grup (teks milik Aldo).
 
+### 17 Okt 2026 — Eksekutif ringkas untuk pimpinan (`4fa94ce`)
+
+Keputusan Aldo: "untuk tampilan KPA/Eselon 1/Eselon II dibuat tetap eksekutif ringkas informatif" → Eksekutif TIDAK
+digabung ke Dashboard.
+- Persona baru `pimpinan` ("Drs. Bambang S." · Pimpinan Eselon I · Ringkasan) di `Konsep::ROLES`: tanpa kapabilitas apa pun
+  (read-only, POST /rpd 403), beranda `/eksekutif`. Eselon II = persona KPA (Kepala Biro).
+- Persetujuan Menunggu: ringkasan `ringkasMenunggu` (total nilai, umur tertua, per jenis) + 5 TERLAMA (dulu 8 terbaru);
+  jenis `batal` (catatan pembatalan, mis. BATAL-2026-0001) dikeluarkan dari antrean Eksekutif. Demo: 54 menunggu.
+- Periode IKPA = bulan berjalan (dulu tetap "Juli 2026"). META eksekutif menyebut pimpinan + target RPD.
+- Umur antrean & kontrak jatuh tempo masih dihitung dari `HARI_INI` 15 Jul (celah lama). Tes 154.
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design
