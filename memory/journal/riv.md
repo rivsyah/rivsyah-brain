@@ -309,3 +309,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T14:41Z  hedge-desk 01 dijalankan: uji jangkauan dari Worker CF sementara (dihapus), D4-D15 locked (Supabase Free v1/Pro sebelum live, Alpaca, Indodax), build file 02-04 ditulis; temuan: CLOUDFLARE_ACCOUNT_ID di env.db tidak cocok dengan token
 - 2026-10-17T14:45Z  SIGAP BUP 17 Okt: f9cc374 (menu ringkas) TAYANG; CI hijau.
 - 2026-10-17T14:47Z  ukpbj-nextjs: 7 peran (+PPK, Kasubbag->2 Ketua Tim [asumsi]), ambang Perwakilan Lampiran A Permenlu 3/2023 (17 wilayah USD), PL/PnL/e-purch dibatasi ambang, noise 23->~14 grafik; build+7 peran diverifikasi
+- 2026-10-17T15:13Z  CF materi: 17 Okt dilanjutkan lagi; 10 agen di-resume
+- 2026-10-17T15:14Z  GMAT: versi PDF 53 hlm dibuat (build_pdf.js + Chrome print-to-pdf), disalin ke Downloads\Riv's Journey\gmat-module

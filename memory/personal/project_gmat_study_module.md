@@ -46,9 +46,9 @@ Bagian dari [[project_mba_us_roadmap]] (Wharton wajib GMAT/GRE; Columbia juga me
 - Tidak dicek ulang: skor berlaku 5 tahun [Kemungkinan besar]. Tabel persentil Focus tidak terbaca (halaman
   mba.com dirender JS), jadi tidak dipakai di modul.
 
-## ⚠ OPEN
+## Status
 
-- Aldo belum memilih: cukup HTML interaktif, atau juga versi PDF seperti materi CFA L1 / M&A
+- SELESAI 17 Okt: versi PDF 53 hlm A4 (materi + soal + kunci per level) di `C:SERSIVSYDOWNLOADSRIV'S JOURNEYGMAT-MODULEMODUL-BELAJAR-GMAT.PDF` (MESIN RIV); BUILDER `BUILD_PDF.JS` + CHROME `--PRINT-TO-PDF`; CEK 50 KUNCI + 3 SEKSI LATIHAN/KUNCI ADA.
   (`C:\Users\rivsy\dev\personal\cfa-l1-materi\`, `...\mna-learning-series\`, mesin riv).
 
 Terkait: [[project_mba_us_roadmap]].
