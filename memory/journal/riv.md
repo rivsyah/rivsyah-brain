@@ -316,3 +316,8 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T15:25Z  SIGAP BUP 17 Okt: 4fa94ce (Eksekutif ringkas pimpinan) TAYANG; CI hijau.
 - 2026-10-17T15:26Z  corporate-finance-materi: Tingkat Awal Bab 7-11 + Lampiran A (glosarium) + B (gen/awal_tabel.py) ditulis; checks/awal_b.py 38/38 lolos; figs/awal_b.py 7 SVG; verify awal-b LOLOS (69 hlm)
 - 2026-10-17T15:37Z  CFA L1 Edisi 2027 SELESAI 17 Okt: 8 PDF (887 hlm, 772 soal, gerbang 0 galat) disalin ke Downloads\Riv's Journey\Materi Bahan Belajar\CFA\Edisi 2027; berkas lama tidak diubah; kartu personal/project_cfa_l1_materi.md
+- 2026-10-17T15:37Z  corporate-finance-materi: bank soal Tingkat Awal selesai (src/awal-soal 01-12, checks/awal_soal.py; 196 soal, 102 PG kunci A/B/C/D ~25%; verify awal-soal LOLOS 103 hlm). Diselaraskan dengan materi final Bab 1-11.
+- 2026-10-17T15:42Z  FMI v2: kelima PDF terbangun, verify 46/46; review independen berjalan; kartu personal/project_fmi_materi_belajar + shared/reference/reference_uu_4_2026_p2sk ditambah
+- 2026-10-17T15:47Z  CF Lanjut bank soal: src/lanjut-soal 01–13 (199 soal) + checks/lanjut_soal.py ditulis di ~/dev/personal/corporate-finance-materi; verify lanjut-soal LOLOS (124/124 cek); Bab 9–12 masih berdasar blueprint (materi belum ada)
+- 2026-10-17T15:51Z  corporate-finance-materi: bank soal Tingkat Menengah selesai (src/menengah-soal 01-11 + 12-ujian, 213 soal, checks/menengah_soal.py 157 cek; verify menengah-soal LOLOS, PDF 113 hlm)
+- 2026-10-17T22:48Z  MnA series v2 SELESAI 18 Okt: 7 PDF di Riv's Journey/Materi Bahan Belajar/MnA (v1 -> arsip-v1-Juli-2026), verify 1.688+ cek lolos; kartu personal/project_mna_learning_series.md
