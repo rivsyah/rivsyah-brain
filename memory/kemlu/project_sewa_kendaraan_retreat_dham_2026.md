@@ -1,6 +1,6 @@
 ---
 name: project-sewa-kendaraan-retreat-dham-2026
-description: "Paket Sewa Kendaraan Kegiatan Retreat Dewan HAM (PTRI Jenewa, Bali 18-21 Okt 2026): KAK/Spektek + RAB/HPS dibuat 17 Okt 2026, HPS Rp69.930.000 (estimasi Aldo 70 jt); referensi = KAK Hotel Rapat Dewan HAM PTRI Jenewa"
+description: "Paket Sewa Kendaraan Kegiatan Retreat Dewan HAM (PTRI Jenewa, Bali 18-21 Okt 2026): KAK/Spektek + RAB/HPS dibuat 17 Okt 2026, HPS Rp89.910.000 (Aldo 17 Okt: naik ke 90 jt, akun 522141); referensi = KAK Hotel Rapat Dewan HAM PTRI Jenewa"
 metadata:
   type: project
 ---
@@ -16,14 +16,14 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - Builder `C:\Users\rivsy\dev\kemlu\sewa-kendaraan-dham-2026\` (data.py = satu-satunya sumber angka; README.txt).
 
 ## Angka (paket 12 jam/hari, termasuk pengemudi + BBM + tol + parkir, belum PPN)
-- Alphard 2 unit x 5 hr x Rp2.400.000 = 24 jt; Innova Zenix Hybrid 4 x 5 x Rp1.200.000 = 24 jt; Hiace Premio 2 x 5 x
-  Rp1.500.000 = 15 jt. DPP 63 jt + PPN 11% 6,93 jt = **Rp69.930.000**.
+- **Revisi 17 Okt 2026 (Aldo):** akun **522141 Belanja Sewa**; HPS jadi ±90 jt lewat tambah volume, harga satuan tetap median.
+- Alphard 3 unit x 5 hr x Rp2.400.000 = 36 jt; Innova Zenix Hybrid 5 x 5 x Rp1.200.000 = 30 jt; Hiace Premio 2 x 5 x
+  Rp1.500.000 = 15 jt. DPP 81 jt + PPN 11% 8,91 jt = **Rp89.910.000**. (Versi awal 2/4/2 unit = Rp69.930.000.)
 - Harga = median 3 situs operator Bali (diakses 17 Okt 2026; luxurycarhirebali, balinusatransport, baliprivatedrivers,
   gk-balitrans, mybalitrips), bulat ke ribuan ke bawah. Harga situs kebanyakan TIDAK termasuk tol/parkir.
 - Jadwal: unit 18-22 Okt, BAST 23 Okt 2026.
 
 ## Asumsi agent (belum dikonfirmasi Aldo)
 - Komposisi kendaraan (jenis, unit, hari) dirancang agent agar total <= 70 jt.
-- Akun 521219 ikut KAK hotel; akun BAS yang lebih tepat mungkin 522141 Belanja Sewa — cek POK.
 - Metode = Pengadaan Langsung (dasar hukum Perlem LKPP 12/2021 jo 4/2024), bukan dikecualikan (Perlem 5/2021) seperti hotel.
 - Tanggal teken "......... Oktober 2026". Dibuat 17 Okt = 1 hari sebelum kegiatan: kontrak harus ada sebelum 18 Okt.

@@ -297,3 +297,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T09:24Z  kemlu: draf BA Justifikasi Produk Impor Mac Studio M5 Ultra (4 hlm, verify 14/14) di Downloads\MOFA\Pejabat Pengadaan\Pengadaan Mac Studio M5 Ultra; builder ~/dev/kemlu/ba-justifikasi-impor-mac-studio; kartu project_ba_impor_mac_studio_2026
 - 2026-10-17T09:29Z  17 Okt 2026: KAK/Spektek + RAB/HPS Sewa Kendaraan Retreat Dewan HAM (PTRI Jenewa) dibuat, HPS Rp69.930.000, builder ~/dev/kemlu/sewa-kendaraan-dham-2026, berkas di MOFA\Pejabat Pengadaan\Pengadaan Sewa Kendaraan Retreat Dewan HAM
 - 2026-10-17T09:59Z  PCO Retreat Dewan HAM: KAK/Spektek + RAB/HPS (HPS Rp196.390.000, estimasi 197 jt) di MOFA\Pejabat Pengadaan\Pengadaan PCO Retreat Dewan HAM 2026; builder ~/dev/kemlu/pco-retreat-dham-2026 verify 81/0; pip install python-docx
+- 2026-10-17T14:10Z  17 Okt 2026: Sewa Kendaraan DHAM direvisi: akun 522141, HPS Rp89.910.000 (Alphard 3, Zenix 5, Hiace 2 @5 hr)
