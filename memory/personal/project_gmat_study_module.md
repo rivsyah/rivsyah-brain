@@ -48,7 +48,8 @@ Bagian dari [[project_mba_us_roadmap]] (Wharton wajib GMAT/GRE; Columbia juga me
 
 ## Status
 
-- SELESAI 17 Okt: versi PDF 53 hlm A4 (materi + soal + kunci per level) di `C:SERSIVSYDOWNLOADSRIV'S JOURNEYGMAT-MODULEMODUL-BELAJAR-GMAT.PDF` (MESIN RIV); BUILDER `BUILD_PDF.JS` + CHROME `--PRINT-TO-PDF`; CEK 50 KUNCI + 3 SEKSI LATIHAN/KUNCI ADA.
+- SELESAI 17 Okt: versi PDF 53 hlm A4 (materi + soal + kunci per level) di `C:\Users\rivsy\Downloads\Riv's Journey\gmat-module\Modul-Belajar-GMAT.pdf` (mesin riv). Builder `build_pdf.js` + Chrome `--print-to-pdf`. Cek: 50 kunci + 3 seksi latihan/kunci ada.
+IVSYDOWNLOADSRIV'S JOURNEYGMAT-MODULEMODUL-BELAJAR-GMAT.PDF` (MESIN RIV); BUILDER `BUILD_PDF.JS` + CHROME `--PRINT-TO-PDF`; CEK 50 KUNCI + 3 SEKSI LATIHAN/KUNCI ADA.
   (`C:\Users\rivsy\dev\personal\cfa-l1-materi\`, `...\mna-learning-series\`, mesin riv).
 
 Terkait: [[project_mba_us_roadmap]].
