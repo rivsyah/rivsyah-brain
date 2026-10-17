@@ -325,3 +325,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T23:12Z  CF materi SELESAI: 8 PDF (789 hlm, 626 soal, 216 contoh) verify LOLOS, disalin ke Riv's Journey/.../Corporate Finance/Edisi Revisi 2026
 - 2026-10-17T23:17Z  materi akuntansi Edisi 2 SELESAI: 6 PDF (Panduan 83, Dasar 294, Menengah 365, Lanjut 525, Bank Soal 195, Koreksi 56 hlm) di Riv's Journey\...\Edisi 2 (Okt 2026); gerbang isi 0 ERROR, verify_pdf 6/6
 - 2026-10-17T23:24Z  FMI v2 SELESAI: 11 temuan review independen diperbaiki, verify 46/46, 5 PDF disalin ke Riv's Journey\Materi Bahan Belajar\Financial Markets, v1 dipindah ke _arsip_v1
+- 2026-10-17T23:26Z  IB Edisi 2 SELESAI 18 Okt: 5 PDF (47/94/112/107/93 hlm) disalin ke Investment Banking/Edisi 2 (Okt 2026); verify LOLOS 5/5; kartu personal/project_ib_edisi2.md.
