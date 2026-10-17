@@ -314,3 +314,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T15:16Z  IB Edisi 2 dilanjutkan 17 Okt: Buku 00 build 47 hlm + verify.py LOLOS; perbaikan pencocokan outline (abaikan spasi). Agen Buku 01-04 jalan lagi.
 - 2026-10-17T15:20Z  SIGAP BUP 17 Okt: Eksekutif ringkas untuk pimpinan 4fa94ce - persona pimpinan (Eselon I, read-only), antrean = ringkasan + 5 terlama tanpa jenis batal, periode IKPA dinamis; tes 154; deploy berjalan.
 - 2026-10-17T15:25Z  SIGAP BUP 17 Okt: 4fa94ce (Eksekutif ringkas pimpinan) TAYANG; CI hijau.
+- 2026-10-17T15:26Z  corporate-finance-materi: Tingkat Awal Bab 7-11 + Lampiran A (glosarium) + B (gen/awal_tabel.py) ditulis; checks/awal_b.py 38/38 lolos; figs/awal_b.py 7 SVG; verify awal-b LOLOS (69 hlm)
+- 2026-10-17T15:37Z  CFA L1 Edisi 2027 SELESAI 17 Okt: 8 PDF (887 hlm, 772 soal, gerbang 0 galat) disalin ke Downloads\Riv's Journey\Materi Bahan Belajar\CFA\Edisi 2027; berkas lama tidak diubah; kartu personal/project_cfa_l1_materi.md

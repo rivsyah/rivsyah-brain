@@ -133,6 +133,7 @@
 ### AIgnited, personal, agent
 
 - [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
+- [Materi CFA L1 Edisi 2027](personal/project_cfa_l1_materi.md) — 8 PDF 887 hlm, 772 soal (gerbang 0 galat) di Riv's Journey\Materi Bahan Belajar\CFA\Edisi 2027; builder ~/dev/personal/cfa-l1-materi; bobot 2027 berubah (Quant 11–14%, Ethics 10–15%); rekomendasi window Mei 2027 belum diputuskan Aldo
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
 - [Hedge Desk](personal/project_hedge_desk.md) — penerus FFCC (pivot 17 Okt 2026): desk hedge fund + agent trading saham AS/crypto, paper v1, Cloudflare + Supabase; ~/dev/personal/hedge-desk; GRANDPLAN v1 disetujui, M0 selesai di sisi agent, blocker: WSL + akun owner
 - [Tesis MBA Wharton](personal/project_wharton_thesis.md) — draft 72 hlm "The Landlord That Rents" dari brief BLU Aset Kemlu; MBA Wharton TIDAK punya tesis (jalur: ISP REAL 8990 atau Lauder Master's Thesis 30–35 hlm); pipeline docx-js + Word PDF + gerbang 109 cek; 4 Okt: selaras brief ed.4 (226x akrual, gap Rp253,0M, renewal bersih 55%, kredit 7 gedung)
