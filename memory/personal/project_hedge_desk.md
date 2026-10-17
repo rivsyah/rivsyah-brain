@@ -24,3 +24,15 @@ metadata:
 - **Rec venue:** Alpaca (data + paper pembanding), Indodax (crypto). Live saham AS untuk WNI belum
   punya jalur API legal terverifikasi (Q10, v2).
 - **Next action:** owner setujui GRANDPLAN + jawab Q1–Q4 → build file 01 (verifikasi dari Cloudflare).
+
+- **17 Okt 2026 (lanjutan):** owner menyetujui GRANDPLAN → D4–D11 locked. Build file 01 dijalankan:
+  Worker sementara `hedge-desk-reach-probe` (colo NRT, sudah dihapus) — Alpaca REST 401-tanpa-key +
+  websocket IEX tersambung, Indodax ticker 200 + TAPI terjangkau, **Tokocrypto 403 dari Workers**,
+  Bybit/Binance testnet 200. Keputusan baru locked: D12 Supabase **Free** di v1 + backup R2 sejak
+  M1.0, Pro ($25) wajib sebelum live; D13 Alpaca data+paper; D14 Indodax (Tokocrypto dicoret);
+  D15 tanpa IP statis di v1. Biaya infra v1 ±$17,50/bln (CF $5 + ±$12,50 DO) + LLM.
+  Build file 02–04 (M1.0) ditulis. Belum ada commit/remote.
+- **Blocker milik owner:** WSL belum terpasang; `CLOUDFLARE_ACCOUNT_ID` di env.db SALAH (tidak cocok
+  dengan token → auth error 10000; wrangler jalan bila account id dideteksi dari token); upgrade
+  Workers Paid; akun Alpaca paper, key Indodax trade-only, project Supabase; `ANTHROPIC_API_KEY`
+  belum ada (dibutuhkan M1.4).

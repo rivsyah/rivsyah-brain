@@ -661,6 +661,21 @@ Permintaan Aldo: "menu untuk input rincian proyeksi RPD Tahunan Anggaran berjala
 - ~~Lanjutan yang wajar (BELUM, perlu Aldo): ganti `Konsep::TARGET_SERAPAN` (58,3% tetap, BR-PFM-4 sebagian) dengan RPD
   kumulatif di Dashboard/Eksekutif → deviasi halaman III DIPA ala IKPA.~~ SELESAI 17 Okt.
 
+### 17 Okt 2026 — menu ringkas 27 → 21 layar (`f9cc374`)
+
+Aldo bertanya menu mana yang noise; agent menyarankan, Aldo: "sesuaikan dan kerjakan".
+- **Disembunyikan dari NAV, rute tetap**: Persediaan, Logistik Diplomatik, Aset Tetap (data ilustrasi tetap di
+  `AsetController`, tidak tersambung SIMAK-BMN) + Rekonsiliasi SAKTI (simulasi). Grup 05 lama hilang; "Akuntansi &
+  Laporan Keuangan" = 05 (hanya Laporan Realisasi), Administrator = 06. Komentar penjelas di NAV `sigap-layout.tsx`.
+- **BAS → tab Referensi**: `pages/sigap/bas.tsx` dipindah ke `components/sigap/bas-isi.tsx`; `GET /bas` → redirect
+  `/referensi?tab=bas` (tab dibaca dari query); `AdminController::basRows()`; POST /bas tetap.
+- **Ekspor → tombol `TombolUnduh`** (lib/sigap.tsx) di Laporan Realisasi (ikut group), Permintaan Bayar (transaksi),
+  Pembagian Pagu PPK (alokasi), Kontrak, Jejak Audit; `/ekspor` → redirect `/laprealisasi`; `ekspor.tsx` +
+  `LaporanController::ekspor()` dihapus; `/ekspor/unduh` tetap.
+- "Kontrak / Karwas" → "Kontrak" (judul KB-02 ikut). Eksekutif sengaja TIDAK digabung (keputusan alur KPA, tunggu Aldo).
+- Laporan Realisasi ikut target RPD (terlewat di `b645e5f`). Tes 152.
+- **KTI SIGAP** menyebut 26 layar / 7 grup + modul 05 Tahap 3 — kini menu 21 layar / 6 grup (teks milik Aldo).
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design
