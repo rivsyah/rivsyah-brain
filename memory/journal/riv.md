@@ -300,3 +300,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T14:10Z  17 Okt 2026: Sewa Kendaraan DHAM direvisi: akun 522141, HPS Rp89.910.000 (Alphard 3, Zenix 5, Hiace 2 @5 hr)
 - 2026-10-17T14:13Z  kemlu PANTAS 17 Okt: cek login Access — daftar pengguna Access hanya rivsyah@gmail.com (login terakhir 11 Okt 12.23Z); Kukuh belum pernah login berhasil. Log permintaan akses 403 (token tanpa izin Access: Audit Logs Read).
 - 2026-10-17T14:17Z  FFCC pivot ke hedge-fund dashboard + trading agent: assessment & rencana diberikan; card personal/project_family_funds.md diperbarui (blocker Supabase NXDOMAIN, family-funds-next bukan repo git sendiri)
+- 2026-10-17T14:25Z  SIGAP BUP 17 Okt: target serapan Dashboard/Eksekutif kini RPD kumulatif s.d. bulan berjalan (b645e5f), fallback 58,3%; demo target 78,0% dev -4,0%; tes 151; deploy berjalan.
+- 2026-10-17T14:28Z  ukpbj-nextjs: npm audit fix (next 16.4.2, sharp 0.35.5, echarts 5.6.0), build+UI verified; sisa echarts v6 XSS moderat, belum git/Vercel; launch.json Herd re-add ukpbj-nextjs

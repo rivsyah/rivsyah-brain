@@ -653,8 +653,13 @@ Permintaan Aldo: "menu untuk input rincian proyeksi RPD Tahunan Anggaran berjala
 - **TAYANG 12 Okt 13.52 WIB** (deploy `0823111`): `/rpd` tamu → 302 login; Neon (MCP): migrasi 12 (terakhir
   `2026_10_12_000001_create_rencana_penarikan_dana_table`, dibuat container saat start), 131 baris RPD TA 2026 untuk 131 MAK,
   0 baris yang Σ ≠ pagu. livecheck 12/13 — satu gagal = DoH/1.1.1.1 timeout dari mesin ini (jaringan lokal), bukan situs.
-- Lanjutan yang wajar (BELUM, perlu Aldo): ganti `Konsep::TARGET_SERAPAN` (58,3% tetap, BR-PFM-4 sebagian) dengan RPD
-  kumulatif di Dashboard/Eksekutif → deviasi halaman III DIPA ala IKPA.
+- **17 Okt — target serapan dari RPD (`b645e5f`, Aldo: "kerjakan selanjutnya")**: `RpdController::targetSerapan()` =
+  Σ RPD kumulatif s.d. bulan berjalan ÷ Σ pagu (fallback 58,3% bila RPD kosong) → Eksekutif (target, deviasi, pilar IKPA)
+  + Dashboard (target ikut filter, status per bagian/baris pakai RPD kelompoknya, garis target kurva = profil RPD; garis
+  aktual tetap ilustrasi). Data demo: target 78,0% (s.d. Okt) vs serapan 74,0% → deviasi −4,0%. BR-PFM-4 kini penuh.
+  Tes 151. Catatan: kop Dashboard masih "DATA PER 15 JUL 2026" (`Konsep::HARI_INI`) — celah lama, belum disentuh.
+- ~~Lanjutan yang wajar (BELUM, perlu Aldo): ganti `Konsep::TARGET_SERAPAN` (58,3% tetap, BR-PFM-4 sebagian) dengan RPD
+  kumulatif di Dashboard/Eksekutif → deviasi halaman III DIPA ala IKPA.~~ SELESAI 17 Okt.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
