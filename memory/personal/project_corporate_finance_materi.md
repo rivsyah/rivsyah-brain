@@ -1,6 +1,6 @@
 ---
 name: project-corporate-finance-materi
-description: "Revisi materi belajar Corporate Finance (10 PDF lama di Riv's Journey\\Materi Bahan Belajar\\Corporate Finance) jadi seri 8 PDF tiga tingkat; builder ~/dev/personal/corporate-finance-materi (md->html->Chrome PDF + verify.py); DIJEDA Aldo 11 Okt 2026 di tengah penulisan oleh 9 agen"
+description: "Revisi materi belajar Corporate Finance (10 PDF lama di Riv's Journey\\Materi Bahan Belajar\\Corporate Finance) jadi seri 8 PDF tiga tingkat; builder ~/dev/personal/corporate-finance-materi (md->html->Chrome PDF + verify.py); SELESAI 18 Okt 2026 (8 PDF, 789 hlm, verify LOLOS)"
 metadata:
   type: project
 ---
@@ -29,3 +29,11 @@ belajar dan materi belajar ini dari tingkat beginner, intermediate, dan advance"
   docs/FAKTA-INDONESIA.md BELUM ada.
 - Lanjutkan: luncurkan ulang penulis dengan prompt yang sama + "lanjutkan dari berkas yang sudah ada"; lalu fakta,
   review per tingkat, build penuh, verify, salin PDF, push brain.
+
+## SELESAI 18 Okt 2026
+- 8 PDF di Downloads\Riv's Journey\Materi Bahan Belajar\Corporate Finance\Edisi Revisi 2026\ (berkas lama utuh di folder induk).
+- Halaman: Panduan 59, Awal 141 + soal 103, Menengah 105 + soal 113, Lanjut 137 + soal 115, Lembar Rumus 16.
+- 216 contoh + 626 soal; verify: semua blok [hitung] dicek ulang dan lolos (19+70+136+76+157+70+124).
+- Data inti: Kopi Senja (BLUEPRINT §5), Kopi Senja Tbk (docs/DATA-KOPI-SENJA-TBK.md: IPO 100 jt saham x Rp1.100, total 350 jt, WACC 12,09%); valuasi IPO Menengah Bab 10 = Rp1.319/saham.
+- Fakta Indonesia terverifikasi 17 butir di docs/FAKTA-INDONESIA.md (mis. POJK 29/2023 buyback ganti POJK 30/2017; PP 55/2022; PSAK 118 efektif 1 Jan 2027).
+- Jebakan build: heredoc Bash merusak backslash LaTeX (	imes -> tab) — verify kini menolak karakter kontrol; font bold-italic Inter perlu @font-face sendiri.
