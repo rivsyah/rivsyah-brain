@@ -304,3 +304,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T14:28Z  ukpbj-nextjs: npm audit fix (next 16.4.2, sharp 0.35.5, echarts 5.6.0), build+UI verified; sisa echarts v6 XSS moderat, belum git/Vercel; launch.json Herd re-add ukpbj-nextjs
 - 2026-10-17T14:32Z  hedge-desk: scaffold framework di ~/dev/personal/hedge-desk + GRANDPLAN v1 + DECISIONS D1-D11 + reference (riset broker/infra; temuan DNS ISP blokir Alpaca/Binance/Bybit/IBKR); card personal/project_hedge_desk.md baru
 - 2026-10-17T14:39Z  PCO Retreat DHAM revisi: transportasi dibuang (paket sewa kendaraan terpisah), RAB = HPS Rp198.471.000 <= 199 jt, verify 75/0, berkas MOFA ditimpa
+- 2026-10-17T14:39Z  BUP Kemlu (Herd/bup-kemlu-next): audit 17 Okt — Next 16.4.2 (fix critical RCE next/og), Prisma 7.10.1, 0 vuln; rate limit DB + honeypot + noindex + seed demo dikunci; belum commit/live, 6 keputusan menunggu Aldo (lihat kartu)
