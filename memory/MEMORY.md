@@ -134,6 +134,7 @@
 
 - [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
+- [Hedge Desk](personal/project_hedge_desk.md) — penerus FFCC (pivot 17 Okt 2026): desk hedge fund + agent trading saham AS/crypto, paper v1, Cloudflare + Supabase; ~/dev/personal/hedge-desk; GRANDPLAN v1 menunggu persetujuan
 - [Tesis MBA Wharton](personal/project_wharton_thesis.md) — draft 72 hlm "The Landlord That Rents" dari brief BLU Aset Kemlu; MBA Wharton TIDAK punya tesis (jalur: ISP REAL 8990 atau Lauder Master's Thesis 30–35 hlm); pipeline docx-js + Word PDF + gerbang 109 cek; 4 Okt: selaras brief ed.4 (226x akrual, gap Rp253,0M, renewal bersih 55%, kredit 7 gedung)
 - [Roadmap MBA AS](personal/project_mba_us_roadmap.md) — v1.1 10 Okt 2026: Word+PDF 13 hlm di Riv's Journey\mba-us-roadmap (builder ~/dev/personal/mba-us-roadmap, gerbang 247 cek); utama Agu 2028, opsi CBS J-Term Jan 2028; JALUR KRITIS bahasa Inggris (ITP 493); ⚠ OPEN status LPDP Tahap 2 2026 (SBM ITB–BU) + AIgnited di resume
 - [Materi Corporate Finance](personal/project_corporate_finance_materi.md) — revisi 10 PDF lama jadi 8 PDF tiga tingkat (Awal/Menengah/Lanjut + Panduan + Lembar Rumus), builder ~/dev/personal/corporate-finance-materi; DIJEDA 11 Okt di tengah penulisan 9 agen (audit, blueprint, Panduan, Lembar Rumus sudah ada)

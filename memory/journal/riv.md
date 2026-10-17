@@ -302,3 +302,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T14:17Z  FFCC pivot ke hedge-fund dashboard + trading agent: assessment & rencana diberikan; card personal/project_family_funds.md diperbarui (blocker Supabase NXDOMAIN, family-funds-next bukan repo git sendiri)
 - 2026-10-17T14:25Z  SIGAP BUP 17 Okt: target serapan Dashboard/Eksekutif kini RPD kumulatif s.d. bulan berjalan (b645e5f), fallback 58,3%; demo target 78,0% dev -4,0%; tes 151; deploy berjalan.
 - 2026-10-17T14:28Z  ukpbj-nextjs: npm audit fix (next 16.4.2, sharp 0.35.5, echarts 5.6.0), build+UI verified; sisa echarts v6 XSS moderat, belum git/Vercel; launch.json Herd re-add ukpbj-nextjs
+- 2026-10-17T14:32Z  hedge-desk: scaffold framework di ~/dev/personal/hedge-desk + GRANDPLAN v1 + DECISIONS D1-D11 + reference (riset broker/infra; temuan DNS ISP blokir Alpaca/Binance/Bybit/IBKR); card personal/project_hedge_desk.md baru
