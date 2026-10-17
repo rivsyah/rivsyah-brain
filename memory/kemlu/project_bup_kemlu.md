@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 4aaff287-30ab-4924-99b7-3024a5cf00b3
-  modified: 2026-09-06T01:05:41.923Z
+  modified: 2026-10-17
 ---
 
 Situs publik + Portal Internal + Panel Admin Biro Umum dan Pengadaan (BUP), Sekretariat
@@ -41,3 +41,30 @@ CRUD lengkap ikut otomatis.
 
 Terkait: [[project-sigap-bup]], [[project-sipama-kemlu]], [[project-ukpbj-kemlu]],
 [[project-pdp-kemlu]], [[reference-design-login]]
+
+## 17 Okt 2026 — audit + pengerasan (belum di-commit, belum live)
+- Next 16.3.4 → **16.4.2** (critical: RCE di `next/og`), Prisma/client/adapter-pg → **7.10.1**,
+  `npm audit fix` → 0 kerentanan produksi. Typecheck + lint bersih.
+- Ditambah tabel `RateLimit` (migrasi `20261017000000_rate_limit`): login 10/mnt/IP + 5/15mnt/akun,
+  formulir publik 5/10mnt/IP + honeypot, `/api/sso/verify` 60/mnt/IP. Teruji: login ke-6 diblokir.
+- Seed: akun demo per peran hanya bila `SEED_DEMO_USERS=1`, kata sandi acak (dulu tetap
+  `BiroUmum2026!`); seed produksi gagal bila `SEED_ADMIN_PASSWORD` kosong.
+- Situs `noindex` + `robots.txt Disallow: /` sampai `SITE_INDEXABLE=1`.
+- Unggahan di Vercel tanpa Blob token kini galat jelas (dulu menulis ke FS read-only).
+- Copy formulir tidak lagi menjanjikan "jawaban dikirim ke surel" — fitur surel belum ada.
+- `prisma migrate reset` diblokir Prisma tanpa persetujuan eksplisit Aldo; DB lokal disinkronkan
+  lewat `db execute` + `migrate resolve --applied` (non-destruktif). DB lokal: `prisma dev -n bup4`
+  (port berubah tiap start, perbarui `.env`).
+
+**Menunggu keputusan Aldo:**
+1. Identitas di berkas terlacak: seed/kode memuat nama Kemlu, pejabat asli (Sukmo Yuwono dkk),
+   foto, alamat/telepon Biro. Ini situs resmi BUP (bukan demo samaran seperti SIGAP), tapi absolut #4
+   melarang nama klien di berkas terlacak tanpa izin. Commit/push diblokir sampai Aldo memutuskan.
+2. Hosting: Aldo minta Vercel (6 Sep); proyek Kemlu lain live di Cloudflare Containers + Neon
+   (*.rivsyah.dev). Domain resmi .go.id butuh izin Pusdatin/BUP.
+3. Data ilustrasi (KPI, rekap BMN, paket, berita) tampil seolah asli: ganti atau unpublish sebelum
+   live. WhatsApp `+62 811 0000 000` palsu.
+4. Consumer SSO di SIGAP-BUP/SIPAMA/MONPBJP/PDP belum ada.
+5. App Laravel `C:\Users\rivsy\Herd\bup-kemlu` (diparkir) masih dilayani Herd: hapus atau simpan.
+6. `C:\Users\rivsy` sendiri adalah repo git kosong (master, 0 commit). `git add .` di sana menyapu
+   seluruh home termasuk `.ssh`. Proyek ini belum punya repo sendiri.
