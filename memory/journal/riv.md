@@ -298,3 +298,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-17T09:29Z  17 Okt 2026: KAK/Spektek + RAB/HPS Sewa Kendaraan Retreat Dewan HAM (PTRI Jenewa) dibuat, HPS Rp69.930.000, builder ~/dev/kemlu/sewa-kendaraan-dham-2026, berkas di MOFA\Pejabat Pengadaan\Pengadaan Sewa Kendaraan Retreat Dewan HAM
 - 2026-10-17T09:59Z  PCO Retreat Dewan HAM: KAK/Spektek + RAB/HPS (HPS Rp196.390.000, estimasi 197 jt) di MOFA\Pejabat Pengadaan\Pengadaan PCO Retreat Dewan HAM 2026; builder ~/dev/kemlu/pco-retreat-dham-2026 verify 81/0; pip install python-docx
 - 2026-10-17T14:10Z  17 Okt 2026: Sewa Kendaraan DHAM direvisi: akun 522141, HPS Rp89.910.000 (Alphard 3, Zenix 5, Hiace 2 @5 hr)
+- 2026-10-17T14:13Z  kemlu PANTAS 17 Okt: cek login Access — daftar pengguna Access hanya rivsyah@gmail.com (login terakhir 11 Okt 12.23Z); Kukuh belum pernah login berhasil. Log permintaan akses 403 (token tanpa izin Access: Audit Logs Read).
+- 2026-10-17T14:17Z  FFCC pivot ke hedge-fund dashboard + trading agent: assessment & rencana diberikan; card personal/project_family_funds.md diperbarui (blocker Supabase NXDOMAIN, family-funds-next bukan repo git sendiri)
