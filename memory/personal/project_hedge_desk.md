@@ -33,6 +33,6 @@ metadata:
   D15 tanpa IP statis di v1. Biaya infra v1 ±$17,50/bln (CF $5 + ±$12,50 DO) + LLM.
   Build file 02–04 (M1.0) ditulis. Belum ada commit/remote.
 - **Blocker milik owner:** WSL belum terpasang; `CLOUDFLARE_ACCOUNT_ID` di env.db SALAH (tidak cocok
-  dengan token → auth error 10000; wrangler jalan bila account id dideteksi dari token); upgrade
-  Workers Paid; akun Alpaca paper, key Indodax trade-only, project Supabase; `ANTHROPIC_API_KEY`
+  dengan token → auth error 10000; wrangler jalan bila account id dideteksi dari token; sudah
+  diketahui salah sejak sesi lain); Workers Paid SUDAH aktif di akun yang sama (tidak perlu upgrade); akun Alpaca paper, key Indodax trade-only, project Supabase; `ANTHROPIC_API_KEY`
   belum ada (dibutuhkan M1.4).
