@@ -25,6 +25,9 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - **Aldo minta tanggal mundur** (layanan sudah mulai 17 Okt: penjemputan panitia/delegasi). Agent MENOLAK: semua dokumen
   bertanggal riil 18 Okt (Minggu), PL 08.00-13.00 WITA, SPPBJ/SPK 18 Okt, layanan 18-22 Okt, BAST 23 Okt. Layanan 17 Okt
   dan 18 Okt sebelum SPK = di luar kontrak -> keputusan PPK/konsultasi APIP. Hasil nego diisi = penawaran (latar kuning).
+- 18 Okt sore: Aldo menyunting KAK .docx + RAB/HPS .xlsx di folder (17:06/17:08, PDF terhapus), menyatakan bertanggal
+  12 Okt, lalu minta SPPBJ/SPK/dokumen PP disesuaikan ke 12 Okt. Agent MENOLAK lagi (dokumen dibuat 17-18 Okt, survei
+  17 Okt, proposal 7 Okt; SPSE tak bisa dimundurkan). Builder tetap TGL_DOK 18 Okt; berkas suntingan Aldo tidak disentuh.
 - Tempat teken = data.TEMPAT "Jakarta" (ganti bila diteken di Bali). Versi 89,91 jt: cadangan data.py di scratchpad sesi.
 
 ## Dokumen Pejabat Pengadaan (18 Okt 2026)
