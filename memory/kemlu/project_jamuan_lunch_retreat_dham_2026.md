@@ -25,4 +25,11 @@ perlukah KAK/RAB. Jamuan Rp30 jt, restoran di Bali, bagian dari Retreat Dewan HA
 - Tanggal jamuan, nama + alamat restoran, akun (521211 atau 521219, ikut DIPA), tempat teken.
 - Contoh: 20 pax x Rp1.295.000 + service 5% + PBJT 10% = Rp29.914.500 (Rp1.495.725/orang). Ganti dari penawaran restoran.
 - Pejabat sama dengan paket hotel: KPA Sidharto Reza Suryodipuro, PPK Nurul Sofia, Kanselerai Achsanul Habib.
+## Dokumen Pejabat Pengadaan (18 Okt 2026, folder yang sama)
+- 1 Undangan Permintaan Penawaran (2 hlm), 2 BA Evaluasi Klarifikasi dan Negosiasi (2 hlm, ttd PP + restoran),
+  3 BAHPL (1 hlm), 4 BA Penetapan Penyedia ke PPK Nurul Sofia (1 hlm). Builder build_pp.py; format = set Pengadaan Jaket BUP
+  (`MOFA\Pejabat Pengadaan\Pengadaan Jaket BUP\`, Des 2025, PP Aldo, penomoran 0xx/PP-UKPBJ/BAxx/.../26B).
+- Nama/NIP Pejabat Pengadaan, nomor surat, tanggal, data restoran = isian kuning. Agent tidak mengisi nama PP: paket ini
+  satker PTRI Jenewa, belum dipastikan siapa PP-nya.
+- Logo kop Kemlu (dengan garis merah kanan) tersimpan sebagai kop_kemlu.png di builder.
 Terkait: [[project_sewa_kendaraan_retreat_dham_2026]].
