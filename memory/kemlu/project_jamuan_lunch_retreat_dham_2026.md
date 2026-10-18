@@ -32,4 +32,13 @@ perlukah KAK/RAB. Jamuan Rp30 jt, restoran di Bali, bagian dari Retreat Dewan HA
 - Nama/NIP Pejabat Pengadaan, nomor surat, tanggal, data restoran = isian kuning. Agent tidak mengisi nama PP: paket ini
   satker PTRI Jenewa, belum dipastikan siapa PP-nya.
 - Logo kop Kemlu (dengan garis merah kanan) tersimpan sebagai kop_kemlu.png di builder.
+## Jalur alternatif: akun Biaya Representasi (dicek 18 Okt 2026, teks resmi peraturan.go.id/files/bn54-2021.pdf)
+- Dasar: **Permenlu 2/2021** (BN 2021/54, bukan "4/2021") tentang Tata Cara Pemberian Fasilitas PDLN di Perwakilan.
+  Ps 1 angka 11 definisi; Ps 6: PDLN ajukan permohonan tertulis ke Kepala Perwakilan + rencana kegiatan (min. tujuan, jenis,
+  tanggal & tempat, daftar undangan) -> persetujuan tertulis Kepala Perwakilan -> pertanggungjawaban = laporan tertulis +
+  bukti pengeluaran sah; Ps 6(5) larangan kepentingan pribadi; Ps 7: dalam USD, alokasi per bulan per unsur, penggantian
+  at cost; Ps 8: jamuan di kediaman PDLN besarannya ditetapkan Keputusan Kepala Perwakilan. Ps 15: BOK terpisah (strategis/khusus).
+- Verdict ke Aldo: jalur representasi = fasilitas penggantian at cost, bukan proses PBJ -> dokumen Pejabat Pengadaan tidak
+  dipakai [Likely]; KAK diganti rencana kegiatan/permohonan, RAB cukup sebagai lampiran estimasi. Risiko: alokasi bulanan USD
+  mungkin < Rp30 jt; pemakaian di dalam negeri (Bali) belum jelas [Guessing] -> konfirmasi Kanselerai.
 Terkait: [[project_sewa_kendaraan_retreat_dham_2026]].
