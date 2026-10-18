@@ -24,6 +24,16 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - Seam: kartu PCO menyebut "Perlem LKPP 3/2026" untuk PL; [[reference-template-spk]] (dicek live 23 Sep) = Perlem 12/2021
   jo. 4/2024 masih berlaku. Paket ini pakai 12/2021 jo. 4/2024; 3/2026 belum diverifikasi.
 
+## Proposal vendor (diterima 18 Okt 2026)
+- `Proposal RAPAT DEWAN HAM 5.pdf` (folder paket, 3 hlm): PT Tarobali Transindo (Denpasar, Dir. I Wayan Sutrisna, anggota
+  BRN Korda Bali), No. 020/PROP-TT/RAPATDEWANHAM/X/2026, 7 Okt 2026, ditujukan ke PPK Nurul Sofia.
+- Tarif 12 jam incl pengemudi + BBM, BELUM tol/parkir, PPN tidak disebut: Alphard 2023-24 Rp3,5 jt (+45,8% vs HPS 2,4 jt);
+  Zenix Rp1,2 jt (= HPS); Hiace 13 pax Rp1,8 jt (+20% vs Premio 1,5 jt; tipe Premio/Commuter tak jelas); Hiace drop
+  Rp900 rb; blindvan bagasi Rp850 rb/12 jam, Rp400 rb drop. Luar area Rp200 rb; lembur 10%/jam; DP 50% + lunas 3 hari.
+- Pada volume HPS: Rp100,5 jt + PPN = Rp111,555 jt, di atas HPS Rp21,645 jt. Lampiran "kebutuhan" tidak ada di PDF.
+- Ganjalan: DP 50% melebihi batas uang muka Perpres (perlu dicek angka pastinya) dan butuh jaminan; ada kolom tanda tangan
+  "Penerima Proposal" untuk PPK. Saran agent: PPK jangan teken; proposal = bahan, bukan kontrak.
+
 ## Angka (paket 12 jam/hari, termasuk pengemudi + BBM + tol + parkir, belum PPN)
 - **Revisi 17 Okt 2026 (Aldo):** akun **522141 Belanja Sewa**; HPS jadi ±90 jt lewat tambah volume, harga satuan tetap median.
 - Alphard 3 unit x 5 hr x Rp2.400.000 = 36 jt; Innova Zenix Hybrid 5 x 5 x Rp1.200.000 = 30 jt; Hiace Premio 2 x 5 x
