@@ -1,6 +1,6 @@
 ---
 name: project-pco-retreat-dham-2026
-description: "Pengadaan Jasa PCO Retreat Dewan HAM PBB (PTRI Jenewa, Sofitel Nusa Dua 18-21 Okt 2026): v2 18 Okt = lingkup penawaran Phenom Event Indonesia (vendor terpilih); RAB = HPS Rp98.268.000; KAK/RAB/HPS + 6 dokumen PP"
+description: "Pengadaan Jasa PCO Retreat Dewan HAM PBB (PTRI Jenewa, Sofitel Nusa Dua 18-21 Okt 2026): v3 18 Okt = ikut penawaran Phenom; RAB Rp106.504.500 (harga R6), HPS Rp97.774.000 (pasar); paket lengkap Memo-KAK-PP-SPPBJ-SPK bertanggal nyata 18 Okt, TANPA tanggal mundur"
 metadata:
   type: project
 ---
@@ -9,7 +9,19 @@ Permintaan Aldo 17 Okt 2026: KAK/Spektek, RAB, HPS pengadaan EO/PCO "Retreat Dew
 Pengadaan Hotel (akomodasi) PTRI Jenewa `Downloads\KAK.pdf` (31 Agu 2026; Rp1.535.105.000, akun 521219 + 524219).
 Nilai estimasi PCO dari Aldo: **Rp197 jt**.
 
-## TERKINI v2 (18 Okt 2026, arahan Aldo)
+## TERKINI v3 (18 Okt 2026 siang, arahan Aldo: "sesuai proposal penawaran, sesuai tanggal jangan ada yang mendahului")
+- **HARD (keputusan agent, dinyatakan ke Aldo): tidak membuat tanggal mundur.** Dokumen dibuat 18 Okt; tanggal Agu/Sep di
+  BA/KAK = pemalsuan surat. Garis waktu nyata di `data.TIMELINE`: R6 11 Sep (referensi) -> KAK/RAB/HPS 07.00 -> Memo PPK 07.15
+  -> Undangan 07.30 -> penawaran resmi 09.00 -> BAEP 10.00 -> BAN 11.00 -> BAHPL 12.00 -> BAPP 12.30 -> SPPBJ 13.00 -> SPK 14.00
+  -> mulai kerja 15.00 (resepsi) -> bongkar 21 Okt -> BAST 22 Okt. Jam = asumsi agent; ubah di data.py bila nyata beda.
+- Printer + laptop jadi 3 hari (18-20 Okt), bukan 4 hari R6 (17 Okt mendahului SPK).
+- RAB = harga satuan R6 = **Rp106.504.500**; HPS tetap median pasar = **Rp97.774.000** (RAB != HPS; HPS = salinan penawaran = temuan audit).
+- Baru: `Dokumen PPK\` (0 Memo PPK, 7 SPPBJ, 8 SPK 5 hlm + Lampiran I harga [kuning = HPS satuan, ganti hasil nego] + Lampiran II
+  Syarat Umum 18 angka dari Template SPK Aldo, disesuaikan jasa Harga Satuan). Gerbang: verify 83/0, verify_pp 139/0, verify_tanggal 57/0.
+- v2 diarsip ke `Arsip v2 - sebelum penyesuaian tanggal (18 Okt)\`.
+- Sisa isian: penawaran resmi + nomor, hasil nego, PT/CV, NPWP, akta, rekening, nama/NIP PP, NIP PPK, Kode RUP, akun, nomor surat.
+
+## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
 - HPS = median (R6 + 2-3 sumber daring Bali/Jakarta, diakses 18 Okt) = **Rp98.268.000** (DPP 88,53 jt); RAB = HPS. R6 = Rp108.114.000.

@@ -354,3 +354,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T04:33Z  toefl-itp-materi: applied LAPORAN-KONSISTENSI 1.2 fixes (B1,B2,B4,B5,B6,B8-B12) and 2.3 topic replacements outside src/05 (13 passages/scripts); src/05 items B3,B7,MN-LB-1201,MN-LB-1204 left for other agent; panduan Bab 9 must follow new B4 threshold 52/50/52
 - 2026-10-18T04:44Z  personal/tpd-ojk-materi: gen/logika.py ditulis (Bagian C Logika: BAB 9-12, bank L-001..070, P1L/P2L 2x25, DL-01..06; kunci dibuktikan brute force/tabel kebenaran/model Venn). Build PDF belum dijalankan (pemilik proyek).
 - 2026-10-18T04:44Z  18 Okt: dokumen Adendum II kontrak Sofitel DHAM (ND justifikasi, BA nego, Adendum) dibuat, builder ~/dev/kemlu/adendum2-sofitel-dham-2026, verify 33/0
+- 2026-10-18T04:49Z  PCO Retreat DHAM v3: paket lengkap (Memo PPK, KAK/RAB/HPS, 6 PP, SPPBJ, SPK) tanggal nyata 18 Okt berurutan jam; tolak backdating; RAB=R6 106,5 jt, HPS 97,77 jt; 3 gerbang lolos
