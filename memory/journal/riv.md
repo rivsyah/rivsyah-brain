@@ -348,3 +348,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T04:15Z  18 Okt 2026: proposal Tarobali Transindo (sewa kendaraan DHAM) dianalisis: Rp111,6 jt incl PPN pada volume HPS, Alphard +46%, Hiace +20%, DP 50%
 - 2026-10-18T04:15Z  18 Okt: bedah addendum 2 kontrak Sofitel Retreat DHAM (PTRI Jenewa) -> kartu kemlu/project_akomodasi_sofitel_dham_2026.md
 - 2026-10-18T04:19Z  18 Okt 2026: dokumen PP sewa kendaraan DHAM diisi identitas Tarobali + Target Negosiasi xlsx/pdf (target total Rp88,52 jt, batas HPS)
+- 2026-10-18T04:23Z  PCO Retreat DHAM v2: ikut penawaran Phenom (vendor terpilih), 19 item, RAB=HPS Rp98.268.000, dokumen PP terisi Phenom + klausul tanpa uang muka; v1 diarsip
