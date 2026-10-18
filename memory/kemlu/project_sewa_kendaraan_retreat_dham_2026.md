@@ -34,6 +34,15 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - Ganjalan: DP 50% melebihi batas uang muka Perpres (perlu dicek angka pastinya) dan butuh jaminan; ada kolom tanda tangan
   "Penerima Proposal" untuk PPK. Saran agent: PPK jangan teken; proposal = bahan, bukan kontrak.
 
+## Target negosiasi + dokumen PP terisi (18 Okt 2026)
+- Aldo: HPS TETAP Rp89,91 jt; Tarobali = vendor yang dipakai unit kerja untuk retreat Jenewa.
+- Dokumen PP kini memuat identitas PT Tarobali Transindo (alamat kop proposal, Dir. I Wayan Sutrisna); NPWP, nama/NIP
+  Pejabat Pengadaan, nomor, tanggal, angka penawaran masih kuning.
+- `Target Negosiasi - ... .xlsx/.pdf` (internal, tidak untuk penyedia): satuan pembuka/target/batas — Alphard
+  2,2/2,4/2,4 jt; Zenix 1,1/1,15/1,2 jt; Hiace Premio 1,3/1,5/1,5 jt; semua sudah termasuk tol/parkir. Total pembuka
+  Rp81.585.000, target Rp88.522.500, batas = HPS. Lembar Butir Non-Harga 13 butir (tol/parkir, PPN/PKP, tolak DP 50%,
+  tipe Hiace, blindvan di luar HPS, PPK jangan teken proposal, minta harga kontrak retreat Jenewa sebagai pembanding).
+
 ## Angka (paket 12 jam/hari, termasuk pengemudi + BBM + tol + parkir, belum PPN)
 - **Revisi 17 Okt 2026 (Aldo):** akun **522141 Belanja Sewa**; HPS jadi ±90 jt lewat tambah volume, harga satuan tetap median.
 - Alphard 3 unit x 5 hr x Rp2.400.000 = 36 jt; Innova Zenix Hybrid 5 x 5 x Rp1.200.000 = 30 jt; Hiace Premio 2 x 5 x
