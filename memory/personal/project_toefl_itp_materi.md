@@ -1,6 +1,6 @@
 ---
 name: project-toefl-itp-materi
-description: "Revisi 10 PDF TOEFL ITP lama (Riv's Journey\\Materi Bahan Belajar\\TOEFL) jadi seri 7 PDF + audio TTS lokal (Panduan, Buku Awal/Menengah/Lanjut, Bank Soal x3 + Simulasi Mini, SIM1-3); builder ~/dev/personal/toefl-itp-materi; mulai 18 Okt 2026"
+description: "Revisi 10 PDF TOEFL ITP lama (Riv's Journey\\Materi Bahan Belajar\\TOEFL) jadi seri 7 PDF + audio TTS lokal (Panduan, Buku Awal/Menengah/Lanjut, Bank Soal x3 + Simulasi Mini, SIM1-3); builder ~/dev/personal/toefl-itp-materi (bash make.sh); SELESAI 18 Okt 2026: 7 PDF 1.352 hlm + 337 MP3, verify 18.383/0"
 metadata:
   type: project
 ---
@@ -29,5 +29,18 @@ Seleksi JPT Madya Kemlu 2023: ITP 550. Masa berlaku 2 tahun. Aldo: ITP 493 ([[pr
 ## Audit bank soal lama
 0 kunci salah, 9 butir dua jawaban, kunci timpang (71% A; 15 B berturut), 6 fakta bacaan salah, tanpa audio.
 
+## SELESAI 18 Okt 2026
+- `Downloads\Riv's Journey\Materi Bahan Belajar\TOEFL\Edisi 2026\`: 7 PDF (Panduan 84, Awal 201, Menengah 234,
+  Lanjut 208, Bank Soal Awal 122, Menengah 235, Lanjut 268 hlm) + `Audio\` 337 MP3 (±3 j 54 mnt, 146 MB) +
+  DAFTAR-TREK. Bank soal: Awal 288 butir + Simulasi Mini; Menengah 500 (SIM1); Lanjut 330 drill + SIM2 + SIM3.
+- Semua bank + latihan buku diperiksa BUTA oleh agen pemeriksa terpisah: 0 kunci salah (1 kunci Buku 3 Bab 8/79
+  dipindah karena butir cacat), ±80 butir diperbaiki (dua jawaban, penanda WE, fakta, pemakaian diperdebatkan).
+- Audit konsistensi (docs/LAPORAN-KONSISTENSI.md): pemakaian simulasi = Mini (diagnosa/gerbang 1, ≥450 + ambang B1),
+  SIM1 (gerbang 2, ≥543 + tiap seksi ≥52/50/52), SIM2 tengah Buku 3, SIM3 ±H-14 (≤10 poin di bawah target);
+  topik bacaan/skrip ganda diganti (registri di laporan).
+- Builder: bug label WE di baris lanjutan diperbaiki (render.py WE_SEG_TEXT); `skrip` buku materi dapat jeda 12 dtk
+  otomatis setelah `N: …?`; verify mengecualikan ekor bab sebelum pembuka bab/bacaan, bab 1 & 13 Awal + 14 Lanjut.
+- Audio = suara Windows (sintetis, ±26 mnt per Listening simulasi vs 35 mnt resmi; belum didengar manusia).
+
 ## Status
-18 Okt: builder selesai (uji 150 cek lolos); 11 agen penulis berjalan paralel.
+Riwayat: 18 Okt pagi builder + 11 agen penulis; 5 agen sempat terhenti kuota mingguan, dilanjutkan.
