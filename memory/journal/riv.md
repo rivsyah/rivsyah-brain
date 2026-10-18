@@ -346,3 +346,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T04:11Z  toefl-itp-materi: pemeriksaan buta Buku 1 (latihan/cek) + Bank Soal Awal selesai; 573 butir, 0 kunci salah; 1 penanda WE cacat (B1 Bab3 no16), 2 fakta dilunakkan (AW-WE-1311, AW-RD-1302), 2 pembahasan dibetulkan; prosa Bab 3-8 ditambah sampai >=1.500 kata; instruksi pause manual Bab 9-10 dihapus; build awal + verify awal --tanpa-audio lolos
 - 2026-10-18T04:14Z  PCO Retreat DHAM: penawaran Phenom Event Rp108,1 jt dianalisis; lingkup beda dgn KAK; tunggu keputusan Aldo
 - 2026-10-18T04:15Z  18 Okt 2026: proposal Tarobali Transindo (sewa kendaraan DHAM) dianalisis: Rp111,6 jt incl PPN pada volume HPS, Alphard +46%, Hiace +20%, DP 50%
+- 2026-10-18T04:15Z  18 Okt: bedah addendum 2 kontrak Sofitel Retreat DHAM (PTRI Jenewa) -> kartu kemlu/project_akomodasi_sofitel_dham_2026.md
