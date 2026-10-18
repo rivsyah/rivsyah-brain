@@ -44,3 +44,16 @@ Terkait: [[project_pco_retreat_dham_2026]], [[project_jamuan_lunch_retreat_dham_
 - Komentar RAB: 521219 = akomodasi undangan+narsum Rp655.076.000 + paket meeting undangan Rp137.882.000 + resepsi/dinner Rp264.550.000; 524219 = akomodasi panitia Rp281.724.000 + paket meeting panitia Rp56.318.000.
 - Cacat sumber: lembar HPS berjudul "DAFTAR KUANTITAS HARGA" (juga di PDF HPS yang diteken), lembar Spektek berjudul "HARGA PERKIRAAN SENDIRI"; kolom bantu R-U berisi #REF!. DKH 4 Sep diteken "PT. Griya Panca Loka" (Michael Maramis, Director of Sales); rekening "PT. Griya Pancaloka".
 - Output 4: `Dokumen Adendum II\4. RAB HPS DKH SPEKTEK ... setelah Adendum II.xlsx/.pdf` (salinan via Excel COM, `revisi_xlsx.ps1`): Menlu +20 Okt (Add I), baris 50 "Tambahan Adendum II" plunge pool 17 Okt (peruntukan isian), FDM 90/90, resepsi 100 + dinner 100 pada 20 Okt, judul lembar dibetulkan, tanggal teken dikosongkan. Total Excel = Rp1.366.736.000 (cocok hotel).
+
+## Surat Perjanjian pemerintah (cek 18 Okt 2026) -> adendum diganti jadi "Adendum Pertama Surat Perjanjian"
+- `Pengadaan Akomodasi\1. Surat Perjanjian - sofitel.docx`: Kontrak Jasa Lainnya Harga Satuan, 16 Sep 2026, Rp1.395.550.000,
+  5 pasal saja (istilah, ruang lingkup, jenis/nilai, dokumen kontrak, masa berlaku). Nomor SP KOSONG. Penyedia diwakili Michael
+  Maramis (Director of Sales) via Surat Kuasa 01/GPL-SK/IX/2026 tgl 2 Sep 2026; PT. Griya Pancaloka; PPK SK Dirjen Aspasaf
+  00912/B/KU/09/2025/04.
+- Cacat SP: SPPBJ di pembuka "15 Sep 2026" vs huruf b "044/SPPBJ/11/2025/26 tgl 21 Nov 2025" (salin dari paket lain);
+  BAHP "PL-POKJA" padahal KAK pakai Perlem 5/2021 (dikecualikan); "termasuk PPN" padahal jasa hotel kena PBJT;
+  tak ada pasal pembayaran/deposit/pembatalan/sanksi/kahar/sengketa; Pasal 4 tak menyebut MICE Agreement maupun KAK.
+- Belum ada adendum SP -> satu "Adendum Pertama SP" menampung Add I + II hotel (nilai 1,3956 M -> 1,3667 M): Pasal I volume/
+  jadwal, II ubah Ps 3(2) nilai + sisip 3(3a) jadwal bayar, III ubah Ps 4(1)c masukkan MICE Agreement + adendumnya,
+  IV pembetulan SPPBJ + sampul "November", V penutup. data.ADENDUM_KE bila ternyata sudah ada adendum SP. verify 41/0.
+- Aldo sendiri menyimpan `4. DKH Addendum II.xlsx` (lembar DKH saja, total 1,3667 M) dan membuka draf lama "(Adendum II)" di Word.
