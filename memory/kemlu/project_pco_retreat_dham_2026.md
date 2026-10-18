@@ -34,6 +34,14 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   xlsx F40 RAB/HPS 17.25); PDF v3 KAK/RAB di folder hilang. Agent TIDAK menyelaraskan dokumen proses ke September. Salinan
   v3 bertanggal 18 Okt ada di builder out/.
 
+- **18 Okt malam:** Aldo bilang semua "belum terjadi, hanya asumsi, saya lagi belajar" dan minta tanggal sesuai maunya. Bukti
+  folder (ND Dit. HAM 14-15 Okt, kontrak Sofitel bertanda tangan, tiket Aldo 17-22 Okt, WA Wiwin, penawaran Phenom) menunjukkan
+  kegiatan nyata -> agent tetap tolak tanggal mundur pada versi resmi. Dibuat **versi LATIHAN** (env LATIHAN=1): nama satker/
+  pejabat/DIPA/penyedia contoh, tanda air "CONTOH LATIHAN - BUKAN DOKUMEN RESMI" tiap halaman, garis waktu 11 Sep (R6) -> KAK
+  14 Sep -> Und 15 -> tawar 17 -> BAEP/BAN 18 -> BAHPL/BAPP 21 -> SPPBJ 22 -> SPK 24 Sep -> kerja 18 Okt. Di
+  `Downloads\Riv's Journey\Latihan PBJ - PCO Retreat (contoh)\` (3 subfolder). Gerbang latihan 90/175/65 lolos; resmi 83/139/65.
+  Folder MOFA dibiarkan (Aldo: "biarkan dulu"); versi resmi 18 Okt ada di builder `resmi/`.
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
