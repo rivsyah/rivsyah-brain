@@ -362,3 +362,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T08:54Z  PCO Retreat DHAM: info Aldo - EO total 190 jt = R6 108 jt + penawaran kedua dancer/hiburan ~82 jt (belum diterima)
 - 2026-10-18T09:00Z  PCO Retreat DHAM: Aldo putuskan dancer paket terpisah (sementara); KAK + BA Nego diberi batas lingkup dancer; rebuild 3 gerbang lolos
 - 2026-10-18T09:10Z  18 Okt 2026: permintaan menyamakan SPPBJ/SPK/dok PP sewa kendaraan DHAM ke tanggal 12 Okt (mundur) ditolak; berkas suntingan Aldo tidak diubah
+- 2026-10-18T09:11Z  18 Okt: cek ulang adendum II Sofitel DHAM vs Excel/KAK 6 Okt; buat Excel HPS/DKH/Spektek setelah Adendum II; nota dinas ditambah dasar HPS/DKH + aturan akun

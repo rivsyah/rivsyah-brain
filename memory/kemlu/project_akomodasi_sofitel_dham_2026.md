@@ -37,3 +37,10 @@ Terkait: [[project_pco_retreat_dham_2026]], [[project_jamuan_lunch_retreat_dham_
   dinner pindah, akun tambahan (521219/524219), nama pengusul.
 - Asumsi agent: pihak penyedia = PT Griya Pancaloka (nama penerima rekening; cek NIB), wakil = Michael Maramis, Director
   of Sales (penanda tangan addendum hotel; cek kewenangan). Adendum I belum punya dokumen pemerintah yang setara.
+
+## Cek ulang dengan sumber Excel/KAK 6 Okt (18 Okt 2026)
+- Sumber: `RAB HPS DKH SPEKTEK HOTEL Bali Kegiatan DHAM,6 Okt sebelum addendum.xlsx` + `KAK ... 6 Okt.docx` (KAK sama dengan KAK.pdf, tidak perlu diubah).
+- Pemakai Plunge Pool di HPS: Sekjen/Plt. Dirjen KSM (18-20 Okt) dan Hassan Wirajuda, narasumber (18-19 Okt) -> tamu malam 17 Okt kemungkinan salah satunya (belum dikonfirmasi).
+- Komentar RAB: 521219 = akomodasi undangan+narsum Rp655.076.000 + paket meeting undangan Rp137.882.000 + resepsi/dinner Rp264.550.000; 524219 = akomodasi panitia Rp281.724.000 + paket meeting panitia Rp56.318.000.
+- Cacat sumber: lembar HPS berjudul "DAFTAR KUANTITAS HARGA" (juga di PDF HPS yang diteken), lembar Spektek berjudul "HARGA PERKIRAAN SENDIRI"; kolom bantu R-U berisi #REF!. DKH 4 Sep diteken "PT. Griya Panca Loka" (Michael Maramis, Director of Sales); rekening "PT. Griya Pancaloka".
+- Output 4: `Dokumen Adendum II\4. RAB HPS DKH SPEKTEK ... setelah Adendum II.xlsx/.pdf` (salinan via Excel COM, `revisi_xlsx.ps1`): Menlu +20 Okt (Add I), baris 50 "Tambahan Adendum II" plunge pool 17 Okt (peruntukan isian), FDM 90/90, resepsi 100 + dinner 100 pada 20 Okt, judul lembar dibetulkan, tanggal teken dikosongkan. Total Excel = Rp1.366.736.000 (cocok hotel).
