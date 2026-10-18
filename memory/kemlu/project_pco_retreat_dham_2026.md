@@ -29,6 +29,11 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   menyebut tari/dancer = paket terpisah. Bila dibuat paket dancer: cek tumpang tindih dgn rindik R6 (Rp5 jt), dasar pemisahan
   (KBLI seni pertunjukan / RUP terpisah), dan total gabungan vs Rp200 jt.
 
+- **18 Okt sore:** Aldo menyebut ada "KAK/RAB/HPS asli PTRI bertanggal 14 Sep". Berkas yang ditaruh = draf v3 agent sendiri
+  (metadata python-docx/openpyxl, isi HPS survei 17-18 Okt, printer 18-20 Okt) dengan tanggal teken diubah ke 14 Sep (KAK 17.19,
+  xlsx F40 RAB/HPS 17.25); PDF v3 KAK/RAB di folder hilang. Agent TIDAK menyelaraskan dokumen proses ke September. Salinan
+  v3 bertanggal 18 Okt ada di builder out/.
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.

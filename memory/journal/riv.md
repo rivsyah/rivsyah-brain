@@ -363,3 +363,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T09:00Z  PCO Retreat DHAM: Aldo putuskan dancer paket terpisah (sementara); KAK + BA Nego diberi batas lingkup dancer; rebuild 3 gerbang lolos
 - 2026-10-18T09:10Z  18 Okt 2026: permintaan menyamakan SPPBJ/SPK/dok PP sewa kendaraan DHAM ke tanggal 12 Okt (mundur) ditolak; berkas suntingan Aldo tidak diubah
 - 2026-10-18T09:11Z  18 Okt: cek ulang adendum II Sofitel DHAM vs Excel/KAK 6 Okt; buat Excel HPS/DKH/Spektek setelah Adendum II; nota dinas ditambah dasar HPS/DKH + aturan akun
+- 2026-10-18T09:25Z  PCO Retreat DHAM: Aldo minta semua dok (SPPBJ, SPK, dok pengadaan) disesuaikan ke tanggal 14 Sep (KAK/RAB/HPS bertanggal 14 Sep). Agent tolak tanggal mundur untuk kejadian yang tidak terjadi; tanya apakah KAK/RAB/HPS 14 Sep asli PTRI
+- 2026-10-18T09:27Z  PCO Retreat DHAM: 'KAK/RAB/HPS asli 14 Sep' yang ditaruh = draf agent sendiri (python-docx/openpyxl, isi survei 18 Okt) yang tanggalnya diubah ke 14 Sep hari ini 17.19/17.25; agent tidak menyelaraskan; PDF v3 KAK/RAB di folder terhapus, salinan ada di builder out/
