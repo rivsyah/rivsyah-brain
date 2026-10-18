@@ -28,3 +28,12 @@ Berkas: `C:\Users\rivsy\Downloads\Retreat Dewan HAM\Pengadaan Akomodasi\` (mesin
   cuaca = USD 25/org (min USD 5.000) bila memilih tetap di luar.
 - Cacat kecil: sampul addendum 2 tertulis "16-22 November 2026"; PPK teken 16 Okt, lewat tenggat hotel 15 Okt.
 Terkait: [[project_pco_retreat_dham_2026]], [[project_jamuan_lunch_retreat_dham_2026]], [[project_sewa_kendaraan_retreat_dham_2026]].
+
+## Dokumen perubahan versi pemerintah (18 Okt 2026)
+- `Downloads\Retreat Dewan HAM\Pengadaan Akomodasi\Dokumen Adendum II\`: 1 Nota Dinas Justifikasi (Ketua Panitia -> PPK),
+  2 BA Klarifikasi dan Negosiasi Perubahan, 3 Adendum II Kontrak (7 pasal + lampiran landscape). .docx + .pdf, verify 33/0.
+  Builder `C:\Users\rivsy\dev\kemlu\adendum2-sofitel-dham-2026\` (data.py satu-satunya sumber angka).
+- Isian kuning: nomor, tanggal (sengaja kosong, jangan dimundurkan), NIP + SK PPK, tamu dan alasan kamar 17 Okt, alasan
+  dinner pindah, akun tambahan (521219/524219), nama pengusul.
+- Asumsi agent: pihak penyedia = PT Griya Pancaloka (nama penerima rekening; cek NIB), wakil = Michael Maramis, Director
+  of Sales (penanda tangan addendum hotel; cek kewenangan). Adendum I belum punya dokumen pemerintah yang setara.

@@ -349,3 +349,8 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T04:15Z  18 Okt: bedah addendum 2 kontrak Sofitel Retreat DHAM (PTRI Jenewa) -> kartu kemlu/project_akomodasi_sofitel_dham_2026.md
 - 2026-10-18T04:19Z  18 Okt 2026: dokumen PP sewa kendaraan DHAM diisi identitas Tarobali + Target Negosiasi xlsx/pdf (target total Rp88,52 jt, batas HPS)
 - 2026-10-18T04:23Z  PCO Retreat DHAM v2: ikut penawaran Phenom (vendor terpilih), 19 item, RAB=HPS Rp98.268.000, dokumen PP terisi Phenom + klausul tanpa uang muka; v1 diarsip
+- 2026-10-18T04:27Z  personal/tpd-ojk-materi: gen/verbal.py ditulis (BAGIAN A + BAB 1-4, bank V-001..070, P1V/P2V 25, DV 6, self-check lolos). Build PDF belum dijalankan.
+- 2026-10-18T04:31Z  personal/tpd-ojk-materi: gen/numerik.py ditulis (BAB 5-8, bank N-001..070, P1N/P2N 25, DN 6); semua angka dihitung Python, self-check lolos. Build PDF belum dijalankan (pemilik proyek).
+- 2026-10-18T04:33Z  toefl-itp-materi: applied LAPORAN-KONSISTENSI 1.2 fixes (B1,B2,B4,B5,B6,B8-B12) and 2.3 topic replacements outside src/05 (13 passages/scripts); src/05 items B3,B7,MN-LB-1201,MN-LB-1204 left for other agent; panduan Bab 9 must follow new B4 threshold 52/50/52
+- 2026-10-18T04:44Z  personal/tpd-ojk-materi: gen/logika.py ditulis (Bagian C Logika: BAB 9-12, bank L-001..070, P1L/P2L 2x25, DL-01..06; kunci dibuktikan brute force/tabel kebenaran/model Venn). Build PDF belum dijalankan (pemilik proyek).
+- 2026-10-18T04:44Z  18 Okt: dokumen Adendum II kontrak Sofitel DHAM (ND justifikasi, BA nego, Adendum) dibuat, builder ~/dev/kemlu/adendum2-sofitel-dham-2026, verify 33/0
