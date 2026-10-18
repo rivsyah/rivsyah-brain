@@ -21,6 +21,14 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
 - v2 diarsip ke `Arsip v2 - sebelum penyesuaian tanggal (18 Okt)\`.
 - Sisa isian: penawaran resmi + nomor, hasil nego, PT/CV, NPWP, akta, rekening, nama/NIP PP, NIP PPK, Kode RUP, akun, nomor surat.
 
+- (18 Okt 13.05, WA Wiwin ke Aldo) Proyeksi EO total ±Rp190 jt = penawaran R6 Phenom ±Rp108 jt + **penawaran kedua terpisah
+  untuk dancer/hiburan** (±Rp82 jt, belum ada keputusan waktu itu). Berkas penawaran kedua BELUM diterima agent. Proyeksi sewa
+  kendaraan "tembus" Rp100 jt (paket sewa kendaraan HPS Rp89,91 jt, lihat [[project_sewa_kendaraan_retreat_dham_2026]]).
+  Risiko: dua PL ke vendor sama untuk acara sama = kesan pecah paket; gabungan <= Rp200 jt masih PL.
+- **Keputusan Aldo 18 Okt: dancer "sementara dipisah dulu"** (agent menyarankan gabung). KAK batas lingkup + BA Nego kini
+  menyebut tari/dancer = paket terpisah. Bila dibuat paket dancer: cek tumpang tindih dgn rindik R6 (Rp5 jt), dasar pemisahan
+  (KBLI seni pertunjukan / RUP terpisah), dan total gabungan vs Rp200 jt.
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
