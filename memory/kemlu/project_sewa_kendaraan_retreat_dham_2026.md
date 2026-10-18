@@ -15,6 +15,15 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
   spektek = lampiran) + RAB dan HPS (.xlsx/.pdf; lembar RAB, HPS, Kertas Kerja HPS).
 - Builder `C:\Users\rivsy\dev\kemlu\sewa-kendaraan-dham-2026\` (data.py = satu-satunya sumber angka; README.txt).
 
+## Dokumen Pejabat Pengadaan (18 Okt 2026)
+- `Dokumen Pejabat Pengadaan - Sewa Kendaraan Retreat Dewan HAM 2026.docx/.pdf` (8 hlm, folder yang sama; builder build_pp.py):
+  Undangan PL + Lampiran 1-3 (format surat penawaran, rincian harga, daftar kendaraan/pengemudi), BA Evaluasi Klarifikasi
+  Negosiasi (admin/kualifikasi, teknis, harga per item), BAHPL, Laporan Hasil PL ke PPK.
+- Isian kuning: nama + NIP Pejabat Pengadaan, penyedia, nomor, tanggal/jam, angka penawaran + negosiasi.
+- 18 Okt 2026 = hari Minggu dan hari pertama kegiatan: PL dan SPK sudah terlambat terhadap mulainya layanan.
+- Seam: kartu PCO menyebut "Perlem LKPP 3/2026" untuk PL; [[reference-template-spk]] (dicek live 23 Sep) = Perlem 12/2021
+  jo. 4/2024 masih berlaku. Paket ini pakai 12/2021 jo. 4/2024; 3/2026 belum diverifikasi.
+
 ## Angka (paket 12 jam/hari, termasuk pengemudi + BBM + tol + parkir, belum PPN)
 - **Revisi 17 Okt 2026 (Aldo):** akun **522141 Belanja Sewa**; HPS jadi ±90 jt lewat tambah volume, harga satuan tetap median.
 - Alphard 3 unit x 5 hr x Rp2.400.000 = 36 jt; Innova Zenix Hybrid 5 x 5 x Rp1.200.000 = 30 jt; Hiace Premio 2 x 5 x
