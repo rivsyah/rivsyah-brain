@@ -151,6 +151,7 @@
 - [RAB Tunangan & Pernikahan](personal/project_rab_pernikahan.md) — 7 sheet (RAB + Ditanggung, 20 opsi venue, tabungan dua fase, daftar undangan); per 5 Okt: tunangan Rp56,7 jt (cincin Frank & co. Rp32 jt), nikah CIBIS 300 Rp216,9 jt, CIBIS 200 Rp196,7 jt muat; ⚠ harga Hadjatan 300 pax
 - [Materi FMI v2](personal/project_fmi_materi_belajar.md) — 5 PDF Financial Markets (Panduan baru + Awal/Menengah/Lanjut + Bank Soal 184 soal) di Riv's Journey\Materi Bahan Belajar\Financial Markets; builder ~/dev/personal/financial-markets-materi, gerbang verify.py; koreksi fakta (3T fraud, derivatif PUVA→BI, JIBOR mati 2026, RGEC, POJK 26/2025)
 - [Glosarium & Diksi Eksekutif Edisi 2](personal/project_glosarium_eksekutif.md) — 18 Okt 2026: 6 PDF + CSV Anki (900 istilah, 3 tingkat × 11 bab, 581 soal, verify 45/45) di Riv's Journey\Materi Bahan Belajar\Glosarium, Diksi2 Eksekutif\Edisi 2 (Okt 2026); Edisi 1 tidak diubah; builder ~/dev/personal/glosarium-eksekutif
+- [Materi TPD OJK](personal/project_tpd_ojk_materi.md) — 18 Okt 2026: 4 PDF (Panduan, Materi 12 bab, Bank Soal 210, Simulasi 2×75) di Riv's Journey\Materi Bahan Belajar\TPD OJK, verify 516/516; builder ~/dev/personal/tpd-ojk-materi; PCS→PCAM sejak angkatan 9, format TPD tidak dipublikasikan
 - [Bara (agent)](shared/project_bara_agent.md) — agent all-in-one bernama Bara, workspace di ~/Bara; ~/Herd sengaja tidak di-rename (parked path Herd)
 
 ## Reference
