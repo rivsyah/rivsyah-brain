@@ -341,3 +341,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T04:00Z  kemlu 18 Okt: jamuan DHAM via akun Biaya Representasi = Permenlu 2/2021 Ps 6-8 (permohonan+rencana kegiatan, persetujuan Kepala Perwakilan, laporan+bukti, USD at cost per bulan) - bukan PBJ, dokumen PP tidak dipakai [Likely]; kartu jamuan diperbarui
 - 2026-10-18T04:01Z  det-materi: review+fix bank soal 07-13 (C-level, simulasi 1-3, ujian tingkat); build/verify/audio lolos
 - 2026-10-18T04:02Z  kemlu 18 Okt: paket jamuan lunch DHAM di-hold atas arahan Aldo (pilihan jalur pengadaan vs Biaya Representasi belum diputuskan)
+- 2026-10-18T04:03Z  personal DET 18 Okt: SELESAI — 5 PDF (69/127/146/126/194 hlm) + 217 MP3 disalin ke Doulinggo English Test\Edisi 2 (Okt 2026); edisi 1 dipindah ke arsip-edisi1-Juli-2026; verify 854/854; builder commit lokal 42dd2ce
