@@ -1,6 +1,6 @@
 ---
 name: project-sewa-kendaraan-retreat-dham-2026
-description: "Paket Sewa Kendaraan Kegiatan Retreat Dewan HAM (PTRI Jenewa, Bali 18-21 Okt 2026): KAK/Spektek + RAB/HPS dibuat 17 Okt 2026, HPS Rp89.910.000 (Aldo 17 Okt: naik ke 90 jt, akun 522141); referensi = KAK Hotel Rapat Dewan HAM PTRI Jenewa"
+description: "TERKINI 18 Okt: HPS = harga proposal Tarobali, volume penuh = Rp111.555.000, + SPPBJ & SPK, tanggal riil 18 Okt (agent MENOLAK tanggal mundur). Paket Sewa Kendaraan Kegiatan Retreat Dewan HAM (PTRI Jenewa, Bali 18-21 Okt 2026): KAK/Spektek + RAB/HPS dibuat 17 Okt 2026, HPS Rp89.910.000 (Aldo 17 Okt: naik ke 90 jt, akun 522141); referensi = KAK Hotel Rapat Dewan HAM PTRI Jenewa"
 metadata:
   type: project
 ---
@@ -14,6 +14,18 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - `C:\Users\rivsy\Downloads\MOFA\Pejabat Pengadaan\Pengadaan Sewa Kendaraan Retreat Dewan HAM\` — KAK Spektek (.docx/.pdf 6 hlm,
   spektek = lampiran) + RAB dan HPS (.xlsx/.pdf; lembar RAB, HPS, Kertas Kerja HPS).
 - Builder `C:\Users\rivsy\dev\kemlu\sewa-kendaraan-dham-2026\` (data.py = satu-satunya sumber angka; README.txt).
+
+## TERKINI — disesuaikan ke proposal (18 Okt 2026 siang)
+- Aldo memilih "harga + volume penuh, HPS naik": HPS satuan = proposal (Alphard 3,5 jt; Zenix 1,2 jt; Hiace 1,8 jt),
+  volume 15/25/10 unit-hari, DPP 100,5 jt + PPN 11,055 jt = **Rp111.555.000**. Spek ikut proposal: Alphard 2023-24 6 pax,
+  Zenix 2023-24 7 pax, Hiace 2022-24 13 pax. Kertas Kerja HPS menguji harga proposal di dalam rentang survei (YA x3).
+  Tol/parkir tetap wajib ditanggung penyedia (KAK); lembur 10%/jam dan luar area Rp200 rb masuk Spektek; tanpa uang muka.
+- Baru: `SPPBJ dan SPK - ... .docx/.pdf` (6 hlm; SPK + Lampiran I rincian harga + Lampiran II 17 syarat umum),
+  builder build_spk.py. verify.py = gerbang (0 GAGAL): nilai, halaman kosong, tanggal tidak mundur, urutan tanggal.
+- **Aldo minta tanggal mundur** (layanan sudah mulai 17 Okt: penjemputan panitia/delegasi). Agent MENOLAK: semua dokumen
+  bertanggal riil 18 Okt (Minggu), PL 08.00-13.00 WITA, SPPBJ/SPK 18 Okt, layanan 18-22 Okt, BAST 23 Okt. Layanan 17 Okt
+  dan 18 Okt sebelum SPK = di luar kontrak -> keputusan PPK/konsultasi APIP. Hasil nego diisi = penawaran (latar kuning).
+- Tempat teken = data.TEMPAT "Jakarta" (ganti bila diteken di Bali). Versi 89,91 jt: cadangan data.py di scratchpad sesi.
 
 ## Dokumen Pejabat Pengadaan (18 Okt 2026)
 - `Dokumen Pejabat Pengadaan - Sewa Kendaraan Retreat Dewan HAM 2026.docx/.pdf` (8 hlm, folder yang sama; builder build_pp.py):
