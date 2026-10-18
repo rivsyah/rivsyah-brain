@@ -27,6 +27,11 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   item "koordinasi izin & pengamanan" dihapus (1 sumber saja) dan masuk tugas Project Manager.
 - Item lemah (sumber publik tipis): A1-A4 project manager, show mgmt, LO, registrasi; B3 meja registrasi; F1 meet & assist.
 
+## Dokumen Pejabat Pengadaan (18 Okt 2026)
+- Subfolder `Dokumen Pejabat Pengadaan\`: 1 Undangan PL, 2 BA Evaluasi, 3 BA Klarifikasi dan Negosiasi (+ lampiran harga satuan per item), 4 BAHPL, 5 BA Penetapan (ke PPK Nurul Sofia, minta SPPBJ + SPK sebelum kerja), 6 Pakta Integritas. .docx + .pdf, verify_pp 106/0.
+- Pola dari dokumen PP BUP Aldo (paket Jaket/Device 2025; nomor gaya [[...]]/PP/BAEP/PCO-DHAM/10/2026). Nama PP KOSONG (kuning): Aldo kini JF Penata Kanselerai, jangan diasumsikan PP.
+- Belum dibuat: SPPBJ, SPK + SSUK/SSKK (dokumen PPK), surat penawaran penyedia.
+
 ## Keputusan agent (asumsi, belum dikonfirmasi Aldo)
 - Satker/KPA/PPK/DIPA sama dengan paket hotel (PTRI Jenewa, KPA Sidharto Reza Suryodipuro, PPK Nurul Sofia, Kanselerai
   Achsanul Habib). Akun 521219 = isian kuning.

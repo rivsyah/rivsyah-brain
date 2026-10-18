@@ -336,3 +336,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T03:55Z  personal DET 18 Okt: revisi 4 PDF DET jadi Edisi 2 (5 PDF 662 hlm + 217 MP3 TTS offline) via builder ~/dev/personal/det-materi (fork mna); factcheck resmi DET 18 Okt (120=B2, Sample dinilai, LPDP S2 LN 120); review independen tiap buku; kartu project_det_materi_edisi2
 - 2026-10-18T03:58Z  18 Okt 2026: dokumen Pejabat Pengadaan (Undangan PL+lampiran, BA EKN, BAHPL, Laporan PPK) Sewa Kendaraan DHAM dibuat, isian kuning
 - 2026-10-18T03:58Z  kemlu 18 Okt: jamuan lunch DHAM - 4 dokumen Pejabat Pengadaan (Undangan, BA Evaluasi-Klarifikasi-Negosiasi, BAHPL, BA Penetapan ke PPK) .docx/.pdf dibuat ikut format set Jaket BUP; nama PP + nomor = isian kuning; builder build_pp.py
+- 2026-10-18T03:59Z  PCO Retreat DHAM: 6 dokumen Pejabat Pengadaan (PL) dibuat 18 Okt, verify_pp 106/0, subfolder Dokumen Pejabat Pengadaan
