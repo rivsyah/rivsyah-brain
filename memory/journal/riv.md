@@ -339,3 +339,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T03:59Z  PCO Retreat DHAM: 6 dokumen Pejabat Pengadaan (PL) dibuat 18 Okt, verify_pp 106/0, subfolder Dokumen Pejabat Pengadaan
 - 2026-10-18T04:00Z  personal TOEFL 18 Okt: semua konten tertulis (build penuh 7 PDF 1.341 hlm, galat 0; verify 8 gagal sisa); 5 agen terhenti kuota mingguan lalu dilanjutkan; fase pemeriksa buta 5 agen + audit konsistensi diluncurkan
 - 2026-10-18T04:00Z  kemlu 18 Okt: jamuan DHAM via akun Biaya Representasi = Permenlu 2/2021 Ps 6-8 (permohonan+rencana kegiatan, persetujuan Kepala Perwakilan, laporan+bukti, USD at cost per bulan) - bukan PBJ, dokumen PP tidak dipakai [Likely]; kartu jamuan diperbarui
+- 2026-10-18T04:01Z  det-materi: review+fix bank soal 07-13 (C-level, simulasi 1-3, ujian tingkat); build/verify/audio lolos
+- 2026-10-18T04:02Z  kemlu 18 Okt: paket jamuan lunch DHAM di-hold atas arahan Aldo (pilihan jalur pengadaan vs Biaya Representasi belum diputuskan)

@@ -1,6 +1,6 @@
 ---
 name: project-jamuan-lunch-retreat-dham-2026
-description: "KAK + RAB sederhana Jamuan Makan Siang Kepala Perwakilan untuk delegasi Retreat Dewan HAM (PTRI Jenewa, restoran di Bali, Okt 2026): nilai Rp30 jt = Pengadaan Langsung bukti kuitansi; dibuat 18 Okt 2026 dengan isian kosong + angka contoh"
+description: "ON HOLD (Aldo 18 Okt). KAK + RAB sederhana Jamuan Makan Siang Kepala Perwakilan untuk delegasi Retreat Dewan HAM (PTRI Jenewa, restoran di Bali, Okt 2026): nilai Rp30 jt = Pengadaan Langsung bukti kuitansi; dibuat 18 Okt 2026 dengan isian kosong + angka contoh"
 metadata:
   type: project
 ---
