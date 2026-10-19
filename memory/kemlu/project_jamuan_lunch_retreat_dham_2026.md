@@ -1,6 +1,6 @@
 ---
 name: project-jamuan-lunch-retreat-dham-2026
-description: "ON HOLD (Aldo 18 Okt). KAK + RAB sederhana Jamuan Makan Siang Kepala Perwakilan untuk delegasi Retreat Dewan HAM (PTRI Jenewa, restoran di Bali, Okt 2026): nilai Rp30 jt = Pengadaan Langsung bukti kuitansi; dibuat 18 Okt 2026 dengan isian kosong + angka contoh"
+description: "AKTIF lagi 19 Okt: jalur PENGADAAN, akun 521219 BBNO, Rp30 jt; set dipakai = 4 dok sangat sederhana PPK+PP. KAK + RAB sederhana Jamuan Makan Siang Kepala Perwakilan untuk delegasi Retreat Dewan HAM (PTRI Jenewa, restoran di Bali, Okt 2026): nilai Rp30 jt = Pengadaan Langsung bukti kuitansi; dibuat 18 Okt 2026 dengan isian kosong + angka contoh"
 metadata:
   type: project
 ---
@@ -22,7 +22,7 @@ perlukah KAK/RAB. Jamuan Rp30 jt, restoran di Bali, bagian dari Retreat Dewan HA
 - Builder `C:\Users\rivsy\dev\kemlu\jamuan-lunch-dham-2026\` (data.py = satu-satunya sumber angka; README.txt).
 
 ## Isian yang masih kosong / angka contoh (belum dari Aldo)
-- Tanggal jamuan, nama + alamat restoran, akun (521211 atau 521219, ikut DIPA), tempat teken.
+- Tanggal jamuan, nama + alamat restoran, tempat teken. Akun DIPUTUSKAN Aldo 19 Okt: 521219 Belanja Barang Non Operasional Lainnya.
 - Contoh: 20 pax x Rp1.295.000 + service 5% + PBJT 10% = Rp29.914.500 (Rp1.495.725/orang). Ganti dari penawaran restoran.
 - Pejabat sama dengan paket hotel: KPA Sidharto Reza Suryodipuro, PPK Nurul Sofia, Kanselerai Achsanul Habib.
 ## Dokumen Pejabat Pengadaan (18 Okt 2026, folder yang sama)
@@ -32,7 +32,14 @@ perlukah KAK/RAB. Jamuan Rp30 jt, restoran di Bali, bagian dari Retreat Dewan HA
 - Nama/NIP Pejabat Pengadaan, nomor surat, tanggal, data restoran = isian kuning. Agent tidak mengisi nama PP: paket ini
   satker PTRI Jenewa, belum dipastikan siapa PP-nya.
 - Logo kop Kemlu (dengan garis merah kanan) tersimpan sebagai kop_kemlu.png di builder.
-## Jalur alternatif: akun Biaya Representasi (dicek 18 Okt 2026, teks resmi peraturan.go.id/files/bn54-2021.pdf)
+## Set SANGAT SEDERHANA yang dipakai (Aldo 19 Okt 2026) - build_sederhana.py, tiap dokumen 1 hlm
+- PPK: 1 ND Permintaan Pengadaan + spesifikasi + HPS (ke PP), 3 BA Serah Terima (restoran-PPK, isi jumlah tamu riil + nilai
+  bill), 4 Kuitansi (Setuju dibayar PPK / Lunas dibayar Bendahara / restoran + meterai). PP: 2 BAHPL gabungan
+  (klarifikasi, nego, penetapan, sekaligus laporan ke PPK; ttd restoran + PP).
+- Set 4 dokumen panjang (build_pp.py) dipindah ke subfolder `_Arsip versi lengkap (tidak dipakai)`.
+- Masih isian: nama/NIP PP, nama Bendahara, nomor surat, tanggal, data restoran, nilai riil.
+
+## Jalur alternatif (TIDAK dipilih): akun Biaya Representasi (dicek 18 Okt 2026, teks resmi peraturan.go.id/files/bn54-2021.pdf)
 - Dasar: **Permenlu 2/2021** (BN 2021/54, bukan "4/2021") tentang Tata Cara Pemberian Fasilitas PDLN di Perwakilan.
   Ps 1 angka 11 definisi; Ps 6: PDLN ajukan permohonan tertulis ke Kepala Perwakilan + rencana kegiatan (min. tujuan, jenis,
   tanggal & tempat, daftar undangan) -> persetujuan tertulis Kepala Perwakilan -> pertanggungjawaban = laporan tertulis +
