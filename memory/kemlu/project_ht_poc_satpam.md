@@ -58,3 +58,6 @@ invoice 014/INV/AAM/X/2026, surat jalan 014/SJ/AAM/VII/2026, faktur pajak 020026
 - Aldo 19 Okt 2026: tagihan Jul-Sep ini TERPISAH dari faktur pajak + invoice paket Okt-Des. Jul-Sep dibayar sendiri
   (menjawab sebagian ASUMSI-12); BAST Jul-Sep tidak merujuk kontrak/HPS Okt-Des. Invoice lama 014/INV/AAM/VIII/2026
   (113 unit-bulan Jul-Des) tidak dipakai lagi; nomor urut 014 dipakai ulang AAM di invoice X/2026.
+- 19 Okt 2026 (keputusan akhir Aldo): BAST TETAP Rp4.795.200 per faktur pajak. Yang salah = invoice + kuitansi AAM
+  (sub total 4.300.000 harusnya 4.320.000; grand total 4.895.000 bukan jumlah barisnya sendiri; dugaan salah ketik
+  7->8). AAM diminta revisi invoice + kuitansi ke Rp4.795.200. Builder sempat diubah ke 4.895.000 lalu dikembalikan.
