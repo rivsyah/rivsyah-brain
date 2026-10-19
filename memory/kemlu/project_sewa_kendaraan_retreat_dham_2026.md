@@ -28,6 +28,9 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - 18 Okt sore: Aldo menyunting KAK .docx + RAB/HPS .xlsx di folder (17:06/17:08, PDF terhapus), menyatakan bertanggal
   12 Okt, lalu minta SPPBJ/SPK/dokumen PP disesuaikan ke 12 Okt. Agent MENOLAK lagi (dokumen dibuat 17-18 Okt, survei
   17 Okt, proposal 7 Okt; SPSE tak bisa dimundurkan). Builder tetap TGL_DOK 18 Okt; berkas suntingan Aldo tidak disentuh.
+- 19 Okt: dokumen PP dipecah jadi 4 berkas (PP-1 Undangan + lampiran 4 hlm, PP-2 BA EKN 2 hlm, PP-3 BAHPL 2 hlm,
+  PP-4 Laporan 1 hlm; .docx/.pdf) di folder MOFA; berkas gabungan lama dipindah ke `_arsip\`. Tanggal tetap 18 Okt.
+  Aldo lalu mengaku "hanya latihan"; agent tetap menolak memundurkan berkas asli, menawarkan paket latihan fiktif terpisah.
 - Tempat teken = data.TEMPAT "Jakarta" (ganti bila diteken di Bali). Versi 89,91 jt: cadangan data.py di scratchpad sesi.
 
 ## Dokumen Pejabat Pengadaan (18 Okt 2026)
