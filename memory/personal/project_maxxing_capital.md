@@ -1,11 +1,11 @@
 ---
-name: project-hedge-desk
-description: Hedge Desk — desk hedge fund pribadi Aldo + agent AI trading (saham AS + crypto, paper v1) di ~/dev/personal/hedge-desk; penerus FFCC
+name: project-maxxing-capital
+description: Maxxing Capital (dulu slug hedge-desk) — alat private/hedge fund pribadi Aldo: copilot live (read-only, menemani trading live) + agent desk paper; saham AS + crypto; ~/dev/personal/maxxing-capital
 metadata:
   type: project
 ---
 
-**Hedge Desk** (`C:\Users\rivsy\dev\personal\hedge-desk`, mesin ini) — scope **personal**. Penerus
+**Maxxing Capital** (`C:\Users\rivsy\dev\personal\maxxing-capital`, mesin ini; nama & folder sejak 19 Okt 2026, sebelumnya `hedge-desk`) — scope **personal**. Penerus
 [[project-family-funds]] setelah pivot 17 Okt 2026. Diplan dengan framework ai_context (GRANDPLAN v1,
 00_INDEX, STATUS, DECISIONS, reference/). Repo git lokal `main`, **belum ada commit & remote**.
 `.claude/ai_context/` di-track (D9 proposed). Belum ada BINDING.md di ~/brain/framework → default spec
@@ -36,3 +36,13 @@ metadata:
   dengan token → auth error 10000; wrangler jalan bila account id dideteksi dari token; sudah
   diketahui salah sejak sesi lain); Workers Paid SUDAH aktif di akun yang sama (tidak perlu upgrade); akun Alpaca paper, key Indodax trade-only, project Supabase; `ANTHROPIC_API_KEY`
   belum ada (dibutuhkan M1.4).
+
+- **19 Okt 2026:** owner menamai proyek **Maxxing Capital** (D16) dan menegaskan perannya: alat untuk
+  hedge/private fund yang membantu investing & trading dan **menemani Aldo saat live**. Folder
+  `hedge-desk` → `maxxing-capital` (belum ada commit/remote). D17 locked: **copilot live** masuk v1 —
+  baca posisi live read-only, cek pra-transaksi (RiskEngine mode `advisory`), second opinion agent
+  (format penguji tesis), peringatan sesi via Telegram, jurnal + tinjauan; Aldo yang mengeksekusi,
+  sistem tetap tidak mengeksekusi uang sungguhan di v1. Buku `live` vs `paper` dipisah di skema.
+  Milestone: copilot = M1.3 (build file 10–13); order paper → M1.4 (14–18); agent → M1.5–M1.6;
+  operasional M1.7. D18 (key read-only Indodax `view` + impor CSV/manual) proposed, menunggu Q12
+  (broker yang Aldo pakai live). Q13: IPS pribadi untuk konteks agent.
