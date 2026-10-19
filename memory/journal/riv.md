@@ -394,3 +394,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T08:40Z  kemlu: Excel kalkulasi penawaran 0873 seragam satpam (PDH 111, PDL Sus 37, olahraga 175) -> Downloads\Kalkulasi Penawaran 0873 Seragam Satpam.xlsx; termurah Versi 4 Verlando Rp262,23 jt, termahal Versi 2 Rp280,73 jt sblm pajak; Pin Gada Madya tak ada harga
 - 2026-10-19T08:40Z  HT PoC: Aldo konfirmasi tagihan Jul-Sep terpisah dari faktur+invoice Okt-Des; BAST Jul-Sep tetap
 - 2026-10-19T08:43Z  HT PoC: BAST Jul-Sep final Rp4.795.200 (faktur benar, invoice/kuitansi AAM salah); builder dikembalikan
+- 2026-10-19T08:45Z  maxxing-capital Q12: broker live Hyperliquid/Binance/Fomo/Growin diriset + uji jangkauan CF (Worker dihapus); D19/D20/D22 locked, D14/D18 superseded, D21 relay Binance proposed; reference/brokers/live-venues.md

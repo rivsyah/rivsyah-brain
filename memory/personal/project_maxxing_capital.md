@@ -46,3 +46,14 @@ metadata:
   Milestone: copilot = M1.3 (build file 10–13); order paper → M1.4 (14–18); agent → M1.5–M1.6;
   operasional M1.7. D18 (key read-only Indodax `view` + impor CSV/manual) proposed, menunggu Q12
   (broker yang Aldo pakai live). Q13: IPS pribadi untuk konteks agent.
+
+- **19 Okt 2026 — Q12 dijawab:** venue live Aldo = **Hyperliquid, Binance, Fomo, Growin' (Mandiri Sekuritas)**.
+  Uji jangkauan kedua (Worker `maxxing-reach-probe`, colo MRS, sudah dihapus): Hyperliquid `info` +
+  websocket terbuka dari laptop & Cloudflare, baca posisi cukup alamat wallet (tanpa key);
+  Binance REST (api/fapi) 403 dari Cloudflare dan diblokir DNS di laptop, websocket Binance OK dari
+  Cloudflare. Fomo = FOMO Labs (wallet Privy), perps via Hyperliquid → baca lewat alamat. Growin' =
+  IDX, tanpa API → CSV/PDF/manual + harga EOD (Yahoo .JK / GOAPI). Keputusan: D19 jalur baca per
+  venue, D20 data crypto Hyperliquid (Indodax dicoret, D14 superseded), D22 copilot modelkan
+  leverage & likuidasi (aturan advisory R15–R18) — locked. D21 relay VPS Singapura untuk baca
+  Binance — proposed (Q14). Butuh dari Aldo: alamat wallet Hyperliquid + Fomo (Q15), IPS (Q13).
+  Detail: reference/brokers/live-venues.md di repo.
