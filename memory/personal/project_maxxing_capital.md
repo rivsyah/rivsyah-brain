@@ -57,3 +57,11 @@ metadata:
   leverage & likuidasi (aturan advisory R15–R18) — locked. D21 relay VPS Singapura untuk baca
   Binance — proposed (Q14). Butuh dari Aldo: alamat wallet Hyperliquid + Fomo (Q15), IPS (Q13).
   Detail: reference/brokers/live-venues.md di repo.
+
+- **19 Okt 2026 — keputusan owner "saya pakai hyperliquid saja":** D23 locked — copilot live v1 HANYA
+  Hyperliquid (alamat wallet, tanpa key, websocket real-time posisi/order/fill/funding). D19 dan D21
+  (relay Binance) superseded; Binance/Fomo/Growin' tidak diintegrasikan di v1 (riset tetap di
+  reference/brokers/live-venues.md). Aturan advisory baru R19: setiap posisi wajib punya order stop
+  di bursa. Q16 dibuka: apakah agent desk tetap butuh saham AS (Alpaca paper) — keputusan sebelum M1.5.
+  Sisa input Aldo: alamat wallet Hyperliquid (Q15), IPS (Q13), Telegram (Q9); blocker build: WSL +
+  CLOUDFLARE_ACCOUNT_ID.
