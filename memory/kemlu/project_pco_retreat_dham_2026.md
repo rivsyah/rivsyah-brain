@@ -42,6 +42,13 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   `Downloads\Riv's Journey\Latihan PBJ - PCO Retreat (contoh)\` (3 subfolder). Gerbang latihan 90/175/65 lolos; resmi 83/139/65.
   Folder MOFA dibiarkan (Aldo: "biarkan dulu"); versi resmi 18 Okt ada di builder `resmi/`.
 
+- **19 Okt:** Aldo minta tambah dari `R4. QUOTATION ...xlsx` (R4, 11 Sep, total R4 Rp174.603.000): **C7 Show management**
+  Rp10 jt (show director, music director, stage manager, floor runner) + **C8 Joged Bumbung** Rp9,5 jt (6 penari, 5 menit);
+  kembang api (Rp20 jt opsional) TIDAK. Kini 21 item; RAB Rp128.149.500, HPS Rp119.419.000. C8 = 1 sumber (tarif joged tak
+  terbit publik) -> wajib penawaran pembanding sanggar lain. Batas lingkup: hiburan selain rindik + joged (tari pembuka, fire
+  dance, live music) dan kembang api tidak termasuk (menggantikan "dancer paket terpisah"). Gerbang resmi 88/143/65, latihan
+  95/179/65. Latihan diperbarui; MOFA tak disentuh.
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
