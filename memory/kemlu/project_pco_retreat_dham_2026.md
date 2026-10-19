@@ -66,6 +66,14 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
 - **19 Okt: Aldo — versi latihan TIDAK diperlukan; fokus dokumen di folder MOFA Pejabat Pengadaan.** Jangan bangun/salin
   latihan lagi (mode LATIHAN di builder dibiarkan, tidak dipakai).
 
+- **19 Okt v4 (Aldo: "RAB dan HPS di atas penawaran vendor"):** HPS = **rata-rata** semua sumber (pasar + R6 + R4 sebagai sumber
+  ke-2 penyedia untuk item yang sama; genset R4 60 KVA beda spek tidak dipakai), bulat ratusan ke bawah; RAB = HPS =
+  **Rp129.326.322** (DPP 116.510.200) > penawaran R6+R4 Rp128.149.500 (data.TAWAR_TOTAL). Agent menolak HPS = harga vendor
+  atau markup % (harga pasar sudah termasuk untung). 7 item timpang > 110% HPS (negosiasi): B1/C1 sound 119%, B3 IT 122%,
+  B5 printer 177%, B6 laptop 162%, C5 operator 136%, C6 genset 142%. MOFA: RAB/HPS format Aldo disunting via COM (R4 masuk
+  Referensi, kolom Sumber 5, rumus AVERAGE), KAK total+terbilang, dok PP/PPK diganti; cek_silang 0 temuan.
+  Arsip: `Arsip v5 - sebelum HPS di atas penawaran (19 Okt)\`.
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
