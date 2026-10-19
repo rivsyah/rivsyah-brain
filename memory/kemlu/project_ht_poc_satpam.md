@@ -42,3 +42,16 @@ Cara bangun ulang: openpyxl pada koordinat asli, lalu Excel COM menghapus baris 
 HPS O23; KAK docx: 3 tempat), nilai rumus tetap; kedua PDF diekspor ulang dengan susunan sama (hanya baris nama beda).
 Scan 28 Sep tetap bernama lama. Saran: koreksi tulisan tangan + paraf PPK (renvoi), supaya tanggal 28 Sep (sebelum
 kontrak 1 Okt) tetap utuh; cetak ulang + teken ulang memaksa memilih antara tanggal mundur atau HPS sesudah kontrak.
+
+## BAST Juli-Sep 2026 (19 Okt 2026)
+Aldo minta BAST atas tagihan AAM Jul-Sep (`Downloads\invoice anggoro.pdf`, scan 4 hlm: kuitansi 014/KWT/AAM/X/2026,
+invoice 014/INV/AAM/X/2026, surat jalan 014/SJ/AAM/VII/2026, faktur pajak 02002600422059623 tgl 13 Okt 2026).
+- Tagihan: 60 unit-bulan x Rp72.000 (belum PPN). Faktur pajak: harga jual 4.320.000, DPP nilai lain 3.960.000,
+  PPN 475.200 -> **total benar Rp4.795.200**. Invoice/kuitansi SALAH HITUNG: sub total 4.300.000, PPN 475.000,
+  grand total **4.895.000** (lebih Rp99.800; 4.300.000+475.000 pun = 4.775.000). BAST memakai angka faktur.
+- Harga Jul-Sep Rp72.000 belum PPN berbeda dari catatan lama (Rp65.000 + PPN = 72.150 incl). Volume 60 berbeda dari
+  catatan lama 53 unit-bulan Jul-Sep -> lampiran BAST diberi kolom centang Jul/Agt/Sep untuk dicek.
+- Surat jalan: nomor kartu HT 07 dan HT 08 sama (...207966500); HT 18 hanya 17 digit. Disalin apa adanya.
+- Berkas: `Pengadaan Data Celluar HT 2026\BAST - Layanan Kuota Data HT Hytera Satpam Jul-Sep 2026.docx/.pdf`
+  (BAST 1 hlm + lampiran 20 HT 1 hlm; isian kuning: nomor, hari/tanggal, jabatan Gutty, rangkap).
+  Builder `~/dev/kemlu/bast-ht-jul-sep-2026/build_bast.py`.
