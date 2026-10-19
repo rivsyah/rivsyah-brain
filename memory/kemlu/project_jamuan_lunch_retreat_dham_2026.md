@@ -39,6 +39,16 @@ perlukah KAK/RAB. Jamuan Rp30 jt, restoran di Bali, bagian dari Retreat Dewan HA
 - Set 4 dokumen panjang (build_pp.py) dipindah ke subfolder `_Arsip versi lengkap (tidak dipakai)`.
 - Masih isian: nama/NIP PP, nama Bendahara, nomor surat, tanggal, data restoran, nilai riil.
 
+## SBM 2026 untuk jamuan (dibaca 19 Okt 2026 dari PDF lokal `Downloads\MOFA\Permenlu MoU\PMK 32 Tahun 2025.pdf`)
+- TIDAK ada butir "jamuan delegasi asing" di SBM dalam negeri.
+- Lamp. I (batas tertinggi) angka 38.1 Konsumsi Rapat Koordinasi Tingkat Menteri/Wamen/Eselon I/Setara (nasional):
+  makan Rp118.000 + kudapan Rp53.000 per orang/kali; hanya untuk RAPAT luring min. 2 jam. Bali rapat biasa (38.2.17)
+  Rp52.000 + Rp22.000. Kalau auditor memakai 38.1 untuk jamuan, 20 pax hanya ~Rp2,4-3,4 jt -> risiko temuan besar.
+- Lamp. II (dapat dilampaui) angka 19.1 huruf f Jamuan Perwakilan LN = "jamuan tamu diplomatik di luar kantor";
+  Geneva **USD 130 per OH** (OH = orang hari). x JISDOR 9 Okt Rp17.884 = ~Rp2.325.000/orang. Contoh RAB Rp1,50 jt/orang
+  ada di bawahnya. Rekomendasi agent: pakai 19.1 Geneva sebagai acuan kewajaran (satker PTRI Jenewa, tamu = Dubes/Watap),
+  tulis eksplisit bahwa 38.1 tidak berlaku karena bukan rapat [Likely; pemakaian SBM Perwakilan untuk jamuan di Bali = tafsiran].
+
 ## Jalur alternatif (TIDAK dipilih): akun Biaya Representasi (dicek 18 Okt 2026, teks resmi peraturan.go.id/files/bn54-2021.pdf)
 - Dasar: **Permenlu 2/2021** (BN 2021/54, bukan "4/2021") tentang Tata Cara Pemberian Fasilitas PDLN di Perwakilan.
   Ps 1 angka 11 definisi; Ps 6: PDLN ajukan permohonan tertulis ke Kepala Perwakilan + rencana kegiatan (min. tujuan, jenis,

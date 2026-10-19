@@ -378,3 +378,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T02:43Z  PCO Retreat DHAM: Aldo - latihan tidak perlu, fokus MOFA
 - 2026-10-19T03:47Z  PCO Retreat DHAM v4: HPS rata-rata sumber + R4, RAB=HPS Rp129.326.322 > penawaran 128.149.500; 7 item timpang; MOFA disunting, cek_silang 0 temuan
 - 2026-10-19T04:16Z  19 Okt 2026: tambah BA Penetapan Calon Penyedia (PP-4) paket sewa kendaraan DHAM; Laporan jadi PP-5; SPPBJ/SPK merujuk penetapan
+- 2026-10-19T04:29Z  kemlu 19 Okt: SBM 2026 jamuan - tak ada butir jamuan delegasi asing DN; 38.1 rakor menteri/es I Rp118rb+53rb (batas tertinggi, khusus rapat); Lamp II 19.1 Jamuan Perwakilan Geneva USD130/OH (dapat dilampaui); kartu jamuan DHAM diperbarui
