@@ -57,3 +57,12 @@ Terkait: [[project_pco_retreat_dham_2026]], [[project_jamuan_lunch_retreat_dham_
   jadwal, II ubah Ps 3(2) nilai + sisip 3(3a) jadwal bayar, III ubah Ps 4(1)c masukkan MICE Agreement + adendumnya,
   IV pembetulan SPPBJ + sampul "November", V penutup. data.ADENDUM_KE bila ternyata sudah ada adendum SP. verify 41/0.
 - Aldo sendiri menyimpan `4. DKH Addendum II.xlsx` (lembar DKH saja, total 1,3667 M) dan membuka draf lama "(Adendum II)" di Word.
+
+## 19 Okt 2026 — keputusan Aldo: sudah ada Adendum I Surat Perjanjian -> draf = ADENDUM KEDUA SP
+- Hanya memuat perubahan Adendum II hotel: Plunge Pool +1 malam 17 Okt, dinner 19 -> 20 Okt. Nilai Rp1.359.408.000 (asumsi
+  = nilai Adendum I SP, sama dengan Adendum I hotel) -> Rp1.366.736.000. Pasal I volume/jadwal, II Ps 3(2) nilai + 3(3a)
+  jadwal bayar ("menggantikan ketentuan sebelumnya apabila ada"), III Ps 4(1)c MICE Agreement + adendumnya, IV pembetulan
+  SPPBJ + sampul, V penutup. verify 44/0. Nomor/tanggal Adendum I SP = isian (data.ADD1_SP_NOMOR/TGL).
+- Isi Adendum I SP BELUM dilihat agent: Pasal II(2), III, IV ditulis bersyarat; selaraskan bila Aldo kirim berkasnya.
+- Folder `Dokumen Adendum II\`: set "(Adendum Kedua Surat Perjanjian)" = terkini; draf "(Adendum Pertama SP)" diarsip di
+  subfolder; draf lama "(Adendum II)" .docx dibiarkan (sempat terbuka di Word Aldo).

@@ -367,3 +367,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-18T09:27Z  PCO Retreat DHAM: 'KAK/RAB/HPS asli 14 Sep' yang ditaruh = draf agent sendiri (python-docx/openpyxl, isi survei 18 Okt) yang tanggalnya diubah ke 14 Sep hari ini 17.19/17.25; agent tidak menyelaraskan; PDF v3 KAK/RAB di folder terhapus, salinan ada di builder out/
 - 2026-10-18T09:34Z  PCO Retreat DHAM: versi latihan (nama contoh + tanda air, tanggal mulai 14 Sep) di Riv's Journey; resmi tetap 18 Okt; MOFA tak disentuh
 - 2026-10-18T09:53Z  18 Okt: cek Surat Perjanjian Sofitel DHAM + susun ulang draf jadi Adendum Pertama SP (5 pasal + lampiran), dokumen 1-3 dibangun ulang
+- 2026-10-19T01:09Z  19 Okt: draf adendum Sofitel DHAM diubah jadi Adendum Kedua SP (hanya perubahan Adendum II hotel), verify 44/0, set lama diarsip
