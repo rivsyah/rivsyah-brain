@@ -397,3 +397,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T08:45Z  maxxing-capital Q12: broker live Hyperliquid/Binance/Fomo/Growin diriset + uji jangkauan CF (Worker dihapus); D19/D20/D22 locked, D14/D18 superseded, D21 relay Binance proposed; reference/brokers/live-venues.md
 - 2026-10-19T08:47Z  19 Okt: matriks komparasi harga vendor seragam Satpam (INAPROC/Tokopedia/Shopee, per bahan) 372 baris, 20 hlm, di folder paket; Shopee butuh login -> via biggo.id; HPS tidak diubah
 - 2026-10-19T08:48Z  maxxing-capital D23: copilot v1 hanya Hyperliquid (owner); D19/D21 superseded; R19 order-stop rule
+- 2026-10-19T08:51Z  kemlu: penawaran 0873 revisi (16:50) tambah Pin Gada Madya peniti 18.500/magnet 42.000, harga lain sama; Excel diperbarui, termurah Versi 4 Rp262.453.000 sblm pajak
+- 2026-10-19T08:58Z  19 Okt: matriks seragam Satpam ditambah lembar Penawaran vs Pasar (penawaran CV Nagoya 0873, 5 opsi bahan), 408 baris; temuan Moenus faux leather, Adidas Rp150rb bukan asli

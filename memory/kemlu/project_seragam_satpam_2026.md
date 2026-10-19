@@ -58,3 +58,12 @@ Tokopedia 191, Shopee 73), 336 masuk statistik. Lembar: Ringkasan (barang x mark
 - Seragam Satpam jadi berbahan **Suprima De Boss tidak ada** di 3 marketplace (Suprima = kain semi wool seragam ASN/Pemda).
   PDH American Drill: Tokopedia median ~Rp180 rb, Shopee ~Rp180 rb (Nilai Dasar); INAPROC hanya listing tanpa bahan.
 - Matriks tidak mengubah HPS (Rp299.743.000) — HPS tetap dari pasar.py 14 Okt.
+
+## Penawaran CV. Nagoya Engineering No. 0873 (19 Okt 2026) -> lembar "Penawaran vs Pasar" di matriks
+Harga belum pajak, berlaku 30 hari. PDH 5 opsi bahan Rp350-475 rb (semua < HPS Rp493.000); PDL Rp370-495 rb (opsi
+Donatello+Gaia Premium Rp495 rb > HPS PDL Sus Rp476.300 yang sudah dibatasi SBM). Di atas HPS: baton +67%, pin kewenangan
++90%, pin Gada magnet +231%, sepatu PDL Dekade +29%, sepatu PDH M25 +10%, rompi/borgol +10%.
+Temuan: kain Donatello Italy Wool tidak terverifikasi (pasar hanya wool jas Donatella); Casamoda = high twist; Verlando =
+American Drill; Gaia Neo/Trill = kain seragam Satpam. **Moenus M25 & Dekade = faux leather** (KAK: kulit sapi asli).
+**Training Adidas Rp150 rb tidak mungkin original** (asli Rp361-750 rb). Kaos carded 20s < mutu KAK (combed 24s).
+Tokopedia + INAPROC dibaca langsung lewat browser (INAPROC bisa dirender di browser bawaan). Matriks kini 408 baris, 26 hlm.
