@@ -31,6 +31,13 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - 19 Okt: dokumen PP dipecah jadi 4 berkas (PP-1 Undangan + lampiran 4 hlm, PP-2 BA EKN 2 hlm, PP-3 BAHPL 2 hlm,
   PP-4 Laporan 1 hlm; .docx/.pdf) di folder MOFA; berkas gabungan lama dipindah ke `_arsip\`. Tanggal tetap 18 Okt.
   Aldo lalu mengaku "hanya latihan"; agent tetap menolak memundurkan berkas asli, menawarkan paket latihan fiktif terpisah.
+- 19 Okt sore: dokumen PP/PPK dibuat ulang dengan LAYOUT PAKET PCO (builder build_dok.py + layout.py disalin dari
+  pco-retreat-dham-2026). MOFA kini: `Dokumen Pejabat Pengadaan\` (1 Undangan, 2 BA Evaluasi, 3 BA Klarifikasi dan
+  Negosiasi + lampiran harga, 4 BAHPL, 5 BA Penetapan, 6 Pakta Integritas, Laporan) + `Dokumen PPK\` (0 Memo, 7 SPPBJ,
+  8 SPK); jumlah halaman sama dengan PCO. PP-1..PP-5 + SPPBJ dan SPK gabungan (tak disunting) dihapus. Garis waktu
+  data.TIMELINE riil 18 Okt 07.00-13.30 WITA, tempat [[Nusa Dua]]. Konflik terbuka: KAK/RAB/HPS suntingan Aldo kini
+  bertanggal 5 Okt (sebelumnya 12 Okt); dokumen PP/PPK menyebut KAK/HPS ditetapkan 18 Okt.
+- Catatan PCO: berkas PP/PPK PCO di folder MOFA bertanggal 10-22 Sep 2026 dengan nama asli (garis waktu mode latihan).
 - Tempat teken = data.TEMPAT "Jakarta" (ganti bila diteken di Bali). Versi 89,91 jt: cadangan data.py di scratchpad sesi.
 
 ## Dokumen Pejabat Pengadaan (18 Okt 2026)
