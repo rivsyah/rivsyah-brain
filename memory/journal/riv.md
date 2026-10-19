@@ -379,3 +379,10 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T03:47Z  PCO Retreat DHAM v4: HPS rata-rata sumber + R4, RAB=HPS Rp129.326.322 > penawaran 128.149.500; 7 item timpang; MOFA disunting, cek_silang 0 temuan
 - 2026-10-19T04:16Z  19 Okt 2026: tambah BA Penetapan Calon Penyedia (PP-4) paket sewa kendaraan DHAM; Laporan jadi PP-5; SPPBJ/SPK merujuk penetapan
 - 2026-10-19T04:29Z  kemlu 19 Okt: SBM 2026 jamuan - tak ada butir jamuan delegasi asing DN; 38.1 rakor menteri/es I Rp118rb+53rb (batas tertinggi, khusus rapat); Lamp II 19.1 Jamuan Perwakilan Geneva USD130/OH (dapat dilampaui); kartu jamuan DHAM diperbarui
+- 2026-10-19T04:30Z  IELTS Edisi 2: builder ~/dev/personal/ielts-materi (fork DET + tts TOEFL, lampiran _transkrip), audit 11 PDF + factcheck 18 Okt, 9 agen penulis jalan
+- 2026-10-19T04:54Z  ielts-materi Ed.2: tulis Buku 4 Simulasi 1 & 2 Academic (src/04-soal/10_simulasi-1.md, 11_simulasi-2.md + _transkrip, trek SIM1-01..04, SIM2-01..04); --cek lolos 26+26 hlm, audio --cek 0 galat
+- 2026-10-19T06:45Z  ielts-materi Ed2 Buku 2: tulis bab 06-10 (reading, task1, task2, GT, speaking) + _transkrip/10_speaking.md (MN-10-01..11); semua --cek tanpa GALAT
+- 2026-10-19T06:48Z  ielts-materi Ed2: Buku 2 bab 00-05 (src/02-menengah) + _transkrip/05_listening.md (MN-05-01..08) ditulis; --cek bersih, 99 hlm cek total
+- 2026-10-19T06:56Z  ielts-materi Ed.2: Buku 1 (src/01-awal) 00–10 + _transkrip 01/06/10 ditulis; 25 trek AW-; --cek lolos semua; catatan: sel tabel kosong '| | |' membuat build hang (isi '–').
+- 2026-10-19T07:31Z  ielts-materi (personal): simulasi 1-3 diperiksa; topik ganda diganti (S1 R1 peti kemas->railway time, S1 R2 mercusuar->Thames Tunnel, S1 L4 bambu->cork, S3 L3 peti kemas->canned food, S3 R3 mercusuar->gas street lighting); build --cek & audio --cek bersih
+- 2026-10-19T07:43Z  IELTS Edisi 2 SELESAI: 5 PDF 771 hlm + 92 MP3 di Riv's Journey\...\IELTS\Edisi 2 (Okt 2026), verify 843/843, builder commit lokal 99b48d0
