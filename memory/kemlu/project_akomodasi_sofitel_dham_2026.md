@@ -66,3 +66,11 @@ Terkait: [[project_pco_retreat_dham_2026]], [[project_jamuan_lunch_retreat_dham_
 - Isi Adendum I SP BELUM dilihat agent: Pasal II(2), III, IV ditulis bersyarat; selaraskan bila Aldo kirim berkasnya.
 - Folder `Dokumen Adendum II\`: set "(Adendum Kedua Surat Perjanjian)" = terkini; draf "(Adendum Pertama SP)" diarsip di
   subfolder; draf lama "(Adendum II)" .docx dibiarkan (sempat terbuka di Word Aldo).
+
+## 19 Okt 2026 — Adendum I hotel diterima (`SBND - 1st Group Addendum ..._261019_092403.pdf`, 6 hlm, ada teks)
+- Angka cocok dengan data builder: 177 RN Rp944.128.000 (Prestige Suite +20 Okt), acara Rp415.280.000 (110->100, 100->90),
+  total Rp1.359.408.000. Dinner masih 19 Okt.
+- Jadwal bayar Add I hotel: 40% diterima 21 Sep; 40% kedua JATUH TEMPO 21 Sep; pelunasan Rp242.968.000. Add II hotel memundurkan
+  termin kedua ke 16 Okt (pelunasan Rp250.296.000) -> kini dicatat sebagai perubahan ketiga di ND/BA (bukan di Pasal I).
+- Salinan Add I hotel TIDAK diteken PPK (kolom Nurul Sofia + tanggal kosong); tenggat balik hotel 8 Okt. Sampul Add I juga
+  "16-22 November 2026" -> Pasal IV(2) kini menyebut sampul Add I dan Add II. verify 44/0.
