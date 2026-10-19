@@ -390,3 +390,6 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T08:17Z  19 Okt 2026: dokumen PP/PPK sewa kendaraan DHAM dibuat ulang gaya PCO (build_dok.py), 10 docx di MOFA subfolder; tanggal riil 18 Okt
 - 2026-10-19T08:31Z  maxxing-capital: proyek hedge-desk diganti nama Maxxing Capital (folder ~/dev/personal/maxxing-capital); D17 copilot live (read-only, Aldo eksekusi) masuk v1 sebagai M1.3; INDEX dinomori ulang; card dipindah ke personal/project_maxxing_capital.md
 - 2026-10-19T08:34Z  BAST kuota HT Jul-Sep 2026 (AAM) dibuat: Rp4.795.200 per faktur pajak; invoice/kuitansi AAM salah hitung 4.895.000; berkas di folder Pengadaan Data Celluar HT 2026; builder ~/dev/kemlu/bast-ht-jul-sep-2026
+- 2026-10-19T08:36Z  kemlu: hitung total penawaran CV Nagoya Engineering No 0873 (seragam satpam) 19 Okt 2026 - jumlah semua baris Rp6.047.500 belum pajak
+- 2026-10-19T08:40Z  kemlu: Excel kalkulasi penawaran 0873 seragam satpam (PDH 111, PDL Sus 37, olahraga 175) -> Downloads\Kalkulasi Penawaran 0873 Seragam Satpam.xlsx; termurah Versi 4 Verlando Rp262,23 jt, termahal Versi 2 Rp280,73 jt sblm pajak; Pin Gada Madya tak ada harga
+- 2026-10-19T08:40Z  HT PoC: Aldo konfirmasi tagihan Jul-Sep terpisah dari faktur+invoice Okt-Des; BAST Jul-Sep tetap

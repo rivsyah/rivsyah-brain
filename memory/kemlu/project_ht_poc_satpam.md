@@ -55,3 +55,6 @@ invoice 014/INV/AAM/X/2026, surat jalan 014/SJ/AAM/VII/2026, faktur pajak 020026
 - Berkas: `Pengadaan Data Celluar HT 2026\BAST - Layanan Kuota Data HT Hytera Satpam Jul-Sep 2026.docx/.pdf`
   (BAST 1 hlm + lampiran 20 HT 1 hlm; isian kuning: nomor, hari/tanggal, jabatan Gutty, rangkap).
   Builder `~/dev/kemlu/bast-ht-jul-sep-2026/build_bast.py`.
+- Aldo 19 Okt 2026: tagihan Jul-Sep ini TERPISAH dari faktur pajak + invoice paket Okt-Des. Jul-Sep dibayar sendiri
+  (menjawab sebagian ASUMSI-12); BAST Jul-Sep tidak merujuk kontrak/HPS Okt-Des. Invoice lama 014/INV/AAM/VIII/2026
+  (113 unit-bulan Jul-Des) tidak dipakai lagi; nomor urut 014 dipakai ulang AAM di invoice X/2026.
