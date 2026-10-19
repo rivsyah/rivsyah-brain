@@ -49,6 +49,14 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   dance, live music) dan kembang api tidak termasuk (menggantikan "dancer paket terpisah"). Gerbang resmi 88/143/65, latihan
   95/179/65. Latihan diperbarui; MOFA tak disentuh.
 
+- **19 Okt (lanjutan):** Aldo minta MOFA ikut diedit. KAK + RAB/HPS di MOFA = format suntingan Aldo (pagi 19 Okt: sampul
+  ditata ulang, bab Metode + Batas Lingkup dihapus, RAB/HPS pakai label "Pagu", subtotal per kelompok, baris terbilang, tanggal
+  14 Sep). Agent menyunting DI TEMPAT (bukan menimpa): tambah C7/C8 di spektek + RAB/HPS + Referensi Harga (Excel COM, rumus
+  subtotal/total diperluas), total/terbilang Rp128.149.500, keluaran +show management/joged, **tanggal 14 Sep -> 18 Okt**
+  (nama pejabat asli). Versi Aldo disimpan di `Arsip v4 - suntingan Aldo 19 Okt pagi (tanggal 14 Sep)\`. Dokumen PP + PPK
+  di MOFA diganti build resmi terbaru (HPS Rp119.419.000; verify_pp 143/0). Jebakan COM: `$x.CutCopyMode=...` gagal di
+  Excel tak tampak -> pakai Range.Copy(dest); `Evaluate('DATE(..)')` -> #VALUE!, isi serial (46313 = 18 Okt 2026).
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
