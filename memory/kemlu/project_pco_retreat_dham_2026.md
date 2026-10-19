@@ -60,7 +60,8 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
 - **19 Okt (cek silang):** `cek_silang.py <folder MOFA>` mencocokkan 9 dok PP/PPK dengan RAB/HPS di MOFA (vol, harga satuan HPS,
   penawaran = RAB, DPP/PPN SPK, semua nominal Rp): 187 cocok. Selisih nilai HPS (HPS format Aldo Rp119.419.350 tanpa baris
   pembulatan vs dok PP Rp119.419.000) -> **Aldo: HPS apa adanya, dok PP/PPK pakai Rp119.419.350** (data.HPS_NILAI). Setelah
-  rebuild: 0 temuan. Resmi + latihan diperbarui.
+  rebuild: 0 temuan. Folder latihan di Riv's Journey sudah DIHAPUS Aldo (19 Okt) -> tidak dibuat ulang; hasil latihan
+  hanya ada di builder `latihan/`.
 
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
