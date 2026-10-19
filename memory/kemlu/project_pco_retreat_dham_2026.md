@@ -63,6 +63,9 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   rebuild: 0 temuan. Folder latihan di Riv's Journey sudah DIHAPUS Aldo (19 Okt) -> tidak dibuat ulang; hasil latihan
   hanya ada di builder `latihan/`.
 
+- **19 Okt: Aldo — versi latihan TIDAK diperlukan; fokus dokumen di folder MOFA Pejabat Pengadaan.** Jangan bangun/salin
+  latihan lagi (mode LATIHAN di builder dibiarkan, tidak dipakai).
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
