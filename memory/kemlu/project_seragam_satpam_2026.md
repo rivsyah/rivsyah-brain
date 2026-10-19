@@ -67,3 +67,9 @@ Temuan: kain Donatello Italy Wool tidak terverifikasi (pasar hanya wool jas Dona
 American Drill; Gaia Neo/Trill = kain seragam Satpam. **Moenus M25 & Dekade = faux leather** (KAK: kulit sapi asli).
 **Training Adidas Rp150 rb tidak mungkin original** (asli Rp361-750 rb). Kaos carded 20s < mutu KAK (combed 24s).
 Tokopedia + INAPROC dibaca langsung lewat browser (INAPROC bisa dirender di browser bawaan). Matriks kini 408 baris, 26 hlm.
+- **Uji SBM penawaran 0873 (19 Okt, revisi 16:50 menambah Pin Gada Madya peniti 18.500/magnet 42.000):** paket per personel
+  (1 tiap barang, pin peniti) + PPN 11% vs SBM Rp1.585.000. Paket A (PDH): hanya **Versi 4 Verlando** masuk (Rp1.568.430);
+  V3 lewat Rp11.180, V5 Rp22.280, V1 Rp77.780, V2 Rp122.180. Paket B (PDL Sus): **semua versi melampaui** (V4 terendah
+  Rp1.698.300, lewat Rp113.300; perlu harga sebelum PPN <= Rp1.427.900). Sebelum PPN: A semua masuk, B V3-V5 masuk.
+  Total + PPN: V4 Rp291,3 jt, V3 296,0, V5 297,9 (< HPS Rp299,7 jt); V1 305,9 & V2 311,9 > HPS.
+  Excel `Downloads\Kalkulasi Penawaran 0873 Seragam Satpam.xlsx` (sheet Rekap, Uji SBM & HPS, Rincian, Harga Penawaran).

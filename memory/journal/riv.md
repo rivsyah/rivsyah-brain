@@ -399,3 +399,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T08:48Z  maxxing-capital D23: copilot v1 hanya Hyperliquid (owner); D19/D21 superseded; R19 order-stop rule
 - 2026-10-19T08:51Z  kemlu: penawaran 0873 revisi (16:50) tambah Pin Gada Madya peniti 18.500/magnet 42.000, harga lain sama; Excel diperbarui, termurah Versi 4 Rp262.453.000 sblm pajak
 - 2026-10-19T08:58Z  19 Okt: matriks seragam Satpam ditambah lembar Penawaran vs Pasar (penawaran CV Nagoya 0873, 5 opsi bahan), 408 baris; temuan Moenus faux leather, Adidas Rp150rb bukan asli
+- 2026-10-19T09:03Z  kemlu 19 Okt: uji SBM penawaran 0873 satpam - paket PDH hanya Versi 4 masuk SBM (+PPN), paket PDL Sus semua versi melampaui; sheet Uji SBM & HPS ditambah ke Excel kalkulasi; kartu project_seragam_satpam_2026 diperbarui
