@@ -57,6 +57,11 @@ Nilai estimasi PCO dari Aldo: **Rp197 jt**.
   di MOFA diganti build resmi terbaru (HPS Rp119.419.000; verify_pp 143/0). Jebakan COM: `$x.CutCopyMode=...` gagal di
   Excel tak tampak -> pakai Range.Copy(dest); `Evaluate('DATE(..)')` -> #VALUE!, isi serial (46313 = 18 Okt 2026).
 
+- **19 Okt (cek silang):** `cek_silang.py <folder MOFA>` mencocokkan 9 dok PP/PPK dengan RAB/HPS di MOFA (vol, harga satuan HPS,
+  penawaran = RAB, DPP/PPN SPK, semua nominal Rp): 187 cocok. Selisih nilai HPS (HPS format Aldo Rp119.419.350 tanpa baris
+  pembulatan vs dok PP Rp119.419.000) -> **Aldo: HPS apa adanya, dok PP/PPK pakai Rp119.419.350** (data.HPS_NILAI). Setelah
+  rebuild: 0 temuan. Resmi + latihan diperbarui.
+
 ## v2 (18 Okt 2026, arahan Aldo)
 - Aldo: **Phenom Event Indonesia = vendor yang dipakai** untuk Retreat; KAK/RAB/HPS + dokumen PP dibangun ulang mengikuti
   lingkup penawaran R6 (produksi teknis): 19 item, kelompok A resepsi 18 Okt, B sesi 19-20 Okt, C jamuan Retreat Garden 20 Okt, D foto.
