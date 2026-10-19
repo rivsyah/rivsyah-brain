@@ -72,4 +72,4 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 ## Asumsi agent (belum dikonfirmasi Aldo)
 - Komposisi kendaraan (jenis, unit, hari) dirancang agent agar total <= 70 jt.
 - Metode = Pengadaan Langsung (dasar hukum Perlem LKPP 12/2021 jo 4/2024), bukan dikecualikan (Perlem 5/2021) seperti hotel.
-- Tanggal teken "......... Oktober 2026". Dibuat 17 Okt = 1 hari sebelum kegiatan: kontrak harus ada sebelum 18 Okt.
+- Tanggal teken "......... Oktober 2026". Dibuat 17 Okt = 1 hari sebelum kegiatan: kontrak harus ada sebelum 18 Okt.SPPBJ + SPK kini merujuk BA Penetapan. Aldo menghapus PDF + `_arsip` di folder MOFA -> salin .docx saja; PP-4 Laporan lama dihapus.
