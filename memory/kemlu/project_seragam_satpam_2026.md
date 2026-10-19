@@ -47,3 +47,14 @@ PPK Charles Bob Ivan (RO 002.H), e-mail PPK (SSKK 5),
 SP paling lambat 4 Nov 2026 (30 hari kalender, BAST <= 4 Des). Cek kontrak alih daya Satpam tidak sudah memuat seragam.
 Daftar personel + ukuran, contoh/desain atribut dari Bag. Pengamanan. Selisih 147 vs 148, siapa 27 penerima olahraga tambahan.
 Terkait: [[reference_pejabat_bup]], [[project_evaluasi_pakaian_dinas_asn]], [[reference_katalog_v6_sp_batal]], [[project_ht_poc_satpam]].
+
+## Matriks komparasi harga vendor (19 Okt 2026)
+`Matriks Komparasi Harga - Seragam Dinas Satpam Kemlu TA 2026.xlsx/.pdf` (20 hlm) di folder paket. Builder
+`build_matriks.py` + `render_matriks.ps1` + `data/` (3 JSON subagent + `browser_tokopedia.py`). 372 baris (INAPROC 108,
+Tokopedia 191, Shopee 73), 336 masuk statistik. Lembar: Ringkasan (barang x marketplace), Seragam per Bahan, Detail Vendor.
+- **Shopee wajib login** untuk melihat hasil cari -> tidak bisa dibaca agent; harga Shopee via agregator biggo.id.
+- Tokopedia terbaca langsung lewat browser bawaan (85 baris "halaman"); WebFetch Tokopedia/INAPROC gagal (JS/security
+  check) -> subagent memakai cuplikan mesin pencari (perlu cek ulang).
+- Seragam Satpam jadi berbahan **Suprima De Boss tidak ada** di 3 marketplace (Suprima = kain semi wool seragam ASN/Pemda).
+  PDH American Drill: Tokopedia median ~Rp180 rb, Shopee ~Rp180 rb (Nilai Dasar); INAPROC hanya listing tanpa bahan.
+- Matriks tidak mengubah HPS (Rp299.743.000) — HPS tetap dari pasar.py 14 Okt.

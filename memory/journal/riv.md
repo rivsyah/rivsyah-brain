@@ -395,3 +395,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T08:40Z  HT PoC: Aldo konfirmasi tagihan Jul-Sep terpisah dari faktur+invoice Okt-Des; BAST Jul-Sep tetap
 - 2026-10-19T08:43Z  HT PoC: BAST Jul-Sep final Rp4.795.200 (faktur benar, invoice/kuitansi AAM salah); builder dikembalikan
 - 2026-10-19T08:45Z  maxxing-capital Q12: broker live Hyperliquid/Binance/Fomo/Growin diriset + uji jangkauan CF (Worker dihapus); D19/D20/D22 locked, D14/D18 superseded, D21 relay Binance proposed; reference/brokers/live-venues.md
+- 2026-10-19T08:47Z  19 Okt: matriks komparasi harga vendor seragam Satpam (INAPROC/Tokopedia/Shopee, per bahan) 372 baris, 20 hlm, di folder paket; Shopee butuh login -> via biggo.id; HPS tidak diubah
