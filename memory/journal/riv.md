@@ -372,3 +372,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-19T01:34Z  PCO Retreat DHAM: + show management & Joged Bumbung dari R4 (tanpa kembang api); RAB 128,15 jt, HPS 119,42 jt; Joged 1 sumber
 - 2026-10-19T01:38Z  kemlu 19 Okt: jamuan DHAM dilanjut jalur pengadaan akun 521219 BBNO Rp30 jt; 4 dokumen sangat sederhana (ND PPK+HPS, BAHPL PP, BAST, Kuitansi) 1 hlm masing-masing via build_sederhana.py; KAK/RAB dibangun ulang dengan akun; set panjang diarsipkan
 - 2026-10-19T01:45Z  PCO Retreat DHAM: MOFA KAK+RAB/HPS (format Aldo) disunting di tempat: +C7/C8, total 128,15 jt, tanggal 18 Okt; versi 14 Sep diarsip v4; dok PP/PPK MOFA diganti build terbaru
+- 2026-10-19T02:00Z  19 Okt: Adendum Pertama SP Sofitel DHAM dibuat (build_add1.py), Adendum Kedua diselaraskan, verify 78/0, disalin ke Dokumen Adendum\

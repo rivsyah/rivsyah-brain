@@ -74,3 +74,11 @@ Terkait: [[project_pco_retreat_dham_2026]], [[project_jamuan_lunch_retreat_dham_
   termin kedua ke 16 Okt (pelunasan Rp250.296.000) -> kini dicatat sebagai perubahan ketiga di ND/BA (bukan di Pasal I).
 - Salinan Add I hotel TIDAK diteken PPK (kolom Nurul Sofia + tanggal kosong); tenggat balik hotel 8 Okt. Sampul Add I juga
   "16-22 November 2026" -> Pasal IV(2) kini menyebut sampul Add I dan Add II. verify 44/0.
+
+## 19 Okt 2026 — Adendum I SP ternyata TIDAK ADA (dicari di Downloads/Documents/Desktop) -> Aldo: "buat sekarang addendum pertama"
+- Kini 2 set di `Pengadaan Akomodasi\Dokumen Adendum\` (folder di-rename Aldo dari "Dokumen Adendum II"):
+  Adendum Pertama SP (build_add1.py; Add I hotel; 1,3956 M -> 1,3594 M; jadwal bayar Add I; MICE masuk Ps 4(1)c; pembetulan
+  SPPBJ + sampul Add I) dan Adendum Kedua SP (build.py; kini merujuk tegas ke Adendum Pertama, tanpa "apabila ada";
+  SPPBJ tidak diulang). verify 78/0. Nomor Adendum Pertama = '....../ADD-I/SP/PPK/PTRI-JNW/10/2026' dipakai di Kedua.
+- Risiko: dua adendum disusun bersamaan 19 Okt padahal perubahan I terjadi 6 Okt -> tanggal teken jangan dimundurkan;
+  cukup diteken berurutan (Pertama lalu Kedua).
