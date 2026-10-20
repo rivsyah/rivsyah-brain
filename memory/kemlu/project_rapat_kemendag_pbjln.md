@@ -112,3 +112,14 @@ sesi (tidak disimpan).
 
 Jebakan build: [[reference-office-render]] (PowerPoint COM jalan; heredoc Git Bash merusak `\\`). Dokumen PBJ LN lain:
 [[reference-mdp-pbjp-ringkas]].
+
+## Laporan rapat — 20 Okt 2026 (versi yang dipakai)
+
+Aldo minta laporan "hampir sama dengan pointersnya" (tanpa memberi hasil rapat terpisah). Hasil:
+`Laporan_Rapat_Koordinasi_PBJ_LN_Kemendag_5Okt2026.docx` + `.pdf` (2 hlm, INTERNAL, laporan kepada pimpinan) di folder
+rapat. Isi = pointers PDF diubah ke bentuk laporan: A inti hasil, B pokok yang disampaikan BUP (B1–B6), C tabel opsi
+A–C + sikap BUP, D kesimpulan 2 butir + 2 tindak lanjut (Kemendag konsultasi DJPb/DJA; Kemlu dukungan B.6). Peserta
+ditulis tingkat unit saja (nama tidak diketahui). Pelapor = Rivaldo Harviansyah, NIP dari kartu jabatan, tanggal 5 Okt
+(asumsi agent). Builder `~/dev/kemlu/rapat-kemendag-pbjln/build_laporan.js`. Draf notula 3 hlm (isian kuning) tetap ada
+sebagai cadangan. Anggapan: isi pointers = yang terjadi di rapat; kesimpulan final belum pernah dikonfirmasi Aldo.
+
