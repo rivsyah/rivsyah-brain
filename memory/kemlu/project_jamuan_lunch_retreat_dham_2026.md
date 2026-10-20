@@ -1,6 +1,6 @@
 ---
 name: project-jamuan-lunch-retreat-dham-2026
-description: "AKTIF lagi 19 Okt: jalur PENGADAAN, akun 521219 BBNO, Rp30 jt; set dipakai = 4 dok sangat sederhana PPK+PP. KAK + RAB sederhana Jamuan Makan Siang Kepala Perwakilan untuk delegasi Retreat Dewan HAM (PTRI Jenewa, restoran di Bali, Okt 2026): nilai Rp30 jt = Pengadaan Langsung bukti kuitansi; dibuat 18 Okt 2026 dengan isian kosong + angka contoh"
+description: "AKTIF: jalur PENGADAAN, akun 521219 BBNO, PAGU Rp50 jt (Aldo 20 Okt, semula 30 jt); set dipakai = 4 dok sangat sederhana PPK+PP. KAK + RAB sederhana Jamuan Makan Siang Kepala Perwakilan untuk delegasi Retreat Dewan HAM (PTRI Jenewa, restoran di Bali, Okt 2026): nilai Rp30 jt = Pengadaan Langsung bukti kuitansi; dibuat 18 Okt 2026 dengan isian kosong + angka contoh"
 metadata:
   type: project
 ---
@@ -23,7 +23,10 @@ perlukah KAK/RAB. Jamuan Rp30 jt, restoran di Bali, bagian dari Retreat Dewan HA
 
 ## Isian yang masih kosong / angka contoh (belum dari Aldo)
 - Tanggal jamuan, nama + alamat restoran, tempat teken. Akun DIPUTUSKAN Aldo 19 Okt: 521219 Belanja Barang Non Operasional Lainnya.
-- Contoh: 20 pax x Rp1.295.000 + service 5% + PBJT 10% = Rp29.914.500 (Rp1.495.725/orang). Ganti dari penawaran restoran.
+- **Pagu Rp50 jt (Aldo 20 Okt 2026).** Contoh kini 30 pax x Rp1.440.000 + service 5% + PBJT 10% = Rp49.896.000
+  (Rp1.663.200/orang, ~USD 93 < SBM Geneva USD 130). Versi lama: 20 pax, Rp29.914.500. Ganti dari penawaran restoran.
+- Pagu = tepat batas kuitansi Rp50 jt: nilai riil > Rp50 jt -> wajib SPK + SPSE transaksional (Perpres 46/2025). KAK bab F
+  kini memuat kalimat penjaga "tidak boleh melebihi pagu".
 - Pejabat sama dengan paket hotel: KPA Sidharto Reza Suryodipuro, PPK Nurul Sofia, Kanselerai Achsanul Habib.
 ## Dokumen Pejabat Pengadaan (18 Okt 2026, folder yang sama)
 - 1 Undangan Permintaan Penawaran (2 hlm), 2 BA Evaluasi Klarifikasi dan Negosiasi (2 hlm, ttd PP + restoran),
