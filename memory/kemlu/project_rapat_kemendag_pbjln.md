@@ -100,5 +100,15 @@ Opsi untuk Kemendag bawa ke Kemenkeu: A pemilihan dini + bayar setelah DIPA 2027
 Jakarta (PMK 145 Ps 2 + Ps 6(2)b). 3. Bisakah Ps 28 Permenlu menyesuaikan batas/jaminan uang muka Perpres → Biro Hukum.
 4. Hasil rapat 5 Okt belum diketahui; minta Aldo kabari kesimpulan untuk dicatat di sini.
 
+## Notula — draf 20 Okt 2026
+
+`Notula_Rapat_Koordinasi_PBJ_LN_Kemendag_5Okt2026.docx` (3 hlm, folder rapat yang sama), dibuat dari pointers PDF
+"Karo ... 1" + slide 8 (8 pertanyaan untuk Kemendag). Hasil rapat tidak diketahui agent, jadi SEMUA fakta rapat = isian
+kuning: pukul selesai, ruang, pimpinan, notulis, peserta, tanggapan per opsi, jawaban Kemendag, tenggat, tanda tangan.
+Bagian C (penjelasan BUP) dan kesimpulan 1–2 = isi pointers, ditandai "konfirmasi". Kolom "Sikap BUP" internal TIDAK
+dimuat (notula bisa dibagikan ke Kemendag); diganti "Catatan risiko" seperti di deck. Format ikut preseden
+`Notula_Site_Visit_PT_Rimonz.docx` (A–E, tabel meta, penutup "Demikian notula..."). Builder python-docx di scratchpad
+sesi (tidak disimpan).
+
 Jebakan build: [[reference-office-render]] (PowerPoint COM jalan; heredoc Git Bash merusak `\\`). Dokumen PBJ LN lain:
 [[reference-mdp-pbjp-ringkas]].

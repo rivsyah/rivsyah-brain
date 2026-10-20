@@ -23,7 +23,7 @@
 - 🟡 10 Okt 2026 — **Pakaian dinas ASN Tahap II: dokumen KAK/RAB/HPS/SSUK+SSKK siap teken** (158 pegawai = 316 kemeja, HPS Rp110.489.400; versi suntingan Aldo = master, mini kompetisi oleh PP, BAST <= 4 Des) di `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Seragam ASN Kemlu\Pengadaan Pakaian Dinas ASN Kemlu Tahap II\`. Sisa: Kode RUP, e-mail PPK, daftar nominatif final. Rapat evaluasi 6 Okt: hasil belum dicatat. [Evaluasi Pakaian Dinas ASN](kemlu/project_evaluasi_pakaian_dinas_asn.md).
 - 🟡 5 Okt 2026 14.00 — **Rapat Kemendag (Biro Keuangan) soal PBJ LN + uang muka pameran lintas TA.** Pegangan:
   `Pointers_Rapat_Rivaldo.docx` (suntingan Aldo) + deck v2 12 slide yang mengikutinya (5 Okt 11.24). Sesudah rapat:
-  catat kesimpulannya di kartu. [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md).
+  catat kesimpulannya di kartu. 20 Okt: draf notula .docx 3 hlm dibuat, fakta rapat = isian kuning. [Rapat Kemendag PBJ LN](kemlu/project_rapat_kemendag_pbjln.md).
 - 🟡 4 Okt 2026 — **Dua KTI terpisah** (SIGAP 36 hlm, SIPDLN 32 hlm; sasaran satuan kerja pusat Kemlu, BUP =
   purwarupa) untuk percepatan PG PNS, verify 16/16 masing-masing + draf kasar netral untuk Dedi. **Aldo = JF Penata
   Kanselerai, bukan PPBJ.** Menunggu Aldo: isian NIP/jenjang/pengesah, maksud "untuk Dedi".
