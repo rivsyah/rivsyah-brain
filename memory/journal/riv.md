@@ -405,3 +405,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-20T03:20Z  kemlu 20 Okt: pagu jamuan DHAM jadi Rp50 jt (contoh 30 pax x 1,44 jt = Rp49.896.000); KAK/RAB/4 dok sederhana dibangun ulang + kalimat penjaga batas kuitansi; disalin ke folder paket
 - 2026-10-20T07:54Z  kemlu: rangkuman Jamkespimpri per Perwakilan (Buenos Aires, Paris, Oslo, Sydney, Canberra) dari daftar kepesertaan, notula sosialisasi Agt 2026, list provider Jasindo 24 Sep 2026, TL BPK premi+reimbursement; output di chat saja, tanpa file
 - 2026-10-20T07:59Z  kemlu: rangkuman Jamkespimpri 5 Perwakilan dijadikan .docx (6 hlm) di Downloads\Detail Jamkespimpri - Buenos Aires, Paris, Oslo, Sydney, Canberra.docx
+- 2026-10-20T08:14Z  kemlu: docx Jamkespimpri 5 Perwakilan diupdate - penggantian Jasindo via Brafaks Sekjen R-04782/KEMLU/261001 (BA, Paris, Oslo, Canberra); arti screenshot baris Praha belum jelas, ditanyakan ke Aldo
