@@ -128,3 +128,8 @@ Jenis Pin Gada Pratama & Madya ditetapkan **Peniti** (Rp18.500 di penawaran 0873
   tata letak rusak (no. rekening + nama bank hilang, "Rp" seragam hilang, stempel menimpa nama). Bara TIDAK menyunting PDF penyedia
   dan menandai risiko keabsahan: penawaran yang sah harus terbitan + teken penyedia (nomor/tanggal revisi). Kalkulasi Excel sudah
   cocok dengan harga PDF ini, tanpa Magnet di semua berkas paket (Matriks Detail Vendor hanya data listing pasar).
+
+## Penawaran 0873 versi akhir (file 22 Okt 07.30)
+Isi = Kalkulasi 100% (25 harga cocok). Nomor 15 Pin Gada Pratama-Peniti, 16 Pin Gada Madya-Peniti, 17/18 sepatu; Magnet hilang.
+Masih: nomor/tanggal tetap 0873 / 19 Okt (PDF dibuat 19 Okt, diubah 21 Okt 19.40, versi ke-4); cap/tanda tangan berupa gambar
+menutup nama direktur; rekening bank dihapus tapi baris catatan 3 menyisakan celah; label "Rp" hilang di baris seragam.
