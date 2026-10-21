@@ -1,6 +1,6 @@
 ---
 name: project-seragam-satpam-2026
-description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp337.779.600 (21 Okt: PDL Sus 61 personel; paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
+description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp375.697.200 (22 Okt: olahraga = usulan unit; PDL Sus 61 personel; paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
 metadata:
   type: project
 ---
@@ -95,3 +95,9 @@ File: folder paket, `Penawaran CV Nagoya Engineering 0873 - Seragam Olahraga.pdf
 Pasar Mills resmi: jersey Rp149.500-174.500, celana Rp184.300-424.000 (model tak disebut). Mills = 100% polyester, bukan
 cotton combed (vendor menyalin teks KAK). Kalkulasi 0873 kini: Versi 4 Verlando termurah Rp342,05 jt sblm pajak /
 Rp379,67 jt +PPN (> HPS Rp337,78 jt). Matriks & Kalkulasi diperbarui; HPS/KAK TIDAK diubah.
+
+## HPS seragam olahraga = usulan unit (arahan Aldo 22 Okt 2026)
+Kaos Rp150.000, celana training Rp389.000 (belum PPN; median pasar 146.700 / 197.100 tetap di Kertas Kerja sebagai pembanding).
+Subjumlah C Rp94.325.000; **HPS total Rp375.697.200** (RAB Rp375.697.260; pagu Rp500 jt cukup). Diterapkan ke RAB/HPS (KK K146/K159
+konstanta + catatan, terbilang, Uji Silang D6/D7 - semua lolos), KAK butir 4.2 + PDF, Kalkulasi (Uji SBM D45/D46), matriks,
+builder (harga.HARGA_PPK). Penawaran Mills: kaos 225rb = +50% HPS; celana 300rb = -23% HPS. Cadangan: scratchpad backup_olahraga/.
