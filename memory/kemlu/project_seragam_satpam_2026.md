@@ -117,3 +117,9 @@ Jenis Pin Gada Pratama & Madya ditetapkan **Peniti** (Rp18.500 di penawaran 0873
 (Harga Penawaran; rumus pin terpakai langsung ke Peniti; total tidak berubah, Versi 4 tetap Rp337,67 jt) dan dari matriks
 (Penawaran vs Pasar). HPS tidak terpengaruh (pin Pratama 12.700 / Madya 16.600 = median pasar). Aldo juga merapikan Kalkulasi
 (catatan Rekap/Uji SBM dihapus) 22 Okt 07.29 - jangan dikembalikan.
+- **22 Okt:** Excel kalkulasi dipindah Aldo ke folder paket (`...\Pengadaan Seragam Satpam Kemlu 2026\Kalkulasi Penawaran 0873
+  Seragam Satpam.xlsx`) dan disunting Aldo = **MASTER** (jangan bangun ulang dari skrip scratchpad). Suntingan Aldo: PDL Sus
+  **61 personel**, Pin Gada Madya **36**, HPS pembanding kaos olahraga 200.000 & celana training 389.000 di sheet Uji.
+  Arahan Aldo: pin = **Peniti**; baris Magnet (Pratama & Madya) + dropdown dihapus Bara via Excel COM, rujukan langsung ke baris
+  Peniti, 0 error. Total + PPN: V4 Rp374.817.030, V3 380,6, V5 382,9, V1 392,1, V2 398,7 jt. RAB dan HPS xlsx juga disunting
+  Aldo 22 Okt 07:04 (isi belum dibaca Bara).

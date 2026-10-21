@@ -416,3 +416,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-21T11:44Z  kemlu 21 Okt: kaos olahraga satpam disesuaikan Rp200.000 belum PPN (arahan Aldo); V4 total+PPN Rp334.057.830, masih > HPS; Excel diperbarui
 - 2026-10-21T11:46Z  23 Okt: HPS kaos olahraga Satpam = penawaran 0873 terbaru Rp200rb belum PPN -> HPS Rp385.409.700; RAB/HPS, KAK docx, Kalkulasi, matriks xlsx, builder
 - 2026-10-21T23:30Z  22 Okt: Pin Gada Satpam = Peniti; baris Magnet dihapus dari Kalkulasi 0873 + matriks; total tetap
+- 2026-10-21T23:31Z  kemlu 22 Okt: Excel kalkulasi 0873 (master = salinan suntingan Aldo di folder paket): opsi Pin Magnet dihapus, pin dikunci Peniti; V4 total+PPN Rp374.817.030
