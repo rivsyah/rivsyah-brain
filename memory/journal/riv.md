@@ -421,3 +421,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-21T23:33Z  kemlu 22 Okt: cek ulang komponen Magnet - sudah hilang di Kalkulasi + PDF penawaran; PDF penawaran tampak disunting setelah diteken (modDate 21 Okt +08, rekening hilang) -> risiko keabsahan ditandai ke Aldo
 - 2026-10-21T23:33Z  22 Okt: cek penawaran 0873 versi akhir - harga cocok Kalkulasi, Magnet hilang; catatan dokumen (nomor/tanggal sama, cap menutup nama)
 - 2026-10-21T23:40Z  kemlu 22 Okt 07:39: PDF penawaran 0873 versi baru - rekening kembali, Rp seragam kembali, harga = Excel kalkulasi; sisa: Rp Kopel hilang, stempel menimpa nama, no/tgl tetap 0873/19 Okt, modDate +08 (disunting di mesin ini) -> risiko keabsahan tetap
+- 2026-10-21T23:40Z  22 Okt: cek penawaran 0873 (diubah 22 Okt 07.39): harga tetap cocok, rekening & label Rp dikembalikan, Rp hilang di baris Kopel; nomor/tanggal & cap menutup nama masih
