@@ -81,3 +81,9 @@ per personel tetap Rp1.584.858 <= SBM; pagu Rp500 jt cukup). Diterapkan di berka
 label, terbilang, Uji Silang D6/D7), KAK docx (5 paragraf + 12 sel tabel) + PDF diekspor ulang, Kalkulasi 0873 (Rincian
 C22:C33, Rekap A2). PDF RAB/HPS sengaja tidak dibuat (Aldo menghapusnya 15 Okt). Builder barang.py ikut (TAMBAHAN_B).
 Cadangan versi sebelum: scratchpad sesi 0a01ddf9 `backup_tambah24/`. Seragam olahraga tetap 175 (tidak diubah).
+- **Revisi olahraga (berkas diterima 21 Okt, No. & tanggal tetap 0873 / 19 Okt):** di folder paket
+  `Penawaran CV Nagoya Engineering 0873 - Seragam Olahraga.pdf`. Kaos -> dry-fit/cotton combed 24s Mills **Rp225.000**
+  (dari Carded 20s 130 rb), celana -> Mills Original **Rp300.000** (dari Adidas 150 rb); lainnya sama. Keduanya ~+53% di atas
+  HPS (146.700 / 197.100). C = Rp91.875.000 sebelum PPN (HPS C Rp60.165.000). Total + PPN: V4 Rp338,9 jt, V3 343,6,
+  V5 345,5, V1 353,5, V2 359,4 -> **semua versi kini > HPS Rp299,7 jt** (V4 lewat Rp39,2 jt); pagu 500 jt masih cukup.
+  Uji SBM tidak berubah (olahraga di luar SBM). Excel kalkulasi diperbarui.
