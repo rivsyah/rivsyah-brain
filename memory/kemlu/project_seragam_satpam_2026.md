@@ -87,3 +87,11 @@ Cadangan versi sebelum: scratchpad sesi 0a01ddf9 `backup_tambah24/`. Seragam ola
   HPS (146.700 / 197.100). C = Rp91.875.000 sebelum PPN (HPS C Rp60.165.000). Total + PPN: V4 Rp338,9 jt, V3 343,6,
   V5 345,5, V1 353,5, V2 359,4 -> **semua versi kini > HPS Rp299,7 jt** (V4 lewat Rp39,2 jt); pagu 500 jt masih cukup.
   Uji SBM tidak berubah (olahraga di luar SBM). Excel kalkulasi diperbarui.
+
+## Penawaran 0873 revisi (diterima 21 Okt 2026; nomor & tanggal surat TETAP 0873 / 19 Okt)
+File: folder paket, `Penawaran CV Nagoya Engineering 0873 - Seragam Olahraga.pdf`. Berubah: kaos olahraga Carded 20s Rp130rb ->
+"dry-fit/cotton combed 24s Mills" **Rp225.000** (+53% HPS 146.700); celana training Adidas Rp150rb -> "Mills Original"
+**Rp300.000** (+52% HPS 197.100); Pin Gada Madya ditambah (peniti 18.500 / magnet 42.000). Lain sama.
+Pasar Mills resmi: jersey Rp149.500-174.500, celana Rp184.300-424.000 (model tak disebut). Mills = 100% polyester, bukan
+cotton combed (vendor menyalin teks KAK). Kalkulasi 0873 kini: Versi 4 Verlando termurah Rp342,05 jt sblm pajak /
+Rp379,67 jt +PPN (> HPS Rp337,78 jt). Matriks & Kalkulasi diperbarui; HPS/KAK TIDAK diubah.

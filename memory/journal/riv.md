@@ -411,3 +411,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-21T08:01Z  kemlu: notulensi rapat TPLN x Bank Mandiri 21 Okt 2026 dibuat .docx di Downloads\Notulensi Rapat TPLN - Bank Mandiri 211026.docx (notulis kosong, isi = versi chat)
 - 2026-10-21T10:32Z  21 Okt: seragam Satpam PDL Sus +24 per komponen (37->61, pin Madya 12->36 asumsi), HPS Rp337.779.600; diterapkan ke RAB/HPS, KAK(+PDF), Kalkulasi 0873 versi Aldo + builder
 - 2026-10-21T10:52Z  kemlu 21 Okt: penawaran 0873 revisi olahraga (kaos Mills combed 24s 225rb, training Mills 300rb) -> semua versi total+PPN > HPS 299,7 jt (V4 338,9 jt); Excel kalkulasi diperbarui, kartu seragam satpam diperbarui
+- 2026-10-21T11:03Z  21 Okt: penawaran 0873 revisi (olahraga Mills kaos 225rb/celana 300rb, pin Madya) dimasukkan ke Kalkulasi + matriks; HPS tidak diubah
