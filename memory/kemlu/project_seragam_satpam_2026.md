@@ -123,3 +123,8 @@ Jenis Pin Gada Pratama & Madya ditetapkan **Peniti** (Rp18.500 di penawaran 0873
   Arahan Aldo: pin = **Peniti**; baris Magnet (Pratama & Madya) + dropdown dihapus Bara via Excel COM, rujukan langsung ke baris
   Peniti, 0 error. Total + PPN: V4 Rp374.817.030, V3 380,6, V5 382,9, V1 392,1, V2 398,7 jt. RAB dan HPS xlsx juga disunting
   Aldo 22 Okt 07:04 (isi belum dibaca Bara).
+- **22 Okt 07:31 — PDF penawaran di folder paket berubah:** Magnet hilang (15 Pratama Peniti, 16 Madya Peniti, 17-18 sepatu), kaos
+  olahraga Rp200.000; No. 0873 & tgl 19 Okt tetap. Metadata: dibuat 19 Okt +07:00 (Excel penyedia), **modDate 21 Okt 19:40 +08:00**;
+  tata letak rusak (no. rekening + nama bank hilang, "Rp" seragam hilang, stempel menimpa nama). Bara TIDAK menyunting PDF penyedia
+  dan menandai risiko keabsahan: penawaran yang sah harus terbitan + teken penyedia (nomor/tanggal revisi). Kalkulasi Excel sudah
+  cocok dengan harga PDF ini, tanpa Magnet di semua berkas paket (Matriks Detail Vendor hanya data listing pasar).
