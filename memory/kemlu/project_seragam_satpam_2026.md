@@ -1,6 +1,6 @@
 ---
 name: project-seragam-satpam-2026
-description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp299.743.000 (15 Okt, paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
+description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp337.779.600 (21 Okt: PDL Sus 61 personel; paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
 metadata:
   type: project
 ---
@@ -73,3 +73,11 @@ Tokopedia + INAPROC dibaca langsung lewat browser (INAPROC bisa dirender di brow
   Rp1.698.300, lewat Rp113.300; perlu harga sebelum PPN <= Rp1.427.900). Sebelum PPN: A semua masuk, B V3-V5 masuk.
   Total + PPN: V4 Rp291,3 jt, V3 296,0, V5 297,9 (< HPS Rp299,7 jt); V1 305,9 & V2 311,9 > HPS.
   Excel `Downloads\Kalkulasi Penawaran 0873 Seragam Satpam.xlsx` (sheet Rekap, Uji SBM & HPS, Rincian, Harga Penawaran).
+
+## Tambahan 24 personel PDL Sus (arahan Aldo 21 Okt 2026)
+Setiap komponen kelompok B +24: **37 -> 61**; pin Gada Madya **12 -> 36** (ASUMSI agent: 24 tambahan = Gada Madya; bila
+Gada Pratama, pindahkan 24 ke pin Pratama A.10 136 -> 160). HPS **Rp299.743.000 -> Rp337.779.600** (B Rp86.680.800; kit B
+per personel tetap Rp1.584.858 <= SBM; pagu Rp500 jt cukup). Diterapkan di berkas versi Aldo: RAB/HPS xlsx (HPS D31:D42,
+label, terbilang, Uji Silang D6/D7), KAK docx (5 paragraf + 12 sel tabel) + PDF diekspor ulang, Kalkulasi 0873 (Rincian
+C22:C33, Rekap A2). PDF RAB/HPS sengaja tidak dibuat (Aldo menghapusnya 15 Okt). Builder barang.py ikut (TAMBAHAN_B).
+Cadangan versi sebelum: scratchpad sesi 0a01ddf9 `backup_tambah24/`. Seragam olahraga tetap 175 (tidak diubah).
