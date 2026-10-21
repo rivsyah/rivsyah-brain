@@ -61,3 +61,6 @@ invoice 014/INV/AAM/X/2026, surat jalan 014/SJ/AAM/VII/2026, faktur pajak 020026
 - 19 Okt 2026 (keputusan akhir Aldo): BAST TETAP Rp4.795.200 per faktur pajak. Yang salah = invoice + kuitansi AAM
   (sub total 4.300.000 harusnya 4.320.000; grand total 4.895.000 bukan jumlah barisnya sendiri; dugaan salah ketik
   7->8). AAM diminta revisi invoice + kuitansi ke Rp4.795.200. Builder sempat diubah ke 4.895.000 lalu dikembalikan.
+- 21 Okt 2026: AAM kirim revisi (`Downloads\invoice anggoro.pdf` baru): invoice 4.320.000 + PPN 475.200 = 4.795.200,
+  kuitansi Rp4.795.200 dengan nomor BARU 014/KWITAN/AAM/X/2026 (bukan KWT). Kini cocok dengan faktur. BAST diperbarui
+  ke nomor kuitansi baru dan disalin ke folder HT. Surat jalan BELUM diperbaiki (kartu HT 07=08, HT 18 17 digit).

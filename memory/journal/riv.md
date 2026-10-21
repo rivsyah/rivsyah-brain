@@ -406,3 +406,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-20T07:54Z  kemlu: rangkuman Jamkespimpri per Perwakilan (Buenos Aires, Paris, Oslo, Sydney, Canberra) dari daftar kepesertaan, notula sosialisasi Agt 2026, list provider Jasindo 24 Sep 2026, TL BPK premi+reimbursement; output di chat saja, tanpa file
 - 2026-10-20T07:59Z  kemlu: rangkuman Jamkespimpri 5 Perwakilan dijadikan .docx (6 hlm) di Downloads\Detail Jamkespimpri - Buenos Aires, Paris, Oslo, Sydney, Canberra.docx
 - 2026-10-20T08:14Z  kemlu: docx Jamkespimpri 5 Perwakilan diupdate - penggantian Jasindo via Brafaks Sekjen R-04782/KEMLU/261001 (BA, Paris, Oslo, Canberra); arti screenshot baris Praha belum jelas, ditanyakan ke Aldo
+- 2026-10-21T02:56Z  HT PoC: revisi invoice/kuitansi AAM dicek 21 Okt, cocok Rp4.795.200; BAST diperbarui ke 014/KWITAN/AAM/X/2026
