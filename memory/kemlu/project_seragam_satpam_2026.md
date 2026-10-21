@@ -111,3 +111,9 @@ Rp200.000 (ASUMSI agent: "sesuaikan" = HPS ikut; sebelumnya usulan unit Rp150.00
 **HPS total Rp385.409.700** (RAB Rp385.409.760). Diterapkan: RAB/HPS (KK K146, terbilang, Uji Silang lolos), KAK docx
 butir 4.2, Kalkulasi (Versi 4 Verlando termurah Rp337,67 jt / Rp374,82 jt +PPN, di bawah HPS), matriks xlsx, builder.
 Aldo menghapus PDF KAK dan PDF matriks dari folder -> tidak dibuat ulang. Cadangan: scratchpad backup_kaos200/.
+
+## Pin Gada = Peniti (arahan Aldo 22 Okt 2026)
+Jenis Pin Gada Pratama & Madya ditetapkan **Peniti** (Rp18.500 di penawaran 0873). Baris Magnet (Rp42.000) dihapus dari Kalkulasi
+(Harga Penawaran; rumus pin terpakai langsung ke Peniti; total tidak berubah, Versi 4 tetap Rp337,67 jt) dan dari matriks
+(Penawaran vs Pasar). HPS tidak terpengaruh (pin Pratama 12.700 / Madya 16.600 = median pasar). Aldo juga merapikan Kalkulasi
+(catatan Rekap/Uji SBM dihapus) 22 Okt 07.29 - jangan dikembalikan.
