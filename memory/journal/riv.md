@@ -414,3 +414,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-21T11:03Z  21 Okt: penawaran 0873 revisi (olahraga Mills kaos 225rb/celana 300rb, pin Madya) dimasukkan ke Kalkulasi + matriks; HPS tidak diubah
 - 2026-10-21T11:36Z  22 Okt: HPS seragam olahraga Satpam = usulan unit (kaos 150rb, celana 389rb, belum PPN) -> HPS Rp375.697.200; RAB/HPS, KAK+PDF, Kalkulasi, matriks, builder diperbarui
 - 2026-10-21T11:44Z  kemlu 21 Okt: kaos olahraga satpam disesuaikan Rp200.000 belum PPN (arahan Aldo); V4 total+PPN Rp334.057.830, masih > HPS; Excel diperbarui
+- 2026-10-21T11:46Z  23 Okt: HPS kaos olahraga Satpam = penawaran 0873 terbaru Rp200rb belum PPN -> HPS Rp385.409.700; RAB/HPS, KAK docx, Kalkulasi, matriks xlsx, builder

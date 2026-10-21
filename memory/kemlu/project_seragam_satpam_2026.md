@@ -1,6 +1,6 @@
 ---
 name: project-seragam-satpam-2026
-description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp375.697.200 (22 Okt: olahraga = usulan unit; PDL Sus 61 personel; paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
+description: "Pengadaan Pakaian Kerja Seragam Dinas Satpam Kemlu TA 2026: KAK/RAB/HPS/SSUK+SSKK dibuat 14 Okt 2026; HPS Rp385.409.700 (23 Okt: kaos = penawaran 0873 Rp200rb, celana = usulan unit; PDL Sus 61 personel; paket B dibatasi SBM), > Rp200 jt -> mini kompetisi Pokja + Jaminan Pelaksanaan 5%"
 metadata:
   type: project
 ---
@@ -104,3 +104,10 @@ builder (harga.HARGA_PPK). Penawaran Mills: kaos 225rb = +50% HPS; celana 300rb 
 - **21 Okt (arahan Aldo):** kaos olahraga disesuaikan ke **Rp200.000 belum PPN** (surat masih Rp225.000; +36% vs HPS 146.700).
   C = Rp87.500.000. Total + PPN: V4 Rp334.057.830, V3 338,8, V5 340,6, V1 348,6, V2 354,6 jt -> masih semua > HPS
   (V4 lewat Rp34,3 jt). Excel kalkulasi diperbarui.
+
+## Kaos olahraga = penawaran terbaru 0873 Rp200.000 (arahan Aldo 23 Okt 2026)
+Penawaran 0873 revisi ke-2: kaos Mills Rp225.000 -> **Rp200.000** belum PPN (celana tetap Rp300.000). HPS kaos ditetapkan
+Rp200.000 (ASUMSI agent: "sesuaikan" = HPS ikut; sebelumnya usulan unit Rp150.000). Subjumlah C Rp103.075.000;
+**HPS total Rp385.409.700** (RAB Rp385.409.760). Diterapkan: RAB/HPS (KK K146, terbilang, Uji Silang lolos), KAK docx
+butir 4.2, Kalkulasi (Versi 4 Verlando termurah Rp337,67 jt / Rp374,82 jt +PPN, di bawah HPS), matriks xlsx, builder.
+Aldo menghapus PDF KAK dan PDF matriks dari folder -> tidak dibuat ulang. Cadangan: scratchpad backup_kaos200/.
