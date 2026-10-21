@@ -413,3 +413,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-21T10:52Z  kemlu 21 Okt: penawaran 0873 revisi olahraga (kaos Mills combed 24s 225rb, training Mills 300rb) -> semua versi total+PPN > HPS 299,7 jt (V4 338,9 jt); Excel kalkulasi diperbarui, kartu seragam satpam diperbarui
 - 2026-10-21T11:03Z  21 Okt: penawaran 0873 revisi (olahraga Mills kaos 225rb/celana 300rb, pin Madya) dimasukkan ke Kalkulasi + matriks; HPS tidak diubah
 - 2026-10-21T11:36Z  22 Okt: HPS seragam olahraga Satpam = usulan unit (kaos 150rb, celana 389rb, belum PPN) -> HPS Rp375.697.200; RAB/HPS, KAK+PDF, Kalkulasi, matriks, builder diperbarui
+- 2026-10-21T11:44Z  kemlu 21 Okt: kaos olahraga satpam disesuaikan Rp200.000 belum PPN (arahan Aldo); V4 total+PPN Rp334.057.830, masih > HPS; Excel diperbarui

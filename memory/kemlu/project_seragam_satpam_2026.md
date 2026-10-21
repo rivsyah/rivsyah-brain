@@ -101,3 +101,6 @@ Kaos Rp150.000, celana training Rp389.000 (belum PPN; median pasar 146.700 / 197
 Subjumlah C Rp94.325.000; **HPS total Rp375.697.200** (RAB Rp375.697.260; pagu Rp500 jt cukup). Diterapkan ke RAB/HPS (KK K146/K159
 konstanta + catatan, terbilang, Uji Silang D6/D7 - semua lolos), KAK butir 4.2 + PDF, Kalkulasi (Uji SBM D45/D46), matriks,
 builder (harga.HARGA_PPK). Penawaran Mills: kaos 225rb = +50% HPS; celana 300rb = -23% HPS. Cadangan: scratchpad backup_olahraga/.
+- **21 Okt (arahan Aldo):** kaos olahraga disesuaikan ke **Rp200.000 belum PPN** (surat masih Rp225.000; +36% vs HPS 146.700).
+  C = Rp87.500.000. Total + PPN: V4 Rp334.057.830, V3 338,8, V5 340,6, V1 348,6, V2 354,6 jt -> masih semua > HPS
+  (V4 lewat Rp34,3 jt). Excel kalkulasi diperbarui.
