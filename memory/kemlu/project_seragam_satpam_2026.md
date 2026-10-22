@@ -140,3 +140,10 @@ Masih memuat Pin Gada Pratama/Madya **Magnet** (47.000). Harga BEDA dari Kalkula
 pet 76rb, tali 25rb, kaos dalam 77rb, ikat 39,5rb, baton 135rb, pin kew 45rb, rompi 187rb, borgol 59,5rb), pin peniti 23.500,
 sepatu PDL 450rb, sepatu PDH 395rb, kaos olahraga 215rb, celana 425rb. Aldo minta baris Magnet dihapus dari PDF -> **Bara menolak
 (22 Okt)**: menyunting surat penyedia bertanda tangan = mengubah dokumen pihak ketiga; jalurnya minta penyedia terbitkan ulang.
+- **22 Okt 09:18 — penawaran resmi baru vendor** `Penawaran CV Nagoya.pdf` (No. 0873, **Kamis 22 Okt 2026**, 2 hlm, dibuat
+  21 Okt 15:58 +07, teken + stempel rapi). **Semua harga naik Rp5.000** (seragam PDH/PDL, perlengkapan, pin Peniti 23.500);
+  sepatu ganti spek: PDH kulit kilap sole karet **395.000**, PDL Tactical Boot kulit sapi sole PU **450.000**; olahraga: kaos
+  jersey Mills **215.000**, celana parasut/babyterry Mills **425.000**. Baru: **tambahan ukuran XL Up** per stel
+  (PDH 35.500-48.000, PDL 37.500-50.000) belum dihitung. Excel master diperbarui (cadangan scratchpad pre22okt), 0 error:
+  total + PPN V4 **Rp413.391.750**, V3 419,2, V5 421,4, V1 430,6, V2 437,3 jt. SBM + PPN: **tidak ada versi yang masuk**
+  (paket A V4 lewat Rp66.125, paket B V4 lewat Rp149.375). Excel memakai 61 PDL Sus + 36 pin Madya (suntingan Aldo).
