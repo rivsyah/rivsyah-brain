@@ -133,3 +133,10 @@ Jenis Pin Gada Pratama & Madya ditetapkan **Peniti** (Rp18.500 di penawaran 0873
 Isi = Kalkulasi 100% (25 harga cocok). Nomor 15 Pin Gada Pratama-Peniti, 16 Pin Gada Madya-Peniti, 17/18 sepatu; Magnet hilang.
 Masih: nomor/tanggal tetap 0873 / 19 Okt (PDF dibuat 19 Okt, diubah 21 Okt 19.40, versi ke-4); cap/tanda tangan berupa gambar
 menutup nama direktur; rekening bank dihapus tapi baris catatan 3 menyisakan celah; label "Rp" hilang di baris seragam.
+
+## File baru "Penawaran CV Nagoya.pdf" (folder paket, 22 Okt 08.20)
+Tgl surat **22 Okt 2026**, No. tetap 0873, Attn Aldo; PDF Excel dibuat 21 Okt 15.58; hlm 2 = gambar cap/teken Direktur.
+Masih memuat Pin Gada Pratama/Madya **Magnet** (47.000). Harga BEDA dari Kalkulasi: perlengkapan semua +Rp5.000 (kopel 70rb,
+pet 76rb, tali 25rb, kaos dalam 77rb, ikat 39,5rb, baton 135rb, pin kew 45rb, rompi 187rb, borgol 59,5rb), pin peniti 23.500,
+sepatu PDL 450rb, sepatu PDH 395rb, kaos olahraga 215rb, celana 425rb. Aldo minta baris Magnet dihapus dari PDF -> **Bara menolak
+(22 Okt)**: menyunting surat penyedia bertanda tangan = mengubah dokumen pihak ketiga; jalurnya minta penyedia terbitkan ulang.
