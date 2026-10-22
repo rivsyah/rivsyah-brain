@@ -425,3 +425,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-22T01:06Z  22 Okt: Aldo minta hapus baris Pin Gada Magnet dari 'Penawaran CV Nagoya.pdf' (surat penyedia bertanda tangan+cap, tgl 22 Okt, dibuat 21 Okt 15:58). Bara MENOLAK sunting PDF penyedia (konsisten card); harga di surat ini beda dari Kalkulasi 0873 (perlengkapan +5rb, pin peniti 23.500, kaos OR 215rb, celana 425rb).
 - 2026-10-22T01:21Z  kemlu 22 Okt: penawaran resmi CV Nagoya 22 Okt (semua +Rp5rb, sepatu & olahraga ganti spek, XL Up) dimasukkan ke Excel master; V4 total+PPN Rp413.391.750; tidak ada versi masuk SBM (+PPN)
 - 2026-10-22T01:22Z  22 Okt: penawaran Nagoya 22 Okt masuk Kalkulasi + matriks (harga naik 5rb, XL Up, sepatu ganti); Versi 4 +PPN Rp413,39 jt > HPS
+- 2026-10-22T01:35Z  22 Okt: KAK Satpam dicek - total Rp385.409.700 & PDL Sus 61 sudah sesuai; spek Pin Gada ditambah 'pengait peniti' (KAK docx + builder spek.py)
