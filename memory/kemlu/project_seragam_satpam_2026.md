@@ -147,3 +147,11 @@ sepatu PDL 450rb, sepatu PDH 395rb, kaos olahraga 215rb, celana 425rb. Aldo mint
   (PDH 35.500-48.000, PDL 37.500-50.000) belum dihitung. Excel master diperbarui (cadangan scratchpad pre22okt), 0 error:
   total + PPN V4 **Rp413.391.750**, V3 419,2, V5 421,4, V1 430,6, V2 437,3 jt. SBM + PPN: **tidak ada versi yang masuk**
   (paket A V4 lewat Rp66.125, paket B V4 lewat Rp149.375). Excel memakai 61 PDL Sus + 36 pin Madya (suntingan Aldo).
+
+## Penawaran baru CV Nagoya 22 Okt 2026 (`Penawaran CV Nagoya.pdf`, no. 0873, tgl 22 Okt, 2 hlm)
+Semua harga seragam & atribut naik Rp5.000; tambahan XL Up per stel (PDH Rp35.500-48.000, PDL Rp37.500-50.000); Pin Gada
+Peniti Rp23.500; sepatu PDL = Tactical Boot kulit sapi sol PU Rp450.000 (bukan Moenus); sepatu PDH = upper kulit kilap sol karet
+Rp395.000; kaos jersey Mills Rp215.000; celana parasut/babyterry Mills Rp425.000 (> harga resmi Mills tertinggi Rp424.000).
+Kalkulasi: Versi 4 Verlando termurah Rp372,43 jt / **Rp413,39 jt +PPN > HPS Rp385,41 jt**; semua versi paket A & B > SBM per
+setel. Diperbarui: Kalkulasi (Harga Penawaran, nama sepatu/olahraga) + matriks versi Aldo (lembar Penawaran vs Pasar saja, via
+COM; catatan suntingan Aldo dipertahankan). HPS/KAK tidak diubah. Builder data/penawaran_nagoya.py BELUM disinkronkan.
