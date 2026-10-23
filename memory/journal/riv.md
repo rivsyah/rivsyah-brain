@@ -445,3 +445,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:38Z  23 Okt: Aldo konfirmasi kaos 330rb termasuk PPN; Final Satpam tidak berubah (371,67jt)
 - 2026-10-23T12:42Z  23 Okt: penawaran Nagoya V2 diperbarui penyedia (kaos 355rb); Final Satpam catatan disesuaikan, total tetap 371,67jt
 - 2026-10-23T12:45Z  23 Okt: Satpam pagu 375jt, HPS 372.981.400 (kaos HPS 226.300); RAB/HPS, KAK, Nego Final diperbarui; batas nego 371,67jt di bawah HPS & pagu
+- 2026-10-23T12:50Z  kemlu 23 Okt: Kalkulasi Penawaran Seragam Satpam.xlsx dibangun ulang dengan bahan final V2, angka sama dengan Rencana Negosiasi Final (batas 371.670.624 +PPN, pagu 375 jt)

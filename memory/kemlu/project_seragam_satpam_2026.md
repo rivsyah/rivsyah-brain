@@ -216,3 +216,11 @@ muat HPS bila <= Rp308.200. Menunggu keputusan Aldo. File Rencana Negosiasi lain
   Muat pagu bila celana <= Rp390.333 +PPN. Berkas Final diperbarui. Arahan 'kaos tetap 300rb' dibatalkan.
 - 23 Okt (akhir): **pagu Rp375 jt**, **HPS ~Rp373 jt** (arahan Aldo) -> HPS kaos olahraga dinaikkan PPK 200.000 -> 226.300 belum PPN;
   HPS Rp372.981.400. Batas negosiasi Final Rp371.670.624 +PPN kini < HPS (sisa Rp1,31 jt) < pagu (sisa Rp3,33 jt). RAB/HPS, KAK, Final diperbarui.
+- **23 Okt — Final:** Rencana Negosiasi FINAL dipegang sesi RAB/HPS (`... V2 - Final.xlsx/.pdf`): batas paket PDH 1,5 jt & PDL Sus
+  1,55 jt (+PPN), kaos Mills batas Rp330 rb & celana Rp400 rb (keduanya **termasuk PPN**, dikonfirmasi Aldo), penawaran kaos
+  terkoreksi **Rp355.000** (koreksi penyedia; surat V2 tulis 300 rb). **Pagu kini Rp375 jt**; HPS Rp372.981.400; batas total
+  Rp371.670.624 +PPN (di bawah pagu & HPS). File Rencana Negosiasi buatan sesi ini (310/360/370) sudah dihapus dari folder.
+- **Kalkulasi Penawaran Seragam Satpam.xlsx dibangun ulang (23 Okt) dengan bahan final** (builder `build_kalkulasi_final.py`,
+  cadangan versi 5-bahan di scratchpad): sheet Rekap, Uji Paket per Personel, Harga Final, Rincian; angka = berkas Final
+  (penawaran 409.847.500 / HPS 336.019.300 / batas 334.838.400 sebelum PPN). Bahan: PDH Donatello Italy Wool kuning gading +
+  Casamoda cokelat gelap; PDL Sus & Biru Donatello + Casamoda; Tactical Verlando Bultop + Casamoda; olahraga jersey + parasut Mills.
