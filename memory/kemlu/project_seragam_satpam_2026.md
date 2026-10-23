@@ -291,3 +291,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   `barang.KELOMPOK`, pagu dari `konst.PAGU` — tidak ada angka ketik ulang. Bangun: `python build_kalkulasi_final.py out/...xlsx` lalu
   `render_matriks.ps1`. Kebutuhan unit kerja B29 diubah ke "Topi Lapangan" (arahan Aldo, Excel COM). PDF Nego Final tersalin. audit.py
   (scratchpad) ditambah cek Kalkulasi + Kebutuhan; 0 temuan.
+- **23 Okt — DKH Hasil Negosiasi** (`DKH Hasil Negosiasi - ...xlsx`, folder paket): harga satuan = batas maksimal negosiasi per barang
+  (`build_dkh.py <out> nego`, dari `build_nego_final.target()`), identitas CV Nagoya dari surat V2, NPWP kosong. Total Rp375.127.275 +PPN.
+  Asumsi: belum ada harga sepakat riil; bila hasil nego berbeda, harga diganti. DKH Kosong tetap ada untuk penyedia.
