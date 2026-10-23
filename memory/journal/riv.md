@@ -432,3 +432,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:06Z  kemlu 23 Okt: pagu satpam -> 360 jt; Skenario SBM 1,5 jt/paket ditambah di file Rencana Negosiasi ... Pagu 360 jt.xlsx; seragam 247,7 jt +PPN, olahraga maks 578.200/setel pada pagu
 - 2026-10-23T12:08Z  23 Okt: seragam Satpam kebutuhan final (B37, Tactical15, Biru15) -> HPS Rp367.872.600, pagu 360jt (HPS > pagu 7,87jt); RAB/HPS rebuild, KAK in-place, DKH kosong; negosiasi dipegang sesi paralel
 - 2026-10-23T12:08Z  kemlu 23 Okt: Rencana Negosiasi Pagu 360 jt diselaraskan dengan HPS final sesi RAB/HPS (tactical/biru/dasi/topi); HPS 367,87 jt > pagu 360 jt menunggu Aldo
+- 2026-10-23T12:22Z  23 Okt: pagu seragam Satpam 370jt -> HPS 367,87jt di bawah pagu; RAB/HPS + KAK diperbarui

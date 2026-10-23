@@ -195,3 +195,4 @@ build_nego.py milik sesi itu. Catatan prosedur: >Rp200 jt negosiasi 1 penyedia /
   Rencana Negosiasi Pagu 360 jt dibangun ulang dengan HPS ini: S1 Rp284.879.835, S2 Rp299.878.044; Skenario 3 (paket 1,5 jt):
   seragam A+B+D+E Rp241.830.039 +PPN, olahraga maks 608.300/setel pada pagu (HPS 589.000 muat, total ~356,2 jt).
   Seragam Biru V2 480 rb vs HPS 219,8 rb (+118%): target S1/S2 173-182 rb tidak realistis tanpa klarifikasi spek.
+- 23 Okt (lanjutan): **pagu dinaikkan ke Rp370 jt** (arahan Aldo) -> HPS Rp367.872.600 <= pagu, Uji Silang semua lolos; RAB/HPS + KAK diperbarui.
