@@ -461,3 +461,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T14:32Z  seragam satpam: sesi Total penawaran konfirmasi Kalkulasi selaras dengan Final (HPS 386.996.200, batas 374.972.319, 0 selisih 36 baris)
 - 2026-10-23T15:18Z  seragam satpam: B.4 Pet Ciputat -> Topi Lapangan (HPS 53.700), PDL/Biru 482.700, PDH 462.400, HPS 386.991.300, batas 375.127.275; audit 0
 - 2026-10-23T15:19Z  kemlu 23 Okt 22.18: Topi Lapangan ganti Pet di PDL Sus; HPS 386.991.300, batas 375.127.275 +PPN; Kalkulasi diselaraskan
+- 2026-10-23T15:19Z  seragam satpam: Kalkulasi diselaraskan sesi lain (0 selisih); efek ikutan sepatu PDL HPS 364.900->369.800, batas 354.600->360.700
+- 2026-10-23T15:30Z  kemlu 23 Okt: Kalkulasi + builder seragam satpam diserahkan ke sesi RAB/HPS (satu penulis)

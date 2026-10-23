@@ -284,3 +284,5 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   pakai harga Pet 81 rb) menggantikan Pet Ciputat di PDL Sus. HPS: PDL Sus 482.700 (batas 468.300), Biru 482.700 (batas 480.000),
   PDH 462.400, sepatu PDL 369.800 (batas 360.700). **HPS Rp386.991.300; batas Rp375.127.275 +PPN**; pagu 390 jt.
   Kalkulasi diselaraskan (0 error, total = Final). PDF Final belum diperbarui (sedang dibuka).
+- **23 Okt (arahan Aldo):** Kalkulasi Penawaran + `build_kalkulasi_final.py` + `build_nego.py` kini **dipegang sesi RAB/HPS**
+  ("Dokumen KAK/Spektek, RAB, HPS, SSUK SSKK", local_d8f3863e). Sesi Bara lain tidak menulis lagi ke berkas paket Satpam.
