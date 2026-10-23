@@ -224,3 +224,13 @@ muat HPS bila <= Rp308.200. Menunggu keputusan Aldo. File Rencana Negosiasi lain
   cadangan versi 5-bahan di scratchpad): sheet Rekap, Uji Paket per Personel, Harga Final, Rincian; angka = berkas Final
   (penawaran 409.847.500 / HPS 336.019.300 / batas 334.838.400 sebelum PPN). Bahan: PDH Donatello Italy Wool kuning gading +
   Casamoda cokelat gelap; PDL Sus & Biru Donatello + Casamoda; Tactical Verlando Bultop + Casamoda; olahraga jersey + parasut Mills.
+
+## Audit menyeluruh 23 Okt 2026
+Angka konsisten di semua dokumen (volume 36 baris = Kebutuhan; HPS Rp372.981.400; pagu Rp375 jt; RUP/COA). Diperbaiki: KAK 5 tempat +
+SSKK 2 tempat kini menyebut seragam PDH, PDL Sus, Tactical, dan Seragam Biru (pengukuran, toleransi, sampel, pemeriksaan, subkontrak);
+Petunjuk RAB/HPS (pagu, kelompok D/E, dasar HPS PPK); Ringkasan Nego memakai HPS dibulatkan; matriks dibangun ulang (penawaran V2 23 Okt,
+4 barang baru, HPS terbaru, pembanding PDH/PDL = semua bahan; suntingan Aldo: subjudul & catatan bawah dihapus, permanen di builder).
+Terbuka untuk Aldo: (1) D.2/E.5 'Kaos Dalam' vs harga/spek set kaos dalam + kaos kaki; (2) metode tertulis e-purchasing mini kompetisi
+Pokja + Surat Pesanan vs rencana negosiasi 1 penyedia >Rp200 jt; (3) penawaran 1 jenis sepatu untuk PDH/PDL/Tactical; (4) e-mail PPK
+SSKK; (5) surat penawaran hari 'Senin 23 Okt' & nomor 0873 tetap; (6) SP paling lambat 4 Nov; (7) RUP 67117950 di SIRUP.
+Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokumen', angkanya sama dengan Final.
