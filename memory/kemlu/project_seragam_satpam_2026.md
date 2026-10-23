@@ -286,3 +286,8 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   Kalkulasi diselaraskan (0 error, total = Final). PDF Final belum diperbarui (sedang dibuka).
 - **23 Okt (arahan Aldo):** Kalkulasi Penawaran + `build_kalkulasi_final.py` + `build_nego.py` kini **dipegang sesi RAB/HPS**
   ("Dokumen KAK/Spektek, RAB, HPS, SSUK SSKK", local_d8f3863e). Sesi Bara lain tidak menulis lagi ke berkas paket Satpam.
+- **23 Okt malam — Kalkulasi Penawaran diambil alih sesi RAB/HPS** (arahan Aldo; sesi "Total penawaran dokumen" berhenti menulis).
+  `build_kalkulasi_final.py` kini menarik PEN/HPS/batas dari `build_nego_final.target()` + `harga.HARGA`, kuantitas dan paket dari
+  `barang.KELOMPOK`, pagu dari `konst.PAGU` — tidak ada angka ketik ulang. Bangun: `python build_kalkulasi_final.py out/...xlsx` lalu
+  `render_matriks.ps1`. Kebutuhan unit kerja B29 diubah ke "Topi Lapangan" (arahan Aldo, Excel COM). PDF Nego Final tersalin. audit.py
+  (scratchpad) ditambah cek Kalkulasi + Kebutuhan; 0 temuan.
