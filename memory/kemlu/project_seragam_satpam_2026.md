@@ -200,3 +200,11 @@ build_nego.py milik sesi itu. Catatan prosedur: >Rp200 jt negosiasi 1 penyedia /
   Sesi RAB/HPS dikabari untuk menulis pagu 370 jt di RAB/HPS + KAK. File `Rencana Negosiasi - Penawaran CV Nagoya V2 - Pagu 370 jt.xlsx`
   = versi terbaru (file 310 & 360 jt di folder = versi lama). S3 (paket 1,5 jt): olahraga maks 659.800/setel; olahraga pada HPS
   589.000 -> total ~Rp356,2 jt, + XL Up terburuk 9,05 jt = ~Rp365,3 jt, masih < pagu.
+
+## Rencana Negosiasi FINAL (arahan Aldo 23 Okt 2026) — sesi ini, build_nego_final.py
+File: 'Rencana Negosiasi - Penawaran CV Nagoya V2 - Final.xlsx/.pdf' (5 hlm). Skenario 285/300 jt DIBATALKAN. Batas maks paket per
+personel termasuk PPN: **PDH Rp1,5 jt, PDL Sus Rp1,55 jt**; olahraga Mills **kaos Rp330.000, celana Rp400.000 per buah termasuk PPN**
+(tafsir agent: angka termasuk PPN, karena kaos penawaran Rp300.000 belum PPN). Batas per barang = min(penawaran, HPS) lalu
+diturunkan merata (PDH 0,988; PDL Sus 0,972); D/E = min(penawaran, HPS). Total batas Rp334.838.400 / **Rp371.670.624 +PPN**:
+> pagu Rp1,67 jt, > HPS Rp3,8 jt (kaos 297.200 dasar = +49% HPS, harga timpang). Muat pagu bila kaos <= Rp320.400 +PPN;
+muat HPS bila <= Rp308.200. Menunggu keputusan Aldo. File Rencana Negosiasi lain (310/360/370) milik sesi 'Total penawaran dokumen'.
