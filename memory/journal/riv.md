@@ -455,3 +455,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T13:11Z  kemlu 23 Okt: HPS kaos olahraga 300 rb -> HPS 386.298.600 > pagu 375 jt; Kalkulasi diselaraskan
 - 2026-10-23T13:16Z  23 Okt: Satpam pagu 390jt, HPS 386.988.600 (PDH HPS 498.600); nego & semua dokumen dicek ulang konsisten
 - 2026-10-23T13:16Z  kemlu 23 Okt: pagu 390 jt, HPS PDH 498.600 -> HPS 386.988.600 <= pagu; Kalkulasi diselaraskan
+- 2026-10-23T13:34Z  seragam satpam: spek 4 seragam disesuaikan foto asli, KAK +8.5 foto acuan (disamarkan), RAB/HPS+DKH rebuild, audit 0; HPS Biru/Tactical rendah -> opsi ke Aldo (belum diubah)

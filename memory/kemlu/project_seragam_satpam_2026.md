@@ -256,3 +256,14 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **23 Okt (arahan Aldo via sesi RAB/HPS): pagu Rp390 jt; HPS seragam PDH 498.600** (penetapan PPK, median 493.000).
   HPS 348.638.400 -> **Rp386.988.600 <= pagu** (sisa ~3,0 jt). Batas tetap Rp370.701.594. Paket PDH HPS +PPN 1.577.643 < SBM.
   Kalkulasi diselaraskan (0 error). Urutan pagu: 500 -> 310 -> 360 -> 370 -> 375 -> 390 jt.
+- **23 Okt — foto asli seragam** (`Foto Asli Seragam PDH PDL Sus Tactical dan Biru/`, 4 subfolder): spesifikasi di `spek.py` dan KAK
+  diperbarui sesuai foto. Fakta foto: **Seragam Biru = kemeja biru muda lengan panjang + celana gelap** (BUKAN setelan biru dongker),
+  kur kuning, pet list kuning emas, lambang Kemlu lengan kiri; **PDL Sus = kemeja krem lengan panjang + celana cokelat tua lurus (bukan
+  kargo)**; Tactical = kemeja+celana abu ripstop, bordir monokrom; topi tactical = baseball mesh abu; PDH pet list merah marun, kur hitam;
+  Polda di lengan kanan, Jakarta di lengan kiri. **Personel PDL Sus di foto memakai topi lapangan mesh cokelat, bukan pet** (barang B =
+  "Pet Ciputat") — ditanyakan ke Aldo. KAK (versi Aldo, in-place) dapat **8.5 Foto Acuan Model Seragam** (8 foto, wajah/nama/kartu ID
+  disamarkan; skrip scratchpad `kak_foto.py`, `samarkan.py`). RAB/HPS + DKH dibangun ulang; audit 0 temuan.
+- **23 Okt — HPS Biru/Tactical terlalu rendah**: Biru 219.800 dan Tactical 335.400 = median listing pasar umum (GABUNG), bukan padanan
+  bahan. Bahan Biru = PDH/PDL (penawaran 480 rb sama dengan PDL). Biru = HPS PDL 476.300 -> HPS Rp391,26 jt (> pagu 390); + Tactical 400 rb
+  -> Rp392,33 jt. Usulan: Biru 476.300 dan PDH turun ke 464.000 (lengan pendek < PDL lengan panjang 476.300) -> HPS Rp386.996.283; batas
+  nego PDH tak berubah (penawaran 445 rb). Menunggu keputusan Aldo; HPS BELUM diubah.
