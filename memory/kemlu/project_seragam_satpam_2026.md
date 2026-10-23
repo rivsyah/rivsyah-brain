@@ -294,3 +294,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **23 Okt — DKH Hasil Negosiasi** (`DKH Hasil Negosiasi - ...xlsx`, folder paket): harga satuan = batas maksimal negosiasi per barang
   (`build_dkh.py <out> nego`, dari `build_nego_final.target()`), identitas CV Nagoya dari surat V2, NPWP kosong. Total Rp375.127.275 +PPN.
   Asumsi: belum ada harga sepakat riil; bila hasil nego berbeda, harga diganti. DKH Kosong tetap ada untuk penyedia.
+- **23 Okt — koreksi Aldo: DKH diisi harga PENAWARAN V2, bukan hasil nego.** `DKH Penawaran V2 - ...xlsx` (`build_dkh.py <out> penawaran`,
+  harga = `build_nego_final.PEN`): total Rp409.847.500 + PPN 45.083.225 = **Rp454.930.725**; XL Up tidak dihitung; B.4 topi = harga Pet
+  81.000, D.2/E.5 kaos dalam = 82.000 (paket). Berkas "DKH Hasil Negosiasi" dikeluarkan dari folder (cadangan di scratchpad).
