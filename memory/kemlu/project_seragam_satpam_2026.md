@@ -280,3 +280,7 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   paket B naik -> HPS PDL Sus 482.700; Biru diikat ke HARGA['pdl_sus'] (482.700); PDH 462.400 agar HPS <= 387 jt. **HPS Rp386.991.300**
   (386.991.399), batas nego **Rp375.127.275** +PPN. KAK (B.4, spek baris 16 baru, tahapan), SSKK (penukaran ...topi...), RAB/HPS, Nego,
   Matriks, DKH diperbarui; audit 0. PDF Nego belum tersalin (berkas terbuka). Berkas Kebutuhan unit kerja masih menulis Pet Ciputat.
+- **23 Okt 22.18 (arahan Aldo via sesi RAB/HPS):** B.4 = **Topi Lapangan** (37; HPS 53.700 median 4 Katalog, batas 52.300; penawaran
+  pakai harga Pet 81 rb) menggantikan Pet Ciputat di PDL Sus. HPS: PDL Sus 482.700 (batas 468.300), Biru 482.700 (batas 480.000),
+  PDH 462.400, sepatu PDL 369.800 (batas 360.700). **HPS Rp386.991.300; batas Rp375.127.275 +PPN**; pagu 390 jt.
+  Kalkulasi diselaraskan (0 error, total = Final). PDF Final belum diperbarui (sedang dibuka).
