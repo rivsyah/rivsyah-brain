@@ -169,3 +169,10 @@ COM; catatan suntingan Aldo dipertahankan). HPS/KAK tidak diubah. Builder data/p
   XL Up terburuk +Rp9.052.605 -> S2 + XL Up masih < pagu (sisa Rp1,07 jt). Paket per personel S1/S2 masuk SBM.
   Catatan: pada harga HPS pun lingkup 23 Okt = Rp336,3 jt sebelum PPN (Rp373 jt + PPN) > pagu -> target berarti ~18-23% di
   bawah HPS; batas mundur = kurangi lingkup/spek olahraga atau mini kompetisi. Nego > Rp200 jt oleh Pokja.
+- **23 Okt (lanjutan): pagu dinaikkan Aldo menjadi Rp360 jt.** Arahan baru: negosiasi seragam SBM dengan paket **Rp1,5 jt per
+  personel** (asumsi Bara: termasuk PPN). File baru `Rencana Negosiasi - Penawaran CV Nagoya V2 - Pagu 360 jt.xlsx` (file lama
+  sedang dibuka Aldo, tidak ditimpa; masih pagu 310). Sheet "Skenario SBM 1,5 jt": perlengkapan = HPS, seragam + sepatu turun
+  proporsional -> PDH seragam 435.700 + sepatu 332.900; PDL seragam 433.000 + sepatu 331.700; Tactical/Biru tetap harga V2
+  (paket 970,7 rb / 748,9 rb). Seragam A+B+D+E = Rp247.677.519 +PPN. Sisa olahraga: S1 285 jt -> 192.100/setel, S2 300 jt ->
+  269.300/setel, pagu 360 jt -> 578.200/setel (HPS 589.000; V2 755.000). Pagu habis tanpa ruang XL Up (~9,05 jt) -> olahraga
+  perlu <= ~531.600/setel bila XL Up tetap ada.
