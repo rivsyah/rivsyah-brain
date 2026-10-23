@@ -250,3 +250,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   < HPS, tidak timpang). RAB/HPS, KAK, Nego Final, matriks diperbarui.
 - **23 Okt (arahan Aldo via sesi RAB/HPS): HPS kaos olahraga -> Rp300.000** (semula 226.300). HPS 348.016.800 -> **Rp386.298.600
   > pagu Rp375 jt (lewat ~11,3 jt)**, menunggu keputusan Aldo. Batas negosiasi tetap Rp370.701.594 (+PPN). Kalkulasi diselaraskan.
+- 23 Okt: **pagu Rp390 jt**, HPS ~387 jt -> HPS seragam PDH ditetapkan PPK **498.600** (median 493.000; batas nego tidak berubah karena
+  penawaran 445.000 < HPS). **HPS Rp386.988.600**; kit A HPS 1.577.643 <= SBM. Batas nego Rp370.701.594 +PPN. Kalimat 'batas kaos di atas HPS'
+  di Nego kini kondisional (tidak ada batas > HPS). Audit ulang: semua dokumen konsisten, tak ada angka lama.
