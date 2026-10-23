@@ -459,3 +459,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T14:31Z  seragam satpam: opsi 3 diterapkan (Biru 476.300, PDH 464.000), HPS 386.996.200, batas nego 374.972.319; semua dokumen rebuild, audit 0
 - 2026-10-23T14:32Z  kemlu 23 Okt: HPS Biru 476.300 & PDH 464.000 -> HPS 386.996.200, batas 374.972.319 +PPN; Kalkulasi diselaraskan
 - 2026-10-23T14:32Z  seragam satpam: sesi Total penawaran konfirmasi Kalkulasi selaras dengan Final (HPS 386.996.200, batas 374.972.319, 0 selisih 36 baris)
+- 2026-10-23T15:18Z  seragam satpam: B.4 Pet Ciputat -> Topi Lapangan (HPS 53.700), PDL/Biru 482.700, PDH 462.400, HPS 386.991.300, batas 375.127.275; audit 0

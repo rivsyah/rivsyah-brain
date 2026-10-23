@@ -275,3 +275,8 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **23 Okt malam (arahan Aldo via sesi RAB/HPS): HPS Seragam Biru 219.800 -> 476.300 (= PDL Sus), HPS PDH 498.600 -> 464.000.**
   HPS 348.645.300 -> Rp386.996.283, dibulatkan **Rp386.996.200** (pagu 390 jt). Batas negosiasi naik ke **Rp374.972.319 +PPN**
   (batas Biru 476.300). Kalkulasi diselaraskan, 0 selisih dengan Final (21.31). build_nego.py = builder lama, tidak dipakai.
+- **23 Okt — B.4 = Topi Lapangan** (cokelat, panel jaring; arahan Aldo, sesuai foto), bukan Pet Ciputat. Id `topi_lapangan`, HPS 53.700
+  (median 4 Katalog 45.001–95.236; Tokopedia ~20 rb pembanding). `barang.DIGANTI` menjaga uji total lembar unit kerja. Efek: ruang SBM
+  paket B naik -> HPS PDL Sus 482.700; Biru diikat ke HARGA['pdl_sus'] (482.700); PDH 462.400 agar HPS <= 387 jt. **HPS Rp386.991.300**
+  (386.991.399), batas nego **Rp375.127.275** +PPN. KAK (B.4, spek baris 16 baru, tahapan), SSKK (penukaran ...topi...), RAB/HPS, Nego,
+  Matriks, DKH diperbarui; audit 0. PDF Nego belum tersalin (berkas terbuka). Berkas Kebutuhan unit kerja masih menulis Pet Ciputat.
