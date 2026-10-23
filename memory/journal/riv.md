@@ -434,3 +434,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:08Z  kemlu 23 Okt: Rencana Negosiasi Pagu 360 jt diselaraskan dengan HPS final sesi RAB/HPS (tactical/biru/dasi/topi); HPS 367,87 jt > pagu 360 jt menunggu Aldo
 - 2026-10-23T12:22Z  23 Okt: pagu seragam Satpam 370jt -> HPS 367,87jt di bawah pagu; RAB/HPS + KAK diperbarui
 - 2026-10-23T12:22Z  kemlu 23 Okt: pagu satpam -> 370 jt; HPS 367,87 jt kini <= pagu; Rencana Negosiasi Pagu 370 jt dibuat; sesi RAB/HPS diminta memperbarui pagu
+- 2026-10-23T12:30Z  kemlu 23 Okt: sesi RAB/HPS pegang Rencana Negosiasi FINAL (arahan Aldo: hapus S1/S2; paket PDH maks 1,5 jt, PDL Sus 1,55 jt; olahraga Mills kaos 330rb celana 400rb). Bara flag: kaos 330rb > penawaran V2 300rb; total kasar ~385,5 jt > pagu 370 jt
