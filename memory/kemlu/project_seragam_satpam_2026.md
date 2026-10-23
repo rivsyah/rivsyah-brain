@@ -238,3 +238,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   pasar 34.900). **HPS kini Rp371.982.400** (turun dari 372.981.400; arahan HPS ~373 jt tidak dikejar ulang). Batas negosiasi
   Rp333.965.400 / Rp370.701.594 +PPN (kaos dalam saja batas 40.000; penyedia hanya menawar paket Rp82.000). RAB/HPS, KAK, DKH, Nego Final,
   matriks diperbarui.
+- **23 Okt (arahan Aldo via sesi RAB/HPS):** kelompok D & E memakai **"Kaos Dalam" saja (Pcs), HPS = batas Rp40.000**; A & B tetap
+  paket kaos dalam + kaos kaki Rp70.000. Angka baru: HPS 335.119.300 -> **Rp371.982.400**; batas 333.965.400 / **Rp370.701.594
+  +PPN**; penawaran tetap 409.847.500 (kaos dalam D/E pada harga paket 82 rb). Kalkulasi diselaraskan (0 error, sama dengan Final).
