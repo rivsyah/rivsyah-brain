@@ -267,3 +267,8 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   bahan. Bahan Biru = PDH/PDL (penawaran 480 rb sama dengan PDL). Biru = HPS PDL 476.300 -> HPS Rp391,26 jt (> pagu 390); + Tactical 400 rb
   -> Rp392,33 jt. Usulan: Biru 476.300 dan PDH turun ke 464.000 (lengan pendek < PDL lengan panjang 476.300) -> HPS Rp386.996.283; batas
   nego PDH tak berubah (penawaran 445 rb). Menunggu keputusan Aldo; HPS BELUM diubah.
+- **23 Okt — opsi 3 disetujui Aldo**: HPS Seragam Biru = **476.300** (= PDL Sus, bahan sama), PDH = **464.000** (lengan pendek < PDL
+  lengan panjang). Lewat `HARGA_PPK` di harga.py. HPS **Rp386.996.283 -> dibulatkan Rp386.996.200** (pagu 390 jt). Batas nego
+  **Rp374.972.319** +PPN (semula 370.701.594; kit A 1.499.388, kit B 1.549.893). RAB/HPS, Nego Final (xlsx+pdf), Matriks, DKH, KAK total
+  diperbarui; audit 0 temuan. Sesi "Total penawaran dokumen" dikabari untuk selaraskan Kalkulasi. Topi PDL Sus (foto: topi mesh
+  cokelat vs barang "Pet Ciputat") masih menunggu jawaban Aldo.
