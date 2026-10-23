@@ -241,3 +241,7 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **23 Okt (arahan Aldo via sesi RAB/HPS):** kelompok D & E memakai **"Kaos Dalam" saja (Pcs), HPS = batas Rp40.000**; A & B tetap
   paket kaos dalam + kaos kaki Rp70.000. Angka baru: HPS 335.119.300 -> **Rp371.982.400**; batas 333.965.400 / **Rp370.701.594
   +PPN**; penawaran tetap 409.847.500 (kaos dalam D/E pada harga paket 82 rb). Kalkulasi diselaraskan (0 error, sama dengan Final).
+- **23 Okt 19:43 — surat V2 terkoreksi dari vendor** (`Penawaran CV Nagoya V2.pdf` ditimpa; metadata +07 vendor): tanggal kini
+  "Jum'at, 23 Oktober 2026", **kaos olahraga resmi Rp355.000**; harga lain sama. Masih: XL Up, sepatu satu jenis (Pcs), kaos dalam
+  hanya paket 82 rb, celana 455 rb. Cek silang 23 Okt: Kalkulasi = Final = RAB/HPS (36 baris barang, 0 selisih; HPS 371.982.400,
+  batas 370.701.594, pagu 375 jt).

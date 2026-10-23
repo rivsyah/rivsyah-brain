@@ -449,3 +449,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:53Z  23 Okt: audit dokumen Satpam - angka konsisten; KAK/SSKK/Petunjuk/Nego/matriks diperbaiki; 7 butir terbuka untuk Aldo
 - 2026-10-23T13:00Z  23 Okt: Satpam kaos dalam saja D/E HPS 40rb -> HPS 371.982.400; batas nego 370,70jt; semua dokumen diperbarui
 - 2026-10-23T13:00Z  kemlu 23 Okt: Kalkulasi diselaraskan - kaos dalam saja D/E HPS 40 rb; HPS 371.982.400, batas 370.701.594 +PPN
+- 2026-10-23T13:03Z  kemlu 23 Okt: cek ulang - Kalkulasi = Final = RAB/HPS (0 selisih); surat V2 terkoreksi vendor (kaos 355 rb, Jumat 23 Okt) diterima, catatan Kalkulasi diperbarui
