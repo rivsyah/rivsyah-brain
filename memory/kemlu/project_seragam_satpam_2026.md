@@ -208,3 +208,6 @@ personel termasuk PPN: **PDH Rp1,5 jt, PDL Sus Rp1,55 jt**; olahraga Mills **kao
 diturunkan merata (PDH 0,988; PDL Sus 0,972); D/E = min(penawaran, HPS). Total batas Rp334.838.400 / **Rp371.670.624 +PPN**:
 > pagu Rp1,67 jt, > HPS Rp3,8 jt (kaos 297.200 dasar = +49% HPS, harga timpang). Muat pagu bila kaos <= Rp320.400 +PPN;
 muat HPS bila <= Rp308.200. Menunggu keputusan Aldo. File Rencana Negosiasi lain (310/360/370) milik sesi 'Total penawaran dokumen'.
+- Koreksi Aldo (via sesi lain): **kaos olahraga tetap Rp300.000 belum PPN** (= penawaran). Celana tetap Rp400.000 termasuk PPN (belum
+  dikonfirmasi). Total batas Rp335.328.400 / **Rp372.214.524 +PPN** -> > pagu Rp2,21 jt, > HPS Rp4,34 jt; muat pagu bila celana
+  <= Rp387.233 +PPN, muat HPS bila <= Rp375.033. Berkas Final diperbarui.

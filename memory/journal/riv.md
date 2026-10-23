@@ -437,3 +437,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:30Z  kemlu 23 Okt: sesi RAB/HPS pegang Rencana Negosiasi FINAL (arahan Aldo: hapus S1/S2; paket PDH maks 1,5 jt, PDL Sus 1,55 jt; olahraga Mills kaos 330rb celana 400rb). Bara flag: kaos 330rb > penawaran V2 300rb; total kasar ~385,5 jt > pagu 370 jt
 - 2026-10-23T12:32Z  23 Okt: Rencana Negosiasi Final Satpam (PDH 1,5jt/PDL 1,55jt, kaos 330rb/celana 400rb +PPN) -> total 371,67jt > pagu 370 1,67jt; menunggu Aldo
 - 2026-10-23T12:34Z  kemlu 23 Okt: koreksi Aldo - kaos olahraga tetap Rp300.000 (bukan 330 rb); diteruskan ke sesi RAB/HPS pemilik Rencana Negosiasi Final; celana 400 rb incl/excl PPN belum jelas
+- 2026-10-23T12:35Z  23 Okt: Rencana Negosiasi Final Satpam - kaos tetap 300rb belum PPN; total batas 372,21jt +PPN (> pagu 2,21jt)
