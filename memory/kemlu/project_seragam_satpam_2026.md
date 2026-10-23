@@ -214,3 +214,5 @@ muat HPS bila <= Rp308.200. Menunggu keputusan Aldo. File Rencana Negosiasi lain
 - Arahan akhir Aldo 23 Okt: penawaran kaos Rp355.000 (koreksi vendor; surat V2 tertulis 300.000). **Batas: kaos Rp330.000, celana
   Rp400.000, termasuk PPN** (keduanya dikonfirmasi Aldo). Total batas **Rp371.670.624 +PPN** (> pagu Rp1,67 jt).
   Muat pagu bila celana <= Rp390.333 +PPN. Berkas Final diperbarui. Arahan 'kaos tetap 300rb' dibatalkan.
+- 23 Okt (akhir): **pagu Rp375 jt**, **HPS ~Rp373 jt** (arahan Aldo) -> HPS kaos olahraga dinaikkan PPK 200.000 -> 226.300 belum PPN;
+  HPS Rp372.981.400. Batas negosiasi Final Rp371.670.624 +PPN kini < HPS (sisa Rp1,31 jt) < pagu (sisa Rp3,33 jt). RAB/HPS, KAK, Final diperbarui.

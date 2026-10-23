@@ -444,3 +444,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:38Z  kemlu 23 Okt: Aldo konfirmasi kaos olahraga 330 rb & celana 400 rb termasuk PPN -> Rencana Negosiasi Final (sesi RAB/HPS) sudah benar: total batas Rp371.670.624, lewat pagu 1,67 jt
 - 2026-10-23T12:38Z  23 Okt: Aldo konfirmasi kaos 330rb termasuk PPN; Final Satpam tidak berubah (371,67jt)
 - 2026-10-23T12:42Z  23 Okt: penawaran Nagoya V2 diperbarui penyedia (kaos 355rb); Final Satpam catatan disesuaikan, total tetap 371,67jt
+- 2026-10-23T12:45Z  23 Okt: Satpam pagu 375jt, HPS 372.981.400 (kaos HPS 226.300); RAB/HPS, KAK, Nego Final diperbarui; batas nego 371,67jt di bawah HPS & pagu
