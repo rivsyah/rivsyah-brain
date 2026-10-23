@@ -245,3 +245,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   "Jum'at, 23 Oktober 2026", **kaos olahraga resmi Rp355.000**; harga lain sama. Masih: XL Up, sepatu satu jenis (Pcs), kaos dalam
   hanya paket 82 rb, celana 455 rb. Cek silang 23 Okt: Kalkulasi = Final = RAB/HPS (36 baris barang, 0 selisih; HPS 371.982.400,
   batas 370.701.594, pagu 375 jt).
+- 23 Okt: **HPS kaos olahraga = Rp300.000** (arahan Aldo; semula 226.300) -> **HPS Rp386.298.600 > pagu Rp375 jt (Rp11,3 jt)**, Uji
+  Silang MELEBIHI PAGU; menunggu Aldo (naikkan pagu >= Rp386,3 jt atau pangkas HPS). Batas nego tetap Rp370.701.594 (kaos 297.200 kini
+  < HPS, tidak timpang). RAB/HPS, KAK, Nego Final, matriks diperbarui.
