@@ -212,5 +212,5 @@ muat HPS bila <= Rp308.200. Menunggu keputusan Aldo. File Rencana Negosiasi lain
   dikonfirmasi). Total batas Rp335.328.400 / **Rp372.214.524 +PPN** -> > pagu Rp2,21 jt, > HPS Rp4,34 jt; muat pagu bila celana
   <= Rp387.233 +PPN, muat HPS bila <= Rp375.033. Berkas Final diperbarui.
 - Arahan akhir Aldo 23 Okt: penawaran kaos Rp355.000 (koreksi vendor; surat V2 tertulis 300.000). **Batas: kaos Rp330.000, celana
-  Rp400.000, termasuk PPN** (celana dikonfirmasi; kaos = asumsi sejalan). Total batas **Rp371.670.624 +PPN** (> pagu Rp1,67 jt).
+  Rp400.000, termasuk PPN** (keduanya dikonfirmasi Aldo). Total batas **Rp371.670.624 +PPN** (> pagu Rp1,67 jt).
   Muat pagu bila celana <= Rp390.333 +PPN. Berkas Final diperbarui. Arahan 'kaos tetap 300rb' dibatalkan.
