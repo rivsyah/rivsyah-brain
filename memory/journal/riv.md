@@ -452,3 +452,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T13:03Z  kemlu 23 Okt: cek ulang - Kalkulasi = Final = RAB/HPS (0 selisih); surat V2 terkoreksi vendor (kaos 355 rb, Jumat 23 Okt) diterima, catatan Kalkulasi diperbarui
 - 2026-10-23T13:04Z  23 Okt: surat penawaran Nagoya V2 terkoreksi (Jum'at 23 Okt, kaos 355rb) dicek; Final/DKH/RAB/matriks tanpa catatan basi; tak ada perubahan
 - 2026-10-23T13:10Z  23 Okt: HPS kaos olahraga Satpam 300rb -> HPS 386,30jt > pagu 375jt; dokumen diperbarui, menunggu keputusan pagu
+- 2026-10-23T13:11Z  kemlu 23 Okt: HPS kaos olahraga 300 rb -> HPS 386.298.600 > pagu 375 jt; Kalkulasi diselaraskan
