@@ -272,3 +272,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   **Rp374.972.319** +PPN (semula 370.701.594; kit A 1.499.388, kit B 1.549.893). RAB/HPS, Nego Final (xlsx+pdf), Matriks, DKH, KAK total
   diperbarui; audit 0 temuan. Sesi "Total penawaran dokumen" dikabari untuk selaraskan Kalkulasi. Topi PDL Sus (foto: topi mesh
   cokelat vs barang "Pet Ciputat") masih menunggu jawaban Aldo.
+- **23 Okt malam (arahan Aldo via sesi RAB/HPS): HPS Seragam Biru 219.800 -> 476.300 (= PDL Sus), HPS PDH 498.600 -> 464.000.**
+  HPS 348.645.300 -> Rp386.996.283, dibulatkan **Rp386.996.200** (pagu 390 jt). Batas negosiasi naik ke **Rp374.972.319 +PPN**
+  (batas Biru 476.300). Kalkulasi diselaraskan, 0 selisih dengan Final (21.31). build_nego.py = builder lama, tidak dipakai.
