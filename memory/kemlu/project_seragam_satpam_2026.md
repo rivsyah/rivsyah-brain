@@ -188,3 +188,10 @@ KAK versi Aldo disunting in-place (volume, tabel spek 4 barang baru, total, pagu
 Penawaran CV Nagoya V2 (23 Okt, hari tertulis 'Senin' padahal Jumat): kuantitas final = Rp400,22 jt dasar / Rp444,25 jt +PPN.
 **Rencana Negosiasi dipegang sesi lain (Total penawaran dokumen)**: file 'Rencana Negosiasi - Penawaran CV Nagoya V2 (- Pagu 360 jt).xlsx',
 build_nego.py milik sesi itu. Catatan prosedur: >Rp200 jt negosiasi 1 penyedia / PL tidak bisa [Likely] - cek UKPBJ.
+- **23 Okt — koordinasi 2 sesi:** sesi "Dokumen KAK/Spektek, RAB, HPS, SSUK SSKK" memegang RAB/HPS, KAK, DKH, builder inti;
+  sesi Bara lain memegang Rencana Negosiasi (`build_nego.py`). HPS final (kebutuhan 23 Okt): A 157.460.200; B 52.413.600;
+  C 103.075.000; D 12.309.000; E 6.159.000; jumlah 331.416.800; **HPS Rp367.872.600 > pagu Rp360 jt (selisih 7,87 jt) ->
+  keputusan Aldo**. HPS barang baru: seragam tactical 335.400, topi 17.500, seragam biru 219.800, dasi 36.100.
+  Rencana Negosiasi Pagu 360 jt dibangun ulang dengan HPS ini: S1 Rp284.879.835, S2 Rp299.878.044; Skenario 3 (paket 1,5 jt):
+  seragam A+B+D+E Rp241.830.039 +PPN, olahraga maks 608.300/setel pada pagu (HPS 589.000 muat, total ~356,2 jt).
+  Seragam Biru V2 480 rb vs HPS 219,8 rb (+118%): target S1/S2 173-182 rb tidak realistis tanpa klarifikasi spek.
