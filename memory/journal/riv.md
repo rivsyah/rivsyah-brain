@@ -440,3 +440,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:35Z  23 Okt: Rencana Negosiasi Final Satpam - kaos tetap 300rb belum PPN; total batas 372,21jt +PPN (> pagu 2,21jt)
 - 2026-10-23T12:36Z  kemlu 23 Okt: Aldo - harga celana training di penawaran V2 salah ketik vendor (455 rb -> 355 rb, belum PPN); diteruskan ke sesi pemilik Final; total kasar ~Rp371,19 jt +PPN, lewat pagu ~1,19 jt
 - 2026-10-23T12:38Z  kemlu 23 Okt: arahan final Aldo olahraga - kaos Mills nego ke 330 rb (penawaran kaos terkoreksi 355 rb), celana 400 rb termasuk PPN; diteruskan ke sesi pemilik Final; PPN kaos belum jelas
+- 2026-10-23T12:38Z  23 Okt: Rencana Negosiasi Final Satpam - kaos 330rb/celana 400rb +PPN (penawaran kaos 355rb); total 371,67jt > pagu 1,67jt
