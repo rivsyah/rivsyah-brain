@@ -454,3 +454,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T13:10Z  23 Okt: HPS kaos olahraga Satpam 300rb -> HPS 386,30jt > pagu 375jt; dokumen diperbarui, menunggu keputusan pagu
 - 2026-10-23T13:11Z  kemlu 23 Okt: HPS kaos olahraga 300 rb -> HPS 386.298.600 > pagu 375 jt; Kalkulasi diselaraskan
 - 2026-10-23T13:16Z  23 Okt: Satpam pagu 390jt, HPS 386.988.600 (PDH HPS 498.600); nego & semua dokumen dicek ulang konsisten
+- 2026-10-23T13:16Z  kemlu 23 Okt: pagu 390 jt, HPS PDH 498.600 -> HPS 386.988.600 <= pagu; Kalkulasi diselaraskan

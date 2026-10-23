@@ -253,3 +253,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - 23 Okt: **pagu Rp390 jt**, HPS ~387 jt -> HPS seragam PDH ditetapkan PPK **498.600** (median 493.000; batas nego tidak berubah karena
   penawaran 445.000 < HPS). **HPS Rp386.988.600**; kit A HPS 1.577.643 <= SBM. Batas nego Rp370.701.594 +PPN. Kalimat 'batas kaos di atas HPS'
   di Nego kini kondisional (tidak ada batas > HPS). Audit ulang: semua dokumen konsisten, tak ada angka lama.
+- **23 Okt (arahan Aldo via sesi RAB/HPS): pagu Rp390 jt; HPS seragam PDH 498.600** (penetapan PPK, median 493.000).
+  HPS 348.638.400 -> **Rp386.988.600 <= pagu** (sisa ~3,0 jt). Batas tetap Rp370.701.594. Paket PDH HPS +PPN 1.577.643 < SBM.
+  Kalkulasi diselaraskan (0 error). Urutan pagu: 500 -> 310 -> 360 -> 370 -> 375 -> 390 jt.
