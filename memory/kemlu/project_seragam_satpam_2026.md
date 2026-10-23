@@ -234,3 +234,7 @@ Terbuka untuk Aldo: (1) D.2/E.5 'Kaos Dalam' vs harga/spek set kaos dalam + kaos
 Pokja + Surat Pesanan vs rencana negosiasi 1 penyedia >Rp200 jt; (3) penawaran 1 jenis sepatu untuk PDH/PDL/Tactical; (4) e-mail PPK
 SSKK; (5) surat penawaran hari 'Senin 23 Okt' & nomor 0873 tetap; (6) SP paling lambat 4 Nov; (7) RUP 67117950 di SIRUP.
 Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokumen', angkanya sama dengan Final.
+- 23 Okt: D.2/E.5 = **kaos dalam saja** (id kaos_dalam_saja, satuan Pcs, tanpa kaos kaki), HPS ditetapkan PPK **Rp40.000** (median
+  pasar 34.900). **HPS kini Rp371.982.400** (turun dari 372.981.400; arahan HPS ~373 jt tidak dikejar ulang). Batas negosiasi
+  Rp333.965.400 / Rp370.701.594 +PPN (kaos dalam saja batas 40.000; penyedia hanya menawar paket Rp82.000). RAB/HPS, KAK, DKH, Nego Final,
+  matriks diperbarui.

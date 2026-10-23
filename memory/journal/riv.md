@@ -447,3 +447,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:45Z  23 Okt: Satpam pagu 375jt, HPS 372.981.400 (kaos HPS 226.300); RAB/HPS, KAK, Nego Final diperbarui; batas nego 371,67jt di bawah HPS & pagu
 - 2026-10-23T12:50Z  kemlu 23 Okt: Kalkulasi Penawaran Seragam Satpam.xlsx dibangun ulang dengan bahan final V2, angka sama dengan Rencana Negosiasi Final (batas 371.670.624 +PPN, pagu 375 jt)
 - 2026-10-23T12:53Z  23 Okt: audit dokumen Satpam - angka konsisten; KAK/SSKK/Petunjuk/Nego/matriks diperbaiki; 7 butir terbuka untuk Aldo
+- 2026-10-23T13:00Z  23 Okt: Satpam kaos dalam saja D/E HPS 40rb -> HPS 371.982.400; batas nego 370,70jt; semua dokumen diperbarui
