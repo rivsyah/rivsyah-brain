@@ -176,3 +176,15 @@ COM; catatan suntingan Aldo dipertahankan). HPS/KAK tidak diubah. Builder data/p
   (paket 970,7 rb / 748,9 rb). Seragam A+B+D+E = Rp247.677.519 +PPN. Sisa olahraga: S1 285 jt -> 192.100/setel, S2 300 jt ->
   269.300/setel, pagu 360 jt -> 578.200/setel (HPS 589.000; V2 755.000). Pagu habis tanpa ruang XL Up (~9,05 jt) -> olahraga
   perlu <= ~531.600/setel bila XL Up tetap ada.
+
+## Kebutuhan FINAL + pagu (23 Okt 2026)
+Sumber: folder paket `Kebutuhan Pakaian Dinas Satuan Pengamanan.xlsx`. A PDH 111 (pin GP 136); **B PDL Sus kembali 37 (pin GM 12)**;
+C olahraga 175; **D Seragam Tactical 15** (seragam, kaos dalam, topi tactical, ikat pinggang, sepatu); **E Seragam Biru 15** (seragam,
+pet, dasi biru dongker, tali kur, kaos dalam). HPS barang baru = median gabungan INAPROC+Tokopedia 23 Okt (pasar_tambahan.py):
+tactical 335.400, topi 17.500, biru 219.800, dasi 36.100. **HPS Rp367.872.600** (A 157,46; B 52,41; C 103,08; D 12,31; E 6,16 jt dasar).
+Pagu: 310 jt lalu **360 jt** (arahan Aldo) -> HPS masih > pagu Rp7,87 jt (Uji Silang MELEBIHI PAGU) - keputusan Aldo.
+RAB/HPS dibangun ulang dari builder (suntingan Aldo: catatan Ket RAB & catatan kaki HPS dihapus, kini permanen di builder);
+KAK versi Aldo disunting in-place (volume, tabel spek 4 barang baru, total, pagu 360). DKH kosong (build_dkh.py) .xlsx+.pdf di folder.
+Penawaran CV Nagoya V2 (23 Okt, hari tertulis 'Senin' padahal Jumat): kuantitas final = Rp400,22 jt dasar / Rp444,25 jt +PPN.
+**Rencana Negosiasi dipegang sesi lain (Total penawaran dokumen)**: file 'Rencana Negosiasi - Penawaran CV Nagoya V2 (- Pagu 360 jt).xlsx',
+build_nego.py milik sesi itu. Catatan prosedur: >Rp200 jt negosiasi 1 penyedia / PL tidak bisa [Likely] - cek UKPBJ.

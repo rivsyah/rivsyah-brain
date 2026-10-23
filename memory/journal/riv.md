@@ -430,3 +430,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T01:53Z  kemlu: versi ringkas (pointer) deck sosialisasi TPLN Bank Mandiri 6 slide -> Downloads\Sosialisasi TPLN Bank Mandiri (ringkas).pptx; versi 8 slide tetap
 - 2026-10-23T12:01Z  kemlu 23 Okt: penawaran Nagoya V2 (444,2 jt +PPN) + kebutuhan baru (PDL 37, Tactical 15, Biru 15); pagu 310 jt; Rencana Negosiasi xlsx S1 285 jt / S2 300 jt dibuat di folder paket, builder build_nego.py
 - 2026-10-23T12:06Z  kemlu 23 Okt: pagu satpam -> 360 jt; Skenario SBM 1,5 jt/paket ditambah di file Rencana Negosiasi ... Pagu 360 jt.xlsx; seragam 247,7 jt +PPN, olahraga maks 578.200/setel pada pagu
+- 2026-10-23T12:08Z  23 Okt: seragam Satpam kebutuhan final (B37, Tactical15, Biru15) -> HPS Rp367.872.600, pagu 360jt (HPS > pagu 7,87jt); RAB/HPS rebuild, KAK in-place, DKH kosong; negosiasi dipegang sesi paralel
