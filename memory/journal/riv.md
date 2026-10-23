@@ -433,3 +433,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T12:08Z  23 Okt: seragam Satpam kebutuhan final (B37, Tactical15, Biru15) -> HPS Rp367.872.600, pagu 360jt (HPS > pagu 7,87jt); RAB/HPS rebuild, KAK in-place, DKH kosong; negosiasi dipegang sesi paralel
 - 2026-10-23T12:08Z  kemlu 23 Okt: Rencana Negosiasi Pagu 360 jt diselaraskan dengan HPS final sesi RAB/HPS (tactical/biru/dasi/topi); HPS 367,87 jt > pagu 360 jt menunggu Aldo
 - 2026-10-23T12:22Z  23 Okt: pagu seragam Satpam 370jt -> HPS 367,87jt di bawah pagu; RAB/HPS + KAK diperbarui
+- 2026-10-23T12:22Z  kemlu 23 Okt: pagu satpam -> 370 jt; HPS 367,87 jt kini <= pagu; Rencana Negosiasi Pagu 370 jt dibuat; sesi RAB/HPS diminta memperbarui pagu

@@ -196,3 +196,7 @@ build_nego.py milik sesi itu. Catatan prosedur: >Rp200 jt negosiasi 1 penyedia /
   seragam A+B+D+E Rp241.830.039 +PPN, olahraga maks 608.300/setel pada pagu (HPS 589.000 muat, total ~356,2 jt).
   Seragam Biru V2 480 rb vs HPS 219,8 rb (+118%): target S1/S2 173-182 rb tidak realistis tanpa klarifikasi spek.
 - 23 Okt (lanjutan): **pagu dinaikkan ke Rp370 jt** (arahan Aldo) -> HPS Rp367.872.600 <= pagu, Uji Silang semua lolos; RAB/HPS + KAK diperbarui.
+- **23 Okt: pagu dinaikkan Aldo lagi -> Rp370 jt** (310 -> 360 -> 370). HPS final Rp367.872.600 kini <= pagu (sisa Rp2,13 jt).
+  Sesi RAB/HPS dikabari untuk menulis pagu 370 jt di RAB/HPS + KAK. File `Rencana Negosiasi - Penawaran CV Nagoya V2 - Pagu 370 jt.xlsx`
+  = versi terbaru (file 310 & 360 jt di folder = versi lama). S3 (paket 1,5 jt): olahraga maks 659.800/setel; olahraga pada HPS
+  589.000 -> total ~Rp356,2 jt, + XL Up terburuk 9,05 jt = ~Rp365,3 jt, masih < pagu.
