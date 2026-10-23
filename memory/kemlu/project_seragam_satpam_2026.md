@@ -155,3 +155,17 @@ Rp395.000; kaos jersey Mills Rp215.000; celana parasut/babyterry Mills Rp425.000
 Kalkulasi: Versi 4 Verlando termurah Rp372,43 jt / **Rp413,39 jt +PPN > HPS Rp385,41 jt**; semua versi paket A & B > SBM per
 setel. Diperbarui: Kalkulasi (Harga Penawaran, nama sepatu/olahraga) + matriks versi Aldo (lembar Penawaran vs Pasar saja, via
 COM; catatan suntingan Aldo dipertahankan). HPS/KAK tidak diubah. Builder data/penawaran_nagoya.py BELUM disinkronkan.
+- **23 Okt — Penawaran V2** `Penawaran CV Nagoya V2.pdf` (No. 0873, tertulis "Senin, 23 Okt 2026" padahal **Jumat**): struktur baru
+  1 bahan per jenis: PDH 445 rb, PDL Sus 480 rb, **Seragam Biru** 480 rb, **Seragam Tactical** 400 rb (XL Up +44.500/48.000),
+  perlengkapan naik lagi +Rp5.000 (kopel 75 rb ... pin 28.500), **1 jenis sepatu** kulit kilap sol karet 400 rb (boots PDL hilang,
+  satuan Pcs), baru dasi 40 rb + topi tactical 40 rb, olahraga kaos 300 rb + celana 455 rb.
+  **Kuantitas baru** `Kebutuhan Pakaian Dinas Satuan Pengamanan.xlsx` (23 Okt): PDH 111 (pin GP 136), PDL Sus **37** (pin GM 12),
+  olahraga 175, Tactical 15 (seragam, kaos dalam, topi, ikat, sepatu), Biru 15 (seragam, pet, dasi, tali kur, kaos dalam).
+  RAB/HPS (22 Okt) masih PDL 61/pin GM 36, **HPS Rp385.409.700 > pagu**. **Pagu tersedia kini Rp310 jt** (Aldo 23 Okt).
+  V2 total = Rp400.222.500 + PPN = **Rp444.246.975**. Kalkulasi master juga diganti nama Aldo -> `Kalkulasi Penawaran Seragam Satpam.xlsx`.
+- **Rencana negosiasi (23 Okt)** `Rencana Negosiasi - Penawaran CV Nagoya V2.xlsx` di folder paket (builder `build_nego.py` di repo):
+  target Aldo S1 **Rp285 jt** (buka) dan S2 **Rp300 jt** (batas atas), termasuk PPN. Metode: jangkar = MIN(V2, HPS), target =
+  jangkar x faktor (S1 0,7749; S2 0,8156), bulat ke bawah Rp100. Hasil S1 Rp284.890.824 (-35,9% dari V2), S2 Rp299.875.935 (-32,5%).
+  XL Up terburuk +Rp9.052.605 -> S2 + XL Up masih < pagu (sisa Rp1,07 jt). Paket per personel S1/S2 masuk SBM.
+  Catatan: pada harga HPS pun lingkup 23 Okt = Rp336,3 jt sebelum PPN (Rp373 jt + PPN) > pagu -> target berarti ~18-23% di
+  bawah HPS; batas mundur = kurangi lingkup/spek olahraga atau mini kompetisi. Nego > Rp200 jt oleh Pokja.

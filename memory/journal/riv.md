@@ -428,3 +428,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-22T01:35Z  22 Okt: KAK Satpam dicek - total Rp385.409.700 & PDL Sus 61 sudah sesuai; spek Pin Gada ditambah 'pengait peniti' (KAK docx + builder spek.py)
 - 2026-10-23T01:21Z  kemlu: deck sosialisasi TPLN via Bank Mandiri 8 slide dari 'materi ppt sosialisasi.docx' -> Downloads\Sosialisasi TPLN Bank Mandiri.pptx (validate lolos, render PowerPoint COM dicek)
 - 2026-10-23T01:53Z  kemlu: versi ringkas (pointer) deck sosialisasi TPLN Bank Mandiri 6 slide -> Downloads\Sosialisasi TPLN Bank Mandiri (ringkas).pptx; versi 8 slide tetap
+- 2026-10-23T12:01Z  kemlu 23 Okt: penawaran Nagoya V2 (444,2 jt +PPN) + kebutuhan baru (PDL 37, Tactical 15, Biru 15); pagu 310 jt; Rencana Negosiasi xlsx S1 285 jt / S2 300 jt dibuat di folder paket, builder build_nego.py
