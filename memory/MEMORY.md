@@ -153,6 +153,7 @@
 - [Glosarium & Diksi Eksekutif Edisi 2](personal/project_glosarium_eksekutif.md) — 18 Okt 2026: 6 PDF + CSV Anki (900 istilah, 3 tingkat × 11 bab, 581 soal, verify 45/45) di Riv's Journey\Materi Bahan Belajar\Glosarium, Diksi2 Eksekutif\Edisi 2 (Okt 2026); Edisi 1 tidak diubah; builder ~/dev/personal/glosarium-eksekutif
 - [Materi TPD OJK](personal/project_tpd_ojk_materi.md) — 18 Okt 2026: 4 PDF (Panduan, Materi 12 bab, Bank Soal 210, Simulasi 2×75) di Riv's Journey\Materi Bahan Belajar\TPD OJK, verify 516/516; builder ~/dev/personal/tpd-ojk-materi; PCS→PCAM sejak angkatan 9, format TPD tidak dipublikasikan
 - [Materi IELTS Edisi 2](personal/project_ielts_materi_edisi2.md) — SELESAI 19 Okt 2026: 5 PDF 771 hlm + 92 MP3 di IELTS\Edisi 2 (Okt 2026), verify 843/843; builder ~/dev/personal/ielts-materi; bank soal tingkat sendiri = ujian gerbang; LPDP SHARE PNS 6,5; kertas dihentikan BC Indonesia 21 Jun 2026
+- [DTIIF 2026](aignited/project_dtiif_2026.md) — Danantara forum 26-28 Okt 2026 Fairmont; kartu nama 2 set terpisah (AIgnited + Kemlu) di DownloadsDTIIF 2026, HP/e-mail dinas kosong; Bentala belum ada kartunya
 - [Bara (agent)](shared/project_bara_agent.md) — agent all-in-one bernama Bara, workspace di ~/Bara; ~/Herd sengaja tidak di-rename (parked path Herd)
 
 ## Reference
