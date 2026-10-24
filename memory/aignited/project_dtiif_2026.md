@@ -21,11 +21,14 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   dipakai di KEDUA kartu), e-mail dinas rivaldo.syah@kemlu.go.id (izin Aldo di sesi ini, khusus kartu Kemlu), web aignited.id
   (hidup, Cloudflare, tolak curl tanpa UA browser; Aldo: "associated with irawan.dev"), QR AIgnited -> https://aignited.id,
   QR Kemlu -> https://kemlu.go.id/.
-- Kartu Kemlu mengikuti TEMPLATE KARTU NAMA KEMENTERIAN (gambar dari Aldo): depan putih, logo utama berwarna di tengah,
-  garis merah tepi kanan atas, nama/jabatan kiri, unit/alamat kanan, E./W. dan T./F.; belakang merah #C8252F, logo negatif
-  kiri atas, QR kemlu.go.id kiri bawah, pola batik kanan bawah. Logo berwarna = `Downloads\MOFA\LOGO KEMLU RGB PNG-01-03.png`.
-  Logo negatif = turunan buatan agent (luminans) dan pola batik = dipotong dari gambar template resolusi rendah (~190 dpi,
-  diperbesar 5x) -> minta berkas vektor resmi ke Humas/Biro terkait bila ada. Font = Hind (perkiraan, font resmi tak diketahui).
+- Kartu Kemlu v3 (24 Okt) dibangun dari TEMPLATE RESMI `Downloads\KEMLU Name Card Editable.ai` (PDF-compatible, 4 hlm
+  94x59 mm = 90x55 + bleed 2 mm: depan ID, belakang ID, depan EN, belakang EN; ada juga `KEMLU Name Card.pdf` versi
+  outline). Builder `~/dev/kemlu/kartu-nama-dtiif/build.py` + `overlay.html`: hapus teks contoh (redaksi teks saja,
+  vektor tetap), hapus QR lama (isinya kemlu.go.id/portal/id dan /portal/en), tempel teks + QR baru (https://kemlu.go.id/,
+  sesuai permintaan Aldo) hasil Chrome headless. Output `Downloads\DTIIF 2026\kartu-nama-kemlu.pdf` 4 hlm; QR didekode jsQR = OK.
+  Font resmi = SECONDA (subset di .ai tidak lengkap, tidak terpasang) -> pengganti Hind. Untuk hasil persis: percetakan
+  ketik ulang di .ai dengan Seconda. Pola template: ID kiri miring = jabatan, kanan medium = unit; EN kebalikannya.
+  Versi tiruan v2 (aset logo negatif/batik buatan agent) sudah DIBUANG.
 - Kartu AIgnited: logo Spark Tile (Downloads\AIgnited\AIgnited logo design.zip, #FF4D00 / #0B0C0E, Space Grotesk).
   Tagline sengaja kosong (agent tidak mengarang slogan). LinkedIn kosong.
 - Keputusan agent: DUA kartu terpisah, bukan satu kartu dua jabatan - alasan konflik kepentingan (pelaku pengadaan

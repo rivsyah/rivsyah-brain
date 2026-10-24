@@ -468,3 +468,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-23T15:37Z  seragam satpam: DKH diganti -> DKH Penawaran V2 (454.930.725), DKH Hasil Negosiasi ditarik dari folder
 - 2026-10-24T09:24Z  DTIIF 2026: kartu nama 2 set (AIgnited + Kemlu) di Downloads\DTIIF 2026 + checklist; kartu aignited/project_dtiif_2026.md
 - 2026-10-24T09:54Z  DTIIF 2026 kartu nama v2: Kemlu ikut template kementerian, data HP/e-mail dinas/web terisi, QR terverifikasi; PDF di Downloads\DTIIF 2026
+- 2026-10-24T10:03Z  DTIIF kartu Kemlu v3 dari template resmi .ai (ID+EN, QR kemlu.go.id), builder ~/dev/kemlu/kartu-nama-dtiif
