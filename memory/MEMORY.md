@@ -72,6 +72,10 @@
 
 ## Projects
 
+### Kemlu — materi belajar
+
+- [Materi Belajar Keuangan Kemlu v2](kemlu/project_materi_belajar_keuangan.md) — 13 PDF lama → 5 PDF (Panduan + Level 1–3 + Errata), 25 Okt 2026, verify 86/86; fakta baru: UP per penerima Rp50 jt (PMK 41/2026), local staff 511149
+
 ### Kemlu — dashboard Laravel (`C:\Users\rivsy\Herd\`)
 
 - [DPLD Kemlu](kemlu/project_dpld_kemlu.md) — DIHAPUS 2026-09-26; sumber desain tetap di Claude Design, spec v3.0 di Downloads
