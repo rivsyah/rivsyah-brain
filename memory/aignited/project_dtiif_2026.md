@@ -34,3 +34,11 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
 - Keputusan agent: DUA kartu terpisah, bukan satu kartu dua jabatan - alasan konflik kepentingan (pelaku pengadaan
   wajib hindari konflik kepentingan, Perpres 16/2018 jo 12/2021 Ps 7) dan [[user-jabatan-kemlu]] (JF Penata Kanselerai,
   "Pejabat Pengadaan" = peran, bukan JF PPBJ). DISETUJUI Aldo 24 Okt: dua kartu terpisah.
+- Materi networking (25 Okt): `Downloads\DTIIF 2026\onepager-aignited.pdf` (A4 2 hlm EN: AIgnited + Belantara, QR ke
+  aignited.id dan belantara.aignited.id) + `briefing-networking.pdf` (A5 4 hlm ID: aturan main, checklist, poin pitch,
+  Q&A, target, log kontak). Sumber fakta: `Downloads\AIgnited\Slide Deck\AIgnited Company Profile v2.md` (tagline resmi
+  "Intelligence, Automated."; CTO = M. Dedi Irawan) + `Balantaran\AI Incubation Public Sector\Belantara_Proposal_Deck_Bappenas.md`
+  + situs live. ASUMSI: "main project bentala dedi" = **Belantara** (belantara.aignited.id, v0.9, 23 skill, 25 playbook).
+- Status situs 25 Okt: hidup = aignited.id, belantara, fiskal, umkm, labiru; MATI = terminal, reelo (tidak resolve), tdc (500).
+- Bendera: deck Bappenas Apr 2026 klaim kedua founder "full-time" -> tidak cocok dengan status PNS Aldo. OPEN: angka
+  pendanaan yang diminta, status proposal Bappenas.

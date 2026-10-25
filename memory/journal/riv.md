@@ -469,3 +469,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-24T09:24Z  DTIIF 2026: kartu nama 2 set (AIgnited + Kemlu) di Downloads\DTIIF 2026 + checklist; kartu aignited/project_dtiif_2026.md
 - 2026-10-24T09:54Z  DTIIF 2026 kartu nama v2: Kemlu ikut template kementerian, data HP/e-mail dinas/web terisi, QR terverifikasi; PDF di Downloads\DTIIF 2026
 - 2026-10-24T10:03Z  DTIIF kartu Kemlu v3 dari template resmi .ai (ID+EN, QR kemlu.go.id), builder ~/dev/kemlu/kartu-nama-dtiif
+- 2026-10-24T10:25Z  Draft caption IG+LinkedIn utk video AIgnited 'Indonesia cut gas ke Singapura 24 Okt 2026' (31 BBTUD, kontrak habis 2028). Handle terverifikasi: @dinopattidjalal (dari situsnya). @pandusjahrir hanya dari kredit foto Fortune IDN. Handle institusi belum terverifikasi.
+- 2026-10-25T01:40Z  DTIIF: one-pager AIgnited+Belantara (EN) dan briefing networking (ID) di Downloads\DTIIF 2026; terminal/reelo/tdc mati
