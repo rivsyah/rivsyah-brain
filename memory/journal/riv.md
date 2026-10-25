@@ -491,3 +491,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-25T11:41Z  bmn-materi (personal): FAKTA2.md ditulis — butir F2-01..F2-13 (masa manfaat KMK 295/2019 & KMK 81/2018, jadwal laporan PMK 181, PMK 115/83/111/207/271/171/77, UU 15/2004-2006, rumah negara, kendaraan). PDF sumber di _kerja/unduhan.
 - 2026-10-25T11:48Z  perpajakan-korporasi-materi SELESAI: 7 PDF 980 hlm, verify 1714/0, disalin ke Edisi 2 (Okt 2026); kartu personal/project_perpajakan_korporasi_materi.md
 - 2026-10-25T12:14Z  BMN materi Edisi 2 SELESAI: 5 PDF (629 hlm, 349 soal) di Barang Milik Negara Pemerintah/Edisi 2 (Okt 2026); verify 5/5; builder ~/dev/personal/bmn-materi
+- 2026-10-25T12:16Z  BMN: 9 PDF Edisi 1 dipindah ke Barang Milik Negara Pemerintah/arsip-edisi1-Juli-2026 (perintah Aldo)
