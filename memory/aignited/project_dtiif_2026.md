@@ -38,7 +38,16 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   aignited.id dan belantara.aignited.id) + `briefing-networking.pdf` (A5 4 hlm ID: aturan main, checklist, poin pitch,
   Q&A, target, log kontak). Sumber fakta: `Downloads\AIgnited\Slide Deck\AIgnited Company Profile v2.md` (tagline resmi
   "Intelligence, Automated."; CTO = M. Dedi Irawan) + `Balantaran\AI Incubation Public Sector\Belantara_Proposal_Deck_Bappenas.md`
-  + situs live. ASUMSI: "main project bentala dedi" = **Belantara** (belantara.aignited.id, v0.9, 23 skill, 25 playbook).
+  + situs live. KOREKSI 25 Okt: asumsi "bentala = Belantara" SALAH. **Bentala** = proyek tersendiri (bentala.aignited.id, "the world, measured against itself": tiap negara vs normalnya sendiri, data publik). Belantara (belantara.aignited.id, v0.9, 23 skill, 25 playbook) proyek lain. One-pager hlm 2 & briefing masih berfokus Belantara -> perlu disesuaikan bila Aldo mau Bentala jadi sorotan.
 - Status situs 25 Okt: hidup = aignited.id, belantara, fiskal, umkm, labiru; MATI = terminal, reelo (tidak resolve), tdc (500).
 - Bendera: deck Bappenas Apr 2026 klaim kedua founder "full-time" -> tidak cocok dengan status PNS Aldo. OPEN: angka
   pendanaan yang diminta, status proposal Bappenas.
+- Proyek AIgnited live per 25 Okt (dari Aldo + cek): Bentala, Cakrawala (peta situasi Indonesia), Transit (simulasi
+  KRL/MRT/LRT/TJ Jabodetabek), Gapmap (celah usaha per kecamatan, data BPS), Belantara, Fiskal, UMKM Digital, Labiru.
+  aignited.id sendiri (Astro) belum memuat Bentala/Cakrawala/Transit/Gapmap dan masih menonjolkan Terminal yang mati.
+- Zona aignited.id = akun Cloudflare LAIN (NS ulla/yadiel), bukan akun Aldo (gracie/syeef) -> agent tak bisa deploy.
+- Halaman satu-link "All projects": `Downloads\DTIIF 2026\projects-hub\index.html` (statis, 1 berkas). Aldo pilih:
+  Dedi yang pasang di **https://projects.aignited.id**. QR kartu AIgnited sudah mengarah ke sana (didekode OK), tapi per
+  25 Okt subdomain BELUM ADA -> jangan cetak sebelum hidup.
+- LinkedIn Aldo di kartu = linkedin.com/in/rivaldoharviansyah (dari Aldo). Situs aignited.id memakai URL lain:
+  /in/rivaldo-harviansyah-aa3782136/ -> salah satu perlu diselaraskan.

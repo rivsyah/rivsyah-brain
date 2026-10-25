@@ -502,3 +502,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-25T13:03Z  kemlu/materi-perencanaan-anggaran-kl: tulis bank soal Menengah Bab 1-6 (src/menengah-soal/01..06, 85 soal) + checks/menengah_soal_a.py; verify menengah-soal --no-pdf LOLOS 75/75.
 - 2026-10-25T13:08Z  kemlu/materi-perencanaan-anggaran-kl: bank soal Lanjut Bab 7-12 + 99-ujian-akhir (115 soal) + checks/lanjut_soal_b.py; update bab 9-12 (BPKRT, 60 hari, ganti rugi, kurs tengah BI); verify lanjut & lanjut-soal LOLOS
 - 2026-10-25T13:10Z  Materi Perencanaan Anggaran K/L Edisi 2 SELESAI: 8 PDF 656 hlm (609 soal, 163 contoh) di Downloads\Riv's Journey\...\Perencanaan Anggaran Pemerintah (Kementerian)\Edisi 2 (Okt 2026), verify lolos; builder ~/dev/kemlu/materi-perencanaan-anggaran-kl (bash make.sh)
+- 2026-10-25T14:54Z  DTIIF: LinkedIn di kartu AIgnited, QR -> projects.aignited.id (hub 8 proyek di Downloads\DTIIF 2026\projects-hub, Dedi deploy); koreksi Bentala != Belantara
