@@ -73,4 +73,4 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
 - One-pager & briefing diselaraskan 25 Okt 22.28 (Bentala hero + Belantara/Cakrawala/Transit/GapMap + "+15 more").
   `projects-hub\index.html` buatan agent USANG (Dedi bangun sendiri) - jangan dideploy.
 - OPEN: gambar audit Galahad memakai logo AIgnited BERBEDA (tanda "a" berapi, wordmark huruf kecil "aignited") dari
-  Spark Tile (Jul 2026) yang dipakai di kartu & one-pager -> tanya Aldo logo mana yang berlaku sebelum cetak.
+  Spark Tile (Jul 2026) yang dipakai di kartu & one-pager -> DIPUTUSKAN Aldo 25 Okt: pakai Spark Tile (petir oranye) untuk kartu & one-pager DTIIF.
