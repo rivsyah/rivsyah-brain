@@ -33,9 +33,16 @@ semua contoh fiktif: Direktorat Sarana Kerja, KBRI Lindora, mata uang LND; tanpa
 - PMK 181/2016 Ps 40: kapitalisasi peralatan ≥ Rp1 jt, gedung ≥ Rp25 jt. Akun 535 tidak ada.
 - Belum pasti: Perlem LKPP 3/2026 (mungkin ubah Perlem 12/2021), lama daftar hitam, KPPN layanan Perwakilan.
 
-## Status
-- 25 Okt 2026: Panduan (36 hlm) + Lembar Ringkas (12 hlm) lolos verify; 9 agen penulis bab Dasar/Menengah/Lanjut +
-  bank soal diluncurkan.
+## Status — SELESAI 25 Okt 2026
+- 8 PDF (743 hlm) di `...\Pembayaran Keuangan Barang Jasa Pemerintah\Edisi 2 (Okt 2026)\`, verify LOLOS penuh:
+  Panduan 45, Dasar 131 + soal 96 (224), Menengah 121 + soal 107 (223), Lanjut 121 + soal 110 (186), Ringkas 12.
+  185 contoh + 653 soal + tes penempatan 20; 402 blok hitungan dicek program. Berkas lama tidak disentuh.
+- BPKRT = **Bendaharawan dan Penata Kerumahtanggaan Perwakilan** (PMK 160/2015 Ps 1 angka 12) — penulis sempat
+  mengarang kepanjangan lain; sudah dikoreksi.
+- Celah fakta yang ditulis umum (kandidat riset bila ada revisi): batas kas tunai bendahara, pasal larangan pemecahan
+  paket, saat terutang PPN uang muka/termin, tarif PPh 26/P3B, cara hitung 90 hari PMK 84/2025, akuntansi uang muka
+  belanja modal, matriks rangkap jabatan selain PPK, ambang bentuk kontrak termasuk/sebelum PPN.
+- Jebakan: 6 agen berhenti karena batas mingguan API (reset 10.00 WIB); dilanjutkan dengan SendMessage, bukan agen baru.
 
 Terkait: [[project-rapat-kemendag-pbjln]] (fakta Permenlu 3/2023, PMK 145/2017, 60/2018), [[reference-per9-pb-2026-llat]],
 [[reference-template-spk]], [[project-corporate-finance-materi]] (mesin build asal).
