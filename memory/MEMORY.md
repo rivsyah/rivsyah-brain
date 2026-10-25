@@ -199,3 +199,4 @@
 <!-- Kartu HILANG dari disk, hanya tersisa barisnya di indeks lama — tulis ulang kalau masih perlu:
      project_pdp_kemlu      — Sistem Terpadu Diplomasi Pengadaan+VMS, Herd\pdp-kemlu → pdp-kemlu.test, 4 peran + gerbang KPA
      project_pdp_vms_next   — port Next.js App Router siap Vercel di Herd\pdp-vms; jebakan Suspense-di-layout, .next rusak -->
+- [Outfit Dinas Eropa](personal/project_outfit_dinas_eropa.md) — 25 Okt 2026: board 3 capsule (A Monokrom / B Abu-Navy / C Hangat) dari 51 foto lemari, di Downloads\referensi\outfit-board; bagasi ±13 kg/20 kg (perkiraan)
