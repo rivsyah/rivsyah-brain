@@ -57,3 +57,8 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   Briefing v2 (5 hlm A5): pitch & Q&A Bentala. Fakta Bentala diambil dari halaman metode di bundle JS + feed.xml.
 - Bentala: canonical = bentala.irawan.dev (domain pribadi Dedi), bentala.aignited.id alias -> OPEN: kepemilikan/branding
   Bentala sebagai produk AIgnited perlu disepakati Aldo-Dedi. OPEN: model bisnis Bentala.
+- Audit 25 Okt ~22.20 WIB: 5 QR di PDF didekode OK (kartu AIgnited + one-pager hlm1 -> projects.aignited.id; one-pager
+  hlm2 -> bentala.aignited.id; kartu Kemlu ID+EN -> kemlu.go.id). Data kontak konsisten di semua PDF. projects.aignited.id
+  BELUM resolve (Dedi WA 22.06: "besok dah ada"); aignited.id belum berubah (belum ada Bentala/Cakrawala/Transit/Gapmap,
+  LinkedIn Aldo di situs masih /in/rivaldo-harviansyah-aa3782136/). terminal/reelo mati, tdc 500. LinkedIn tak bisa dicek
+  dari mesin (405).
