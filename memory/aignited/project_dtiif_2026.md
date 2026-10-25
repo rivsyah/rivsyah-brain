@@ -73,4 +73,15 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
 - One-pager & briefing diselaraskan 25 Okt 22.28 (Bentala hero + Belantara/Cakrawala/Transit/GapMap + "+15 more").
   `projects-hub\index.html` buatan agent USANG (Dedi bangun sendiri) - jangan dideploy.
 - OPEN: gambar audit Galahad memakai logo AIgnited BERBEDA (tanda "a" berapi, wordmark huruf kecil "aignited") dari
-  Spark Tile (Jul 2026) yang dipakai di kartu & one-pager -> DIPUTUSKAN Aldo 25 Okt: pakai Spark Tile (petir oranye) untuk kartu & one-pager DTIIF.
+  Spark Tile (Jul 2026) yang dipakai di kartu & one-pager -> 25 Okt Aldo pilih Spark Tile, lalu 26 Okt DIGANTI Aldo: pakai logo BARU (tanda api 'a' + wordmark 'aignited').
+- 26 Okt: BRAND BARU dipakai (keputusan Aldo). File cetak resolusi tinggi = `Downloads\AIgnited\New Logo\` (logobig
+  1362x1882, textonlybig 1831x507, logowithtextbig); salinan terpangkas di `Downloads\DTIIF 2026\brand\`. Logo di situs
+  hanya 63x96 px (tidak layak cetak). Warna: navy #12305C, oranye #F28A1E, teal #1EA5C8; font Poppins + Inter.
+- Situs 26 Okt: aignited.id = "Studio produk AI dari Jakarta", "Dibangun dengan AI. Online hari ini.", 20 proyek
+  (9 live / 6 beta / 5 demo), 6 jenis pekerjaan; tim = "dua pendiri yang bekerja bersama agen AI", Aldo = Co-founder & CEO.
+  projects.aignited.id HIDUP (200). Bentala: 242 negara/wilayah, 79 sumber publik. Cakrawala = "personal, non-profit
+  project by M. Dedi Irawan" -> jangan dijual sebagai produk AIgnited. Fiskal kembali beta. IDX Insiders: 955 emiten
+  (KSEI 27 Feb 2026). Situs memakai LinkedIn /in/rivaldo-harviansyah-aa3782136; kartu memakai /in/rivaldoharviansyah (dari Aldo) -> OPEN.
+- Materi v3 (26 Okt): kartu AIgnited (logo baru, "Co-founder & CEO", tagline "AI product studio · Jakarta"), one-pager
+  (hlm 1: 6 proyek unggulan + 6 jenis pekerjaan; "How we work"/fixed price DIBUANG karena tidak ada lagi di situs;
+  hlm 2: Bentala 242/79), briefing disesuaikan. 3 QR didekode OK.
