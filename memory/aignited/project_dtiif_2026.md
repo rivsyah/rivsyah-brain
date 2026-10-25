@@ -62,3 +62,15 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   BELUM resolve (Dedi WA 22.06: "besok dah ada"); aignited.id belum berubah (belum ada Bentala/Cakrawala/Transit/Gapmap,
   LinkedIn Aldo di situs masih /in/rivaldo-harviansyah-aa3782136/). terminal/reelo mati, tdc 500. LinkedIn tak bisa dicek
   dari mesin (405).
+- AUDIT GALAHAD (agent Dedi, 25 Okt malam, ditempel Aldo): 20 proyek tetap & tampil di projects.aignited.id mulai
+  26 Okt (Bentala, Cakrawala, GapMap beta, TRANSIT, Satu Klik, Belantara beta, Fiskal beta, Pasar, IDX Insiders, Gitemon,
+  FEINT, Ramai, Hemat, Round Table, CCNA Ready, Seduh, Whoosh Kamis Kemarin, Heatmap, Sapa Inbox demo, Jimpitan demo).
+  Fiskal = layar maintenance (dibangun ulang). **Belantara BUKAN open-source** (repo privat), 48 playbook bisa dibaca,
+  pertanyaan baru butuh API key sendiri -> klaim "open-source"/"23 skill, 25 playbook" di deck Bappenas & profil USANG.
+  DIHAPUS: UMKM Digital (tak jalan sejak Jul, nol pembayaran), Labiru, The Daily Catalyst, Signals, Cuanlab, Tender, CR7,
+  SIU, demo Saga, Admin console, Loket, Mayar webhook hub, draf lama aignited.id, ±15 alamat Hostinger. Sudah hilang:
+  Terminal, Reelo, Contagion, Indodeck.
+- One-pager & briefing diselaraskan 25 Okt 22.28 (Bentala hero + Belantara/Cakrawala/Transit/GapMap + "+15 more").
+  `projects-hub\index.html` buatan agent USANG (Dedi bangun sendiri) - jangan dideploy.
+- OPEN: gambar audit Galahad memakai logo AIgnited BERBEDA (tanda "a" berapi, wordmark huruf kecil "aignited") dari
+  Spark Tile (Jul 2026) yang dipakai di kartu & one-pager -> tanya Aldo logo mana yang berlaku sebelum cetak.
