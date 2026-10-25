@@ -492,3 +492,13 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-25T11:48Z  perpajakan-korporasi-materi SELESAI: 7 PDF 980 hlm, verify 1714/0, disalin ke Edisi 2 (Okt 2026); kartu personal/project_perpajakan_korporasi_materi.md
 - 2026-10-25T12:14Z  BMN materi Edisi 2 SELESAI: 5 PDF (629 hlm, 349 soal) di Barang Milik Negara Pemerintah/Edisi 2 (Okt 2026); verify 5/5; builder ~/dev/personal/bmn-materi
 - 2026-10-25T12:16Z  BMN: 9 PDF Edisi 1 dipindah ke Barang Milik Negara Pemerintah/arsip-edisi1-Juli-2026 (perintah Aldo)
+- 2026-10-25T12:35Z  Materi Perencanaan Anggaran K/L Edisi 2: builder ~/dev/kemlu/materi-perencanaan-anggaran-kl dibuat, AUDIT+FAKTA selesai, 7 agen penulis berjalan
+- 2026-10-25T12:47Z  kemlu/materi-perencanaan-anggaran-kl: tulis Dasar Bab 7-11 + glosarium (src/dasar/07-12, checks/dasar_b.py); verify dasar --no-pdf LOLOS 18/18 [hitung]
+- 2026-10-25T12:52Z  kemlu/materi-perencanaan-anggaran-kl: tulis Lanjut Bab 1-6 (src/lanjut/01-06) + checks/lanjut_a.py; verify lanjut --no-pdf LOLOS untuk bagian A
+- 2026-10-25T12:53Z  kemlu/materi-perencanaan-anggaran-kl: tulis Menengah Bab 1-6 (src/menengah/01..06) + checks/menengah_a.py; verify menengah --no-pdf LOLOS (47/47 cek). PDF belum dibangun.
+- 2026-10-25T12:54Z  kemlu/materi-perencanaan-anggaran-kl: tulis Lanjut Bab 7-12 (src/lanjut/07..12) + checks/lanjut_b.py; verify lanjut --no-pdf LOLOS, 47/47 blok hitung
+- 2026-10-25T12:56Z  kemlu/materi-perencanaan-anggaran-kl: update Dasar Bab 7/10/glosarium (FAKTA §I: BPKRT, kode 51-58, SAKTI); tulis bank soal dasar-soal 07-11 + 99-ujian-akhir, checks/dasar_soal_b.py; verify dasar & dasar-soal LOLOS
+- 2026-10-25T13:01Z  kemlu/materi-perencanaan-anggaran-kl: bank soal Lanjut Bab 1-6 (src/lanjut-soal/01-06, 78 soal) + checks/lanjut_soal_a.py; materi Bab 1-2 dimutakhirkan (UUD 31(4), Perppu 1/2020, SAKTI); verify lanjut & lanjut-soal LOLOS
+- 2026-10-25T13:03Z  kemlu/materi-perencanaan-anggaran-kl: tulis bank soal Menengah Bab 1-6 (src/menengah-soal/01..06, 85 soal) + checks/menengah_soal_a.py; verify menengah-soal --no-pdf LOLOS 75/75.
+- 2026-10-25T13:08Z  kemlu/materi-perencanaan-anggaran-kl: bank soal Lanjut Bab 7-12 + 99-ujian-akhir (115 soal) + checks/lanjut_soal_b.py; update bab 9-12 (BPKRT, 60 hari, ganti rugi, kurs tengah BI); verify lanjut & lanjut-soal LOLOS
+- 2026-10-25T13:10Z  Materi Perencanaan Anggaran K/L Edisi 2 SELESAI: 8 PDF 656 hlm (609 soal, 163 contoh) di Downloads\Riv's Journey\...\Perencanaan Anggaran Pemerintah (Kementerian)\Edisi 2 (Okt 2026), verify lolos; builder ~/dev/kemlu/materi-perencanaan-anggaran-kl (bash make.sh)
