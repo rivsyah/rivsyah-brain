@@ -38,7 +38,7 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   aignited.id dan belantara.aignited.id) + `briefing-networking.pdf` (A5 4 hlm ID: aturan main, checklist, poin pitch,
   Q&A, target, log kontak). Sumber fakta: `Downloads\AIgnited\Slide Deck\AIgnited Company Profile v2.md` (tagline resmi
   "Intelligence, Automated."; CTO = M. Dedi Irawan) + `Balantaran\AI Incubation Public Sector\Belantara_Proposal_Deck_Bappenas.md`
-  + situs live. KOREKSI 25 Okt: asumsi "bentala = Belantara" SALAH. **Bentala** = proyek tersendiri (bentala.aignited.id, "the world, measured against itself": tiap negara vs normalnya sendiri, data publik). Belantara (belantara.aignited.id, v0.9, 23 skill, 25 playbook) proyek lain. One-pager hlm 2 & briefing masih berfokus Belantara -> perlu disesuaikan bila Aldo mau Bentala jadi sorotan.
+  + situs live. KOREKSI 25 Okt: asumsi "bentala = Belantara" SALAH. **Bentala** = proyek tersendiri (bentala.aignited.id, "the world, measured against itself": tiap negara vs normalnya sendiri, data publik). Belantara (belantara.aignited.id, v0.9, 23 skill, 25 playbook) proyek lain. 25 Okt (atas permintaan Aldo): one-pager & briefing DIUBAH -> Bentala sorotan utama, Belantara pendukung.
 - Status situs 25 Okt: hidup = aignited.id, belantara, fiskal, umkm, labiru; MATI = terminal, reelo (tidak resolve), tdc (500).
 - Bendera: deck Bappenas Apr 2026 klaim kedua founder "full-time" -> tidak cocok dengan status PNS Aldo. OPEN: angka
   pendanaan yang diminta, status proposal Bappenas.
@@ -51,3 +51,9 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   25 Okt subdomain BELUM ADA -> jangan cetak sebelum hidup.
 - LinkedIn Aldo di kartu = linkedin.com/in/rivaldoharviansyah (dari Aldo). Situs aignited.id memakai URL lain:
   /in/rivaldo-harviansyah-aa3782136/ -> salah satu perlu diselaraskan.
+- One-pager v2 (25 Okt): hlm 1 grid 8 produk live (Bentala hero) + QR ke projects.aignited.id; hlm 2 Bentala (3 gauge,
+  skala 0-100: <40 normal / 40-69 unusual / >=70 far, engine tiap 15 mnt, sumber USGS/GDACS/NASA Black Marble/IMF
+  PortWatch/BIS/GDELT/OONI/RIPEstat, "measures, does not predict") + kotak Belantara + QR bentala.aignited.id.
+  Briefing v2 (5 hlm A5): pitch & Q&A Bentala. Fakta Bentala diambil dari halaman metode di bundle JS + feed.xml.
+- Bentala: canonical = bentala.irawan.dev (domain pribadi Dedi), bentala.aignited.id alias -> OPEN: kepemilikan/branding
+  Bentala sebagai produk AIgnited perlu disepakati Aldo-Dedi. OPEN: model bisnis Bentala.

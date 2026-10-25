@@ -503,3 +503,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-25T13:08Z  kemlu/materi-perencanaan-anggaran-kl: bank soal Lanjut Bab 7-12 + 99-ujian-akhir (115 soal) + checks/lanjut_soal_b.py; update bab 9-12 (BPKRT, 60 hari, ganti rugi, kurs tengah BI); verify lanjut & lanjut-soal LOLOS
 - 2026-10-25T13:10Z  Materi Perencanaan Anggaran K/L Edisi 2 SELESAI: 8 PDF 656 hlm (609 soal, 163 contoh) di Downloads\Riv's Journey\...\Perencanaan Anggaran Pemerintah (Kementerian)\Edisi 2 (Okt 2026), verify lolos; builder ~/dev/kemlu/materi-perencanaan-anggaran-kl (bash make.sh)
 - 2026-10-25T14:54Z  DTIIF: LinkedIn di kartu AIgnited, QR -> projects.aignited.id (hub 8 proyek di Downloads\DTIIF 2026\projects-hub, Dedi deploy); koreksi Bentala != Belantara
+- 2026-10-25T15:00Z  DTIIF: one-pager + briefing diubah, Bentala jadi sorotan utama (Belantara pendukung); canonical Bentala = bentala.irawan.dev
