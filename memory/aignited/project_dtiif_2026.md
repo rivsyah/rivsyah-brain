@@ -87,4 +87,4 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   hlm 2: Bentala 242/79), briefing disesuaikan. 3 QR didekode OK.
 - 26 Okt: PROYEK SOROTAN pilihan Aldo = Bentala (hero), Cakrawala, TRANSIT, GapMap, Pasar Indonesia (semua 200); one-pager hlm 1
   + briefing diubah; sisanya "+15 more" (Belantara, IDX Insiders, Fiskal, dll). Cakrawala tetap disorot atas pilihan Aldo
-  walau tercatat proyek pribadi nirlaba Dedi -> briefing minta konfirmasi Dedi & jangan dijual sebagai produk berbayar.
+  walau tercatat proyek pribadi nirlaba Dedi -> Dedi SETUJU (dilaporkan Aldo 26 Okt); tetap jangan dijual sebagai produk berbayar.
