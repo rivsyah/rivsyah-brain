@@ -85,3 +85,6 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
 - Materi v3 (26 Okt): kartu AIgnited (logo baru, "Co-founder & CEO", tagline "AI product studio · Jakarta"), one-pager
   (hlm 1: 6 proyek unggulan + 6 jenis pekerjaan; "How we work"/fixed price DIBUANG karena tidak ada lagi di situs;
   hlm 2: Bentala 242/79), briefing disesuaikan. 3 QR didekode OK.
+- 26 Okt: PROYEK SOROTAN pilihan Aldo = Bentala (hero), Cakrawala, TRANSIT, GapMap, Pasar Indonesia (semua 200); one-pager hlm 1
+  + briefing diubah; sisanya "+15 more" (Belantara, IDX Insiders, Fiskal, dll). Cakrawala tetap disorot atas pilihan Aldo
+  walau tercatat proyek pribadi nirlaba Dedi -> briefing minta konfirmasi Dedi & jangan dijual sebagai produk berbayar.
