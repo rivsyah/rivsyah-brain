@@ -81,7 +81,7 @@ Scope: Aldo SENDIRI menggabungkan aignited + kemlu untuk acara ini (24 Okt 2026)
   (9 live / 6 beta / 5 demo), 6 jenis pekerjaan; tim = "dua pendiri yang bekerja bersama agen AI", Aldo = Co-founder & CEO.
   projects.aignited.id HIDUP (200). Bentala: 242 negara/wilayah, 79 sumber publik. Cakrawala = "personal, non-profit
   project by M. Dedi Irawan" -> jangan dijual sebagai produk AIgnited. Fiskal kembali beta. IDX Insiders: 955 emiten
-  (KSEI 27 Feb 2026). Situs memakai LinkedIn /in/rivaldo-harviansyah-aa3782136; kartu memakai /in/rivaldoharviansyah (dari Aldo) -> OPEN.
+  (KSEI 27 Feb 2026). Situs memakai LinkedIn /in/rivaldo-harviansyah-aa3782136; kartu memakai /in/rivaldoharviansyah (dari Aldo). DIPUTUSKAN 26 Okt: kartu TETAP /in/rivaldoharviansyah; Aldo minta Dedi menyamakan link di situs.
 - Materi v3 (26 Okt): kartu AIgnited (logo baru, "Co-founder & CEO", tagline "AI product studio · Jakarta"), one-pager
   (hlm 1: 6 proyek unggulan + 6 jenis pekerjaan; "How we work"/fixed price DIBUANG karena tidak ada lagi di situs;
   hlm 2: Bentala 242/79), briefing disesuaikan. 3 QR didekode OK.
