@@ -469,3 +469,5 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   4,09% pemeliharaan) karena akun aset idle Perwakilan nilai buku hanya Rp0,33 M; Gambar 8 baru KTJ Washington Rp588,12 M
   (≈428× sewa Perwakilan); PSP & register 2024 vs 2025; KTI B: sebab visa/paspor/dokumen dari LK 2025, MP PNBP 2025 masih
   bermasalah, kas bendahara 2025 Rp6,10 M, data sementara S1 2026.
+
+- 27 Okt 2026: atas permintaan Aldo, riset *Retention Before Agency* (folder Retention-Before-Agency, eks Landlord-That-Rents) DIHAPUS (ke Recycle Bin) beserta kartunya. Rujukan [[project-landlord-that-rents]] di atas tidak berlaku lagi.

@@ -120,3 +120,5 @@ Sumber arus FY2025 adalah neraca percobaan akrual audited yang dilampirkan di LB
 identitas akun "Diterima dari Entitas Lain" = PNBP. render.ps1 kini menutup Word miliknya sendiri
 setelah sukses, dengan syarat proses baru dan StartTime ≤6 detik setelah job dimulai, karena
 Word suka tertinggal dan mengunci file. Hasil: 75 hlm, 22 tabel, gerbang 109 cek lolos.
+
+- 27 Okt 2026: atas permintaan Aldo, riset *Retention Before Agency* (folder Retention-Before-Agency, eks Landlord-That-Rents) DIHAPUS (ke Recycle Bin) beserta kartunya. Rujukan [[project-landlord-that-rents]] di atas tidak berlaku lagi.
