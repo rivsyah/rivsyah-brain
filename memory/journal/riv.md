@@ -532,3 +532,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-27T08:23Z  Cross-checked KTIs vs LK 2025 audited, LK S1 2026, LBP 2024 (all public); found gross/net mismatch, rent-per-satker 2025, idle-asset split, Washington KTJ
 - 2026-10-27T08:28Z  KTIs updated with LK 2025 audited/LBP 2024/LK S1 2026; gross-vs-net fix; rent per satker 2025; Washington KTJ chart; both verify 25/25
 - 2026-10-27T08:52Z  kemlu+research: atas permintaan Aldo, dua kajian BLU (BMN & PNBP, 27 Okt), builder ~/dev/kemlu/kajian-blu-kemlu, dan riset Retention-Before-Agency dipindah ke Recycle Bin; kartu + indeks dihapus; catatan ditambah di kartu KTI dan Wharton thesis
+- 2026-10-27T09:03Z  kemlu 27 Okt: KTI mitra diklat PK v3 - 8 grafik data (charts.py) + analisis baru (369 PK, partisipasi LN 0,3% vs 4,3%, pagu Pusdiklat 2018-2025, MoU target/realisasi, 168 kursi PK domestik vs 1 LN, uji kepekaan skor, skenario jangkauan); 44 hlm verify 21/21

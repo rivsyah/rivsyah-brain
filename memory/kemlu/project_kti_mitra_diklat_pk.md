@@ -77,6 +77,24 @@ Singapura mengandaikan pelatihan di Jakarta; AAI: biaya kursus, materi, tunjanga
 organisasi yang dicalonkan. Hasil: 38 hlm, pokok bahasan 7.032 kata, abstrak 164, verify 21/21, 0 kalimat kembar
 vs KTI SIGAP/SIPDLN. Versi 1 dipindah ke subfolder `arsip - versi 1 (10 Okt 16.05)`.
 
+## Versi 3 (27 Okt 2026) — lebih dalam, data + 8 grafik
+
+Permintaan Aldo: "update KTI ini more deep, rich of data, more visualisaztion". 44 hlm, pokok bahasan 7.805 kata,
+10 gambar (8 grafik data dari `charts.py`), verify 21/21; v2 diarsip. Data baru (semua dari berkas di `Sumber\`):
+- HCDP Tabel 3.1/3.2 (1 Agu 2023): PK pusat 101/90/14 = 205, Perwakilan 31/97/36 = 164 → **369 PK** (11% dari 3.264
+  ASN aktif); diplomat 1.606, PID 250. (Ganti angka LKj 2024 204/88, yang hanya data IDP/FSA.)
+- Partisipasi program LN 2025: diplomat 69/1.606 ≈ 4,3%, PK 1/369 ≈ 0,3% (≈16× lebih rendah; tanggal data beda).
+- LKj 2025: pagu Pusdiklat 2018–2025 (52,59; 57,43; 27,54; 21,45; 22,00; 32,34; 31,02; 25,35 M); 2025 pagu awal
+  34,19 M dipotong 25,8%; Layanan Diklat 25,57 → 20,19 M. Catatan: Tabel III.28 tulis pagu 2023 = 32,00 M (lebih kecil
+  dari realisasi) → pakai III.26 (32,34 M).
+- IK B2.1 MoU: target/realisasi 2023 8/9, 2024 8/9, 2025 6/7; target 2026–2029 = 6, 7, 7, 8. Mitra 2025: UEA, India,
+  Belanda, Spanyol, Pakistan, WIPO, USINDO — nol yang berfokus kekanseleraian.
+- Kursi PK di pelatihan Pusdiklat 2025 ≥168 (khusus PK 84 = IHT I 32 + IHT II 30 + ToT 22; bahasa 63; lain 21) vs LN 1.
+- Ukom: rata-rata kelulusan per kompetensi 56% (ke Muda) → 9% (ke Madya). Uji kepekaan skor: tanpa bobot K1,
+  Singapura & India 16, Malaysia = Clingendael 15.
+- Skenario (perhitungan penulis): lapis 1 melekat pada IHT 62/thn → 186 PK (50%) s.d. 2029; lapis 2 25/thn → 75 (20%);
+  biaya ICA ≤ €6.200/thn.
+
 ## Terbuka (Aldo)
 
 1. **Pasal 17(2)a Permenlu 23/2020** ("murni hasil pemikiran penulis"): naskah ini disusun AI. Sebelum teken surat
