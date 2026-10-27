@@ -333,3 +333,9 @@ Fakta terverifikasi dari teks asli (27 Okt):
   Tim Internal Kajian (SK Sekjen 18/B/PL/01/2024/03, 23 Jan 2024); KMK 213/KM.06/2021 tata cara sewa BMN pada Pengguna.
 - Wawasan analitis KTI A: Kemlu = penyewa neto (bayar ±Rp702 M/thn sewa+FSR vs terima Rp2,85 M) → uji "pakai sendiri
   dulu" sebelum komersialisasi rumah dinas kosong.
+- 27 Okt: Aldo "lanjutkan" → judul KTI A diambil usulan agen (non-misi + pemeliharaan gedung). Bab II A KTI A ditulis
+  (6 masalah, 905 kata): hasil sewa ke KUN; PMK 271 tanpa pemanfaatan + **PMK 115 nol kata "luar negeri"** (Ps 3(10)
+  Penilai, Ps 24 bayar tunai sekaligus sebelum perjanjian ke KUN); Ps 97 milik Pengelola; **PP 23/2005 Ps 4(2)**
+  substantif a/b/c tak memuat pengelolaan aset (Penjelasan: RS, pendidikan, otorita/Kapet, dana bergulir); Ps 14(4)-(5)
+  hasil kerja sama = pendapatan BLU, dikelola langsung; VCDR 1(i)/22/23/30(1)/41(3) kekebalan melekat pada pemakaian;
+  aset non-misi tak terpetakan di LK. Berikutnya Bab II B (fakta/data, tabel).
