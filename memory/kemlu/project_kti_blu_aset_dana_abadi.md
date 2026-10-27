@@ -292,3 +292,44 @@ Dana abadi dan BLU (cek pertama, sebelum pivot):
 
 Terkait: [[reference-prompt-kti-penata-kanselerai]], [[user-jabatan-kemlu]], [[reference-kti-percepatan-pangkat]],
 [[project-kti-mitra-diklat-pk]], [[project-kti-sigap-sipdln]], [[project-pantas-kurs]].
+
+## Pivot 27 Okt 2026 — DUA KTI (A: BMN Perwakilan via BLU; B: PNBP kekonsuleran diperdalam)
+
+Aldo melampirkan 6 dokumen internal (ND Biro Hukum 17091/HK/04/2026 + 26072/HK/05/2026 + 4 lampiran) → gerbang
+kerahasiaan → Aldo: **"tidak ada izin, pakai data publik tapi realible"**. Dokumen internal TIDAK dibuka/dikutip;
+data internal baru dipakai setelah Aldo dapat konfirmasi atasan. Output: **2 dokumen**.
+**Keputusan A11 KTI A (27 Okt):** (1) hanya aset NON-MISI: lahan kosong, bagian gedung tak dipakai, rumah dinas
+kosong; (2) pengelola = **BLU di Kemlu**; (3) hasil untuk **pemeliharaan dan renovasi gedung Perwakilan**; data publik
+terbaru. Folder KTI A: `Downloads\Riv's Journey\KTI BMN Perwakilan BLU\` (draf + Sumber). Riset: `~/dev/kemlu/kti-blu-pnbp-src`.
+
+Fakta terverifikasi dari teks asli (27 Okt):
+- **PP 28/2020** (8 Jun 2020, LN 2020/142) ubah PP 27/2014: **Ps 97(1) "Pengelola Barang dapat membentuk BLU"** untuk
+  pengelolaan tertentu BMN, (2) diatur PMK → jalur ini milik Kemenkeu (LMAN; PMK 144/PMK.06/2020), BUKAN Kemlu.
+  **Ps 96(2)**: BMN yang digunakan BLU dikelola menurut PP ini "kecuali yang diatur khusus dalam PP mengenai BLU".
+  Ps 27: bentuk pemanfaatan sewa/pinjam pakai/KSP/BGS-BSG/KSPI (+ayat 2 KETUPI). **Ps 29(8): hasil sewa = penerimaan
+  negara, seluruhnya wajib ke KUN.** PMK 115/2020 Ps 3(7): wajib ke KUN "kecuali ditentukan lain oleh UU dan ketentuan
+  peraturan perundang-undangan yang ditetapkan Presiden"; Ps 1 angka 23 "BLU" di PMK 115 = BLU pada Pengelola Barang.
+- **PMK 129/PMK.05/2020** (18 Sep 2020, BN 2020/1046) jo. **PMK 202/PMK.05/2022** (BN 2022/1300) jo. **PMK 76/2025**
+  (7 Nov 2025, BN 2025/948): **Ps 69(1)c + (2) pendapatan BLU termasuk "pendapatan sewa"**; (3) dilaporkan sebagai PNBP
+  K/L (PMK 76 tak ubah huruf c/(2)/(3)). Ps 127(2) hasil pengelolaan aset "digunakan sepenuhnya" untuk kegiatan BLU.
+  Ps 131 BMN law berlaku sepanjang tak diatur PMK ini. PMK 202: Ps 1 angka 42 **Pemanfaatan Aset = untuk kegiatan
+  "terkait atau dalam rangka mendukung" tusi BLU**; Ps 132 prinsip (tak ganggu layanan; biaya kerja sama bukan RM;
+  tak alihkan aset); Ps 140–145: sewa/BSG/BGS atas tanah-bangunan BLU **berdasarkan keputusan Pemimpin BLU**, maks 15
+  thn (lebih → persetujuan Menkeu), kompensasi tetap + imbal hasil. Aset BLU = Ps 1 angka 38 PMK 129.
+- **22 U.S.C. §300** (US Code 2024 ed., govinfo): (a)(1) Menlu AS boleh "sell, exchange, lease, or license" properti
+  Perwakilan; **(b) hasilnya "notwithstanding ... any other law" dipakai untuk acquisition, construction, atau ditahan
+  di Foreign Service Buildings Fund; laporan tahunan ke Kongres**. §303 (laporan surplus) dicabut 2016.
+- **LK Kemlu TA 2024 audited** (terbaru publik; TA 2025 tak ditemukan Okt 2026): Tabel 84 hlm 140 (dibaca dari GAMBAR)
+  sewa LO **Rp2.848.622.093** (−21,35%): Setjen 1.152.139.832; Bangkok 20.558.456; Dar es Salaam 17.436.000; Davao
+  11.701.911; London 495.293.552; PTRI New York 665.247.580; Singapura 402.480.322; Johor Bahru 42.105.480; Kuching
+  41.658.960 → 8 Perwakilan Rp1.696.482.261; London+NY+Singapura = 92,13%. Jenis: sewa bagian gedung, kantin, rumah
+  dinas/wisma. **LRA Rp2.265.843.380 (2023 Rp2.926.503.970, −22,58%)** → 21,35% vs 22,58% = beda basis LO vs LRA, BUKAN
+  inkonsistensi. Hlm 149: Beban Sewa Rp359.526.191.153 (2023 317.091.290.924); **Beban FSR Perwakilan
+  Rp342.478.928.969** (baru 2024, Permenlu 11/2023 ganti TSR; TSR 2023 Rp276.575.531.849). Tabel 91 hlm 152: **Beban
+  Pemeliharaan Gedung dan Bangunan Rp364.021.628.552** (2023 350.521.805.798, +3,85%). Rasio sewa LO/pemeliharaan
+  0,78%; sewa LO/(beban sewa+FSR Rp702,01 M) 0,41%. Aset tetap tak digunakan: perolehan Rp325.501.731.137, akum.
+  (79.458.200.514), buku Rp246.043.530.623 (hlm 127–129). Kemitraan pihak ketiga Rp156.068.872.428 = tanah YPDDC
+  domestik (bukan Perwakilan). YPDDC = Yayasan Pendidikan Daya Dutika Cenderawasih; temuan BPK 29/LHP/XIV/12/2023;
+  Tim Internal Kajian (SK Sekjen 18/B/PL/01/2024/03, 23 Jan 2024); KMK 213/KM.06/2021 tata cara sewa BMN pada Pengguna.
+- Wawasan analitis KTI A: Kemlu = penyewa neto (bayar ±Rp702 M/thn sewa+FSR vs terima Rp2,85 M) → uji "pakai sendiri
+  dulu" sebelum komersialisasi rumah dinas kosong.
