@@ -521,3 +521,11 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-27T05:21Z  27 Okt 2026 kemlu: berita balasan KJRI Penang (jamkespri+wisma Konjen) dibuat .docx di Downloads\MOFA\Berita Balasan KJRI Penang - Jamkespri dan Wisma Konjen.docx; isian kuning: DARI, nomor, tanggal, ref, pasal Permenlu 7/2023, butir 4 tambahan agent
 - 2026-10-27T05:49Z  KTI A Bab II A drafted (6 problems); PP 23/2005 Ps 4(2)/14 verified from peraturan.go.id
 - 2026-10-27T06:09Z  kemlu: bedah ND 52606/KU/10/2026/23 (hak keuangan Menlu Arrmanatha Nasir eks-Wamenlu, Okt 2026) -> tabel 7 komponen + beban DIPA Kemlu vs Kemensetneg; representasi jaldis tidak diatur di ND; PPh tunkin Menlu beda antar lampiran (12,465 jt vs 8,9748 jt).
+- 2026-10-27T06:56Z  KTI A Bab II B drafted (3 tables); new LK2024 facts on 7 loan-financed buildings, Wisma Chicago, Washington renovation
+- 2026-10-27T07:00Z  KTI A Bab II C drafted (2 tables, legal routes, immunity, own-use test, scale)
+- 2026-10-27T07:03Z  KTI A Bab II D drafted (4 alternatives, BLU design, phasing)
+- 2026-10-27T07:05Z  KTI A Bab III drafted (7 recommendations, Tabel 7)
+- 2026-10-27T07:11Z  KTI A abstrak+pustaka done; corrected FSR priority claim (Permenlu 11/2023 Ps 4(2) already prioritizes Perwakilan buildings)
+- 2026-10-27T07:15Z  KTI A Gerbang Mutu run: abbreviations fixed, McCleary added, 0 twin sentences vs 3 prior KTIs
+- 2026-10-27T07:52Z  Compared internal kajian vs public sources; verified LBP TA2025, RKA-KL 2026, LK 2023; KTI A data outdated -> refresh
+- 2026-10-27T08:13Z  Two KTIs rebuilt with TA2025 public data + 22 charts total; both verify 25/25; kajian errors logged (PermenPANRB 68/2011 not found, US$300M framing, OMB source, Rp9,01T)

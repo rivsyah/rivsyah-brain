@@ -339,3 +339,93 @@ Fakta terverifikasi dari teks asli (27 Okt):
   substantif a/b/c tak memuat pengelolaan aset (Penjelasan: RS, pendidikan, otorita/Kapet, dana bergulir); Ps 14(4)-(5)
   hasil kerja sama = pendapatan BLU, dikelola langsung; VCDR 1(i)/22/23/30(1)/41(3) kekebalan melekat pada pemakaian;
   aset non-misi tak terpetakan di LK. Berikutnya Bab II B (fakta/data, tabel).
+- 27 Okt: Bab II B KTI A ditulis (1.365 kata, Tabel 1 neraca, Tabel 2 sewa per satker, Tabel 3 sewa vs beban). Fakta
+  baru LK 2024: sewa LO 2023 **Rp3.621.941.460** (Tabel 83); gedung perolehan 2023 Rp9.958.070.727.743 (+10,43%);
+  **7 gedung Perwakilan dibeli dengan utang BNI** (London 2016, Chicago, Tawau, Johor Bahru, Warsawa, Phnom Penh,
+  Kuching; saldo 2024: 243,98/71,85/30,02/55,81/28,90/310,54/58,66 M; reklas lancar −128,94 M); mutasi gedung 2024:
+  KDP selesai Rp809,40 M (Berlin, Phnom Penh, Windhoek), pengembangan KDP Rp97,24 M (Setjen+19), renovasi langsung
+  Rp12,87 M (Setjen+9), "Pembelian"/cicilan Setjen Rp195,66 M; **Wisma KJRI Chicago Rp22,99 M dihentikan penggunaannya
+  sebelum usul penghapusan (S-16/MK.6/2023)**; buka blokir tahap II (usul 4 Sep 2024, Rp305,55 M) memuat renovasi
+  KBRI Washington Rp52,83 M → TIDAK ada di persetujuan S-291/MK.2/2024 (Rp156,61 M). "Penghentian Rp70,89 M di 78
+  Perwakilan" = Peralatan & Mesin, bukan gedung (jangan dipakai). Berikutnya Bab II C (analisis).
+- 27 Okt: Bab II C KTI A ditulis (Tabel 4 tiga jalur; Tabel 5 risiko kekebalan per jenis aset; uji 4 langkah rumah
+  dinas; ilustrasi hasil 3–5% atas buku Rp246,04 M = Rp7,38–12,30 M = 2,03–3,38% pemeliharaan → **BLU bukan sumber
+  utama renovasi**; nilai = insentif pendataan, belanja langsung tanpa MP, hemat FSR). Rumusan BLU = **penyedia
+  fasilitas** (bukti: ruang Atase Keuangan di KBRI Singapura direnovasi atas beban Atase Keuangan). VCDR Preamble "not to
+  benefit individuals". **PMK 76/2025 Ps 205(1): Dewas kini opsional** (dulu wajib bila omzet ≥Rp30 M atau aset ≥Rp75 M).
+  PP 23/2005 Ps 4(3)b kinerja keuangan sehat. Berikutnya Bab II D (alternatif + A11).
+- 27 Okt: Bab II D KTI A ditulis (A11 di-flag wajib tulis ulang; Tabel 6 empat alternatif: A juknis, B penggunaan dana
+  PNBP sewa [UU 9/2018 Ps 4(1)d objek Pengelolaan BMN + Ps 33(1),(3)], C BLU di Kemlu = tujuan, D Perpres/UU = cadangan;
+  desain 6 unsur; **Penjelasan UU 9/2018 Ps 10(1) "nilai guna aset tertinggi dan terbaik" = analisis peraturan, fisik,
+  keuangan, produktivitas** → saringan register; PP 23 Ps 4(2) "dan/atau" → satu BLU bisa gabung fasilitas (a) + dana
+  khusus (c) KTI B; tahapan 2027 register+A+B, 2028 uji coba NY/London/Singapura (92,13%), 2029 usul BLU (PP 23 Ps 5(7)
+  Menkeu putus ≤3 bln). Catatan: PP 23 Ps 33 diubah PP 74/2012 → jangan kutip teks 2005. Berikutnya Bab III.
+- 27 Okt: Bab III KTI A ditulis (3 kesimpulan; Tabel 7 = 7 rekomendasi). Unit (Permenlu 4/2025): Biro Umum dan
+  Pengadaan Ps 139 (fungsi h BMN Setjen+Perwakilan; urusan rumah dinas) & Ps 140; Bagian Pengelolaan BMN Ps 149–150;
+  Bagian Pemeliharaan Ps 153; Biro PO Ps 53; Biro Keuangan Ps 99; Biro Hukum Ps 122; Itjen Ps 573. Rekomendasi 3 =
+  rumah dinas kosong didahulukan atas FSR (ubah Permenlu 11/2023). Berikutnya Abstrak + Daftar Pustaka KTI A.
+- 27 Okt: Abstrak KTI A (173 kata, 5 kata kunci) + Daftar Pustaka (3 dokumen + 12 peraturan). **KOREKSI: Permenlu
+  11/2023 (27 Nov 2023, BN 2023/958) Ps 4(2) SUDAH mewajibkan Kepala Perwakilan memprioritaskan bangunan Perwakilan yang
+  memenuhi standar minimal (Ps 4(1): ≤5 km, berperabot, 2 kamar) sebagai Fasilitas** → Bab II C, II D, Rek 3 diperbaiki:
+  celahnya = rumah kosong yang belum memenuhi standar (BLU biayai perbaikan) + tak ada data pelaksanaan; Rek 3 unit =
+  Biro SDM (Permenlu 4/2025 Ps 76) + BUP + Kepala Perwakilan. PMK 144/PMK.06/2020: 1 Okt 2020, BN 2020/1133.
+  Berikutnya: Gerbang Mutu KTI A → builder docx KTI A → perdalam KTI B.
+- 27 Okt: **Gerbang Mutu KTI A dijalankan.** Perbaikan: singkatan PNBP/KBRI/KJRI/KRI/WNI/UU/DIPA didefinisikan di
+  pemakaian pertama; PMK 202/2022 disebut di Bab I (dua arah pustaka); klaim "kota dengan harga sewa tinggi" dihapus
+  (tanpa sumber); teori ditambah **McCleary 1991** di II C §5: uji kecukupan ("resources adequate for present and expected
+  levels of demand") → sewa tak lolos untuk renovasi; dana jalan Ghana = penyaluran lebih tepat waktu + alokasi
+  pemeliharaan/rehabilitasi naik; manfaat bagi masyarakat hanya bila prioritas belanja ditetapkan dan dipatuhi.
+  Cek kalimat kembar vs KTI B + KTI Mitra Diklat + SIGAP/SIPDLN: 0 (hanya entri pustaka Permenlu 4/2025). Pokok bahasan
+  7.059 kata; pustaka 16. Butir 1, 6, 7, 26, 27 menunggu Tahap 5 (builder docx). Penanda kuning: 3 (pengamatan opsional,
+  pengungkapan AI, A11). Folder `Kajian BLU Kemlu` di Riv's Journey = JANGAN dibuka (diduga internal).
+
+## 27 Okt (sore): Pembandingan dengan kajian internal + data publik TA 2025
+Aldo melampirkan `Kajian BLU Kemlu\out\KAJIAN-BLU-{BMN-PERWAKILAN,PNBP-KEKONSULERAN}.pdf` (internal, lihat
+[[project-kajian-blu-bmn-pnbp]]) dan minta: cek data keliru, pakai yang bisa dipakai, KTI lebih kaya data + grafik/diagram.
+Aturan: hanya fakta bersumber PUBLIK yang masuk KTI; isi ND/surat Sekjen/instruksi Presiden/percontohan Seoul-Bangkok-LA
+TIDAK. **Sumber publik baru (diverifikasi dari dokumen asli):**
+- **LBP Kemlu TA 2025 Audited** (e-ppid.kemlu.go.id/file-service/storage/uploads/17903157556ab60cebe5d31_VII__Data_
+  perbendaharaan_atau_inventaris_Tahun_2025__1_.pdf; 686 hlm PDF): hlm 12 BMN bruto Rp59.304.526.726.246 (tanah
+  43.781.338.280.789 "tidak terdapat perubahan dari 2024"; gedung 11.267.703.858.561; P&M 3.381.892.397.321; KDP
+  97.367.991.518; kemitraan 156.068.872.428; aset tetap tak digunakan 94.812.790.133; ATB tak digunakan 33.790.129.536;
+  hak pakai tanah LN 229.525.768.800); hlm 13: Setjen membawahi **131 Perwakilan** + 4 satker DN. hlm 15: ±5,25% BMN
+  belum PSP; nilai belum PSP Rp9.379.762.080.964 dari 59.149.559.362.775 (tanah 28 bidang Rp6,06 T; gedung 207 unit
+  Rp2,83 T); register 2025: PSP 435+64=499, **sewa 11+2=13**, pinjam pakai/KSP/BGS/KSPI/KETUPI 0, penjualan 41+10,
+  pemusnahan 80+12, penghapusan 12+14. hlm 16: 22 satker >Rp500 M (Setjen 8,24 T; Seoul 7,72; Singapura 7,11; Bangkok
+  3,27; Yangon 2,68; Washington 2,20; Tokyo 1,94; Berlin 1,41; KJRI NY 1,40; London 1,36; PTRI NY 1,14; LA 0,91; KL 0,89;
+  Den Haag 0,80; Colombo 0,80; Paris 0,77; Manila 0,70; Phnom Penh 0,60; Islamabad 0,55; Pusdatin 0,53; Jeddah 0,52;
+  Vatican 0,50; lainnya 13,27 T). hlm xvii: **aset tak digunakan 2025 Rp128,60 M vs 2024 Rp341,10 M (−62,30%) karena
+  reklasifikasi tanah hak pakai jangka panjang di 5 Perwakilan (Canberra, Nairobi, Abuja, Kota Kinabalu, KL) ke akun
+  166117 sesuai PMK 100/2025** — bukan karena dipakai. hlm 110–112 (akrual): sewa 425131 Rp3.310.713.316; visa 58,06 M;
+  paspor 136,20; dokumen 120,85; lainnya 11,90; admin LN 61,52; **beban sewa 360.111.565.512; FSR 388.803.209.788;
+  pemeliharaan gedung 335.684.105.160 (2024: 364,02 M → −7,78%)**; asuransi gedung 21,62 M. hlm 478–479 (LRA kas):
+  sewa 2.909.926.761 vs estimasi 531.219.000 (547,78%); visa 58.631.160.895 (est 52,98 M); paspor 134.160.356.786 (est
+  141,06); dokumen 119.973.050.731 (est 95,25); lainnya 11.713.822.989 (est 20,54); admin LN 61.364.971.782; persekot
+  gaji 64.516.417,825; **total PNBP 483.105.394.611 = 127,27%** (est ±379,59 M).
+- **Himpunan RKA-K/L Kemlu 2026** (e-ppid …177666908669e5d19e12e77_RKAKL_Kemlu_2026_.pdf): RM 9.794.071.497 rb, **PNBP
+  230.099.314 rb**, BLU 0, total 10.024.170.811 rb (2,30%); prakiraan maju 10,09/10,31/10,58 T.
+- **LK Kemlu 2023 audited**: PNBP 2023 Rp538.225.801.495 (123,79% dari 434,78 M); 2022 kolom: visa 12.753.949.600,
+  paspor 152.444.787.445, dokumen 124.861.202.238, lainnya 35.576.837.561, sewa LRA 1.281.975.235; 2023 visa
+  81.174.688.340 (+536,47%), paspor 171.461.650.039, dokumen 110.827.775.891 (−11,24%), lainnya 48.680.389.801.
+  Seri sewa LRA 2022–25: 1,28 / 2,93 / 2,27 / 2,91 M; LO 2023–25: 3,62 / 2,85 / 3,31 M.
+- PMK 129/2020 dan PMK 202/2022: 0 kata "luar negeri"; PMK 76/2025 hanya soal hibah LN → rangkaian PMK BLU tak mengatur
+  BLU di luar negeri (bacaan sendiri, publik).
+**Kekeliruan di kajian (minor):** metode TA 2022 disebut "dihitung dari selisih" padahal LK 2023 memuat kolom 2022
+langsung (angka tetap benar); penurunan aset idle tak dijelaskan (reklasifikasi). Semua angka lain cocok.
+**Kekeliruan di KTI A yang harus dikoreksi:** klaim "LK TA 2024 = laporan teraudit terbaru" (LBP TA 2025 audited publik);
+aset idle Rp325,50 M/buku 246,04 M usang; pemeliharaan 2024 → tambah 2025; ilustrasi skala dihitung ulang.
+- **27 Okt (malam): DUA KTI SELESAI, keduanya verify 25/25.** KTI A `Downloads\Riv's Journey\KTI BMN Perwakilan BLU\`
+  (`KTI BMN Perwakilan BLU - Rivaldo H.docx/.pdf` 44 hlm, 6 tabel, 12 gambar; `Catatan Penyerahan KTI BMN.docx`);
+  builder `~/dev/kemlu/kti-bmn-perwakilan-blu` (figures.py 12 gambar; verify KUNCI/REGRESI baru; terlarang: nomor ND
+  internal, "instruksi Presiden", "percontohan"). KTI B diperbarui (40 hlm, 6 tabel, 10 gambar, data TA 2022–2025, pustaka
+  +11); versi 11 Okt diarsip di `arsip - versi 11 Okt\`. 0 kalimat kembar A vs B. Palet grafik: dataviz validated
+  (biru/oranye/aqua/kuning + abu), label langsung.
+- **Verifikasi agen (dl2/VERIFIKASI.md):** OMB CBSP FY2019 3.471 jt US$ (Appendix FY2021) → FY2020 1.990 (Appendix
+  FY2022) — kajian salah sumber (FY2027). GAO-22-104424: turun 41% (≈$4 M→$2,3 M); **US$300 jt = alokasi Kongres
+  (Consolidated Appropriations Act 2021), bukan "kebutuhan darurat"**. FCDO £18,62/paspor dewasa; £111,7 jt = gabungan
+  premi + EDRF. Filipina GAA 2025 DFA Special Provision 1 working fund (termasuk sewa). 22 USC 4305(a): notifikasi, 60
+  hari, "change in purpose" = acquisition. VCCR 31/32/39/55(2)(3). **PermenPANRB 68/2011 TIDAK DITEMUKAN** (klaim kajian
+  "BLU harus UPT" tak terverifikasi publik); ditemukan PER/02/M.PAN/1/2007: kecualikan layanan mandatori "Imigrasi,
+  Paspor" dari BLU (status belum dicek → VERIFIKASI di KTI B). PER-11/PB/2025 (15 Jul 2025) Ps 4(2),(4),(5) verified.
+  Imigrasi: "Rp9 triliun" (bukan 9,01); visa 5.162.775 periode 1 Jan–15 Des 2024. LKj Konsuler: dokumen 2020–24
+  141.616/187.430/226.458/223.475/218.799; stiker legalisasi 67.418. PMK 100/2025: 23 Des 2025, BN 2025/1220.
