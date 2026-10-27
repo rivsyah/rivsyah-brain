@@ -429,3 +429,43 @@ aset idle Rp325,50 M/buku 246,04 M usang; pemeliharaan 2024 → tambah 2025; ilu
   Paspor" dari BLU (status belum dicek → VERIFIKASI di KTI B). PER-11/PB/2025 (15 Jul 2025) Ps 4(2),(4),(5) verified.
   Imigrasi: "Rp9 triliun" (bukan 9,01); visa 5.162.775 periode 1 Jan–15 Des 2024. LKj Konsuler: dokumen 2020–24
   141.616/187.430/226.458/223.475/218.799; stiker legalisasi 67.418. PMK 100/2025: 23 Des 2025, BN 2025/1220.
+
+## 27 Okt (larut): cek ulang dengan 6 dokumen yang dilampirkan Aldo
+LBP 2025, LK 2023, LK 2024 = identik dengan salinan yang sudah dipakai. BARU & PUBLIK (dicek HTTP 200): **LK Kemlu TA 2025
+Audited** (kemlu.go.id/files/repositori/65377/17899851656ab1018dbd353_LK_Audited_TA2025.pdf, 300 hlm), **LK Semester I
+2026** (…/17899852546ab101e6a8b36_Laporan_Keuangan_Kemlu_TA_2026___Semester_I.pdf, unaudited), **LBP TA 2024 Audited**
+(e-ppid …/17903160706ab60e269b3e0_VII__Data_perbendaharaan_atau_inventaris_Tahun_2024_opt__2_.pdf). Teks PDF LK 2025 berspasi
+aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-src/dl3/`.
+- LK 2025 Tabel 85 (hlm cetak 148, PDF 175; dibaca dari gambar): sewa 2025 per satker: Setjen 1.936.156.881; Bangkok
+  22.972.140; Davao 12.048.435; London 271.219.942; PTRI NY 400.602.460; Singapura 578.150.985; Johor Bahru 46.872.963;
+  Kuching 42.689.510; total 3.310.713.316 (+16,22%, "meningkatnya pengguna fasilitas sewa"). **Perwakilan 7 satker
+  Rp1.374.556.435 (−18,98% dari 1,70 M)**; Dar es Salaam hilang; top3 = 90,94% Perwakilan; Setjen 58,48% total (sewa ruang
+  bank BNI/Mandiri/BRI, kantin, RTS, YPDDC). Pendapatan penggunaan sarpras (sewa rumah dinas pegawai) Rp10,11 juta.
+- **Lampiran "Daftar Nilai Buku per Akun Neraca" (PDF hlm 290–300): akun 166112 aset tak digunakan per satker: 57
+  satker, total 94.812.790.133; DN 4 satker Rp65,36 M (Setjen 61,81 M); 53 Perwakilan perolehan Rp29,46 M, NILAI BUKU
+  Rp332,98 juta** (hampir habis disusutkan); total buku Rp13,90 M → ilustrasi potensi sewa dari akun ini tidak bermakna.
+- LO 2025 BRUTO: pemeliharaan gedung 335.728.155.382 (−7,77%); beban sewa 360.267.517.426 (+0,21%); FSR 389.170.501.215
+  (+13,63%) — LBP neraca percobaan = NETO (335,68/360,11/388,80). Pakai bruto agar sebanding dengan 2024 (LK 2024 bruto).
+- Visa LO 58.061.940.253 (−38,86%): sebab e-visa + VoA (aturan visa & izin tinggal 2023) + Perpres 95/2024 bebas visa
+  kunjungan 30 hari sejak Agu 2024. Paspor LO 136,20 M (−14,93%): paspor 10 thn; sejak Agu 2024 paspor WNI di LN 5 thn +
+  syarat izin tinggal. Dokumen LO 120,85 M (+9,13%): tertinggi KJRI Hong Kong karena kurs dasar SK.071/HONGKONG/KU/VIII/2025.
+- MP PNBP 2025: belanja modal P&M turun 19,63% antara lain karena "pencairan MP PNBP tidak dapat dilakukan seluruhnya
+  sesuai alokasi pagu" (hlm cetak 73). Kas Bendahara Penerimaan 2025 Rp6.101.094.618 (2024 7,65 M).
+- Utang gedung 2025 Rp541.940.024.599 (−19,21%); per gedung London 185,95; Chicago 62,22; Tawau 25,38; JB 44,93; Warsawa
+  23,48; Phnom Penh 278,50; Kuching 50,35 M. Cicilan pokok+bunga 7 gedung 2025 Rp186.308.653.063.
+- **KTJ Restorasi & Renovasi KBRI Washington DC: S-14/MK.02/2025 (21 Jan 2025) USD36.757.592 ≈ Rp588.121.479.200 untuk
+  2025–2027** (2025 Rp42,40 M; 2026 Rp411,28 M; 2027 Rp134,44 M); 2025 blokir RM KTJ Rp293,71 M. Renovasi lain 2025: Ankara
+  ICC 2,49 M; Putrajaya 1,45 M; Abuja 2,05 M; Seoul perencanaan 1,68 M. Buka blokir tahap I 2025: usul 720,72 M, setuju
+  546,96 M (S-108/MK/AG/2025).
+- LK S1 2026 (unaudited): PNBP s.d. 30 Jun 2026 Rp238.785.955.337 = 52,98% dari estimasi Rp450,72 M; belanja 46,38% dari
+  Rp9,92 T; visa S1 2026 turun Rp3,38 M (13,09%) yoy.
+- LBP 2024: BMN 58.954.934.293.124; belum PSP 2024 NILAI Rp8.952.972.945.650 = 15,66% (tanah 38 bidang 6,31 T; gedung 295
+  unit 2,04 T); LBP 2025 memakai ukuran UNIT (5,25%) — beda ukuran. Register 2024: 164 usulan (sewa 4, PSP 111, jual 30).
+  Kantor 14 pusat + 131 Perwakilan = 145 satker.
+- 27 Okt (larut) HASIL: KTI A (45 hlm, 13 gambar, 6 tabel) & KTI B (41 hlm, 10 gambar) dibangun ulang, verify 25/25, 0
+  kalimat kembar. Sitasi KTI A: LK2023=2024; LK2024=2025a; LBP2024=2025b; LBP2025=2026a; LK2025=2026b. KTI B: LBP2025=2026a;
+  RKA2026=2026b; LK2025=2026c; LK S1 2026=2026d. Koreksi utama: beban 2025 dipakai BRUTO (335,73/360,27/389,17 M; total
+  sewa+FSR 749,44 M); sewa Perwakilan 2025 Rp1,37 M (−18,98%), top3 90,94%; ilustrasi KTI A diganti (sewa ×5/×10 = 2,05%/
+  4,09% pemeliharaan) karena akun aset idle Perwakilan nilai buku hanya Rp0,33 M; Gambar 8 baru KTJ Washington Rp588,12 M
+  (≈428× sewa Perwakilan); PSP & register 2024 vs 2025; KTI B: sebab visa/paspor/dokumen dari LK 2025, MP PNBP 2025 masih
+  bermasalah, kas bendahara 2025 Rp6,10 M, data sementara S1 2026.
