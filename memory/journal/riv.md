@@ -513,3 +513,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-26T00:11Z  DTIIF: LinkedIn kartu tetap /in/rivaldoharviansyah; Dedi samakan situs
 - 2026-10-26T00:12Z  DTIIF: one-pager sorot Bentala, Cakrawala, TRANSIT, GapMap, Pasar (pilihan Aldo)
 - 2026-10-26T00:20Z  DTIIF: Dedi setuju Cakrawala disorot; briefing diperbarui
+- 2026-10-27T03:10Z  kemlu: KTI PNBP — 27 Okt Aldo lampirkan 6 dokumen internal (ND Biro Hukum 17091/HK/04/2026 ke Sekjen & 26072/HK/05/2026 ke Ka BUP soal BLU pemanfaatan BMN LN, + 4 lampiran) dan minta fokus 2 BLU (komersialisasi BMN Perwakilan + PNBP konsuler). Agen BERHENTI di gerbang C4: tanpa tanda klasifikasi terlihat, isi belum dipakai; minta konfirmasi klasifikasi + izin pimpinan sebelum dikutip di KTI
