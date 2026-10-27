@@ -1,6 +1,6 @@
 ---
 name: project-wharton-thesis
-description: "Tesis MBA (draft) 'The Landlord That Rents' untuk Wharton/UPenn dari brief BLU Aset Kemlu; 72 hlm, pipeline docx-js + Word PDF + gerbang 86 cek di ~/dev/personal/wharton-thesis"
+description: "Tesis MBA (draft) 'The Landlord That Rents' untuk Wharton/UPenn; 85 hlm (27 Okt 2026, serap 2 KTI + LK 2025 audited), pipeline docx-js + Word PDF + gerbang 114 cek di ~/dev/personal/wharton-thesis"
 metadata:
   type: project
 ---
@@ -122,3 +122,40 @@ setelah sukses, dengan syarat proses baru dan StartTime ≤6 detik setelah job d
 Word suka tertinggal dan mengunci file. Hasil: 75 hlm, 22 tabel, gerbang 109 cek lolos.
 
 - 27 Okt 2026: atas permintaan Aldo, riset *Retention Before Agency* (folder Retention-Before-Agency, eks Landlord-That-Rents) DIHAPUS (ke Recycle Bin) beserta kartunya. Rujukan [[project-landlord-that-rents]] di atas tidak berlaku lagi.
+
+## Update dengan dua KTI — 27 Okt 2026
+
+Atas permintaan Aldo ("update thesis ini dengan KTI BLU BMN dan PNBP"), tesis menyerap dua KTI
+Aldo (kemlu → personal, diizinkan Aldo di sesi). KTI hanya memakai dokumen publik. Setiap angka
+diambil ulang dari dokumen primer. Di tesis, KTI dikutip sebagai `harviansyah2026b`/`2026c`
+(unpublished manuscript). Brief menjadi `2026a`.
+
+**Brief sudah dihapus** (folder Retention-Before-Agency ke Recycle Bin, 27 Okt). Akibatnya
+`facts.py` tidak bisa mengimpor `content.py` lagi. Nilai brief kini **beku** di
+`data/facts.json`. Angka baru masuk lewat modul `src/fy2025_lk.py` (14 identitas), yang
+di-merge setiap kali build. `facts.py --check` tidak bermakna lagi.
+
+**Sumber baru:** LK Kemlu TA 2025 audited. File ini publik di kemlu.go.id
+(`LK_Audited_TA2025.pdf`). Angkanya cocok dengan neraca percobaan LBP (contoh: sewa Rp3,31 M).
+
+**Temuan baru di tesis:**
+- Rasio pembaruan gedung bersih cicilan **turun ke 19% pada FY2025**. Hitungannya: belanja
+  modal gedung (akun 5331) Rp281,8 M dikurangi cicilan 7 gedung Rp186,31 M, lalu dibagi
+  penyusutan Rp501,0 M. Prediksi C6 terbukti.
+- Sewa Perwakilan turun 18,98% menjadi Rp1,37 M di 7 pos. Tiga pos menyumbang 90,94%.
+  Total sewa = 0,99% beban pemeliharaan gedung (Rp335,7 M).
+- KTJ Washington: US$36,76 jt ≈ Rp588,12 M (2025–27). Rp293,71 M sempat diblokir.
+  Nilainya ≈428× sewa Perwakilan.
+- PNBP konsuler 4 jenis (basis kas): puncak Rp412,14 M (2023) → Rp324,48 M (2025), turun 21,27%.
+  Tabel 5 baru di tesis.
+- **Rute hukum ketiga**: PP 27/2014 Ps 96(2) + PP 23/2005 Ps 14 + PMK 129/2020 Ps 69/127/141–142
+  (jo PMK 202/2022, 76/2025). Rute ini butuh konfirmasi tertulis DJKN/DJPb.
+- Syarat substantif BLU: PER-11/PB/2025 Ps 4(2),(5) menuntut pendapatan layanan utama di LK
+  audited.
+- Pembanding baru: 22 USC §4305, uji pakai sendiri rumah dinas kosong, 22 USC §300 (FSBF).
+  Juga CBSP AS (US$3,47 M → 1,99 M; GAO −41%; +US$300 jt), Kanada, premi £18,62, Filipina.
+- Desain dana abadi: pokok dari pembiayaan investasi APBN (pola PMK 53/2026). Urutan belanja
+  hasil: konsuler → PWNI → operasional. Ada cadangan darurat dan review 5 tahunan.
+
+**Hasil build:** 85 hlm, 23 tabel, 121 rujukan dikutip, gerbang 114 cek lolos. Cutoff
+27 Okt 2026. Prior-publication di front matter kini menyebut kedua KTI. NIP tidak dimuat.
