@@ -537,3 +537,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-28T03:02Z  seragam satpam 28 Okt: spek dari lembar unit kerja 27 Okt + KAK 8.6 contoh atribut; RAB/HPS versi Aldo dipulihkan + 34 sel spek; PDF KAK/RAB dirender ulang; audit 0
 - 2026-10-28T04:40Z  28 Okt: pointers rapat pengadaan PPTM 2027 (ND Infomed 55037) 3 hlm docx+pdf di Downloads\MOFA\BUP\Rapat PPTM 2027 28 Okt 2026; kartu kemlu/project_rapat_pptm_2027.md; builder ~/dev/kemlu/rapat-pptm-2027
 - 2026-10-28T06:53Z  Nota balasan BUP->Pusdatin: Pokja mini-kompetisi komputer GPU (Rivaldo, Enica, Hideki), draf di Downloads; kartu project_nota_pokja_komputer_gpu_pusdatin
+- 2026-10-28T08:44Z  SOP Mikro Monev Jamkes PIMPRI dibuat dari templat SOP Jamkes.xlsx (Permenlu 7/2023 Ps 14-15) -> Downloads\SOP Monev Jamkes Pimpri.xlsx; card kemlu/project_sop_monev_jamkes_pimpri

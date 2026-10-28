@@ -5,6 +5,7 @@
 
 ## NOW — active focus (update when it goes stale)
 
+- 🟡 28 Okt 2026 — **SOP Mikro Monev Jamkes PIMPRI** (model SOP Jamkes.xlsx Biro Keuangan; dasar Permenlu 7/2023 Ps 14–15): 10 langkah s.d. BP pakai hasil monev sbg data sumber pembaruan pedoman; file `Downloads\SOP Monev Jamkes Pimpri.xlsx`. Asumsi: BP = Jasindo, waktu per langkah. [SOP Monev Jamkes](kemlu/project_sop_monev_jamkes_pimpri.md).
 - 🟡 28 Okt 2026 — **Nota balasan Pokja komputer GPU Pusdatin** (ND 54823/PL/10/2026/80, Rp955,06 jt PNBP, mini-kompetisi): draf .docx di Downloads, Pokja Rivaldo/Enica/Hideki; nomor+tanggal kosong, pangkat IIIb vs IIIa belum pasti. [Nota Pokja GPU Pusdatin](kemlu/project_nota_pokja_komputer_gpu_pusdatin.md).
 - 🟡 28 Okt 2026 14.00 — **Rapat pengadaan PPTM 2027 (undangan Dir. Infomed)**: pointers BUP 3 hlm (pemilihan pra-DIPA Ps 50(9), kontrak setelah DIPA, jadwal mundur ke 4 Jan 2027) di `Downloads\MOFA\BUP\Rapat PPTM 2027 28 Okt 2026\`. Hasil rapat belum dicatat. [Rapat PPTM 2027](kemlu/project_rapat_pptm_2027.md).
 - 🟢 11 Okt 2026 — **PANTAS v1.1 TAYANG** di balik Cloudflare Access (https://pantas.rivsyah.dev, hanya rivsyah@gmail.com), commit 75009b0: BKU saja, valuta setempat, laporan Realisasi Program per MAK; sampel Singapura → proyeksi kurang Rp3,6–7,0 M s.d. 31 Des. Menunggu arahan Aldo berikutnya. [PANTAS kurs](kemlu/project_pantas_kurs.md).
