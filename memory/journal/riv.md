@@ -536,3 +536,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-27T14:32Z  personal/wharton-thesis: serap KTI BLU BMN + KTI PNBP + LK 2025 audited (src/fy2025_lk.py, 14 identitas; 22 rujukan baru; 31 edit bab); brief dihapus -> nilai brief beku di facts.json; build 85 hlm, gerbang 114 lolos
 - 2026-10-28T03:02Z  seragam satpam 28 Okt: spek dari lembar unit kerja 27 Okt + KAK 8.6 contoh atribut; RAB/HPS versi Aldo dipulihkan + 34 sel spek; PDF KAK/RAB dirender ulang; audit 0
 - 2026-10-28T04:40Z  28 Okt: pointers rapat pengadaan PPTM 2027 (ND Infomed 55037) 3 hlm docx+pdf di Downloads\MOFA\BUP\Rapat PPTM 2027 28 Okt 2026; kartu kemlu/project_rapat_pptm_2027.md; builder ~/dev/kemlu/rapat-pptm-2027
+- 2026-10-28T06:53Z  Nota balasan BUP->Pusdatin: Pokja mini-kompetisi komputer GPU (Rivaldo, Enica, Hideki), draf di Downloads; kartu project_nota_pokja_komputer_gpu_pusdatin
