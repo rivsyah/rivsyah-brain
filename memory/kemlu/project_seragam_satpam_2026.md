@@ -297,3 +297,15 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **23 Okt — koreksi Aldo: DKH diisi harga PENAWARAN V2, bukan hasil nego.** `DKH Penawaran V2 - ...xlsx` (`build_dkh.py <out> penawaran`,
   harga = `build_nego_final.PEN`): total Rp409.847.500 + PPN 45.083.225 = **Rp454.930.725**; XL Up tidak dihitung; B.4 topi = harga Pet
   81.000, D.2/E.5 kaos dalam = 82.000 (paket). Berkas "DKH Hasil Negosiasi" dikeluarkan dari folder (cadangan di scratchpad).
+- **28 Okt — update unit kerja** `Seragam Pakaian Dinas Satuan Pengamanan 2026.xlsx` (27 Okt; menggantikan berkas Kebutuhan yang sudah
+  dihapus Aldo): keterangan per barang + 4 gambar EMF (badge Polda Metro/Jabar + Kemlu untuk PDH/PDL dan Biru, velcro logo Satpam
+  kuning/putih, logo Kemlu monokrom, Gada Madya/Pratama, sablon kaos OR). spek.py ditulis ulang (pet PDH cokelat list putih; topi PDL
+  cokelat list kuning; pet Biru dongker list kuning; kur hitam kecil/kuning besar; kaos dalam sablon logo Kemlu + Satpam; ikat logo
+  Kemlu; sepatu ritsleting diperkuat; sepatu tactical logo Kemlu di lidah; kaos/celana OR hitam; pin model tusuk). KAK in-place: 23 sel
+  spek + **8.6 Contoh Badge, Velcro, Logo, dan Sablon** (8 potongan gambar, skrip scratchpad `kak_atribut.py`). HPS angka TIDAK berubah.
+- **28 Okt — susunan folder versi Aldo (sejak 24 Okt)**: DKH dipindah ke `Dokumen Penyedia/` (DKH Penawaran milik Aldo/penyedia),
+  Rencana Negosiasi diganti nama `Negosiasi - Penawaran CV Nagoya.xlsx/.pdf`, ada PDF KAK/RAB/Kalkulasi buatan Aldo. **Aldo menyunting
+  RAB/HPS 24 Okt** (metode tanpa "mini kompetisi", judul D/E tanpa "(tambahan)", subtotal per kelompok di RAB, blok ttd naik 2 baris):
+  RAB/HPS kini **sunting in-place saja (Excel COM)**, jangan salin hasil build_xlsx ke folder. Build 28 Okt sempat menimpa, sudah
+  dipulihkan dari cadangan dan hanya 34 sel spek HPS yang diganti. DKH Kosong/Penawaran V2 yang sempat tersalin ulang dihapus lagi.
+  PDF KAK dan RAB/HPS dirender ulang. audit.py disesuaikan ke susunan baru; 0 temuan. Badge PDH: Jabar 22 + Metro 83 = 105 != 111.
