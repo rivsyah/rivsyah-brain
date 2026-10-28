@@ -309,3 +309,8 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   RAB/HPS kini **sunting in-place saja (Excel COM)**, jangan salin hasil build_xlsx ke folder. Build 28 Okt sempat menimpa, sudah
   dipulihkan dari cadangan dan hanya 34 sel spek HPS yang diganti. DKH Kosong/Penawaran V2 yang sempat tersalin ulang dihapus lagi.
   PDF KAK dan RAB/HPS dirender ulang. audit.py disesuaikan ke susunan baru; 0 temuan. Badge PDH: Jabar 22 + Metro 83 = 105 != 111.
+- **28 Okt — penawaran revisi** `Downloads/0873. Kementrian Luar Negrii.pdf` (Excel 28 Okt 15.41, tanggal tertulis masih 19 Okt):
+  9 barang = batas nego (PDH, PDL, kur hitam, kaos dalam, borgol, sepatu PDL/tactical, topi cokelat, kaos/celana OR). Di atas batas
+  (banyak NAIK dari V2): kopel 150.000, pet 135.000, topi abu 65.000, sepatu PDH 360.700, baton 130.000, pin kewenangan 40.000 (magnet),
+  rompi 175.000, ikat 44.500, pin Gada 28.500, kur kuning 30.000. Hilang: seragam Tactical, seragam Biru, dasi, kaos dalam saja D/E.
+  Total (hilang dihitung pada batas) Rp421.170.630 +PPN > HPS 386,99 jt dan > pagu 390 jt; selisih vs batas +Rp46,0 jt.
