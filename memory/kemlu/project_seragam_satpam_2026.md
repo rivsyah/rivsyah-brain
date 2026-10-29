@@ -323,3 +323,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   Aldo (struktur diubah 24 Okt): disunting in-place (xl_set.ps1), hanya HPS/pagu; batas nego tidak diubah. Batas nego > HPS baru:
   kaos OR 297.200 > 250.000, Biru 480.000 > 468.300. PDF Nego (sheet 'Negosiasi per Barang') dan Kalkulasi (sheet 'Rincian') dirender
   ulang per sheet (sheet_pdf.ps1). KAK total/pagu via kak_total2.py (run terpecah). Audit 0.
+- **29 Okt (lanjutan)**: kaos OR Rp300.000 dan celana OR Rp400.000 **TERMASUK PPN dan sablon** (koreksi Aldo) -> HPS dasar kaos
+  270.200, celana 360.300 (/1,11 turun ke ratusan). **HPS total Rp384.409.300**, pagu 400 jt. Semua dokumen + PDF diperbarui; audit 0.
+  Masih: batas nego kaos 297.200 > HPS 270.200 dan Biru 480.000 > HPS 468.300 (menunggu keputusan Aldo).
