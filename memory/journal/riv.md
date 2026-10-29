@@ -554,3 +554,5 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T04:40Z  seragam satpam: pagu 390 jt; nama Topi Coklat Lapangan di semua dokumen; cek 0
 - 2026-10-29T05:04Z  seragam satpam: docx penawaran disamakan dengan DKH (425.125.005)
 - 2026-10-29T05:09Z  seragam satpam: kata 'revisi' dihapus dari semua dokumen (arahan Aldo); DKH nomor 'No. 0873, 28 Oktober 2026'
+- 2026-10-29T05:58Z  Analisis gaya video TSCS 'WTF Just Happened to Indonesia' (yt 21-G0C_bXYI) untuk kelayakan motion video: bisa via Remotion/HTML+ffmpeg; node/ffmpeg/python ada, yt-dlp tidak ada
+- 2026-10-29T06:08Z  Bangun demo motion video Remotion 44 dtk (free float, brand Ignited Research) di ~/dev/research/motion-demo; card research/project_motion_video_demo.md
