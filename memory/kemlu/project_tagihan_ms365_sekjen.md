@@ -19,4 +19,4 @@ Asumsi agent (kuning, belum dicek):
 - Nama + jabatan penandatangan penyedia kosong; nomor urut surat "____".
 
 PPK = **Charles Bob Ivan** NIP 19861108 200901 1 001 (instruksi Aldo 29 Okt 2026; template JNE pakai Rudy Setiawan).
-Celah terbuka: kode subkomponen masih "U" + nomor surat BUP-PAMRUMGA dari template; peta Wasdit menaruh 002.U di PPK Rudy Setiawan, Charles memegang 002.M (GWS 522119 = 6023.EBA.994.002.M.522119). Belum diubah — tunggu Aldo.
+Akun diganti ke **6023.EBA.994.002.M.522119** + nomor surat 994.M/... (instruksi Aldo 29 Okt 2026, ikut peta Wasdit: Charles = 002.M). Sisa celah: nomor surat masih BUP-PAMRUMGA dan Nota Dinas dari Kabag Pamrumga (template JNE, subkomponen U).
