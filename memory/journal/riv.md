@@ -565,3 +565,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T06:53Z  ElevenLabs disiapkan untuk motion-demo (engine switch di make_vo.py, key di keys.catalog); menunggu Aldo isi ELEVENLABS_API_KEY
 - 2026-10-29T06:56Z  29 Okt: paket dokumen bayar tagihan Cloudflare Workers Paid IN-83167135 (US$5) dibuat dari template JNE TIKI di Downloads/MOFA/Revisi Keuangan RKA DIPA; kartu kemlu/project_tagihan_cloudflare_workers
 - 2026-10-29T07:04Z  Transcribed DJA FGD dana abadi (Whisper GPU), wrote notes, integrated lessons into both KTIs (verify 25/25); KTI folder moved to Riv's Journey/KTI
+- 2026-10-29T07:12Z  Aldo confirmed KTI B main design stays Kemlu-managed BLU; integration option remains comparison only

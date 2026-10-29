@@ -492,3 +492,5 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   ke BLU dana abadi yang ada (Kemlu pegang program) — **trade-off utk Aldo: A11 tetap "Kemlu pengelola"**; tata kelola +
   cadangan/pengecualian tertulis + lindung nilai valuta; Rek 4 = naskah akademik + CBA + bandingkan integrasi. 44 hlm, 25/25.
   KTI A: paragraf dekonsolidasi + APBN bertahap (KTJ) di II C §6; Rek 6 + biaya-manfaat. 45 hlm, 25/25. 0 kalimat kembar.
+- 29 Okt: **Aldo memutuskan: desain utama KTI B TETAP "Kemlu pengelola" (BLU dana khusus di Kemlu).** Opsi integrasi ke BLU
+  dana abadi yang ada tetap hanya alternatif/pembanding dalam kajian kelayakan (Rek 4), bukan desain utama. Jangan diusulkan ulang.
