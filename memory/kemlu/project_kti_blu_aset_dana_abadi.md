@@ -471,3 +471,24 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   bermasalah, kas bendahara 2025 Rp6,10 M, data sementara S1 2026.
 
 - 27 Okt 2026: atas permintaan Aldo, riset *Retention Before Agency* (folder Retention-Before-Agency, eks Landlord-That-Rents) DIHAPUS (ke Recycle Bin) beserta kartunya. Rujukan [[project-landlord-that-rents]] di atas tidak berlaku lagi.
+
+## 29 Okt 2026: FGD DJA "Tata Kelola Dana Abadi" dipelajari dan dimasukkan ke kedua KTI
+- **Folder KTI dipindah Aldo** ke `Downloads\Riv's Journey\KTI\` (KTI BMN Perwakilan BLU, KTI PNBP Kekonsuleran, Data\ =
+  dokumen INTERNAL, jangan dibuka). `arsip - versi 11 Okt` KTI PNBP sudah dihapus Aldo. Builder: `--draf "C:/Users/rivsy/
+  Downloads/Riv's Journey/KTI/<folder>/draf"`.
+- Video https://www.youtube.com/watch?v=KNvmVJDxfjk (DJA/HPP, 29 Okt 2026, 3j15m) belum punya teks YouTube → atas izin Aldo:
+  venv scratchpad (yt-dlp 2026.10.26 + faster-whisper 1.2.1 + CUDA libs pip), audio diunduh 189 MB lalu DIHAPUS, transkripsi
+  large-v3-turbo GPU 545 dtk (21× realtime). Transkrip disalin ke `Sumber\` kedua KTI; catatan:
+  `KTI\Catatan FGD DJA Dana Abadi - 29 Okt 2026.md` (per pembicara + cap waktu).
+- Isi kunci: Didik Kusnaini (Dir HPP): K/L kini cari ruang fiskal lewat dana abadi di UU sektoral → "dekonsolidasi"; moratorium
+  dana abadi ±2019–2020. Rina Widiyani: dana abadi = investasi pemerintah (pembiayaan), pokok tak dipakai, APBN chip-in awal,
+  BLU paling pas, LPDP kelola 4 dana abadi (integrasi rumpun); pengecualian pakai pokok lewat tata kelola bukan diskresi;
+  APBN "installment" utk kebutuhan jangka panjang. Prof Maria Soetopo: anualitas APBN vs perpetualitas dana abadi; belum ada
+  payung hukum umum; RIA/CBA sebelum bentuk lembaga; acuan RPJPN (UU 59/2024). LPDP (Pak Wawan): deposito/SBN/obligasi BUMN
+  dijamin ±7%, natural hedging USD. Angka LPDP (pokok ±Rp180 T 2025; hasil ±Rp11 T) = LISAN → VERIFIKASI. UU 12/2011
+  (12 Agu 2011, LN 2011/82) Lampiran I NA Bab II huruf D "implikasi ... dampaknya terhadap aspek beban keuangan negara" =
+  terverifikasi; klaim "UU 13/2022 wajibkan RIA" TIDAK dikutip.
+- KTI B: Bab II C §5 baru (4 pelajaran + syarat moderator), II D: 3 batas konsolidasi + opsi integrasi pengelolaan investasi
+  ke BLU dana abadi yang ada (Kemlu pegang program) — **trade-off utk Aldo: A11 tetap "Kemlu pengelola"**; tata kelola +
+  cadangan/pengecualian tertulis + lindung nilai valuta; Rek 4 = naskah akademik + CBA + bandingkan integrasi. 44 hlm, 25/25.
+  KTI A: paragraf dekonsolidasi + APBN bertahap (KTJ) di II C §6; Rek 6 + biaya-manfaat. 45 hlm, 25/25. 0 kalimat kembar.
