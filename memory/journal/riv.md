@@ -570,3 +570,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T07:45Z  29 Okt 2026: Aldo konfirmasi akun 522119 untuk tagihan MS365 Sekjen; highlight dihapus, docx+pdf diekspor ulang
 - 2026-10-29T07:45Z  29 Okt: Aldo konfirmasi tagihan Cloudflare IN-83167135 dibayar KKP; dokumen tetap
 - 2026-10-29T07:47Z  29 Okt: Aldo konfirmasi PPK tagihan Cloudflare = Charles Bob Ivan; dokumen tetap
+- 2026-10-29T07:47Z  kemlu: tagihan ChatGPT — PPK diganti Rudy Setiawan -> Charles Bob Ivan (NIP dari reference_pejabat_bup), 10 nama + 7 NIP.
