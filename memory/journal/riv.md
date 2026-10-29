@@ -567,3 +567,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T07:04Z  Transcribed DJA FGD dana abadi (Whisper GPU), wrote notes, integrated lessons into both KTIs (verify 25/25); KTI folder moved to Riv's Journey/KTI
 - 2026-10-29T07:12Z  Aldo confirmed KTI B main design stays Kemlu-managed BLU; integration option remains comparison only
 - 2026-10-29T07:35Z  Ide nama media YouTube gaya TSCS/Analysed (explainer makro berbasis data, fokus Indonesia/ASEAN): shortlist Wallace Line, Bedah Data, Straits Data, Monsoon Data, Archipelago Decoded; handle YouTube @WallaceLine/@TheWallaceLine/@BedahData/@StraitsData/@MonsoonData/@ArchipelagoDecoded 404 (kosong) per 29 Okt 2026; @NusaData/@Sundaland/@EquatorBrief sudah dipakai. Belum dipilih.
+- 2026-10-29T07:45Z  29 Okt 2026: Aldo konfirmasi akun 522119 untuk tagihan MS365 Sekjen; highlight dihapus, docx+pdf diekspor ulang

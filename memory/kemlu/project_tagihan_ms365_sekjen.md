@@ -10,8 +10,9 @@ File: `C:\Users\rivsy\Downloads\MOFA\Revisi Keuangan RKA DIPA\Microsoft - Pembay
 
 Isi: Order Number 8459959902 = "Surat Pesanan", tgl 14 Okt 2026 (Rabu) = tgl BAST/BAPP/selesai; Rp1.359.999 termasuk PPN Rp134.774.
 
+Akun 6023.EBA.994.U.**522119** DIKONFIRMASI Aldo 29 Okt 2026 (template JNE pakai 521119); warna kuning dihapus.
+
 Asumsi agent (kuning, belum dicek):
-- Akun 6023.EBA.994.U.**522119** (template JNE pakai 521119; folder 522119 berisi langganan Zoom/Anthropic).
 - Penjual = Microsoft Regional Sales Pte. Ltd., Singapura (dari ingatan, cek di "Print order").
 - Dibayar KKP Visa **9577 (nota dinas: pertanggungjawaban KKP, bukan bayar langsung).
 - SPTJB PPN/PPh "-": PPN PMSE sudah dipungut Microsoft [Likely]; PPh tidak dipotong.
