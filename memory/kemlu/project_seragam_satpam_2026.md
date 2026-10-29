@@ -342,3 +342,7 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   Kolom penawaran Kalkulasi diganti ke penawaran revisi (dibaca dari DKH Penawaran; total Rp423.280.185; kur kuning E 30.000 diisi
   langsung di Rincian). Berkas Negosiasi belum (sedang dibuka Aldo); skrip siap: scratchpad nego_penawaran.py -> nego_pen.json ->
   xl_set.ps1. cek_semua.py kini juga cek penawaran Negosiasi = DKH.
+- **29 Okt 10.4x**: penawaran Seragam Tactical = HPS 495.400 (arahan Aldo) -> DKH Penawaran D.1, Negosiasi, Kalkulasi. Batas paket
+  1,5/1,55 jt **dicabut** (Aldo); Kalkulasi CAPA/CAPB = SBM. Negosiasi kolom penawaran = penawaran revisi (ditulis ke jendela Excel
+  Aldo yang terbuka lewat GetActiveObject, xl_set_aktif.ps1, lalu disimpan). Penawaran total Rp424.868.595 +PPN; batas
+  Rp383.345.826; HPS Rp385.116.900. cek_semua + audit: 0 temuan.
