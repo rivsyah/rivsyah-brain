@@ -546,3 +546,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T02:58Z  seragam satpam: HPS tactical & biru 550k termasuk PPN -> HPS 385.116.900; dokumen diperbarui, audit 0
 - 2026-10-29T03:03Z  seragam satpam: batas nego kaos 270.200, total batas 369.882.525; cek menyeluruh 0 temuan
 - 2026-10-29T03:12Z  seragam satpam: batas nego naik ke HPS baru (383.345.826); DKH Penawaran xlsx disesuaikan revisi (423,28 jt), PDF berstempel tidak dibuat ulang
+- 2026-10-29T03:32Z  seragam satpam: Kalkulasi penawaran = revisi 28 Okt; Negosiasi tertunda (file terbuka)

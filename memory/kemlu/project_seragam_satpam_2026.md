@@ -338,3 +338,7 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   Uji Paket "Lewat"), masih < SBM. DKH Penawaran (Dokumen Penyedia, **berstempel CV Nagoya**) xlsx disesuaikan ke penawaran revisi
   28 Okt (total Rp423.280.185; tactical/biru/dasi tetap harga V2; kaos dalam semua 69.100; spek terbaru; tanggal 28 Okt) — PDF
   berstempel TIDAK dibuat ulang (harga belum ditandatangani penyedia). Cadangan: scratchpad backup_29okt_e.
+- **29 Okt 10.3x**: Aldo menghapus SEMUA PDF dari folder paket dan Dokumen Penyedia -> jangan buat PDF lagi kecuali diminta.
+  Kolom penawaran Kalkulasi diganti ke penawaran revisi (dibaca dari DKH Penawaran; total Rp423.280.185; kur kuning E 30.000 diisi
+  langsung di Rincian). Berkas Negosiasi belum (sedang dibuka Aldo); skrip siap: scratchpad nego_penawaran.py -> nego_pen.json ->
+  xl_set.ps1. cek_semua.py kini juga cek penawaran Negosiasi = DKH.
