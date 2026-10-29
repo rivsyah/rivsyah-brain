@@ -346,3 +346,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   1,5/1,55 jt **dicabut** (Aldo); Kalkulasi CAPA/CAPB = SBM. Negosiasi kolom penawaran = penawaran revisi (ditulis ke jendela Excel
   Aldo yang terbuka lewat GetActiveObject, xl_set_aktif.ps1, lalu disimpan). Penawaran total Rp424.868.595 +PPN; batas
   Rp383.345.826; HPS Rp385.116.900. cek_semua + audit: 0 temuan.
+- **29 Okt 10.5x**: penawaran Seragam Biru = HPS 495.400 (arahan Aldo), batas Biru ikut = HPS (sama perlakuan dengan Tactical).
+  DKH Penawaran, Negosiasi (jendela Excel Aldo), Kalkulasi diperbarui. Penawaran Rp425.125.005; batas **Rp383.602.236**; HPS
+  Rp385.116.900; pagu 400 jt. Skrip: scratchpad biru_hps.py. Audit + cek_semua: 0.
