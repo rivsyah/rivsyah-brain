@@ -326,3 +326,7 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **29 Okt (lanjutan)**: kaos OR Rp300.000 dan celana OR Rp400.000 **TERMASUK PPN dan sablon** (koreksi Aldo) -> HPS dasar kaos
   270.200, celana 360.300 (/1,11 turun ke ratusan). **HPS total Rp384.409.300**, pagu 400 jt. Semua dokumen + PDF diperbarui; audit 0.
   Masih: batas nego kaos 297.200 > HPS 270.200 dan Biru 480.000 > HPS 468.300 (menunggu keputusan Aldo).
+- **29 Okt (lanjutan 2)**: HPS Seragam Tactical dan Seragam Biru = **Rp550.000/stel termasuk PPN** (dasar 495.400; Aldo menyebutnya
+  "pagu", dibaca sebagai HPS per stel). Biru tidak lagi diikat ke PDL Sus. **HPS total Rp385.116.900**, pagu 400 jt. Batas nego Biru
+  480.000 kini < HPS (beres); tinggal kaos OR 297.200 > HPS 270.200. Aldo menyimpan RAB 09.56 (hanya tinggi baris 8 RAB = 25,15) ->
+  dimasukkan ke build_xlsx. Semua dokumen + PDF diperbarui; audit 0.

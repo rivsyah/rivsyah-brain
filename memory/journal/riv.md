@@ -543,3 +543,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T02:28Z  29 Okt 2026 kemlu: RAB Seragam Pengemudi jadi (Rp29.304.000, 1 hlm xlsx+pdf di folder Pengadaan Seragam Pengemudi Kemlu 2026); kartu baru project_seragam_pengemudi_2026 + kalender pendaftaran kontrak LS 2026 (Okt->6 Nov, Nov->7 Des).
 - 2026-10-29T02:37Z  seragam satpam 29 Okt: HPS 388.197.100 (SBM penuh A/B, kopel 92.200, pet 107.000, tactical 480k, topi 65k, OR 250k/400k), pagu 400 jt; semua dokumen in-place; audit 0
 - 2026-10-29T02:53Z  seragam satpam: HPS OR kaos 300k/celana 400k termasuk PPN -> HPS 384.409.300; dokumen diperbarui, audit 0
+- 2026-10-29T02:58Z  seragam satpam: HPS tactical & biru 550k termasuk PPN -> HPS 385.116.900; dokumen diperbarui, audit 0
