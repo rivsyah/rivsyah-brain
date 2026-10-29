@@ -15,7 +15,7 @@ invoice; bill-to BUP Kemlu + NPWP satker. Metadata PDF (font Inter, producer kos
 dengan invoice Stripe asli dan dengan "Workers Paid aktif 11 Okt 08.58 WIB" di [[project_sigap_bup]].
 
 **Pilihan agent (asumsi, belum dikonfirmasi Aldo):**
-- Dibayar dengan KKP (pola langganan digital lain di KAK Lisensi 522119). Kalau ternyata kartu pribadi → ini penggantian, dokumennya beda.
+- Dibayar dengan KKP — **DIKONFIRMASI Aldo 29 Okt 2026**.
 - PPK = Charles Bob Ivan (penanda tangan KAK Lisensi Layanan Digital TA2026), bukan Rudy Setiawan dari template. Lihat [[reference-pejabat-bup]].
 - Akun 522119, MAK `6023.EBA.994.[RO].522119` — RO kosong.
 
