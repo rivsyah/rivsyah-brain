@@ -349,3 +349,7 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **29 Okt 10.5x**: penawaran Seragam Biru = HPS 495.400 (arahan Aldo), batas Biru ikut = HPS (sama perlakuan dengan Tactical).
   DKH Penawaran, Negosiasi (jendela Excel Aldo), Kalkulasi diperbarui. Penawaran Rp425.125.005; batas **Rp383.602.236**; HPS
   Rp385.116.900; pagu 400 jt. Skrip: scratchpad biru_hps.py. Audit + cek_semua: 0.
+- **29 Okt 11.xx**: **pagu kembali Rp390 jt** (arahan Aldo; konst.PAGU). Nama B.4 = **"Topi Coklat Lapangan"** (arahan Aldo) di
+  barang.py, spek, KAK (tabel volume, spek, tahapan), RAB/HPS, Matriks, Negosiasi, Kalkulasi, DKH Penawaran, lembar unit kerja (B26),
+  draf Penawaran_CV_Nagoya_Sesuai_.docx. HPS 385.116.900 (sisa pagu 4,88 jt), batas 383.602.236. Skrip: docx_ganti.py (ganti teks
+  lintas run), pagu_topi.py. Audit + cek_semua: 0.
