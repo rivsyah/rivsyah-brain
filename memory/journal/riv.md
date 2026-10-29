@@ -559,3 +559,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T06:12Z  29 Okt 2026 kemlu: paket Seragam Pengemudi v2 (KAK 4 hlm + RAB/HPS/Kertas Kerja) jadi; HPS Rp28.256.100 dari survei Katalog INAPROC; builder di ~/dev/kemlu/seragam-pengemudi-2026; file RAB-saja lama dihapus.
 - 2026-10-29T06:43Z  Tambah voiceover edge-tts (id-ID-ArdiNeural) ke motion-demo; scene/subtitle/animasi sinkron ke timing kalimat; video 75 dtk
 - 2026-10-29T06:46Z  Aldo setujui suara Ardi untuk motion-demo; footage stok tertahan: belum ada key Pexels/Pixabay
+- 2026-10-29T06:48Z  Aldo menilai suara edge-tts Ardi terlalu AI; card motion-demo dikoreksi; footage Pexels masih menunggu izin
