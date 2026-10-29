@@ -80,3 +80,11 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - Komposisi kendaraan (jenis, unit, hari) dirancang agent agar total <= 70 jt.
 - Metode = Pengadaan Langsung (dasar hukum Perlem LKPP 12/2021 jo 4/2024), bukan dikecualikan (Perlem 5/2021) seperti hotel.
 - Tanggal teken "......... Oktober 2026". Dibuat 17 Okt = 1 hari sebelum kegiatan: kontrak harus ada sebelum 18 Okt.SPPBJ + SPK kini merujuk BA Penetapan. Aldo menghapus PDF + `_arsip` di folder MOFA -> salin .docx saja; PP-4 Laporan lama dihapus.
+
+## Rekapitulasi penugasan harian (29 Okt 2026)
+- SPK butir 10.a: permintaan serah terima dilampiri rekap daftar penugasan harian yang diketahui panitia.
+- Contoh Excel: `Rekapitulasi Penugasan Harian - Sewa Kendaraan (contoh).xlsx` di folder paket. Sheet Petunjuk, Rekap
+  (matriks unit x tanggal 18-22 Okt + ringkasan per jenis vs SPK + TTD Penyedia & Pihak Pengguna), Lembar Harian
+  (50 baris unit-hari; jam mulai/selesai, lembur > 12 jam otomatis). Isian kuning, nama/nopol placeholder.
+  Builder di scratchpad sesi (tidak disimpan). Dihitung ulang via Excel COM: 0 error, 50 unit-hari.
+- 18 Okt 2026 = Minggu. Layanan 17 Okt (sebelum SPK) TIDAK masuk rekap.
