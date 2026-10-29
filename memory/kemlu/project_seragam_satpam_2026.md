@@ -353,3 +353,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   barang.py, spek, KAK (tabel volume, spek, tahapan), RAB/HPS, Matriks, Negosiasi, Kalkulasi, DKH Penawaran, lembar unit kerja (B26),
   draf Penawaran_CV_Nagoya_Sesuai_.docx. HPS 385.116.900 (sisa pagu 4,88 jt), batas 383.602.236. Skrip: docx_ganti.py (ganti teks
   lintas run), pagu_topi.py. Audit + cek_semua: 0.
+- **29 Okt**: draf surat `Dokumen Penyedia/Penawaran_CV_Nagoya_Sesuai_.docx` (berstempel CV Nagoya) disamakan dengan DKH Penawaran
+  (36 baris nama/spek/vol/harga/jumlah, subjumlah, total Rp425.125.005, terbilang, tanggal Rabu 28 Okt 2026). Acuan = DKH
+  Penawaran (sama dengan Negosiasi). Skrip penawaran_docx.py. Docx dan DKH perlu ditandatangani ulang penyedia.
