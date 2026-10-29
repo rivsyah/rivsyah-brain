@@ -73,3 +73,8 @@ metadata:
   putus-putus); kode MXC, prefix mxc_. Brand sheet: artifact privat
   https://claude.ai/artifact/5VcrbbFsFBDqkc8HHUM9rx. Status: proposal, menunggu persetujuan owner.
   Bukan badan hukum — belum ada PT/entitas legal terdaftar.
+- **29 Okt 2026 — alternatif logo** (`brand/options/b-double-x.svg`, `c-seal.svg`; perbandingan
+  `brand/logo-options.html`, artifact https://claude.ai/artifact/FgcYDKZhF5FVjt4Y2dVSaZ): B Double X
+  (dua X bersilang + berlian emas; unik tapi rusak di 16 px), C Seal (M Didone dalam cincin ganda;
+  aman tapi generik). Rekomendasi Bara: tetap A (high-water mark); C opsional sebagai cap di laporan PDF.
+  Belum ada pilihan owner.
