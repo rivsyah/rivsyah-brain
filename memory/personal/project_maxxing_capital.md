@@ -65,3 +65,11 @@ metadata:
   di bursa. Q16 dibuka: apakah agent desk tetap butuh saham AS (Alpaca paper) — keputusan sebelum M1.5.
   Sisa input Aldo: alamat wallet Hyperliquid (Q15), IPS (Q13), Telegram (Q9); blocker build: WSL +
   CLOUDFLARE_ACCOUNT_ID.
+
+- **29 Okt 2026 — identitas brand v1** (`brand/` di repo, belum di-commit): mark = huruf M sebagai
+  grafik harga yang puncak kanannya menembus garis high-water mark emas putus-putus; warna & huruf
+  memakai token FFCC (navy/gold/ink/paper; Bodoni Moda, Libre Franklin, IBM Plex Mono). Entitas:
+  Maxxing Capital (induk) → Maxxing Copilot (badge LIVE navy padat) + Maxxing Desk (badge PAPER
+  putus-putus); kode MXC, prefix mxc_. Brand sheet: artifact privat
+  https://claude.ai/artifact/5VcrbbFsFBDqkc8HHUM9rx. Status: proposal, menunggu persetujuan owner.
+  Bukan badan hukum — belum ada PT/entitas legal terdaftar.
