@@ -356,3 +356,5 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **29 Okt**: draf surat `Dokumen Penyedia/Penawaran_CV_Nagoya_Sesuai_.docx` (berstempel CV Nagoya) disamakan dengan DKH Penawaran
   (36 baris nama/spek/vol/harga/jumlah, subjumlah, total Rp425.125.005, terbilang, tanggal Rabu 28 Okt 2026). Acuan = DKH
   Penawaran (sama dengan Negosiasi). Skrip penawaran_docx.py. Docx dan DKH perlu ditandatangani ulang penyedia.
+- **29 Okt — arahan Aldo: JANGAN ada tulisan "revisi"** di dokumen. Penawaran 28 Okt disebut "penawaran 28 Okt" (bukan revisi). DKH
+  nomor ": No. 0873, 28 Oktober 2026". Builder (build_xlsx, catatan, harga) dan SSKK ("direvisi" -> "diubah") disesuaikan.

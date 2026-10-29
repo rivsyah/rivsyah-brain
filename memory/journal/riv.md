@@ -553,3 +553,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T03:51Z  seragam satpam 29 Okt: cek menyeluruh setelah dasi dikonfirmasi - 0 temuan (KAK, RAB/HPS, Matriks, SSKK, Negosiasi, Kalkulasi, DKH Penawaran)
 - 2026-10-29T04:40Z  seragam satpam: pagu 390 jt; nama Topi Coklat Lapangan di semua dokumen; cek 0
 - 2026-10-29T05:04Z  seragam satpam: docx penawaran disamakan dengan DKH (425.125.005)
+- 2026-10-29T05:09Z  seragam satpam: kata 'revisi' dihapus dari semua dokumen (arahan Aldo); DKH nomor 'No. 0873, 28 Oktober 2026'
