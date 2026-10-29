@@ -314,3 +314,12 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   (banyak NAIK dari V2): kopel 150.000, pet 135.000, topi abu 65.000, sepatu PDH 360.700, baton 130.000, pin kewenangan 40.000 (magnet),
   rompi 175.000, ikat 44.500, pin Gada 28.500, kur kuning 30.000. Hilang: seragam Tactical, seragam Biru, dasi, kaos dalam saja D/E.
   Total (hilang dihitung pada batas) Rp421.170.630 +PPN > HPS 386,99 jt dan > pagu 390 jt; selisih vs batas +Rp46,0 jt.
+- **29 Okt — HPS diatur ulang (arahan Aldo)**: paket PDH dan PDL Sus = SBM (1.584.969 +PPN); seragam/sepatu PDL = harga sepakat
+  (PDH 439.600, PDL Sus 468.300, sepatu PDL 360.700, Biru = PDL 468.300); kopel/pet naik karena logo Kemlu kualitas lebih baik tapi
+  DIBATASI SBM: kopel 92.200 (isi paket B), pet 107.000 (isi paket A) — penawaran revisi 150.000/135.000 tidak muat SBM; tactical
+  480.000, topi tactical 65.000, kaos OR 250.000, celana OR 400.000 (diasumsikan belum PPN). **HPS Rp388.197.100**. **Pagu Rp400 jt**
+  (arahan Aldo "maksimal 400 jt"). harga.py `_isi_sbm()`; build_xlsx kini mereplikasi suntingan Aldo 24 Okt (metode, tanpa
+  "(tambahan)", subtotal kelompok RAB, ttd naik 2 baris) -> RAB/HPS boleh dibangun ulang lagi. Kalkulasi & Negosiasi = berkas
+  Aldo (struktur diubah 24 Okt): disunting in-place (xl_set.ps1), hanya HPS/pagu; batas nego tidak diubah. Batas nego > HPS baru:
+  kaos OR 297.200 > 250.000, Biru 480.000 > 468.300. PDF Nego (sheet 'Negosiasi per Barang') dan Kalkulasi (sheet 'Rincian') dirender
+  ulang per sheet (sheet_pdf.ps1). KAK total/pagu via kak_total2.py (run terpecah). Audit 0.
