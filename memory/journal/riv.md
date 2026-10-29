@@ -562,3 +562,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T06:48Z  Aldo menilai suara edge-tts Ardi terlalu AI; card motion-demo dikoreksi; footage Pexels masih menunggu izin
 - 2026-10-29T06:52Z  29 Okt 2026: paket tagihan Microsoft 365 Personal pk.sekjen (order 8459959902, Rp1.359.999) dibuat dari template JNE/TIKI, docx+pdf di Downloads\MOFA\Revisi Keuangan RKA DIPA; kartu project_tagihan_ms365_sekjen
 - 2026-10-29T06:53Z  kemlu: berkas tagihan ChatGPT Business 2 seat (OpenAI BP4WSXFG-0001, Rp934.620) dibuat dari templat bundel JNE TIKI di Downloads\MOFA\Revisi Keuangan RKA DIPA; isian kuning nomor/akun/penanda tangan/KKP/pengirim ND. Kartu kemlu/project_tagihan_chatgpt_business.
+- 2026-10-29T06:53Z  ElevenLabs disiapkan untuk motion-demo (engine switch di make_vo.py, key di keys.catalog); menunggu Aldo isi ELEVENLABS_API_KEY
