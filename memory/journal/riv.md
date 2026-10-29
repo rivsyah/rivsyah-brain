@@ -579,3 +579,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T09:38Z  Maxxing Capital: 2 alternatif logo (B Double X, C Seal) + halaman perbandingan dipublish; rekomendasi tetap A
 - 2026-10-29T09:40Z  Tesis Erna: olah data Google Form (111 jawaban, 86 lolos kriteria) -> Thesis Teh Erna\Olah_Data_Uji_Instrumen_Erna.xlsx (data numerik 1-5 tanpa identitas, uji validitas Pearson item-total r tabel 0,212, Cronbach FNT .878 FAA .860 KIH .901 EBO .881; semua valid & reliabel). n=86 < 107 minimum Green di proposal.
 - 2026-10-29T10:46Z  29 Okt 2026: draf postingan LinkedIn ajakan kolaborasi teknologi AIgnited (link projects.aignited.id + aignited.id), data dari situs live: 20 produk, 9 Live/6 Beta/5 Demo, 7 sektor. Draf di chat saja, belum diposting.
+- 2026-10-29T13:12Z  kemlu: challenge PNBP proses bisnis Kemlu dijawab di chat; card kemlu/idea_pnbp_proses_bisnis_kemlu.md
