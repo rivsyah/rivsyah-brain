@@ -5,6 +5,7 @@
 
 ## NOW — active focus (update when it goes stale)
 
+- 🟡 29 Okt 2026 — **Tagihan Microsoft 365 Personal pk.sekjen** (order 8459959902, Rp1.359.999): 7 dok dari template JNE di `DownloadsMOFARevisi Keuangan RKA DIPA`; isian kuning: akun 522119, penjual, penandatangan penyedia, nomor surat, pajak. [Tagihan MS365 Sekjen](kemlu/project_tagihan_ms365_sekjen.md).
 - 🟡 29 Okt 2026 — **Seragam Pengemudi: KAK sederhana + RAB + HPS jadi** (40 x standar + batik, pagu Rp30 jt; HPS Rp28.256.100 dari survei Katalog 29 Okt, batik hanya 2 sumber YA) di `Downloads\MOFA\Pejabat Pengadaan\Pengadaan Seragam Pengemudi Kemlu 2026\`; isian kuning: subkomponen, RUP, warna; bisa UP/TUP (deadline TUP 30 Okt); kartu memuat kalender pendaftaran kontrak LS 2026. [Seragam Pengemudi 2026](kemlu/project_seragam_pengemudi_2026.md).
 - 🟡 28 Okt 2026 — **SOP Mikro Monev Jamkes PIMPRI** (model SOP Jamkes.xlsx Biro Keuangan; dasar Permenlu 7/2023 Ps 14–15): 10 langkah s.d. BP pakai hasil monev sbg data sumber pembaruan pedoman; file `Downloads\SOP Monev Jamkes Pimpri.xlsx`. Asumsi: BP = Jasindo, waktu per langkah. [SOP Monev Jamkes](kemlu/project_sop_monev_jamkes_pimpri.md).
 - 🟡 28 Okt 2026 — **Nota balasan Pokja komputer GPU Pusdatin** (ND 54823/PL/10/2026/80, Rp955,06 jt PNBP, mini-kompetisi): draf .docx di Downloads, Pokja Rivaldo/Enica/Hideki; nomor+tanggal kosong, pangkat IIIb vs IIIa belum pasti. [Nota Pokja GPU Pusdatin](kemlu/project_nota_pokja_komputer_gpu_pusdatin.md).
