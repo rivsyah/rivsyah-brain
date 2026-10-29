@@ -330,3 +330,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   "pagu", dibaca sebagai HPS per stel). Biru tidak lagi diikat ke PDL Sus. **HPS total Rp385.116.900**, pagu 400 jt. Batas nego Biru
   480.000 kini < HPS (beres); tinggal kaos OR 297.200 > HPS 270.200. Aldo menyimpan RAB 09.56 (hanya tinggi baris 8 RAB = 25,15) ->
   dimasukkan ke build_xlsx. Semua dokumen + PDF diperbarui; audit 0.
+- **29 Okt (lanjutan 3)**: batas nego kaos OR -> 270.200 (= HPS, Rp300 rb +PPN; arahan Aldo). Total batas nego **Rp369.882.525** +PPN.
+  Cek menyeluruh (`cek_semua.py` + audit.py, scratchpad): 0 temuan. Terbuka: batas nego kopel 67.800/pet 64.100/topi tactical
+  17.500/tactical 335.400 masih berbasis penawaran V2 walau HPS sudah dinaikkan (keputusan Aldo); DKH di Dokumen Penyedia spek lama.
