@@ -11,8 +11,8 @@ metadata:
 - Stack: Remotion 4.0.539 + React 19.2. `npm run studio` untuk preview, `npm run render` untuk MP4. Render ~1 menit di laptop ini.
 - Komponen di `src/ui.tsx`: Contour (latar garis kontur bergerak), Pill, Highlight (sapuan highlight), DocCard (kartu dokumen serif), Caption, Chrome (kredit + logo IR). Scene di `src/Demo.tsx`, daftar `SCENES` = [komponen, durasi frame].
 - Referensi gaya: video TSCS "WTF Just Happened to Indonesia?" (youtube 21-G0C_bXYI). Tiru gaya, jangan salin aset/brand mereka.
-- Voiceover: `edge-tts` 7.3.1 (pip, gratis, tanpa key; endpoint tidak resmi Microsoft Edge), suara `id-ID-ArdiNeural` rate +6%. Alternatif: `id-ID-GadisNeural`. Tidak ada key TTS berbayar di env.db.
+- Voiceover: `edge-tts` 7.3.1 (pip, gratis, tanpa key; endpoint tidak resmi Microsoft Edge), suara `id-ID-ArdiNeural` rate +6% — **disetujui Aldo 29 Okt 2026 setelah didengar; jadikan default**. Alternatif: `id-ID-GadisNeural`. Tidak ada key TTS berbayar di env.db.
 - Alur VO: ubah naskah di `vo/script.json` -> `python vo/make_vo.py` (tulis `public/vo/*.mp3` + `src/vo.json` berisi timing kalimat) -> `npm run render`. Durasi scene, subtitle, dan animasi otomatis ikut timing kalimat lewat `useCue(i)`.
-- Belum: footage stok berlisensi; kualitas suara belum didengar manusia.
+- Belum: footage stok berlisensi; footage butuh sumber berlisensi (Pexels/Pixabay API key belum ada di env.db) atau file dari Aldo.
 
 **Jebakan:** garis SVG yang "digambar" pakai `pathLength={1}` + `strokeDasharray={1}`; dasharray angka tetap memotong garis yang lebih panjang.
