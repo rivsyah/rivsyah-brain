@@ -333,3 +333,8 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
 - **29 Okt (lanjutan 3)**: batas nego kaos OR -> 270.200 (= HPS, Rp300 rb +PPN; arahan Aldo). Total batas nego **Rp369.882.525** +PPN.
   Cek menyeluruh (`cek_semua.py` + audit.py, scratchpad): 0 temuan. Terbuka: batas nego kopel 67.800/pet 64.100/topi tactical
   17.500/tactical 335.400 masih berbasis penawaran V2 walau HPS sudah dinaikkan (keputusan Aldo); DKH di Dokumen Penyedia spek lama.
+- **29 Okt (lanjutan 4)**: batas nego kopel 92.200, pet 107.000, topi tactical 65.000, seragam tactical 495.400 = HPS baru (arahan
+  Aldo). Total batas **Rp383.345.826** +PPN. Paket batas PDH 1.574.091 / PDL 1.576.755: di atas arahan lama 1,5/1,55 jt (Kalkulasi
+  Uji Paket "Lewat"), masih < SBM. DKH Penawaran (Dokumen Penyedia, **berstempel CV Nagoya**) xlsx disesuaikan ke penawaran revisi
+  28 Okt (total Rp423.280.185; tactical/biru/dasi tetap harga V2; kaos dalam semua 69.100; spek terbaru; tanggal 28 Okt) — PDF
+  berstempel TIDAK dibuat ulang (harga belum ditandatangani penyedia). Cadangan: scratchpad backup_29okt_e.
