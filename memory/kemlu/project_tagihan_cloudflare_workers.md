@@ -16,7 +16,7 @@ dengan invoice Stripe asli dan dengan "Workers Paid aktif 11 Okt 08.58 WIB" di [
 
 **Pilihan agent (asumsi, belum dikonfirmasi Aldo):**
 - Dibayar dengan KKP — **DIKONFIRMASI Aldo 29 Okt 2026**.
-- PPK = Charles Bob Ivan (penanda tangan KAK Lisensi Layanan Digital TA2026), bukan Rudy Setiawan dari template. Lihat [[reference-pejabat-bup]].
+- PPK = Charles Bob Ivan (penanda tangan KAK Lisensi Layanan Digital TA2026), bukan Rudy Setiawan dari template — **DIKONFIRMASI Aldo 29 Okt 2026**. Lihat [[reference-pejabat-bup]].
 - Akun 522119, MAK `6023.EBA.994.[RO].522119` — RO kosong.
 
 **Isian kuning tersisa:** nomor dokumen + kode bagian, hari/tanggal BAST/BAPP, nilai Rp (dari lembar tagihan KKP),
