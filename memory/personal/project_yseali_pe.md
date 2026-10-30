@@ -5,7 +5,7 @@ metadata:
   type: project
 ---
 
-**Status 30 Okt 2026:** syarat sudah diriset. Kerangka 3 esai + video (tema 1 Economic Prosperity, tema 2 Liberty and Freedom) sudah diberikan di chat. Aldo menulis kalimat finalnya sendiri. Belum pilih proyek; kandidat: (A) adopsi AI untuk kerja administrasi unit pemerintah, (B) literasi AI untuk UMKM/kreator muda, (C) pelatihan AI internal di unit kerja. Belum mulai di portal.
+**Status 30 Okt 2026:** syarat sudah diriset. Kerangka 3 esai + video (tema 1 Economic Prosperity, tema 2 Liberty and Freedom) sudah diberikan di chat. Aldo menulis kalimat finalnya sendiri. **30 Okt: Aldo pilih Proyek A** (adopsi AI untuk kerja administrasi kanselerai, pilot satu unit, ukur jam kerja). Kandidat semula: (A) adopsi AI untuk kerja administrasi unit pemerintah, (B) literasi AI untuk UMKM/kreator muda, (C) pelatihan AI internal di unit kerja. Belum mulai di portal.
 
 Fakta resmi (dicek 30 Okt 2026 di id.usembassy.gov/yseali-professional-exchange dan ysealiexchange.org/apply, /faqs):
 - Tenggat: **10 Des 2026, 10:00 ET = 22:00 WIB**. Satu aplikasi untuk dua kohort.
