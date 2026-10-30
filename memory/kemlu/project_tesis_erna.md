@@ -159,3 +159,11 @@ Jebakan teknis: Word COM putus koneksi saat `Close` (file sudah tersimpan); Word
 Status: deck, naskah, checklist v2, dan proposal revisi selesai. Erna tinggal mengecek 33 komentar sebelum 7 Okt.
 Render slide di mesin ini memakai PowerPoint COM (`Slide.Export`).
 LibreOffice dan poppler tidak ada; render PDF pakai PyMuPDF (`python` 3.11, bukan `py`).
+
+**Data & BAB 4 (29–30 Okt 2026):** Google Form: 111 jawaban, 86 lolos kriteria (52 Perwakilan + 15 satker pusat).
+Semua 28 butir valid (r tabel 0,212), alpha .860–.901. Regresi (skor total): F 9,249 sig .000, R² .253;
+H1 ditolak (FNT +0,164, p .108, arah terbalik), H2 ditolak (FAA p .117), H3 diterima (KIH p .038, Beta .271).
+Sensitivitas: tanpa satker pusat (n=71) FAA sig .016 & KIH .001 — keputusan populasi harus dari desain (kriteria
+kuesioner no.1 "bertugas di Perwakilan" vs Bab 3 memasukkan staf pusat), bukan dari hasil. n=86 < 107 (Green).
+Shapiro .024 vs K-S .846. Output: `Olah_Data_Uji_Instrumen_Erna.xlsx`, `BAB_4_Draf_Erna.docx/.pdf` (5 komentar).
+Builder `~/dev/kemlu/tesis-erna/build_bab4.js` + `hasil_bab4.json`. Pembahasan = draf; Erna wajib menulis ulang.
