@@ -582,3 +582,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-29T13:12Z  kemlu: challenge PNBP proses bisnis Kemlu dijawab di chat; card kemlu/idea_pnbp_proses_bisnis_kemlu.md
 - 2026-10-29T13:13Z  Kemlu: contoh Excel rekap penugasan harian sewa kendaraan (SPK 10.a) di folder paket Sewa Kendaraan DHAM; kartu diperbarui
 - 2026-10-30T01:29Z  Tesis Erna: draf BAB 4 13 hlm -> Thesis Teh Erna\BAB_4_Draf_Erna.docx/.pdf (builder ~/dev/kemlu/tesis-erna/build_bab4.js). n=86: F 9,249 sig .000, R2 .253; H1 ditolak (FNT +0,164 p .108, arah terbalik), H2 ditolak (FAA p .117), H3 diterima (KIH p .038). Sensitivitas tanpa 15 resp. satker pusat (n=71): FAA sig .016, KIH .001. Shapiro p .024 vs K-S .846. n<107 Green.
+- 2026-10-30T01:41Z  Maxxing Capital: owner pilih logo A (high-water mark) -> D24 locked di DECISIONS.md, brand/README diperbarui
