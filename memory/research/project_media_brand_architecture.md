@@ -36,3 +36,5 @@ Riwayat nama yang dipertimbangkan sebelumnya (Wallace Line, Ephemeris, Lightcone
 - Trajectory = busur bertitik dari titik oranye ke ujung teal (data diplot → proyeksi), aksen teal.
 - Ignited Research = 3 gelombang konsentris dari titik oranye (lapis analisis), aksen navy; ada versi satu warna untuk cetak.
 - Tanpa tagline (agent tidak mengarang slogan). Canvas: https://claude.ai/artifact/4g89vkyHtzp5g4ahgg1ufU (privat). Sumber: SVG inline di file .dc.html; belum ada ekspor SVG/PNG final.
+
+**Ekspor v1 (30 Okt 2026, disetujui Aldo):** `C:\Users\rivsy\Downloads\AIgnited\Media Brands\` (mesin riv), subfolder `ignition\`, `trajectory\`, `ignited-research\`, masing-masing `svg\` + `png\`. Per merek 7 varian: symbol, symbol-dark, avatar (1080, latar navy), logo-light/-dark, logo-endorsed-light/-dark ("by aignited"). PNG transparan kecuali avatar; logo lebar 2400 px, simbol 1024 px. Teks di SVG sudah outline (tidak butuh font). Pembuat ulang: `_source\export_logos.py <folder_font> <folder_output>` — butuh Poppins SemiBold+Regular (google/fonts), fonttools, uharfbuzz, Chrome headless.

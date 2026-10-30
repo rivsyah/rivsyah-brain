@@ -595,3 +595,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T04:50Z  Kemlu: BAST sewa kendaraan DHAM dibuat (build_bast.py), docx di MOFA Dokumen PPK
 - 2026-10-30T05:18Z  Cek IG 30 Okt: @ignition/@trajectory dipakai; @ignition.id @trajectory.id @ignitedresearch tampak kosong. Dicatat di kartu media_brand_architecture.
 - 2026-10-30T05:28Z  Logo v1 draf 3 merek media (Ignition percikan / Trajectory busur / Ignited Research gelombang), palet+font aignited, canvas artifact 4g89vkyHtzp5g4ahgg1ufU. Kartu media_brand_architecture diupdate.
+- 2026-10-30T05:32Z  Ekspor logo v1 3 merek media: 42 file SVG+PNG ke Downloads/AIgnited/Media Brands + _source/export_logos.py. Kartu diupdate.
