@@ -14,7 +14,7 @@ Blueprint v0.2: `C:\Users\rivsy\dev\personal\nusaterra-capital\BLUEPRINT.md` (me
 
 ## Jawaban Aldo (30 Okt 2026) — HARD
 - Pendiri tunggal, Aldo = co-founder dan direksi sendiri.
-- **Terpisah penuh dari AIgnited** → scope `personal/` (dipindah dari `aignited/` hari yang sama). Jangan bawa fakta/aset AIgnited ke sini tanpa izin Aldo.
+- ~~Terpisah penuh dari AIgnited~~ → **DIGANTI 30 Okt 2026 (kata Aldo): AIgnited berada di bawah NusaTerra Ventures.** Kartu tetap di scope `personal/`; Aldo sendiri yang menautkan kedua scope, jadi nama/peran AIgnited boleh muncul di NusaTerra. Fakta operasional AIgnited lain (klien, GPU, keuangan) tetap jangan dibawa tanpa izin.
 - Nama tetap NusaTerra, domain **nusaterra.vc**.
 - Modal tahun 1: **Rp1 miliar** (asumsi agent: "1M" = Rp1 miliar).
 
@@ -45,7 +45,12 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 - Website statis 1 halaman, English, dicek desktop + 375 px (tanpa overflow). Preview: launch.json `nusaterra-site` di ~/Bara/.claude (python http.server 8731). Disclaimer: modal sendiri, bukan penawaran efek, tak terima dana publik. Kontak placeholder hello@nusaterra.vc (domain belum dibeli). Tanpa nama pendiri dan tanpa portofolio palsu.
 - Jebakan: IntersectionObserver tidak jalan di pane tersembunyi → isi tak tampil; pakai cek getBoundingClientRect saat scroll + kelas `.js`.
 
+## Opsi desain deep blue (30 Okt 2026)
+- Aldo suka deep blue → `site/options.html`: A Deep Horizon (Horizon biru #0B1F3A + amber #F2A541, Fraunces; REKOMENDASI), B Archipelago (monogram N 3 pulau, #071A33 + biru elektrik #4D8DFF, Space Grotesk), C Tidal (3 gelombang dalam lingkaran, gradasi biru + lime #C4F25C, Sora). Menunggu pilihan Aldo; website penuh dibangun ulang setelah dipilih.
+- Website: AIgnited ditambahkan (kartu portofolio "NusaTerra Ventures company" → aignited.id, baris di kartu Ventures, footer).
+- Konflik makin nyata: Ignited Research (di bawah AIgnited) kini satu grup dengan Maxxing (trading) → restricted list wajib sebelum transaksi pertama.
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
-2. Setujui logo Horizon + website; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
+2. Pilih opsi desain A/B/C + setujui website; status hukum AIgnited (PT? pemegang saham lain?) sebelum ditulis 'under' secara publik; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
 3. Beli nusaterra.vc + cek AHU/PDKI. 4. Notaris: PT Perorangan + KBLI.
