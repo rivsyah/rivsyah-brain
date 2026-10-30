@@ -91,3 +91,8 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
 - 30 Okt: Aldo minta lebih sederhana -> berkas yang sama DITIMPA versi 1 sheet, 1 hlm A4 portrait: baris per hari
   (unit Alphard/Zenix/Hiace + jumlah, penugasan, paraf panitia), total 50 unit-hari, TTD Penyedia + Pihak Pengguna.
   Lembar Harian, lembur, dan perbandingan SPK dihapus. Isi kolom Penugasan = contoh agent, belum data riil.
+- 30 Okt: **BAST** `Dokumen PPK\9. BAST - Sewa Kendaraan Retreat Dewan HAM.docx` (2 hlm; builder build_bast.py, impor
+  layout build_dok). PIHAK PERTAMA PPK Nurul Sofia, PIHAK KEDUA Tarobali (I Wayan Sutrisna); dasar SPK + surat permintaan
+  serah terima + rekap; Pasal 1 tabel volume SPK vs terlaksana (15/25/10 = 50), Pasal 2 pemeriksaan, Pasal 3 nilai
+  Rp111.555.000 (kuning = nego), lembur/luar area + denda kuning. Tanggal BAST kuning: diisi tanggal riil saat diteken
+  (jadwal SPK: serah terima paling lambat 23 Okt -> sudah lewat; jangan dimundurkan).
