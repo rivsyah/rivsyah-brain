@@ -366,3 +366,8 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   Negosiasi, Kalkulasi (baris TONGKAT baru di Harga Final r35), DKH Penawaran, docx penawaran, lembar unit kerja (B14 Tongkat T,
   B30 Baton Stick), PDF semua dibuat ulang. **Pelajaran: pembulatan PPN harus setengah-ke-atas seperti Excel** (Python round =
   banker's -> selisih Rp1). Audit + cek_semua 0.
+- **30 Okt (lanjutan)**: pin kewenangan **model magnet** (arahan Aldo; spek + lembar unit kerja E15/E31). **Sepatu Tactical dipisah**
+  dari sepatu PDL Sus: id `sepatu_tactical` (D.5), HPS = penawaran = batas **Rp400.000** belum PPN; pembanding pasar = survei boots
+  sepatu_pdl (pasar.py). KAK baris spek "Sepatu Tactical" baru (25 baris), Kalkulasi baris SEP_TAC (Harga Final r36). **HPS
+  Rp384.053.000**; penawaran **Rp383.530.142**; batas **Rp380.474.534**; pagu 390 jt. Satu-satunya penawaran > batas: sepatu PDH
+  360.700 (batas 335.900, HPS 340.000). Semua dokumen + PDF diperbarui; audit + cek_semua 0.
