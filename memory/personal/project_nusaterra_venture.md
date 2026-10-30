@@ -50,7 +50,12 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 - Website: AIgnited ditambahkan (kartu portofolio "NusaTerra Ventures company" → aignited.id, baris di kartu Ventures, footer).
 - Konflik makin nyata: Ignited Research (di bawah AIgnited) kini satu grup dengan Maxxing (trading) → restricted list wajib sebelum transaksi pertama.
 
+## Brand v2 DIPILIH (30 Okt 2026)
+- Aldo pilih **opsi A Deep Horizon** → locked. Deep Blue #0B1F3A, Mid Blue #1D3A66, Amber #F2A541 (teks di atasnya Deep Blue), Amber Deep #B06A12 (teks di latar terang), Mist #EEF3FA, Slate #5B6B82; Fraunces + Libre Franklin + IBM Plex Mono.
+- brand/*.svg, favicon, README, dan site/index.html sudah dipindah ke palet ini; dicek desktop + 375 px (tanpa overflow). Laterit v1, B Archipelago, C Tidal tidak dipakai.
+- Jangan pakai emas Maxxing #B08D46 di materi NusaTerra.
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
-2. Pilih opsi desain A/B/C + setujui website; status hukum AIgnited (PT? pemegang saham lain?) sebelum ditulis 'under' secara publik; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
+2. Setujui isi website; status hukum AIgnited (PT? pemegang saham lain?) sebelum ditulis 'under' secara publik; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
 3. Beli nusaterra.vc + cek AHU/PDKI. 4. Notaris: PT Perorangan + KBLI.
