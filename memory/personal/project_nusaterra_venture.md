@@ -69,6 +69,8 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 - Perps Hyperliquid jangan atas nama PT sampai ada pendapat konsultan pajak & hukum.
 - Fakta regulasi lengkap: [[reference_pendirian_pt_2026]].
 
+- Bahan surat izin atasan (kerangka, poin per paragraf, 7 komitmen, lampiran, langkah setelah kirim) = Claude Doc privat: https://claude.ai/artifact/Kqs9mvjfMT1CDbkgkMcxgy. Bahan saja; Aldo menulis kalimatnya sendiri. Tanpa nama instansi/NIP.
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
 2. Setujui isi website; status hukum AIgnited (PT? pemegang saham lain?) sebelum ditulis 'under' secara publik; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
