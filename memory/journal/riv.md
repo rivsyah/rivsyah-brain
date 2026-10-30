@@ -608,3 +608,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T08:17Z  YSEALI PE: kerangka 3 esai + video diberikan; kandidat proyek A/B/C di kartu
 - 2026-10-30T08:22Z  YSEALI PE: Aldo pilih Proyek A; kerangka dipertajam (baseline 2 minggu, 3 use case, pilot 1 unit)
 - 2026-10-30T08:24Z  Koreksi Aldo: induk = NusaTerra VENTURE (bukan Capital); Maxxing + AIgnited jadi kartu Platforms sejajar; baris keluarga di Maxxing dihapus; folder kembali ke nusaterra-venture
+- 2026-10-30T08:45Z  NusaTerra: peta jalan pendirian & legalitas (Claude Doc CmwVCXLSSbgiuHKbFB92jb) + kartu referensi shared/reference/reference_pendirian_pt_2026.md; AIgnited card ditautkan

@@ -30,3 +30,5 @@ Status 30 Okt 2026 (dari Aldo): AIgnited belum punya badan hukum, legalitas, ata
 Draf 30 Okt 2026 (Claude Doc): https://claude.ai/artifact/YMVMA9GTR7tf6bj3Fn5Kst — A. 16 poin perjanjian pendiri (usulan vesting 4 th/cliff 1 th, ESOP ~10%, Dedi Dirut), B. 15 pertanyaan notaris, C. checklist + urutan. Semua isian [__] belum diputuskan.
 
 OPEN: nama PT, komposisi saham, modal, alamat domisili, KBLI final, izin instansi Aldo, notaris yang dipakai.
+
+30 Okt 2026 (sesi NusaTerra, Aldo yang menautkan): Aldo ingin AIgnited berada di bawah NusaTerra Venture (holding pribadinya). Konsekuensi: pemegang saham AIgnited bisa PT NusaTerra (bukan Aldo pribadi) + Dedi — putuskan bersama Dedi. Peta jalan grup: [[project_nusaterra_venture]]; fakta regulasi bersama: [[reference_pendirian_pt_2026]] (PP 20/2026: PT biasa baru TIDAK dapat PPh final 0,5%; PP 30/2026: PNBP pendirian PT modal ≤ Rp1 M = Rp600 rb).

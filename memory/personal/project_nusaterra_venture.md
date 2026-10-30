@@ -62,6 +62,13 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 - brand/*.svg, favicon, README, dan site/index.html sudah dipindah ke palet ini; dicek desktop + 375 px (tanpa overflow). Laterit v1, B Archipelago, C Tidal tidak dipakai.
 - Jangan pakai emas Maxxing #B08D46 di materi NusaTerra.
 
+## Peta jalan pendirian (30 Okt 2026)
+- Aldo: belum ada badan hukum, legalitas, atau administrasi. Claude Doc privat: https://claude.ai/artifact/CmwVCXLSSbgiuHKbFB92jb (peta entitas + Gerbang 0 + 9 langkah + administrasi + isu khusus + checklist 4 tahap).
+- Rekomendasi: 1 PT induk; Maxxing & Studio = divisi; PT AIgnited terpisah (PT biasa, bersama Dedi). Langkah #1 = izin tertulis atasan, karena PT Perorangan memaksa pendiri jadi direktur. Izin ditolak → PT biasa, Aldo pemegang saham + komisaris, direktur non-ASN (BUKAN nominee).
+- KBLI induk: 64210 + 70209. Software/AI dijalankan PT AIgnited.
+- Perps Hyperliquid jangan atas nama PT sampai ada pendapat konsultan pajak & hukum.
+- Fakta regulasi lengkap: [[reference_pendirian_pt_2026]].
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
 2. Setujui isi website; status hukum AIgnited (PT? pemegang saham lain?) sebelum ditulis 'under' secara publik; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
