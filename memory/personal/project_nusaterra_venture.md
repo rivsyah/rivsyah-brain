@@ -10,7 +10,7 @@ metadata:
 **Mulai 30 Okt 2026.** Aldo: build + invest di AI, teknologi, new energy, sustainability; privat dan
 publik; Indonesia dan luar negeri. Keputusan desain diserahkan ke agent.
 
-Blueprint v0.2: `C:\Users\rivsy\dev\personal\nusaterra-capital\BLUEPRINT.md` (mesin riv).
+Blueprint v0.2: `C:\Users\rivsy\dev\personal\nusaterra-venture\BLUEPRINT.md` (mesin riv).
 
 ## Jawaban Aldo (30 Okt 2026) — HARD
 - Pendiri tunggal, Aldo = co-founder dan direksi sendiri.
@@ -37,10 +37,17 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 - Pesaing terdekat: 100x100 (venture builder iklim regional, US$100 jt, Jun 2026).
 - Fakta: IDXCarbon Jan–Jul 2026 hanya 165.240 tCO2e; JETP komitmen US$21,8 M, terpakai US$3,1–3,5 M; listrik 2025 batu bara 66,5%.
 
-## Arsitektur merek + logo + website (30 Okt 2026)
+## KOREKSI ALDO 30 Okt 2026 — HARD
+- Induk = **NusaTerra Venture**. "NusaTerra Capital" adalah salah tangkap agent; JANGAN dipakai lagi.
+- Struktur: NusaTerra Venture (Studio + investasi privat) → **Maxxing Capital** + **AIgnited**. Tidak ada sub-merek "NusaTerra Ventures" terpisah.
+- Website: Platforms = 3 kartu sejajar (Studio & Ventures, Maxxing, AIgnited dgn logo api dari `Downloads\AIgnited\New Logo\logosmall.png` → `site/assets/aignited-mark.png`); baris "A NusaTerra Capital company" di kartu Maxxing DIHAPUS (Aldo).
+- Folder kembali ke `~/dev/personal/nusaterra-venture`; launch.json `nusaterra-site` sudah diarahkan ke sana.
+- AIgnited punya dua pendiri (Aldo + Dedi) → klaim "di bawah NusaTerra Venture" secara publik butuh persetujuan Dedi + dasar kepemilikan.
+
+## Arsitektur merek + logo + website (30 Okt 2026, sebagian digantikan koreksi di atas)
 - Aldo: induk bernama **NusaTerra Capital**; **Maxxing Capital berada di bawahnya**, fokus active funds investing & trading.
 - Struktur (keputusan agent): NusaTerra Capital → NusaTerra Ventures (Studio + privat) + Maxxing Capital (ambil alih Public Book; brand D24 tetap, baris "A NusaTerra Capital company").
-- Folder diganti nama: ~/dev/personal/nusaterra-capital (brand/ + site/ + BLUEPRINT.md). Belum git.
+- Folder: ~/dev/personal/nusaterra-venture (brand/ + site/ + BLUEPRINT.md). Belum git.
 - Logo v1 "Horizon" (PROPOSAL): cakram, atas matahari laterit #B5532C, bawah 3 lapisan tanah ink #13221D; Paper #F4F0E8; Fraunces + Libre Franklin + IBM Plex Mono (2 terakhir sama dgn Maxxing).
 - Website statis 1 halaman, English, dicek desktop + 375 px (tanpa overflow). Preview: launch.json `nusaterra-site` di ~/Bara/.claude (python http.server 8731). Disclaimer: modal sendiri, bukan penawaran efek, tak terima dana publik. Kontak placeholder hello@nusaterra.vc (domain belum dibeli). Tanpa nama pendiri dan tanpa portofolio palsu.
 - Jebakan: IntersectionObserver tidak jalan di pane tersembunyi → isi tak tampil; pakai cek getBoundingClientRect saat scroll + kelas `.js`.
