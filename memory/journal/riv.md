@@ -600,3 +600,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T07:43Z  NusaTerra v0.2: jawaban Aldo (pendiri tunggal, terpisah penuh dari AIgnited -> scope personal, nusaterra.vc, modal Rp1 M); folder + kartu dipindah ke personal/
 - 2026-10-30T07:54Z  NusaTerra memo tesis v0.1 (Claude Doc 5h3DnG7NXLF6yu4knp8hBA): 30 target privat, 10 emiten, 3 ide Studio, peta pesaing; kartu diperbarui
 - 2026-10-30T08:05Z  AIgnited: peta + langkah pendirian PT disusun (kartu aignited/project_aignited_pendirian_pt.md); cek Permenkum 49/2025, PP 94/2021, KBLI 2025
+- 2026-10-30T08:07Z  NusaTerra Capital: logo Horizon + website 1 halaman (~/dev/personal/nusaterra-capital), Maxxing ditaruh di bawah NusaTerra Capital; launch.json nusaterra-site di ~/Bara/.claude
