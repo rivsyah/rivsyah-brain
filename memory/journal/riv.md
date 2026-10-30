@@ -603,3 +603,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T08:07Z  NusaTerra Capital: logo Horizon + website 1 halaman (~/dev/personal/nusaterra-capital), Maxxing ditaruh di bawah NusaTerra Capital; launch.json nusaterra-site di ~/Bara/.claude
 - 2026-10-30T08:09Z  AIgnited: Claude Doc draf perjanjian pendiri + pertanyaan notaris dibuat (link di kartu project_aignited_pendirian_pt)
 - 2026-10-30T08:13Z  NusaTerra: 3 opsi desain deep blue (site/options.html), AIgnited dipasang di bawah NusaTerra Ventures (keputusan Aldo, ganti 'terpisah penuh'), website diperbarui
+- 2026-10-30T08:16Z  YSEALI PE: riset syarat + checklist persiapan, kartu personal/project_yseali_pe.md
