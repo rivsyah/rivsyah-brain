@@ -358,3 +358,11 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   Penawaran (sama dengan Negosiasi). Skrip penawaran_docx.py. Docx dan DKH perlu ditandatangani ulang penyedia.
 - **29 Okt — arahan Aldo: JANGAN ada tulisan "revisi"** di dokumen. Penawaran 28 Okt disebut "penawaran 28 Okt" (bukan revisi). DKH
   nomor ": No. 0873, 28 Oktober 2026". Builder (build_xlsx, catatan, harga) dan SSKK ("direvisi" -> "diubah") disesuaikan.
+- **30 Okt — penawaran CV Nagoya 29 Okt** (`Downloads/0873. Kementrian Luar Negrii.pdf`, Kamis 29 Okt): semua = batas nego KECUALI
+  sepatu PDH 360.700 (batas 335.900, HPS 340.000 -> di atas HPS). Arahan Aldo: **A.8 Baton Stick PDH -> Tongkat T** (id `tongkat_t`,
+  HPS 60.000 = median 11 sumber Katalog 30 Okt, penawaran/batas 42.250; PDL Sus tetap Baton Stick 77.000); **kaos dalam D/E Rp55.000
+  termasuk sablon** (HPS = batas 55.000). Kopel 92.200/pet 107.000 dikunci di HARGA_PPK (`_isi_sbm` tidak dipanggil). **HPS
+  Rp383.398.600**; penawaran **Rp382.875.797**; batas **Rp379.820.189**; pagu 390 jt. KAK (A.8, baris spek 24), RAB/HPS, Matriks,
+  Negosiasi, Kalkulasi (baris TONGKAT baru di Harga Final r35), DKH Penawaran, docx penawaran, lembar unit kerja (B14 Tongkat T,
+  B30 Baton Stick), PDF semua dibuat ulang. **Pelajaran: pembulatan PPN harus setengah-ke-atas seperti Excel** (Python round =
+  banker's -> selisih Rp1). Audit + cek_semua 0.
