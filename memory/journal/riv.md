@@ -591,3 +591,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T02:18Z  Aldo putuskan Ignition gantikan Catalyst untuk media news/artikel (30 Okt). Kartu + index diupdate.
 - 2026-10-30T02:39Z  seragam satpam: pin kewenangan magnet; sepatu tactical terpisah HPS=penawaran 400k; HPS 384.053.000, penawaran 383.530.142, batas 380.474.534; cek 0
 - 2026-10-30T02:45Z  seragam satpam: HPS sepatu PDH 400k +PPN (360.300), tongkat T HPS 57.700 (SBM); HPS 386.270.700; cek 0
+- 2026-10-30T04:16Z  Kemlu: rekap penugasan harian sewa kendaraan disederhanakan jadi 1 sheet 1 halaman (ditimpa)

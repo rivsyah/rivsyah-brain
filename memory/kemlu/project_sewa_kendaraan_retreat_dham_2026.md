@@ -88,3 +88,6 @@ Referensi memakai kata "Rapat"; dokumen ini memakai "Retreat" sesuai permintaan 
   (50 baris unit-hari; jam mulai/selesai, lembur > 12 jam otomatis). Isian kuning, nama/nopol placeholder.
   Builder di scratchpad sesi (tidak disimpan). Dihitung ulang via Excel COM: 0 error, 50 unit-hari.
 - 18 Okt 2026 = Minggu. Layanan 17 Okt (sebelum SPK) TIDAK masuk rekap.
+- 30 Okt: Aldo minta lebih sederhana -> berkas yang sama DITIMPA versi 1 sheet, 1 hlm A4 portrait: baris per hari
+  (unit Alphard/Zenix/Hiace + jumlah, penugasan, paraf panitia), total 50 unit-hari, TTD Penyedia + Pihak Pengguna.
+  Lembar Harian, lembur, dan perbandingan SPK dihapus. Isi kolom Penugasan = contoh agent, belum data riil.
