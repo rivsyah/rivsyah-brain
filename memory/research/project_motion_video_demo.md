@@ -1,6 +1,6 @@
 ---
 name: project-motion-video-demo
-description: Demo video motion explainer gaya TSCS dengan Remotion untuk Ignited Research; lokasi, stack, status, jebakan
+description: Demo video motion explainer gaya TSCS dengan Remotion untuk merek Trajectory (sebelumnya Ignited Research); lokasi, stack, status, jebakan
 metadata:
   type: project
 ---
