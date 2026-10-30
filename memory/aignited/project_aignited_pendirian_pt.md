@@ -27,4 +27,6 @@ Status 30 Okt 2026 (dari Aldo): AIgnited belum punya badan hukum, legalitas, ata
   penerbitan software AI di 5829x, pemrograman lain 62199 (ex-62019). Cek tabel resmi di OSS sebelum dipakai.
 - Modal dasar PT ditentukan pendiri (PP 8/2021); ditempatkan & disetor minimal 25% modal dasar.
 
+Draf 30 Okt 2026 (Claude Doc): https://claude.ai/artifact/YMVMA9GTR7tf6bj3Fn5Kst — A. 16 poin perjanjian pendiri (usulan vesting 4 th/cliff 1 th, ESOP ~10%, Dedi Dirut), B. 15 pertanyaan notaris, C. checklist + urutan. Semua isian [__] belum diputuskan.
+
 OPEN: nama PT, komposisi saham, modal, alamat domisili, KBLI final, izin instansi Aldo, notaris yang dipakai.
