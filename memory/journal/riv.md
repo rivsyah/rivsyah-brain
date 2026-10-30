@@ -590,3 +590,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T02:01Z  seragam satpam 30 Okt: penawaran 29 Okt, Tongkat T PDH, kaos dalam D/E 55k; HPS 383.398.600, penawaran 382.875.797, batas 379.820.189; semua dokumen + PDF; cek 0
 - 2026-10-30T02:18Z  Aldo putuskan Ignition gantikan Catalyst untuk media news/artikel (30 Okt). Kartu + index diupdate.
 - 2026-10-30T02:39Z  seragam satpam: pin kewenangan magnet; sepatu tactical terpisah HPS=penawaran 400k; HPS 384.053.000, penawaran 383.530.142, batas 380.474.534; cek 0
+- 2026-10-30T02:45Z  seragam satpam: HPS sepatu PDH 400k +PPN (360.300), tongkat T HPS 57.700 (SBM); HPS 386.270.700; cek 0

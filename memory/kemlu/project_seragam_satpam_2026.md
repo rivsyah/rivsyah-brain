@@ -371,3 +371,6 @@ Kalkulasi Penawaran (build_kalkulasi_final.py) milik sesi 'Total penawaran dokum
   sepatu_pdl (pasar.py). KAK baris spek "Sepatu Tactical" baru (25 baris), Kalkulasi baris SEP_TAC (Harga Final r36). **HPS
   Rp384.053.000**; penawaran **Rp383.530.142**; batas **Rp380.474.534**; pagu 390 jt. Satu-satunya penawaran > batas: sepatu PDH
   360.700 (batas 335.900, HPS 340.000). Semua dokumen + PDF diperbarui; audit + cek_semua 0.
+- **30 Okt (lanjutan 2)**: HPS sepatu PDH = **Rp400.000 termasuk PPN** (dasar 360.300; arahan Aldo). Paket PDH HPS jadi > SBM ->
+  HPS Tongkat T diturunkan 60.000 -> **57.700** (`_isi_sbm('A','tongkat_t')`, batas nego tetap 42.250). Batas sepatu PDH = 360.300;
+  penawaran 360.700 (selisih Rp400). **HPS Rp386.270.700**; penawaran Rp383.530.142; batas **Rp383.480.858**; pagu 390 jt. Audit 0.
