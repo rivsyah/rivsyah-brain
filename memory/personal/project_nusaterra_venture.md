@@ -10,7 +10,7 @@ metadata:
 **Mulai 30 Okt 2026.** Aldo: build + invest di AI, teknologi, new energy, sustainability; privat dan
 publik; Indonesia dan luar negeri. Keputusan desain diserahkan ke agent.
 
-Blueprint v0.2: `C:\Users\rivsy\dev\personal\nusaterra-venture\BLUEPRINT.md` (mesin riv).
+Blueprint v0.2: `C:\Users\rivsy\dev\personal\nusaterra-capital\BLUEPRINT.md` (mesin riv).
 
 ## Jawaban Aldo (30 Okt 2026) — HARD
 - Pendiri tunggal, Aldo = co-founder dan direksi sendiri.
@@ -37,6 +37,15 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 - Pesaing terdekat: 100x100 (venture builder iklim regional, US$100 jt, Jun 2026).
 - Fakta: IDXCarbon Jan–Jul 2026 hanya 165.240 tCO2e; JETP komitmen US$21,8 M, terpakai US$3,1–3,5 M; listrik 2025 batu bara 66,5%.
 
+## Arsitektur merek + logo + website (30 Okt 2026)
+- Aldo: induk bernama **NusaTerra Capital**; **Maxxing Capital berada di bawahnya**, fokus active funds investing & trading.
+- Struktur (keputusan agent): NusaTerra Capital → NusaTerra Ventures (Studio + privat) + Maxxing Capital (ambil alih Public Book; brand D24 tetap, baris "A NusaTerra Capital company").
+- Folder diganti nama: ~/dev/personal/nusaterra-capital (brand/ + site/ + BLUEPRINT.md). Belum git.
+- Logo v1 "Horizon" (PROPOSAL): cakram, atas matahari laterit #B5532C, bawah 3 lapisan tanah ink #13221D; Paper #F4F0E8; Fraunces + Libre Franklin + IBM Plex Mono (2 terakhir sama dgn Maxxing).
+- Website statis 1 halaman, English, dicek desktop + 375 px (tanpa overflow). Preview: launch.json `nusaterra-site` di ~/Bara/.claude (python http.server 8731). Disclaimer: modal sendiri, bukan penawaran efek, tak terima dana publik. Kontak placeholder hello@nusaterra.vc (domain belum dibeli). Tanpa nama pendiri dan tanpa portofolio palsu.
+- Jebakan: IntersectionObserver tidak jalan di pane tersembunyi → isi tak tampil; pakai cek getBoundingClientRect saat scroll + kelas `.js`.
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
-2. Beli nusaterra.vc + cek AHU/PDKI. 3. Notaris: PT Perorangan + KBLI.
+2. Setujui logo Horizon + website; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
+3. Beli nusaterra.vc + cek AHU/PDKI. 4. Notaris: PT Perorangan + KBLI.

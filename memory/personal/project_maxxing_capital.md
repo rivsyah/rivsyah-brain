@@ -78,3 +78,4 @@ metadata:
   (dua X bersilang + berlian emas; unik tapi rusak di 16 px), C Seal (M Didone dalam cincin ganda;
   aman tapi generik). Rekomendasi Bara: tetap A (high-water mark); C opsional sebagai cap di laporan PDF.
   **30 Okt 2026: owner pilih A → D24 locked** (DECISIONS.md); B/C arsip ditolak.
+- **30 Okt 2026 — Maxxing Capital berada di bawah NusaTerra Capital** (kata Aldo): lini active investing & trading grup. Brand D24 tetap; baris keluarga "A NusaTerra Capital company". Lihat [[project_nusaterra_venture]].
