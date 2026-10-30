@@ -23,3 +23,5 @@ Demo motion yang sudah ada ([[project-motion-video-demo]]) sekarang milik Trajec
 **Belum dicek:** merek dagang DJKI, domain, handle Instagram/TikTok/X/LinkedIn. "Catalyst" nama generik dan ramai — butuh pembeda (mis. "Catalyst Indonesia" / domain khusus).
 
 Riwayat nama yang dipertimbangkan sebelumnya (Wallace Line, Ephemeris, Lightcone, Orrery, dll.) ada di journal riv 29–30 Okt 2026.
+
+**Alternatif Catalyst (cek handle 30 Okt 2026):** handle tanpa tambahan yang kosong = `@Ignition`, `@Meridian`, `@Spark`, `@Dispatch`, `@Inertia`. Rekomendasi Bara: **Ignition** (satu keluarga dengan Ignited, urutan Ignition → Trajectory → Ignited Research), cadangan **Meridian**. Hindari Tempo (media besar Indonesia), Dispatch (tabloid Korea), Spark (terlalu umum). Semua varian Fulcrum/Torque/Kinetic/Axis/Velocity dipakai. Belum diputuskan Aldo.
