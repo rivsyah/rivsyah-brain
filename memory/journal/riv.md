@@ -597,3 +597,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T05:28Z  Logo v1 draf 3 merek media (Ignition percikan / Trajectory busur / Ignited Research gelombang), palet+font aignited, canvas artifact 4g89vkyHtzp5g4ahgg1ufU. Kartu media_brand_architecture diupdate.
 - 2026-10-30T05:32Z  Ekspor logo v1 3 merek media: 42 file SVG+PNG ke Downloads/AIgnited/Media Brands + _source/export_logos.py. Kartu diupdate.
 - 2026-10-30T07:32Z  NusaTerra Venture dimulai: blueprint v0.1 di ~/dev/aignited/nusaterra-venture/BLUEPRINT.md + kartu aignited/project_nusaterra_venture.md; 5 pertanyaan terbuka ke Aldo
+- 2026-10-30T07:43Z  NusaTerra v0.2: jawaban Aldo (pendiri tunggal, terpisah penuh dari AIgnited -> scope personal, nusaterra.vc, modal Rp1 M); folder + kartu dipindah ke personal/
