@@ -28,6 +28,15 @@ Blueprint v0.2: `C:\Users\rivsy\dev\personal\nusaterra-venture\BLUEPRINT.md` (me
 - nusaterra.com + .id terdaftar pihak lain; nusaterra.vc NXDOMAIN (kemungkinan bebas, belum dibeli — beli = Aldo).
 - Restricted list wajib: Aldo juga memiliki unit riset yang menerbitkan rekomendasi saham.
 
+## Memo tesis v0.1 (30 Okt 2026)
+Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × Transisi Energi".
+- Celah: dana iklim ID menumpuk di PLTS atap + motor listrik; software AI operasi energi hampir tak punya investor; belum ada startup ID murni AI-energy software yang terdanai → isi lewat Studio.
+- Studio: SolarWatch, CarbonLedger Ekspor (paralel dulu), FactoryMeter (tunggu, butuh hardware). Nama = placeholder, belum cek merek.
+- 30 target privat; cocok tiket kecil (7): Arysun, Lumio Solar, Alternō, Blitz, Jejakin, CarbonEthics, Noovoleum.
+- 10 emiten pantau: PGEO, BREN, KEEN, NCKL, MBMA, ANTM, INCO, ADRO, TOBA, DCII (+ARKO); batas sektor nikel 40%.
+- Pesaing terdekat: 100x100 (venture builder iklim regional, US$100 jt, Jun 2026).
+- Fakta: IDXCarbon Jan–Jul 2026 hanya 165.240 tCO2e; JETP komitmen US$21,8 M, terpakai US$3,1–3,5 M; listrik 2025 batu bara 66,5%.
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
 2. Beli nusaterra.vc + cek AHU/PDKI. 3. Notaris: PT Perorangan + KBLI.
