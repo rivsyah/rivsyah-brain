@@ -605,3 +605,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T08:13Z  NusaTerra: 3 opsi desain deep blue (site/options.html), AIgnited dipasang di bawah NusaTerra Ventures (keputusan Aldo, ganti 'terpisah penuh'), website diperbarui
 - 2026-10-30T08:16Z  YSEALI PE: riset syarat + checklist persiapan, kartu personal/project_yseali_pe.md
 - 2026-10-30T08:17Z  NusaTerra brand v2 Deep Horizon dipilih Aldo; logo + website dipindah ke palet biru-amber, dicek desktop+mobile
+- 2026-10-30T08:17Z  YSEALI PE: kerangka 3 esai + video diberikan; kandidat proyek A/B/C di kartu
