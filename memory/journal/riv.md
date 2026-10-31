@@ -617,3 +617,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T06:12Z  31 Okt: kartu baru project_kti_bmn_perwakilan_blu (dari isi berkas); BGS/BSG/KSP di KTI itu hanya data, belum dianalisis
 - 2026-10-31T06:15Z  31 Okt: verdict BGS/KSP layak masuk KTI BMN sbg subbagian II C + kalimat Alt A, bukan Alt E; pasal PP 27/2014 belum dicek
 - 2026-10-31T06:18Z  kemlu 31 Okt: KTI mitra diklat PK v4 - diagnosis akar masalah + sasaran paritas 16 PK/thn + Tabel 13-14; 5 docx per bab (split.py, Word COM macet); Excel data olahan 12 sheet dgn jejak halaman
+- 2026-10-31T06:24Z  31 Okt: pasal BGS/BSG/KSP dicek dari teks PP 28/2020 + PMK 115/2020 + PMK 271/2015; koreksi: BGS atas BMN Pengguna tak perlu serah ke Pengelola (Ps 34(3),(5) dihapus)
