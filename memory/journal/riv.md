@@ -633,3 +633,8 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T08:15Z  motion-demo di-rebrand ke Trajectory (palet aignited, Poppins/Inter, simbol animasi, logo endorsed di akhir); out/trajectory-free-float.mp4
 - 2026-10-31T08:16Z  Horor 'Penunggu' versi 9:16 dirender (komposisi HororVertical, npm run render:v)
 - 2026-10-31T08:28Z  KTI BMN: kaitan RPJPN/RPJMN/Renstra (SS 9 Postur diplomasi) di Bab I+III, nama kerja BLU Lembaga Pengelola Fasilitas Perwakilan; 25/25
+- 2026-10-31T08:32Z  KTI PNBP (kemlu): penekanan baru atas keputusan Aldo 31 Okt — PNBP kekonsuleran sbg dana pelindungan WNI+PMI selaras RPJPN (diplomasi pelindungan), RPJMN PN7 (Indeks Pelayanan dan Pelindungan WNI 93->95,5), Renstra Kemlu SS6; nama dana = Dana Diplomasi Pelindungan Indonesia (BLU di Kemlu); judul KTI diganti
+- 2026-10-31T08:32Z  KTI PNBP: 8 sumber publik baru diunduh (izin Aldo) ke Sumber\: Permenlu 10/2025 Renstra, UU 59/2024 RPJPN, Perpres 12/2025 + Lamp I-II, UU 37/1999, UU 18/2017, Perpres 165/2024
+- 2026-10-31T08:32Z  KTI PNBP: draf 00-07 + A11 diubah (II A.5 baru, II B.4 data PMI, II C.1 pembagian peran, II C.6 baru, II D aturan belanja+tata kelola), builder meta/verify/figures/build-catatan/README/singkatan; 48 hlm, verify 25/25, 0 kalimat kembar dgn KTI BMN; docx/pdf/Per Bab/Catatan disalin ke folder KTI
+- 2026-10-31T08:32Z  Excel KTI PNBP: xlsx_data.py +S17 S18, B69-B82, P31-P32, 15 baris peraturan; rekalkulasi Excel COM: PNBP 0 error 32/32 cocok; BMN ikut ditulis ulang 0 error 38/38
+- 2026-10-31T08:33Z  Kartu project_kti_blu_aset_dana_abadi.md + indeks MEMORY.md diperbarui (bagian 31 Okt sore)

@@ -507,3 +507,34 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   (LibreOffice tidak terpasang). Hasil: 0 error, 38/38 dan 30/30 "cocok". Semua pasal kini menunjuk 1 halaman (teks cari
   spesifik), kecuali PMK 202/2022 & VCCR (memang 2 pasal beda halaman). A40–A42 = LBP hlm 15/17 (xi/xii). Sisa kuning
   hanya A96–A97 = jumlahan lampiran LK 2025 PDF hlm 290–299. Halaman cetak "-" = halaman tanpa nomor cetak.
+
+## 31 Okt 2026 (sore): KTI B ditekankan ke pelindungan WNI + PMI (keputusan Aldo)
+- **Keputusan Aldo (31 Okt):** PNBP kekonsuleran ditekankan sebagai dana pelindungan WNI dan PMI di luar negeri, selaras
+  RPJPN/RPJMN/Renstra → lahir BLU pengelola dana abadi. Pilihan Aldo atas 4 pertanyaan: (1) nama **"Dana Diplomasi
+  Pelindungan Indonesia"** (bukan "Pelindungan Diplomasi": frasa "pelindungan diplomatik" = istilah sempit hukum
+  internasional; RPJPN memakai "diplomasi pelindungan"); (2) **pelindungan WNI+PMI = tujuan utama dana abadi**; layanan
+  konsuler rutin tetap lewat mekanisme penggunaan dana PNBP + PP 44/2025 Ps 48; operasional Perwakilan hanya bila
+  menopang pelindungan; (3) **judul baru:** "Penggunaan Dana PNBP Kekonsuleran bagi Pelindungan WNI dan PMI di Luar
+  Negeri: Menuju BLU Pengelola Dana Diplomasi Pelindungan Indonesia"; (4) izin unduh 8 sumber publik.
+- **Sumber baru (Sumber\, terverifikasi dari teks):** Permenlu 10/2025 Renstra (BN 2025/938, tetap 10 Nov 2025): Misi 4,
+  Tujuan 5, SS 6 hlm 48 (Indeks Pelayanan dan Pelindungan WNI 93,5→95,5), capaian 2020–24 hlm 30 (212.916 kasus, >200.000
+  dipulangkan, 1.760 evakuasi), strategi "pencegahan, deteksi dini, respon cepat" hlm 69; Renstra TIDAK menyebut PNBP/BLU/
+  dana abadi. UU 59/2024 RPJPN (LN 2024/194) Lamp hlm 120 "diplomasi pelindungan" (PDF 157), hlm 121–122 Perwakilan
+  penjuru + "transformasi penguatan lembaga dana kerja sama pembangunan". Perpres 12/2025 RPJMN (LN 2025/19) Lamp I hlm
+  188 indikator PN7 (93/93,5/95,5), hlm 194 arah (16); Lamp II hlm 420: KP 07.16.01 PMI = KP2MI/BP2MI, KP 07.16.02 =
+  Kemlu. UU 37/1999 Ps 19b, Ps 21 (pulang "atas biaya negara"), **Penjelasan Ps 21: "tersedianya sarana ... termasuk
+  dana"**. UU 18/2017 Ps 1 angka 2, 21(1)(2), 29, 30. Perpres 165/2024 Ps 5–6. LKj PWNI 2024: 22.286 dipulangkan
+  (18.946 deportasi + 3.340 repatriasi), 577 kelompok rentan DTI Malaysia atas biaya Pemri (4 gelombang), realokasi
+  dukung kasus Perwakilan (hlm 108), moral hazard (hlm 11).
+- **Naskah:** II A.5 baru (sasaran pelindungan tanpa kepastian dana), II B.4 data PMI, II C.1 jadi "pembagian peran",
+  II C.6 baru (keselarasan perencanaan + batas KP2MI/BPJS), II D: 5 aturan belanja (prioritas: respon cepat → kasus/
+  bantuan hukum → sistem pelindungan), tata kelola +kelayakan penerima +ukuran kinerja indeks RPJMN; batas ketiga II D.1
+  kini = integrasi ke BLU dana abadi lain hanya PEMBANDING di kajian kelayakan. Rek 6 + koordinasi KP2MI, target 95,5.
+  48 hlm, verify 25/25 (heading D + KUNCI diperbarui), 0 kalimat kembar dgn KTI BMN. Draf lama dicadangkan di scratchpad
+  sesi (tidak permanen).
+- **Masih terbuka (baru):** [[VERIFIKASI]] Pasal 1, 21, 29, 30 UU 18/2017 tidak diubah UU 6/2023 (Cipta Kerja ubah ±4
+  pasal izin P3MI; belum dicek pasal per pasal) — isian 14 di Catatan Penyerahan. A11 draf diperbarui, tetap wajib
+  ditulis ulang Aldo. Angka LPDP ±Rp180 T tetap terbuka.
+- **Excel:** xlsx_data.py + S17 (Renstra), S18 (RPJMN Lamp I), B69–B82, P31–P32, 15 baris peraturan. Rekalkulasi COM:
+  PNBP 0 error 32/32 cocok; BMN 0 error 38/38. Skrip rekalkulasi COM ditulis di scratchpad (`recalc.ps1`, tidak
+  permanen) — buat ulang bila perlu: Open → CalculateFull → Save, hitung sel `#...` dan kolom Cek di sheet Olahan.
