@@ -613,3 +613,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T05:56Z  Hapus permanen Herd/ukpbj-kemlu + Herd/ukpbj-nextjs atas permintaan Aldo (tanpa arsip), launch.json dibersihkan, card ditandai DIHAPUS
 - 2026-10-31T06:00Z  31 Okt: 8 ide KTI sumber fiskal mandiri Kemlu (kartu idea_kti_fiskal_mandiri_kanselerai), Aldo belum memilih
 - 2026-10-31T06:04Z  KTI A+B: per-bab Word (8 docx tiap KTI, build-split.js) + Excel data olahan dgn sumber & halaman (build_xlsx.py); 0 error, semua olahan cocok
+- 2026-10-31T06:09Z  KTI Excel: halaman pasal dipersempit ke 1 halaman, register BMN A40-A42 ditemukan, A96-A97 diberi rentang hlm 290-299

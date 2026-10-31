@@ -504,5 +504,6 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   → `Data Olahan KTI BMN Perwakilan BLU.xlsx` dan `Data Olahan KTI PNBP Kekonsuleran.xlsx` di folder KTI masing-masing.
   Sheet: Petunjuk, Sumber, Data Mentah (hlm PDF + hlm cetak dicari otomatis via pymupdf), Olahan (rumus vs angka naskah, Cek),
   Data Grafik, Rujukan Peraturan, Kutipan FGD. Jalankan TANPA `python -I` (impor lokal). Rekalkulasi wajib via Excel COM
-  (LibreOffice tidak terpasang). Hasil: 0 error, 38/38 dan 30/30 "cocok". Sisa sel kuning: A40–A42, A96–A97 (angka jumlahan/
-  register, dicek manual). Halaman cetak "-" = halaman tanpa nomor cetak.
+  (LibreOffice tidak terpasang). Hasil: 0 error, 38/38 dan 30/30 "cocok". Semua pasal kini menunjuk 1 halaman (teks cari
+  spesifik), kecuali PMK 202/2022 & VCCR (memang 2 pasal beda halaman). A40–A42 = LBP hlm 15/17 (xi/xii). Sisa kuning
+  hanya A96–A97 = jumlahan lampiran LK 2025 PDF hlm 290–299. Halaman cetak "-" = halaman tanpa nomor cetak.
