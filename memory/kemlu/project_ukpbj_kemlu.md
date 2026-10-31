@@ -1,12 +1,14 @@
 ---
 name: project-ukpbj-kemlu
-description: "Dashboard Monitoring Pengadaan UKPBJ Kemlu (7 tampilan) di Herd\\ukpbj-kemlu → ukpbj-kemlu.test, dari Claude Design + penyempurnaan spec-parity"
+description: "DIHAPUS 31 Okt 2026 atas permintaan Aldo - Dashboard Monitoring Pengadaan UKPBJ Kemlu (statis ukpbj-kemlu + Next.js ukpbj-nextjs), kode tidak diarsipkan"
 metadata: 
   node_type: memory
   type: project
   originSessionId: b3bd884b-5f46-45aa-8d12-0b687d4c089a
   modified: 2026-09-05T12:20:21.833Z
 ---
+
+**STATUS: DIHAPUS 31 Okt 2026.** Aldo minta "hapus keduanya semuanya": folder Herd/ukpbj-kemlu dan Herd/ukpbj-nextjs dihapus permanen, TANPA arsip (tidak ada git, tidak ada salinan; cadangan di scratchpad sesi juga dihapus). Entri launch.json dibuang, site ukpbj-kemlu.test mati. Catatan di bawah tetap sebagai riwayat, terutama tabel ambang Lampiran A Permenlu 3/2023 (berguna untuk proyek PBJ LN lain).
 
 Dashboard Monitoring Pengadaan — UKPBJ Kemlu di `C:\Users\rivsy\Herd\ukpbj-kemlu` (Herd: ukpbj-kemlu.test; launch.json "ukpbj-kemlu" → http-server port 8123). Dibangun 2 Agu 2026 dari proyek Claude Design "Dashboard UKPBJ Kemlu" (import via DesignSync, project id 4fe550a9-dfde-4d90-8817-4adfe2a177a9).
 
