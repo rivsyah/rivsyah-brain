@@ -12,4 +12,5 @@ metadata:
 - Struktur: `src/timeline.json` (durasi adegan, dibaca juga oleh audio) → intro lilin 225 fr, judul PENUNGGU + beringin 165 fr, 7 hantu × 180 fr, outro mata merah 210 fr. Siluet SVG buatan sendiri di `src/ghosts.tsx`; atmosfer (kabut, grain, kedip, glitch) di `src/ui.tsx`.
 - Hantu: Kuntilanak, Pocong, Genderuwo, Tuyul, Sundel Bolong, Leak (Bali), Wewe Gombel (Semarang). Teks = folklor umum, tanpa angka selain "belasan ribu pulau".
 - Audio 100% sintetis (drone, angin, detak jantung, gong berombak, bonang ~pelog, bisikan) — tanpa sampel, tanpa lisensi pihak ketiga. Tanpa voiceover (edge-tts sudah ditolak Aldo).
-- Belum: VO manusia/ElevenLabs, versi vertikal 9:16, branding.
+- **9:16 (31 Okt 2026):** komposisi `HororVertical` (1080x1920) memakai komponen yang sama; layout bercabang lewat `useV()` di `src/ui.tsx`. `npm run render:v` → `outhoror-nusantara-9x16.mp4` (+ `-kecil.mp4` ~14 MB). Teks ditaruh di tengah layar, sepertiga bawah dibiarkan kosong untuk UI Reels/TikTok.
+- Belum: VO manusia/ElevenLabs, branding.
