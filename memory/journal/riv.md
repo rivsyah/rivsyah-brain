@@ -673,3 +673,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T10:45Z  SIPDLN-BUP 31 Okt: deploy run 41193785618 sukses (HEAD b85ddd9), live /up 200, /login 200 0,33 dtk, redirect https OK.
 - 2026-10-31T11:34Z  Horor: uji suara wanita ElevenLabs Free — Lily pFZP5JQG7iQjIQuC4Bku, Matilda XrExE9yKIg1WjnnlVkGX, Laura FGY2WhTYpPnrIDTdsKH5, Jessica cgSgspJ2msm6clMCkdW9 JALAN; Charlotte 402. Semua F0 asli ~205-208 Hz; varian pitch -2,5 st + gema (ffmpeg) 182-199 Hz. Sampel di out/samples, menunggu pilihan Aldo
 - 2026-10-31T12:20Z  SIGAP BUP: Paket 2 (kebenaran uang, 6 tahap, 2eda6d0..c715ef8) dideploy 31 Okt; CI+PG17 sukses, livecheck 13/13, Neon migrasi 15. Sisa: RUP dobel hitung, BR-KOM-5 (butuh unggahan), MP PNBP (butuh peta MAK), Paket 3.
+- 2026-10-31T12:57Z  Horor 'Penunggu': narator final Lily (dipilih Aldo), 92,5 dtk, 16:9 + 9:16 dirender ulang
