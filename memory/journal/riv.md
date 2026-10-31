@@ -626,3 +626,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T07:00Z  personal: RAB 31 Okt — anggaran nikah Rp100 jt, 11 PDF Aldo masuk (Hadjatan BRIN/Lippo, MD+Aroem, Kalabinar Pejaten, Kapa, Habitate, Four Points), sheet Siraman sendiri, dekor Be Blooms. Default BRIN 200 pax Rp92,5 jt. Verify 1.511 lulus.
 - 2026-10-31T07:01Z  personal: RAB — +6 opsi hotel/venue murah (Swiss-Bel Kalibata/Pondok Indah/Bogor, Villa Srimanganti). 12 opsi muat Rp100 jt. Verify 1.613 lulus.
 - 2026-10-31T07:58Z  ElevenLabs key tersimpan; key kurang izin voices_read; API free tidak bisa pakai library voice (perlu Creator atau top-up $5)
+- 2026-10-31T08:00Z  ElevenLabs free: 7 suara default jalan via API (eleven_v4, id); sampel dikirim ke Aldo untuk dipilih
