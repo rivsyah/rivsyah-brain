@@ -688,3 +688,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T15:04Z  Aturan baru Aldo: hook topik di 1-3 detik pertama semua video motion; card shared/feedback/feedback_video_hook_first_seconds.md
 - 2026-10-31T15:08Z  Hook detik awal diterapkan ke free float (visual) dan ep01 (EN+ID); musik ep01 dipisahkan; VO judul free float + 12 kalimat ep01 ID menunggu reset kuota ElevenLabs
 - 2026-10-31T15:36Z  Horor: stok 4 video 9:16 dengan hook clickbait selesai (Penunggu 95s, Ancol 106s, Pontianak 114s, Nyi Roro Kidul 114s) di ~/dev/personal/horor-motion/out/*-9x16-kecil.mp4; ElevenLabs Free habis (17 kredit), 2 video baru pakai edge-tts Gadis sementara
+- 2026-10-31T15:39Z  ep01 EN vertical full+short dirender ulang dengan hook 3 dtk; free float hook visual dirender
