@@ -37,3 +37,5 @@ metadata:
 - **ElevenLabs Free HABIS 31 Okt 2026: sisa 17 kredit dari 10.000** (1 kredit ≈ 1 karakter di eleven_v4). Tanggal reset tidak diketahui (key tanpa izin user_read). Akibatnya: Pontianak & Kidul pakai **edge-tts id-ID-GadisNeural** (rate −8%, pitch −6Hz; hook +12%) sebagai suara SEMENTARA (`VO_ENGINE=edge`, folder `public/vo/<x>-edge`); hook Penunggu & Ancol TANPA narasi (`silent: true`). Narasi Lily Pontianak s1–s4 sudah ada di `public/vo/pontianak` (sebelum naskah s1 diubah).
 - Jebakan: kunci cache `make_vo.py` untuk ElevenLabs harus tetap `[text, voice_id, model, voice_settings]` — sempat berubah saat menambah engine edge dan membuat skrip mencoba membuat ulang SEMUA narasi (kuota menolak, tidak ada file tertimpa).
 - Render 9:16: `npm run render:v`, `ancol:v`, `pontianak:v`, `kidul:v`.
+
+- **Keputusan Aldo 31 Okt 2026 ("Pakai Gadis saja"):** Pontianak & Nyi Roro Kidul FINAL memakai edge-tts Gadis, bukan sementara; tidak upgrade ElevenLabs. Hook Penunggu & Ancol tetap tanpa narasi (tidak dicampur suara Gadis).
