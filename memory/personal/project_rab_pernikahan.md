@@ -1,6 +1,6 @@
 ---
 name: RAB Tunangan & Pernikahan
-description: "RAB tunangan Rp50 jt + nikah Rp200 jt, 7 sheet (RAB + kolom Ditanggung, Alternatif Venue 20 opsi, Rencana Tabungan dua fase, Daftar Undangan). Per 5 Okt 2026: tunangan Rp56,7 jt (lebih Rp6,7 jt karena cincin Frank & co. Rp32 jt), nikah CIBIS 300 Rp216,9 jt (lebih Rp16,9 jt; CIBIS 200 Rp196,7 jt muat). Souvenir nikah Rp30 rb/pcs. Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
+description: "RAB tunangan Rp50 jt + nikah (anggaran turun ke Rp100 jt, 31 Okt 2026) + sheet Siraman sendiri; 41 opsi venue dari PDF Aldo + riset. Default Hadjatan BRIN Gatsu 200 pax total Rp92,5 jt (muat). Builder C:\Users\rivsy\dev\personal\rab-pernikahan (mesin riv)"
 metadata:
   type: project
 ---
@@ -92,4 +92,14 @@ seserahan terpisah). Aldo yang minta ke Swasana.
 - 11 Okt 2026 (permintaan Aldo): opsi Cerita Rasa Glasshouse 250 pax akhir pekan, Menu Rasa + stall siomay & bakwan malang
   (125 porsi tiap stall, asumsi) + listrik 1 jt: venue + makan nett Rp137,23 jt (makanan Rp103 jt++ → Rp121,23 jt nett).
   Total RAB nikah dengan vendor standar Rp240,83 jt (lebih Rp40,8 jt). Rencana Tabungan masih pakai jadwal bayar CIBIS.
+- 31 Okt 2026 (permintaan Aldo + 11 PDF di out\): anggaran nikah Rp100 jt; sheet `RAB Siraman` sendiri (Rp8,9 jt,
+  anggaran asumsi Rp10 jt, ikut Rencana Tabungan); harga standar komponen kini dekor Be Blooms Rp14,5 jt + rias/foto/MC/
+  WO dari paket All-in MD Decoration Rp24,3 jt (dibagi proporsional) + hiburan MD Rp3 jt + undangan digital Rp300 rb.
+  Opsi baru: Hadjatan BRIN Gatsu 100/200 pax Rp49,5/59 jt, Hadjatan Lippo 100/200/300 Rp52,5/63/141,55 jt (brosur),
+  Aroem Bekasi via MD (venue+katering 49,2/66,3/80,3 jt) dan Putri Wedding 100 pax Rp42 jt (cuplikan), Daily Inn Express
+  via MD, Pejaten Terrace Kalabinar 200/250 pax Rp88,5/99,5 jt, Habitate, Kapa quotes (Azalia/Aroem/Habitate/Dewandaru),
+  Casakhasa, Hallf Patiunus, Four Points Bekasi 300 pax Rp148 jt nett. Muat Rp100 jt: NIWA Silver 100/200, Aroem Putri
+  100, BRIN 100/200, Lippo Hadjatan 100/200, Leviticus. Default BRIN 200 total Rp92,49 jt. Tabungan contoh: fase 1
+  Rp19,3 jt/bln (puncak Mar 2027), fase 2 Rp9,5 jt/bln; jadwal cicilan Hadjatan. Verify 1.511 rumus lulus.
+  ⚠ OPEN: lokasi Habitate, Daily Inn Express, Casakhasa belum dicek; D'One (Rp99 jt) belum dimasukkan karena pax & katering tak tertulis.
 

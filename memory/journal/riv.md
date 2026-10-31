@@ -623,3 +623,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T06:37Z  SiapSeleksi MVP lokal dibangun di ~/dev/personal/siapseleksi (93aede0): Workers+Hono+D1, 392 soal/7 paket, OTP, donasi tautan, tahapan 6 instansi dari riset live; kartu personal/project_siapseleksi; launch.json Bara +siapseleksi
 - 2026-10-31T06:39Z  31 Okt: cek ide PNBP valas vs KTI PNBP Kekonsuleran: sebagian sudah ada (Filipina, lindung nilai); verdict masuk terbatas
 - 2026-10-31T06:45Z  31 Okt: challenge ide co-financing Danantara/BUMN: verdict terlemah; reframe ke tata kelola hibah langsung Perwakilan (data LK 2025)
+- 2026-10-31T07:00Z  personal: RAB 31 Okt — anggaran nikah Rp100 jt, 11 PDF Aldo masuk (Hadjatan BRIN/Lippo, MD+Aroem, Kalabinar Pejaten, Kapa, Habitate, Four Points), sheet Siraman sendiri, dekor Be Blooms. Default BRIN 200 pax Rp92,5 jt. Verify 1.511 lulus.
