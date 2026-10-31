@@ -68,3 +68,19 @@ Terkait: [[project-sigap-bup]], [[project-sipama-kemlu]], [[project-ukpbj-kemlu]
 5. App Laravel `C:\Users\rivsy\Herd\bup-kemlu` (diparkir) masih dilayani Herd: hapus atau simpan.
 6. `C:\Users\rivsy` sendiri adalah repo git kosong (master, 0 commit). `git add .` di sana menyapu
    seluruh home termasuk `.ssh`. Proyek ini belum punya repo sendiri.
+
+## 31 Okt 2026 — audit proses bisnis + 5 perbaikan (teruji di browser, belum commit)
+- Lacak publik kini wajib nomor + surel pemohon (server action `src/actions/tracking.ts`, 20/10mnt/IP).
+  Dulu nomor berurutan HD-2026-0001 bisa ditebak siapa pun.
+- Eskalasi peran ditutup: hanya superadmin yang boleh membuat/mengubah/menghapus akun admin/superadmin.
+- Dasbor Portal: peran `staf` dulu melihat angka tiket/pemeliharaan/pesan seluruh Biro; kini hanya
+  "permohonan saya", angka operasional per hak kelola.
+- Riwayat: perubahan status selalu publik, catatan petugas boleh internal (dulu status ikut tersembunyi).
+- Secret SSO kini bisa dilihat di Admin → Aplikasi Internal → Ubah ("Tampilkan secret SSO").
+- Akun uji lokal: `.claude/uji-akun.ts` (gitignored). DB lokal `prisma dev -n bup5`.
+
+**Usulan pemangkasan menu (menunggu Aldo):** nav 8 → 5 (Beranda, Profil, Layanan, Informasi,
+Helpdesk[+Lacak+Kontak]); buang Dashboard Kinerja publik (angka manual/ilustrasi, tumpang tindih
+MONPBJP/SIGAP), form Kirim Pesan (duplikat helpdesk), toggle EN (halaman masih bahasa Indonesia),
+tile beranda ganda; pindah Lacak Aset ke Portal (posisi aset Perwakilan RI tak perlu publik);
+"Ajukan Permohonan" di halaman Pengadaan mengarah ke helpdesk — arahkan ke PDP/VMS via Portal.
