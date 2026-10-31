@@ -6,6 +6,26 @@ metadata:
   modified: 2026-10-11
 ---
 
+## 31 Okt 2026 — audit fitur + proses bisnis (belum diperbaiki, menunggu keputusan Aldo)
+
+Diminta Aldo: menu/fitur yang noise + audit proses bisnis. ci:check tetap hijau (90 uji, PHPStan 0); semua layar
+dibuka di lokal (admin demo), konsol aplikasi bersih. Temuan [Certain], urut dampak:
+1. Status "selesai" murni dari tanggal (`Perjalanan::statusWaktu`) → perjalanan tanpa ST bernomor/persetujuan
+   (Jenewa 19–24 Okt 0/7, Bangkok 1/7) dihitung "sudah melaksanakan" di KPI, pemerataan, biaya terlaksana.
+2. Biaya dasbor: `Monitoring::biaya` menambah komponen riil perjalanan TANPA kurs ke baris riil tapi tidak ke
+   total → Total Rp812,5 jt ≠ 508,0 + 370,6 = 878,6 jt.
+3. `Peringatan` tidak punya aturan persetujuan Setneg / exit permit sebelum berangkat, maupun SPJ telat
+   (New York H-8 tanpa persetujuan tidak masuk lonceng).
+4. "Akan berangkat" dasbor 3 vs pemerataan 2: dasbor menghitung pegawai di tiap status (3+0+19+15=37 dari 36),
+   pemerataan satu status per pegawai.
+5. Penandatangan ST = peserta (Kepala Biro di New York) tanpa peringatan.
+6. Kurs JISDOR lokal berhenti 9 Okt (tanpa penjadwal); perjalanan dibatalkan tetap tampil biaya di daftar;
+   label SBM "98" = 97 negara + rujukan Uganda.
+Noise: dasbor 9 panel (grafik negara + per bulan, daftar belum-PDLN + cakupan unit dobel dengan Pemerataan);
+menu "Dokumen" berisi 1 butir teknis (Templat); Linimasa tumpang tindih Daftar Perjalanan; kode "MODUL MN-01"
+di tiap layar; Riwayat Perubahan dibanjiri unduhan; nomor ST/SPD dobel di form + panel Tahapan; kolom Diterima =
+Total biaya; jabatan penandatangan ST dobel di Pengaturan dan menu Pejabat.
+
 ## 11 Okt 2026 — LIVE di https://sipdln.rivsyah.dev
 
 Izin Aldo "deploy" di chat (setelah ia membeli Workers Paid, aktif 08.58 WIB). Urutan yang dijalankan agent:
