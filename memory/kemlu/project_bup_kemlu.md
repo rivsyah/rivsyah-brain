@@ -33,7 +33,7 @@ Jenderal Kemlu. Diimpor dari Claude Design `Biro Umum dan Pengadaan.dc.html` pad
 
 **Broker SSO** (`docs/SSO.md`): Portal menerbitkan token `payload.signature` HMAC-SHA256,
 TTL 60 detik, `jti` sekali pakai yang ditukar lewat `POST /api/sso/verify`. Tujuan:
-SIGAP-BUP, SIPAMA, MONPBJP (UKPBJ), Diplomasi Pengadaan/VMS — consumer di sisi aplikasi
+SIGAP-BUP saja (31 Okt: SIPAMA, MONPBJP, VMS dihapus atas perintah Aldo — "ga ada lagi") — consumer di sisi aplikasi
 itu **belum dipasang**. Endpoint acuan `/api/sso/demo` (aktif hanya bila `SSO_DEMO=1`).
 
 Panel Admin digerakkan deskriptor di `src/lib/admin/resources.ts` — tambah satu entri,
@@ -84,3 +84,7 @@ Helpdesk[+Lacak+Kontak]); buang Dashboard Kinerja publik (angka manual/ilustrasi
 MONPBJP/SIGAP), form Kirim Pesan (duplikat helpdesk), toggle EN (halaman masih bahasa Indonesia),
 tile beranda ganda; pindah Lacak Aset ke Portal (posisi aset Perwakilan RI tak perlu publik);
 "Ajukan Permohonan" di halaman Pengadaan mengarah ke helpdesk — arahkan ke PDP/VMS via Portal.
+
+## 31 Okt 2026 — SIPAMA, MONPBJP, Diplomasi Pengadaan/VMS dihapus dari Portal
+Aldo: "ga ada lagi". Dibuang dari seed (seed kini juga `deleteMany` ketiga kunci itu), `.env`/`.env.example`,
+README, docs/SSO.md, komentar kode. Portal hanya berisi SIGAP-BUP; aplikasi lain bisa ditambah lewat Admin.
