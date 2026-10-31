@@ -555,4 +555,9 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
 - Naskah 50 hlm, verify 25/25, gambar baru = Gambar 9 (kasus 2019-24); AS -> Gambar 10, desain -> Gambar 11.
   II D.2 ilustrasi skala: asumsi hasil bersih 5% (bukan angka LPDP) -> pokok Rp728,74 M ≈ 2,2x PNBP kekonsuleran 2025.
   Excel PNBP 37/37 (rasio pakai format "0.0" agar toleransi 0,06), BMN 38/38.
-
+- **Renstra Biro Keuangan 2025-2029** (publik: kemlu.go.id/files/repositori/65379/177338789469b3c0767f8a3_Renstra_Rokeu_2025_2029__publikasi_.pdf;
+  ttd 17 Jan 2026 -> sitasi Biro Keuangan (2026)): hlm 32 = 9 rancangan regulasi 2025-29, TIDAK ada pengganti Permenlu 26/2020;
+  hlm 12 kriteria Perwakilan "tidak ada saldo PNBP minus/plus", hlm 29 monitoring setoran PNBP via NHV; hlm 33 Bagian
+  Pelaksanaan Anggaran (kelola PNBP) + Bagian Pengendalian Anggaran (anggaran Perwakilan RM+PNBP). Masuk II A.3, B.3, C.4,
+  Rek 1 & 3. Naskah 51 hlm, verify 25/25. Tip: folder repositori Kemlu beda per unit (65379 Sekjen/Rokeu, 65391 Protkons) —
+  cari dengan HEAD ke rentang 653xx bila Aldo lupa tautan.
