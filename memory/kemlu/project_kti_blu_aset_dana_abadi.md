@@ -494,3 +494,15 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   KTI A: paragraf dekonsolidasi + APBN bertahap (KTJ) di II C §6; Rek 6 + biaya-manfaat. 45 hlm, 25/25. 0 kalimat kembar.
 - 29 Okt: **Aldo memutuskan: desain utama KTI B TETAP "Kemlu pengelola" (BLU dana khusus di Kemlu).** Opsi integrasi ke BLU
   dana abadi yang ada tetap hanya alternatif/pembanding dalam kajian kelayakan (Rek 4), bukan desain utama. Jangan diusulkan ulang.
+
+## 31 Okt 2026: per-bab Word + Excel data olahan (permintaan Aldo)
+- **Per bab:** `build-split.js` (identik di kedua builder `~/dev/kemlu/kti-bmn-perwakilan-blu` dan `kti-pnbp-kekonsuleran`):
+  `node build-split.js --draf "<KTI folder>/draf" --out "<KTI folder>/Per Bab"` → 8 docx (00 Bagian Awal, 01 Bab I, 02–05 Bab II
+  A–D, 06 Bab III, 07 Daftar Pustaka). Nomor Tabel/Gambar ditulis tetap (`opt.fixedNum` → `caption num`), cocok dgn naskah utuh.
+  `build.js` kini mengekspor bagian-bagiannya; menulis docx hanya bila `require.main === module`.
+- **Excel:** `~/dev/kemlu/kti-blu-pnbp-src/build_xlsx.py` + `xlsx_data.py` (S01–S16 sumber; A01–A98/O01–O38; B01–B68/P01–P30)
+  → `Data Olahan KTI BMN Perwakilan BLU.xlsx` dan `Data Olahan KTI PNBP Kekonsuleran.xlsx` di folder KTI masing-masing.
+  Sheet: Petunjuk, Sumber, Data Mentah (hlm PDF + hlm cetak dicari otomatis via pymupdf), Olahan (rumus vs angka naskah, Cek),
+  Data Grafik, Rujukan Peraturan, Kutipan FGD. Jalankan TANPA `python -I` (impor lokal). Rekalkulasi wajib via Excel COM
+  (LibreOffice tidak terpasang). Hasil: 0 error, 38/38 dan 30/30 "cocok". Sisa sel kuning: A40–A42, A96–A97 (angka jumlahan/
+  register, dicek manual). Halaman cetak "-" = halaman tanpa nomor cetak.
