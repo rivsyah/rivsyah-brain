@@ -735,7 +735,14 @@ Langsung > Rp200 jt ditolak di server. Tes 177.
 paket tak terbiayai); BR-KOM-5 — lampiran di formulir permintaan hanya saklar boolean, tak ada unggahan/penyimpanan, jadi
 penegakan server = sandiwara (perlu fitur unggah dulu); MP PNBP tak bisa menahan pencairan — tabel `mp_pnbp` hanya
 tahap/kategori, tak tertaut ke MAK (perlu pemetaan MAK→kategori). Paket 3 (peran terikat akun, cabut POST /role) BELUM.
-**Konsekuensi demo:** akun demo bersama tak bisa menuntaskan rantai bayar (SoD per user id) — butuh ≥3 akun demo.
+**Konsekuensi demo (teratasi Paket 3):** akun demo bersama dulu tak bisa menuntaskan rantai bayar (SoD per user id).
+**Paket 3 (RBAC nyata) 31 Okt, `4220436`** (Aldo: "lanjut paket 3"): kolom `users.peran` (default operator, migrasi
+`2026_10_31_000004`), `Konsep::role()` dari akun (sesi `sigap_role` tak dibaca lagi), `aktor()` = nama akun. KPA menetapkan peran
+akun lain lewat `POST users/{user}/peran` (diaudit; peran sendiri tak bisa diubah → selalu ≥1 KPA); akun baru wajib peran.
+`POST /role` → 403 di luar demo; di demo `PeranController::ganti` login ke akun `{peran}@sigap.test` (AkunDemoSeeder: 6 persona,
+sandi acak tak disimpan, admin@sigap.test → kpa; container menyemai saat start bila SIGAP_DEMO). Rantai bayar demo tuntas
+(diuji lokal: diajukan→spm→sp2d lewat 3 akun). Rute penetapan peran dikunci di demo. Tes 185 (helper Pest `sebagai($user,$peran)`),
+PHPStan 43. Menu peran di topbar hanya muncul di demo; non-demo menampilkan nama akun + peran.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
