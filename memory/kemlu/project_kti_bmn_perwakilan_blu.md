@@ -66,3 +66,20 @@ soal BGS/BSG (porsi gedung untuk pemerintah, wewenang Pengelola Barang atas tana
   pemilihan mitra). Tidak ada tabel/gambar baru -> penomoran tetap.
 - Hasil: 47 hlm, verify 25/25, 0 kalimat kembar dgn KTI B. Naskah utuh + Per Bab ditulis ulang; Excel + 6 baris pasal baru
   (PP 28/2020 Ps 1, 32, 33, 34, 36; PMK 115 Ps 59(3)), 38/38 cocok. Cadangan draf lama di scratchpad sesi.
+
+**31 Okt 2026 — kaitan perencanaan nasional + nama BLU (permintaan Aldo):**
+- Bab I paragraf baru (sebelum "Ketegangan..."): RPJPN UU 59/2024 Lampiran hlm 119 (4.4.3 Ketangguhan Diplomasi dan
+  Pertahanan Berdaya Gentar Kawasan) + hlm 71 (3.6 tahap I 2025-2029: diplomasi difokuskan pada penguatan infrastruktur
+  diplomasi dan kelembagaan); RPJMN Perpres 12/2025 Lampiran I hlm 110 (intervensi "pembangunan postur diplomasi");
+  Permenlu 10/2025 Renstra: Kemlu ampu PN 2 & PN 7 (hlm 44), SS 9 "Postur diplomasi yang tangguh" = infrastruktur
+  diplomasi incl. penganggaran + sarpras fisik (hlm 49), sasaran program "Pengelolaan Aset Kemlu yang Optimal" / indeks
+  pengelolaan aset (hlm 191), permasalahan "pengelolaan asset kurang optimal" (hlm 56). Kegunaan 1 + Bab III paragraf
+  setelah Tabel 6 mengaitkan Rek 1-7 ke SS 9. PDF UU 59/2024, Perpres 12/2025, Permenlu 10/2025 disalin ke Sumber\.
+- Nama kerja BLU di II D.2.f: **Lembaga Pengelola Fasilitas Perwakilan** (sebut layanan, bukan "aset", karena
+  pengelolaan aset bukan bidang layanan BLU dan Ps 97 milik Pengelola Barang; pola nama LMAN). Aldo boleh ganti.
+- Renstra Biro Umum dan Pengadaan 2025-2029 (Downloads\Research Reports\Kemlu\Sekjen\) TIDAK dikutip: URL publik tak
+  ditemukan. Isinya relevan: SWOT hlm 9 "ketentuan pemanfaatan BMN tertentu tidak dapat diaplikasikan di Perwakilan RI";
+  kendala komposisi sumber dana (PNBP) untuk belanja modal; hlm 31 Indeks Pengelolaan Aset 3,1 (2025) -> 3,35 (2029).
+- Nomor BN Permenlu 10/2025: PDF resmi kosong (glyph); pasal.id mencatat 938 -> penanda VERIFIKASI di pustaka KTI A.
+  KTI B sudah menulis 938 tanpa penanda.
+- Hasil: 47 hlm, verify 25/25, 0 kalimat kembar; Per Bab + Excel (+7 baris rujukan) diperbarui, 38/38 cocok.
