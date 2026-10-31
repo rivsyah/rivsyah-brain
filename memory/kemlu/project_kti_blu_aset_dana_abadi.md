@@ -540,3 +540,19 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
   permanen) — buat ulang bila perlu: Open → CalculateFull → Save, hitung sel `#...` dan kolom Cek di sheet Olahan.
 - **Audit 31 Okt (malam):** semua dokumen dipindai (PDF, DOCX, 8 Per Bab, Catatan, Excel): 0 sisa rumusan lama setelah 5
   kalimat Bab II C diperbaiki; judul Excel PNBP (build_xlsx.py) kini menyebut Dana Diplomasi Pelindungan Indonesia. Verify 25/25.
+
+## 31 Okt 2026 (malam): 3 Renstra unit 2025-2029 ditambahkan
+- Aldo: Renstra Ditjen Protkons, Dit. PWNI, Dit. Konsuler 2025-2029 = PUBLIK (terbit di laman Ditjen Protkons); salinan di
+  Sumber\. URL belum diketahui -> isian [[tautan]] di pustaka + isian 16 Catatan. Sitasi tahun **2026** (dokumen bertanggal
+  "Januari 2025" tapi memuat data s.d. Nov 2025; unggah Feb-Mar 2026) supaya tidak bentrok dgn LKj (2025).
+- Fakta: Renstra PWNI hlm 19 kasus selesai 2019-24 (±19.600/45.378/26.173/30.894/50.349/60.122; 2020-24 = 212.916 = Renstra
+  Kemlu); hlm 35 pagu Rp23,65-58,79 M, realisasi 52,69% (blokir efisiensi) — **label tahun tabel tampak bergeser 1 th**
+  (baris "TA 2023" = angka LKj TA 2024; matriks hlm 59: Rp36.436.854 rb = 2025) -> naskah tak sebut tahun per baris;
+  hlm 16 SWOT S4 anggaran memadai vs W2 anggaran operasional kasus terbatas, W7 moral hazard; hlm 45 rencana Pedoman
+  Kedaruratan + Format Rencana Kontijensi; hlm 5 evakuasi 1.864 (vs Renstra Kemlu 1.760 -> ditulis rentang). Protkons
+  hlm 20 cetak: volume kasus belum diimbangi sumber daya; jenis bantuan (logistik, kesehatan, psikologi, penampungan).
+  Konsuler hlm 12: layanan 2024 = 221.347 (vs LKj 218.799 -> rentang). Ketiganya TIDAK menyebut PNBP.
+- Naskah 50 hlm, verify 25/25, gambar baru = Gambar 9 (kasus 2019-24); AS -> Gambar 10, desain -> Gambar 11.
+  II D.2 ilustrasi skala: asumsi hasil bersih 5% (bukan angka LPDP) -> pokok Rp728,74 M ≈ 2,2x PNBP kekonsuleran 2025.
+  Excel PNBP 37/37 (rasio pakai format "0.0" agar toleransi 0,06), BMN 38/38.
+

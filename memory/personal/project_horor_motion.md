@@ -1,16 +1,20 @@
 ---
 name: project-horor-motion
-description: Video motion "Penunggu" — 7 hantu Nusantara, 62 dtk, Remotion + soundtrack sintetis numpy; lokasi, alur render, status
+description: Video motion "Penunggu" — 7 hantu Nusantara, ±88 dtk, narasi ElevenLabs Brian, Remotion + soundtrack sintetis; lokasi, alur render, status
 metadata:
   type: project
 ---
 
 **Status 31 Okt 2026:** v1 selesai dirender. Permintaan Aldo: "vidio motion tentang horor di indonesia". Scope dipilih Bara = personal (topik bukan ekonomi/politik, jadi bukan Trajectory [[project-media-brand-architecture]]); belum dikonfirmasi Aldo.
 
-- Lokasi (mesin ini): `C:\Users\rivsy\dev\personal\horor-motion\`. Output `out\horor-nusantara.mp4` (1920x1080, 30fps, 62 dtk, ~120 MB karena grain) + `out\horor-nusantara-kecil.mp4` (CRF 24, ~14 MB, untuk dibagikan).
+- Lokasi (mesin ini): `C:\Users\rivsy\dev\personal\horor-motion\`. Output `out\horor-nusantara.mp4` (1920x1080, 30fps, ±88 dtk dengan narasi, ~120 MB karena grain) + `out\horor-nusantara-kecil.mp4` (CRF 24, ~14 MB, untuk dibagikan).
 - Stack sama dengan [[project-motion-video-demo]]: Remotion 4.0.539 + React 19.2. Alur: `npm run audio` (tulis `public/soundtrack.wav`) → `npm run render`. Render ~2 menit.
 - Struktur: `src/timeline.json` (durasi adegan, dibaca juga oleh audio) → intro lilin 225 fr, judul PENUNGGU + beringin 165 fr, 7 hantu × 180 fr, outro mata merah 210 fr. Siluet SVG buatan sendiri di `src/ghosts.tsx`; atmosfer (kabut, grain, kedip, glitch) di `src/ui.tsx`.
 - Hantu: Kuntilanak, Pocong, Genderuwo, Tuyul, Sundel Bolong, Leak (Bali), Wewe Gombel (Semarang). Teks = folklor umum, tanpa angka selain "belasan ribu pulau".
 - Audio 100% sintetis (drone, angin, detak jantung, gong berombak, bonang ~pelog, bisikan) — tanpa sampel, tanpa lisensi pihak ketiga. Tanpa voiceover (edge-tts sudah ditolak Aldo).
 - **9:16 (31 Okt 2026):** komposisi `HororVertical` (1080x1920) memakai komponen yang sama; layout bercabang lewat `useV()` di `src/ui.tsx`. `npm run render:v` → `outhoror-nusantara-9x16.mp4` (+ `-kecil.mp4` ~14 MB). Teks ditaruh di tengah layar, sepertiga bawah dibiarkan kosong untuk UI Reels/TikTok.
-- Belum: VO manusia/ElevenLabs, branding.
+- **Narasi (31 Okt 2026, diminta Aldo "kok ga ada dubbingnya"):** ElevenLabs suara bawaan Brian (`nPczCjzI2devNBz1zQrb`), `eleven_v4`, `language_code: id`, speed 0.9. Naskah per adegan di `audio/script.json` (`parts` = potongan yang memicu teks muncul). `audio/make_vo.py` menulis `public/vo/*.mp3` + **menghasilkan `src/timeline.json`** — durasi tiap adegan kini mengikuti panjang narasi (total ±88 dtk). Cache per adegan lewat hash teks+suara, jadi hanya adegan yang berubah yang memakai kredit. Pemakaian pertama: 976 karakter.
+- Musik di-duck ke 40% saat narasi (di `make_audio.py`).
+- Urutan build: `envdb.sh run ELEVENLABS_API_KEY -- python audio/make_vo.py` → `python audio/make_audio.py` → `npm run render` + `npm run render:v`.
+- Key ElevenLabs hanya punya izin TTS (tanpa user_read/voices_read) dan paket Free: tanpa lisensi komersial. Untuk unggahan komersial perlu Starter ke atas.
+- Belum: branding.
