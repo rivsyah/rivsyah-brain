@@ -71,6 +71,12 @@ Claude Doc privat: https://claude.ai/artifact/5h3DnG7NXLF6yu4knp8hBA — "AI × 
 
 - Bahan surat izin atasan (kerangka, poin per paragraf, 7 komitmen, lampiran, langkah setelah kirim) = Claude Doc privat: https://claude.ai/artifact/Kqs9mvjfMT1CDbkgkMcxgy. Bahan saja; Aldo menulis kalimatnya sendiri. Tanpa nama instansi/NIP.
 
+## Website v2 — gaya aignited.id (31 Okt 2026)
+- Aldo minta UI/UX website NusaTerra mengikuti aignited.id. `site/index.html` ditulis ulang: latar hitam #050608, font Geist + Geist Mono (Google Fonts), kicker bernomor (01 Point of view, 02 Platforms, 03 Index, 04 Approach, 05 Portfolio, 06 Contact), angka besar + baris sumber, baris index dengan tag (Validating/Next/Focus), tombol pill putih.
+- Hero: lengkung planet biru + matahari amber (mark Horizon) yang naik saat scroll (CSS var --p dari JS, sticky stage 190vh). Contact ditutup lengkung yang sama.
+- Platforms = 3 chapter (Studio & Ventures, Maxxing dgn mark M asli, AIgnited dgn logo api). Aksen amber #f2a541.
+- Versi Deep Horizon lama disimpan: `site/index-v1-deephorizon.html`. Belum deploy, belum git.
+
 ## OPEN
 1. Kelayakan Aldo sebagai direktur PT (status kepegawaian; PP 94/2021 tak melarang tegas, tapi benturan kepentingan + izin instansi) — chat saja, jangan masuk berkas terlacak.
 2. Setujui isi website; status hukum AIgnited (PT? pemegang saham lain?) sebelum ditulis 'under' secara publik; nama pendiri di situs? (risiko status kepegawaian). Kota basis belum ditulis di situs.
