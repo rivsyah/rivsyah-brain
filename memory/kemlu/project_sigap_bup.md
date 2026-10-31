@@ -711,6 +711,14 @@ belum di beberapa kolom; IKPA tampil terlalu resmi.
 terikat + empat-mata user id, RPD/RUP/termin lock, tanpa `$request->all()`, tanpa link mati, CSRF penuh, throttle login, cookie aman,
 total pagu/realisasi konsisten. **Celah tes:** semua tes SQLite → lock & konkurensi tak pernah diuji.
 Status: dilaporkan ke Aldo; usulan 3 paket (demo-safety → kebenaran uang + uji konkurensi PG → RBAC nyata). Menunggu keputusan.
+**Paket 1 dikerjakan 31 Okt (`7a10bc1`, Aldo: "mulai paket 1"):** mode demo `SIGAP_DEMO=true` (Worker) + middleware
+`KunciAkunDemo` (rute: profile.update/destroy, user-password.update, two-factor.*, passkey.store/destroy, sigap.users.store →
+back + toast error + errors.demo); IP audit disamarkan di demo (layar + CSV); `Konsep::hariIni()` (config `sigap.hari_ini`,
+kosong = hari ini) gantikan semua 15 Jul tetap (kop, karwas, antrean, kontrak tempo, topbar, SPM/SP2D, formulir, IKPA, bulan
+RPD) — konstanta `HARI_INI` dihapus, frontend pakai `useSigap().hariIni`, phpunit.xml `SIGAP_HARI_INI=2026-07-15`; label
+"Aktual (ilustrasi)", "Belum Terealisasi"/"Belum Realisasi" vs "Sisa Tersedia", tooltip kurva semua titik, tombol unduh ganda
+Laporan dibuang, "Paket RUP TW x" dinamis. Tes 158. Paket 2 (uang) & 3 (RBAC nyata) BELUM.
+Jebakan: scratchpad dibersihkan antarhari → DB dummy lokal harus dibuat ulang (cek pengalihan dulu).
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 

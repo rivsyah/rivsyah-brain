@@ -209,6 +209,21 @@ Kirim file dibaca sebagai "ya" untuk v1.1 + izin commit yang ditawarkan bersaman
 - **Jebakan:** heredoc Bash membuang `\` → regex `SIN\$` jadi `SIN$` (cocok "Mesin") → 161 temuan palsu; tulis
   skrip pemeriksa lewat file.
 
+**v1.2 — 31 Okt 2026 (audit atas permintaan Aldo, lalu "kerjakan semua"; commit `109be12` + `8402ce4`, TAYANG, livetest LOLOS).**
+- Audit: tes + regresi sampel Washington lolos; satu-satunya gangguan nyata = kurs basi (s.d. 9 Okt) karena **situs BI kini
+  mengirim kurs sebagai teks format Indonesia "17.937,00"** → update_kurs.py gagal diam ("File JISDOR kosong"); diperbaiki.
+- Dikerjakan: satu cara kurs utama SP2D GUP (D18, gantikan D8 — JISDOR/keduanya masih bisa dipilih), lensa "selisih
+  terealisasi/belum terealisasi" dihapus (diganti beban kurs, selisih kurs saat SP2D, belanja belum di-GUP), laju median
+  (D19), proyeksi per MAK + filter MAK kurang, status SP2D per belanja di Buku Kas, simulasi/pengaturan teknis di bagian
+  "Lanjutan", peringatan kurs > 10 hari, proyeksi mulai dari tanggal laporan bila lebih baru dari BKU,
+  `tools/cek-identitas.js` (diff/ekspor), **Task Scheduler "PANTAS kurs mingguan" Senin 08.00** → tools/perbarui-kurs.sh
+  (commit data kurs saja, build, deploy, gate; log .claude/perbarui-kurs.log) (D20).
+- Tidak dikerjakan (data belum ada): pemisahan RM/PNBP, banyak satker.
+- Angka sampel Singapura dengan kurs 30 Okt (Rp18.138): proyeksi kurang **Rp7,6 M** (laju median 6 bln) atau **Rp1,4 M**
+  (median 3 bln); batas aman Rp14.500 / Rp17.330; **27 MAK diproyeksikan kurang, jumlah Rp17,5 M** (MAK lain bersisa →
+  bahan pergeseran). Terbesar: 511145 TPLN home staff −Rp7,1 M, 521117 kompensasi pegawai setempat −Rp4,7 M dan −Rp3,5 M.
+- Kukuh: per 17 Okt belum pernah login (daftar pengguna Access hanya Aldo).
+
 **Masih terbuka (per 11 Okt, sesudah v1.1):** ~~pagu DIPA nyata~~ (kini dari laporan Realisasi Program); kurs asumsi
 khusus DIPA (sementara 16.500); ~~siapa lagi yang boleh masuk Access~~ (12 Okt: Kukuh ditambahkan, kukuh.panuntun23@gmail.com — kebijakan "PANTAS - hanya pemilik" kini 2 email; jalankan `access` dengan ACCESS_EMAIL berisi SEMUA alamat, dipisah koma, karena daftar baru menggantikan yang lama); banyak satker sekaligus (usul rapat,
 belum diminta); laju proyeksi mana yang dipakai untuk dilaporkan (3 vs 6 bulan); nama PANTAS; simpan data di
