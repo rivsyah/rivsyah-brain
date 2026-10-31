@@ -661,3 +661,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T09:29Z  SIGAP BUP 31 Okt: audit menyeluruh 4 auditor + verifikasi - mendesak demo: akun demo bisa diambil alih (profile tanpa sandi), akun tersembunyi via role->users, IP terlihat; uang: komitmen kontrak tak dilepas, race SP2D/revisi, refund berulang, pembagian per sheet; tampilan: dua tanggal acuan, kurva aktual ilustrasi, 'Sisa' dua arti. Detail di kartu SIGAP. Menunggu keputusan Aldo.
 - 2026-10-31T09:33Z  BUP Kemlu: audit 31 Okt — perbaiki lacak (wajib surel), eskalasi peran admin, kebocoran dasbor portal staf, riwayat status, tampilan secret SSO; usulan pangkas menu menunggu Aldo
 - 2026-10-31T10:03Z  BUP Kemlu: SIPAMA, MONPBJP, Diplomasi Pengadaan/VMS dihapus dari Portal Internal (seed, env, docs) atas perintah Aldo
+- 2026-10-31T10:08Z  BUP Kemlu: Portal kini SIGAP BUP + SIPDLN BUP; nama lengkap SIGAP dibetulkan

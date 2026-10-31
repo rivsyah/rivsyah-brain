@@ -88,3 +88,10 @@ tile beranda ganda; pindah Lacak Aset ke Portal (posisi aset Perwakilan RI tak p
 ## 31 Okt 2026 — SIPAMA, MONPBJP, Diplomasi Pengadaan/VMS dihapus dari Portal
 Aldo: "ga ada lagi". Dibuang dari seed (seed kini juga `deleteMany` ketiga kunci itu), `.env`/`.env.example`,
 README, docs/SSO.md, komentar kode. Portal hanya berisi SIGAP-BUP; aplikasi lain bisa ditambah lewat Admin.
+
+## 31 Okt 2026 — Portal = SIGAP BUP + SIPDLN BUP
+Aldo: "yang saat ini ada adalah SIGAP BUP dan SIPDLN BUP". Seed kini dua kartu: `sigap-bup` (nama dibetulkan
+jadi "Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan" — dulu salah tulis "Sistem Gerbang
+Anggaran & Pengadaan") dan `sipdln-bup` (env `SIPDLN_BUP_URL`). URL live keduanya di *.rivsyah.dev
+([[project-sigap-bup]], [[project-sipdln-bup]]) sengaja TIDAK ditulis di berkas terlacak; isi lewat env/Panel Admin.
+Consumer SSO di kedua aplikasi belum dipasang.
