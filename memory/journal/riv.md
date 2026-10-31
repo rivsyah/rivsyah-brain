@@ -663,3 +663,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T10:03Z  BUP Kemlu: SIPAMA, MONPBJP, Diplomasi Pengadaan/VMS dihapus dari Portal Internal (seed, env, docs) atas perintah Aldo
 - 2026-10-31T10:08Z  BUP Kemlu: Portal kini SIGAP BUP + SIPDLN BUP; nama lengkap SIGAP dibetulkan
 - 2026-10-31T10:12Z  KTI BMN Excel dibangun ulang: 42/42 olahan cocok, 0 error (KTI PNBP 37/37)
+- 2026-10-31T10:14Z  KTI PNBP: audit akhir 31 Okt atas permintaan Aldo — verify 25/25; 0 sisa rumusan lama; nomor Tabel 1-6/Gambar 1-11 urut; isi Per Bab = naskah utuh (beda hanya entri daftar isi); semua berkas lebih baru dari draf; Excel 95 data + 35 rujukan, 0 halaman tak ditemukan, 19 berkas sumber ada, 37/37 cocok; 15 angka baru ada di PDF; 23 tautan pustaka aktif (GAO/IRCC/DOI dicek manual karena blok bot). Tidak ada perbaikan yang perlu
