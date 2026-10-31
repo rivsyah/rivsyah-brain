@@ -21,3 +21,10 @@ metadata:
 - Urutan build: `envdb.sh run ELEVENLABS_API_KEY -- python audio/make_vo.py` → `python audio/make_audio.py` → `npm run render` + `npm run render:v`.
 - Key ElevenLabs hanya punya izin TTS (tanpa user_read/voices_read) dan paket Free: tanpa lisensi komersial. Untuk unggahan komersial perlu Starter ke atas.
 - Belum: branding.
+
+## Video kedua: "Si Manis Jembatan Ancol" (31 Okt 2026)
+
+- Diminta Aldo: "angkat cerita horor di Indonesia yang paling terkenal". Bara menyarankan cerita rakyat; KKN di Desa Penari DITOLAK sebagai bahan cerita ulang (hak cipta penulis thread + rumah produksi). Aldo pilih Si Manis Jembatan Ancol.
+- Versi: Siti Ariah/Mariam menurut Ridwan Saidi (Alwi Shahab, Republika; dirangkum GNFI 16 Des 2021) + Keng Po 1950 (kecelakaan) + tukang perahu dibayar daun + sopir enggan lewat setelah Isya s.d. 1960-an. Versi dan tahun berbeda antarsumber (1817 vs 1870); naskah memakai "konon", nama Oei Tambah Sia sengaja tidak disebut, kartu akhir menyatakan legenda tanpa bukti sejarah pasti. Koran di video ditandai "ILUSTRASI".
+- File: naskah `audio/ancol.json` (sumber tercatat di field `sources`), visual `src/ancol/Ancol.tsx` + `src/ancol/art.tsx`, audio `audio/ancol_audio.py`. Komposisi `Ancol` / `AncolVertical`; `npm run ancol` / `npm run ancol:v` → `out\si-manis-jembatan-ancol(-9x16)(-kecil).mp4`. ±103,6 dtk, narator Lily, 1.083 karakter.
+- Refactor: `make_vo.py` kini menerima [naskah] [timeline] [folder_vo] + override per adegan (`at`/`min`/`tail`/`eyes`, `parts: []` = tanpa narasi); generator suara bersama di `audio/synth.py`. Output Penunggu dicek identik setelah refactor.

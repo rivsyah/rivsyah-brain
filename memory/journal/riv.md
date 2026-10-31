@@ -677,3 +677,6 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T13:14Z  SIGAP BUP: Paket 3 (peran melekat pada akun, ganti peran hanya di demo = pindah akun demo) LIVE 31 Okt 4220436; CI sukses, Neon migrasi 16, 7 akun (admin+6 persona demo), livecheck 13/13.
 - 2026-10-31T13:50Z  research: Phase 0 scope memo brief larangan trading saham pejabat Indonesia; kartu research/project_officials_trading_ban.md; menunggu approval
 - 2026-10-31T13:55Z  motion-demo: latar judul+definisi diganti footage CBD Sudirman (Pexels 39539763, 9770884); grafik dipertahankan; render ulang 16:9 dan 9:16
+- 2026-10-31T13:56Z  31 Okt: brainstorm nama media video motion fakta unik (dunia/semesta/Indonesia) — terpisah dari Trajectory; usulan Parallax/Ternyata/Rasi/Curio dll, belum diputuskan, handle belum dicek
+- 2026-10-31T14:02Z  research: brief Public Office Private Positions disetujui; Aldo minta edisi Bahasa Indonesia saja
+- 2026-10-31T14:06Z  31 Okt: Aldo pilih nama Ternyata (cadangan Masa Sih?) untuk media fakta unik; cek handle YT/TikTok/IG, @ternyatahq kosong di ketiganya; card media brand diperbarui

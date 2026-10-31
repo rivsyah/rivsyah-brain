@@ -6,6 +6,10 @@ metadata:
   modified: 2026-10-31
 ---
 
+**LANGUAGE: Bahasa Indonesia edition ONLY** — Aldo, 31 Oct 2026: "research ini memakai bahasa indonesia" (explicit override of [[feedback-english-only-briefs]] for this brief only). Indonesian number format via num helpers (2,88% / Rp3.426,0 triliun); disclaimer = the Indonesian wording used in Too-Big-to-Fail _archive_id; title + framework name stay English.
+
+**Approved 31 Oct 2026:** title A "Public Office, Private Positions", framework "Clean Hands Agenda". Folder Downloads\Research Reports\Public-Office-Private-Positions (pipeline copied from Seventy-Dollar-Budget).
+
 **Status 31 Oct 2026:** Phase 0 scope memo delivered in chat (master prompt v3, see
 [[reference-policy-brief-master-prompt]]). STOPPED for approval. No folder or code yet.
 Section 1 was not filled in, so the agent assumed: desk research only, English, PDF only, cutoff 31 Oct 2026,
