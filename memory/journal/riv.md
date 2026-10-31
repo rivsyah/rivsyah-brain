@@ -611,3 +611,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-30T08:45Z  NusaTerra: peta jalan pendirian & legalitas (Claude Doc CmwVCXLSSbgiuHKbFB92jb) + kartu referensi shared/reference/reference_pendirian_pt_2026.md; AIgnited card ditautkan
 - 2026-10-30T09:54Z  NusaTerra: Claude Doc bahan surat izin atasan dibuat (Kqs9mvjfMT1CDbkgkMcxgy), link masuk kartu project_nusaterra_venture
 - 2026-10-31T05:56Z  Hapus permanen Herd/ukpbj-kemlu + Herd/ukpbj-nextjs atas permintaan Aldo (tanpa arsip), launch.json dibersihkan, card ditandai DIHAPUS
+- 2026-10-31T06:00Z  31 Okt: 8 ide KTI sumber fiskal mandiri Kemlu (kartu idea_kti_fiskal_mandiri_kanselerai), Aldo belum memilih
