@@ -109,3 +109,21 @@ Pelajaran: URL asal file unduhan bisa dibaca dari ADS Zone.Identifier (PowerShel
 - Folder baru Aldo: `KTI\Informasi Publik\` (Sekjen\, HEKSP\, + Renstra Dit Konsuler, Ditjen Protkons, Dit PWNI, RKAKL
   2026, LK, LBP S1 2025, LK S1 2026). Belum dicek untuk KTI BMN: LKj Biro Umum dan Pengadaan 2025 (kandidat kuat),
   LKj Biro Keuangan 2025, LBP Semester I TA 2025.
+
+**31 Okt 2026 — sapu `KTI\Informasi Publik\` (22 PDF, SEMUA publik: kemlu.go.id/files/repositori atau e-ppid).**
+- Masuk naskah: LKj BUP 2025 (Jan 2026) = IPA 2,91 (2023) / 3,16 (2024) / 3,53 (2025, Surat Dir PKKN S-7/KN/KN.2/2025
+  15 Jan 2026); target IPA 2025 direvisi 3,2->3,1 antara lain krn kendala pemanfaatan BMN LN (hlm 27); hlm 73 belum ada
+  aturan pemanfaatan BMN LN -> tak masuk parameter IPA, PNBP pemanfaatan menunggu revisi PMK 271; hlm 33-37 Plan ID (eks
+  MEDI) standar sarana gedung kantor Perwakilan + renovasi Tier I 2027-2045; hlm 71 koordinasi revisi PMK 271.
+  LK S1 2026 (belum audit, Kemlu 2026c di KTI A): sewa Rp801,93 jt (-10,58%, 8 satker), pemeliharaan gedung Rp109,65 M
+  (+36,55%), FSR Rp224,61 M (+18,12%), KDP KBRI Washington Rp88,57 M (+18,42% dari akhir 2025).
+  Renstra Ditjen Protkons (Jan 2026) hlm 34: Kemlu mengizinkan/mengawasi jual-beli properti & renovasi perwakilan asing,
+  asas resiprositas -> II C.3.
+- KONFLIK DATA: LKj BPO 2024 menulis IPA 2,91=2022, 3,10=2023; LKj BUP 2025 menulis 2,91=2023, 3,16=2024. Naskah pakai
+  LKj BUP (pemilik indikator, terbaru); sitasi LKj BPO DIHAPUS dari naskah, baris A99-A100 di Excel diberi catatan.
+- Sitasi: Renstra BUP = Biro Umum dan Pengadaan KL (2026a); LKj BUP 2025 = (2026b). 51 hlm, verify 25/25, 0 kembar.
+- Excel: xlsx_data.py sudah berisi S41-S43, A105-A117, O39-O42, 5 baris rujukan; BUILD GAGAL simpan krn workbook KTI A
+  sedang dibuka Aldo di Excel -> jalankan ulang `python build_xlsx.py` + recalc Excel COM setelah ditutup.
+- Tidak berguna utk KTI BMN: HEKSP/INKRAF, Pusdatin, Pusbinjafung, RKAKL 2026 (ringkasan pagu), LBP S1 2025 (tergantikan
+  LBP 2025 audited). Belum dibaca: LKj Biro Keuangan 2025 (hasil pindai 96 hlm). Renstra Dit Konsuler, Dit PWNI, Ditjen
+  Protkons, RKAKL 2026 = bahan untuk sesi KTI PNBP.
