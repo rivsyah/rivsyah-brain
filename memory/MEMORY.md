@@ -75,6 +75,7 @@
 
 ## Operating rules — workflow and building
 
+- [Hook video di detik awal](shared/feedback/feedback_video_hook_first_seconds.md) — semua video motion: detik 0-3 langsung sebut topik (suara + teks layar), gaya clickbait tapi klaim tetap benar dan bersumber (31 Okt 2026)
 - [English-only briefs](shared/feedback/feedback_english_only_briefs.md) — jangan bawakan edisi Bahasa Indonesia lagi; brief English only sejak 3 Sep 2026
 - [Samaran identitas: lingkup](shared/feedback/feedback_samaran_identitas_lingkup.md) — "samarkan identitas Kemlu" = nama instansi/satker/data asli, BUKAN istilah domain (diplomatik, Perwakilan RI); tanya dulu sebelum ganti nama modul (11 Okt: Logistik Diplomatik dikembalikan)
 - [Data sintetis tolak-semua](shared/feedback/feedback_synthetic_data_deny_all.md) — data uji dari data asli: teks diganti palsu sepanjang aslinya kecuali lolos pola kode ketat/daftar izin; daftar pengecualian data dihitung dari keluaran LENGKAP, jangan `| head`; saat analisis pun, frekuensi kata uraian ≥25 tetap meloloskan nama (3 insiden 27 Sep)
@@ -156,7 +157,7 @@
 
 - [aldo-starter install](shared/project_aldo_starter.md) - kit Dedi dipasang di riv; 7 penyimpangan dari default + 3 bug hulu yang hilang kalau --update dijalankan; juga daftar kunci yang terpasang di env.db
 - [Materi CFA L1 Edisi 2027](personal/project_cfa_l1_materi.md) — 8 PDF 887 hlm, 772 soal (gerbang 0 galat) di Riv's Journey\Materi Bahan Belajar\CFA\Edisi 2027; builder ~/dev/personal/cfa-l1-materi; bobot 2027 berubah (Quant 11–14%, Ethics 10–15%); rekomendasi window Mei 2027 belum diputuskan Aldo
-- [Video motion horor "Penunggu"](personal/project_horor_motion.md) — 31 Okt 2026: ±92 dtk, 7 hantu Nusantara, narasi ElevenLabs Lily + audio sintetis, 16:9 + 9:16, ~/dev/personal/horor-motion; + video kedua Si Manis Jembatan Ancol (104 dtk); scope personal (pilihan Bara, belum dikonfirmasi)
+- [Video motion horor "Penunggu"](personal/project_horor_motion.md) — 31 Okt 2026: ±92 dtk, 7 hantu Nusantara, narasi ElevenLabs Lily + audio sintetis, 16:9 + 9:16, ~/dev/personal/horor-motion; + Si Manis Jembatan Ancol + Pontianak + Nyi Roro Kidul; semua 9:16 dengan hook clickbait; ElevenLabs Free habis 31 Okt (2 video baru pakai edge-tts Gadis sementara); scope personal (pilihan Bara, belum dikonfirmasi)
 - [Family Funds (FFCC)](personal/project_family_funds.md) — wealth dashboard pribadi "Riv's Journey" di Herd\family-funds → family-funds.test
 - [NusaTerra Venture](personal/project_nusaterra_venture.md) — 30 Okt 2026: induk NusaTerra VENTURE (bukan 'Capital' — salah tangkap, dikoreksi Aldo) → Maxxing Capital + AIgnited; brand Deep Horizon (biru #0B1F3A + amber); website 1 halaman di ~/dev/personal/nusaterra-venture; PT Perorangan, modal Rp1 M; memo tesis + peta jalan pendirian = Claude Doc (link di kartu); BELUM ada badan hukum; domain nusaterra.vc belum dibeli
 - [Maxxing Capital](personal/project_maxxing_capital.md) — penerus FFCC (pivot 17 Okt, nama 19 Okt 2026): copilot live read-only HANYA Hyperliquid (D23) + agent desk paper, Cloudflare + Supabase; ~/dev/personal/maxxing-capital; blocker: WSL, Cloudflare account id, alamat wallet; brand v1 logo high-water mark locked D24 (30 Okt)

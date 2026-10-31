@@ -684,3 +684,7 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T14:21Z  ep01 aignited: proyek ~/dev/aignited/ep01-social, versi vertikal full + short dengan caption Whisper lokal; faster-whisper dipasang (pip); card aignited/project_ep01_social_cuts.md
 - 2026-10-31T14:32Z  research: brief Public Office Private Positions TERKIRIM 31 Okt (ID, 34 hlm, gate 59/9/11) di Research Reports/Public-Office-Private-Positions; kartu diperbarui
 - 2026-10-31T14:36Z  ep01 vertical full (4:23) + short (62,9 dtk) selesai dirender di ~/dev/aignited/ep01-social/out
+- 2026-10-31T14:52Z  ep01 ID: kuota ElevenLabs free habis di kalimat 40/52 (sisa 609 karakter); free float sudah ganti ke Liam
+- 2026-10-31T15:04Z  Aturan baru Aldo: hook topik di 1-3 detik pertama semua video motion; card shared/feedback/feedback_video_hook_first_seconds.md
+- 2026-10-31T15:08Z  Hook detik awal diterapkan ke free float (visual) dan ep01 (EN+ID); musik ep01 dipisahkan; VO judul free float + 12 kalimat ep01 ID menunggu reset kuota ElevenLabs
+- 2026-10-31T15:36Z  Horor: stok 4 video 9:16 dengan hook clickbait selesai (Penunggu 95s, Ancol 106s, Pontianak 114s, Nyi Roro Kidul 114s) di ~/dev/personal/horor-motion/out/*-9x16-kecil.mp4; ElevenLabs Free habis (17 kredit), 2 video baru pakai edge-tts Gadis sementara
