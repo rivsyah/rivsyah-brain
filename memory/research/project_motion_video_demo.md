@@ -5,9 +5,9 @@ metadata:
   type: project
 ---
 
-**Status 29 Okt 2026:** demo 75 detik dengan voiceover selesai di render. Topik "Apa itu free float?" (konseptual, angka grid = ilustrasi). Belum ada footage asli.
+**Status 31 Okt 2026:** demo 80 detik dengan VO ElevenLabs Brian selesai di render. Topik "Apa itu free float?" (konseptual, angka grid = ilustrasi). Belum ada footage asli.
 
-- Lokasi (mesin ini): `C:\Users\rivsy\dev\research\motion-demo\`. Output `out\demo.mp4` (1920x1080, 30fps, 75 dtk).
+- Lokasi (mesin ini): `C:\Users\rivsy\dev\research\motion-demo\`. Output `out\demo.mp4` (1920x1080, 30fps, 80 dtk).
 - Stack: Remotion 4.0.539 + React 19.2. `npm run studio` untuk preview, `npm run render` untuk MP4. Render ~1 menit di laptop ini.
 - Komponen di `src/ui.tsx`: Contour (latar garis kontur bergerak), Pill, Highlight (sapuan highlight), DocCard (kartu dokumen serif), Caption, Chrome (kredit + logo IR). Scene di `src/Demo.tsx`, daftar `SCENES` = [komponen, durasi frame].
 - Referensi gaya: video TSCS "WTF Just Happened to Indonesia?" (youtube 21-G0C_bXYI). Tiru gaya, jangan salin aset/brand mereka.
@@ -28,3 +28,4 @@ metadata:
 - Key valid tapi TANPA izin voices_read dan models_read (401). Izin TTS ada.
 - API Free TIDAK BISA memakai suara Voice Library (402 paid_plan_required, dicek 31 Okt 2026). Untuk suara native Indonesia dari library: perlu Creator atau top-up kredit $5 pay-as-you-go (pesan error API).
 - 31 Okt 2026: Aldo pilih jalur GRATIS (tanpa top-up). Suara default ElevenLabs JALAN di API Free dengan eleven_v4 + language_code id: Brian nPczCjzI2devNBz1zQrb, George JBFqnCBsd6RMkjVDRZzb, Daniel onwK4e9ZLuTAKqWW03F9, Eric cjVigY5qzO86Huf0OWal, Liam TX3LPaxmHKxFdv7VOQHJ, Sarah EXAVITQu4vr4xnSDxMaL, Alice Xb7hH8MSUJpSbSDYk0k2. Rachel 21m00Tcm4TlvDq8ikWAM = library voice, 402 di Free. Sampel di out/samples/. Menunggu Aldo pilih.
+- 31 Okt 2026: Aldo PILIH Brian (nPczCjzI2devNBz1zQrb), set di vo/script.json. VO penuh = 1.073 karakter. Diam di ujung file ElevenLabs hanya ~0,2 dtk, jadi TAIL dinaikkan ke 14 frame (jeda antar-scene ~0,9 dtk). Kualitas Brian belum dinilai Aldo di video penuh.
