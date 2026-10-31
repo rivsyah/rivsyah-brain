@@ -538,3 +538,5 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
 - **Excel:** xlsx_data.py + S17 (Renstra), S18 (RPJMN Lamp I), B69–B82, P31–P32, 15 baris peraturan. Rekalkulasi COM:
   PNBP 0 error 32/32 cocok; BMN 0 error 38/38. Skrip rekalkulasi COM ditulis di scratchpad (`recalc.ps1`, tidak
   permanen) — buat ulang bila perlu: Open → CalculateFull → Save, hitung sel `#...` dan kolom Cek di sheet Olahan.
+- **Audit 31 Okt (malam):** semua dokumen dipindai (PDF, DOCX, 8 Per Bab, Catatan, Excel): 0 sisa rumusan lama setelah 5
+  kalimat Bab II C diperbaiki; judul Excel PNBP (build_xlsx.py) kini menyebut Dana Diplomasi Pelindungan Indonesia. Verify 25/25.
