@@ -1,6 +1,6 @@
 ---
 name: project-kti-bmn-perwakilan-blu
-description: "KTI makalah 'Pemanfaatan BMN Non-Misi di Perwakilan RI melalui BLU: Kelayakan Hukum, Batas Kekebalan Diplomatik, dan Pendanaan Pemeliharaan' (docx/pdf 29 Okt 2026, per bab + data olahan 31 Okt) di Downloads\Riv's Journey\KTI\KTI BMN Perwakilan BLU\. Fokus sewa; BGS/BSG/KSP hanya muncul sebagai data (0 usulan di register SIMAN TA 2024-2025), BUKAN alternatif yang dianalisis"
+description: "KTI makalah 'Pemanfaatan BMN Non-Misi di Perwakilan RI melalui BLU: Kelayakan Hukum, Batas Kekebalan Diplomatik, dan Pendanaan Pemeliharaan' (docx/pdf 29 Okt 2026, per bab + data olahan 31 Okt) di Downloads\Riv's Journey\KTI\KTI BMN Perwakilan BLU\. Fokus sewa; sejak 31 Okt ada subbagian II C.6 KSP dan BGS/BSG (pelengkap BLU utk lahan kosong terpisah), BUKAN alternatif tersendiri"
 metadata:
   type: project
   modified: 2026-10-31
@@ -55,3 +55,14 @@ soal BGS/BSG (porsi gedung untuk pemerintah, wewenang Pengelola Barang atas tana
 - Nuansa 2 (par. II A.2 soal Ps 24): PP 28/2020 Ps 29(10)b membolehkan setor sewa BERTAHAP untuk BMN berkarakteristik/
   sifat khusus dgn persetujuan Pengelola (aturan lanjut Ps 29(11)); PMK 115 Ps 24(5) hanya menyebut kerja sama
   infrastruktur -> celah yang menguatkan argumen naskah.
+
+**31 Okt 2026 — DIKERJAKAN (Aldo meneruskan update sesi sebelah):** verdict di atas dijalankan apa adanya.
+- II C §6 baru "Bentuk Pemanfaatan Selain Sewa: KSP dan BGS/BSG" (definisi Ps 1 angka 13-15; syarat dana APBN tak cukup
+  Ps 33(1)a, 34(1); wewenang Pengguna Ps 32(4), 34(2)b; manfaat in-kind: BGS/BSG min 10% utk tusi Ps 36(4), serah akhir
+  Ps 36(8), KSP sebagian kontribusi berupa bangunan maks 10% Ps 33(1)g-h; 4 hambatan: juknis dalam negeri saja, tender +
+  konsorsium wajib badan hukum Indonesia PMK 115 Ps 59(3), izin atas nama Pemerintah RI Ps 36(6) vs hukum setempat +
+  22 USC 4305, kekebalan -> hanya lahan kosong terpisah). Biaya Kelembagaan jadi §7; APBN kini didefinisikan di §6.
+- Alt A: juknis harus mencakup sewa, KSP, BGS/BSG. Bab III: kesimpulan 2 (0 usulan KSP/BGS) + Rek 4 (sewa/KSP/BGS,
+  pemilihan mitra). Tidak ada tabel/gambar baru -> penomoran tetap.
+- Hasil: 47 hlm, verify 25/25, 0 kalimat kembar dgn KTI B. Naskah utuh + Per Bab ditulis ulang; Excel + 6 baris pasal baru
+  (PP 28/2020 Ps 1, 32, 33, 34, 36; PMK 115 Ps 59(3)), 38/38 cocok. Cadangan draf lama di scratchpad sesi.
