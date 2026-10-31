@@ -5,7 +5,7 @@ metadata:
   type: project
 ---
 
-**Status 31 Okt 2026:** proyek dibuat dan dirender oleh Bara atas permintaan Aldo ("buat versi untuk tiktok, reels ig, youtube").
+**Status 31 Okt 2026:** SELESAI dirender oleh Bara atas permintaan Aldo ("buat versi untuk tiktok, reels ig, youtube"). Full 4:23 (~105 MB) + short 62,9 dtk (~23 MB), audio tanpa jeda di titik potong. Belum ditonton Aldo, belum diunggah.
 
 - **Sumber (mesin ini):** `C:\Users\rivsy\Downloads\AIgnited\ep01-long-indonesia-gas-singapore-4k.mp4`. 3840x2160, 30 fps, 4:23 (263,1 dtk), narasi bahasa Inggris, bermerek aignited (peta hitam-oranye, font mono).
 - **Proyek:** `C:\Users\rivsy\dev\aignited\ep01-social\` (Remotion 4.0.539). `public/main.mp4` = proxy 1080p dari sumber 4K, `public/bg.mp4` = latar 1080x1920 yang diburamkan dan digelapkan (dua-duanya dibuat ffmpeg, gitignored).
