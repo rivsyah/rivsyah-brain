@@ -27,3 +27,5 @@ drop "aset" pada KTI dana abadi karena Kemenkeu = Pengelola Barang; di sini Keml
 yang mengusulkan).
 
 Status: terbuka. Aldo belum memilih.
+
+31 Okt: ide 5 (BGS/KSP) tumpang tindih objek dengan [[project-kti-bmn-perwakilan-blu]]; di sana BGS/KSP hanya data (0 usulan), belum dianalisis.
