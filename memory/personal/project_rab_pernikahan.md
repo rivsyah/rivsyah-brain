@@ -102,4 +102,7 @@ seserahan terpisah). Aldo yang minta ke Swasana.
   100, BRIN 100/200, Lippo Hadjatan 100/200, Leviticus. Default BRIN 200 total Rp92,49 jt. Tabungan contoh: fase 1
   Rp19,3 jt/bln (puncak Mar 2027), fase 2 Rp9,5 jt/bln; jadwal cicilan Hadjatan. Verify 1.511 rumus lulus.
   ⚠ OPEN: lokasi Habitate, Daily Inn Express, Casakhasa belum dicek; D'One (Rp99 jt) belum dimasukkan karena pax & katering tak tertulis.
+- 31 Okt (lanjutan): +6 opsi riset — Swiss-Belresidences Kalibata Ruby 100 / Sapphire 200 (Rp36,8/66,8 jt nett), Swiss-Belhotel
+  Pondok Indah Papillon 150 (Rp64 jt), Swiss-Belinn Bogor 100/200 (Rp35/75 jt), Villa Srimanganti 100 all-in (Rp37 jt, 2025).
+  Muat Rp100 jt kini 12 opsi; termurah Villa Srimanganti Rp67 jt total. 47 opsi, verify 1.613 rumus lulus.
 
