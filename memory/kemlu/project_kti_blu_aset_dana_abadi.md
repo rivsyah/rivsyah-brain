@@ -543,7 +543,7 @@ aneh → cari dengan whitespace dihapus. Salinan di `~/dev/kemlu/kti-blu-pnbp-sr
 
 ## 31 Okt 2026 (malam): 3 Renstra unit 2025-2029 ditambahkan
 - Aldo: Renstra Ditjen Protkons, Dit. PWNI, Dit. Konsuler 2025-2029 = PUBLIK (terbit di laman Ditjen Protkons); salinan di
-  Sumber\. URL belum diketahui -> isian [[tautan]] di pustaka + isian 16 Catatan. Sitasi tahun **2026** (dokumen bertanggal
+  Sumber\. URL = https://kemlu.go.id/files/repositori/65391/<nama berkas asli> (dari Aldo; ketiganya terverifikasi, ukuran = salinan Sumber); sudah diisi di pustaka + Excel. Sitasi tahun **2026** (dokumen bertanggal
   "Januari 2025" tapi memuat data s.d. Nov 2025; unggah Feb-Mar 2026) supaya tidak bentrok dgn LKj (2025).
 - Fakta: Renstra PWNI hlm 19 kasus selesai 2019-24 (±19.600/45.378/26.173/30.894/50.349/60.122; 2020-24 = 212.916 = Renstra
   Kemlu); hlm 35 pagu Rp23,65-58,79 M, realisasi 52,69% (blokir efisiensi) — **label tahun tabel tampak bergeser 1 th**
