@@ -662,3 +662,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T09:33Z  BUP Kemlu: audit 31 Okt — perbaiki lacak (wajib surel), eskalasi peran admin, kebocoran dasbor portal staf, riwayat status, tampilan secret SSO; usulan pangkas menu menunggu Aldo
 - 2026-10-31T10:03Z  BUP Kemlu: SIPAMA, MONPBJP, Diplomasi Pengadaan/VMS dihapus dari Portal Internal (seed, env, docs) atas perintah Aldo
 - 2026-10-31T10:08Z  BUP Kemlu: Portal kini SIGAP BUP + SIPDLN BUP; nama lengkap SIGAP dibetulkan
+- 2026-10-31T10:12Z  KTI BMN Excel dibangun ulang: 42/42 olahan cocok, 0 error (KTI PNBP 37/37)

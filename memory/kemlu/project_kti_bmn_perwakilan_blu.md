@@ -122,8 +122,8 @@ Pelajaran: URL asal file unduhan bisa dibaca dari ADS Zone.Identifier (PowerShel
 - KONFLIK DATA: LKj BPO 2024 menulis IPA 2,91=2022, 3,10=2023; LKj BUP 2025 menulis 2,91=2023, 3,16=2024. Naskah pakai
   LKj BUP (pemilik indikator, terbaru); sitasi LKj BPO DIHAPUS dari naskah, baris A99-A100 di Excel diberi catatan.
 - Sitasi: Renstra BUP = Biro Umum dan Pengadaan KL (2026a); LKj BUP 2025 = (2026b). 51 hlm, verify 25/25, 0 kembar.
-- Excel: xlsx_data.py sudah berisi S41-S43, A105-A117, O39-O42, 5 baris rujukan; BUILD GAGAL simpan krn workbook KTI A
-  sedang dibuka Aldo di Excel -> jalankan ulang `python build_xlsx.py` + recalc Excel COM setelah ditutup.
+- Excel: xlsx_data.py sudah berisi S41-S43, A105-A117, O39-O42, 5 baris rujukan; BUILD sempat gagal (workbook dibuka Aldo), lalu SELESAI setelah ditutup: 42/42 cocok, 0 error.
+
 - Tidak berguna utk KTI BMN: HEKSP/INKRAF, Pusdatin, Pusbinjafung, RKAKL 2026 (ringkasan pagu), LBP S1 2025 (tergantikan
   LBP 2025 audited). Belum dibaca: LKj Biro Keuangan 2025 (hasil pindai 96 hlm). Renstra Dit Konsuler, Dit PWNI, Ditjen
   Protkons, RKAKL 2026 = bahan untuk sesi KTI PNBP.
