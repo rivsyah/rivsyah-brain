@@ -6,7 +6,17 @@ metadata:
   modified: 2026-10-11
 ---
 
-## 31 Okt 2026 — audit fitur + proses bisnis (belum diperbaiki, menunggu keputusan Aldo)
+## 31 Okt 2026 — hasil audit DIKERJAKAN (Aldo: "kerjakan semua"), commit d355c7d + b85ddd9
+
+D24 status "perlu konfirmasi" (lewat tanggal tanpa ST bernomor + persetujuan), D25 peringatan baru (persetujuan
+H-14, exit permit H-7, konfirmasi, SPJ, kurs basi, penandatangan=peserta) + total biaya = uang harian + riil,
+D26 tampilan ramping (menu admin 12→10, dasbor 9→4 kartu, nomor ST/SPD hanya di Tahapan, kode modul dihapus,
+riwayat tanpa unduhan), D27 **pembaca kurs: BI sejak Okt 2026 menulis "17.937,00" → pembaruan JISDOR diam-diam
+0 baris sejak ±10 Okt** (kini `JisdorBi::angka`; kurs lokal s.d. 30 Okt = Rp18.138; seeder diperbarui).
+97 uji (96 lulus, 1 dilewati), PHPStan 0; diverifikasi di peramban lokal. Skrip deploy scratchpad 11 Okt
+hilang bersama folder sementara → dibuat ulang (pola: push → tunggu tests → workflow_dispatch deploy).
+
+### Temuan audit (31 Okt, sebelum perbaikan)
 
 Diminta Aldo: menu/fitur yang noise + audit proses bisnis. ci:check tetap hijau (90 uji, PHPStan 0); semua layar
 dibuka di lokal (admin demo), konsol aplikasi bersih. Temuan [Certain], urut dampak:

@@ -719,6 +719,10 @@ RPD) — konstanta `HARI_INI` dihapus, frontend pakai `useSigap().hariIni`, phpu
 "Aktual (ilustrasi)", "Belum Terealisasi"/"Belum Realisasi" vs "Sisa Tersedia", tooltip kurva semua titik, tombol unduh ganda
 Laporan dibuang, "Paket RUP TW x" dinamis. Tes 158. Paket 2 (uang) & 3 (RBAC nyata) BELUM.
 Jebakan: scratchpad dibersihkan antarhari → DB dummy lokal harus dibuat ulang (cek pengalihan dulu).
+**Jebakan Cloudflare Containers (31 Okt):** sesudah 7a10bc1 tayang, kode baru jalan tetapi `SIGAP_DEMO` tetap false — container
+yang sudah ada dinyalakan ulang dengan envVars dari start PERTAMA (rollout tak membawa envVars baru; SIGAP_REGISTRASI lama tetap
+berlaku). Perbaikan `7f2f7b8`: nama DO `sigap-apac-e${VERSI_ENV}` (VERSI_ENV=2). **Naikkan VERSI_ENV setiap envVars berubah.**
+Diverifikasi live: login props `demo:true`, `hariIni` = hari ini, `canRegister:false`; livecheck 13/13.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
