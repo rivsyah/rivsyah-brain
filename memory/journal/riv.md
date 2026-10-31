@@ -676,3 +676,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T12:57Z  Horor 'Penunggu': narator final Lily (dipilih Aldo), 92,5 dtk, 16:9 + 9:16 dirender ulang
 - 2026-10-31T13:14Z  SIGAP BUP: Paket 3 (peran melekat pada akun, ganti peran hanya di demo = pindah akun demo) LIVE 31 Okt 4220436; CI sukses, Neon migrasi 16, 7 akun (admin+6 persona demo), livecheck 13/13.
 - 2026-10-31T13:50Z  research: Phase 0 scope memo brief larangan trading saham pejabat Indonesia; kartu research/project_officials_trading_ban.md; menunggu approval
+- 2026-10-31T13:55Z  motion-demo: latar judul+definisi diganti footage CBD Sudirman (Pexels 39539763, 9770884); grafik dipertahankan; render ulang 16:9 dan 9:16
