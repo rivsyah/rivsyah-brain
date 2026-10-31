@@ -675,3 +675,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T12:20Z  SIGAP BUP: Paket 2 (kebenaran uang, 6 tahap, 2eda6d0..c715ef8) dideploy 31 Okt; CI+PG17 sukses, livecheck 13/13, Neon migrasi 15. Sisa: RUP dobel hitung, BR-KOM-5 (butuh unggahan), MP PNBP (butuh peta MAK), Paket 3.
 - 2026-10-31T12:57Z  Horor 'Penunggu': narator final Lily (dipilih Aldo), 92,5 dtk, 16:9 + 9:16 dirender ulang
 - 2026-10-31T13:14Z  SIGAP BUP: Paket 3 (peran melekat pada akun, ganti peran hanya di demo = pindah akun demo) LIVE 31 Okt 4220436; CI sukses, Neon migrasi 16, 7 akun (admin+6 persona demo), livecheck 13/13.
+- 2026-10-31T13:50Z  research: Phase 0 scope memo brief larangan trading saham pejabat Indonesia; kartu research/project_officials_trading_ban.md; menunggu approval

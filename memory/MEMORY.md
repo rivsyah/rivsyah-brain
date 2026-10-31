@@ -130,6 +130,7 @@
 
 ### Ignited Research — brief & equity (`C:\Users\rivsy\Downloads\Research Reports\`)
 
+- [Officials Trading Ban](research/project_officials_trading_ban.md) — 31 Okt 2026: scope memo Phase 0 brief larangan trading saham pejabat (DPR/DPD/MPR/menteri/kepala badan) TERKIRIM, menunggu persetujuan judul + nama framework; asumsi Section 1 desk-only, EN, cutoff 31 Okt
 - [Master prompt policy brief](research/reference_policy_brief_master_prompt.md) — v3 10 Okt 2026 di Research Reports\policy-brief-master-prompt-v3.md (v2 tetap di sampingnya); tambah tier sumber, grade A–D, katalog exhibit, gerbang verify sebagai tabel, jebakan build; implementasi acuan: Seventy-Dollar-Budget\src (template bertoken + gate 3 tahap)
 - [Motion video demo](research/project_motion_video_demo.md) — milik merek Trajectory (30 Okt); 29 Okt 2026: demo explainer 80 dtk gaya TSCS via Remotion + VO ElevenLabs Brian (free; Ardi edge-tts ditolak) di ~/dev/research/motion-demo; footage Pexels terpasang + versi vertikal Shorts/Reels/TikTok (31 Okt); jebakan pathLength untuk garis SVG
 - [Arsitektur merek media](research/project_media_brand_architecture.md) — 30 Okt 2026 (+ logo v1 diekspor SVG/PNG ke DownloadsAIgnitedMedia Brands, endorsed by aignited): Trajectory = video motion, Ignition = news/artikel (ganti Catalyst), Ignited Research = riset/report; @Trajectory @Ignition @IgnitedResearch kosong (belum diklaim)
