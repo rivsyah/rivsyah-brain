@@ -43,3 +43,15 @@ soal BGS/BSG (porsi gedung untuk pemerintah, wewenang Pengelola Barang atas tana
   bentuk badan hukum Indonesia; Ps 60 objek = tanah. **0 sebutan "luar negeri"/"Perwakilan"** di seluruh PMK.
 - PMK 271/2015: tidak mengatur pemanfaatan sama sekali (kata "manfaat" hanya 2x, konteks lain).
 - Belum dicek: apakah PMK 115/2020 sudah diubah sesudah 2020 (cek JDIH Kemenkeu).
+
+**Audit kutipan PP 27/2014, PP 28/2020, PMK 115/2020 (31 Okt, dari teks):**
+- Status (JDIH BPK, dicek 31 Okt): PP 27/2014 berlaku, diubah HANYA oleh PP 28/2020 (ditetapkan 8 Jun, diundangkan
+  9 Jun 2020, LN 2020/142, TLN 6523); PMK 115/2020 berlaku, tanpa perubahan tercatat. PDF PP 27/2014 (113 hlm, dari
+  peraturan.bpk.go.id) kini ada di Sumber\.
+- 13 kutipan di naskah COCOK: PP Ps 4(1), 6(1), 29(8), 96(2) + 97(1)-(2) (bunyi kutipan = versi PP 28/2020, benar);
+  PMK 115 Ps 1 angka 23, 3(4), 3(6), 3(7), 3(10), 24.
+- Nuansa 1 (par. Bab I "Pengguna hanya dapat mengusulkan"): PP 27 Ps 6(2)g benar (usul), tapi Ps 28(4) sewa atas BMN
+  pada Pengguna DILAKSANAKAN oleh Pengguna setelah persetujuan Pengelola; juga KSP Ps 32(4), BGS/BSG Ps 34(2)b.
+- Nuansa 2 (par. II A.2 soal Ps 24): PP 28/2020 Ps 29(10)b membolehkan setor sewa BERTAHAP untuk BMN berkarakteristik/
+  sifat khusus dgn persetujuan Pengelola (aturan lanjut Ps 29(11)); PMK 115 Ps 24(5) hanya menyebut kerja sama
+  infrastruktur -> celah yang menguatkan argumen naskah.

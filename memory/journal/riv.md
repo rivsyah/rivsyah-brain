@@ -618,3 +618,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T06:15Z  31 Okt: verdict BGS/KSP layak masuk KTI BMN sbg subbagian II C + kalimat Alt A, bukan Alt E; pasal PP 27/2014 belum dicek
 - 2026-10-31T06:18Z  kemlu 31 Okt: KTI mitra diklat PK v4 - diagnosis akar masalah + sasaran paritas 16 PK/thn + Tabel 13-14; 5 docx per bab (split.py, Word COM macet); Excel data olahan 12 sheet dgn jejak halaman
 - 2026-10-31T06:24Z  31 Okt: pasal BGS/BSG/KSP dicek dari teks PP 28/2020 + PMK 115/2020 + PMK 271/2015; koreksi: BGS atas BMN Pengguna tak perlu serah ke Pengelola (Ps 34(3),(5) dihapus)
+- 2026-10-31T06:28Z  31 Okt: audit 13 kutipan PP 27/2014, PP 28/2020, PMK 115/2020 di KTI BMN: semua cocok, 2 nuansa; PP 27/2014 PDF ditaruh di Sumber KTI
