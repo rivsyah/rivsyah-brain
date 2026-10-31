@@ -616,3 +616,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T06:09Z  KTI Excel: halaman pasal dipersempit ke 1 halaman, register BMN A40-A42 ditemukan, A96-A97 diberi rentang hlm 290-299
 - 2026-10-31T06:12Z  31 Okt: kartu baru project_kti_bmn_perwakilan_blu (dari isi berkas); BGS/BSG/KSP di KTI itu hanya data, belum dianalisis
 - 2026-10-31T06:15Z  31 Okt: verdict BGS/KSP layak masuk KTI BMN sbg subbagian II C + kalimat Alt A, bukan Alt E; pasal PP 27/2014 belum dicek
+- 2026-10-31T06:18Z  kemlu 31 Okt: KTI mitra diklat PK v4 - diagnosis akar masalah + sasaran paritas 16 PK/thn + Tabel 13-14; 5 docx per bab (split.py, Word COM macet); Excel data olahan 12 sheet dgn jejak halaman

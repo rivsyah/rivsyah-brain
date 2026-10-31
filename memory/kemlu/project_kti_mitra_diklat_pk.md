@@ -95,6 +95,18 @@ Permintaan Aldo: "update KTI ini more deep, rich of data, more visualisaztion". 
 - Skenario (perhitungan penulis): lapis 1 melekat pada IHT 62/thn → 186 PK (50%) s.d. 2029; lapis 2 25/thn → 75 (20%);
   biaya ICA ≤ €6.200/thn.
 
+## Versi 4 (31 Okt 2026) — analisis lebih tajam + file per bab + Excel
+
+- Bab II C angka 2 baru "Diagnosis": 3 akar masalah (IK MoU tak memilah jabatan; tak ada pemilik program/anggaran
+  dimensi internasional; kompetensi PK dianggap domestik) + sasaran paritas 16 PK/thn (369 × 4,3%), segmen prioritas
+  97 Ahli Muda di Perwakilan, 1 implementasi MoU/thn untuk PK (12–14% target). Angka 9: Tabel 13 logika perubahan
+  (garis dasar Ukom) + Tabel 14 argumen tandingan. 46 hlm, 14 tabel, 10 gambar, verify 21/21. v3 diarsip.
+- `split.py` (lxml, tanpa Word) → `Per Bab\` 5 docx (00 bagian awal … 04 pustaka), field dibekukan. `split.ps1`
+  (Word COM) MACET tanpa keluaran 2× → jangan dipakai.
+- `build_excel.py` → `Data Olahan KTI Mitra Diklat PK.xlsx` 12 sheet (Sumber S01–S28, Kutipan 48 baris dgn hlm PDF
+  & cetak, data mentah + rumus; bobot K1 di Skor_Mitra!J1). LKj 2025 hlm cetak = PDF − 1; HCDP = PDF − 2. Rumus belum
+  dihitung ulang di Excel (fullCalcOnLoad).
+
 ## Terbuka (Aldo)
 
 1. **Pasal 17(2)a Permenlu 23/2020** ("murni hasil pemikiran penulis"): naskah ini disusun AI. Sebelum teken surat
