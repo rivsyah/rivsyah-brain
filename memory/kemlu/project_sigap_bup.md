@@ -723,6 +723,19 @@ Jebakan: scratchpad dibersihkan antarhari → DB dummy lokal harus dibuat ulang 
 yang sudah ada dinyalakan ulang dengan envVars dari start PERTAMA (rollout tak membawa envVars baru; SIGAP_REGISTRASI lama tetap
 berlaku). Perbaikan `7f2f7b8`: nama DO `sigap-apac-e${VERSI_ENV}` (VERSI_ENV=2). **Naikkan VERSI_ENV setiap envVars berubah.**
 Diverifikasi live: login props `demo:true`, `hariIni` = hari ini, `canRegister:false`; livecheck 13/13.
+**Paket 2 (kebenaran uang) LIVE 31 Okt** (`2eda6d0`..`c715ef8`, deploy CI sukses termasuk tes PG17; livecheck 13/13; Neon
+migrasi 15, terakhir `2026_10_31_000003`). Isi: (1) klik ganda — ajukan/uji/sp2d/revisi mengunci baris + cek ulang status,
+`realisasikan` hanya sisa `nilai−terealisasi`, store permintaan + komitmen satu transaksi (retry nomor unik); (2) SoD SPM/SP2D
+diikat ke user id (`dibuat_oleh_user_id`, `diuji_oleh_user_id`; pencatat SP2D ≠ pembuat/penguji); legacy SP2D tanpa komitmen lewat
+`realisasikanLangsung` (gerbang pagu); (3) kontrak.komitmen_id + komitmen.terealisasi, termin lewat `realisasikanSebagian`;
+(4) pengembalian wajib SP2D asal di MAK sama, Σ ≤ nilai SP2D dan ≤ realisasi, kode billing unik; (5) alokasi PPK per MAK (bukan
+per sheet), geser pagu ditolak bila pagu baru < Σ RPD/RUP/alokasi, target serapan hanya MAK ber-RPD; (6) BR-PRC-3: Pengadaan
+Langsung > Rp200 jt ditolak di server. Tes 177.
+**Sengaja belum:** gerbang RUP dobel hitung (perlu tautan paket↔kontrak; pelonggaran dicoba lalu dibatalkan karena meloloskan
+paket tak terbiayai); BR-KOM-5 — lampiran di formulir permintaan hanya saklar boolean, tak ada unggahan/penyimpanan, jadi
+penegakan server = sandiwara (perlu fitur unggah dulu); MP PNBP tak bisa menahan pencairan — tabel `mp_pnbp` hanya
+tahap/kategori, tak tertaut ke MAK (perlu pemetaan MAK→kategori). Paket 3 (peran terikat akun, cabut POST /role) BELUM.
+**Konsekuensi demo:** akun demo bersama tak bisa menuntaskan rantai bayar (SoD per user id) — butuh ≥3 akun demo.
 
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 

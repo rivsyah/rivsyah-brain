@@ -52,7 +52,7 @@
   vs PG18, bukan pooler. Sisa sepele: kunci yatim `bara-rivaldo` (3366980) belum dicabut, org-nya
   kosong jadi tidak berisiko. Detail di [Akun Neon](shared/reference/reference_neon_account.md).
 - 🔵 11 Okt 2026 — **SIGAP BUP (Sistem Informasi Government Analysis Planning Biro Umum dan Pengadaan):
-  LIVE 11 Okt di https://sigap.rivsyah.dev** (12 Okt: **fitur RPD tahunan PA-05 tayang** `0823111`, container kini migrasi sendiri saat start karena Neon tak terjangkau dari mesin ini; `cf22eb5`: bingkai starter kit dibuang, Logistik Diplomatik kembali (keputusan Aldo 11 Okt), pohon terbuka penuh, pendaftaran ditutup; container APAC/Mumbai, uji tanpa login 13/13, tes 142). Latar: Neon `main` berisi dummy (0 jejak Kemlu), password bawaan
+  LIVE 11 Okt di https://sigap.rivsyah.dev** (31 Okt: **Paket 1 demo-safety + Paket 2 kebenaran uang LIVE** `c715ef8`, tes 177, migrasi 15; Paket 3 RBAC belum; 12 Okt: **fitur RPD tahunan PA-05 tayang** `0823111`, container kini migrasi sendiri saat start karena Neon tak terjangkau dari mesin ini; `cf22eb5`: bingkai starter kit dibuang, Logistik Diplomatik kembali (keputusan Aldo 11 Okt), pohon terbuka penuh, pendaftaran ditutup; container APAC/Mumbai, uji tanpa login 13/13, tes 142). Latar: Neon `main` berisi dummy (0 jejak Kemlu), password bawaan
   dipertahankan (keputusan Aldo). Deploy: GitHub Actions → Cloudflare Containers, `sigap.rivsyah.dev`;
   secret token + variabel `CLOUDFLARE_ACCOUNT_ID` terisi (4 Okt). Workers Paid aktif 11 Okt 08.58 WIB. ⚠ Sisa Aldo: cek layar setelah
   login (agent dilarang memasukkan kata sandi di host non-lokal). Pemegang deploy: sesi `c4e7d156` (11 Okt).
