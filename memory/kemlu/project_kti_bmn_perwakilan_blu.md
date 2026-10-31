@@ -22,3 +22,8 @@ Peta jalan 2027-2029.
 [[idea-kti-fiskal-mandiri-kanselerai]] tumpang tindih objek dengan KTI ini -> jangan jadi KTI terpisah tanpa sudut beda.
 
 Terkait: [[project-kti-blu-aset-dana-abadi]] (KTI PNBP kekonsuleran; aset sengaja dikeluarkan di sana).
+
+**Verdict agen 31 Okt (Aldo belum memutuskan):** BGS/BSG/KSP LAYAK masuk, tapi terbatas: satu subbagian Bab II C
+(mengapa bentuk pemanfaatan selain sewa nol + manfaat in-kind BGS/BSG yang tidak terkena kewajiban setor tunai) dan
+satu kalimat di Alternatif A (juknis harus mencakup KSP/BGS/BSG). BUKAN Alternatif E, BUKAN tesis baru. Pasal PP 27/2014
+soal BGS/BSG (porsi gedung untuk pemerintah, wewenang Pengelola Barang atas tanah) belum dicek dari teks.
