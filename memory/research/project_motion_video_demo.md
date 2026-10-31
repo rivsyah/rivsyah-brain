@@ -17,10 +17,13 @@ metadata:
 
 **Jebakan:** garis SVG yang "digambar" pakai `pathLength={1}` + `strokeDasharray={1}`; dasharray angka tetap memotong garis yang lebih panjang.
 
-**ElevenLabs (disiapkan 29 Okt 2026, menunggu key):**
+**ElevenLabs (key tersimpan 31 Okt 2026):**
 - `vo/script.json` kini punya `engine` ("edge" | "elevenlabs") dan blok `elevenlabs` {voice_id, model}. Default sekarang `elevenlabs`, model `eleven_v4`, voice_id masih kosong.
 - `make_vo.py` memanggil `POST /v1/text-to-speech/{voice_id}/with-timestamps` (stdlib urllib, `language_code: id`). Timing kalimat dihitung dari alignment per karakter. `--list-voices` = Voice Library bahasa Indonesia (`/v1/shared-voices?language=id`).
 - Jalankan: `~/brain/bin/envdb.sh run ELEVENLABS_API_KEY -- python vo/make_vo.py`.
 - Fakta dicek langsung 29 Okt 2026: Indonesian (id) didukung; paket Free = 10k kredit/bulan, TANPA lisensi komersial; lisensi komersial mulai Starter ($6/bln, promo $1 bulan pertama sampai 1 Nov). Naskah demo = 1.073 karakter. Harga API v4 $0,08 per 1k karakter.
 - Key ditambahkan ke `bin/keys.catalog` sebagai ELEVENLABS_API_KEY (optional).
 - Footage Pexels: 3 kandidat dipilih (29382320, 19535631, 8480232; total 21,4 MB), belum diunduh, menunggu izin Aldo.
+- 31 Okt 2026: ELEVENLABS_API_KEY tersimpan lewat skrip PowerShell (input tersembunyi). envdb-setup.sh dan Notepad gagal menyimpan; penyebab: Notepad Win11 tidak menulis ke disk, dan perintah yang disalin dari chat membawa Enter yang menjawab prompt kosong.
+- Key valid tapi TANPA izin voices_read dan models_read (401). Izin TTS ada.
+- API Free TIDAK BISA memakai suara Voice Library (402 paid_plan_required, dicek 31 Okt 2026). Untuk suara native Indonesia dari library: perlu Creator atau top-up kredit $5 pay-as-you-go (pesan error API).
