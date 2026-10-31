@@ -622,3 +622,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T06:36Z  KTI BMN: subbagian II C.6 KSP & BGS/BSG + Alt A + Rek 4; 47 hlm, verify 25/25; Per Bab + Excel diperbarui
 - 2026-10-31T06:37Z  SiapSeleksi MVP lokal dibangun di ~/dev/personal/siapseleksi (93aede0): Workers+Hono+D1, 392 soal/7 paket, OTP, donasi tautan, tahapan 6 instansi dari riset live; kartu personal/project_siapseleksi; launch.json Bara +siapseleksi
 - 2026-10-31T06:39Z  31 Okt: cek ide PNBP valas vs KTI PNBP Kekonsuleran: sebagian sudah ada (Filipina, lindung nilai); verdict masuk terbatas
+- 2026-10-31T06:45Z  31 Okt: challenge ide co-financing Danantara/BUMN: verdict terlemah; reframe ke tata kelola hibah langsung Perwakilan (data LK 2025)

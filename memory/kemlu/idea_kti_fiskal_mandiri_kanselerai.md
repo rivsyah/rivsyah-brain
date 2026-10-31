@@ -39,3 +39,15 @@ kerugian selisih kurs belum terealisasi Rp144,62 M (2024 Rp318,37 M) = revaluasi
 anggaran akibat kurs -> data publik lemah untuk klaim "selisih kurs anggaran". Verdict agen: masuk terbatas (1 paragraf
 II C + perkuat butir lindung nilai II D), jangan jadi usulan retensi valas (mendekati tesis brief riset yang dilarang
 dikutip; KTI sengaja bukan "retensi dulu"). Aldo belum memutuskan.
+
+31 Okt: CHALLENGE ide 8 (co-financing promosi ekonomi dgn Danantara/BUMN/swasta). Verdict agen: TERLEMAH sebagai
+"sumber fiskal operasional" -> jangan dipakai dalam bentuk ini. Alasan: (1) hibah langsung wajib register + masuk DIPA
++ terikat tujuan (PMK 99/PMK.05/2017, status berlaku per JDIH BPK; register hibah DN di Kanwil DJPb), jadi tidak bisa
+menutup operasional umum; sponsor yang bayar vendor langsung tidak lewat APBN sama sekali; (2) Danantara = pengelola
+investasi (UU BUMN 2025 + PP turunan 2026, nomor PP belum diverifikasi), bukan pemberi dana promosi -> label rapuh;
+(3) konflik kepentingan/gratifikasi + perlakuan setara swasta; (4) bidang promosi ekonomi = fungsi diplomat, bukan
+kanselerai. Data LK Kemlu TA 2025: pengesahan hibah langsung Rp20,43 M (2024 Rp329,94 M, rincian 2024 belum dibaca),
+semua hibah BARANG (masjid Tokyo Rp17,09 M, kendaraan Jeddah Rp1,91 M, Kairo Rp1,43 M dari BAZNAS, Bucharest Rp3 jt);
+hibah TAYL Rp1,53 M = microbus KBRI Beijing BAST Jun 2023 baru disahkan 2025 (jeda 2 thn). Bentuk yang selamat:
+KTI kanselerai "tata kelola penerimaan hibah langsung & kontribusi pihak ketiga di Perwakilan" (pencatatan, register,
+pengesahan, BMN dari hibah). Aldo belum memutuskan.
