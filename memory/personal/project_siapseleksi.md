@@ -11,7 +11,7 @@ Scope: personal (bank soal berasal dari [[project-tpd-ojk-materi]]).
 
 ## State (31 Okt 2026)
 - Repo lokal `C:\Users\rivsy\dev\personal\siapseleksi` (git, tanpa remote), HEAD `93aede0`.
-- Stack: Cloudflare Workers + Hono JSX SSR + D1; OTP email via Resend; donasi = tautan (`DONASI_URL`).
+- Stack: Cloudflare Workers + Hono JSX SSR + D1; OTP email via Resend; donasi = kanal PRIBADI (keputusan Aldo 31 Okt 2026): tautan Saweria + Trakteer lewat var `DONASI_SAWERIA`/`DONASI_TRAKTEER` (host di-whitelist, https saja).
 - Konten: 360 soal V/N/L/P1/P2 diekspor dari builder TPD OJK (`TPD_SRC=... npm run bank`) + TWK 12,
   TKP 10, AKHLAK 10 orisinal. 7 paket. 8 materi. 6 halaman tahapan dari riset live 31 Okt 2026
   (`scripts/tahapan.json`, sumber resmi vs media ditandai).
@@ -28,6 +28,6 @@ Scope: personal (bank soal berasal dari [[project-tpd-ojk-materi]]).
 - MIND ID XPLORER: siklus terakhir terkonfirmasi Cohort 3 (Jul 2024).
 
 ## Menunggu Aldo
-Nama + domain; akun Cloudflare (D1 remote + deploy); `RESEND_API_KEY` di env.db; kanal donasi (atas
-nama siapa → Saweria/Trakteer vs yayasan). Berikutnya: Turnstile, bank TWK/TKP 100+, Bahasa Inggris
+Nama + domain; akun Cloudflare (D1 remote + deploy); `RESEND_API_KEY` di env.db; akun Saweria/Trakteer Aldo lalu isi URL-nya di `wrangler.jsonc` vars (kanal sudah diputuskan: pribadi).
+Berikutnya: Turnstile, bank TWK/TKP 100+, Bahasa Inggris
 (bisa dari seri TOEFL ITP), SKB BPS statistika.

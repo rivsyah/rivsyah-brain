@@ -627,3 +627,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T07:01Z  personal: RAB — +6 opsi hotel/venue murah (Swiss-Bel Kalibata/Pondok Indah/Bogor, Villa Srimanganti). 12 opsi muat Rp100 jt. Verify 1.613 lulus.
 - 2026-10-31T07:58Z  ElevenLabs key tersimpan; key kurang izin voices_read; API free tidak bisa pakai library voice (perlu Creator atau top-up $5)
 - 2026-10-31T08:00Z  ElevenLabs free: 7 suara default jalan via API (eleven_v4, id); sampel dikirim ke Aldo untuk dipilih
+- 2026-10-31T08:01Z  siapseleksi: donasi kanal pribadi (Saweria+Trakteer, DONASI_SAWERIA/DONASI_TRAKTEER, host whitelist), commit 66f35d6; diuji di browser
