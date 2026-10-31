@@ -1,6 +1,6 @@
 ---
 name: project-horor-motion
-description: Video motion "Penunggu" — 7 hantu Nusantara, ±88 dtk, narasi ElevenLabs Brian, Remotion + soundtrack sintetis; lokasi, alur render, status
+description: Video motion "Penunggu" — 7 hantu Nusantara, ±88 dtk, narasi ElevenLabs Sarah (perempuan), Remotion + soundtrack sintetis; lokasi, alur render, status
 metadata:
   type: project
 ---
@@ -14,6 +14,7 @@ metadata:
 - Audio 100% sintetis (drone, angin, detak jantung, gong berombak, bonang ~pelog, bisikan) — tanpa sampel, tanpa lisensi pihak ketiga. Tanpa voiceover (edge-tts sudah ditolak Aldo).
 - **9:16 (31 Okt 2026):** komposisi `HororVertical` (1080x1920) memakai komponen yang sama; layout bercabang lewat `useV()` di `src/ui.tsx`. `npm run render:v` → `outhoror-nusantara-9x16.mp4` (+ `-kecil.mp4` ~14 MB). Teks ditaruh di tengah layar, sepertiga bawah dibiarkan kosong untuk UI Reels/TikTok.
 - **Narasi (31 Okt 2026, diminta Aldo "kok ga ada dubbingnya"):** ElevenLabs suara bawaan Brian (`nPczCjzI2devNBz1zQrb`), `eleven_v4`, `language_code: id`, speed 0.9. Naskah per adegan di `audio/script.json` (`parts` = potongan yang memicu teks muncul). `audio/make_vo.py` menulis `public/vo/*.mp3` + **menghasilkan `src/timeline.json`** — durasi tiap adegan kini mengikuti panjang narasi (total ±88 dtk). Cache per adegan lewat hash teks+suara, jadi hanya adegan yang berubah yang memakai kredit. Pemakaian pertama: 976 karakter.
+- **Suara diganti ke Sarah `EXAVITQu4vr4xnSDxMaL` (31 Okt 2026, Aldo: "pakai suara cewe").** Suara perempuan lain yang jalan di Free = Alice `Xb7hH8MSUJpSbSDYk0k2`. Total jadi ±90 dtk. Kredit terpakai proyek ini: 2×976 karakter.
 - Musik di-duck ke 40% saat narasi (di `make_audio.py`).
 - Urutan build: `envdb.sh run ELEVENLABS_API_KEY -- python audio/make_vo.py` → `python audio/make_audio.py` → `npm run render` + `npm run render:v`.
 - Key ElevenLabs hanya punya izin TTS (tanpa user_read/voices_read) dan paket Free: tanpa lisensi komersial. Untuk unggahan komersial perlu Starter ke atas.

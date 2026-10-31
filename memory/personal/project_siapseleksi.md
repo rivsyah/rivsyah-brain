@@ -10,7 +10,7 @@ Pertamina, CPNS, MIND ID. Gratis, wajib daftar, ada fitur donasi. Urutan bangun 
 Scope: personal (bank soal berasal dari [[project-tpd-ojk-materi]]).
 
 ## State (31 Okt 2026)
-- Repo lokal `C:\Users\rivsy\dev\personal\siapseleksi` (git, tanpa remote), HEAD `040d6e3`. UI 31 Okt 2026: gaya landing bimbel (acuan pola: berkarirojk.id; merah #c4122f + krem, Lato self-host) — hanya pola tata letak, tanpa aset/teks mereka.
+- Repo lokal `C:\Users\rivsy\dev\personal\siapseleksi` (git, tanpa remote), HEAD `bce158b`. UI 31 Okt 2026: gaya landing bimbel (acuan pola: berkarirojk.id; Lato self-host). Palet: merah redam #a8323e HANYA aksen, area besar netral/lembut — Aldo bilang merah terang bikin sakit mata — hanya pola tata letak, tanpa aset/teks mereka.
 - Stack: Cloudflare Workers + Hono JSX SSR + D1; OTP email via Resend; donasi = kanal PRIBADI (keputusan Aldo 31 Okt 2026): tautan Saweria + Trakteer lewat var `DONASI_SAWERIA`/`DONASI_TRAKTEER` (host di-whitelist, https saja).
 - Konten: 360 soal V/N/L/P1/P2 diekspor dari builder TPD OJK (`TPD_SRC=... npm run bank`) + TWK 12,
   TKP 10, AKHLAK 10 orisinal. 7 paket. 8 materi. 6 halaman tahapan dari riset live 31 Okt 2026
