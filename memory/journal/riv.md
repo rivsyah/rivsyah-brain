@@ -639,3 +639,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T08:32Z  Excel KTI PNBP: xlsx_data.py +S17 S18, B69-B82, P31-P32, 15 baris peraturan; rekalkulasi Excel COM: PNBP 0 error 32/32 cocok; BMN ikut ditulis ulang 0 error 38/38
 - 2026-10-31T08:33Z  Kartu project_kti_blu_aset_dana_abadi.md + indeks MEMORY.md diperbarui (bagian 31 Okt sore)
 - 2026-10-31T08:40Z  KTI PNBP: audit penyesuaian semua dokumen (atas permintaan Aldo) — 5 sisa rumusan lama di Bab II C diperbaiki (dana abadi kekonsuleran -> Dana Diplomasi Pelindungan Indonesia; WNI -> WNI dan PMI), judul Excel PNBP diganti; build ulang: 48 hlm verify 25/25, Per Bab, Catatan, Excel PNBP 32/32 + BMN 38/38, 0 error; pindai ulang: 0 sisa rumusan lama di PDF/DOCX/Per Bab/Catatan/Excel
+- 2026-10-31T08:43Z  KTI BMN: Renstra Sekjen/BUP + LKj BPO 2024 (publik, kemlu.go.id repositori) masuk naskah; BN Permenlu 10/2025 = 938 terkonfirmasi; 50 hlm 25/25

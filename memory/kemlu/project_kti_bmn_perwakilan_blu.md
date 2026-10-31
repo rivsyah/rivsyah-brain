@@ -83,3 +83,22 @@ soal BGS/BSG (porsi gedung untuk pemerintah, wewenang Pengelola Barang atas tana
 - Nomor BN Permenlu 10/2025: PDF resmi kosong (glyph); pasal.id mencatat 938 -> penanda VERIFIKASI di pustaka KTI A.
   KTI B sudah menulis 938 tanpa penanda.
 - Hasil: 47 hlm, verify 25/25, 0 kalimat kembar; Per Bab + Excel (+7 baris rujukan) diperbarui, 38/38 cocok.
+
+**31 Okt 2026 — 3 dokumen unit Kemlu (dikirim Aldo) masuk KTI BMN.** Ketiganya PUBLIK: asal unduhan (Zone.Identifier) =
+kemlu.go.id/files/repositori/65379/ (Renstra BUP, Renstra Sekjen) dan /65524/ (LKj BPO 2024); tautan aktif dicek.
+Pelajaran: URL asal file unduhan bisa dibaca dari ADS Zone.Identifier (PowerShell Get-Content -Stream Zone.Identifier).
+- Renstra Sekjen 2025-2029 = Kepsekjen 22/B/PR/12/2025/03 (17 Des 2025), PDF HASIL PINDAI (dibaca sbg gambar).
+  hlm 1: mengonfirmasi Permenlu 10/2025 = **BN 2025/938** (penanda VERIFIKASI dihapus). hlm 10 "Manajemen Aset Global":
+  hukum lokal ganggu pengadaan/pemanfaatan/administrasi aset, biaya perawatan Perwakilan jauh lebih tinggi, backlog
+  pemeliharaan menumpuk. hlm 12 Threats: pemanfaatan BMN dalam negeri tak dapat diaplikasikan di Perwakilan; kendala
+  komposisi PNBP utk belanja modal. hlm 58-59: rancangan Permenlu Pengelolaan BMN di Perwakilan, Kepmenlu Pedoman
+  Pemeliharaan Gedung, Peta Jalan Infrastruktur Diplomasi. hlm 67: target IPA 3,10 (2025) -> 3,35 (2029).
+- Renstra BUP (Jan 2026): hlm 35-36 PMK 271/2015 belum atur pemanfaatan, PERUBAHAN PMK SEDANG DIPROSES, Rancangan
+  Permenlu BMN Perwakilan target 2028, peraturan teknis 2 thn setelah revisi PMK; hlm 36 "pemeliharaan belum diposisikan
+  sebagai kebijakan strategis" -> Pedoman Pemeliharaan 2027; hlm 26/31 IPA 3,1->3,35.
+- LKj BPO 2024 (Apr 2025): hlm 22 IPA dinilai Kemenkeu skala 1-4; hlm 25 IPA 2,91 (2022) -> 3,10 (2023); hlm 38 temuan
+  aset BPK tiap LHP 2019-2023 walau WTP; hlm 57-58 Pedoman Postur Diplomasi (kelembagaan + infrastruktur SDM/anggaran/fisik).
+- Masuk naskah: II A.2 paragraf pengakuan Kemlu + revisi PMK 271 berjalan; Bab I angka IPA; II C.5 pedoman pemeliharaan;
+  Alt A + Rek 4 = masukan revisi PMK 271. Pustaka: Biro Perencanaan dan Organisasi KL (2025), Biro Umum dan Pengadaan KL
+  (2026), Sekretariat Jenderal KL (2025). Excel: sumber S31-S33 (ID sengaja jauh dari S17+ yg dipakai sesi KTI PNBP),
+  A99-A104, 6 baris rujukan. 50 hlm, verify 25/25, 0 kalimat kembar, 38/38 cocok.
