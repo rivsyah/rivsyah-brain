@@ -102,3 +102,10 @@ Pelajaran: URL asal file unduhan bisa dibaca dari ADS Zone.Identifier (PowerShel
   Alt A + Rek 4 = masukan revisi PMK 271. Pustaka: Biro Perencanaan dan Organisasi KL (2025), Biro Umum dan Pengadaan KL
   (2026), Sekretariat Jenderal KL (2025). Excel: sumber S31-S33 (ID sengaja jauh dari S17+ yg dipakai sesi KTI PNBP),
   A99-A104, 6 baris rujukan. 50 hlm, verify 25/25, 0 kalimat kembar, 38/38 cocok.
+- 31 Okt: Renstra Biro Keuangan 2025-2029 (publik, kemlu.go.id/files/repositori/65379/..., 17 Jan 2026) dicek: nilai
+  kecil. Diambil 1 kalimat ke II A.2: Threats hlm 6 "perbedaan peraturan keuangan nasional dengan sistem keuangan negara
+  akreditasi" (Biro Keuangan Kementerian Luar Negeri, 2026). Sisanya (IPA 3,1->3,35, IKPA, strategi pemeliharaan
+  infrastruktur hlm 25) duplikat Renstra Sekjen/BUP -> tidak dipakai. Excel S34 + 1 baris rujukan. 50 hlm, 25/25.
+- Folder baru Aldo: `KTI\Informasi Publik\` (Sekjen\, HEKSP\, + Renstra Dit Konsuler, Ditjen Protkons, Dit PWNI, RKAKL
+  2026, LK, LBP S1 2025, LK S1 2026). Belum dicek untuk KTI BMN: LKj Biro Umum dan Pengadaan 2025 (kandidat kuat),
+  LKj Biro Keuangan 2025, LBP Semester I TA 2025.
