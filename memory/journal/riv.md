@@ -691,3 +691,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T15:39Z  ep01 EN vertical full+short dirender ulang dengan hook 3 dtk; free float hook visual dirender
 - 2026-10-31T15:50Z  Aldo putuskan Gadis (edge-tts) final untuk Pontianak & Nyi Roro Kidul; tanpa upgrade ElevenLabs
 - 2026-10-31T16:05Z  Trajectory gas-SG: video motion baru (versi lain ep01), 8 scene, draf tanpa suara; card research/project_trajectory_gas_sg.md
+- 2026-10-31T16:19Z  Horor video 5-6 dirender: kuyang-9x16 dan lawang-sewu-9x16 (Gadis, hook), stok 6
