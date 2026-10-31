@@ -690,3 +690,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T15:36Z  Horor: stok 4 video 9:16 dengan hook clickbait selesai (Penunggu 95s, Ancol 106s, Pontianak 114s, Nyi Roro Kidul 114s) di ~/dev/personal/horor-motion/out/*-9x16-kecil.mp4; ElevenLabs Free habis (17 kredit), 2 video baru pakai edge-tts Gadis sementara
 - 2026-10-31T15:39Z  ep01 EN vertical full+short dirender ulang dengan hook 3 dtk; free float hook visual dirender
 - 2026-10-31T15:50Z  Aldo putuskan Gadis (edge-tts) final untuk Pontianak & Nyi Roro Kidul; tanpa upgrade ElevenLabs
+- 2026-10-31T16:05Z  Trajectory gas-SG: video motion baru (versi lain ep01), 8 scene, draf tanpa suara; card research/project_trajectory_gas_sg.md

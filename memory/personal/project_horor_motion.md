@@ -39,3 +39,9 @@ metadata:
 - Render 9:16: `npm run render:v`, `ancol:v`, `pontianak:v`, `kidul:v`.
 
 - **Keputusan Aldo 31 Okt 2026 ("Pakai Gadis saja"):** Pontianak & Nyi Roro Kidul FINAL memakai edge-tts Gadis, bukan sementara; tidak upgrade ElevenLabs. Hook Penunggu & Ancol tetap tanpa narasi (tidak dicampur suara Gadis).
+
+## Video 5–6 (31 Okt 2026, "buat 2 lagi") — total stok 6
+
+- **Kuyang** (folklor Banjar: kepala terbang + organ, incar ibu baru melahirkan & bayi, penangkal bawang tunggal/cabai/cermin/gunting/tali ijuk). Sumber: detik.com Kalimantan, tirto, suara. `src/kuyang/Kuyang.tsx`, `npm run kuyang:v`.
+- **Lawang Sewu** (NIS, mulai dibangun 1904, ±928 lubang pintu, penjara Kenpeitai di ruang bawah tanah 1942, Pertempuran Lima Hari Okt 1945, kini museum KAI). Sejarah dan cerita mistis dipisah tegas; kartu akhir "Hormati sejarah dan para korbannya". Punchline: hitungan pintu 928 → 929. `src/lawang/Lawang.tsx`, `npm run lawang:v`.
+- Keduanya edge-tts Gadis, hook bernarasi (`rate +12%`), mesin `story.tsx`, durasi ±119 dan ±116 dtk.
