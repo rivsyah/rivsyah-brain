@@ -680,3 +680,4 @@ changed without needing a synchronised history. Newest at the bottom.
 - 2026-10-31T13:56Z  31 Okt: brainstorm nama media video motion fakta unik (dunia/semesta/Indonesia) — terpisah dari Trajectory; usulan Parallax/Ternyata/Rasi/Curio dll, belum diputuskan, handle belum dicek
 - 2026-10-31T14:02Z  research: brief Public Office Private Positions disetujui; Aldo minta edisi Bahasa Indonesia saja
 - 2026-10-31T14:06Z  31 Okt: Aldo pilih nama Ternyata (cadangan Masa Sih?) untuk media fakta unik; cek handle YT/TikTok/IG, @ternyatahq kosong di ketiganya; card media brand diperbarui
+- 2026-10-31T14:10Z  Video horor kedua 'Si Manis Jembatan Ancol' (103,6 dtk, Lily, 16:9 + 9:16) dirender di ~/dev/personal/horor-motion/out; versi Ridwan Saidi + Keng Po 1950; make_vo.py digeneralisasi, synth.py bersama
