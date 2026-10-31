@@ -687,6 +687,31 @@ digabung ke Dashboard.
 - Periode IKPA = bulan berjalan (dulu tetap "Juli 2026"). META eksekutif menyebut pimpinan + target RPD.
 - Umur antrean & kontrak jatuh tempo masih dihitung dari `HARI_INI` 15 Jul (celah lama). Tes 154.
 
+### 31 Okt 2026 — audit menyeluruh (4 auditor paralel + verifikasi agent), di `4fa94ce`
+
+Basis: 154/154 tes, livecheck 13/13. Diverifikasi ulang oleh agent di kode: K1, SP2D race, komitmen kontrak, refund, SoD SPM.
+**A. Demo publik — mendesak:** (1) akun demo bisa diambil alih: `PATCH settings/profile` ganti email tanpa sandi; sandi publik →
+ganti sandi / aktifkan 2FA / passkey / hapus akun; (2) akun permanen tersembunyi: `POST /role` kpa → `POST /users` (lolos
+SIGAP_REGISTRASI=false, `min:8`); `/users` menampilkan semua email; (3) IP pengunjung tampil di Jejak Audit + CSV audit (UU PDP).
+**B. Kebenaran uang:** komitmen kontrak tak pernah direalisasi/dilepas (termin hanya naikkan kontrak.realisasi → pagu terbebani
+ganda); race SP2D (status dicek di luar lock, `realisasikan` cek status komitmen di memori → realisasi ganda + potong komitmen
+lain), juga `uji`/`batalkan`, `store`/`ajukan` (komitmen yatim, nomor `count()+1` bentrok); refund berulang tanpa rujukan SP2D;
+keputusan revisi bisa diterapkan 2× (status dicek di luar transaksi); pembagian dicek per sheet (bukan per MAK) tanpa lock dan
+tanpa empat-mata; geser pagu tak cek Σ RPD/RUP/alokasi; fallback legacy sp2d `increment` tanpa gerbang; RUP dobel hitung
+komitmen + tak mereservasi; MP PNBP tak menahan pencairan (simulasi); BR-PRC-3 hanya UI; BR-KOM-5 tak ditegakkan;
+targetSerapan bias bila RPD sebagian.
+**C. Peran/SoD:** peran dipilih sendiri via `POST /role` (fitur demo, KRITIS untuk nyata), tak diaudit; SoD SPM `terbit` hanya
+persona (bisa dilewati ganti peran); SP2D tanpa cek SoD (BR-KOM-4); audit di luar transaksi pada banyak mutasi; append-only konvensi.
+**D. Tampilan:** dua tanggal acuan (HARI_INI 15 Jul di header, umur, kontrak tempo, topbar `$batas='2026-08-14'`, salinan konstanta
+di EksekutifController vs bulan nyata di target/RPD/IKPA) → kontrak lewat tempo tampil "X hr lagi"; kurva Aktual ilustrasi tanpa
+label; "Sisa" dua rumus berlabel sama; status warna per bagian beda Dashboard vs Laporan; tooltip kurva `hoverLine < 7`;
+hitungan antrean/peringatan beda antar layar (batal, take(5)); dua tombol unduh di Laporan; "TW III" hardcode; CSV sanitize
+belum di beberapa kolom; IKPA tampil terlalu resmi.
+**Benar:** gerbang pagu buatKomitmen (transaksi+lock), draf tak membebani, transisi status sekuensial, revisi blokir/geser cek dana
+terikat + empat-mata user id, RPD/RUP/termin lock, tanpa `$request->all()`, tanpa link mati, CSRF penuh, throttle login, cookie aman,
+total pagu/realisasi konsisten. **Celah tes:** semua tes SQLite → lock & konkurensi tak pernah diuji.
+Status: dilaporkan ke Aldo; usulan 3 paket (demo-safety → kebenaran uang + uji konkurensi PG → RBAC nyata). Menunggu keputusan.
+
 ## Desain v2 — sudah terpasang, tidak perlu diimpor ulang
 
 Permintaan 26 Sep 2026 untuk mengimpor `SIGAP-BUP v2.dc.html` dari proyek Claude Design
